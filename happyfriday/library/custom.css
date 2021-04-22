@@ -1,0 +1,330 @@
+/*!
+ * Cristian Elvis - v1.0 (http://cristianelvis.com)
+ * Copyright 2020 Cristian Elvis
+ */
+:root {
+	--cor1:#000000;
+	--cor2:#c6a05f;
+	--cor3:#103561;
+	--cor4:#49bfdc;
+	--cor5:#cccccc;
+    --red:red;
+	--white:#ffffff;
+	--black:#000000;
+}
+.h1{}
+.h2{}
+.h3{}
+.h4{}
+.h5{}
+a,
+a:hover {
+	color:var(--black);
+	text-decoration:none;
+}
+.close {
+    position: absolute;
+    top:1rem;
+    right:1rem;
+}
+.close i {
+    color:var(--cor1);
+}
+.c1 {color:var(--cor1);}
+.c2 {color:var(--cor2);}
+.c3 {color:var(--cor3);}
+.c4 {color:var(--cor4);}
+.c5 {color:var(--cor5);}
+.red {color:var(--red);}
+.white {color:var(--white);}
+.black {color:var(--black);}
+.bg1 {background-color:var(--cor1);}
+.bg2 {background-color:var(--cor2);}
+#descricao {
+    background-image: url("../images/pattern-03.png");
+    background-color:var(--cor5);
+}
+#ofertarelampago {
+    background-image: url("../images/pattern-03.png");
+    background-color:var(--black);
+    color:var(--white);
+}
+.pac:hover {
+    background-color:var(--cor5);
+    border-radius:.5rem;
+    padding:.5rem;
+}
+#mainNav {
+    text-transform:uppercase;
+}
+#mainNav .navbar-nav li.nav-item {
+    text-align:right;
+}
+#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+    color:var(--cor2);
+}
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active,
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active:active,
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus,
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover{
+	color:var(--cor2);
+    background:transparent;
+}
+.navbar-shrink {background-color:var(--cor1)!important;}
+.navbar-brand {width:65%;}
+.showlogo {width:100%;max-width:180px;display:none;}
+.container-fluid {
+    padding-right:0;
+    padding-left:0;
+}
+.carousel-caption {
+    color:var(--cor2)!important;
+	right:10%;
+    bottom:8%;
+	left:10%;
+	padding-top:0;
+    padding-bottom:0;
+}
+.ccL1,
+.ccL2,
+.ccL3,
+.ccL4 {
+	width:100%;
+	display:inline-block;
+}
+.ccL1,
+.ccL2 {
+    font-family:'Belleza';
+	font-size:2.2rem;
+	line-height:2.2rem;
+	color:var(--white);
+	letter-spacing:1px;
+	text-shadow:1px 1px 1px rgba(70, 70, 70, 1);
+}
+.ccL2 {
+	font-size:1.8rem;
+	line-height:1.8rem;
+}
+.ccL3,
+.ccL4 {
+	max-width:670px;
+	margin:0 auto;
+	display:block;
+}
+.ccL3 {
+	margin-top: 15px;
+	text-align:right;
+}
+.banner {
+    width:100%;
+    height:900px;
+    background-position:center center;
+    animation:pulse 30s infinite;
+    -webkit-animation:pulse 30s infinite;
+}
+@media (max-width: 640px) {
+    .banner {height:740px;}
+}
+@media (max-width: 576px) {
+    .banner {height:676px;}
+}
+.banner1 {background-image:url("../images/banner-001-background-min.png")}
+.banner2 {background-image:url("../images/banner-002-background-min.png")}
+.banner3 {background-image:url("../images/banner-003-background-min.png")}
+.fotoHistoria001 {
+    width:100%;
+    height:auto;
+}
+.logo,
+.conceito {
+	width:100%;
+	max-width:670px;
+	height:auto;
+	padding-top:74%;
+	margin:auto;
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:contain;
+}
+.logo {
+    padding-top:50%;
+    background-image:url("../images/logo-min.png");
+}
+.conceito:after {
+    content:'.';
+    visibility: hidden;
+}
+.conceito1 {background-image:url("../images/banner-001-conceito-min.png")}
+.conceito2 {background-image:url("../images/banner-002-conceito-min.png")}
+.conceito3 {background-image:url("../images/banner-003-conceito-min.png")}
+.OnOverIcon,
+.OnOverIcon2 {
+    width:10rem;
+    height:10rem;
+    padding:0.25rem;
+    margin:1rem;
+    background-color:var(--white);
+    border:0.15rem solid var(--white);
+    border-radius:5rem;
+    display:inline-block;
+    cursor:pointer;
+    text-shadow:1px 1px 1px rgba(70, 70, 70, 1);
+}
+.OnOverIcon2 {
+    width:14rem;
+    height:14rem;
+    border-radius:.5rem;
+}
+.projeto001,
+.projeto002 {
+    background-image:url(../images/placeHolder.png);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+.projeto001 {background-image:url(../images/placeHolderOut.png);}
+.projeto001:hover {background-image:url(../images/placeHolderOver.png);}
+.projeto002 {background-image:url(../images/placeHolderOut.png);}
+.projeto002:hover {background-image:url(../images/placeHolderOver.png);}
+.projeto003 {background-image:url(../images/placeHolderOut.png);}
+.projeto003:hover {background-image:url(../images/placeHolderOver.png);}
+.projeto004 {background-image:url(../images/placeHolderOut.png);}
+.projeto004:hover {background-image:url(../images/placeHolderOver.png);}
+
+.proposta001 {background-image:url(../images/placeHolderOut.png);}
+.proposta001:hover {background-image:url(../images/placeHolderOver.png);}
+.proposta002 {background-image:url(../images/placeHolderOut.png);}
+.proposta002:hover {background-image:url(../images/placeHolderOver.png);}
+.proposta003 {background-image:url(../images/placeHolderOut.png);}
+.proposta003:hover {background-image:url(../images/placeHolderOver.png);}
+.proposta004 {background-image:url(../images/placeHolderOut.png);}
+.proposta004:hover {background-image:url(../images/placeHolderOver.png);}
+.proposta005 {background-image:url(../images/placeHolderOut.png);}
+.proposta005:hover {background-image:url(../images/placeHolderOver.png);}
+
+.cta {
+  position:relative;
+  margin: 0;
+  padding:17px 22px;
+  transition:all 0.2s ease;
+}
+.cta:before {
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  display:block;
+  border-radius:28px;
+  background:rgba(236, 239, 241, .5);
+  width:56px;
+  height:56px;
+  transition:all 0.3s ease;
+}
+.cta i {
+	position:relative;
+    top:-1px;
+    left:-12px;
+    font-size:1.5rem;
+    width:2rem;
+}
+.cta span {
+  position:relative;
+  font-family:'Belleza';
+  font-size:unset;
+  color:var(--cor2);
+  line-height: unset;
+  font-weight:unset;
+  letter-spacing:unset;
+  text-transform:unset;
+  vertical-align:middle;
+  text-shadow:1px 1px 1px rgba(70, 70, 70, 1);
+}
+.cta span:hover {
+  color:var(--white);
+}
+.cta:hover:before {
+  width:100%;
+  color:var(--white)!important;
+  background:var(--cor3);
+}
+.cta:hover svg {
+  transform:translateX(0);
+}
+.cta:active {
+  transform:scale(0.96);
+}
+.showMapa {
+	position:relative;
+	font-size:1rem;
+	color:var(--cor1);	
+	text-align:center;
+	margin:0 auto 10px auto;
+}
+.showMapa:hover {
+    color:var(--cor2);
+	text-shadow:1px 1px 1px rgba(70, 70, 70, 1);
+    animation:jump 3s infinite;
+}
+.showMapa i {
+    font-size:3rem;
+    margin:-10px auto;
+    display:block;
+}
+.fadeIn {
+	animation:fadeIn 3s;
+}
+.fadeOut {
+	animation:fadeOut 3s;
+}
+.divider-custom {
+	margin:0.1rem 0 2rem 0;
+}
+.divider-custom .divider-custom-line {
+    background-color:var(--cor1);
+    border-color:var(--cor1)!important;
+}
+.divider-custom .divider-custom-icon {
+	font-size:1rem;
+    color:var(--cor1)!important;
+}
+.modal-body {
+	padding:1rem 1rem;
+}
+.page-section-heading {
+    font-size:2rem!important;
+}
+.footer {
+	color:var(--cor1);
+    background-color:var(--cor2)!important;
+}
+.btn-outline-dark {
+	color:var(--cor1);
+    border-color:var(--cor1);
+}
+.btn-outline-dark:hover {
+    color:var(--cor2);
+    background-color:var(--cor1);
+    border-color:var(--cor1);
+}
+.copyright {
+    background-color:var(--cor1)!important;
+}
+@keyframes pulse {
+	0% {transform:scale(1);}
+	50% {transform:scale(1.1);}
+	100% {transform:scale(1);}
+}
+@keyframes jump {
+	0% {top:0;}
+	25% {top:30px;}
+	75% {top:-30px;}
+	100% { top: 0; }
+}
+@keyframes fadeIn {
+    from {opacity:0;}
+      to {opacity:1;}
+}
+@keyframes fadeOut {
+    from {opacity:1;}
+      to {opacity:0;}
+}
