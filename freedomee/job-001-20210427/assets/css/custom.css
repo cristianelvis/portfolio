@@ -45,8 +45,8 @@ i {font-style:normal}
 .paymentIco {width:3rem;margin:0 15px 0 0;}
 .bold {font-weight:bold;}
 .sx {font-size:1rem;color:var(--black)!important}
-.sx>a {font-size:1rem;color:var(--black)!important}
-.sx>a:hover {font-size:1rem;color:var(--cor5)!important}
+.sx>a {font-size:0.7rem;color:var(--black)!important}
+.sx>a:hover {font-size:0.9rem;color:var(--cor5)!important}
 .mx {font-size:1.2rem;}
 .bx {font-size:1.4rem;}
 .pt3 {padding-top:0.3rem;}
