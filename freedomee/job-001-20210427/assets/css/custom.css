@@ -121,6 +121,11 @@ i {font-style:normal}
     height:34px;
     border-radius:6px;
 }
+.modal-header,
+.modal-footer{
+    border-top: 0;
+    border-bottom: 0;
+}
 .fr,
 .text-right {
 	float:right;
