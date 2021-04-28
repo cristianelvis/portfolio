@@ -209,7 +209,9 @@ figure img {
 }
 
 /* Table Base */
-
+#listaCompra {
+    width: 1116px;
+}
 table {
   font-family: arial;
   max-width: 100%;
@@ -268,19 +270,4 @@ table {
 }
 .table>:not(:last-child)>:last-child>* {
     border-bottom-color: #e0e0e0;
-}
-/* Small Sizes */
-@media (max-width: 480px) { 
-  .table-action thead {
-    display: none;
-  }
-  .table-action tr {
-    border-bottom: 1px solid #dddddd;
-  }
-  .table-action td {
-    border: 0;
-  }
-  .table-action td:not(:first-child) {
-    display: block;
-  }
 }
