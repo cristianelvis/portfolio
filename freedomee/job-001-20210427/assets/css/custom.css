@@ -51,10 +51,13 @@ i {font-style:normal}
     width:20rem;
     margin:0 0 0 -21px;
 }
+.dc{
+    display: contents;
+}
 .paymentIco {width:3rem;margin:0 15px 0 0;}
 .bold {font-weight:bold;}
 .sx {font-size:1rem;color:var(--black)!important}
-.sx>a {font-size:0.7rem;font-weight:bold;color:var(--black)!important}
+.sx>a {font-size:0.7rem;font-weight:bold;color:var(--black)!important;margin:0 0 0 5px;}
 .sx>a:hover {font-size:0.9rem;color:var(--cor5)!important}
 .mx {font-size:1.2rem;}
 .bx {font-size:1.4rem;}
@@ -203,4 +206,81 @@ figure img {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+}
+
+/* Table Base */
+
+table {
+  font-family: arial;
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table { 
+  background: #FFFFFF;
+  width: 100%;
+  margin-bottom: 60px;
+  margin-top: 40px;
+}
+
+.table th,
+.table td {
+  font-weight: normal;
+  font-size: 12px;
+  padding: 12px 15px;
+  line-height: 20px;
+  text-align: left;
+  vertical-align: middle;
+  border: 1px solid #e0e0e0;
+  height: 50px;
+}
+.table thead th {
+  vertical-align: bottom;
+  text-align: center;
+  font-size: 13px;
+  color: #000000;
+  font-weight: bold;
+} 
+.table td{
+  height: 50px;
+  text-align: center;
+}
+.table-produto{
+  text-align: initial;
+  display: flex;
+  align-items: center;
+}
+.table-produto p{
+  padding-left: 20px;
+  color: #000000;
+  font-weight: bold;
+} 
+.table .t-small {
+  width: 5%;
+}
+.table .t-medium {
+  width: 15%;
+}
+.table .t-big {
+  width: 25%;
+}
+.table>:not(:last-child)>:last-child>* {
+    border-bottom-color: #e0e0e0;
+}
+/* Small Sizes */
+@media (max-width: 480px) { 
+  .table-action thead {
+    display: none;
+  }
+  .table-action tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  .table-action td {
+    border: 0;
+  }
+  .table-action td:not(:first-child) {
+    display: block;
+  }
 }
