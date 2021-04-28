@@ -1,0 +1,145 @@
+/*!
+ * Cristian Elvis - v1.0 (http://cristianelvis.com)
+ * Copyright 2021 Cristian Elvis
+ */
+:root {
+	--cor1:#000000;
+	--cor2:#000000;
+	--cor3:#cccccc;
+	--cor4:#ebc850;
+	--cor5:#b89ad6;
+    --cor6:#a48cbb;
+    --cor7:#f9f9f9;
+    --red:red;
+	--white:white;
+	--black:black;
+}
+body {
+    width:100%;
+    font-family:'Quicksand';
+    font-size:calc(0.75rem + 1vmin);
+    line-height:calc(1rem + 1vmin);
+    font-weight:400;
+    color:var(--black);
+    background-color:var(--cor7);
+}
+p {color:var(--black);}
+.h2, h2 {
+    font-size:1.4rem;
+    color:unset;
+}
+i {font-style:normal}
+#sectionOne {
+    position:relative;
+    top:4.6rem;
+}
+.row {--bs-gutter-x:0;}
+.flower {
+    width:21px;
+    margin:0 10px 0 0;
+}
+.flowerP {
+    width:20rem;
+    margin:0 0 0 -21px;
+}
+.paymentIco {width:3rem;margin:0 15px 0 0;}
+.bold {font-weight:bold;}
+.sx {font-size:1rem;color:var(--black)!important}
+.mx {font-size:1.2rem;}
+.bx {font-size:1.4rem;}
+.pt5 {padding-top:0.5rem;}
+.pt8 {padding-top:0.8rem;}
+.pt15 {padding-top:1.5rem;}
+.pt20 {padding-top:2rem;}
+.pt25 {padding-top:2.5rem;}
+.pt30 {padding-top:3rem;}
+.pb5 {padding-top:0.5rem;}
+.star {width:65%;margin:0 auto;}
+.star i {
+    flex-shrink:unset;
+    width:unset;
+    max-width:unset;
+    padding-right:unset;
+    padding-left:unset;
+    margin-top:unset;
+    margin:0 auto;
+    color:var(--cor4);
+}
+.pt30 i {
+    flex-shrink:unset;
+    width:unset;
+    max-width:unset;
+    padding-right:unset;
+    padding-left:unset;
+    margin-top:unset;
+    color:var(--black);
+}
+.input-group{padding:0;}
+.fc2 {width:94%;}
+.btn-primary{color:var(--white);background-color:var(--cor5);border-color:var(--cor5)}
+.btn-primary:hover{color:var(--white);background-color:var(--cor6);border-color:var(--cor6)}
+.btn-dark{color:var(--white);background-color:var(--black);border-color:var(--black)}
+.navbar {
+    padding-top:1rem;
+    padding-bottom:1rem;
+}
+.bg-dark {
+    background:#0e1726;
+}
+.navbar .nav-logo a.navbar-brand .navbar-brand-name {
+    font-size:24px!important;
+    color:#e0e6ed!important;
+    padding:0.8rem;
+    font-weight:700;
+    margin-right:47px;
+    margin-top:10px;
+}
+.navbar .nav-logo a.navbar-brand img {
+    vertical-align:top;
+    width:34px;
+    height:34px;
+    border-radius:6px;
+}
+.text-right {
+	float:right;
+}
+.nav-tabs .nav-link {
+    font-size:1rem;
+    border:2px solid transparent;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    font-size:1rem;
+    font-weight:bold;
+    color:var(--black);
+    background-color:transparent;
+    border-color:transparent transparent black transparent;
+}
+.detalhes,
+.comentarios {
+    padding: 1rem 0.5rem;
+}
+.comentarios {
+    font-size: 1rem;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    width: 94%;
+    height: fit-content;
+    background-color: var(--cor3);
+    border-radius: 10px;
+}
+.comentPic {
+    width: 60px;
+    Height: auto;
+    margin: 20px 0 0 0;
+}
+.comentStar {
+    position: relative;
+    top: 25px;
+    right: 10px;
+    width: 40%;
+    margin: 0 auto;
+    text-align: right;
+    float: right;
+}
