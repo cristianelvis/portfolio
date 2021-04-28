@@ -45,8 +45,11 @@ i {font-style:normal}
 .paymentIco {width:3rem;margin:0 15px 0 0;}
 .bold {font-weight:bold;}
 .sx {font-size:1rem;color:var(--black)!important}
+.sx>a {font-size:1rem;color:var(--black)!important}
+.sx>a:hover {font-size:1rem;color:var(--cor5)!important}
 .mx {font-size:1.2rem;}
 .bx {font-size:1.4rem;}
+.pt3 {padding-top:0.3rem;}
 .pt5 {padding-top:0.5rem;}
 .pt8 {padding-top:0.8rem;}
 .pt15 {padding-top:1.5rem;}
@@ -78,6 +81,10 @@ i {font-style:normal}
 .fc2 {width:94%;}
 .btn-primary{color:var(--white);background-color:var(--cor5);border-color:var(--cor5)}
 .btn-primary:hover{color:var(--white);background-color:var(--cor6);border-color:var(--cor6)}
+
+.btn-secondary{color:var(--black);background-color:var(--cor3);border-color:var(--cor3)}
+.btn-secondary:hover{color:var(--black);background-color:var(--cor7);border-color:var(--cor7)}
+
 .btn-dark{color:var(--white);background-color:var(--black);border-color:var(--black)}
 .navbar {
     padding-top:1rem;
@@ -87,6 +94,8 @@ i {font-style:normal}
     background:#0e1726;
 }
 .navbar .nav-logo a.navbar-brand .navbar-brand-name {
+    position: relative;
+    top: 4px;
     font-size:24px!important;
     color:#e0e6ed!important;
     padding:0.8rem;
