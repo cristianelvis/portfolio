@@ -23,6 +23,9 @@ body {
     color:var(--black);
     background-color:var(--cor7);
 }
+.text-left {
+    text-align: left;
+}
 p {color:var(--black);}
 .h2, h2 {
     font-size:1.4rem;
@@ -146,10 +149,12 @@ i {font-style:normal}
     border-color:transparent transparent black transparent;
 }
 .detalhes,
-.comentarios {
+.comentarios,
+.comentarios2 {
     padding: 1rem 0.5rem;
 }
-.comentarios {
+.comentarios,
+.comentarios2 {
     font-size: 1rem;
     position: relative;
     top: 20px;
@@ -158,6 +163,11 @@ i {font-style:normal}
     height: fit-content;
     background-color: var(--cor3);
     border-radius: 10px;
+}
+.comentarios2 {
+    position: unset;
+    width: 90%;
+    margin: 20px 0 0 10px;
 }
 .comentPic {
     width: 60px;
@@ -209,24 +219,22 @@ figure img {
 }
 
 /* Table Base */
-#listaCompra {
+#listaCompra,
+#listaQuantidadeCompra {
     width: 1116px;
 }
 table {
-  font-family: arial;
   max-width: 100%;
   background-color: transparent;
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 .table { 
-  background: #FFFFFF;
+  background: #ffffff;
   width: 100%;
   margin-bottom: 60px;
   margin-top: 40px;
 }
-
 .table th,
 .table td {
   font-weight: normal;
@@ -270,4 +278,72 @@ table {
 }
 .table>:not(:last-child)>:last-child>* {
     border-bottom-color: #e0e0e0;
+}
+.spacing-table {
+  border-collapse: separate;
+  table-layout: fixed;
+  background-color:transparent;
+}
+.spacing-table tr {
+  background-color:#ffffff;
+  box-shadow: 3px 3px 3px 0 rgba(0,0,0,0.15);
+  -webkit-box-shadow: 3px 3px 3px 0 rgba(0,0,0,0.15);
+  -moz-box-shadow: 3px 3px 3px 0 rgba(0,0,0,0.15);
+}
+.spacing-table td {
+  border-width: 1px 0;
+}
+.spacing-table td:first-child {
+  border-left-width: 1px;
+  border-radius: 5px 0 0 5px;
+}
+.spacing-table td:last-child {
+  border-right-width: 1px;
+  border-radius: 0 5px 5px 0;
+}
+.spacing-table thead {
+  display: table;
+  table-layout: fixed;
+}
+.spacing-table tbody {
+  display: table;
+  table-layout: fixed;
+  border-spacing: 0 15px;
+}
+.spacing-table .t-small {
+  width: 5%;
+}
+.spacing-table .t-medium {
+  width: 20%;
+}
+.spacing-table .t-large {
+  width: 25%;
+}
+.spacing-table .t-big {
+  width: 50%;
+}
+.spacing-table .t-small img {
+  width:60px;
+  height:60px;
+}
+.spacing-table .t-small p,
+.spacing-table .t-medium p,
+.spacing-table .t-large p,
+.spacing-table .t-big p {
+    width:100%;
+    text-align: left;
+    margin:0 0 5px 0;
+}
+.spacing-table .t-medium button {
+    width:100%;
+    margin:0 0 10px 0;
+}
+.spacing-table .t-large i {
+    color:red;
+}
+.spacing-table .t-small a,
+.spacing-table .t-medium a,
+.spacing-table .t-large a,
+.spacing-table .t-big a {
+    text-decoration: none;
 }
