@@ -183,6 +183,9 @@ i {font-style:normal}
     text-align: right;
     float: right;
 }
+.clientComent {
+    background-color: var(--cor5);
+}
 figure img {
 	width:800px;
 }
