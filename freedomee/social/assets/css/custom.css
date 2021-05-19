@@ -23,12 +23,23 @@
 #uniaoTabs.nav-tabs>li>a,
 #uniaoTabs.nav-tabs>li>a:focus,
 #uniaoTabs.nav-tabs>li>a:hover {
-    color: black;
+    color:black;
     border-bottom:0;
-    background-color:red;
+    background-color:transparent;
     height:15rem;
+    border-radius:10px;
 }
 #uniaoTabs li a img {
     width:12rem;
     margin:0 auto;
 }
+#economia-tab {background-color:#fdfe00!important;}
+#economia-tab:hover {background-color:#b1b200!important;}
+#humano-tab {background-color:#ff3658!important;}
+#humano-tab:hover {background-color:#b2263e!important;}
+#antropico-tab {background-color:#13c2a5!important;}
+#antropico-tab:hover {background-color:#0d8873!important;}
+#tecnologia-tab {background-color:#7396d8!important;}
+#tecnologia-tab:hover {background-color:#506997!important;}
+#qualidade-tab {background-color:#cb98fd!important;}
+#qualidade-tab:hover {background-color:#8e6ab1!important;}
