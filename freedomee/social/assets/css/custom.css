@@ -11,11 +11,22 @@
     height:210px;
 }
 #uniaoTabs.nav {
-    width:90%;
-    margin:0 auto 12rem auto;
+    width:80%;
+    margin:0 auto;
 }
 #uniaoTabs.nav-tabs>li {
     width:20%;
+}
+#uniaoTabs.nav-tabs>li.active>a,
+#uniaoTabs.nav-tabs>li.active>a:focus,
+#uniaoTabs.nav-tabs>li.active>a:hover,
+#uniaoTabs.nav-tabs>li>a,
+#uniaoTabs.nav-tabs>li>a:focus,
+#uniaoTabs.nav-tabs>li>a:hover {
+    color: black;
+    border-bottom:0;
+    background-color:red;
+    height:15rem;
 }
 #uniaoTabs li a img {
     width:12rem;
