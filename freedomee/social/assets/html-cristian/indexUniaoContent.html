@@ -14,16 +14,44 @@
             <div class="col-md-10 col-md-offset-1 page-margin wow_content">
                 <div class="wo_page_hdng pag_neg_padd pag_alone">
                     <div class="wo_page_hdng_menu">
-                        <ul class="list-unstyled">
-                            <li class="active"><a href="#">Sobre</a></li>
-                            <li class=""><a href="#">Grupos</a></li>
-                            <li class=""><a href="#">Empresas</a></li>
-                            <li class=""><a href="#">Educação</a></li>
-                            <li class=""><a href="#">Investimento coletivo</a></li>
-                            <li class=""><a href="#">Usuários</a></li>
-                            <li class=""><a href="#">Posts</a></li>
+                        <ul class="nav nav-tabs list-unstyled" role="tablist" id="uniaoTabs">
+                            <li role="presentation" class="active"><a href="sobre" role="tab" data-toggle="tab" aria-controls="sobre" id="sobre-tab" aria-expanded="true">Sobre</a></li>
+                            <li role="presentation" class=""><a href="#grupos" role="tab" data-toggle="tab" aria-controls="grupos" id="grupos-tab" aria-expanded="false">Grupos</a></li>
+                            <li role="presentation" class=""><a href="#empresas" role="tab" data-toggle="tab" aria-controls="empresas" id="empresas-tab" aria-expanded="false">Empresas</a></li>
+                            <li role="presentation" class=""><a href="#educacao" role="tab" data-toggle="tab" aria-controls="educacao" id="educacao-tab" aria-expanded="false">Educação</a></li>
+                            <li role="presentation" class=""><a href="#investimentocoletivo" role="tab" data-toggle="tab" aria-controls="investimentocoletivo" id="investimentocoletivo-tab">Investimento coletivo</a></li>
+                            <li role="presentation" class=""><a href="#usuarios" role="tab" data-toggle="tab" aria-controls="usuarios" id="usuarios-tab" aria-expanded="false">Usuários</a></li>
+                            <li role="presentation" class=""><a href="#posts" role="tab" data-toggle="tab" aria-controls="posts" id="posts-tab" aria-expanded="false">Posts</a></li>
                         </ul>
                         <a class="btn btn-main btn-mat btn-mat-raised" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path></svg> Criar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 page-margin wow_content">
+                <div id="uniaoTabContent" class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade active in" id="sobre" aria-labelledby="sobre-tab">
+                      <p>Texto Sobre...</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="grupos" aria-labelledby="grupos-tab">
+                      <p>Texto Grupos...</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="empresas" aria-labelledby="empresas-tab">
+                      <p>Texto Empresas...</p>
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane fade" id="educacao" aria-labelledby="educacao-tab">
+                      <p>Texto Educação...</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="investimentocoletivo" aria-labelledby="investimentocoletivo-tab">
+                      <p>Texto Investimento coletivo...</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="usuarios" aria-labelledby="usuarios-tab">
+                      <p>Texto Usuários...</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="posts" aria-labelledby="posts-tab">
+                      <p>Texto Posts...</p>
                     </div>
                 </div>
             </div>
