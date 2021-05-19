@@ -10,3 +10,9 @@
 .ht-210 {
     height:210px;
 }
+#uniaoTabs li a img {
+    width:12rem;
+    height:auto;
+    margin:0 auto;
+    display:flex;
+}
