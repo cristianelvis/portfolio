@@ -754,22 +754,313 @@
           <div class="btn btn-main btn-active posts-count" onclick="Wo_GetNewPosts();"></div>
           <div class="posts_load">
             <div id="posts-laoded">
-              <div class="wo_loading_post">
-                <div class="lightui1-shimmer">
-                  <div class="_2iwr"></div>
-                  <div class="_2iws"></div>
-                  <div class="_2iwt"></div>
-                  <div class="_2iwu"></div>
-                  <div class="_2iwv"></div>
-                  <div class="_2iww"></div>
-                  <div class="_2iwx"></div>
-                  <div class="_2iwy"></div>
-                  <div class="_2iwz"></div>
-                  <div class="_2iw-"></div>
-                  <div class="_2iw_"></div>
-                  <div class="_2ix0"></div>
+              <div id="posts">
+                <div class="post-container">
+                  <div class="post" id="post-163" data-post-id="163" data-post-type="">
+                    <div class="panel panel-white panel-shadow">
+                      <div class="post-heading">
+                        <div class="pull-left image"> <a href="https://social.freedomee.social/cristianelvis" data-ajax="?link1=timeline&amp;u=cristianelvis" class="avatar wow_post_usr_ava "> <img src="https://social.freedomee.social/upload/photos/2021/05/Y9bHg4hmVuIjozwCR8GX_18_699dc1a996fbff57a7648f459158649d_avatar.jpg?cache=0" id="updateImage-81" alt="Cristian Elvis profile picture"> </a> </div>
+                        <div class="pull-right"> <span class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                          </svg>
+                          </a>
+                          <ul class="dropdown-menu post-privacy-menu post-options" role="menu">
+                            <li>
+                              <div class="pointer" onclick="Wo_OpenPostEditBox(163);"> Editar Post </div>
+                            </li>
+                            <li>
+                              <div class="pointer" onclick="Wo_OpenPostDeleteBox(163);"> Deletar Post </div>
+                            </li>
+                            <li>
+                              <div class="pointer disable-comments" onclick="Wo_DisableComment(163, 1);"> Desativar comentários </div>
+                            </li>
+                            <li>
+                              <hr>
+                            </li>
+                            <li> <a href="https://social.freedomee.social/post/163" target="_blank"> Abrir post em uma nova aba </a> </li>
+                            <li>
+                              <hr>
+                            </li>
+                            <li>
+                              <div class="pin-post pointer" onclick="Wo_PinPost(163, 81, 'profile');"> Fixar post </div>
+                            </li>
+                          </ul>
+                          </span> </div>
+                        <div class="meta">
+                          <div class="title h5"> <span class="user-popover" data-type="user" data-id="81"> <a href="https://social.freedomee.social/cristianelvis" data-ajax="?link1=timeline&amp;u=cristianelvis"><b>Cristian Elvis</b></a> </span> <small class="small-text"> Mudou sua imagem de perfil </small> </div>
+                          <h6> <span class="time"> <a style="color:#9197a3" class="ajax-time" href="https://social.freedomee.social/post/163" title="24 horas atrás" target="_blank">24 horas atras</a> </span> <span class="dropdown wo_post_privacy_menu" style="color:#9197a3"> <span class="dropdown-toggle pointer" data-toggle="dropdown" role="button" aria-expanded="false"> <span class="pointer post-privacy" style="color:#9197a3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe" data-toggle="tooltip" title="" data-original-title="Todos">
+                              <circle cx="12" cy="12" r="10"></circle>
+                              <line x1="2" y1="12" x2="22" y2="12"></line>
+                              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                            </svg>
+                            </span> <span class="caret" style="color:#9197a3"></span> </span>
+                            <ul class="dropdown-menu post-privacy-menu post-options" role="menu">
+                              <li>
+                                <div class="pointer" onclick="Wo_UpdatePostPrivacy(163,3,event);">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                  </svg>
+                                  apenas eu </div>
+                              </li>
+                              <li>
+                                <div class="pointer" onclick="Wo_UpdatePostPrivacy(163,0,event);">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                  </svg>
+                                  Todos </div>
+                              </li>
+                              <li>
+                                <div class="pointer" onclick="Wo_UpdatePostPrivacy(163,1,event);">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                  </svg>
+                                  Amigos </div>
+                              </li>
+                              <li>
+                                <div class="pointer" onclick="Wo_UpdatePostPrivacy(163,4,event);">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="feather" data-toggle="tooltip" title="" data-original-title="Anônimo">
+                                    <path fill="currentColor" d="M12,3C9.31,3 7.41,4.22 7.41,4.22L6,9H18L16.59,4.22C16.59,4.22 14.69,3 12,3M12,11C9.27,11 5.39,11.54 5.13,11.59C4.09,11.87 3.25,12.15 2.59,12.41C1.58,12.75 1,13 1,13H23C23,13 22.42,12.75 21.41,12.41C20.75,12.15 19.89,11.87 18.84,11.59C18.84,11.59 14.82,11 12,11M7.5,14A3.5,3.5 0 0,0 4,17.5A3.5,3.5 0 0,0 7.5,21A3.5,3.5 0 0,0 11,17.5C11,17.34 11,17.18 10.97,17.03C11.29,16.96 11.63,16.9 12,16.91C12.37,16.91 12.71,16.96 13.03,17.03C13,17.18 13,17.34 13,17.5A3.5,3.5 0 0,0 16.5,21A3.5,3.5 0 0,0 20,17.5A3.5,3.5 0 0,0 16.5,14C15.03,14 13.77,14.9 13.25,16.19C12.93,16.09 12.55,16 12,16C11.45,16 11.07,16.09 10.75,16.19C10.23,14.9 8.97,14 7.5,14M7.5,15A2.5,2.5 0 0,1 10,17.5A2.5,2.5 0 0,1 7.5,20A2.5,2.5 0 0,1 5,17.5A2.5,2.5 0 0,1 7.5,15M16.5,15A2.5,2.5 0 0,1 19,17.5A2.5,2.5 0 0,1 16.5,20A2.5,2.5 0 0,1 14,17.5A2.5,2.5 0 0,1 16.5,15Z"></path>
+                                  </svg>
+                                  Anônimo </div>
+                              </li>
+                            </ul>
+                            </span> </h6>
+                        </div>
+                      </div>
+                      <div class="post-description" id="post-description-163">
+                        <p dir="auto" style="max-height: none;"><span data-translate-text="163"> </span></p>
+                        <div class="post-file wo_shared_doc_file" id="fullsizeimg"> <img src="https://social.freedomee.social/upload/photos/2021/05/Y9bHg4hmVuIjozwCR8GX_18_699dc1a996fbff57a7648f459158649d_avatar_full.jpg" alt="image" class="image-file pointer" onclick="Wo_OpenLightBox(163);"> </div>
+                        <div id="fullsizeimg" style="position: relative;">
+                          <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="stats post-actions pull-left" id="active_react">
+                          <div class="like-stat stat-item post-like-status"> <span class="like-emo post-reactions-icons-163"> </span> </div>
+                        </div>
+                        <div class="stats post-actions pull-right">
+                          <div class="btn btn-default stat-item" title="Comentários" onclick="Wo_ShowComments(163);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle">
+                              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                            </svg>
+                            <span id="comments"> 0 </span> </div>
+                        </div>
+                        <div class="clear"></div>
+                        <hr>
+                        <div class="stats pull-left" id="wo_post_stat_button">
+                          <div class="wo-reaction wo-reaction-post stat-item unselectable" data-id="163"><span class="like-btn like-btn-post unselectable" data-id="163" id="react_163" data_react="0" data-reaction-id="1" data-reaction="Like" data-reaction-lang="Curtir" data-post-id="163" onclick="Wo_RegisterReactionLike(this,'',1);"><span class="status-reaction-163 unselectable">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-up">
+                              <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                            </svg>
+                            <span class="t_likes163"></span> Curtir</span></span>
+                            <ul class="reactions-box reactions-box-container-163" data-id="163" style=" right: auto; ">
+                              <li class="reaction reaction-1" data-reaction="Curtir" data-reaction-id="1" data-reaction-lang="Curtir" data-post-id="163" onclick="Wo_RegisterReaction(this,'',1);">
+                                <div class="emoji emoji--like">
+                                  <div class="emoji__hand">
+                                    <div class="emoji__thumb"></div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="reaction reaction-2" data-reaction="Ame" data-reaction-id="2" data-reaction-lang="Ame" data-post-id="163" onclick="Wo_RegisterReaction(this,'',1);">
+                                <div class="emoji emoji--love">
+                                  <div class="emoji__heart"></div>
+                                </div>
+                              </li>
+                              <li class="reaction reaction-3" data-reaction="HaHa" data-reaction-id="3" data-reaction-lang="HaHa" data-post-id="163" onclick="Wo_RegisterReaction(this,'',1);">
+                                <div class="emoji emoji--haha">
+                                  <div class="emoji__face">
+                                    <div class="emoji__eyes"></div>
+                                    <div class="emoji__mouth">
+                                      <div class="emoji__tongue"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="reaction reaction-4" data-reaction="Uau" data-reaction-id="4" data-reaction-lang="Uau" data-post-id="163" onclick="Wo_RegisterReaction(this,'',1);">
+                                <div class="emoji emoji--wow">
+                                  <div class="emoji__face">
+                                    <div class="emoji__eyebrows"></div>
+                                    <div class="emoji__eyes"></div>
+                                    <div class="emoji__mouth"></div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="reaction reaction-5" data-reaction="Triste" data-reaction-id="5" data-reaction-lang="Triste" data-post-id="163" onclick="Wo_RegisterReaction(this,'',1);">
+                                <div class="emoji emoji--sad">
+                                  <div class="emoji__face">
+                                    <div class="emoji__eyebrows"></div>
+                                    <div class="emoji__eyes"></div>
+                                    <div class="emoji__mouth"></div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="reaction reaction-6" data-reaction="Bravo" data-reaction-id="6" data-reaction-lang="Bravo" data-post-id="163" onclick="Wo_RegisterReaction(this,'',1);">
+                                <div class="emoji emoji--angry">
+                                  <div class="emoji__face">
+                                    <div class="emoji__eyebrows"></div>
+                                    <div class="emoji__eyes"></div>
+                                    <div class="emoji__mouth"></div>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="btn btn-default stat-item" onclick="Wo_ShowComments(163);" title="Comentários">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle">
+                              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                            </svg>
+                            <span class="like-btn-mobile">Comentario</span> </div>
+                          <div class="btn btn-default stat-item" title="Compartilhar" onclick="Wo_SharePostOn(163,81,'timeline')">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share-2">
+                              <circle cx="18" cy="5" r="3"></circle>
+                              <circle cx="6" cy="12" r="3"></circle>
+                              <circle cx="18" cy="19" r="3"></circle>
+                              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                              <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                            </svg>
+                            <span class="like-btn-mobile">Compartilhar</span> </div>
+                        </div>
+                        <div class="clear"></div>
+                      </div>
+                      <div class="post-footer post-likes"></div>
+                      <div class="clear"></div>
+                      <div class="post-footer post-wonders"></div>
+                      <div class="clear"></div>
+                      <div class="post-footer post-shared"></div>
+                      <div class="clear"></div>
+                      <div class="post-footer post-reacted"></div>
+                      <div class="clear"></div>
+                      <div class="post-footer post-comments " id="post-comments-163">
+                        <div id="hidden_inputbox_comment"></div>
+                        <div class="comments-list"> <span class="comment-container"></span> </div>
+                        <div class="post-commet-textarea dropdown">
+                          <div id="wo_comment_combo" class="remove_combo_on_click wo_comment_combo_163" onclick="Wo_ShowCommentCombo(163);">
+                            <div style="display: flex;"> <img class="avatar" src="https://social.freedomee.social/upload/photos/2021/05/Y9bHg4hmVuIjozwCR8GX_18_699dc1a996fbff57a7648f459158649d_avatar.jpg?cache=0">
+                              <textarea class="form-control comment-textarea textarea ui-autocomplete-input" placeholder="Escreva um comentário e dê enter" type="text" onkeyup="Wo_LiveComment(this.value,event,163);Wo_RegisterComment(this.value,163,81, event, 0);" onkeydown="textAreaAdjust(this, 31,'comm'); " dir="auto" oninput="count_char(this,163)" autocomplete="off"></textarea>
+                            </div>
+                            <div class="comment_combo_footer">
+                              <div class="ball-pulse">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                              </div>
+                              <div class="wo_comment_fopt">
+                                <div class="pull-right">
+                                  <button type="button" onclick="Wo_LiveComment(this.value,event,163,1);Wo_RegisterComment2(163,81, 0)" class="btn btn-file" title="Post">
+                                  <svg fill="#009da0" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" class="feather feather-user-plus">
+                                    <path d="M3.741 1.408l18.462 10.154a.5.5 0 0 1 0 .876L3.741 22.592A.5.5 0 0 1 3 22.154V1.846a.5.5 0 0 1 .741-.438zM5 13v6.617L18.85 12 5 4.383V11h5v2H5z"></path>
+                                  </svg>
+                                  </button>
+                                </div>
+                                <div class="pull-left charsLeft-post"><span id="charsLeft_163" data_num="640"> 640 </span></div>
+                                <span data-toggle="dropdown" role="button" aria-expanded="false" style="text-decoration: none;cursor: pointer;" onclick="load_ajax_emojii('163','https://social.freedomee.social/themes/wowonder/emoji/');" class="emo-comment2"> <span class="btn btn-file">
+                                <svg fill="#009da0" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" class="feather feather-user-plus">
+                                  <path d="M0 0h24v24H0z" fill="none"></path>
+                                  <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"></path>
+                                </svg>
+                                </span> </span>
+                                <ul class="dropdown-menu dropdown-menu-right emo-comment-container-163" id="wo_comm_emojis">
+                                </ul>
+                                <div class="image-comment">
+                                  <form action="#" method="post" class="hidden">
+                                    <input accept="image/x-png, image/jpeg" type="file" name="comment_image" id="comment_image_163" onchange="Wo_UploadCommentImage(163);">
+                                    <input type="hidden" value="" id="comment_src_image">
+                                  </form>
+                                  <div class="comment-btn-wrapper"> <span class="btn btn-file btn-upload-comment">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-image" color="#009da0" onclick="document.getElementById('comment_image_163').click(); return false">
+                                      <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                      <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                      <polyline points="21 15 16 10 5 21"></polyline>
+                                    </svg>
+                                    </span>
+                                    <div> <span data-record="0" class="btn record-comment-audio" id="163">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mic" color="#009da0">
+                                        <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                                        <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                                        <line x1="12" y1="19" x2="12" y2="23"></line>
+                                        <line x1="8" y1="23" x2="16" y2="23"></line>
+                                      </svg>
+                                      </span> <span class="hidden" data-comment-rtime="163">00:00</span> </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="comment-image" class="hidden comment-image-con"></div>
+                      </div>
+                      <div class="modal fade" id="edit-post" role="dialog">
+                        <div class="modal-dialog modal-md wow_mat_mdl">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                              </svg>
+                              </span></button>
+                              <h4 class="modal-title">Editar Post</h4>
+                            </div>
+                            <div class="modal-body edit-textarea-163" style="padding:0;">
+                              <textarea class="form-control" style="padding: 10px; border-radius: 0" placeholder="Editar Post" dir="auto" rows="5" onkeyup="Wo_Get_Mention(this)"></textarea>
+                            </div>
+                            <div class="modal-footer" style="border: none">
+                              <div class="ball-pulse">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                              </div>
+                              <button type="button" class="btn main btn-mat" id="edit-post-button" onclick="Wo_EditPost(163)">Atualizar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal fade" id="delete-post" role="dialog">
+                        <div class="modal-dialog modal-sm wow_mat_mdl">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                              </svg>
+                              </span></button>
+                              <h4 class="modal-title">Deletar Post</h4>
+                            </div>
+                            <div class="modal-body">
+                              <p>Deletar post ?</p>
+                            </div>
+                            <div class="modal-footer">
+                              <div class="ball-pulse">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                              </div>
+                              <button id="delete-all-post" type="button" onclick="Wo_DeletePost(163);" class="btn main btn-mat">Deletar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
+                <script type="text/javascript">$(function () {	$("#post-163 .post-description p, .product-description").readmore({ speed: 75, moreLink: '<a href="#" class="hash">Ler mais</a>', lessLink: '<a href="#" class="hash">Ler menos</a>' }); $("#post-163 .textarea").triggeredAutocomplete({ hidden: '#hidden_inputbox_comment', source: Wo_Ajax_Requests_File() + "?f=mention", trigger: "@" }); $('[data-toggle="tooltip"]').tooltip(); $('.dropdown-menu.post-recipient, .dropdown-menu.post-options, .wo_emoji_post').click(function (e) { e.stopPropagation(); });
+});
+jQuery(document).click(function(event){ if (!(jQuery(event.target).closest(".remove_combo_on_click").length)) { jQuery('.remove_combo_on_click').removeClass('comment-toggle'); }
+});</script> </div>
+              <div class="load-more pointer" id="load-more-posts" onclick="Wo_GetMorePosts();"><span class="btn btn-default"><i class="fa fa-chevron-circle-down progress-icon" data-icon="chevron-circle-down"></i> &nbsp;Carregar mais posts</span></div>
+              <div id="load-more-filter"><span class="filter-by-more hidden" data-filter-by="all"></span></div>
+            </div>
+          </div>
+          <div class="posts_load">
+            <div id="posts-laoded">
               <div class="wo_loading_post">
                 <div class="lightui1-shimmer">
                   <div class="_2iwr"></div>
