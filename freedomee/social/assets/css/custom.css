@@ -11,11 +11,10 @@
     height:210px;
 }
 #uniaoTabs.nav {
-    width:80%;
+    width:816px;
     margin:0 auto;
 }
 #uniaoTabs.nav-tabs {
-    width:816px;
     border-bottom:0;
     margin-bottom:3rem;
 }
