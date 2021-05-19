@@ -17,17 +17,22 @@
 #uniaoTabs.nav-tabs>li {
     width:20%;
 }
-#uniaoTabs.nav-tabs>li.active>a,
-#uniaoTabs.nav-tabs>li.active>a:focus,
-#uniaoTabs.nav-tabs>li.active>a:hover,
 #uniaoTabs.nav-tabs>li>a,
 #uniaoTabs.nav-tabs>li>a:focus,
-#uniaoTabs.nav-tabs>li>a:hover {
+#uniaoTabs.nav-tabs>li>a:hover,
+#uniaoTabs.nav-tabs>li.active>a,
+#uniaoTabs.nav-tabs>li.active>a:focus,
+#uniaoTabs.nav-tabs>li.active>a:hover {
     color:black;
     border-bottom:0;
     background-color:transparent;
     height:15rem;
     border-radius:10px;
+}
+#uniaoTabs.nav-tabs>li.active>a,
+#uniaoTabs.nav-tabs>li.active>a:focus,
+#uniaoTabs.nav-tabs>li.active>a:hover {
+    font-weight:bold;
 }
 #uniaoTabs li a img {
     width:12rem;
