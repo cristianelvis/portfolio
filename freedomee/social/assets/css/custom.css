@@ -10,9 +10,14 @@
 .ht-210 {
     height:210px;
 }
+#uniaoTabs.nav {
+    width:90%;
+    margin:0 auto 12rem auto;
+}
+#uniaoTabs.nav-tabs>li {
+    width:20%;
+}
 #uniaoTabs li a img {
     width:12rem;
-    height:auto;
     margin:0 auto;
-    display:flex;
 }
