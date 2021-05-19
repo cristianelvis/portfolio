@@ -15,9 +15,11 @@
     margin:0 auto;
 }
 #uniaoTabs.nav-tabs {
+    width:816px;
     border-bottom:0;
     margin-bottom:3rem;
 }
+.nav-tabs-responsive {overflow:auto;}
 #uniaoTabs.nav-tabs>li {
     width:18%;
     margin-left:8px;
