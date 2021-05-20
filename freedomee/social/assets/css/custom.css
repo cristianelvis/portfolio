@@ -4,6 +4,7 @@
  */
 .bg-light {
     background-color:ffffff;
+    background:unset;
 }
 .banner {
     width:100%;
