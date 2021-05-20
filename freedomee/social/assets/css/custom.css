@@ -83,10 +83,10 @@
     .height{height:220px}
 }
 @media (min-width:1300px) {
-    .height{height:350px;}
+    .height{height:250px;}
 }
 @media (min-width:1400px) {
-    .height{height:350px;}
+    .height{height:280px;}
 }
 @media (min-width:1500px) {
     .height{height:350px;}
