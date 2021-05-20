@@ -8,7 +8,7 @@
     margin-top:-10px;
 }
 .ht-210 {
-    margin-top:30%;
+    margin-top:25%;
 }
 #uniaoTabs.nav {
     width:820px;
@@ -55,3 +55,8 @@
 #tecnologia-tab:hover {background-color:#506997!important;}
 #qualidade-tab {background-color:#cb98fd!important;}
 #qualidade-tab:hover {background-color:#8e6ab1!important;}
+@media (max-width:320px) {
+    .ht-210 {
+        margin-top:30%;
+    }
+}
