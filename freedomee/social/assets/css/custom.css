@@ -8,10 +8,10 @@
     margin-top:-10px;
 }
 .ht-210 {
-    height:210px;
+    margin-top:30%;
 }
 #uniaoTabs.nav {
-    width:816px;
+    width:820px;
     margin:0 auto;
 }
 #uniaoTabs.nav-tabs {
@@ -55,8 +55,3 @@
 #tecnologia-tab:hover {background-color:#506997!important;}
 #qualidade-tab {background-color:#cb98fd!important;}
 #qualidade-tab:hover {background-color:#8e6ab1!important;}
-@media (max-width:320px) {
-    .ht-210 {
-        height:80px;
-    }
-}
