@@ -2,13 +2,21 @@
  * Cristian Elvis - v1.0 (http://cristianelvis.com)
  * Copyright 2021 Cristian Elvis
  */
-
+.bg-light {
+    background-color:ffffff;
+}
 .banner {
     width:100%;
     margin-top:-10px;
 }
-.ht-210 {
-    margin-top:250px;
+.mt-20 {
+    margin-top:20px!important;
+}
+.mt-30 {
+    margin-top:30px;
+}
+.mt-40 {
+    margin-top:40px;
 }
 #uniaoTabs.nav {
     width:820px;
@@ -56,7 +64,5 @@
 #qualidade-tab {background-color:#cb98fd!important;}
 #qualidade-tab:hover {background-color:#8e6ab1!important;}
 @media (max-width:480px) {
-    .ht-210 {
-        margin-top:30%;
-    }
+    
 }
