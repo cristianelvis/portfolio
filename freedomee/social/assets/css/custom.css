@@ -94,22 +94,28 @@
     height: 100%;
     background-repeat: no-repeat;
     background-position: 50%;
-    background-image: url(http://placekitten.com/240/240);
+    background-size:100%;
     visibility: visible;
     -webkit-transform: rotate(-60deg);
        -moz-transform: rotate(-60deg);
         -ms-transform: rotate(-60deg);
          -o-transform: rotate(-60deg);
             transform: rotate(-60deg);
-    }
+    background-image: url(assets/images/icon-economia.png);
+    background-color:#fdfe00;
+
+}
 .hexagon-in2:hover {
-    background-image: url(http://placekitten.com/241/241);
+    background-image: url(assets/images/icon-economia.png);
+    background-color:#b1b200;
 }
 .hexagon1 {
-    width: 200px;
-    height: 400px;
-    margin: -80px 0 0 20px;
+    width:50px;
+    height:100px;
+    margin:0 auto;
 }
+
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width:320px) {
     .height{height:60px;}
