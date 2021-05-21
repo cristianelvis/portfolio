@@ -60,14 +60,14 @@
     width:12rem;
     margin:0 auto;
 }
-#economia-tab {background-color:#fdfe00!important;}
-#economia-tab:hover {background-color:#b1b200!important;}
+#economico-tab {background-color:#fdfe00!important;}
+#economico-tab:hover {background-color:#b1b200!important;}
 #humano-tab {background-color:#ff3658!important;}
 #humano-tab:hover {background-color:#b2263e!important;}
 #antropico-tab {background-color:#13c2a5!important;}
 #antropico-tab:hover {background-color:#0d8873!important;}
-#tecnologia-tab {background-color:#7396d8!important;}
-#tecnologia-tab:hover {background-color:#506997!important;}
+#tecnologico-tab {background-color:#7396d8!important;}
+#tecnologico-tab:hover {background-color:#506997!important;}
 #qualidade-tab {background-color:#cb98fd!important;}
 #qualidade-tab:hover {background-color:#8e6ab1!important;}
 .wow_srch_fields:nth-child(1),
@@ -127,12 +127,12 @@
          -o-transform:rotate(-60deg);
             transform:rotate(-60deg);
 }
-.mediador-economia {
-    background-image:url(../images/icon-economia.png);
+.mediador-economico {
+    background-image:url(../images/icon-economico.png);
     background-color:#fdfe00;
 }
-.mediador-economia:hover {
-    background-image:url(../images/icon-economia.png);
+.mediador-economico:hover {
+    background-image:url(../images/icon-economico.png);
     background-color:#b1b200;
 }
 .mediador-humano {
@@ -151,12 +151,12 @@
     background-image:url(../images/icon-antropico.png);
     background-color:#0d8873;
 }
-.mediador-tecnologia {
-    background-image:url(../images/icon-tecnologia.png);
+.mediador-tecnologico {
+    background-image:url(../images/icon-tecnologico.png);
     background-color:#7396d8;
 }
-.mediador-tecnologia:hover {
-    background-image:url(../images/icon-tecnologia.png);
+.mediador-tecnologico:hover {
+    background-image:url(../images/icon-tecnologico.png);
     background-color:#506997;
 }
 .mediador-qualidade {
