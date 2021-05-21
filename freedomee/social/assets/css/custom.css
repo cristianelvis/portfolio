@@ -168,10 +168,10 @@
     background-color:#8e6ab1;
 }
 .mediador-off {
-    background-color:red;
+    background-color:transparent;
 }
 .mediador-off:hover {
-    background-color:blue;
+    background-color:transparent;
 }
 
 /* Small devices (tablets, 768px and up) */
