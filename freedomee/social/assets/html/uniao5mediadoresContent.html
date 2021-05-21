@@ -432,345 +432,363 @@
                                             </div>
                                         </div><!-- /LINHA OCULTA -->
                                         <div class="row text-center">
-                                            <span id="hideRowLine1" class="msN08 c5" style="cursor:pointer;display:none" onclick="document.getElementById('expandLine1').style.display='none';document.getElementById('hideRowLine1').style.display='none';document.getElementById('moreRowLine1').style.display=''">
-                                                <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
-                                                OCULTAR
-                                            </span>
-                                            <span id="moreRowLine1" class="msN08 c5" style="cursor:pointer" onclick="document.getElementById('expandLine1').style.display='';document.getElementById('hideRowLine1').style.display='';document.getElementById('moreRowLine1').style.display='none'">
-                                                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-                                                VER MAIS
-                                            </span>
+                                            <div class="load-more pointer">
+                                                <span class="btn btn-default" id="hideRowLine1" style="cursor: pointer; display: none;" onclick="document.getElementById('expandLine1').style.display='none';document.getElementById('hideRowLine1').style.display='none';document.getElementById('moreRowLine1').style.display=''">
+                                                    <i class="glyphicon glyphicon-minus" aria-hidden="true"></i> OCULTAR
+                                                </span>
+                                            </div>
+                                                <div class="load-more pointer">
+                                                <span class="btn btn-default" id="moreRowLine1" style="cursor: pointer;" onclick="document.getElementById('expandLine1').style.display='';document.getElementById('hideRowLine1').style.display='';document.getElementById('moreRowLine1').style.display='none'">
+                                                    <i class="glyphicon glyphicon-plus" aria-hidden="true"></i> CARREGAR MAIS
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row mt-20">
                                     <h1 class="bold">Recomendado para você</h1>
                                     <div class="wow_content">
-                                        <div class="col-md-3 col-sm-6">
-                                            <div class="wow_content wow_my_groups mt-30">
-                                                <div class="mediador-float">
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-economia"></div>
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="wow_content wow_my_groups mt-30">
+                                                    <div class="mediador-float">
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-economia"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-humano"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-antropico"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-tecnologia"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-qualidade"></div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-humano"></div>
-                                                        </div>
+                                                    <div class="avatar avatar-float">
+                                                        <a href="#"><img src="https://social.freedomee.social/upload/photos/2021/03/K3RjCmFJ7yR2KsugZSmk_18_cf13649ead387989f4a014c0db91e0a4_avatar.jpeg" alt="modaresponsavel Profile Picture"></a> 
                                                     </div>
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-antropico"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-tecnologia"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-qualidade"></div>
-                                                        </div>
+                                                    <div class="wow_my_groups_info info-float">
+                                                        <h3 class="page_title"><a href="#">Nome do grupo</a></h3>
+                                                        <h4>Nome criador do grupo</h4>
+                                                        <p>Mediador</p>
+                                                        <p>Local</p>
+                                                        <p>3 Membros</p>
+                                                        <button type="button" class="btn btn-default btn-sm wo_follow_btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                                <circle cx="12" cy="12" r="10"></circle>
+                                                                <line x1="12" y1="8" x2="12" y2="16"></line>
+                                                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                                                            </svg>
+                                                            <span class="button-text"> Participar</span> 
+                                                        </button>
                                                     </div>
                                                 </div>
-                                                <div class="avatar avatar-float">
-                                                    <a href="#"><img src="https://social.freedomee.social/upload/photos/2021/03/K3RjCmFJ7yR2KsugZSmk_18_cf13649ead387989f4a014c0db91e0a4_avatar.jpeg" alt="modaresponsavel Profile Picture"></a> 
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="wow_content wow_my_groups mt-30">
+                                                    <div class="mediador-float">
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-economia"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-humano"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-antropico"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-tecnologia"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-qualidade"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="avatar avatar-float">
+                                                        <a href="#"><img src="https://social.freedomee.social/upload/photos/2021/03/K3RjCmFJ7yR2KsugZSmk_18_cf13649ead387989f4a014c0db91e0a4_avatar.jpeg" alt="modaresponsavel Profile Picture"></a> 
+                                                    </div>
+                                                    <div class="wow_my_groups_info info-float">
+                                                        <h3 class="page_title"><a href="#">Nome do grupo</a></h3>
+                                                        <h4>Nome criador do grupo</h4>
+                                                        <p>Mediador</p>
+                                                        <p>Local</p>
+                                                        <p>3 Membros</p>
+                                                        <button type="button" class="btn btn-default btn-sm wo_follow_btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                                <circle cx="12" cy="12" r="10"></circle>
+                                                                <line x1="12" y1="8" x2="12" y2="16"></line>
+                                                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                                                            </svg>
+                                                            <span class="button-text"> Participar</span> 
+                                                        </button>
+                                                    </div>
                                                 </div>
-                                                <div class="wow_my_groups_info info-float">
-                                                    <h3 class="page_title"><a href="#">Nome do grupo</a></h3>
-                                                    <h4>Nome criador do grupo</h4>
-                                                    <p>Mediador</p>
-                                                    <p>Local</p>
-                                                    <p>3 Membros</p>
-                                                    <button type="button" class="btn btn-default btn-sm wo_follow_btn">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                            <circle cx="12" cy="12" r="10"></circle>
-                                                            <line x1="12" y1="8" x2="12" y2="16"></line>
-                                                            <line x1="8" y1="12" x2="16" y2="12"></line>
-                                                        </svg>
-                                                        <span class="button-text"> Participar</span> 
-                                                    </button>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="wow_content wow_my_groups mt-30">
+                                                    <div class="mediador-float">
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-economia"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-humano"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-antropico"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-tecnologia"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-qualidade"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="avatar avatar-float">
+                                                        <a href="#"><img src="https://social.freedomee.social/upload/photos/2021/03/K3RjCmFJ7yR2KsugZSmk_18_cf13649ead387989f4a014c0db91e0a4_avatar.jpeg" alt="modaresponsavel Profile Picture"></a> 
+                                                    </div>
+                                                    <div class="wow_my_groups_info info-float">
+                                                        <h3 class="page_title"><a href="#">Nome do grupo</a></h3>
+                                                        <h4>Nome criador do grupo</h4>
+                                                        <p>Mediador</p>
+                                                        <p>Local</p>
+                                                        <p>3 Membros</p>
+                                                        <button type="button" class="btn btn-default btn-sm wo_follow_btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                                <circle cx="12" cy="12" r="10"></circle>
+                                                                <line x1="12" y1="8" x2="12" y2="16"></line>
+                                                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                                                            </svg>
+                                                            <span class="button-text"> Participar</span> 
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="wow_content wow_my_groups mt-30">
+                                                    <div class="mediador-float">
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-economia"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-humano"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-antropico"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-tecnologia"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-qualidade"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="avatar avatar-float">
+                                                        <a href="#"><img src="https://social.freedomee.social/upload/photos/2021/03/K3RjCmFJ7yR2KsugZSmk_18_cf13649ead387989f4a014c0db91e0a4_avatar.jpeg" alt="modaresponsavel Profile Picture"></a> 
+                                                    </div>
+                                                    <div class="wow_my_groups_info info-float">
+                                                        <h3 class="page_title"><a href="#">Nome do grupo</a></h3>
+                                                        <h4>Nome criador do grupo</h4>
+                                                        <p>Mediador</p>
+                                                        <p>Local</p>
+                                                        <p>3 Membros</p>
+                                                        <button type="button" class="btn btn-default btn-sm wo_follow_btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                                <circle cx="12" cy="12" r="10"></circle>
+                                                                <line x1="12" y1="8" x2="12" y2="16"></line>
+                                                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                                                            </svg>
+                                                            <span class="button-text"> Participar</span> 
+                                                        </button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-3 col-sm-6">
-                                            <div class="wow_content wow_my_groups mt-30">
-                                                <div class="mediador-float">
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-economia"></div>
+                                        <div class="row fade in" id="expandLine2" style="display:none;"><!-- LINHA OCULTA -->
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="wow_content wow_my_groups mt-30">
+                                                    <div class="mediador-float">
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-economia"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-humano"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-antropico"></div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-humano"></div>
-                                                        </div>
+                                                    <div class="avatar avatar-float">
+                                                        <a href="#"><img src="https://social.freedomee.social/upload/photos/2021/03/K3RjCmFJ7yR2KsugZSmk_18_cf13649ead387989f4a014c0db91e0a4_avatar.jpeg" alt="modaresponsavel Profile Picture"></a> 
                                                     </div>
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-antropico"></div>
-                                                        </div>
+                                                    <div class="wow_my_groups_info info-float">
+                                                        <h3 class="page_title"><a href="#">Nome do grupo</a></h3>
+                                                        <h4>Nome criador do grupo</h4>
+                                                        <p>Mediador</p>
+                                                        <p>Local</p>
+                                                        <p>3 Membros</p>
+                                                        <button type="button" class="btn btn-default btn-sm wo_follow_btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                                <circle cx="12" cy="12" r="10"></circle>
+                                                                <line x1="12" y1="8" x2="12" y2="16"></line>
+                                                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                                                            </svg>
+                                                            <span class="button-text"> Participar</span> 
+                                                        </button>
                                                     </div>
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-tecnologia"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-qualidade"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="avatar avatar-float">
-                                                    <a href="#"><img src="https://social.freedomee.social/upload/photos/2021/03/K3RjCmFJ7yR2KsugZSmk_18_cf13649ead387989f4a014c0db91e0a4_avatar.jpeg" alt="modaresponsavel Profile Picture"></a> 
-                                                </div>
-                                                <div class="wow_my_groups_info info-float">
-                                                    <h3 class="page_title"><a href="#">Nome do grupo</a></h3>
-                                                    <h4>Nome criador do grupo</h4>
-                                                    <p>Mediador</p>
-                                                    <p>Local</p>
-                                                    <p>3 Membros</p>
-                                                    <button type="button" class="btn btn-default btn-sm wo_follow_btn">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                            <circle cx="12" cy="12" r="10"></circle>
-                                                            <line x1="12" y1="8" x2="12" y2="16"></line>
-                                                            <line x1="8" y1="12" x2="16" y2="12"></line>
-                                                        </svg>
-                                                        <span class="button-text"> Participar</span> 
-                                                    </button>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-3 col-sm-6">
-                                            <div class="wow_content wow_my_groups mt-30">
-                                                <div class="mediador-float">
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-economia"></div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="wow_content wow_my_groups mt-30">
+                                                    <div class="mediador-float">
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-economia"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-humano"></div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-humano"></div>
-                                                        </div>
+                                                    <div class="avatar avatar-float">
+                                                        <a href="#"><img src="https://social.freedomee.social/upload/photos/2021/03/K3RjCmFJ7yR2KsugZSmk_18_cf13649ead387989f4a014c0db91e0a4_avatar.jpeg" alt="modaresponsavel Profile Picture"></a> 
                                                     </div>
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-antropico"></div>
-                                                        </div>
+                                                    <div class="wow_my_groups_info info-float">
+                                                        <h3 class="page_title"><a href="#">Nome do grupo</a></h3>
+                                                        <h4>Nome criador do grupo</h4>
+                                                        <p>Mediador</p>
+                                                        <p>Local</p>
+                                                        <p>3 Membros</p>
+                                                        <button type="button" class="btn btn-default btn-sm wo_follow_btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                                <circle cx="12" cy="12" r="10"></circle>
+                                                                <line x1="12" y1="8" x2="12" y2="16"></line>
+                                                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                                                            </svg>
+                                                            <span class="button-text"> Participar</span> 
+                                                        </button>
                                                     </div>
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-tecnologia"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-qualidade"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="avatar avatar-float">
-                                                    <a href="#"><img src="https://social.freedomee.social/upload/photos/2021/03/K3RjCmFJ7yR2KsugZSmk_18_cf13649ead387989f4a014c0db91e0a4_avatar.jpeg" alt="modaresponsavel Profile Picture"></a> 
-                                                </div>
-                                                <div class="wow_my_groups_info info-float">
-                                                    <h3 class="page_title"><a href="#">Nome do grupo</a></h3>
-                                                    <h4>Nome criador do grupo</h4>
-                                                    <p>Mediador</p>
-                                                    <p>Local</p>
-                                                    <p>3 Membros</p>
-                                                    <button type="button" class="btn btn-default btn-sm wo_follow_btn">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                            <circle cx="12" cy="12" r="10"></circle>
-                                                            <line x1="12" y1="8" x2="12" y2="16"></line>
-                                                            <line x1="8" y1="12" x2="16" y2="12"></line>
-                                                        </svg>
-                                                        <span class="button-text"> Participar</span> 
-                                                    </button>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-3 col-sm-6">
-                                            <div class="wow_content wow_my_groups mt-30">
-                                                <div class="mediador-float">
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-economia"></div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="wow_content wow_my_groups mt-30">
+                                                    <div class="mediador-float">
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-economia"></div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-humano"></div>
-                                                        </div>
+                                                    <div class="avatar avatar-float">
+                                                        <a href="#"><img src="https://social.freedomee.social/upload/photos/2021/03/K3RjCmFJ7yR2KsugZSmk_18_cf13649ead387989f4a014c0db91e0a4_avatar.jpeg" alt="modaresponsavel Profile Picture"></a> 
                                                     </div>
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-antropico"></div>
-                                                        </div>
+                                                    <div class="wow_my_groups_info info-float">
+                                                        <h3 class="page_title"><a href="#">Nome do grupo</a></h3>
+                                                        <h4>Nome criador do grupo</h4>
+                                                        <p>Mediador</p>
+                                                        <p>Local</p>
+                                                        <p>3 Membros</p>
+                                                        <button type="button" class="btn btn-default btn-sm wo_follow_btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                                <circle cx="12" cy="12" r="10"></circle>
+                                                                <line x1="12" y1="8" x2="12" y2="16"></line>
+                                                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                                                            </svg>
+                                                            <span class="button-text"> Participar</span> 
+                                                        </button>
                                                     </div>
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-tecnologia"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-qualidade"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="avatar avatar-float">
-                                                    <a href="#"><img src="https://social.freedomee.social/upload/photos/2021/03/K3RjCmFJ7yR2KsugZSmk_18_cf13649ead387989f4a014c0db91e0a4_avatar.jpeg" alt="modaresponsavel Profile Picture"></a> 
-                                                </div>
-                                                <div class="wow_my_groups_info info-float">
-                                                    <h3 class="page_title"><a href="#">Nome do grupo</a></h3>
-                                                    <h4>Nome criador do grupo</h4>
-                                                    <p>Mediador</p>
-                                                    <p>Local</p>
-                                                    <p>3 Membros</p>
-                                                    <button type="button" class="btn btn-default btn-sm wo_follow_btn">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                            <circle cx="12" cy="12" r="10"></circle>
-                                                            <line x1="12" y1="8" x2="12" y2="16"></line>
-                                                            <line x1="8" y1="12" x2="16" y2="12"></line>
-                                                        </svg>
-                                                        <span class="button-text"> Participar</span> 
-                                                    </button>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-3 col-sm-6">
-                                            <div class="wow_content wow_my_groups mt-30">
-                                                <div class="mediador-float">
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-economia"></div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="wow_content wow_my_groups mt-30">
+                                                    <div class="mediador-float">
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-off"></div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-humano"></div>
-                                                        </div>
+                                                    <div class="avatar avatar-float">
+                                                        <a href="#"><img src="https://social.freedomee.social/upload/photos/2021/03/K3RjCmFJ7yR2KsugZSmk_18_cf13649ead387989f4a014c0db91e0a4_avatar.jpeg" alt="modaresponsavel Profile Picture"></a> 
                                                     </div>
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-antropico"></div>
-                                                        </div>
+                                                    <div class="wow_my_groups_info info-float">
+                                                        <h3 class="page_title"><a href="#">Nome do grupo</a></h3>
+                                                        <h4>Nome criador do grupo</h4>
+                                                        <p>Mediador</p>
+                                                        <p>Local</p>
+                                                        <p>3 Membros</p>
+                                                        <button type="button" class="btn btn-default btn-sm wo_follow_btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                                <circle cx="12" cy="12" r="10"></circle>
+                                                                <line x1="12" y1="8" x2="12" y2="16"></line>
+                                                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                                                            </svg>
+                                                            <span class="button-text"> Participar</span> 
+                                                        </button>
                                                     </div>
-                                                </div>
-                                                <div class="avatar avatar-float">
-                                                    <a href="#"><img src="https://social.freedomee.social/upload/photos/2021/03/K3RjCmFJ7yR2KsugZSmk_18_cf13649ead387989f4a014c0db91e0a4_avatar.jpeg" alt="modaresponsavel Profile Picture"></a> 
-                                                </div>
-                                                <div class="wow_my_groups_info info-float">
-                                                    <h3 class="page_title"><a href="#">Nome do grupo</a></h3>
-                                                    <h4>Nome criador do grupo</h4>
-                                                    <p>Mediador</p>
-                                                    <p>Local</p>
-                                                    <p>3 Membros</p>
-                                                    <button type="button" class="btn btn-default btn-sm wo_follow_btn">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                            <circle cx="12" cy="12" r="10"></circle>
-                                                            <line x1="12" y1="8" x2="12" y2="16"></line>
-                                                            <line x1="8" y1="12" x2="16" y2="12"></line>
-                                                        </svg>
-                                                        <span class="button-text"> Participar</span> 
-                                                    </button>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-3 col-sm-6">
-                                            <div class="wow_content wow_my_groups mt-30">
-                                                <div class="mediador-float">
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-economia"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-humano"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="avatar avatar-float">
-                                                    <a href="#"><img src="https://social.freedomee.social/upload/photos/2021/03/K3RjCmFJ7yR2KsugZSmk_18_cf13649ead387989f4a014c0db91e0a4_avatar.jpeg" alt="modaresponsavel Profile Picture"></a> 
-                                                </div>
-                                                <div class="wow_my_groups_info info-float">
-                                                    <h3 class="page_title"><a href="#">Nome do grupo</a></h3>
-                                                    <h4>Nome criador do grupo</h4>
-                                                    <p>Mediador</p>
-                                                    <p>Local</p>
-                                                    <p>3 Membros</p>
-                                                    <button type="button" class="btn btn-default btn-sm wo_follow_btn">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                            <circle cx="12" cy="12" r="10"></circle>
-                                                            <line x1="12" y1="8" x2="12" y2="16"></line>
-                                                            <line x1="8" y1="12" x2="16" y2="12"></line>
-                                                        </svg>
-                                                        <span class="button-text"> Participar</span> 
-                                                    </button>
-                                                </div>
+                                        </div><!-- /LINHA OCULTA -->
+                                        <div class="row text-center">
+                                            <div class="load-more pointer">
+                                                <span class="btn btn-default" id="hideRowLine2" style="cursor: pointer; display: none;" onclick="document.getElementById('expandLine2').style.display='none';document.getElementById('hideRowLine2').style.display='none';document.getElementById('moreRowLine2').style.display=''">
+                                                    <i class="glyphicon glyphicon-minus" aria-hidden="true"></i> OCULTAR
+                                                </span>
                                             </div>
-                                        </div>
-                                        <div class="col-md-3 col-sm-6">
-                                            <div class="wow_content wow_my_groups mt-30">
-                                                <div class="mediador-float">
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-economia"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="avatar avatar-float">
-                                                    <a href="#"><img src="https://social.freedomee.social/upload/photos/2021/03/K3RjCmFJ7yR2KsugZSmk_18_cf13649ead387989f4a014c0db91e0a4_avatar.jpeg" alt="modaresponsavel Profile Picture"></a> 
-                                                </div>
-                                                <div class="wow_my_groups_info info-float">
-                                                    <h3 class="page_title"><a href="#">Nome do grupo</a></h3>
-                                                    <h4>Nome criador do grupo</h4>
-                                                    <p>Mediador</p>
-                                                    <p>Local</p>
-                                                    <p>3 Membros</p>
-                                                    <button type="button" class="btn btn-default btn-sm wo_follow_btn">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                            <circle cx="12" cy="12" r="10"></circle>
-                                                            <line x1="12" y1="8" x2="12" y2="16"></line>
-                                                            <line x1="8" y1="12" x2="16" y2="12"></line>
-                                                        </svg>
-                                                        <span class="button-text"> Participar</span> 
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 col-sm-6">
-                                            <div class="wow_content wow_my_groups mt-30">
-                                                <div class="mediador-float">
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-off"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="avatar avatar-float">
-                                                    <a href="#"><img src="https://social.freedomee.social/upload/photos/2021/03/K3RjCmFJ7yR2KsugZSmk_18_cf13649ead387989f4a014c0db91e0a4_avatar.jpeg" alt="modaresponsavel Profile Picture"></a> 
-                                                </div>
-                                                <div class="wow_my_groups_info info-float">
-                                                    <h3 class="page_title"><a href="#">Nome do grupo</a></h3>
-                                                    <h4>Nome criador do grupo</h4>
-                                                    <p>Mediador</p>
-                                                    <p>Local</p>
-                                                    <p>3 Membros</p>
-                                                    <button type="button" class="btn btn-default btn-sm wo_follow_btn">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                            <circle cx="12" cy="12" r="10"></circle>
-                                                            <line x1="12" y1="8" x2="12" y2="16"></line>
-                                                            <line x1="8" y1="12" x2="16" y2="12"></line>
-                                                        </svg>
-                                                        <span class="button-text"> Participar</span> 
-                                                    </button>
-                                                </div>
+                                                <div class="load-more pointer">
+                                                <span class="btn btn-default" id="moreRowLine2" style="cursor: pointer;" onclick="document.getElementById('expandLine2').style.display='';document.getElementById('hideRowLine2').style.display='';document.getElementById('moreRowLine2').style.display='none'">
+                                                    <i class="glyphicon glyphicon-plus" aria-hidden="true"></i> CARREGAR MAIS
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
@@ -778,331 +796,347 @@
                                 <div class="row mt-20">
                                     <h1 class="bold">Perto de você</h1>
                                     <div class="wow_content">
-                                        <div class="col-md-3 col-sm-6">
-                                            <div class="wow_content wow_my_groups mt-30">
-                                                <div class="mediador-float">
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-economia"></div>
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="wow_content wow_my_groups mt-30">
+                                                    <div class="mediador-float">
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-economia"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-humano"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-antropico"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-tecnologia"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-qualidade"></div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-humano"></div>
-                                                        </div>
+                                                    <div class="avatar avatar-float">
+                                                        <a href="#"><img src="https://social.freedomee.social/upload/photos/2021/03/K3RjCmFJ7yR2KsugZSmk_18_cf13649ead387989f4a014c0db91e0a4_avatar.jpeg" alt="modaresponsavel Profile Picture"></a> 
                                                     </div>
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-antropico"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-tecnologia"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-qualidade"></div>
-                                                        </div>
+                                                    <div class="wow_my_groups_info info-float">
+                                                        <h3 class="page_title"><a href="#">Nome do grupo</a></h3>
+                                                        <h4>Nome criador do grupo</h4>
+                                                        <p>Mediador</p>
+                                                        <p>Local</p>
+                                                        <p>3 Membros</p>
+                                                        <button type="button" class="btn btn-default btn-sm wo_follow_btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                                <circle cx="12" cy="12" r="10"></circle>
+                                                                <line x1="12" y1="8" x2="12" y2="16"></line>
+                                                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                                                            </svg>
+                                                            <span class="button-text"> Participar</span> 
+                                                        </button>
                                                     </div>
                                                 </div>
-                                                <div class="avatar avatar-float">
-                                                    <a href="#"><img src="https://social.freedomee.social/upload/photos/2021/03/K3RjCmFJ7yR2KsugZSmk_18_cf13649ead387989f4a014c0db91e0a4_avatar.jpeg" alt="modaresponsavel Profile Picture"></a> 
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="wow_content wow_my_groups mt-30">
+                                                    <div class="mediador-float">
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-economia"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-humano"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-antropico"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-tecnologia"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-qualidade"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="avatar avatar-float">
+                                                        <a href="#"><img src="https://social.freedomee.social/upload/photos/2021/03/K3RjCmFJ7yR2KsugZSmk_18_cf13649ead387989f4a014c0db91e0a4_avatar.jpeg" alt="modaresponsavel Profile Picture"></a> 
+                                                    </div>
+                                                    <div class="wow_my_groups_info info-float">
+                                                        <h3 class="page_title"><a href="#">Nome do grupo</a></h3>
+                                                        <h4>Nome criador do grupo</h4>
+                                                        <p>Mediador</p>
+                                                        <p>Local</p>
+                                                        <p>3 Membros</p>
+                                                        <button type="button" class="btn btn-default btn-sm wo_follow_btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                                <circle cx="12" cy="12" r="10"></circle>
+                                                                <line x1="12" y1="8" x2="12" y2="16"></line>
+                                                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                                                            </svg>
+                                                            <span class="button-text"> Participar</span> 
+                                                        </button>
+                                                    </div>
                                                 </div>
-                                                <div class="wow_my_groups_info info-float">
-                                                    <h3 class="page_title"><a href="#">Nome do grupo</a></h3>
-                                                    <h4>Nome criador do grupo</h4>
-                                                    <p>Mediador</p>
-                                                    <p>Local</p>
-                                                    <p>3 Membros</p>
-                                                    <button type="button" class="btn btn-default btn-sm wo_follow_btn">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                            <circle cx="12" cy="12" r="10"></circle>
-                                                            <line x1="12" y1="8" x2="12" y2="16"></line>
-                                                            <line x1="8" y1="12" x2="16" y2="12"></line>
-                                                        </svg>
-                                                        <span class="button-text"> Participar</span> 
-                                                    </button>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="wow_content wow_my_groups mt-30">
+                                                    <div class="mediador-float">
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-economia"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-humano"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-antropico"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-tecnologia"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-qualidade"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="avatar avatar-float">
+                                                        <a href="#"><img src="https://social.freedomee.social/upload/photos/2021/03/K3RjCmFJ7yR2KsugZSmk_18_cf13649ead387989f4a014c0db91e0a4_avatar.jpeg" alt="modaresponsavel Profile Picture"></a> 
+                                                    </div>
+                                                    <div class="wow_my_groups_info info-float">
+                                                        <h3 class="page_title"><a href="#">Nome do grupo</a></h3>
+                                                        <h4>Nome criador do grupo</h4>
+                                                        <p>Mediador</p>
+                                                        <p>Local</p>
+                                                        <p>3 Membros</p>
+                                                        <button type="button" class="btn btn-default btn-sm wo_follow_btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                                <circle cx="12" cy="12" r="10"></circle>
+                                                                <line x1="12" y1="8" x2="12" y2="16"></line>
+                                                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                                                            </svg>
+                                                            <span class="button-text"> Participar</span> 
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="wow_content wow_my_groups mt-30">
+                                                    <div class="mediador-float">
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-economia"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-humano"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-antropico"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-tecnologia"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-qualidade"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="avatar avatar-float">
+                                                        <a href="#"><img src="https://social.freedomee.social/upload/photos/2021/03/K3RjCmFJ7yR2KsugZSmk_18_cf13649ead387989f4a014c0db91e0a4_avatar.jpeg" alt="modaresponsavel Profile Picture"></a> 
+                                                    </div>
+                                                    <div class="wow_my_groups_info info-float">
+                                                        <h3 class="page_title"><a href="#">Nome do grupo</a></h3>
+                                                        <h4>Nome criador do grupo</h4>
+                                                        <p>Mediador</p>
+                                                        <p>Local</p>
+                                                        <p>3 Membros</p>
+                                                        <button type="button" class="btn btn-default btn-sm wo_follow_btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                                <circle cx="12" cy="12" r="10"></circle>
+                                                                <line x1="12" y1="8" x2="12" y2="16"></line>
+                                                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                                                            </svg>
+                                                            <span class="button-text"> Participar</span> 
+                                                        </button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-3 col-sm-6">
-                                            <div class="wow_content wow_my_groups mt-30">
-                                                <div class="mediador-float">
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-economia"></div>
+                                        <div class="row fade in" id="expandLine3" style="display:none;"><!-- LINHA OCULTA -->
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="wow_content wow_my_groups mt-30">
+                                                    <div class="mediador-float">
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-economia"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-humano"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-antropico"></div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-humano"></div>
-                                                        </div>
+                                                    <div class="avatar avatar-float">
+                                                        <a href="#"><img src="https://social.freedomee.social/upload/photos/2021/03/K3RjCmFJ7yR2KsugZSmk_18_cf13649ead387989f4a014c0db91e0a4_avatar.jpeg" alt="modaresponsavel Profile Picture"></a> 
                                                     </div>
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-antropico"></div>
-                                                        </div>
+                                                    <div class="wow_my_groups_info info-float">
+                                                        <h3 class="page_title"><a href="#">Nome do grupo</a></h3>
+                                                        <h4>Nome criador do grupo</h4>
+                                                        <p>Mediador</p>
+                                                        <p>Local</p>
+                                                        <p>3 Membros</p>
+                                                        <button type="button" class="btn btn-default btn-sm wo_follow_btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                                <circle cx="12" cy="12" r="10"></circle>
+                                                                <line x1="12" y1="8" x2="12" y2="16"></line>
+                                                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                                                            </svg>
+                                                            <span class="button-text"> Participar</span> 
+                                                        </button>
                                                     </div>
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-tecnologia"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-qualidade"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="avatar avatar-float">
-                                                    <a href="#"><img src="https://social.freedomee.social/upload/photos/2021/03/K3RjCmFJ7yR2KsugZSmk_18_cf13649ead387989f4a014c0db91e0a4_avatar.jpeg" alt="modaresponsavel Profile Picture"></a> 
-                                                </div>
-                                                <div class="wow_my_groups_info info-float">
-                                                    <h3 class="page_title"><a href="#">Nome do grupo</a></h3>
-                                                    <h4>Nome criador do grupo</h4>
-                                                    <p>Mediador</p>
-                                                    <p>Local</p>
-                                                    <p>3 Membros</p>
-                                                    <button type="button" class="btn btn-default btn-sm wo_follow_btn">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                            <circle cx="12" cy="12" r="10"></circle>
-                                                            <line x1="12" y1="8" x2="12" y2="16"></line>
-                                                            <line x1="8" y1="12" x2="16" y2="12"></line>
-                                                        </svg>
-                                                        <span class="button-text"> Participar</span> 
-                                                    </button>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-3 col-sm-6">
-                                            <div class="wow_content wow_my_groups mt-30">
-                                                <div class="mediador-float">
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-economia"></div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="wow_content wow_my_groups mt-30">
+                                                    <div class="mediador-float">
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-economia"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-humano"></div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-humano"></div>
-                                                        </div>
+                                                    <div class="avatar avatar-float">
+                                                        <a href="#"><img src="https://social.freedomee.social/upload/photos/2021/03/K3RjCmFJ7yR2KsugZSmk_18_cf13649ead387989f4a014c0db91e0a4_avatar.jpeg" alt="modaresponsavel Profile Picture"></a> 
                                                     </div>
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-antropico"></div>
-                                                        </div>
+                                                    <div class="wow_my_groups_info info-float">
+                                                        <h3 class="page_title"><a href="#">Nome do grupo</a></h3>
+                                                        <h4>Nome criador do grupo</h4>
+                                                        <p>Mediador</p>
+                                                        <p>Local</p>
+                                                        <p>3 Membros</p>
+                                                        <button type="button" class="btn btn-default btn-sm wo_follow_btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                                <circle cx="12" cy="12" r="10"></circle>
+                                                                <line x1="12" y1="8" x2="12" y2="16"></line>
+                                                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                                                            </svg>
+                                                            <span class="button-text"> Participar</span> 
+                                                        </button>
                                                     </div>
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-tecnologia"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-qualidade"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="avatar avatar-float">
-                                                    <a href="#"><img src="https://social.freedomee.social/upload/photos/2021/03/K3RjCmFJ7yR2KsugZSmk_18_cf13649ead387989f4a014c0db91e0a4_avatar.jpeg" alt="modaresponsavel Profile Picture"></a> 
-                                                </div>
-                                                <div class="wow_my_groups_info info-float">
-                                                    <h3 class="page_title"><a href="#">Nome do grupo</a></h3>
-                                                    <h4>Nome criador do grupo</h4>
-                                                    <p>Mediador</p>
-                                                    <p>Local</p>
-                                                    <p>3 Membros</p>
-                                                    <button type="button" class="btn btn-default btn-sm wo_follow_btn">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                            <circle cx="12" cy="12" r="10"></circle>
-                                                            <line x1="12" y1="8" x2="12" y2="16"></line>
-                                                            <line x1="8" y1="12" x2="16" y2="12"></line>
-                                                        </svg>
-                                                        <span class="button-text"> Participar</span> 
-                                                    </button>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-3 col-sm-6">
-                                            <div class="wow_content wow_my_groups mt-30">
-                                                <div class="mediador-float">
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-economia"></div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="wow_content wow_my_groups mt-30">
+                                                    <div class="mediador-float">
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-economia"></div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-humano"></div>
-                                                        </div>
+                                                    <div class="avatar avatar-float">
+                                                        <a href="#"><img src="https://social.freedomee.social/upload/photos/2021/03/K3RjCmFJ7yR2KsugZSmk_18_cf13649ead387989f4a014c0db91e0a4_avatar.jpeg" alt="modaresponsavel Profile Picture"></a> 
                                                     </div>
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-antropico"></div>
-                                                        </div>
+                                                    <div class="wow_my_groups_info info-float">
+                                                        <h3 class="page_title"><a href="#">Nome do grupo</a></h3>
+                                                        <h4>Nome criador do grupo</h4>
+                                                        <p>Mediador</p>
+                                                        <p>Local</p>
+                                                        <p>3 Membros</p>
+                                                        <button type="button" class="btn btn-default btn-sm wo_follow_btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                                <circle cx="12" cy="12" r="10"></circle>
+                                                                <line x1="12" y1="8" x2="12" y2="16"></line>
+                                                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                                                            </svg>
+                                                            <span class="button-text"> Participar</span> 
+                                                        </button>
                                                     </div>
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-tecnologia"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-qualidade"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="avatar avatar-float">
-                                                    <a href="#"><img src="https://social.freedomee.social/upload/photos/2021/03/K3RjCmFJ7yR2KsugZSmk_18_cf13649ead387989f4a014c0db91e0a4_avatar.jpeg" alt="modaresponsavel Profile Picture"></a> 
-                                                </div>
-                                                <div class="wow_my_groups_info info-float">
-                                                    <h3 class="page_title"><a href="#">Nome do grupo</a></h3>
-                                                    <h4>Nome criador do grupo</h4>
-                                                    <p>Mediador</p>
-                                                    <p>Local</p>
-                                                    <p>3 Membros</p>
-                                                    <button type="button" class="btn btn-default btn-sm wo_follow_btn">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                            <circle cx="12" cy="12" r="10"></circle>
-                                                            <line x1="12" y1="8" x2="12" y2="16"></line>
-                                                            <line x1="8" y1="12" x2="16" y2="12"></line>
-                                                        </svg>
-                                                        <span class="button-text"> Participar</span> 
-                                                    </button>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-3 col-sm-6">
-                                            <div class="wow_content wow_my_groups mt-30">
-                                                <div class="mediador-float">
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-economia"></div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="wow_content wow_my_groups mt-30">
+                                                    <div class="mediador-float">
+                                                        <div class="hexagon">
+                                                            <div class="hexagon-in">
+                                                                <div class="mediador mediador-off"></div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-humano"></div>
-                                                        </div>
+                                                    <div class="avatar avatar-float">
+                                                        <a href="#"><img src="https://social.freedomee.social/upload/photos/2021/03/K3RjCmFJ7yR2KsugZSmk_18_cf13649ead387989f4a014c0db91e0a4_avatar.jpeg" alt="modaresponsavel Profile Picture"></a> 
                                                     </div>
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-antropico"></div>
-                                                        </div>
+                                                    <div class="wow_my_groups_info info-float">
+                                                        <h3 class="page_title"><a href="#">Nome do grupo</a></h3>
+                                                        <h4>Nome criador do grupo</h4>
+                                                        <p>Mediador</p>
+                                                        <p>Local</p>
+                                                        <p>3 Membros</p>
+                                                        <button type="button" class="btn btn-default btn-sm wo_follow_btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                                <circle cx="12" cy="12" r="10"></circle>
+                                                                <line x1="12" y1="8" x2="12" y2="16"></line>
+                                                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                                                            </svg>
+                                                            <span class="button-text"> Participar</span> 
+                                                        </button>
                                                     </div>
-                                                </div>
-                                                <div class="avatar avatar-float">
-                                                    <a href="#"><img src="https://social.freedomee.social/upload/photos/2021/03/K3RjCmFJ7yR2KsugZSmk_18_cf13649ead387989f4a014c0db91e0a4_avatar.jpeg" alt="modaresponsavel Profile Picture"></a> 
-                                                </div>
-                                                <div class="wow_my_groups_info info-float">
-                                                    <h3 class="page_title"><a href="#">Nome do grupo</a></h3>
-                                                    <h4>Nome criador do grupo</h4>
-                                                    <p>Mediador</p>
-                                                    <p>Local</p>
-                                                    <p>3 Membros</p>
-                                                    <button type="button" class="btn btn-default btn-sm wo_follow_btn">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                            <circle cx="12" cy="12" r="10"></circle>
-                                                            <line x1="12" y1="8" x2="12" y2="16"></line>
-                                                            <line x1="8" y1="12" x2="16" y2="12"></line>
-                                                        </svg>
-                                                        <span class="button-text"> Participar</span> 
-                                                    </button>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-3 col-sm-6">
-                                            <div class="wow_content wow_my_groups mt-30">
-                                                <div class="mediador-float">
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-economia"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-humano"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="avatar avatar-float">
-                                                    <a href="#"><img src="https://social.freedomee.social/upload/photos/2021/03/K3RjCmFJ7yR2KsugZSmk_18_cf13649ead387989f4a014c0db91e0a4_avatar.jpeg" alt="modaresponsavel Profile Picture"></a> 
-                                                </div>
-                                                <div class="wow_my_groups_info info-float">
-                                                    <h3 class="page_title"><a href="#">Nome do grupo</a></h3>
-                                                    <h4>Nome criador do grupo</h4>
-                                                    <p>Mediador</p>
-                                                    <p>Local</p>
-                                                    <p>3 Membros</p>
-                                                    <button type="button" class="btn btn-default btn-sm wo_follow_btn">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                            <circle cx="12" cy="12" r="10"></circle>
-                                                            <line x1="12" y1="8" x2="12" y2="16"></line>
-                                                            <line x1="8" y1="12" x2="16" y2="12"></line>
-                                                        </svg>
-                                                        <span class="button-text"> Participar</span> 
-                                                    </button>
-                                                </div>
+                                        </div><!-- /LINHA OCULTA -->
+                                        <div class="row text-center">
+                                            <div class="load-more pointer">
+                                                <span class="btn btn-default" id="hideRowLine3" style="cursor: pointer; display: none;" onclick="document.getElementById('expandLine3').style.display='none';document.getElementById('hideRowLine3').style.display='none';document.getElementById('moreRowLine3').style.display=''">
+                                                    <i class="glyphicon glyphicon-minus" aria-hidden="true"></i> OCULTAR
+                                                </span>
                                             </div>
-                                        </div>
-                                        <div class="col-md-3 col-sm-6">
-                                            <div class="wow_content wow_my_groups mt-30">
-                                                <div class="mediador-float">
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-economia"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="avatar avatar-float">
-                                                    <a href="#"><img src="https://social.freedomee.social/upload/photos/2021/03/K3RjCmFJ7yR2KsugZSmk_18_cf13649ead387989f4a014c0db91e0a4_avatar.jpeg" alt="modaresponsavel Profile Picture"></a> 
-                                                </div>
-                                                <div class="wow_my_groups_info info-float">
-                                                    <h3 class="page_title"><a href="#">Nome do grupo</a></h3>
-                                                    <h4>Nome criador do grupo</h4>
-                                                    <p>Mediador</p>
-                                                    <p>Local</p>
-                                                    <p>3 Membros</p>
-                                                    <button type="button" class="btn btn-default btn-sm wo_follow_btn">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                            <circle cx="12" cy="12" r="10"></circle>
-                                                            <line x1="12" y1="8" x2="12" y2="16"></line>
-                                                            <line x1="8" y1="12" x2="16" y2="12"></line>
-                                                        </svg>
-                                                        <span class="button-text"> Participar</span> 
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 col-sm-6">
-                                            <div class="wow_content wow_my_groups mt-30">
-                                                <div class="mediador-float">
-                                                    <div class="hexagon">
-                                                        <div class="hexagon-in">
-                                                            <div class="mediador mediador-off"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="avatar avatar-float">
-                                                    <a href="#"><img src="https://social.freedomee.social/upload/photos/2021/03/K3RjCmFJ7yR2KsugZSmk_18_cf13649ead387989f4a014c0db91e0a4_avatar.jpeg" alt="modaresponsavel Profile Picture"></a> 
-                                                </div>
-                                                <div class="wow_my_groups_info info-float">
-                                                    <h3 class="page_title"><a href="#">Nome do grupo</a></h3>
-                                                    <h4>Nome criador do grupo</h4>
-                                                    <p>Mediador</p>
-                                                    <p>Local</p>
-                                                    <p>3 Membros</p>
-                                                    <button type="button" class="btn btn-default btn-sm wo_follow_btn">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                            <circle cx="12" cy="12" r="10"></circle>
-                                                            <line x1="12" y1="8" x2="12" y2="16"></line>
-                                                            <line x1="8" y1="12" x2="16" y2="12"></line>
-                                                        </svg>
-                                                        <span class="button-text"> Participar</span> 
-                                                    </button>
-                                                </div>
+                                                <div class="load-more pointer">
+                                                <span class="btn btn-default" id="moreRowLine3" style="cursor: pointer;" onclick="document.getElementById('expandLine3').style.display='';document.getElementById('hideRowLine3').style.display='';document.getElementById('moreRowLine33').style.display='none'">
+                                                    <i class="glyphicon glyphicon-plus" aria-hidden="true"></i> CARREGAR MAIS
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
