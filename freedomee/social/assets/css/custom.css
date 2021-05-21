@@ -99,10 +99,10 @@
          -o-transform:rotate(120deg);
             transform:rotate(120deg);
     margin:0 auto;
-    border:4px solid transparent;
+    border:0px solid transparent;
     display:inline-block;
     cursor:unset;
-    z-index: 1;
+    z-index:1;
 }
 .hexagon-in {
     overflow:hidden;
@@ -166,6 +166,12 @@
 .mediador-qualidade:hover {
     background-image:url(../images/icon-qualidade.png);
     background-color:#8e6ab1;
+}
+.mediador-off {
+    background-color:red;
+}
+.mediador-off:hover {
+    background-color:blue;
 }
 
 /* Small devices (tablets, 768px and up) */
