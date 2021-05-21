@@ -91,7 +91,7 @@
             transform:rotate(120deg);
     margin:0 auto;
     border:4px solid transparent;
-    display:inline-flex;
+    display:inline-block;
     cursor:unset;
     z-index: 1;
 }
