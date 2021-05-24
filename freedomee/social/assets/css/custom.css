@@ -25,6 +25,9 @@
 .mt-40 {
     margin-top:40px;
 }
+.top-70 {
+    top:70px!important;
+}
 #uniaoTabs.nav {
     width:820px;
     margin:0 auto;
