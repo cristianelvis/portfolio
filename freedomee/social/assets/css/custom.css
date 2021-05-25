@@ -186,6 +186,10 @@
 .wow_side_representant .list-group-item{
     background-color:transparent;
 }
+.wow_side_representant .time {
+    color:#ffffff;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width:320px) {
     .height{height:60px;}
