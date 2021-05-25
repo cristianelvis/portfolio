@@ -176,6 +176,12 @@
 .mediador-off:hover {
     background-color:transparent;
 }
+.wow_side_representant {
+    text-align:left;
+    background-color:#ffffff;
+    border:1px solid #cccccc;
+    padding:20px 20px 15px 5px;
+}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width:320px) {
