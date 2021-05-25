@@ -182,7 +182,10 @@
     border:1px solid #fff6df;
     padding:20px 15px;
 }
-
+.wow_side_representant .sidebar-title-back,
+.wow_side_representant .list-group-item{
+    background-color:transparent;
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width:320px) {
     .height{height:60px;}
