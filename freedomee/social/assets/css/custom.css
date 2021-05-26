@@ -192,6 +192,11 @@
 .wow_side_usrs {
     width:49%;
 }
+.table-responsive-afiliados {
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width:320px) {
     .height{height:60px;}
