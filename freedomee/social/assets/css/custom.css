@@ -197,12 +197,7 @@
     overflow-y:hidden;
     overflow-x:auto;
 }
-.wo-admincp-feturepager .pagination-afiliados nav a {
-    height:32px;
-    -webkit-border-radius:0;
-    -moz-border-radius:0;
-    -ms-border-radius:0;
-    border-radius:0;
+.pagination-afiliados li a {
     border:none;
 }
 
