@@ -10,6 +10,9 @@
     width:100%;
     margin-top:-10px;
 }
+.m-0 {
+    margin:0 auto;
+}
 .mt-5 {
     margin-top:5px!important;
 }
@@ -24,6 +27,9 @@
 }
 .mt-40 {
     margin-top:40px;
+}
+.pad-0 {
+    padding:0;
 }
 #uniaoTabs.nav {
     width:820px;
@@ -221,28 +227,28 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width:320px) {
-    .height{height:60px;}
+
 }
 @media (min-width:768px) {
-    .height{height:160px;}
+
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width:992px) {
-    .height{height:200px;}
+
 }
 /* Large devices (large desktops, 1280px and up) */
 @media (min-width:1200px) {
-    .height{height:190px;}
+
 }
 @media (min-width:1280px) {
-    .height{height:220px}
+
 }
 @media (min-width:1300px) {
-    .height{height:250px;}
+
 }
 @media (min-width:1400px) {
-    .height{height:280px;}
+
 }
 @media (min-width:1500px) {
-    .height{height:380px;}
+
 }
