@@ -234,6 +234,10 @@
 .wo_setting_sidebar_mockup ul .list-group-item {
     background:#03A9F4!important;
 }
+.modal-body .convidarParaGrupo .row {
+    margin-right:0;
+    margin-left:0;
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px) {
 
