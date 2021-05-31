@@ -72,7 +72,7 @@
               <button type="button" onclick="Wo_RegisterAddGroup(4, 45)" class="btn btn-default btn-sm">Add</button>
             </div>
           </div>
-
+            <div class="row wow_frnd_usr fade in" id="expandConvidarParaGrupoLine1" style="display:none;"><!-- LINHA OCULTA -->
           <div class="col-xs-6 col-sm-3 nearby_user_wrapper text-center user-data" id="add-5" data-user-id="5">
             <div class="avatar"> <img src="https://social.freedomee.social/upload/photos/2021/04/ssRFGqAIIMKUSPLkwapn_19_01318f3786daf891572d67f23d12d5d2_avatar.jpg?cache=0" alt="Paulo César Profile Picture"> </div>
             <span class="user-popover" data-id="5" data-type="user"> <a href="#" class="user_wrapper_link">Nome Usuário</a> </span>
@@ -105,7 +105,12 @@
               <button type="button" onclick="Wo_RegisterAddGroup(4, 45)" class="btn btn-default btn-sm">Add</button>
             </div>
           </div>
-        </div>
+            </div><!-- /LINHA OCULTA -->
+            <div class="row text-center">
+                <div class="load-more pointer"> <span class="btn btn-default" id="hideRowConvidarParaGrupoLine1" style="cursor: pointer; display: none;" onclick="document.getElementById('expandConvidarParaGrupoLine1').style.display='none';document.getElementById('hideRowConvidarParaGrupoLine1').style.display='none';document.getElementById('moreRowConvidarParaGrupoLine1').style.display=''"> <i class="glyphicon glyphicon-minus" aria-hidden="true"></i> OCULTAR </span> </div>
+                <div class="load-more pointer"> <span class="btn btn-default" id="moreRowConvidarParaGrupoLine1" style="cursor: pointer;" onclick="document.getElementById('expandConvidarParaGrupoLine1').style.display='';document.getElementById('hideRowConvidarParaGrupoLine1').style.display='';document.getElementById('moreRowConvidarParaGrupoLine1').style.display='none'"> <i class="glyphicon glyphicon-plus" aria-hidden="true"></i> CARREGAR MAIS </span> </div>
+            </div>
+          </div>
       </div>
       <div class="modal-footer">
         <button type="submit" class="btn btn-main btn-mat btn-mat-raised add_wow_loader" data-dismiss="modal">Fechar</button>
