@@ -8,4 +8,5 @@ $(function(){
     $("#includeGruposContent").load("assets/html/gruposContent.html");
     $("#includeGruposEditarContent").load("assets/html/gruposEditarContent.html");
     $("#includeGruposMembrosContent").load("assets/html/gruposMembrosContent.html");
+    $("#includeTesteDoCrisContent").load("assets/html/testeDoCrisContent.html");
 });
