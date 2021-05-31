@@ -6,4 +6,5 @@ $(function(){
     $("#includeAfiliadosContent").load("assets/html/afiliadosContent.html");
     $("#includeUniaoContent").load("assets/html/uniao5mediadoresContent.html");
     $("#includeGruposContent").load("assets/html/gruposContent.html");
+    $("#includeGruposEditarContent").load("assets/html/gruposEditarContent.html");
 });
