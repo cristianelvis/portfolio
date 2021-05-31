@@ -9,4 +9,5 @@ $(function(){
     $("#includeGruposEditarContent").load("assets/html/gruposEditarContent.html");
     $("#includeGruposMembrosContent").load("assets/html/gruposMembrosContent.html");
     $("#includeGruposTesteDoCrisContent").load("assets/html/gruposTesteDoCrisContent.html");
+    $("#includeGruposTesteDoCrisAddMembrosContent").load("assets/html/gruposTesteDoCrisAddMembrosContent.html");
 });
