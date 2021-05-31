@@ -228,7 +228,11 @@
     padding:18px 65px 20px 20px;
 }
 .wo_setting_sidebar_mockup {
-    
+    top:65px;
+    right:570px;
+}
+.wo_setting_sidebar_mockup ul .list-group-item {
+    background:#03A9F4!important;
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px) {
