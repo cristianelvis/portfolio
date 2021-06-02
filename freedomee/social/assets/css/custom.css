@@ -87,11 +87,15 @@
 .wow_srch_fields:nth-child(3) {
     border-right:1px solid #eaeaea;
 }
-.mediador-float {
-    width: 100%;
-    margin: 0 auto;
+.mediador-float,
+.mediator-float-left {
+    width:100%;
+    margin:0 auto;
     background-color: transparent;
-    display: inline-flex;
+    display:inline-flex;
+}
+.mediator-float-left {
+    display:unset;
 }
 .avatar-float {
     top:-3rem;
@@ -103,7 +107,8 @@
     position:relative;
     top:-1.5rem;
 }
-.hexagon {
+.hexagon,
+.hexagon-min {
     width:35px;
     height:70px;
     overflow:hidden;
@@ -118,6 +123,10 @@
     display:inline-block;
     cursor:unset;
     z-index:1;
+}
+.hexagon-min {
+    width:25px;
+    height:50px;
 }
 .hexagon-in {
     overflow:hidden;
