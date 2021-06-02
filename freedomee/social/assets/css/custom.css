@@ -95,7 +95,7 @@
     display:inline-flex;
 }
 .mediator-float-left {
-    display:unset;
+    display:block;
 }
 .avatar-float {
     top:-3rem;
