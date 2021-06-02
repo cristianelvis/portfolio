@@ -31,6 +31,12 @@
 .pad-0 {
     padding:0;
 }
+.pad-10 {
+    padding:10px;
+}
+.pad-20 {
+    padding:20px;
+}
 #uniaoTabs.nav {
     width:820px;
     margin:0 auto;
