@@ -4,7 +4,7 @@
 			"name" : "Canga Toalha África 001",
 			"price" : "100.00",
 			"options" : [
-				{ "Size" : "Small,Medium,Large" }
+				{ "Size" : "Pequena,Média,Grande" }
 			],
             "image" : "https://cristianelvis.com/raphini/images/canga-toalha-africa/canga-toalha-africa-001-min.jpg",
 			"description" : "Um produto maravilhoso..."
@@ -13,7 +13,7 @@
 			"name" : "Canga Toalha África 002",
 			"price" : "150.00",
 			"options" : [
-				{ "Size" : "Small,Medium,Large" }
+				{ "Size" : "Pequena,Média,Grande" }
 			],
             "image" : "https://cristianelvis.com/raphini/images/canga-toalha-africa/canga-toalha-africa-002-min.jpg",
 			"description" : "Um produto maravilhoso..."
@@ -22,7 +22,7 @@
 			"name" : "Canga Toalha África 003",
 			"price" : "200.00",
 			"options" : [
-				{ "Size" : "Small,Medium,Large" }
+				{ "Size" : "Pequena,Média,Grande" }
 			],
             "image" : "https://cristianelvis.com/raphini/images/canga-toalha-africa/canga-toalha-africa-003-min.jpg",
 			"description" : "Um produto maravilhoso..."
@@ -31,7 +31,7 @@
 			"name" : "Canga Toalha África 004",
 			"price" : "250.00",
 			"options" : [
-				{ "Size" : "Small,Medium,Large" }
+				{ "Size" : "Pequena,Média,Grande" }
 			],
             "image" : "https://cristianelvis.com/raphini/images/canga-toalha-africa/canga-toalha-africa-004-min.jpg",
 			"description" : "Um produto maravilhoso..."
