@@ -48,10 +48,10 @@ $(function() {
 	    shippingQuantityRate: 0,
 
 	    // added shipping based on this value multiplied by the cart subtotal
-	    shippingTotalRate: 10.00,
+	    shippingTotalRate: 10,
 
 	    // tax rate applied to cart subtotal
-	    taxRate: 0,
+	    taxRate: 10,
 
 	    // true if tax should be applied to shipping
 	    taxShipping: true,
