@@ -51,10 +51,10 @@ $(function() {
 	    shippingTotalRate: 0,
 
 	    // tax rate applied to cart subtotal
-	    taxRate: 1,
+	    taxRate: 0.1,
 
 	    // true if tax should be applied to shipping
-	    taxShipping: true,
+	    taxShipping: false,
 
 	    // event callbacks
 	    beforeAdd               	: null,
