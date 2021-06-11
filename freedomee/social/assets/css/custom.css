@@ -253,8 +253,15 @@
     margin-right:0;
     margin-left:0;
 }
-.commonThingsHead {background:linear-gradient(-45deg, #764ba2 0%,#667eea 100%);position:absolute;left:0;right:250px;top:45px;}
-.commonThingsHead.com_thing {background: linear-gradient(-45deg, #ae41c1 0%,#f06292 100%);}
+.commonThingsHead {
+    position:absolute;
+    top:45px;
+    right:250px;
+    bottom:0;
+    left:0;  
+    background:linear-gradient(-45deg, #ae41c1 0%,#f06292 100%);
+}
+
 
 
 /* Small devices (tablets, 768px and up) */
