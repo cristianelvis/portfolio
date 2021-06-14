@@ -37,6 +37,22 @@
 .pad-20 {
     padding:20px;
 }
+.top-0 {
+    top:0;
+}
+.top-5 {
+    top:-5px;
+}
+.top-10 {
+    top:-10px;
+}
+.top-20 {
+    top:-20px;
+}
+.top-30 {
+    top:-30px;
+}
+
 #uniaoTabs.nav {
     width:820px;
     margin:0 auto;
