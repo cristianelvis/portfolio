@@ -111,6 +111,7 @@
     display:inline-flex;
 }
 .mediator-float-left {
+    height:45px;
     display:block;
 }
 .avatar-float {
