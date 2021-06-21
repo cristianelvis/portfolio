@@ -13,4 +13,5 @@ $(function(){
     $("#includeGruposTesteDoCrisAddMembrosContent").load("assets/html/gruposTesteDoCrisAddMembrosContent.html");
     $("#includeValoresComunsContent").load("assets/html/valoresComunsContent.html");
     $("#includePaginaVendedorContent").load("assets/html/paginaVendedorContent.html");
+    $("#includePaginaVendedorListaProdutosContent").load("assets/html/paginaVendedorListaProdutosContent.html");
 });
