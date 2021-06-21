@@ -284,10 +284,11 @@
     right:8px!important;
 }
 .product-share {
-    text-align: center;
-    font-weight: 500;
-    font-size: 14px;
+    text-align:center;
+    font-weight:500;
+    font-size:12px;
     margin-top:-5px;
+    margin-bottom:15px;
 }
 
 /* Small devices (tablets, 768px and up) */
