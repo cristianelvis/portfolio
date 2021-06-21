@@ -277,7 +277,12 @@
 .wow_main_blogs_bg.head {
     height:154px;
 }
-
+.share {
+    position:absolute;
+    z-index:9;
+    top:8px;
+    right:8px!important;
+}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px) {
