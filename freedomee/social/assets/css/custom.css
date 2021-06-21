@@ -283,6 +283,12 @@
     top:8px;
     right:8px!important;
 }
+.product-share {
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top:-5px;
+}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px) {
