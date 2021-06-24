@@ -14,4 +14,5 @@ $(function(){
     $("#includeValoresComunsContent").load("assets/html/valoresComunsContent.html");
     $("#includePaginaVendedorContent").load("assets/html/paginaVendedorContent.html");
     $("#includePaginaVendedorListaProdutosContent").load("assets/html/paginaVendedorListaProdutosContent.html");
+    $("#includeUsuarioContent").load("assets/html/usuarioContent.html");
 });
