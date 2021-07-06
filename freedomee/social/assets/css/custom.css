@@ -308,6 +308,25 @@
     margin-top:-5px;
     margin-bottom:15px;
 }
+.chat-container-group {
+    color:#3f3f3f;
+    width:250px;
+    padding:10px;
+    margin:0 auto;
+}
+.chat-container-group .wow_chat_search {
+    padding:10px;
+    flex: 0 0 auto;
+}
+.chat-container-group .wow_chat_search input {
+    width:100%;
+    background-color:rgba(0, 0, 0, 0.06);
+    border-radius:7px;
+    height:32px;
+    border:0;
+    padding:1px 12px;
+    outline:0;
+}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px) {
