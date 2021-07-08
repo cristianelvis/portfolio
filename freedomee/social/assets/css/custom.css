@@ -2,6 +2,9 @@
  * Cristian Elvis - v1.0 (http://cristianelvis.com)
  * Copyright 2021 Cristian Elvis
  */
+.fc-box {
+    padding:8px 48px 8px 8px!important;
+}
 .bg-light {
     background-color:ffffff;
     background:unset!important;
