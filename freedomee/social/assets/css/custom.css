@@ -334,6 +334,39 @@
 .btn-quiz {
     
 }
+.quiz-economic {
+    background-color:#fdfe00;
+}
+.quiz-economic:hover {
+    background-color:#b1b200;
+}
+.quiz-human {
+    background-color:#ff3658;
+}
+.quiz-human:hover {
+    background-color:#b2263e;
+}
+.quiz-anthropic {
+    background-color:#13c2a5;
+}
+.quiz-anthropic:hover {
+    background-color:#0d8873;
+}
+.quiz-technological {
+    background-color:#7396d8;
+}
+.quiz-technological:hover {
+    background-color:#506997;
+}
+.quiz-quality {
+    background-color:#cb98fd;
+}
+.quiz-quality:hover {
+    background-color:#8e6ab1;
+}
+
+
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px) {
 
