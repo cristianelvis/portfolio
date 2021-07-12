@@ -332,7 +332,12 @@
     outline:0;
 }
 .btn-quiz {
-    
+    width:100%;
+    font-family:unset;
+    line-height:26px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:normal;
 }
 .quiz-economic {
     background-color:#fdfe00;
