@@ -377,6 +377,9 @@
     padding:20px 20px 20px 20px;
     background:transparent;
 }
+.quiz-head .close {
+    color: black;
+}
 .quiz h1 {
     font-size:23px;
     font-weight:900;
@@ -414,6 +417,13 @@
 }
 .quiz-caption label:hover {
     opacity:0.7;
+}
+.quiz .carousel-control.left,
+.quiz .carousel-control.right {
+    background-image: unset;
+    background-image: unset;
+    background-image: unset;
+    background-image: unset;
 }
 .carousel-control.slick-next svg.feather,
 .carousel-control.slick-prev svg.feather {
