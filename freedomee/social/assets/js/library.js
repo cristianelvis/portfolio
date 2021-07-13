@@ -16,3 +16,10 @@ $(function(){
     $("#includePaginaVendedorListaProdutosContent").load("assets/html/paginaVendedorListaProdutosContent.html");
     $("#includeUsuarioContent").load("assets/html/usuarioContent.html");
 });
+
+$('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  fade: true,
+  asNavFor: '.slider-nav'
+});
