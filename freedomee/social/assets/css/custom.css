@@ -369,10 +369,21 @@
 .quiz-quality:hover {
     background-color:#8e6ab1;
 }
+.quiz {
+    font-size:16px;
+    text-align:center;
+}
+.quiz h1 {
+    font-weight:900;
+    text-transform:uppercase;
+}
 .quiz-caption {
     position:unset;
     text-shadow:unset;
     color:unset;
+}
+.quiz-caption h1 {
+    font-size:18px;
 }
 .quiz-caption [type=radio] { 
   position:absolute;
@@ -381,12 +392,21 @@
   height:0;
 }
 .quiz-caption [type=radio] + img {
-    width:60px;
     cursor:pointer;
-    display:inline-block;
+    display:block;
 }
 .quiz-caption [type=radio]:checked + img {
-  outline:2px solid #f00;
+  background-color:red;
+  border-radius:6px;
+  padding:0 6px;
+}
+.quiz-caption label {
+    font-size:12px;
+    width:80px;
+    margin:20px;
+}
+.quiz-caption label:hover {
+    opacity:0.7;
 }
 .carousel-control.slick-next svg.feather,
 .carousel-control.slick-prev svg.feather {
