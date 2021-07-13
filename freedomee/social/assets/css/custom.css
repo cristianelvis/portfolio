@@ -369,18 +369,7 @@
 .quiz-quality:hover {
     background-color:#8e6ab1;
 }
-.wrap-modal-slider {
-  padding: 0 30px;
-  opacity: 0;
-  transition: all 0.3s;
-}
-.wrap-modal-slider.open {
-  opacity: 1;
-}
-.slick-prev:before,
-.slick-next:before {
-  color: red;
-}
+
 
 
 /* Small devices (tablets, 768px and up) */
