@@ -369,7 +369,9 @@
 .quiz-quality:hover {
     background-color:#8e6ab1;
 }
-
+.quiz-caption {
+    position:unset;
+}
 .carousel-control.slick-next svg.feather,
 .carousel-control.slick-prev svg.feather {
     margin-top:10px;
