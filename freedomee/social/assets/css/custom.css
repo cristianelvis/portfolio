@@ -370,6 +370,10 @@
     background-color:#8e6ab1;
 }
 
+.carousel-control.slick-next svg.feather,
+.carousel-control.slick-prev svg.feather {
+    margin-top:10px;
+}
 
 
 /* Small devices (tablets, 768px and up) */
