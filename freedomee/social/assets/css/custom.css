@@ -392,6 +392,7 @@
   height:0;
 }
 .quiz-caption [type=radio] + img {
+    width:100%;
     cursor:pointer;
     display:block;
 }
