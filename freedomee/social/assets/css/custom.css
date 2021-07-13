@@ -398,7 +398,7 @@
 .quiz-caption [type=radio]:checked + img {
   background-color:red;
   border-radius:6px;
-  padding:0 6px;
+  padding:0 6px 0 6px;
 }
 .quiz-caption label {
     font-size:12px;
