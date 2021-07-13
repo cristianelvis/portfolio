@@ -371,6 +371,22 @@
 }
 .quiz-caption {
     position:unset;
+    text-shadow:unset;
+    color:unset;
+}
+.quiz-caption [type=radio] { 
+  position:absolute;
+  opacity:0;
+  width:0;
+  height:0;
+}
+.quiz-caption [type=radio] + img {
+    width:60px;
+    cursor:pointer;
+    display:inline-block;
+}
+.quiz-caption [type=radio]:checked + img {
+  outline:2px solid #f00;
 }
 .carousel-control.slick-next svg.feather,
 .carousel-control.slick-prev svg.feather {
