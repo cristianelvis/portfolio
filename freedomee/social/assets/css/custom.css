@@ -397,7 +397,7 @@
     display:block;
 }
 .quiz-caption [type=radio]:checked + img {
-  background-color:red;
+  background-color:#e7bbff;
   border-radius:6px;
   padding:0 6px 0 6px;
 }
