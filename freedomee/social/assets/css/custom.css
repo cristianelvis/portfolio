@@ -128,7 +128,8 @@
 #qualidade-tab:hover {background-color:#8e6ab1!important;}
 .wow_srch_fields:nth-child(1),
 .wow_srch_fields:nth-child(2),
-.wow_srch_fields:nth-child(3) {
+.wow_srch_fields:nth-child(3),
+.wow_srch_fields:nth-child(4){
     border-right:1px solid #eaeaea;
 }
 .mediador-float,
