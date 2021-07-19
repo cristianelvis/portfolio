@@ -391,7 +391,13 @@
     text-shadow:unset;
     color:unset;
 }
-.quiz-caption h1 {
+.quiz-caption h1,
+.quiz-caption h2{
+    font-size:23px;
+    font-weight:900;
+    text-transform:uppercase;
+}
+.quiz-caption h2 {
     font-size:18px;
 }
 .quiz-caption [type=radio] { 
