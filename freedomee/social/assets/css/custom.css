@@ -377,6 +377,7 @@
 .quiz-head {
     padding:20px 20px 40px 20px;
     background:transparent;
+    z-index:1;
 }
 .quiz-head .close {
     color: black;
