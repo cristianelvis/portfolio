@@ -436,7 +436,14 @@
 .carousel-control.slick-prev svg.feather {
     margin-top:10px;
 }
-
+.quizResult.table {
+    font-size:3rem;
+    width:600px;
+    margin:0 auto;
+}
+.quizResult tr td img {
+    width:80px;
+}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px) {
