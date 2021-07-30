@@ -11,13 +11,16 @@
     overflow-x:hidden;
 }
 #sidebar-wrapper {
+    min-width: 320px;
     min-height:100vh;
-    margin-left:-15rem;
+    margin-left:-320px;
     transition:margin 0.25s ease-out;
     background-color:var(--cor4);
 }
 #sidebar-wrapper .list-group {
-    width:15rem;
+    position: absolute;
+    bottom: 0;
+    width:320px;
 }
 #page-content-wrapper {
     min-width:100vw;
@@ -26,7 +29,7 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
     margin-left:0;
 }
 .navToggle {
-  left:15rem;
+  left:320px;
   transition:left 0.25s ease-out;
 }
 body.sb-sidenav-toggled .navToggle {
