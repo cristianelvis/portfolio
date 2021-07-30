@@ -76,3 +76,8 @@ section {
   width:42px;
   position:absolute;
 }
+body.sb-sidenav-toggled .hamburger,
+body.sb-sidenav-toggled .hamburger:before,
+body.sb-sidenav-toggled .hamburger:after {
+  background:#ffffff;
+}
