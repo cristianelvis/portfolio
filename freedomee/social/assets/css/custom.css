@@ -453,11 +453,18 @@
     width:1280px;
 }
 #carrouselAdvertising .carousel-indicators {
-    bottom:-30px;
+    bottom:-35px;
 }
 #carrouselAdvertising .carousel-indicators li {
+    display:inline-block;
+    width:10px;
+    height:10px;
+    margin:1px;
+    text-indent:-999px;
+    cursor:pointer;
     background-color:#fff;
     border:1px solid #666;
+    border-radius: 10px;
 }
 #carrouselAdvertising .carousel-indicators li.active {
     background-color:#666;
