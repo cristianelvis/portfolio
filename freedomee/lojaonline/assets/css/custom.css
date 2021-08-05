@@ -440,4 +440,24 @@ table {
 
 .text-white-50 { color: rgba(255, 255, 255, .5); }
 
-.bg-purple { background-color: #6f42c1; }
+.bg-purple {
+    background-color: #6f42c1;
+}
+#carrouselAdvertising {
+    margin-top:-10px;
+    margin-bottom:40px;
+}
+#carrouselAdvertising .banner {
+    width:1280px;
+}
+#carrouselAdvertising .carousel-indicators {
+    bottom:-30px;
+}
+#carrouselAdvertising .carousel-indicators li {
+    background-color:#fff;
+    border:1px solid #666;
+}
+#carrouselAdvertising .carousel-indicators li.active {
+    background-color:#666;
+    border:1px solid #666;
+}
