@@ -43,7 +43,9 @@ i {font-style:normal}
 #sectionOne {
     position:relative;
 }
-.row {--bs-gutter-x:0;}
+.row {
+    --bs-gutter-x:0;
+}
 .flower {
     position: relative;
     top: 0;
