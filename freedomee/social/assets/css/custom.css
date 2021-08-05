@@ -449,16 +449,19 @@
     margin-top:-10px;
     margin-bottom:40px;
 }
+#carrouselAdvertising .banner {
+    width:1280px;
+}
 #carrouselAdvertising .carousel-indicators {
-    bottom: -30px;
+    bottom:-30px;
 }
 #carrouselAdvertising .carousel-indicators li {
-    background-color: #fff;
-    border: 1px solid #666;
+    background-color:#fff;
+    border:1px solid #666;
 }
 #carrouselAdvertising .carousel-indicators li.active {
-    background-color: #666;
-    border: 1px solid #666;
+    background-color:#666;
+    border:1px solid #666;
 }
 
 
