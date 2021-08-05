@@ -445,6 +445,9 @@
 .quizResult tr td img {
     width:80px;
 }
+#carrouselAdvertising .carousel-indicators {
+    bottom: -30px;
+}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px) {
