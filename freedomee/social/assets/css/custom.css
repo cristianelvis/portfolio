@@ -445,6 +445,10 @@
 .quizResult tr td img {
     width:80px;
 }
+#carrouselAdvertising {
+    margin-top:-10px;
+    margin-bottom:40px;
+}
 #carrouselAdvertising .carousel-indicators {
     bottom: -30px;
 }
