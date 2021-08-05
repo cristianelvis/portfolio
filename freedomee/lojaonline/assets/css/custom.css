@@ -42,7 +42,6 @@ p {color:var(--black);}
 i {font-style:normal}
 #sectionOne {
     position:relative;
-    top:1.6rem;
 }
 .row {--bs-gutter-x:0;}
 .flower {
