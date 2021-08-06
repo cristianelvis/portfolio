@@ -17,7 +17,10 @@
     background:#000000!important;
 }
 .bg-anthropic {
-    
+    background-image:url(https://cristianelvis.com/freedomee/social/assets/images/banner-filantropia-b.jpg)!important;
+    background-repeat:no-repeat!important;
+    background-size:cover!important;
+    background-position:center!important;
 }
 .banner {
     width:100%;
@@ -513,6 +516,10 @@
 .btn-quality:hover {
     background-color:#8e6ab1;
 }
+.wow_main_blogs_bg.anthropichead {
+    height:245px;
+}
+
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px) {
