@@ -470,6 +470,9 @@
     background-color:#666;
     border:1px solid #666;
 }
+.fcc {
+    padding:0 0 0 25px;
+}
 .btn-black {
     color:#ffffff;
     background-color:black;
