@@ -142,7 +142,7 @@
     position:relative;
     top:-1.5rem;
 }
-.mediador-float,
+.float-mediador,
 .mediator-float,
 .mediator-float-left {
     width:100%;
@@ -153,6 +153,9 @@
 .mediator-float-left {
     height:45px;
     display:block;
+}
+.float-mediador {
+    position:relative;
 }
 .mediator.table {
     width:100%;
