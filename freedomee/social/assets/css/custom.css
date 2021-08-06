@@ -156,6 +156,7 @@
 }
 .float-mediator {
     position:relative;
+    top:-165px;
     z-index:1;
 }
 .mediator.table {
