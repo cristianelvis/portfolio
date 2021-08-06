@@ -132,6 +132,17 @@
 .wow_srch_fields:nth-child(4){
     border-right:1px solid #eaeaea;
 }
+.mediador-float,
+.mediator-float-left {
+    width:100%;
+    margin:0 auto;
+    background-color: transparent;
+    display:inline-flex;
+}
+.mediator-float-left {
+    height:45px;
+    display:block;
+}
 .avatar-float {
     top:-3rem;
 }
@@ -146,19 +157,11 @@
     position:relative;
     top:-10px;
 }
-.float-mediator,
-.mediator-float,
-.mediator-float-left {
+.float-mediator {
     width:100%;
     margin:0 auto;
     background-color:transparent;
     display:inline-flex;
-}
-.mediator-float-left {
-    height:45px;
-    display:block;
-}
-.float-mediator {
     position:relative;
     top:-10px;
     z-index:1;
