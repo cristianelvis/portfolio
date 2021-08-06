@@ -154,8 +154,10 @@
     height:45px;
     display:block;
 }
+
 .float-mediator {
     position:relative;
+    z-index:1;
 }
 .mediator.table {
     width:100%;
