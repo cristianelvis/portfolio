@@ -1,66 +1,71 @@
 <div class="profile-container">
-  <div class="card hovercard">
-    <div class="cardheader user-cover">
-      <form action="#" method="post" class="profile-cover-changer" style="display: none;">
-        <div class="input-group"> <span class="input-group-btn profile_cover"> <span class="btn btn-upload-image btn-file">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-camera">
-            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
-            <circle cx="12" cy="13" r="4"></circle>
-          </svg>
-          <input type="file" name="cover" accept="image/x-png, image/jpeg" onchange="Wo_UpdateProfileCover();">
-          </span> </span> </div>
-        <input type="hidden" name="group_id" id="group-id" value="45">
-      </form>
-      <div class="user-cover-uploading-container"></div>
-      <div class="user-cover-uploading-progress">
-        <div class="pace-activity-parent">
-          <div class="pace-activity"></div>
-        </div>
-      </div>
-      <img id="cover-image" src="https://social.freedomee.social/upload/photos/d-cover.jpg  " alt="Testes do Cris Cover Image"> </div>
-    <div class="side_panel">
-      <div class="box-inner" style="background-image: url(https://social.freedomee.social/upload/photos/d-cover.jpg  )"></div>
-      <div>
-        <div class="user-avatar flip">
-          <div class="user-avatar-uploading-container">
-            <div class="user-avatar-uploading-progress">
-              <div class="ball-pulse">
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
+    <div class="card hovercard">
+        <div class="cardheader user-cover">
+        <form action="#" method="post" class="profile-cover-changer" style="display: none;">
+            <div class="input-group">
+                <span class="input-group-btn profile_cover">
+                    <span class="btn btn-upload-image btn-file">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-camera"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+                        <input type="file" name="cover" accept="image/x-png, image/jpeg" onchange="Wo_UpdateProfileCover();">
+                    </span>
+                </span>
             </div>
-          </div>
-          <img id="group-avatar-image" alt="Testes do Cris Profile Picture" src="https://social.freedomee.social/upload/photos/d-group.jpg ">
-          <form action="#" method="post" class="profile-avatar-changer" style="display: none;">
-            <div class="input-group profile_avatar"> <span class="input-group-btn"> <span class="btn btn-upload-image btn-file">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-camera">
-                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
-                <circle cx="12" cy="13" r="4"></circle>
-              </svg>
-              <input type="file" name="avatar" accept="image/x-png, image/jpeg" onchange="Wo_UpdateProfileAvatar();">
-              </span> </span> </div>
             <input type="hidden" name="group_id" id="group-id" value="45">
-          </form>
-        </div>
-        <div class="info">
-          <div class="title"><a href="#">Nome do grupo</a></div>
-            <span style="margin-top:5px;display: block;">0000 Membros</span>
-            <div class="float-mediator options-buttons">
-                <table class="table table-borderless mediator">
-                    <tbody><tr>
-                        <td><img src="assets/images/iconEconomic.svg" alt="Moderador Econômico" title="Moderador Econômico"></td>
-                        <td><img src="assets/images/iconHuman.svg" alt="Moderador Humano" title="Moderador Humano"></td>
-                        <td><img src="assets/images/iconAnthropic.svg" alt="Moderador Antrôpico" title="Moderador Antrôpico"></td>
-                        <td><img src="assets/images/iconTechnological.svg" alt="Moderador Tecnológico" title="Moderador Tecnológico"></td>
-                        <td><img src="assets/images/iconQuality.svg" alt="Moderador Qualidade" title="Moderador Qualidade"></td>
-                    </tr>
-                </tbody></table>
+        </form>
+        <div class="user-cover-uploading-container"></div>
+        <div class="user-cover-uploading-progress">
+            <div class="pace-activity-parent">
+                <div class="pace-activity"></div>
             </div>
         </div>
-      </div>
+        <img id="cover-image" src="https://social.freedomee.social/upload/photos/d-cover.jpg  " alt="Testes do Cris Cover Image"> </div>
+        <div class="side_panel">
+            <div class="box-inner" style="background-image: url(https://social.freedomee.social/upload/photos/d-cover.jpg)"></div>
+            <div>
+                <div class="user-avatar flip">
+                    <div class="user-avatar-uploading-container">
+                        <div class="user-avatar-uploading-progress">
+                            <div class="ball-pulse">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <img id="group-avatar-image" alt="Testes do Cris Profile Picture" src="https://social.freedomee.social/upload/photos/d-group.jpg ">
+                    <form action="#" method="post" class="profile-avatar-changer" style="display: none;">
+                        <div class="input-group profile_avatar">
+                            <span class="input-group-btn">
+                                <span class="btn btn-upload-image btn-file">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-camera"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+                                    <input type="file" name="avatar" accept="image/x-png, image/jpeg" onchange="Wo_UpdateProfileAvatar();">
+                                </span> 
+                            </span>
+                        </div>
+                        <input type="hidden" name="group_id" value="45">
+                    </form>
+                </div>
+                <div class="info">
+                    <div class="title"><a href="#">Nome do grupo</a></div>
+                    <span style="margin-top:5px;display: block;">0000 Membros</span>
+                    <div class="float-mediator options-buttons">
+                        <table class="table table-borderless mediator">
+                            <tbody>
+                                <tr>
+                                    <td><img src="assets/images/iconEconomic.svg" alt="Moderador Econômico" title="Moderador Econômico"></td>
+                                    <td><img src="assets/images/iconHuman.svg" alt="Moderador Humano" title="Moderador Humano"></td>
+                                    <td><img src="assets/images/iconAnthropic.svg" alt="Moderador Antrôpico" title="Moderador Antrôpico"></td>
+                                    <td><img src="assets/images/iconTechnological.svg" alt="Moderador Tecnológico" title="Moderador Tecnológico"></td>
+                                    <td><img src="assets/images/iconQuality.svg" alt="Moderador Qualidade" title="Moderador Qualidade"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
-  </div>
 </div>
 <div class="col-md-8">
   <form action="#" method="post" class="post publisher-box" id="publisher-box-focus">
@@ -613,54 +618,49 @@
   <div id="load-more-filter"> <span class="filter-by-more hidden" data-filter-by="all"></span> </div>
 </div>
 <div class="col-md-4">
-  <div class="wow_content">
-    <div class="wow_form_fields mt-0">
-      <label class="mt-0" for="invite_your_frineds">Procurar posts</label>
-      <input type="text" class="search-for-posts" onkeyup="Wo_SearchForPosts(this.value);">
+    <div class="wow_content">
+        <div class="wow_form_fields mt-0">
+            <label class="mt-0" for="invite_your_frineds">Procurar posts</label>
+            <input type="text" class="search-for-posts" onkeyup="Wo_SearchForPosts(this.value);">
+        </div>
     </div>
-  </div>
-  <ul class="page-margin wow_content negg_padd list-unstyled event-options-list right_user_info">
-    <div class="wo_page_hdng">
-      <div class="wo_page_hdng_innr"> <span>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
-          <path fill="currentColor" d="M13,9H11V7H13M13,17H11V11H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"></path>
-        </svg>
-        </span> Info </div>
+    <ul class="page-margin wow_content negg_padd list-unstyled event-options-list right_user_info">
+        <div class="wo_page_hdng">
+            <div class="wo_page_hdng_innr">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="M13,9H11V7H13M13,17H11V11H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"></path></svg>
+                </span> Info
+            </div>
+        </div>
+        <li class="list-group-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="M16,13C15.71,13 15.38,13 15.03,13.05C16.19,13.89 17,15 17,16.5V19H23V16.5C23,14.17 18.33,13 16,13M8,13C5.67,13 1,14.17 1,16.5V19H15V16.5C15,14.17 10.33,13 8,13M8,11A3,3 0 0,0 11,8A3,3 0 0,0 8,5A3,3 0 0,0 5,8A3,3 0 0,0 8,11M16,11A3,3 0 0,0 19,8A3,3 0 0,0 16,5A3,3 0 0,0 13,8A3,3 0 0,0 16,11Z"></path></svg>
+            <a href="#">1 Membros</a> <span class="green">+1 Essa semana</span>
+        </li>
+        <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M17.9,17.39C17.64,16.59 16.89,16 16,16H15V13A1,1 0 0,0 14,12H8V10H10A1,1 0 0,0 11,9V7H13A2,2 0 0,0 15,5V4.59C17.93,5.77 20,8.64 20,12C20,14.08 19.2,15.97 17.9,17.39M11,19.93C7.05,19.44 4,16.08 4,12C4,11.38 4.08,10.78 4.21,10.21L9,15V16A2,2 0 0,0 11,18M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"></path></svg>
+            Público
+        </li>
+        <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M5.5,7A1.5,1.5 0 0,1 4,5.5A1.5,1.5 0 0,1 5.5,4A1.5,1.5 0 0,1 7,5.5A1.5,1.5 0 0,1 5.5,7M21.41,11.58L12.41,2.58C12.05,2.22 11.55,2 11,2H4C2.89,2 2,2.89 2,4V11C2,11.55 2.22,12.05 2.59,12.41L11.58,21.41C11.95,21.77 12.45,22 13,22C13.55,22 14.05,21.77 14.41,21.41L21.41,14.41C21.78,14.05 22,13.55 22,13C22,12.44 21.77,11.94 21.41,11.58Z"></path></svg>
+            De outros
+        </li>
+        <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M19 5V19H5V5H19M21 3H3V21H21V3M17 17H7V16H17V17M17 15H7V14H17V15M17 12H7V7H17V12Z"></path></svg>
+            0 Postagens
+        </li>
+        <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M13,13C11,13 7,14 7,16V18H19V16C19,14 15,13 13,13M19.62,13.16C20.45,13.88 21,14.82 21,16V18H24V16C24,14.46 21.63,13.5 19.62,13.16M13,11A3,3 0 0,0 16,8A3,3 0 0,0 13,5A3,3 0 0,0 10,8A3,3 0 0,0 13,11M18,11A3,3 0 0,0 21,8A3,3 0 0,0 18,5C17.68,5 17.37,5.05 17.08,5.14C17.65,5.95 18,6.94 18,8C18,9.06 17.65,10.04 17.08,10.85C17.37,10.95 17.68,11 18,11M8,10H5V7H3V10H0V12H3V15H5V12H8V10Z"></path></svg>
+            <a href="https://cristianelvis.com/freedomee/social/grupos-testedocris-addmembros.html">Adicionar amigos à este grupo</a>
+        </li>
+    </ul>
+    <div class="page-margin wow_content">
+        <div class="wo_page_hdng pag_neg_padd">
+            <div class="wo_page_hdng_innr">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z"></path></svg>
+                </span> Sobre
+            </div>
+        </div>
+        <p class="page-margin">somente para teste. :)</p>
     </div>
-    <li class="list-group-item">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
-        <path fill="currentColor" d="M16,13C15.71,13 15.38,13 15.03,13.05C16.19,13.89 17,15 17,16.5V19H23V16.5C23,14.17 18.33,13 16,13M8,13C5.67,13 1,14.17 1,16.5V19H15V16.5C15,14.17 10.33,13 8,13M8,11A3,3 0 0,0 11,8A3,3 0 0,0 8,5A3,3 0 0,0 5,8A3,3 0 0,0 8,11M16,11A3,3 0 0,0 19,8A3,3 0 0,0 16,5A3,3 0 0,0 13,8A3,3 0 0,0 16,11Z"></path>
-      </svg>
-      <a href="#">1 Membros</a> <span class="green">+1 Essa semana</span> </li>
-    <li>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path fill="currentColor" d="M17.9,17.39C17.64,16.59 16.89,16 16,16H15V13A1,1 0 0,0 14,12H8V10H10A1,1 0 0,0 11,9V7H13A2,2 0 0,0 15,5V4.59C17.93,5.77 20,8.64 20,12C20,14.08 19.2,15.97 17.9,17.39M11,19.93C7.05,19.44 4,16.08 4,12C4,11.38 4.08,10.78 4.21,10.21L9,15V16A2,2 0 0,0 11,18M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"></path>
-      </svg>
-      Público </li>
-    <li>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path fill="currentColor" d="M5.5,7A1.5,1.5 0 0,1 4,5.5A1.5,1.5 0 0,1 5.5,4A1.5,1.5 0 0,1 7,5.5A1.5,1.5 0 0,1 5.5,7M21.41,11.58L12.41,2.58C12.05,2.22 11.55,2 11,2H4C2.89,2 2,2.89 2,4V11C2,11.55 2.22,12.05 2.59,12.41L11.58,21.41C11.95,21.77 12.45,22 13,22C13.55,22 14.05,21.77 14.41,21.41L21.41,14.41C21.78,14.05 22,13.55 22,13C22,12.44 21.77,11.94 21.41,11.58Z"></path>
-      </svg>
-      De outros </li>
-    <li>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path fill="currentColor" d="M19 5V19H5V5H19M21 3H3V21H21V3M17 17H7V16H17V17M17 15H7V14H17V15M17 12H7V7H17V12Z"></path>
-      </svg>
-      0 Postagens </li>
-    <li>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path fill="currentColor" d="M13,13C11,13 7,14 7,16V18H19V16C19,14 15,13 13,13M19.62,13.16C20.45,13.88 21,14.82 21,16V18H24V16C24,14.46 21.63,13.5 19.62,13.16M13,11A3,3 0 0,0 16,8A3,3 0 0,0 13,5A3,3 0 0,0 10,8A3,3 0 0,0 13,11M18,11A3,3 0 0,0 21,8A3,3 0 0,0 18,5C17.68,5 17.37,5.05 17.08,5.14C17.65,5.95 18,6.94 18,8C18,9.06 17.65,10.04 17.08,10.85C17.37,10.95 17.68,11 18,11M8,10H5V7H3V10H0V12H3V15H5V12H8V10Z"></path>
-      </svg>
-      <a href="https://cristianelvis.com/freedomee/social/grupos-testedocris-addmembros.html">Adicionar amigos à este grupo</a> </li>
-  </ul>
-  <div class="page-margin wow_content">
-    <div class="wo_page_hdng pag_neg_padd">
-      <div class="wo_page_hdng_innr"> <span>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
-          <path fill="currentColor" d="M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z"></path>
-        </svg>
-        </span> Sobre </div>
-    </div>
-    <p class="page-margin">somente para teste. :)</p>
-  </div>
 </div>
