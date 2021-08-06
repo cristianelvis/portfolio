@@ -16,12 +16,6 @@
     background-color:#000000!important;
     background:#000000!important;
 }
-.bg-anthropic {
-    background-image:url(https://cristianelvis.com/freedomee/social/assets/images/banner-filantropia-b.jpg)!important;
-    background-repeat:no-repeat!important;
-    background-size:cover!important;
-    background-position:center!important;
-}
 .banner {
     width:100%;
     margin-top:-10px;
@@ -516,8 +510,18 @@
 .btn-quality:hover {
     background-color:#8e6ab1;
 }
+.bg-anthropic {
+    background-image:url(https://cristianelvis.com/freedomee/social/assets/images/banner-filantropia-b.jpg)!important;
+    background-repeat:no-repeat!important;
+    background-size:cover!important;
+    background-position:center!important;
+    height:200px;
+}
+.wow_main_float_head.bg-anthropic h1 {
+    margin:5% auto;
+}
 .wow_main_blogs_bg.anthropichead {
-    height:245px;
+    height:190px;
 }
 
 
