@@ -153,6 +153,13 @@
     position:relative;
     top:-1.5rem;
 }
+.mediatorIcon.table {
+    width:100%;
+    margin:0 auto;
+}
+.mediatorIcon tr td img {
+    width:30px;
+}
 .hexagon,
 .hexagon-min {
     width:35px;
