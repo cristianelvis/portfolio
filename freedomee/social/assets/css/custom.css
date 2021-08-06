@@ -526,8 +526,12 @@
 .wow_main_blogs_bg.anthropichead {
     height:190px;
 }
-
-
+.gLocation {
+    margin:0;
+}
+.dLocation {
+    font-weight:bold;
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px) {
 
