@@ -548,16 +548,13 @@
 .thumbflow {
     display:flex;
     overflow-x:scroll;
-    padding:0;
 }
 .thumb {
-    width:100px;
-    height:100px;
-    margin:0 20px 0 0;
-    border:1px solid;
+    display:inline-block;
 }
 .thumb img {
-    width:100%;
+    width:150px;
+    margin:0 10px 20px 0;
 }
 
 /* Small devices (tablets, 768px and up) */
