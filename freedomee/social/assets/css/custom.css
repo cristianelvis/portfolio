@@ -464,13 +464,27 @@
     cursor:pointer;
     background-color:#fff;
     border:1px solid #666;
-    border-radius: 10px;
+    border-radius:10px;
 }
 #carrouselAdvertising .carousel-indicators li.active {
     background-color:#666;
     border:1px solid #666;
 }
-
+.btn-black {
+    color:#ffffff;
+    background-color:black;
+}
+.btn-black:hover {
+    color:black;
+    background-color:#cdcd01;
+}
+.btn-quality {
+    color:#ffffff;
+    background-color:#cb98fd;
+}
+.btn-quality:hover {
+    background-color:#8e6ab1;
+}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px) {
