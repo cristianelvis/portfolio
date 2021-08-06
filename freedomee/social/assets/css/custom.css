@@ -545,6 +545,20 @@
     color:#cb98fd;
     margin-bottom:0;
 }
+.thumbflow {
+    display:flex;
+    overflow-x:scroll;
+    padding:0;
+}
+.thumb {
+    width:100px;
+    height:100px;
+    margin:0 20px 0 0;
+    border:1px solid;
+}
+.thumb img {
+    width:100%;
+}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px) {
