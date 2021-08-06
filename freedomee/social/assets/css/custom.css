@@ -532,9 +532,20 @@
 .dLocation {
     font-weight:bold;
 }
-.right_user_info li.item {
+.right_user_info li.item,
+.right_user_info li.item2 {
     text-align:center;
 }
+.right_user_info li.item p,
+.right_user_info li.item2 p {
+    font-size:14px
+}
+.right_user_info li.item2 h3 {
+    font-weight:bold;
+    color:#cb98fd;
+    margin-bottom:0;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px) {
 
