@@ -132,17 +132,6 @@
 .wow_srch_fields:nth-child(4){
     border-right:1px solid #eaeaea;
 }
-.mediador-float,
-.mediator-float-left {
-    width:100%;
-    margin:0 auto;
-    background-color: transparent;
-    display:inline-flex;
-}
-.mediator-float-left {
-    height:45px;
-    display:block;
-}
 .avatar-float {
     top:-3rem;
 }
@@ -153,12 +142,27 @@
     position:relative;
     top:-1.5rem;
 }
-.mediatorIcon.table {
+.mediador-float,
+.mediator-float,
+.mediator-float-left {
+    width:100%;
+    margin:0 auto;
+    background-color:transparent;
+    display:inline-flex;
+}
+.mediator-float-left {
+    height:45px;
+    display:block;
+}
+.mediator.table {
     width:100%;
     margin:0 auto;
 }
-.mediatorIcon tr td img {
-    width:30px;
+.mediator tr td {
+    padding:1px!important;
+}
+.mediator tr td img {
+    width:100%;
 }
 .hexagon,
 .hexagon-min {
