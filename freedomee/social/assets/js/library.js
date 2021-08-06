@@ -17,4 +17,5 @@ $(function(){
     $("#includeUsuarioContent").load("assets/html/usuarioContent.html");
     $("#includeLojaOnlineContent").load("assets/html/lojaOnlineContent.html");
     $("#includeEducacaoCapacitacaoContent").load("assets/html/educacaoCapacitacaoContent.html");
+    $("#includeProjetosNomedoprojetoContent").load("assets/html/projetosNomedoprojetoContent.html");
 });
