@@ -154,7 +154,6 @@
     height:45px;
     display:block;
 }
-
 .float-mediator {
     position:relative;
     z-index:1;
@@ -164,10 +163,12 @@
     margin:0 auto;
 }
 .mediator tr td {
+    text-align:center;
     padding:1px!important;
 }
 .mediator tr td img {
     width:100%;
+    max-width:30px;
 }
 .hexagon,
 .hexagon-min {
