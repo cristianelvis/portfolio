@@ -142,6 +142,10 @@
     position:relative;
     top:-1.5rem;
 }
+.float-info {
+    position:relative;
+    top:-10px;
+}
 .float-mediator,
 .mediator-float,
 .mediator-float-left {
@@ -156,7 +160,7 @@
 }
 .float-mediator {
     position:relative;
-    top:-165px;
+    top:-10px;
     z-index:1;
 }
 .mediator.table {
