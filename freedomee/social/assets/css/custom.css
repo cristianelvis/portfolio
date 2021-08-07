@@ -577,8 +577,21 @@
     -webkit-box-orient:vertical;
 }
 .nav-tabs-project {
-    
+    margin-top:30px;    
 }
+.nav-tabs-project li {
+    width:50%;
+}
+.nav-tabs-project li a {
+    font-size:24px;
+    height:auto;
+}
+.nav-tabs-project li.active a,
+.nav-tabs-project li.active a:focus,
+.nav-tabs-project li.active a:hover {
+    color:black;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px) {
 
