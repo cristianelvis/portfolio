@@ -552,9 +552,13 @@
 .thumb {
     display:inline-block;
 }
-.thumb img {
+.thumb img,
+.thumb p {
     width:150px;
-    margin:0 10px 20px 0;
+    margin:10px;
+}
+.thumb p {
+    margin:0 10px 10px 10px;
 }
 
 /* Small devices (tablets, 768px and up) */
