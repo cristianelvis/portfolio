@@ -80,7 +80,9 @@
 .top-30 {
     top:-30px;
 }
-
+.modal-gallery {
+    width:max-content;
+}
 #uniaoTabs.nav {
     width:820px;
     margin:0 auto;
