@@ -17,6 +17,7 @@ $(function(){
     $("#includeUsuarioContent").load("assets/html/usuarioContent.html");
     $("#includeLojaOnlineContent").load("assets/html/lojaOnlineContent.html");
     $("#includeEducacaoCapacitacaoContent").load("assets/html/educacaoCapacitacaoContent.html");
+    $("#includeEducacaoCapacitacaoCadastroContent").load("assets/html/educacaoCapacitacaoCadastroContent.html");
     $("#includeProjetosNomedoprojetoContent").load("assets/html/projetosNomedoprojetoContent.html");
 });
 $('#videoPlay').on('shown.bs.modal', function () {
