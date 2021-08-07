@@ -571,6 +571,9 @@
     width:150px;
     margin:10px;
 }
+.thumb img:hover {
+    opacity:0.5;
+}
 .thumb p {
     margin:0 10px 10px 10px;
     overflow:hidden;
