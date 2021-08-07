@@ -19,3 +19,9 @@ $(function(){
     $("#includeEducacaoCapacitacaoContent").load("assets/html/educacaoCapacitacaoContent.html");
     $("#includeProjetosNomedoprojetoContent").load("assets/html/projetosNomedoprojetoContent.html");
 });
+$('#videoPlay').on('shown.bs.modal', function () {
+  $('#video1')[0].play();
+})
+$('#videoPlay').on('hidden.bs.modal', function () {
+  $('#video1')[0].pause();
+})
