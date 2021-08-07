@@ -412,8 +412,9 @@
     background:transparent;
     z-index:1;
 }
+.quiz-head,
 .quiz-head .close {
-    color: black;
+    color:black;
 }
 .quiz h1 {
     font-size:23px;
