@@ -507,7 +507,7 @@
     padding:0 0 0 25px;
 }
 .btn-black {
-    color:#ffffff;
+    color:#ffffff!important;
     background-color:black;
 }
 .btn-black:hover {
@@ -515,7 +515,7 @@
     background-color:#fdfe00;
 }
 .btn-quality {
-    color:#ffffff;
+    color:#ffffff!important;
     background-color:#cb98fd;
 }
 .btn-quality:hover {
