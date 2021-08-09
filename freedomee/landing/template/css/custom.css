@@ -4,13 +4,17 @@
  * Copyright 2021 Cristian Elvis
  */
 :root {
-    --cor4:#413E3E;
+    --cor4:#403f3f;
 }
+
 #iconFreedomeE.st0 {
     fill:var(--cor4);
 }
 #iconFreedomeE.st1 {
     fill:white;
+}
+.navbar-brand {
+    width:80px;
 }
 .flag {
     width:25px;
