@@ -6,6 +6,12 @@
 :root {
     --cor4:#413E3E;
 }
+#iconFreedomeE.st0 {
+    fill:var(--cor4);
+}
+#iconFreedomeE.st1 {
+    fill:white;
+}
 .flag {
     width:25px;
     height:auto;
