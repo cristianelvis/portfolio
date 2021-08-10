@@ -1,5 +1,6 @@
 $(function(){
     $("#menu").load("content/menu.html");
+    $("#section001").load("content/section001.html");
 });
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
