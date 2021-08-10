@@ -10,7 +10,11 @@
     --cor4:#403f3f;
 }
 body {
+    color:black;
     font-family:'Montserrat', sans-serif;
+}
+.navbar {
+    font-family: 'Otomanopee One', sans-serif;
 }
 .navHide,
 .navShow {
