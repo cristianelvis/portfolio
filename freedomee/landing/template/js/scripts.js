@@ -1,3 +1,6 @@
+$(function(){
+    $("#menu").load("content/menu.html");
+});
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     if (scroll >= 100) {

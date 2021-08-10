@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="keywords" content="">
         
-        <title>Teste includMenu</title>
+        <title>Teste </title>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,54 +20,9 @@
         <script src="../template/js/jquery.js"></script>
         <script src="../template/js/scripts.js"></script>
     </head>
-    <body id="pageTop">
+    <body data-bs-spy="scroll" data-bs-target="#menu" data-bs-offset="0" tabindex="0" id="pageTop">
         <!--<div w3-include-html="content/menu.html"></div>-->
-        <nav class="navbar navbar-expand-sm fixed-top navbar-dark navHide" aria-label="Menu">
-            <div class="container-fluid">
-                <a href="#" class="navbar-brand" title="Bem vindo a FreedomeE">
-                    <img src="../template/assets/logotipo-icon.svg" alt="Bem vindo a FreedomeE" title="Bem vindo a FreedomeE">
-                </a>
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navLanding" aria-controls="navLanding" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse" id="navLanding">
-                    <ul class="navbar-nav ms-auto mb-2 mb-sm-0">
-                        <li class="nav-item">
-                            <a href="#section001" class="nav-link active">Início</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#section002" class="nav-link">O que somos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#section003" class="nav-link">FreedomeE User</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#section004" class="nav-link">5 mediadores</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#section005" class="nav-link">Valores</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#section006" class="nav-link">Idealizadora</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Registre-se</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="languageDropdown">
-                                <img src="../template/assets/flagicons/br.svg" class="flag" alt="Brasil">
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
-                                <li><p class="dropdown-item">Escolha seu idioma</p></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#"><img src="../template/assets/flagicons/us.svg" class="flag" alt="English"> English</a></li>
-                                <li><a class="dropdown-item" href="#"><img src="../template/assets/flagicons/es.svg" class="flag" alt="Español"> Español</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top navHide" aria-label="menu" id="menu"></nav>
 
         <!--<div id="section001" w3-include-html="content/section-001.html"></div>-->
         <section id="section001">
