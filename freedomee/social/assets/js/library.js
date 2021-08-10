@@ -26,3 +26,10 @@ $('#videoPlay').on('shown.bs.modal', function () {
 $('#videoPlay').on('hidden.bs.modal', function () {
   $('#video1')[0].pause();
 })
+$("#btnfile").click(function () {
+    $("#uplodfile").click();
+});
+$("#uplodfile").change(function () {
+    var file=$(this).val().replace(/C:\\fakepath\\/ig,'');    
+    $("#fname").text(file);
+});
