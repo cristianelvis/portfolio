@@ -9,6 +9,9 @@
     --cor3:green;
     --cor4:#403f3f;
 }
+.body {
+    font-family:'Montserrat', sans-serif;
+}
 .navHide,
 .navShow {
     background-color:var(--cor2);
