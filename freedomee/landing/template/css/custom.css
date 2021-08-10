@@ -4,21 +4,112 @@
  * Copyright 2021 Cristian Elvis
  */
 :root {
+    --cor1:red;
+    --cor2:blue;
+    --cor3:green;
     --cor4:#403f3f;
 }
-
-#iconFreedomeE.st0 {
-    fill:var(--cor4);
+.navHide,
+.navShow {
+    background-color:var(--cor2);
+    display:none;
+    transition:display .15s ease-in-out,background-color .15s ease-in-out;
 }
-#iconFreedomeE.st1 {
-    fill:white;
+.navShow {
+    background-color:var(--cor4);
+    display:unset;
+    transition:display .15s ease-in-out,background-color .15s ease-in-out;
 }
 .navbar-brand {
-    width:80px;
+    width:5rem;
 }
 .flag {
     width:25px;
     height:auto;
     border-radius:4px;
     display:inline-block;
+}
+#section001 {
+    border:6px solid var(--cor4);
+    background-color:white;
+}
+#section001 .container-fluid,
+#section001 .row,
+#section001 .col-md-6 {
+    padding:0;
+    margin:0;
+}
+.logotipo {
+    max-width:20rem;
+    margin:10rem auto 0 auto;
+}
+.btn-primary {
+    max-width:20rem;
+    margin:0 auto 10rem auto;
+    transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-primary-01,
+.btn-primary-02,
+.btn-primary-03,
+.btn-primary-04 {
+    text-align:right;
+    color:white;
+    width:100%;
+    height:20rem;
+    border:6px solid var(--cor4);
+    border-radius:0;
+    background-color:var(--cor4);
+    background-repeat:no-repeat;
+    background-size:cover;
+    transition:background-image .15s ease-in-out;
+    margin:0 auto;
+}
+.btn-primary-01:focus,
+.btn-primary-02:focus,
+.btn-primary-03:focus,
+.btn-primary-04:focus {
+    color:white;
+    border:6px solid var(--cor4);
+    box-shadow:unset;
+}
+.btn-primary-01 {
+    background-image: url("../assets/foto-001-over.png");
+}
+.btn-primary-01:hover {
+    background-image: url("../assets/foto-001-on.png");
+}
+.btn-primary-02 {
+    background-image: url("../assets/foto-002-over.png");
+}
+.btn-primary-02:hover {
+    background-image: url("../assets/foto-002-on.png");
+}
+.btn-primary-03 {
+    background-image: url("../assets/foto-003-over.png");
+}
+.btn-primary-03:hover {
+    background-image: url("../assets/foto-003-on.png");
+}
+.btn-primary-04 {
+    background-image: url("../assets/foto-004-over.png");
+}
+.btn-primary-04:hover {
+    background-image: url("../assets/foto-004-on.png");
+}
+
+#section002,
+#section003,
+#section004,
+#section005,
+#section006,
+#section007 {
+    width:100%;
+    height:100%;
+    padding:10rem 0 10rem 0;
+    background-color:red;
+}
+#section002,
+#section004,
+#section006 {
+    background-color:blue;
 }

@@ -17,10 +17,116 @@
         <script src="../template/js/jquery.js"></script>
         <script src="../template/js/scripts.js"></script>
     </head>
-    <body>
-        <div w3-include-html="content/menu.html"></div>
-        <h1>FreedomeE</h1>
-        <p>Hello world!</p>
+    <body id="pageTop">
+        <!--<div w3-include-html="content/menu.html"></div>-->
+        <nav class="navbar navbar-expand-sm fixed-top navbar-dark navHide" aria-label="Menu">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand" title="Bem vindo a FreedomeE">
+                    <img src="../template/assets/logotipo-icon.svg" alt="Bem vindo a FreedomeE" title="Bem vindo a FreedomeE">
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navLanding" aria-controls="navLanding" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navLanding">
+                    <ul class="navbar-nav ms-auto mb-2 mb-sm-0">
+                        <li class="nav-item">
+                            <a href="#section001" class="nav-link active">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#section002" class="nav-link">O que somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#section003" class="nav-link">FreedomeE User</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#section004" class="nav-link">5 mediadores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#section005" class="nav-link">Valores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#section006" class="nav-link">Idealizadora</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Registre-se</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="languageDropdown">
+                                <img src="../template/assets/flagicons/br.svg" class="flag" alt="Brasil">
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                                <li><p class="dropdown-item">Escolha seu idioma</p></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#"><img src="../template/assets/flagicons/us.svg" class="flag" alt="English"> English</a></li>
+                                <li><a class="dropdown-item" href="#"><img src="../template/assets/flagicons/es.svg" class="flag" alt="Español"> Español</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--<div id="section001" w3-include-html="content/section-001.html"></div>-->
+        <section id="section001">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="row text-center">
+                            <img src="../template/assets/logotipo.svg" class="logotipo" alt="FreedomeE" title="FreedomeE">
+                            <h1>Section 1</h1>
+                            <p>Lorem ipsum is...</p>
+                            <a href="#pageTop" class="btn btn-primary" title="This is a title">This is a link</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6"><a href="#" class="btn btn-primary-01" title="opção001">opção001</a></div>
+                            <div class="col-xs-12 col-md-6"><a href="#" class="btn btn-primary-02" title="opção002">opção002</a></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6"><a href="#" class="btn btn-primary-03" title="opção003">opção003</a></div>
+                            <div class="col-xs-12 col-md-6"><a href="#" class="btn btn-primary-04" title="opção004">opção004</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--<div id="section002" w3-include-html="content/section-002.html"></div>-->
+        <section id="section002">
+            <h1>O que somos</h1>
+            <p>Lorem ipsum is...</p>
+            <a href="#pageTop" title="This is a title">This is a link</a>
+        </section>
+
+        <section id="section003">
+            <h1>FreedomeE User</h1>
+            <p>Lorem ipsum is...</p>
+            <a href="#pageTop" title="This is a title">This is a link</a>
+        </section>
+
+        <section id="section004">
+            <h1>5 mediadores</h1>
+            <p>Lorem ipsum is...</p>
+            <a href="#pageTop" title="This is a title">This is a link</a>
+        </section>
+
+        <section id="section005">
+            <h1>Valores</h1>
+            <p>Lorem ipsum is...</p>
+            <a href="#pageTop" title="This is a title">This is a link</a>
+        </section>
+
+        <section id="section006">
+            <h1>Idealizadora</h1>
+            <p>Lorem ipsum is...</p>
+            <a href="#pageTop" title="This is a title">This is a link</a>
+        </section>
+
+        <section id="section007">
+            <h1>Section 7</h1>
+            <p>Lorem ipsum is...</p>
+            <a href="#pageTop" title="This is a title">This is a link</a>
+        </section>
 
         <script src="../template/js/bootstrap.bundle.js"></script>
         <script>w3IncludeHTML();</script>
