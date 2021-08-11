@@ -32,6 +32,14 @@
                     <source src="assets/images/BannerEaglerOne.mp4" type="video/mp4">
                     Your browser doesn't support HTML5 video tag.
                 </video>
+                <script>
+                    $('#videoPlay').on('shown.bs.modal', function () {
+                        $('#video1')[0].play();
+                    });
+                    $('#videoPlay').on('hidden.bs.modal', function () {
+                        $('#video1')[0].pause();
+                    });
+                </script>
             </div>
         </div>
     </div>

@@ -165,8 +165,13 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="wow_form_fields">
-                            <a href="#" class="btn btn-main btn-block" id="uploadFileOne">Upload dos documentos exigidos</a>
+                            <a class="btn btn-main btn-block" id="uploadFileOne">Upload dos documentos exigidos</a>
                             <input type="file" id="uploadOne"/>
+                            <script>
+                                $("#uploadFileOne").click(function(){
+                                    $("#uploadOne").click();
+                                });
+                            </script>
                         </div>
                     </div>
                     <div class="col-md-8">
