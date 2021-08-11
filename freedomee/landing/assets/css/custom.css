@@ -17,11 +17,6 @@ body, html {
 body {
     color:black;
     font-family:'Montserrat', sans-serif;
-    background-image:url("../../assets/image/blocoPrincipal2.jpg");
-    background-size:cover;
-    background-position:top;
-    background-repeat:no-repeat;
-    background-attachment:fixed;
 }
 .navbar {
     font-family:'Otomanopee One', sans-serif;
