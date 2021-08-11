@@ -183,7 +183,13 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="wow_form_fields round-check">
-                            <input type="checkbox" name="concordo"><label for="concordo">Li e concordo com os Termos de serviço</label>
+                            <input type="checkbox" name="concordo" id="checkboxOne">
+                            <label for="concordo" id="checkboxOneClick">Li e concordo com os Termos de serviço</label>
+                            <script>
+                                $("#checkboxOneClick").click(function(){
+                                    $("#checkboxOne").click();
+                                });
+                            </script>
                         </div>
                     </div>
                 </div>
