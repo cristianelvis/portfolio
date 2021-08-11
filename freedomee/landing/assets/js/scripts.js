@@ -6,18 +6,9 @@ $(window).scroll(function() {
         $(".navHide").removeClass("navShow");
     }
 });
-$(document).ready(function(){
-    $("a").on('click', function(event) {
-        if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 800, function(){
-                window.location.hash = hash;
-            });
-        }
-    });
+$('.nav-link').click(function(){
+    $("html, body").animate({ scrollTop: 0 }, 800);
+    return false;
 });
 $(document).ready(function(){
     $("#menu").load("content/menu.html");
