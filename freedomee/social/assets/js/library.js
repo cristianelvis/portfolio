@@ -19,9 +19,8 @@ $(function(){
     $("#includeEducacaoCapacitacaoContent").load("assets/html/educacaoCapacitacaoContent.html");
     $("#includeEducacaoCapacitacaoCadastroContent").load("assets/html/educacaoCapacitacaoCadastroContent.html");
     $("#includeProjetosNomedoprojetoContent").load("assets/html/projetosNomedoprojetoContent.html");
-    $("#uploadFileOne").on('click', function(e){
-        e.preventDefault();
-        $("#uploadOne:hidden").trigger('click');
+    $("#uploadFileOne").click(function(){
+        $("#uploadOne").click();
     });
     $('#videoPlay').on('shown.bs.modal', function () {
         $('#video1')[0].play();
@@ -30,3 +29,4 @@ $(function(){
         $('#video1')[0].pause();
     });
 });
+
