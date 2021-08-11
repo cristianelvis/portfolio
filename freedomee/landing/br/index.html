@@ -30,5 +30,32 @@
         <section id="section009">section 9</section>
         <section id="section010">section 10</section>
         <script src="../assets/js/bootstrap.bundle.js"></script>
+        <script>
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+                if (scroll >= 100) {
+                    $(".navHide").addClass("navShow");
+                } else {
+                    $(".navHide").removeClass("navShow");
+                }
+            });
+            $(document).ready(function(){
+                $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 800, function(){
+                            window.location.hash = hash;
+                        });
+                    }
+                });
+            });
+            $(document).ready(function(){
+                $("#menu").load("content/menu.html");
+                $("#section001").load("content/section001.html");
+            });
+        </script>
     </body>
 </html>
