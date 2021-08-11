@@ -12,15 +12,16 @@
     --gray1:#413e3e;
 }
 body, html {
-    height: 100%;
+    height:100vh;
 }
 body {
     color:black;
     font-family:'Montserrat', sans-serif;
     background-image:url("../../assets/image/blocoPrincipal2.jpg");
-    background-size:contain;
+    background-size:cover;
     background-position:top;
     background-repeat:no-repeat;
+    background-attachment:fixed;
 }
 .navbar {
     font-family:'Otomanopee One', sans-serif;
@@ -90,13 +91,35 @@ body {
     padding:0;
     margin:0;
 }
-.logotipo {
-    max-width:20rem;
-    margin:10rem auto 0 auto;
+#section001 .wrap {
+    width:100%;
+    padding-top:20%;
+    padding-bottom:20%;
+    text-align:center;
+    margin:0 auto;
+    background-color:transparent;
 }
-.btn-primary {
+#section001 .wrap .logotipo {
     max-width:20rem;
-    margin:0 auto 10rem auto;
+    margin:0 auto;
+}
+#section001 .wrap h1 {
+    font-family:'Otomanopee One', sans-serif;
+    width:60%;
+    font-size:2.2rem;
+    line-height:4rem;
+    margin:2rem auto 0 auto;
+    text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#section001 .wrap h2 {
+    font-size:1.8rem;
+    margin:2.4rem auto;
+    text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#section001 .wrap .btn-primary {
+    width:30rem;
+    max-width:20rem;
+    margin:0 auto;
     transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 .btn-primary-01,
@@ -108,9 +131,7 @@ body {
     color:white;
     text-align:right;
     width:100%;
-    height:0;
-    min-height:280px;
-    padding-bottom:99%;
+    height:49.5vh;
     margin:0 auto;
     border:3px solid var(--gray1);
     border-radius:0;
@@ -119,14 +140,6 @@ body {
     background-size:cover;
     transition:background-image .15s ease-in-out;
     text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-@media (max-width:768px) {
-    .btn-primary-01,
-    .btn-primary-02,
-    .btn-primary-03,
-    .btn-primary-04 {
-        font-size:1.2rem;
-    }
 }
 .btn-primary-01:hover,
 .btn-primary-01:focus,
@@ -155,11 +168,6 @@ body {
 .btn-primary-02:hover {
     background-image:url("../../assets/image/homem.png");
 }
-@media (max-width:576px) {
-    .btn-primary-02 {
-        background-position:30% 0;
-    }
-}
 .btn-primary-03 {
     color:black;
     background-image:url("../../assets/image/mulherNegraPB.png");
@@ -174,4 +182,70 @@ body {
 }
 .btn-primary-04:hover {
     background-image:url("../../assets/image/mulherOriental.png");
+}
+
+@media (max-width:1200px) {
+    #section001 .wrap {
+        padding-top:20%;
+        padding-bottom:20%;
+    }
+    #section001 .wrap h1 {
+        width:80%;
+        font-size:1.8rem;
+    }
+    #section001 .wrap h2 {
+        font-size:1.4rem;
+    }
+    .btn-primary-01,
+    .btn-primary-02,
+    .btn-primary-03,
+    .btn-primary-04 {
+        font-size:1.2rem;
+        height:45.8vh;
+    }
+}
+@media (max-width:768px) {
+    #section001 .wrap {
+        padding-top:20%;
+        padding-bottom:20%;
+    }
+    #section001 .wrap .logotipo {
+        max-width:15rem;
+    }
+    #section001 .wrap h1 {
+        width:95%;
+        font-size:1.6rem;
+        line-height:2rem;
+    }
+    .btn-primary-01,
+    .btn-primary-02,
+    .btn-primary-03,
+    .btn-primary-04 {
+        font-size:1.2rem;
+        height:28.3vh;
+    }
+}
+@media (max-width:576px) {
+    #section001 .wrap {
+        padding-top:20%;
+        padding-bottom:20%;
+    }
+    #section001 .wrap .logotipo {
+        max-width:15rem;
+    }
+    #section001 .wrap h1 {
+        width:95%;
+        font-size:1.6rem;
+        line-height:2rem;
+    }
+    .btn-primary-02 {
+        background-position:30% 0;
+    }
+    .btn-primary-01,
+    .btn-primary-02,
+    .btn-primary-03,
+    .btn-primary-04 {
+        font-size:1.2rem;
+        height:49.5vh;
+    }
 }
