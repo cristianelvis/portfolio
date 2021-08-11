@@ -11,8 +11,8 @@
     --roxo:#cc9afd;
     --gray1:#413e3e;
 }
-body, html {
-    height:100vh;
+html {
+    scroll-behavior:smooth;
 }
 body {
     color:black;
