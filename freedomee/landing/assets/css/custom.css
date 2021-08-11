@@ -11,6 +11,9 @@
     --roxo:#cc9afd;
     --gray1:#413e3e;
 }
+body, html {
+    height: 100%;
+}
 body {
     color:black;
     font-family:'Montserrat', sans-serif;
