@@ -12,11 +12,16 @@
     --gray1:#413e3e;
 }
 body, html {
-    height:100%;
+    height:100vh;
 }
 body {
     color:black;
     font-family:'Montserrat', sans-serif;
+    background-image:url("../../assets/image/blocoPrincipal2.jpg");
+    background-size:cover;
+    background-position:top;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
 }
 .navbar {
     font-family:'Otomanopee One', sans-serif;
@@ -49,9 +54,6 @@ body {
 }
 .navbar-dark .navbar-nav .nav-link.active {
     color:var(--azul);
-}
-section {
-  min-height: 100%;
 }
 #section001,
 #section002,
