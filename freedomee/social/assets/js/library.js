@@ -19,14 +19,5 @@ $(function(){
     $("#includeEducacaoCapacitacaoContent").load("assets/html/educacaoCapacitacaoContent.html");
     $("#includeEducacaoCapacitacaoCadastroContent").load("assets/html/educacaoCapacitacaoCadastroContent.html");
     $("#includeProjetosNomedoprojetoContent").load("assets/html/projetosNomedoprojetoContent.html");
-    $("#uploadFileOne").click(function(){
-        $("#uploadOne").click();
-    });
-    $('#videoPlay').on('shown.bs.modal', function () {
-        $('#video1')[0].play();
-    });
-    $('#videoPlay').on('hidden.bs.modal', function () {
-        $('#video1')[0].pause();
-    });
 });
 
