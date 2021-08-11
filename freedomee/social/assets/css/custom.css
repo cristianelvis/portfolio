@@ -617,11 +617,8 @@
     padding-right: 15px;
     padding-left: 15px;
 }
-#fname {
-    color:green
-}
-.wrapper {
-    display:none;
+#uploadOne {
+    display:none
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px) {
