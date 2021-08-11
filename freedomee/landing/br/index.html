@@ -11,14 +11,288 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&family=Otomanopee+One&display=swap" rel="stylesheet">
         <link href="../assets/image/logotipo-icon.png" rel="icon" type="image/png">
-        <link href="../assets/css/bootstrap-icons.css" rel="stylesheet">
-        <link href="../assets/css/bootstrap.css" rel="stylesheet">
-        <link href="../assets/css/custom.css" rel="stylesheet">
-        <script src="../assets/js/jquery.js"></script>
-        <script src="../assets/js/scripts.js"></script>
-    </head>
-    <body data-bs-spy="scroll" data-bs-target="#menu">
-        <nav class="navbar navbar-expand-sm navbar-dark fixed-top navHide" aria-label="menu" id="menu">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+ <style>
+@charset "UTF-8";
+/*!
+ * Cristian Elvis - v1.0 (http://cristianelvis.com)
+ * Copyright 2021 Cristian Elvis
+ */
+:root {
+    --azul:#7495da;
+    --amarelo:#feff01;
+    --vermelho:#ff3657;
+    --verde:#13c2a5;
+    --roxo:#cc9afd;
+    --gray1:#413e3e;
+}
+body, html {
+    height:100%;
+}
+body {
+    color:black;
+    font-family:'Montserrat', sans-serif;
+}
+.navbar {
+    font-family:'Otomanopee One', sans-serif;
+    padding:.5rem;
+    background:rgba(65, 62, 62, 0.8);
+}
+.navHide,
+.navShow {
+    display:none;
+    transition:display .15s ease-in-out;
+}
+.navShow {
+    display:unset;
+    transition:display .15s ease-in-out;
+}
+.navbar-brand {
+    width:5rem;
+}
+.flag {
+    width:25px;
+    height:auto;
+    border-radius:4px;
+    display:inline-block;
+}
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-nav .nav-link.active {
+    color:#f4f4f4;
+    padding:0.6rem 1.2rem 0.6rem 1.2rem;
+    text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.navbar-dark .navbar-nav .nav-link.active {
+    color:var(--azul);
+}
+section {
+  min-height: 100%;
+}
+#section001,
+#section002,
+#section003,
+#section004,
+#section005,
+#section006,
+#section007,
+#section008,
+#section009,
+#section010 {
+    width:100%;
+    height:auto;
+    padding-top:10rem;
+    padding-bottom:10rem;
+    border:1px solid black;
+    background-color:blue;
+}
+#section002,
+#section004,
+#section006,
+#section008,
+#section010 {
+    background-color:red;
+}
+#section001 {
+    padding-top:0;
+    padding-bottom:0;
+    border:6px solid var(--gray1);
+    background-color:transparent;
+}
+#section001 .container-fluid,
+#section001 .row,
+#section001 .col-md-6 {
+    padding:0;
+    margin:0;
+}
+#section001 .wrap {
+    width:100%;
+    padding-top:20%;
+    padding-bottom:20%;
+    text-align:center;
+    margin:0 auto;
+    background-color:transparent;
+}
+#section001 .wrap .logotipo {
+    max-width:20rem;
+    margin:0 auto;
+}
+#section001 .wrap h1 {
+    font-family:'Otomanopee One', sans-serif;
+    width:60%;
+    font-size:2.2rem;
+    line-height:4rem;
+    margin:2rem auto 0 auto;
+    text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#section001 .wrap h2 {
+    font-size:1.8rem;
+    margin:2.4rem auto;
+    text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#section001 .wrap .btn-primary {
+    width:30rem;
+    max-width:20rem;
+    margin:0 auto;
+    transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-primary-01,
+.btn-primary-02,
+.btn-primary-03,
+.btn-primary-04 {
+    font-family:'Otomanopee One', sans-serif;
+    font-size:1.6rem;
+    color:white;
+    text-align:right;
+    width:100%;
+    height:49.5vh;
+    margin:0 auto;
+    border:3px solid var(--gray1);
+    border-radius:0;
+    background-color:var(--gray1);
+    background-repeat:no-repeat;
+    background-size:cover;
+    transition:background-image .15s ease-in-out;
+    text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.btn-primary-01:hover,
+.btn-primary-01:focus,
+.btn-primary-02:hover,
+.btn-primary-02:focus,
+.btn-primary-03:hover,
+.btn-primary-03:focus,
+.btn-primary-04:hover,
+.btn-primary-04:focus {
+    color:var(--azul);
+    border:3px solid var(--gray1);
+    box-shadow:unset;
+}
+.btn-primary-01 {
+    background-image:url("../../assets/image/mulherPB.png");
+    background-position:40% 0;
+}
+.btn-primary-01:hover {
+    background-image:url("../../assets/image/mulher.png");
+}
+.btn-primary-02 {
+    color:black;
+    background-image:url("../../assets/image/homemPB.png");
+    background-position:60% 0;
+}
+.btn-primary-02:hover {
+    background-image:url("../../assets/image/homem.png");
+}
+.btn-primary-03 {
+    color:black;
+    background-image:url("../../assets/image/mulherNegraPB.png");
+    background-position:60% 0;
+}
+.btn-primary-03:hover {
+    background-image:url("../../assets/image/mulherNegra.png");
+}
+.btn-primary-04 {
+    background-image:url("../../assets/image/mulherOrientalPB.png");
+    background-position:0 40%;
+}
+.btn-primary-04:hover {
+    background-image:url("../../assets/image/mulherOriental.png");
+}
+
+@media (max-width:1200px) {
+    #section001 .wrap {
+        padding-top:20%;
+        padding-bottom:20%;
+    }
+    #section001 .wrap h1 {
+        width:80%;
+        font-size:1.8rem;
+    }
+    #section001 .wrap h2 {
+        font-size:1.4rem;
+    }
+    .btn-primary-01,
+    .btn-primary-02,
+    .btn-primary-03,
+    .btn-primary-04 {
+        font-size:1.2rem;
+        height:45.8vh;
+    }
+}
+@media (max-width:768px) {
+    #section001 .wrap {
+        padding-top:20%;
+        padding-bottom:20%;
+    }
+    #section001 .wrap .logotipo {
+        max-width:15rem;
+    }
+    #section001 .wrap h1 {
+        width:95%;
+        font-size:1.6rem;
+        line-height:2rem;
+    }
+    .btn-primary-01,
+    .btn-primary-02,
+    .btn-primary-03,
+    .btn-primary-04 {
+        font-size:1.2rem;
+        height:28.3vh;
+    }
+}
+@media (max-width:576px) {
+    #section001 .wrap {
+        padding-top:20%;
+        padding-bottom:20%;
+    }
+    #section001 .wrap .logotipo {
+        max-width:15rem;
+    }
+    #section001 .wrap h1 {
+        width:95%;
+        font-size:1.6rem;
+        line-height:2rem;
+    }
+    .btn-primary-02 {
+        background-position:30% 0;
+    }
+    .btn-primary-01,
+    .btn-primary-02,
+    .btn-primary-03,
+    .btn-primary-04 {
+        font-size:1.2rem;
+        height:49.5vh;
+    }
+}
+
+</style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#menu">
+<nav class="navbar navbar-expand-sm navbar-dark fixed-top navHide" aria-label="menu" id="menu">
             <div class="container-fluid">
                 <a href="#" class="navbar-brand" title="Bem vindo a FreedomeE">
                     <img src="../assets/image/logotipo-icon.svg" alt="Bem vindo a FreedomeE" title="Bem vindo a FreedomeE">
@@ -60,6 +334,6 @@
         <section id="section008">section 8</section>
         <section id="section009">section 9</section>
         <section id="section010">section 10</section>
-        <script src="../assets/js/bootstrap.bundle.js"></script>
-    </body>
+
+</body>
 </html>
