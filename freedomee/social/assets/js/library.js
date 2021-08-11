@@ -21,15 +21,14 @@ $(function(){
     $("#includeProjetosNomedoprojetoContent").load("assets/html/projetosNomedoprojetoContent.html");
 });
 $('#videoPlay').on('shown.bs.modal', function () {
-  $('#video1')[0].play();
-})
-$('#videoPlay').on('hidden.bs.modal', function () {
-  $('#video1')[0].pause();
-})
-$("#btnfile").click(function () {
-    $("#uplodfile").click();
+    $('#video1')[0].play();
 });
-$("#uplodfile").change(function () {
-    var file=$(this).val().replace(/C:\\fakepath\\/ig,'');    
-    $("#fname").text(file);
+$('#videoPlay').on('hidden.bs.modal', function () {
+    $('#video1')[0].pause();
+});
+$(function(){
+    $("#uploadFileOne").on('click', function(e){
+        e.preventDefault();
+        $("#uploadOne:hidden").trigger('click');
+    });
 });
