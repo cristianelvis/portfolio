@@ -10,11 +10,3 @@ $(window).scroll(function() {
         $(".navHide").removeClass("navShow");
     }
 });
-$(document).ready(function(){
-    $('#menu a').click(function( e ){
-        e.preventDefault();
-        var el = $( this.getAttribute('href') );
-        var offs = el.offset();
-        $('html, body').stop().animate({ scrollTop: offs.top-100 },500);    
-    });   
-});
