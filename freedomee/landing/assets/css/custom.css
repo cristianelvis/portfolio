@@ -50,6 +50,9 @@ body {
 .navbar-dark .navbar-nav .nav-link.active {
     color:var(--azul);
 }
+section {
+  min-height: 100%;
+}
 #section001,
 #section002,
 #section003,
