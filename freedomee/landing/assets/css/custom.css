@@ -14,8 +14,8 @@
 body {
     color:black;
     font-family:'Montserrat', sans-serif;
-    background-image:url("../../assets/image/blocoPrincipal.jpg");
-    background-size: contain;
+    background-image:url("../../assets/image/blocoPrincipal2.jpg");
+    background-size:contain;
     background-position:top;
     background-repeat:no-repeat;
 }
@@ -62,9 +62,9 @@ body {
 #section009,
 #section010 {
     width:100%;
-    height:0;
+    height:auto;
     padding-top:10rem;
-    padding-bottom:99%;
+    padding-bottom:10rem;
     border:1px solid black;
     background-color:blue;
 }
@@ -76,7 +76,6 @@ body {
     background-color:red;
 }
 #section001 {
-    height:auto;
     padding-top:0;
     padding-bottom:0;
     border:6px solid var(--gray1);
