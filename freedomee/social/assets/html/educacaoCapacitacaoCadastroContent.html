@@ -182,6 +182,28 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
+                        <div class="wow_cset_cover" title="Capa">
+                            <div class="wow_cset_cover_hdr">
+                                <span class="btn btn-file" id="coverimage-holder" onclick="$('#cover').trigger('click'); return false;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M14,6L10.25,11L13.1,14.8L11.5,16C9.81,13.75 7,10 7,10L1,18H23L14,6Z"></path></svg>
+                                </span>
+                                <input type="file" class="hidden" id="cover" accept="image/x-png, image/gif, image/jpeg" name="cover">
+                            </div>
+                            <div class="avatar-read" id="cover-form"><p></p></div>
+                        </div>
+                        <div class="wow_cset_avtr">
+                            <div class="wow_cset_avtr_hdr">
+                                <span class="btn btn-file" id="avatarimage-holder" onclick="$('#avatar').trigger('click'); return false;" title="Avatar">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M4,4H7L9,2H15L17,4H20A2,2 0 0,1 22,6V18A2,2 0 0,1 20,20H4A2,2 0 0,1 2,18V6A2,2 0 0,1 4,4M12,7A5,5 0 0,0 7,12A5,5 0 0,0 12,17A5,5 0 0,0 17,12A5,5 0 0,0 12,7M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9Z"></path></svg>
+                                </span>
+                                <input type="file" class="hidden" id="avatar" accept="image/x-png, image/gif, image/jpeg" name="avatar">
+                            </div>
+                            <div class="avatar-read" id="photo-form"><p></p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
                         <div class="wow_form_fields round-check">
                             <input type="checkbox" name="concordo" id="checkboxOne">
                             <label for="concordo" id="checkboxOneClick">Li e concordo com os Termos de serviço</label>
