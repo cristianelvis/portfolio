@@ -103,17 +103,42 @@
             <div class="col-xs-12">
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane fade in active" id="gvideos">
+                        <div class="row galleryNew001" id="myDIV">
+                            <div class="wow_content gallery">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-5"><h1>Álbum recem criado</h1></div>
+                                    <div class="col-xs-12 col-md-7">
+                                        <div class="wow_form_fields">
+                                            <a href="#" class="excluir" title="Editar Álbum">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16"><path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/></svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="thumbflow" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                    <div class="thumb" draggable="true" ondragstart="drag(event)" id="drag01">
+                                        <input class="selectIMG" type="checkbox" name="selectIMG" value="1" />
+                                        <a href="#" data-toggle="modal" data-target="#videoPlay">
+                                            <img src="https://social.freedomee.social/upload/photos/d-avatar.jpg" alt="...">
+                                        </a>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                    </div>
+                                    <div class="thumb" draggable="true" ondragstart="drag(event)" id="drag02">
+                                        <input class="selectIMG" type="checkbox" name="selectIMG" value="2" />
+                                        <a href="#" data-toggle="modal" data-target="#videoPlay">
+                                            <img src="https://social.freedomee.social/upload/photos/d-avatar.jpg" alt="...">
+                                        </a>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                    </div>
+                                </div><!-- /thumbflow -->
+                            </div><!-- /gallery -->
+                        </div>
                         <div class="row">
                             <div class="wow_content gallery">
                                 <div class="row">
-                                    <div class="col-xs-12 col-md-6"><h1>Nome do álbum</h1></div>
-                                    <div class="col-xs-12 col-md-6">
-                                        <div class="wow_form_fields">
-                                            <input name="nomedoalbum" type="text" value="Nome do Álbum">
-                                            <a class="btn btn-main btn-mat btn-mat-raised" href="#">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path></svg> Criar Álbum
-                                            </a>
-                                        </div>
+                                    <div class="col-xs-12 col-md-12">
+                                        <h1>Vídeos organizados por data</h1>
+                                        <p>Selecione um ou mais vídeos para criar um novo álbum</p>
                                     </div>
                                 </div>
                                 <div class="thumbflow" ondrop="drop(event)" ondragover="allowDrop(event)">
@@ -179,17 +204,20 @@
                         <div class="row galleryNew">
                             <div class="wow_content gallery">
                                 <div class="row">
-                                    <div class="col-xs-12 col-md-6"><h1>Nome do álbum</h1></div>
-                                    <div class="col-xs-12 col-md-6">
+                                    <div class="col-xs-12 col-md-5"><h1>Adicione o nome</h1></div>
+                                    <div class="col-xs-12 col-md-7">
                                         <div class="wow_form_fields">
-                                            <input name="nomedoalbum" type="text" value="Nome do Álbum">
-                                            <a class="btn btn-main btn-mat btn-mat-raised" href="#">
+                                            <a href="#" class="excluir" title="Excluir Álbum">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16"><path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"></path><path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"></path></svg>
+                                            </a>
+                                            <a href="#" class="btn btn-main btn-mat btn-mat-raised selectIMG" onclick="createGallery()">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path></svg> Criar Álbum
                                             </a>
+                                            <input name="nomedoalbum" type="text" value="Nome do Álbum">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="thumbflow" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                <div class="thumbflow thumbflowGroup" ondrop="drop(event)" ondragover="allowDrop(event)">
                                 </div><!-- /thumbflow -->
                             </div><!-- /gallery -->
                         </div>
@@ -199,9 +227,19 @@
                                 if($(this).is(":checked")) {
                                     $(".galleryNew").show();
                                 } else {
-                                    $(".galleryNew").show();
+                                    $(".galleryNew").hide();
                                 }
                             });
+                        </script>
+                        <script>
+                            function createGallery() {
+                              var x = document.getElementById("myDIV");
+                              if (x.style.display === "block") {
+                                x.style.display = "none";
+                              } else {
+                                x.style.display = "block";
+                              }
+                            }
                         </script>
                         <script>
                             function allowDrop(ev) {
@@ -223,14 +261,9 @@
                         <div class="row">
                             <div class="wow_content gallery">
                                 <div class="row">
-                                    <div class="col-xs-12 col-md-6"><h1>Nome do álbum</h1></div>
-                                    <div class="col-xs-12 col-md-6">
-                                        <div class="wow_form_fields">
-                                            <input name="nomedoalbum" type="text" value="Nome do Álbum">
-                                            <a class="btn btn-main btn-mat btn-mat-raised" href="#">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path></svg> Criar Álbum
-                                            </a>
-                                        </div>
+                                    <div class="col-xs-12 col-md-12">
+                                        <h1>Fotos organizadas por data</h1>
+                                        <p>Selecione uma ou mais fotos para criar um novo álbum</p>
                                     </div>
                                 </div>
                                 <div class="thumbflow" ondrop="drop(event)" ondragover="allowDrop(event)">
@@ -320,7 +353,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z"></path></svg> Responsável: <a href="#">Nome de usuário</a>
         </li>
         <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="M22.7,19L13.6,9.9C14.5,7.6 14,4.9 12.1,3C10.1,1 7.1,0.6 4.7,1.7L9,6L6,9L1.6,4.7C0.4,7.1 0.9,10.1 2.9,12.1C4.8,14 7.5,14.5 9.8,13.6L18.9,22.7C19.3,23.1 19.9,23.1 20.3,22.7L22.6,20.4C23.1,20 23.1,19.3 22.7,19Z"></path></svg> <a href="https://cristianelvis.com/freedomee/social/educacao-capacitacao-cadastro.html">Editar informações</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="M22.7,19L13.6,9.9C14.5,7.6 14,4.9 12.1,3C10.1,1 7.1,0.6 4.7,1.7L9,6L6,9L1.6,4.7C0.4,7.1 0.9,10.1 2.9,12.1C4.8,14 7.5,14.5 9.8,13.6L18.9,22.7C19.3,23.1 19.9,23.1 20.3,22.7L22.6,20.4C23.1,20 23.1,19.3 22.7,19Z"></path></svg> <a href="/freedomee/social/educacao-capacitacao-cadastro.html">Editar informações</a>
         </li>
     </ul>
     <ul class="page-margin wow_content negg_padd list-unstyled event-options-list right_user_info">
