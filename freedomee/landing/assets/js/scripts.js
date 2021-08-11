@@ -1,7 +1,3 @@
-$(function(){
-    $("#menu").load("content/menu.html");
-    $("#section001").load("content/section001.html");
-});
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     if (scroll >= 100) {
@@ -33,4 +29,8 @@ $(document).ready(function(){
       });
     } // End if
   });
+});
+$(document).ready(function(){
+    $("#menu").load("content/menu.html");
+    $("#section001").load("content/section001.html");
 });
