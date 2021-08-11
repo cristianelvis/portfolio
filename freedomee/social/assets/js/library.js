@@ -19,16 +19,14 @@ $(function(){
     $("#includeEducacaoCapacitacaoContent").load("assets/html/educacaoCapacitacaoContent.html");
     $("#includeEducacaoCapacitacaoCadastroContent").load("assets/html/educacaoCapacitacaoCadastroContent.html");
     $("#includeProjetosNomedoprojetoContent").load("assets/html/projetosNomedoprojetoContent.html");
-});
-$('#videoPlay').on('shown.bs.modal', function () {
-    $('#video1')[0].play();
-});
-$('#videoPlay').on('hidden.bs.modal', function () {
-    $('#video1')[0].pause();
-});
-$(function(){
     $("#uploadFileOne").on('click', function(e){
         e.preventDefault();
         $("#uploadOne:hidden").trigger('click');
+    });
+    $('#videoPlay').on('shown.bs.modal', function () {
+        $('#video1')[0].play();
+    });
+    $('#videoPlay').on('hidden.bs.modal', function () {
+        $('#video1')[0].pause();
     });
 });
