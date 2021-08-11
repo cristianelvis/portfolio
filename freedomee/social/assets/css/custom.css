@@ -541,7 +541,7 @@
     background-color:#8e6ab1;
 }
 .bg-anthropic {
-    background-image:url(https://cristianelvis.com/freedomee/social/assets/images/banner-filantropia-b.jpg)!important;
+    background-image:url(/freedomee/social/assets/images/banner-filantropia-b.jpg)!important;
     background-repeat:no-repeat!important;
     background-size:cover!important;
     background-position:center!important;
@@ -582,23 +582,36 @@
 }
 .gallery .wow_form_fields .btn,
 .gallery .wow_form_fields input {
-    margin-left:10px;
-    line-height:28px;
+    margin: 0 auto;
     padding:0 10px;
-    font-size:13px;
+    font-size: 12px;
     letter-spacing: 0.5px;
-    min-width:120px;
+    width:120px;
     display:inline-block;
+    float:right;
 }
 .gallery .wow_form_fields input {
-    width:160px;
-    height:30px;
-    padding:0 10px;
+    width: 140px;
+    height: 34px;
+    margin: 0 5px 0 0;
+}
+a.excluir {
+    width:20px!important;
+    height:34px;
+    padding:10px 0;
+    margin:0 0 0 5px;
+    display:inline-flex;
+    float:right;
+}
+a.excluir:hover,
+a.excluir:focus {
+    opacity:.6;
 }
 .thumbflow,
 .thumbflowGroup {
     display:flex;
     overflow-x:scroll;
+    background-color:#ffffff;
 }
 .thumb {
     display:inline-block;
@@ -634,17 +647,17 @@
     -webkit-box-orient:vertical;
 }
 .thumbflowGroup {
-    background-color:#cccccc;
+    min-height:300px;
     margin:1rem auto;
+    background-color:#f1f1f1;
 }
 .thumbflowGroup:focus,
 .thumbflowGroup:active,
 .thumbflowGroup:hover {
-    background-color:gray;
+    background-color:#cccccc;
     box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
     transition:display .15s ease-in-out;
 }
-
 .nav-tabs-project {
     margin-top:30px;    
 }
@@ -666,6 +679,9 @@
 }
 #uploadOne {
     display:none
+}
+#myDIV {
+  display:none;
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px) {
