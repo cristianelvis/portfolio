@@ -677,7 +677,8 @@ a.excluir:focus {
     padding-right: 15px;
     padding-left: 15px;
 }
-#uploadOne {
+#uploadOne,
+#upload2{
     display:none
 }
 #myDIV {
