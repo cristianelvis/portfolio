@@ -683,6 +683,10 @@ a.excluir:focus {
 #myDIV {
   display:none;
 }
+.setting-avatar {
+  width: 30px;
+  margin-right: 10px;
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px) {
 
