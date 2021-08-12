@@ -677,6 +677,10 @@ a.excluir:focus {
     padding-right: 15px;
     padding-left: 15px;
 }
+.wow_form_fields .filelist {
+    position:relative;
+    top:8px;
+}
 #uploadOne,
 #upload2{
     display:none
