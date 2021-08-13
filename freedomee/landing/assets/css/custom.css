@@ -39,7 +39,7 @@ body {
     transition:all .15s ease-in-out;
 }
 .navbar-brand {
-    width:5rem;
+    width:4rem;
 }
 .flag {
     width:1.8rem;
@@ -196,37 +196,33 @@ body {
 }
 .section001-btn-01,
 #btnOneContent .modal-fullscreen {
-    background-image:url("../images/welcomeMulherPB.png");
-    background-position:40% 0;
+    background-image:url("../images/welcomeMulherPB-min.png");
 }
 .section001-btn-01:hover {
-    background-image:url("../images/welcomeMulher.png");
+    background-image:url("../images/welcomeMulher-min.png");
 }
 .section001-btn-02,
 #btnTwoContent .modal-fullscreen {
     color:black;
-    background-image:url("../images/welcomeHomemPB.png");
-    background-position:60% 0;
+    background-image:url("../images/welcomeHomemPB-min.png");
 }
 .section001-btn-02:hover {
-    background-image:url("../images/welcomeHomem.png");
+    background-image:url("../images/welcomeHomem-min.png");
 }
 .section001-btn-03,
 #btnThreeContent .modal-fullscreen {
     color:black;
-    background-image:url("../images/welcomeMulherNegraPB.png");
-    background-position:60% 0;
+    background-image:url("../images/welcomeMulherNegraPB-min.png");
 }
 .section001-btn-03:hover {
-    background-image:url("../images/welcomeMulherNegra.png");
+    background-image:url("../images/welcomeMulherNegra-min.png");
 }
 .section001-btn-04,
 #btnFourContent .modal-fullscreen {
-    background-image:url("../images/welcomeMulherOrientalPB.png");
-    background-position:0 40%;
+    background-image:url("../images/welcomeMulherOrientalPB-min.png");
 }
 .section001-btn-04:hover {
-    background-image:url("../images/welcomeMulherOriental.png");
+    background-image:url("../images/welcomeMulherOriental-min.png");
 }
 #btnOneContent .modal-fullscreen,
 #btnTwoContent .modal-fullscreen,
