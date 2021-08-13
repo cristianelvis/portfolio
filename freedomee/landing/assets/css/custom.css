@@ -10,46 +10,70 @@
     --verde:#13c2a5;
     --roxo:#cc9afd;
     --gray1:#413e3e;
-}
-html {
-    scroll-behavior:smooth;
+    --gray2:#626060;
+    --gray3:#c4c4c4;
+    --gray4:#f4f4f4;
+    --gray5:#f6f6f6;
 }
 body {
-    color:black;
     font-family:'Montserrat', sans-serif;
+    color:black;
+    font-size:1rem;
+    line-height:1.2rem;
+    background-image:url("../../assets/images/blocoPrincipal2.jpg");
+    background-position:top;
+    background-size:cover;
 }
 .navbar {
     font-family:'Otomanopee One', sans-serif;
-    padding:.5rem;
-    background:rgba(65, 62, 62, 0.8);
+    padding:0.3vw;
+    background-color:var(--gray2);
 }
 .navHide,
 .navShow {
-    display:none;
-    transition:display .15s ease-in-out;
+    top:-150vw;
+    transition:all .15s ease-in-out;
 }
 .navShow {
-    display:unset;
-    transition:display .15s ease-in-out;
+    top:0;
+    transition:all .15s ease-in-out;
 }
 .navbar-brand {
     width:5rem;
 }
 .flag {
-    width:25px;
+    width:1.8rem;
     height:auto;
-    border-radius:4px;
+    border-radius:0.4rem;
     display:inline-block;
 }
 .navbar-dark .navbar-nav .nav-link,
 .navbar-dark .navbar-nav .nav-link.active {
-    color:#f4f4f4;
+    position:relative;
+    top:0;
+    color:var(--gray4);
     padding:0.6rem 1.2rem 0.6rem 1.2rem;
     text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition:all .4s ease;
 }
 .navbar-dark .navbar-nav .nav-link.active {
     color:var(--azul);
 }
+.navbar-dark .navbar-nav .nav-link:hover {
+    color:var(--amarelo);
+    top:-.3rem;
+    transition:all .4s ease;
+}
+.navbar-dark .navbar-nav .nav-link:focus {
+    color:var(--verde);
+}
+.nav-link.btn.btn-secondary {
+    color:var(--gray1);
+    background-color:var(--gray3);
+    border-radius:2rem;
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#section000,
 #section001,
 #section002,
 #section003,
@@ -62,8 +86,8 @@ body {
 #section010 {
     width:100%;
     height:auto;
-    padding-top:10rem;
-    padding-bottom:10rem;
+    padding-top:15vh;
+    padding-bottom:15vh;
     border:1px solid black;
     background-color:blue;
 }
@@ -73,6 +97,12 @@ body {
 #section008,
 #section010 {
     background-color:red;
+}
+#section000 {
+    padding-top:0;
+    padding-bottom:0;
+    border:0;
+    background-color:transparent;
 }
 #section001 {
     padding-top:0;
@@ -88,41 +118,56 @@ body {
 }
 #section001 .wrap {
     width:100%;
-    padding-top:20%;
-    padding-bottom:20%;
+    padding-top:17vh;
+    padding-bottom:0;
     text-align:center;
     margin:0 auto;
-    background-color:transparent;
 }
 #section001 .wrap .logotipo {
-    max-width:20rem;
+    max-width:15vw;
     margin:0 auto;
 }
 #section001 .wrap h1 {
     font-family:'Otomanopee One', sans-serif;
-    width:60%;
-    font-size:2.2rem;
-    line-height:4rem;
-    margin:2rem auto 0 auto;
+    font-size:1.9vw;
+    line-height:3.1vw;
+    width:31.6vw;
+    margin:2.8vw auto 0 auto;
     text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 #section001 .wrap h2 {
-    font-size:1.8rem;
-    margin:2.4rem auto;
+    font-size:1.6vw;
+    margin:2.8vw auto;
     text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 #section001 .wrap .btn-primary {
-    width:30rem;
-    max-width:20rem;
-    margin:0 auto;
-    transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    position:relative;
+    top:0;
+    font-size:1.6vw;
+    width:16vw;
+    padding:1vw;
+    margin:2.5vw auto;
+    border:1px solid white;
+    border-radius:1.3vw;
+    background-color:var(--gray1);
+    transition:all .4s ease;
+  }
+#section001 .wrap .btn-primary:hover {
+    top:-1vw;
+    width:19vw;
+    padding:1.6vw;
+    border-radius:2.3vw;
+    background-color:var(--roxo);
+    text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow:6px 6px 6px rgba(0, 0, 0, 0.25);
+    transition:all .4s ease;
 }
-.btn-primary-01,
-.btn-primary-02,
-.btn-primary-03,
-.btn-primary-04 {
+.section001-btn-01,
+.section001-btn-02,
+.section001-btn-03,
+.section001-btn-04 {
     font-family:'Otomanopee One', sans-serif;
-    font-size:1.6rem;
+    font-size:1.6vw;
     color:white;
     text-align:right;
     width:100%;
@@ -133,114 +178,205 @@ body {
     background-color:var(--gray1);
     background-repeat:no-repeat;
     background-size:cover;
-    transition:background-image .15s ease-in-out;
     text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition:all .45s ease;
 }
-.btn-primary-01:hover,
-.btn-primary-01:focus,
-.btn-primary-02:hover,
-.btn-primary-02:focus,
-.btn-primary-03:hover,
-.btn-primary-03:focus,
-.btn-primary-04:hover,
-.btn-primary-04:focus {
+.section001-btn-01:hover,
+.section001-btn-01:focus,
+.section001-btn-02:hover,
+.section001-btn-02:focus,
+.section001-btn-03:hover,
+.section001-btn-03:focus,
+.section001-btn-04:hover,
+.section001-btn-04:focus {
     color:var(--azul);
     border:3px solid var(--gray1);
     box-shadow:unset;
+    transition:all .5s ease;
 }
-.btn-primary-01 {
-    background-image:url("../../assets/image/mulherPB.png");
+.section001-btn-01,
+#btnOneContent .modal-fullscreen {
+    background-image:url("../images/welcomeMulherPB.png");
     background-position:40% 0;
 }
-.btn-primary-01:hover {
-    background-image:url("../../assets/image/mulher.png");
+.section001-btn-01:hover {
+    background-image:url("../images/welcomeMulher.png");
 }
-.btn-primary-02 {
+.section001-btn-02,
+#btnTwoContent .modal-fullscreen {
     color:black;
-    background-image:url("../../assets/image/homemPB.png");
+    background-image:url("../images/welcomeHomemPB.png");
     background-position:60% 0;
 }
-.btn-primary-02:hover {
-    background-image:url("../../assets/image/homem.png");
+.section001-btn-02:hover {
+    background-image:url("../images/welcomeHomem.png");
 }
-.btn-primary-03 {
+.section001-btn-03,
+#btnThreeContent .modal-fullscreen {
     color:black;
-    background-image:url("../../assets/image/mulherNegraPB.png");
+    background-image:url("../images/welcomeMulherNegraPB.png");
     background-position:60% 0;
 }
-.btn-primary-03:hover {
-    background-image:url("../../assets/image/mulherNegra.png");
+.section001-btn-03:hover {
+    background-image:url("../images/welcomeMulherNegra.png");
 }
-.btn-primary-04 {
-    background-image:url("../../assets/image/mulherOrientalPB.png");
+.section001-btn-04,
+#btnFourContent .modal-fullscreen {
+    background-image:url("../images/welcomeMulherOrientalPB.png");
     background-position:0 40%;
 }
-.btn-primary-04:hover {
-    background-image:url("../../assets/image/mulherOriental.png");
+.section001-btn-04:hover {
+    background-image:url("../images/welcomeMulherOriental.png");
 }
-
+#btnOneContent .modal-fullscreen,
+#btnTwoContent .modal-fullscreen,
+#btnThreeContent .modal-fullscreen,
+#btnFourContent .modal-fullscreen{
+    width:50.5vw;
+    border:3px solid var(--gray1);
+    float:right;
+    background-color:black;
+    background-size:cover;
+}
+#btnOneContent.fade .modal-dialog,
+#btnTwoContent.fade .modal-dialog,
+#btnThreeContent.fade .modal-dialog,
+#btnFourContent.fade .modal-dialog {
+    right:-50%;
+    transition:all .6s ease;
+}
+#btnOneContent.fade.show .modal-dialog,
+#btnTwoContent.fade.show .modal-dialog,
+#btnThreeContent.fade.show .modal-dialog,
+#btnFourContent.fade.show .modal-dialog {
+    right:0;
+    transition:all .6s ease;
+}
+#btnOneContent .modal-content,
+#btnTwoContent .modal-content,
+#btnThreeContent .modal-content,
+#btnFourContent .modal-content {
+    background-color:rgba(0, 0, 0, 0.7);;
+}
+#btnOneContent .modal-content .modal-body,
+#btnTwoContent .modal-content .modal-body,
+#btnThreeContent .modal-content .modal-body,
+#btnFourContent .modal-content .modal-body {
+    color:var(--gray5);
+    text-align:center;
+    padding:16vw 8vw 0 8vw;
+}
+#btnOneContent .modal-content .modal-body h1,
+#btnTwoContent .modal-content .modal-body h1,
+#btnThreeContent .modal-content .modal-body h1,
+#btnFourContent .modal-content .modal-body h1 {
+    font-size:2vw;
+    font-weight:bold;
+    margin-bottom:6vw;
+}
+#btnOneContent .btn-close,
+#btnTwoContent .btn-close,
+#btnThreeContent .btn-close,
+#btnFourContent .btn-close {
+    background-color:var(--gray4);
+}
+.list-group-item-action {
+    width:30%;
+    margin:0 auto;
+    color:white;
+    text-align:center;
+    border:0;
+    border-radius:0;
+    background-color:transparent;
+}
+.list-group-item-action:focus,
+.list-group-item-action:hover {
+    color:black;
+    background-color:var(--amarelo);
+    border-radius:0;
+}
+.list-group-item-action:focus {
+    background-color:var(--verde);
+}
+.modal-header,
+.modal-footer {
+    border:0;
+}
 @media (max-width:1200px) {
-    #section001 .wrap {
-        padding-top:20%;
-        padding-bottom:20%;
-    }
-    #section001 .wrap h1 {
-        width:80%;
-        font-size:1.8rem;
-    }
-    #section001 .wrap h2 {
-        font-size:1.4rem;
-    }
-    .btn-primary-01,
-    .btn-primary-02,
-    .btn-primary-03,
-    .btn-primary-04 {
-        font-size:1.2rem;
-        height:45.8vh;
+
+}
+@media (max-width:1024px) {
+    .section001-btn-01,
+    .section001-btn-02,
+    .section001-btn-03,
+    .section001-btn-04 {
+        height:20vh;
     }
 }
 @media (max-width:768px) {
-    #section001 .wrap {
-        padding-top:20%;
-        padding-bottom:20%;
-    }
-    #section001 .wrap .logotipo {
-        max-width:15rem;
-    }
-    #section001 .wrap h1 {
-        width:95%;
-        font-size:1.6rem;
-        line-height:2rem;
-    }
-    .btn-primary-01,
-    .btn-primary-02,
-    .btn-primary-03,
-    .btn-primary-04 {
-        font-size:1.2rem;
-        height:28.3vh;
+    .section001-btn-01,
+    .section001-btn-02,
+    .section001-btn-03,
+    .section001-btn-04 {
+        height:20vh;
     }
 }
 @media (max-width:576px) {
     #section001 .wrap {
-        padding-top:20%;
-        padding-bottom:20%;
+        padding-top:30vw;
+        padding-bottom:30vw;
     }
     #section001 .wrap .logotipo {
-        max-width:15rem;
+        max-width:60vw;
     }
     #section001 .wrap h1 {
-        width:95%;
-        font-size:1.6rem;
-        line-height:2rem;
+        width:80vw;
+        font-size:7vw;
+        line-height:5vh;
     }
-    .btn-primary-02 {
+    #section001 .wrap h2 {
+        font-size:6vw;
+    }
+    #section001 .wrap .btn-primary {
+        font-size:6vw;
+        width:66vw;
+        padding:1.8vw;
+        margin:2.6vw auto;
+        border-radius:5vw;
+      }
+    #section001 .wrap .btn-primary:hover {
+        top:-1vw;
+        width:69vw;
+        padding:2.6vw;
+        border-radius:6vw;
+    }
+    .section001-btn-02 {
         background-position:30% 0;
     }
-    .btn-primary-01,
-    .btn-primary-02,
-    .btn-primary-03,
-    .btn-primary-04 {
-        font-size:1.2rem;
+    .section001-btn-01,
+    .section001-btn-02,
+    .section001-btn-03,
+    .section001-btn-04 {
+        font-size:10vw;
         height:49.5vh;
+    }
+    #btnOneContent .modal-fullscreen,
+    #btnTwoContent .modal-fullscreen,
+    #btnThreeContent .modal-fullscreen,
+    #btnFourContent .modal-fullscreen {
+        width:100vw;
+    }
+    #btnOneContent .modal-content .modal-body,
+    #btnTwoContent .modal-content .modal-body,
+    #btnThreeContent .modal-content .modal-body,
+    #btnFourContent .modal-content .modal-body {
+        padding:26vw 8vw 0 8vw;
+    }
+    #btnOneContent .modal-content .modal-body h1,
+    #btnTwoContent .modal-content .modal-body h1,
+    #btnThreeContent .modal-content .modal-body h1,
+    #btnFourContent .modal-content .modal-body h1 {
+        font-size:7vw;
+        margin-bottom:14vw;
     }
 }
