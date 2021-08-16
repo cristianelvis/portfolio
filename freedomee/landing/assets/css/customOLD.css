@@ -19,10 +19,10 @@ html,
 body {
     position:relative;
     font-family:'Montserrat', sans-serif;
+    color:black;
     font-size:1.6vh;
     font-weight:400;
     line-height:1.8vh;
-    color:black;
     background:url("../../assets/images/blocoPrincipal2.jpg") no-repeat;
     background-position:0 12.69%;
     -webkit-background-size:cover;
@@ -41,6 +41,7 @@ a:hover {
 }
 .bgOut {
     background:unset!important;
+    background-color:red!important;
 }
 .wrapcenter {
   height:99vh;
@@ -73,6 +74,7 @@ a:hover {
 }
 .navbar-dark .navbar-nav .nav-link,
 .navbar-dark .navbar-nav .nav-link.active {
+    font-size:1.6vh;
     position:relative;
     top:0;
     color:var(--gray4);
@@ -82,13 +84,16 @@ a:hover {
 }
 .navbar-dark .navbar-nav .nav-link.active {
     color:var(--azul);
+    transition:all .4s ease;
 }
 .navbar-dark .navbar-nav .nav-link:hover {
     color:var(--amarelo);
     top:-0.6vh;
+    transition:all .4s ease;
 }
 .navbar-dark .navbar-nav .nav-link:focus {
     color:var(--verde);
+    transition:all .4s ease;
 }
 .nav-link.btn.btn-secondary {
     font-family:'Montserrat', sans-serif;
@@ -104,6 +109,7 @@ a:hover {
 .nav-link.btn.btn-secondary:hover {
     text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
     box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition:all .4s ease;
 }
 .modal-header,
 .modal-footer {
@@ -191,6 +197,7 @@ a:hover {
     background-color:var(--roxo);
     text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
     box-shadow:6px 6px 6px rgba(0, 0, 0, 0.25);
+    transition:all .3s ease;
 }
 .section001-btn-01,
 .section001-btn-02,
@@ -227,6 +234,7 @@ a:hover {
     padding:3vh 3vw 1vh 1vw;
     border:3px solid var(--gray1);
     box-shadow:unset;
+    transition:all .5s ease;
 }
 .section001-btn-01,
 #section001-btn-01-content .modal-fullscreen {
@@ -309,7 +317,6 @@ a:hover {
 #section001-btn-01-content .modal-content .modal-body p,
 #section001-btn-02-content .modal-content .modal-body p,
 #section001-btn-03-content .modal-content .modal-body p,
-
 #section001-btn-04-content .modal-content .modal-body p {
     font-size:2.4vh;
     line-height:2.6vh;
@@ -363,8 +370,8 @@ a:hover {
 }
 .section002 .container-fluid.cut {
     background: linear-gradient(140deg, transparent 37%, white 0%);
-    padding-top:20vh;
-    padding-bottom:0;
+    padding-top:15vh;
+    padding-bottom:15vh;
 }
 .section002 .wrap {
     width:100%;
@@ -376,6 +383,7 @@ a:hover {
 }
 .section002 h1 {
     font-family:'Otomanopee One', sans-serif;
+    text-align:center;
     margin-top:6vh;
     margin-bottom:6vh;
     text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -415,16 +423,9 @@ a:hover {
     background-repeat:no-repeat;
     background-size:cover;
     background-color:var(--gray1);
-    transition:all .45s ease;
-}
-#businessContent .pic:hover {
-    background-image:url("../images/oquesomosApertoMaos-min.png");
 }
 #economyContent .pic {
     background-image:url("../images/oquesomosMulherGloboPB-min.png");
-}
-#economyContent .pic:hover {
-    background-image:url("../images/oquesomosMulherGlobo-min.png");
 }
 #economyContent .wrap,
 #businessContent .wrap {
@@ -456,11 +457,10 @@ a:hover {
     list-style-position:inside;
 }
 .wrapcardcenter {
-    height:60vh;
-    justify-content:center;
-    align-items:center;
-    display:inline-table;
-    margin-top:10vh;
+  height:60vh;
+  justify-content:center;
+  align-items:center;
+  display:inline-block;
 }
 #wrapcard-1,
 #wrapcard-2,
@@ -556,11 +556,6 @@ a:hover {
 .wrapcard-description {
     font-weight:100;
 }
-
-
-
-
-
 #footer {
     padding-top:0;
     padding-bottom:0;
@@ -591,6 +586,7 @@ a:hover {
     margin:0.22vh 0.6vw 0 0;
     opacity:.6;
     box-shadow:6px 6px 6px rgba(0, 0, 0, 0.25);
+    transition:all .4s ease;
 }
 #footer .navbar-dark .navbar-nav .nav-link,
 #footer .navbar-dark .navbar-nav .nav-link.active {
@@ -618,6 +614,7 @@ a:hover {
     border-radius:4vw;
     text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
     box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition:all .4s ease;
 }
 @media (max-width:1024px) {
     .navbar-dark .navbar-nav .nav-link,
@@ -661,6 +658,7 @@ a:hover {
         background-color:var(--roxo);
         text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
         box-shadow:6px 6px 6px rgba(0, 0, 0, 0.25);
+        transition:all .3s ease;
     }
     .section001-btn-01,
     .section001-btn-02,
@@ -686,15 +684,6 @@ a:hover {
         background:linear-gradient(130deg, transparent 37%, white 0%);
         padding-top:35vh;
         padding-bottom:0;
-    }
-    #wrapcard-1,
-    #wrapcard-2,
-    #wrapcard-3,
-    #wrapcard-4,
-    #wrapcard-5,
-    #wrapcard-6 {
-        width:50%;
-        margin:0 auto 5vh auto;
     }
     #footer .social {
         width:1.6vh;
@@ -733,7 +722,6 @@ a:hover {
     .navbar-dark .navbar-nav .nav-link.active {
         font-size:3vh;
         padding:2vh 2vw 2vh 2vw;
-
     }
     .section001 .wrap {
         padding-top:15vh;
@@ -769,6 +757,7 @@ a:hover {
         background-color:var(--roxo);
         text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
         box-shadow:6px 6px 6px rgba(0, 0, 0, 0.25);
+        transition:all .3s ease;
     }
     .section001-btn-01,
     .section001-btn-02,
@@ -801,26 +790,6 @@ a:hover {
     .section002 .container-fluid.cut {
         padding-top:130vh;
         padding-bottom:20vh;
-    }
-    #wrapcard-1,
-    #wrapcard-2,
-    #wrapcard-3,
-    #wrapcard-4,
-    #wrapcard-5,
-    #wrapcard-6 {
-        width:100%;
-        margin:0 auto 10vh auto;
-    }
-    #wrapcard-icon-1,
-    #wrapcard-icon-2,
-    #wrapcard-icon-3,
-    #wrapcard-icon-4,
-    #wrapcard-icon-5,
-    #wrapcard-icon-6 {
-        width: 20vh;
-    }
-    .wrapcard-retangle::after {
-        transform:translateY(-3.3vh) translateX(3.3vh);
     }
     #footer .wrapcenter {
         height:30vh;
