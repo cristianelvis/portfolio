@@ -96,301 +96,180 @@
         <div class="row">
             <div class="tab-content wow_content">
                 <div role="tabpanel" class="tab-pane fade in active" id="gvideos">
-                    <div class="row">
-                        <div class="wow_content gallery">
-                            <div class="row">
-                                <div class="col-xs-12 col-md-12">
-                                    <h1>Data: 00/00/0000</h1>
-                                    <p>Selecione uma ou mais fotos para criar um novo álbum</p>
-                                </div>
-                            </div>
-                            <div class="row galleryEdit">
-                                <div class="col-xs-12">
-                                    <div class="wow_form_fields">
-                                        <a href="#" class="excluir" title="Excluir Álbum">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16"><path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"></path><path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"></path></svg>
-                                        </a>
-                                        <a class="btn btn-main btn-mat btn-mat-raised galleryedit">
-                                            Salvar edição
-                                        </a>
-                                        <input name="nomedoalbum" type="text" value="Nome do Álbum">
+                    <div class="gallery">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12">
+                                <div class="wow_search_head">
+                                    <div class="wow_srch_fields wow_form_fields">
+                                        <input type="text" name="#" placeholder="Nome" value="" autocomplete="off">
+                                    </div>
+                                    <div class="wow_srch_fields wow_form_fields">
+                                        <input type="text" name="#" placeholder="Inserção" value="" autocomplete="off">
+                                    </div>
+                                    <div class="wow_srch_fields wow_form_fields">
+                                        <input type="text" name="#" placeholder="Ordenação" value="" autocomplete="off">
+                                    </div>
+                                    <div class="wow_srch_fields">
+                                        <button type="submit" class="btn btn-main btn-mat">Filtrar</button>
                                     </div>
                                 </div>
+                                <p>Selecione um ou mais vídeos para criar um novo álbum</p>
                             </div>
-                            <div class="row galleryNew">
-                                <div class="col-xs-12">
-                                    <div class="wow_form_fields">
-                                        <a href="#" class="excluir" title="Excluir Álbum">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16"><path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"></path><path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"></path></svg>
-                                        </a>
-                                        <a class="btn btn-main btn-mat btn-mat-raised creategallery">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path></svg> Criar Álbum
-                                        </a>
-                                        <input name="nomedoalbum" type="text" value="Nome do Álbum">
-                                    </div>
+                        </div>
+                        <div class="row galleryEdit">
+                            <div class="col-xs-12 col-md-4 col-xs-offset-5">
+                                <div class="wow_form_fields">
+                                    <input name="nomedoalbum" type="text" value="Nome do Álbum">
                                 </div>
                             </div>
-                            <div class="thumbflow">
-                                <div class="thumb thumbcollection" id="drag0">
-                                    <a class="thumbedit editgallery" title="Editar álbum">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16"><path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/></svg>
+                            <div class="col-xs-12 col-md-3">
+                                <div class="wow_form_fields">
+                                    <a class="btn btn-main btn-mat btn-mat-raised galleryedit">
+                                        Salvar edição
                                     </a>
-                                    <a class="thumbedit" title="Excluir Álbum">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16"><path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"></path><path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"></path></svg>
-                                    </a>
-                                    <a href="#" data-toggle="modal" data-target="#videoPlay">
-                                        <img src="https://social.freedomee.social/upload/photos/f-avatar.jpg" alt="...">
-                                    </a>
-                                    <p>NOVO Álbum</p>
                                 </div>
-                                <div class="thumb thumbcollection" id="drag1">
-                                    <a class="thumbedit editgallery" title="Editar álbum">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16"><path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/></svg>
-                                    </a>
-                                    <a class="thumbedit" title="Excluir Álbum">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16"><path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"></path><path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"></path></svg>
-                                    </a>
-                                    <a href="#" data-toggle="modal" data-target="#videoPlay">
-                                        <img src="https://social.freedomee.social/upload/photos/d-avatar.jpg" alt="...">
-                                    </a>
-                                    <p>Descrição do seu Álbum</p>
+                            </div>
+                        </div>
+                        <div class="row galleryNew">
+                            <div class="col-xs-12 col-md-4 col-xs-offset-5">
+                                <div class="wow_form_fields">
+                                    <input name="nomedoalbum" type="text" value="Nome do Álbum">
                                 </div>
-                                <div class="thumb" id="drag2">
-                                    <input class="selectIMG" type="checkbox" name="selectIMG" value="2" />
-                                    <a href="#" data-toggle="modal" data-target="#videoPlay">
-                                        <img src="https://social.freedomee.social/upload/photos/d-avatar.jpg" alt="...">
+                            </div>
+                            <div class="col-xs-12 col-md-3">
+                                <div class="wow_form_fields">
+                                    <a class="btn btn-main btn-mat btn-mat-raised creategallery">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path></svg> Criar Álbum
                                     </a>
-                                    <p>Descrição do seu vídeo...</p>
                                 </div>
-                                <div class="thumb" id="drag3">
-                                    <input class="selectIMG" type="checkbox" name="selectIMG" value="3" />
-                                    <a href="#" data-toggle="modal" data-target="#videoPlay">
-                                        <img src="https://social.freedomee.social/upload/photos/d-avatar.jpg" alt="...">
-                                    </a>
-                                    <p>Descrição do seu vídeo...</p>
-                                </div>
-                                <div class="thumb" id="drag4">
-                                    <input class="selectIMG" type="checkbox" name="selectIMG" value="4" />
-                                    <a href="#" data-toggle="modal" data-target="#videoPlay">
-                                        <img src="https://social.freedomee.social/upload/photos/d-avatar.jpg" alt="...">
-                                    </a>
-                                    <p>Descrição do seu vídeo...</p>
-                                </div>
-                                <div class="thumb" id="drag5">
-                                    <input class="selectIMG" type="checkbox" name="selectIMG" value="5" />
-                                    <a href="#" data-toggle="modal" data-target="#videoPlay">
-                                        <img src="https://social.freedomee.social/upload/photos/d-avatar.jpg" alt="...">
-                                    </a>
-                                    <p>Descrição do seu vídeo...</p>
-                                </div>
-                                <div class="thumb" id="drag6">
-                                    <input class="selectIMG" type="checkbox" name="selectIMG" value="6" />
-                                    <a href="#" data-toggle="modal" data-target="#videoPlay">
-                                        <img src="https://social.freedomee.social/upload/photos/d-avatar.jpg" alt="...">
-                                    </a>
-                                    <p>Descrição do seu vídeo...</p>
-                                </div>
-                                <div class="thumb" id="drag7">
-                                    <input class="selectIMG" type="checkbox" name="selectIMG" value="7" />
-                                    <a href="#" data-toggle="modal" data-target="#videoPlay">
-                                        <img src="https://social.freedomee.social/upload/photos/d-avatar.jpg" alt="...">
-                                    </a>
-                                    <p>Descrição do seu vídeo...</p>
-                                </div>
-                                <div class="thumb" id="drag8">
-                                    <input class="selectIMG" type="checkbox" name="selectIMG" value="8" />
-                                    <a href="#" data-toggle="modal" data-target="#videoPlay">
-                                        <img src="https://social.freedomee.social/upload/photos/d-avatar.jpg" alt="...">
-                                    </a>
-                                    <p>Descrição do seu vídeo...</p>
-                                </div>
-                            </div><!-- /thumbflow -->
-                        </div><!-- /gallery -->
-                    </div>
-                    <script>
-                        $(".galleryNew").hide();
-                        $(".selectIMG").click(function() {
-                            if($(this).is(':checked')) {
-                                $(".galleryNew").show();
-                            } else {
-                                $(".galleryNew").hide();
-                            }
-                        });
-                        $("#drag0").hide();
-                        $(".creategallery").click(function() {
-                            var $this = $(this);
-                            if($(this).data(':clicked', true)) {
-                                $("#drag0").show();
-                            } else {
-                                $("#drag0").hide();
-                            }
-                        });
-                        $('.creategallery').click(function () {
-                            $('input[type=checkbox]').each(
-                              function (index, checkbox) {
-                                if (index != 0) {
-                                    checkbox.checked = false;
+                            </div>
+                        </div>
+                        <div class="thumbflow">
+                            <div class="thumb thumbcollection" id="drag0">
+                                <a class="thumbedit editgallery" title="Editar álbum">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16"><path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/></svg>
+                                </a>
+                                <a class="thumbedit" title="Excluir Álbum">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16"><path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"></path><path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"></path></svg>
+                                </a>
+                                <a href="#" data-toggle="modal" data-target="#videoPlay">
+                                    <img src="https://social.freedomee.social/upload/photos/f-avatar.jpg" alt="...">
+                                </a>
+                                <p>NOVO Álbum</p>
+                            </div>
+                            <div class="thumb thumbcollection" id="drag1">
+                                <a class="thumbedit editgallery" title="Editar álbum">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16"><path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/></svg>
+                                </a>
+                                <a class="thumbedit" title="Excluir Álbum">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16"><path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"></path><path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"></path></svg>
+                                </a>
+                                <a href="#" data-toggle="modal" data-target="#videoPlay">
+                                    <img src="https://social.freedomee.social/upload/photos/d-avatar.jpg" alt="...">
+                                </a>
+                                <p>Descrição do seu Álbum</p>
+                            </div>
+                            <div class="thumb" id="drag2">
+                                <input class="selectIMG" type="checkbox" name="selectIMG" value="2" />
+                                <a href="#" data-toggle="modal" data-target="#videoPlay">
+                                    <img src="https://social.freedomee.social/upload/photos/d-avatar.jpg" alt="...">
+                                </a>
+                                <p>Descrição do seu vídeo...</p>
+                            </div>
+                            <div class="thumb" id="drag3">
+                                <input class="selectIMG" type="checkbox" name="selectIMG" value="3" />
+                                <a href="#" data-toggle="modal" data-target="#videoPlay">
+                                    <img src="https://social.freedomee.social/upload/photos/d-avatar.jpg" alt="...">
+                                </a>
+
+                                <p>Descrição do seu vídeo...</p>
+                            </div>
+                            <div class="thumb" id="drag4">
+                                <input class="selectIMG" type="checkbox" name="selectIMG" value="4" />
+                                <a href="#" data-toggle="modal" data-target="#videoPlay">
+                                    <img src="https://social.freedomee.social/upload/photos/d-avatar.jpg" alt="...">
+                                </a>
+                                <p>Descrição do seu vídeo...</p>
+                            </div>
+                            <div class="thumb" id="drag5">
+                                <input class="selectIMG" type="checkbox" name="selectIMG" value="5" />
+                                <a href="#" data-toggle="modal" data-target="#videoPlay">
+                                    <img src="https://social.freedomee.social/upload/photos/d-avatar.jpg" alt="...">
+                                </a>
+                                <p>Descrição do seu vídeo...</p>
+                            </div>
+                            <div class="thumb" id="drag6">
+                                <input class="selectIMG" type="checkbox" name="selectIMG" value="6" />
+                                <a href="#" data-toggle="modal" data-target="#videoPlay">
+                                    <img src="https://social.freedomee.social/upload/photos/d-avatar.jpg" alt="...">
+                                </a>
+                                <p>Descrição do seu vídeo...</p>
+                            </div>
+                            <div class="thumb" id="drag7">
+                                <input class="selectIMG" type="checkbox" name="selectIMG" value="7" />
+                                <a href="#" data-toggle="modal" data-target="#videoPlay">
+                                    <img src="https://social.freedomee.social/upload/photos/d-avatar.jpg" alt="...">
+                                </a>
+                                <p>Descrição do seu vídeo...</p>
+                            </div>
+                            <div class="thumb" id="drag8">
+                                <input class="selectIMG" type="checkbox" name="selectIMG" value="8" />
+                                <a href="#" data-toggle="modal" data-target="#videoPlay">
+                                    <img src="https://social.freedomee.social/upload/photos/d-avatar.jpg" alt="...">
+                                </a>
+                                <p>Descrição do seu vídeo...</p>
+                            </div>
+                        </div><!-- /thumbflow -->
+                        <script>
+                            $(".galleryNew").hide();
+                            $(".selectIMG").click(function() {
+                                if($(this).is(':checked')) {
+                                    $(".galleryNew").show();
+                                } else {
                                     $(".galleryNew").hide();
                                 }
                             });
-                        });
-                        $(".galleryEdit").hide();
-                        $(".editgallery").click(function() {
-                            var $this = $(this);
-                            if($(this).data(':clicked', true)) {
-                                $(".galleryEdit").show();
-                            } else {
-                                $(".galleryEdit").hide();
-                            }
-                        });
-                        $('.galleryedit').click(function () {
-                            $('input[type=checkbox]').each(
-                              function (index, checkbox) {
-                                if (index != 0) {
-                                    checkbox.checked = false;
+                            $("#drag0").hide();
+                            $(".creategallery").click(function() {
+                                var $this = $(this);
+                                if($(this).data(':clicked', true)) {
+                                    $("#drag0").show();
+                                } else {
+                                    $("#drag0").hide();
+                                }
+                            });
+                            $('.creategallery').click(function () {
+                                $('input[type=checkbox]').each(
+                                  function (index, checkbox) {
+                                    if (index != 0) {
+                                        checkbox.checked = false;
+                                        $(".galleryNew").hide();
+                                    }
+                                });
+                            });
+                            $(".galleryEdit").hide();
+                            $(".editgallery").click(function() {
+                                var $this = $(this);
+                                if($(this).data(':clicked', true)) {
+                                    $(".galleryEdit").show();
+                                } else {
                                     $(".galleryEdit").hide();
                                 }
                             });
-                        });
-                    </script>
+                            $('.galleryedit').click(function () {
+                                $('input[type=checkbox]').each(
+                                  function (index, checkbox) {
+                                    if (index != 0) {
+                                        checkbox.checked = false;
+                                        $(".galleryEdit").hide();
+                                    }
+                                });
+                            });
+                        </script>
+                    </div><!-- /gallery -->
                 </div><!-- /tabpanel gvideos -->
                 <div role="tabpanel" class="tab-pane fade" id="gfotos">
-                    <div class="row">
-                        <div class="wow_content gallery">
-                            <div class="row">
-                                <div class="col-xs-12 col-md-12">
-                                    <h1>Data: 00/00/0000</h1>
-                                    <p>Selecione uma ou mais fotos para criar um novo álbum</p>
-                                </div>
-                            </div>
-                            <div class="thumbflow">
-                                <div class="thumb">
-                                    <input class="selectIMG" type="checkbox" name="selectIMG" value="1" />
-                                    <a href="#" data-toggle="modal" data-target="#picPlay">
-                                        <img src="https://social.freedomee.social/upload/photos/f-avatar.jpg" alt="...">
-                                    </a>
-                                    <p>Descrição da sua foto...</p>
-                                </div>
-                                <div class="thumb">
-                                    <input class="selectIMG" type="checkbox" name="selectIMG" value="2" />
-                                    <a href="#" data-toggle="modal" data-target="#picPlay">
-                                        <img src="https://social.freedomee.social/upload/photos/f-avatar.jpg" alt="...">
-                                    </a>
-                                    <p>Descrição da sua foto...</p>
-                                </div>
-                                <div class="thumb">
-                                    <input class="selectIMG" type="checkbox" name="selectIMG" value="3" />
-                                    <a href="#" data-toggle="modal" data-target="#picPlay">
-                                        <img src="https://social.freedomee.social/upload/photos/f-avatar.jpg" alt="...">
-                                    </a>
-                                    <p>Descrição da sua foto...</p>
-                                </div>
-                                <div class="thumb">
-                                    <input class="selectIMG" type="checkbox" name="selectIMG" value="4" />
-                                    <a href="#" data-toggle="modal" data-target="#picPlay">
-                                        <img src="https://social.freedomee.social/upload/photos/f-avatar.jpg" alt="...">
-                                    </a>
-                                    <p>Descrição da sua foto...</p>
-                                </div>
-                                <div class="thumb">
-                                    <input class="selectIMG" type="checkbox" name="selectIMG" value="5" />
-                                    <a href="#" data-toggle="modal" data-target="#picPlay">
-                                        <img src="https://social.freedomee.social/upload/photos/f-avatar.jpg" alt="...">
-                                    </a>
-                                    <p>Descrição da sua foto...</p>
-                                </div>
-                                <div class="thumb">
-                                    <input class="selectIMG" type="checkbox" name="selectIMG" value="6" />
-                                    <a href="#" data-toggle="modal" data-target="#picPlay">
-                                        <img src="https://social.freedomee.social/upload/photos/f-avatar.jpg" alt="...">
-                                    </a>
-                                    <p>Descrição da sua foto...</p>
-                                </div>
-                                <div class="thumb">
-                                    <input class="selectIMG" type="checkbox" name="selectIMG" value="7" />
-                                    <a href="#" data-toggle="modal" data-target="#picPlay">
-                                        <img src="https://social.freedomee.social/upload/photos/f-avatar.jpg" alt="...">
-                                    </a>
-                                    <p>Descrição da sua foto...</p>
-                                </div>
-                                <div class="thumb">
-                                    <input class="selectIMG" type="checkbox" name="selectIMG" value="8" />
-                                    <a href="#" data-toggle="modal" data-target="#picPlay">
-                                        <img src="https://social.freedomee.social/upload/photos/f-avatar.jpg" alt="...">
-                                    </a>
-                                    <p>Descrição da sua foto...</p>
-                                </div>
-                            </div><!-- /thumbflow -->
-                        </div><!-- /gallery -->
-                    </div>
-                    <div class="row">
-                        <div class="wow_content gallery">
-                            <div class="row">
-                                <div class="col-xs-12 col-md-12">
-                                    <h1>Data: 10/10/1010</h1>
-                                    <p>Selecione uma ou mais fotos para criar um novo álbum</p>
-                                </div>
-                            </div>
-                            <div class="thumbflow">
-                                <div class="thumb">
-                                    <input class="selectIMG" type="checkbox" name="selectIMG" value="1" />
-                                    <a href="#" data-toggle="modal" data-target="#picPlay">
-                                        <img src="https://social.freedomee.social/upload/photos/f-avatar.jpg" alt="...">
-                                    </a>
-                                    <p>Descrição da sua foto...</p>
-                                </div>
-                                <div class="thumb">
-                                    <input class="selectIMG" type="checkbox" name="selectIMG" value="2" />
-                                    <a href="#" data-toggle="modal" data-target="#picPlay">
-                                        <img src="https://social.freedomee.social/upload/photos/f-avatar.jpg" alt="...">
-                                    </a>
-                                    <p>Descrição da sua foto...</p>
-                                </div>
-                                <div class="thumb">
-                                    <input class="selectIMG" type="checkbox" name="selectIMG" value="3" />
-                                    <a href="#" data-toggle="modal" data-target="#picPlay">
-                                        <img src="https://social.freedomee.social/upload/photos/f-avatar.jpg" alt="...">
-                                    </a>
-                                    <p>Descrição da sua foto...</p>
-                                </div>
-                                <div class="thumb">
-                                    <input class="selectIMG" type="checkbox" name="selectIMG" value="4" />
-                                    <a href="#" data-toggle="modal" data-target="#picPlay">
-                                        <img src="https://social.freedomee.social/upload/photos/f-avatar.jpg" alt="...">
-                                    </a>
-                                    <p>Descrição da sua foto...</p>
-                                </div>
-                                <div class="thumb">
-                                    <input class="selectIMG" type="checkbox" name="selectIMG" value="5" />
-                                    <a href="#" data-toggle="modal" data-target="#picPlay">
-                                        <img src="https://social.freedomee.social/upload/photos/f-avatar.jpg" alt="...">
-                                    </a>
-                                    <p>Descrição da sua foto...</p>
-                                </div>
-                                <div class="thumb">
-                                    <input class="selectIMG" type="checkbox" name="selectIMG" value="6" />
-                                    <a href="#" data-toggle="modal" data-target="#picPlay">
-                                        <img src="https://social.freedomee.social/upload/photos/f-avatar.jpg" alt="...">
-                                    </a>
-                                    <p>Descrição da sua foto...</p>
-                                </div>
-                                <div class="thumb">
-                                    <input class="selectIMG" type="checkbox" name="selectIMG" value="7" />
-                                    <a href="#" data-toggle="modal" data-target="#picPlay">
-                                        <img src="https://social.freedomee.social/upload/photos/f-avatar.jpg" alt="...">
-                                    </a>
-                                    <p>Descrição da sua foto...</p>
-                                </div>
-                                <div class="thumb">
-                                    <input class="selectIMG" type="checkbox" name="selectIMG" value="8" />
-                                    <a href="#" data-toggle="modal" data-target="#picPlay">
-                                        <img src="https://social.freedomee.social/upload/photos/f-avatar.jpg" alt="...">
-                                    </a>
-                                    <p>Descrição da sua foto...</p>
-                                </div>
-                            </div><!-- /thumbflow -->
-                        </div><!-- /gallery -->
-                    </div>
+                    Mesma funcionalidade da galeria de vídeos...
                 </div><!-- /tabpanel gfotos -->
             </div><!-- /tab-content -->
         </div>
