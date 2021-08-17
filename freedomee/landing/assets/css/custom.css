@@ -505,6 +505,7 @@ a:hover {
 #wrapcard-6:hover > #wrapcard-icon-6 {
     width:15vh;
     border-radius:6vw;
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 #wrapcard-1:hover > #wrapcard-icon-1 {
     background-color:var(--azul);
