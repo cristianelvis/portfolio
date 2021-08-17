@@ -576,24 +576,36 @@
     margin-bottom:0;
 }
 .gallery h1 {
-    font-size: 26px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    font-size:26px;
+    margin-top:0;
+    margin-bottom:0;
+}
+.gallery p {
+    margin-top:25px;
+    margin-bottom:0;
+}
+.gallery .wow_srch_fields > .btn-main {
+    line-height:36px;
+    min-width:100px;
+    border-radius:8px;
+}
+.gallery .wow_srch_fields:nth-child(4) {
+    border-right:0px;
 }
 .gallery .wow_form_fields .btn,
 .gallery .wow_form_fields input {
-    margin: 0 auto;
+    margin:0 auto;
     padding:0 10px;
-    font-size: 12px;
-    letter-spacing: 0.5px;
-    width:120px;
+    font-size:12px;
+    letter-spacing:0.5px;
+    width:100%;
     display:inline-block;
     float:right;
 }
 .gallery .wow_form_fields input {
-    width: 140px;
-    height: 34px;
-    margin: 0 5px 0 0;
+    width:100%;
+    height:34px;
+    margin:0;
 }
 a.excluir {
     width:20px!important;
@@ -635,9 +647,6 @@ a.excluir:focus {
     display:inline-block;
     z-index:1;
     transition:all .15s ease-in-out;
-}
-.thumb input:hover {
-    top:6px;
 }
 .thumb img {
     position:relative;
