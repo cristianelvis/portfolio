@@ -34,11 +34,10 @@ body {
     background:unset!important;
 }
 .wrapcenter {
-  height:99vh;
-  justify-content:center;
-  align-items:center;
-  display: inline-grid;
-  background-color: red;
+    height:99vh;
+    justify-content:center;
+    align-items:center;
+    display: inline-grid;
 }
 h1 {
     font-family:'Otomanopee One', sans-serif;
