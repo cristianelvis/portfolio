@@ -19,9 +19,9 @@ html,
 body {
     position:relative;
     font-family:'Montserrat', sans-serif;
-    font-size:1.6vh;
+    font-size:2.4vh;
     font-weight:400;
-    line-height:1.8vh;
+    line-height:3vh;
     color:black;
     background:url("../../assets/images/blocoPrincipal2.jpg") no-repeat;
     background-position:0 12.69%;
@@ -30,15 +30,6 @@ body {
     -o-background-size:cover;
     background-size:cover;
 }
-strong {
-    font-weight:900;
-}
-a {
-    color:black;
-}
-a:hover {
-    color:var(--roxo)
-}
 .bgOut {
     background:unset!important;
 }
@@ -46,7 +37,30 @@ a:hover {
   height:99vh;
   justify-content:center;
   align-items:center;
-  display:flex;
+  display: inline-grid;
+  background-color: red;
+}
+h1 {
+    font-family:'Otomanopee One', sans-serif;
+    font-size:4.8vh;
+    text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+h2 {
+    font-size:4.5vh;
+}
+p {
+    text-align:left;
+    margin-bottom:1vh;
+}
+a {
+    color:black;
+}
+a:hover {
+    color:var(--roxo)
+}
+strong,
+.strong {
+    font-weight:900;
 }
 .navbar {
     font-family:'Otomanopee One', sans-serif;
@@ -63,7 +77,7 @@ a:hover {
     transition:all .15s ease-in-out;
 }
 .navbar-brand {
-    width:4vw;
+    width:8vh;
 }
 .flag {
     width:1.6vw;
@@ -76,7 +90,7 @@ a:hover {
     position:relative;
     top:0;
     color:var(--gray4);
-    padding:1.6vh 1.2vw 1.6vh 1.2vw;
+    padding:1.2vh 1.2vw 1.2vh 1.2vw;
     text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
     transition:all .4s ease;
 }
@@ -90,20 +104,50 @@ a:hover {
 .navbar-dark .navbar-nav .nav-link:focus {
     color:var(--verde);
 }
-.nav-link.btn.btn-secondary {
+.btn-secondary {
     font-family:'Montserrat', sans-serif;
     color:var(--gray1);
-    padding:1vh 1.2vw 1vh 1.2vw;
+    position:relative;
+    top:0;
+    padding:0;
     margin:0 auto;
+    border:0;
+    border-radius:2.6vh;
     background-color:var(--gray3);
-    border-radius:2vw;
     text-shadow:unset;
     box-shadow:unset;
-    transition:all .4s ease;
+    transition:all .3s ease;
 }
-.nav-link.btn.btn-secondary:hover {
+.btn-secondary:hover {
+    background-color:var(--roxo);
     text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
     box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.btn-primary {
+    position:relative;
+    top:0;
+    width:18vw;
+    height:8vh;
+    padding:2.2vh;
+    margin:0 auto;
+    border:0;
+    border-radius:2.6vh;
+    background-color:var(--gray1);
+    text-shadow:unset;
+    box-shadow:unset;
+    transition:all .3s ease;
+  }
+.btn-primary:hover {
+    font-size:2.8vh;
+    top:-1vh;
+    width:19vw;
+    height:9vh;
+    padding:2.6vh;
+    margin:-0.5vh auto;
+    border-radius:2.6vw;
+    background-color:var(--roxo);
+    text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow:6px 6px 6px rgba(0, 0, 0, 0.25);
 }
 .modal-header,
 .modal-footer {
@@ -128,6 +172,9 @@ a:hover {
     border:0;
     background-color:transparent;
 }
+.section002.bgOut {
+    padding-top:14vh;
+}
 #navigation {
     padding-top:0;
     padding-bottom:0;
@@ -145,52 +192,29 @@ a:hover {
     margin:0;
 }
 .section001 .wrap {
-    padding-top:0;
-    padding-bottom:0;
-    text-align:center;
+    height:75vh;
+    padding:0;   
     margin:0 auto;
+    background-color: blue;
+    text-align:center;
+    justify-content:center;
+    align-items:center;
+    display: inline-grid;
 }
 .section001 .wrap .logotipo {
     max-width:16vw;
     margin:0 auto;
 }
 .section001 .wrap h1 {
-    font-family:'Otomanopee One', sans-serif;
-    font-size:3.6vh;
     line-height:6.3vh;
-    width:31.6vw;
-    margin:3vh auto 1vh auto;
+    width:33vw;
+    margin:0 auto;
     text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .section001 .wrap h2 {
     font-size:3vh;
-    margin:3vh auto 1vh auto;
+    margin:0 auto;
     text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.section001 .wrap .btn-primary {
-    position:relative;
-    top:0;
-    font-size:2.4vh;
-    width:18vw;
-    height:8vh;
-    padding:2vh;
-    margin:4.3vh auto;
-    border:0 solid white;
-    border-radius:1.3vw;
-    background-color:var(--gray1);
-    transition:all .3s ease;
-  }
-.section001 .wrap .btn-primary:hover {
-    top:-1vh;
-    font-size:2.6vh;
-    width:19vw;
-    height:9vh;
-    padding:2.3vh;
-    margin:3.8vh auto;
-    border-radius:2.6vw;
-    background-color:var(--roxo);
-    text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
-    box-shadow:6px 6px 6px rgba(0, 0, 0, 0.25);
 }
 .section001-btn-01,
 .section001-btn-02,
@@ -201,7 +225,7 @@ a:hover {
     color:white;
     text-align:right;
     width:100%;
-    height:50vh;
+    height:49.5vh;
     padding:1vw;
     margin:0 auto;
     border:3px solid var(--gray1);
@@ -374,13 +398,10 @@ a:hover {
     text-align:center;
     margin:0 auto;
 }
-.section002 h1 {
-    font-family:'Otomanopee One', sans-serif;
-    margin-top:6vh;
+.section002 .wrap h1 {
     margin-bottom:6vh;
-    text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.section002 p {
+.section002 .wrap p {
     text-align:left;
     margin-bottom:6vh;
 }
@@ -397,8 +418,8 @@ a:hover {
     top:1rem;
     right:1rem;
     background-color:var(--gray4);
-    padding: .5rem .5rem;
-    margin: -.5rem -.5rem -.5rem auto;
+    padding:0.5rem 0.5rem;
+    margin:-0.5rem -0.5rem -0.5rem auto;
 }
 #businessContent .modal-body,
 #economyContent .modal-body {
@@ -456,11 +477,13 @@ a:hover {
     list-style-position:inside;
 }
 .wrapcardcenter {
+    width: 100%;
     height:60vh;
     justify-content:center;
     align-items:center;
     display:inline-table;
-    margin-top:10vh;
+    margin-top:20vh;
+    background-color:red;
 }
 #wrapcard-1,
 #wrapcard-2,
@@ -557,11 +580,94 @@ a:hover {
 .wrapcard-description {
     font-weight:100;
 }
-
-
-
-
-
+#carouselFredomeeUsers {
+    font-size:1.6vh;
+    color:yellow!important;
+    margin-bottom:5vh;
+}
+#carouselFredomeeUsers .carousel-control-next,
+#carouselFredomeeUsers .carousel-control-prev {
+    width:10%;
+    opacity:1;
+}
+#carouselFredomeeUsers .carousel-control-next:hover,
+#carouselFredomeeUsers .carousel-control-prev:hover {
+    opacity:0.6;
+}
+#carouselFredomeeUsers button i {
+    color:black;
+    font-size:30px;
+}
+#carouselFredomeeUsers .carousel-inner {
+    background-color:transparent;
+}
+#carouselFredomeeUsers .carousel-item img {
+    position:relative;
+    width:65vh;
+}
+#carouselFredomeeUsers .carousel-caption {
+    min-height:66vh;
+    top:6vh;
+    right:auto;
+    bottom:unset;
+    left:50vh;
+    padding:1vh 1vh 0 0;
+    background:linear-gradient(286.88deg, #F6F6F6 12.23%, #C4C4C4 84.94%);
+    z-index:2;
+}
+#carouselFredomeeUsers .carousel-indicators {
+    left:49vh;
+    bottom:-2vh;
+}
+#carouselFredomeeUsers .carousel-indicators [data-bs-target]{
+    background-color:black;
+}
+#carouselFredomeeUsers .caption-content {
+    position:relative;
+    min-height:65vh;
+    padding: 0 1vw 0 1vw;
+    color:black;
+    background:linear-gradient(288.09deg, rgba(248, 248, 248, 0.9) 20.01%, #C4C4C4 95.96%);
+    justify-content:center;
+    align-items:center;
+    display:inline-grid;
+}
+.caption-content hr {
+    width:70%;
+    margin:0 auto 3vh auto;
+}
+.caption-content p {
+    text-align:center;
+}
+.contenthash {
+    position:absolute;
+    top:3vh;
+    left:6vh;
+    width:53vh;
+    height:72vh;
+    justify-content:start;
+    align-items:end;
+    display:inline-grid;
+    z-index:1;
+}
+.contenthash:before,
+.contenthash:after,
+.contenthash>:first-child:before,
+.contenthash>:first-child:after {
+    position:absolute;
+    width:25vh;
+    height:25vh;
+    border-color:white; /* or whatever colour */
+    border-style:solid; /* or whatever style */
+    content:' ';
+}
+.contenthash:before {top:0;left:0;border-width:4px 0 0 4px}
+.contenthash:after {top:0;right:0;border-width:0 0 0 0}
+.contenthash>:first-child:before {bottom:0;right:0;border-width:0 4px 4px 0}
+.contenthash>:first-child:after {bottom:0;left:0;border-width:0 0 0 0}
+.contenthash img {
+    width:35vh!important;
+}
 #footer {
     padding-top:0;
     padding-bottom:0;
@@ -600,12 +706,11 @@ a:hover {
 #footer .nav-link.btn.btn-secondary {
     width:20vh;
     height:5vh;
-    font-family:'Montserrat', sans-serif;
-    color:var(--gray1);
+    color:white;
     padding:1vh 1.2vw 1vh 1.2vw;
     margin:2vh auto;
-    background-color:var(--gray3);
     border-radius:2vw;
+    background-color:var(--gray3);
     text-shadow:unset;
     box-shadow:unset;
     transition:all .4s ease;
@@ -613,10 +718,13 @@ a:hover {
 #footer .nav-link.btn.btn-secondary:hover {
     width:22vh;
     height:7vh;
-    font-size:2vh;
-    padding:2vh 1.2vw 1vh 1.2vw;
+    font-size:3vh;
+
+    color:var(--amarelo);
+    padding:1vh 1.2vw 1vh 1.2vw;
     margin:1vh auto;
     border-radius:4vw;
+    background-color:var(--roxo);
     text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
     box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -708,6 +816,7 @@ a:hover {
         font-size:0.9vh;
     }
     #footer .nav-link.btn.btn-secondary {
+        font-size:2vh;
         width:15vh;
     }
     #footer .nav-link.btn.btn-secondary:hover {
@@ -775,6 +884,7 @@ a:hover {
     .section001-btn-02,
     .section001-btn-03,
     .section001-btn-04 {
+
         font-size:4.8vh;
         height:50vh;
     }
