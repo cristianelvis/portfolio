@@ -5,6 +5,7 @@
  */
 :root {
     --azul:#7495da;
+    --azulcalro:#f3e3fd;
     --amarelo:#feff01;
     --vermelho:#ff3657;
     --verde:#13c2a5;
@@ -36,10 +37,11 @@ body {
 h1 {
     font-family:'Otomanopee One', sans-serif;
     font-size:4.8vh;
+    margin-top:0;
+    margin-bottom:6vh;
+    font-weight:400;
+    line-height:120%;
     text-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
-}
-h2 {
-    font-size:4.5vh;
 }
 p {
     margin-bottom:1vh;
@@ -313,15 +315,6 @@ strong,
 #section001-btn-03-content .modal-content .modal-body,
 #section001-btn-04-content .modal-content .modal-body {
     color:var(--gray5);
-    text-align:center;
-}
-#section001-btn-01-content .modal-content .modal-body h1,
-#section001-btn-02-content .modal-content .modal-body h1,
-#section001-btn-03-content .modal-content .modal-body h1,
-#section001-btn-04-content .modal-content .modal-body h1 {
-    font-size:3vh;
-    font-weight:bold;
-    margin:0 auto 8vh auto;
 }
 #section001-btn-01-content .btn-close,
 #section001-btn-02-content .btn-close,
@@ -331,8 +324,8 @@ strong,
     top:1rem;
     right:1rem;
     background-color:var(--gray4);
-    padding: .5rem .5rem;
-    margin: -.5rem -.5rem -.5rem auto;
+    padding:0.5rem 0.5rem;
+    margin:-0.5rem -0.5rem -0.5rem auto;
 }
 #section001-btn-01-content .wrapcenter,
 #section001-btn-02-content .wrapcenter,
@@ -365,6 +358,16 @@ strong,
     padding-top:15vh;
 }
 .section002 .background {
+    background:url('../images/oquesomosBackgroundImagePB-min.png') no-repeat;
+    background-position:0 0;
+    -webkit-background-size:100%;
+    -moz-background-size:100%;
+    -o-background-size:100%;
+    background-size:100%;
+    background-color:black;
+    transition:all .5s ease;
+}
+.section002 .background:hover {
     background:url('../images/oquesomosBackgroundImage-min.png') no-repeat;
     background-position:0 0;
     -webkit-background-size:100%;
@@ -372,6 +375,7 @@ strong,
     -o-background-size:100%;
     background-size:100%;
     background-color:black;
+    transition:all .5s ease;
 }
 .section002 .container-fluid.cut {
     background: linear-gradient(140deg, transparent 37%, white 0%);
@@ -385,15 +389,9 @@ strong,
     text-align:center;
     margin:0 auto;
 }
-.section002 .wrap h1 {
-    margin-bottom:6vh;
-}
 .section002 .wrap p {
     text-align:left;
     margin-bottom:6vh;
-}
-#section002AdvertisingBannerBR {
-    min-height:20vh;
 }
 #economyContent .modal-body {
     background-position:top left;
@@ -455,7 +453,7 @@ strong,
 #economyContent ul li {
     color:white;
     font-weight:100;
-    padding:2vh 0 2vh 0;
+    padding:0 0 6vh 0;
     margin:0 auto;
     list-style-type:disc;
     list-style-position:inside;
@@ -572,22 +570,35 @@ strong,
 #carouselFredomeeUsers {
     font-size:1.6vh;
     color:yellow!important;
-    margin-bottom:5vh;
+    margin-top:6vh;
+    margin-bottom:6vh;
+}
+#carouselFredomeeUsers .carousel-indicators {
+    left:49vh;
+    bottom:-2vh;
+}
+#carouselFredomeeUsers .carousel-indicators [data-bs-target]{
+    background-color:black;
 }
 #carouselFredomeeUsers .carousel-control-next,
 #carouselFredomeeUsers .carousel-control-prev {
     width:10%;
-    opacity:1;
     transition:all .5s ease;
 }
 #carouselFredomeeUsers .carousel-control-next:hover,
 #carouselFredomeeUsers .carousel-control-prev:hover {
-    opacity:0.6;
-    text-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
+    opacity:1;
 }
 #carouselFredomeeUsers button i {
+    font-size:6vh;
     color:black;
-    font-size:5vh;
+    transition:all .5s ease;
+}
+#carouselFredomeeUsers button i:hover {
+    font-size:7vh;
+    color:var(--amarelo);
+    transition:all .5s ease;
+    text-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
 }
 #carouselFredomeeUsers .carousel-inner {
     background-color:transparent;
@@ -597,38 +608,37 @@ strong,
     width:65vh;
 }
 #carouselFredomeeUsers .carousel-caption {
-    min-height:66vh;
-    top:6vh;
+    min-height:61vh;
+    top:8vh;
     right:auto;
     bottom:unset;
-    left:50vh;
+    left:59vh;
     padding:1vh 1vh 0 0;
     background:linear-gradient(286.88deg, #F6F6F6 12.23%, #C4C4C4 84.94%);
     z-index:2;
 }
-#carouselFredomeeUsers .carousel-indicators {
-    left:49vh;
-    bottom:-2vh;
-}
-#carouselFredomeeUsers .carousel-indicators [data-bs-target]{
-    background-color:black;
-}
 #carouselFredomeeUsers .caption-content {
     position:relative;
-    min-height:65vh;
-    padding: 0 1vw 0 1vw;
+    min-height:60vh;
+    padding:1vh;
     color:black;
     background:linear-gradient(288.09deg, rgba(248, 248, 248, 0.9) 20.01%, #C4C4C4 95.96%);
     justify-content:center;
     align-items:center;
     display:inline-grid;
 }
-.caption-content hr {
+#carouselFredomeeUsers .caption-content h1 {
+    margin:0 auto;
+}
+#carouselFredomeeUsers .caption-content hr {
     width:70%;
     margin:0 auto 3vh auto;
 }
-.caption-content p {
+#carouselFredomeeUsers .caption-content p {
     text-align:center;
+}
+#carouselFredomeeUsers .btn-primary {
+    margin-top:6vh;
 }
 .contenthash {
     position:absolute;
@@ -659,6 +669,67 @@ strong,
 .contenthash img {
     width:35vh!important;
 }
+#modalFreedomeeUser .btn-close {
+    float:right;
+}
+#modalFreedomeeUser h1 {
+    margin-bottom:6vh;
+}
+#modalFreedomeeUser p {
+    margin-bottom:3vh;
+}
+#modalFreedomeeUser dl,
+#modalFreedomeeUser ol,
+#modalFreedomeeUser ul {
+    margin-bottom:6vh;
+}
+#modalFreedomeeUser .table {
+    margin-top:6vh;
+    margin-bottom:6vh;
+}
+#modalFreedomeeUser .pad1 {
+    padding:0.5rem 0.5rem 0.5rem 3rem;
+}
+#modalFreedomeeUser .pad2 {
+    padding:0.5rem 0.5rem 0.5rem 6rem;
+}
+#modalFreedomeeUser tr th {
+    text-align:left;
+    font-weight:400;
+}
+#modalFreedomeeUser .thright {
+    text-align:right;
+}
+#modalFreedomeeUser .table-hover tr:hover,
+#modalFreedomeeUser .table-hover tr:hover > .thright,
+#modalFreedomeeUser .table-hover tr:hover > th {
+    color:var(--amarelo);
+    background-color:var(--verde);
+    transition:all .5s ease;
+}
+#modalFreedomeeUser .grafico01 {
+    width:25%;
+    margin:0 auto;
+    transition:all .5s ease;
+}
+#modalFreedomeeUser .grafico01:hover {
+    width:40%;
+}
+#modalFreedomeeUser .grafico02,
+#modalFreedomeeUser .grafico03,
+#modalFreedomeeUser .grafico04,
+#modalFreedomeeUser .grafico05 {
+    width:100%;
+    margin:0 auto;
+    transition:all .5s ease;
+}
+#modalFreedomeeUser .grafico02:hover,
+#modalFreedomeeUser .grafico03:hover,
+#modalFreedomeeUser .grafico04:hover,
+#modalFreedomeeUser .grafico05:hover {
+    width:120%;
+}
+
 #footer {
     padding-top:0;
     padding-bottom:0;
