@@ -247,6 +247,18 @@ strong,
     border:3px solid var(--gray1);
     box-shadow:unset;
 }
+.section001-btn-01:hover {
+    color:var(--roxo);
+}
+.section001-btn-02:hover {
+    color:var(--azul);
+}
+.section001-btn-03:hover {
+    color:var(--verde);
+}
+.section001-btn-04:hover {
+    color:var(--amarelo);
+}
 .section001-btn-01,
 #section001-btn-01-content .modal-fullscreen {
     background-image:url("../images/welcomeMulherPB-min.png");
@@ -476,7 +488,6 @@ strong,
     display:inline-table;
     text-shadow:unset;
     transition:all .5s ease;
-    background-color: red;
 }
 #wrapcard-1:hover,
 #wrapcard-2:hover,
@@ -545,7 +556,7 @@ strong,
     transform:translateY(-3.2vh) translateX(3.1vh);
 }
 .wrapcard-retangle::before {
-    transform:translateY(-0.6vh) translateX(-10.1vh);
+    transform:translateY(-0.6vh) translateX(-13.4vh);
 }
 #wrapcard-1:hover > .wrapcard-retangle,
 #wrapcard-2:hover > .wrapcard-retangle,
