@@ -476,6 +476,7 @@ strong,
     display:inline-table;
     text-shadow:unset;
     transition:all .5s ease;
+    background-color: red;
 }
 #wrapcard-1:hover,
 #wrapcard-2:hover,
@@ -539,7 +540,7 @@ strong,
     display:inline-block;
     content:"";
     border-top:0.3vh dashed black;
-    width:10vh;
+    width:13.4vh;
     margin:0 auto;
     transform:translateY(-3.2vh) translateX(3.1vh);
 }
