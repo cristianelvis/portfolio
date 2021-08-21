@@ -99,8 +99,12 @@ ul {
     white-space:nowrap;
 }
 .flag {
+    width:3vh;
     border-radius:0.3vw;
     display:inline-block;
+}
+.dropdown-item .flag {
+    width:3vh;
 }
 .navbar-dark .navbar-nav .nav-link,
 .navbar-dark .navbar-nav .nav-link.active {
@@ -977,15 +981,15 @@ button.btn-close:focus {
     body {
         position:relative;
         font-family:'Montserrat', sans-serif;
-        font-size: 3.2vh;
+        font-size:3vh;
         font-weight:400;
         line-height:120%;
         color:black;
     }
     .navbar-dark .navbar-nav .nav-link,
     .navbar-dark .navbar-nav .nav-link.active {
-        font-size:3.2vh;
-        padding:3vh 3vw 3vh 3vw;
+        font-size:3vh;
+        padding:2vh 2vw 2vh 2vw;
     }
     .navbar-dark .navbar-nav .nav-link.btn-secondary {
         width:100%;
@@ -1001,13 +1005,13 @@ button.btn-close:focus {
     .section001-btn-02,
     .section001-btn-03,
     .section001-btn-04 {
-        font-size: 4vh;
+        font-size:4vh;
         padding: 1vh 1vw 50vh 1vw;
     }
     .section002 .container-fluid.cut {
-        background: linear-gradient(140deg, transparent 12%, white 0%);
-        padding-top: 20vh;
-        padding-bottom: 10vh;
+        background: linear-gradient(140deg, transparent 13%, white 0%);
+        padding-top:20vh;
+        padding-bottom:10vh;
     }
     .wrapcard-retangle::before,
     .wrapcard-retangle::after {
