@@ -455,6 +455,9 @@ button.btn-close:focus {
     padding-top:15vh;
     padding-bottom:15vh;
 }
+.section002 .wrap {
+    height:auto;
+}
 .section002 .wrap p {
     text-align:left;
     margin-bottom:6vh;
@@ -974,7 +977,7 @@ button.btn-close:focus {
     body {
         position:relative;
         font-family:'Montserrat', sans-serif;
-        font-size:2.2vh;
+        font-size: 3.2vh;
         font-weight:400;
         line-height:120%;
         color:black;
@@ -998,7 +1001,20 @@ button.btn-close:focus {
     .section001-btn-02,
     .section001-btn-03,
     .section001-btn-04 {
-        padding: 1vh 1vw 47.5vh 1vw;
+        font-size: 4vh;
+        padding: 1vh 1vw 50vh 1vw;
+    }
+    .section002 .container-fluid.cut {
+        background: linear-gradient(140deg, transparent 12%, white 0%);
+        padding-top: 20vh;
+        padding-bottom: 10vh;
+    }
+    .wrapcard-retangle::before,
+    .wrapcard-retangle::after {
+        transform:translateY(-4.9vh) translateX(3.1vh);
+    }
+    .wrapcard-retangle::before {
+        transform:translateY(-1.2vh) translateX(-10.3vh);
     }
     #footer .wrapcenter {
         height:35vh;
