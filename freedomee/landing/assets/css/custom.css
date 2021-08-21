@@ -880,9 +880,6 @@ button.btn-close:focus {
     margin:2vh auto;
 }
 @media (max-width:1024px) {
-    h1 {
-        font-size:3vh;
-    }
     .navbar-dark .navbar-nav .nav-link,
     .navbar-dark .navbar-nav .nav-link.active {
         font-size:0.8vh;
