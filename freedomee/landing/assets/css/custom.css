@@ -994,6 +994,12 @@ button.btn-close:focus {
     .btn-primary:hover {
         width:57vw;
     }
+    .section001-btn-01,
+    .section001-btn-02,
+    .section001-btn-03,
+    .section001-btn-04 {
+        padding: 1vh 1vw 47.5vh 1vw;
+    }
     #footer .wrapcenter {
         height:35vh;
     }
