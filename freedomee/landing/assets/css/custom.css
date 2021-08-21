@@ -447,7 +447,7 @@ button.btn-close:focus {
     -moz-background-size:100%;
     -o-background-size:100%;
     background-size:100%;
-    background-color:transparent;
+    background-color:black;
     transition:all .5s ease;
 }
 .section002 .container-fluid.cut {
