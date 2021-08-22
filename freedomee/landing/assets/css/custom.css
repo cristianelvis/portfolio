@@ -67,15 +67,6 @@ strong,
 .strong {
     font-weight:900;
 }
-ul {
-    display:inline-block;
-    list-style-type:disc;
-    margin-block-start:unset;
-    margin-block-end:unset;
-    margin-inline-start:unset;
-    margin-inline-end:unset;
-    padding-inline-start:unset;
-}
 .navbar {
     font-family:'Otomanopee One', sans-serif;
     padding:0.6vh 1.2vw 0.6vh 1.2vw;
@@ -153,7 +144,7 @@ ul {
     top:0;
     width:18vw;
     height:8vh;
-    padding: 2.4vh 2vh;
+    padding:2.4vh 2vh;
     margin:0 auto;
     border:0;
     border-radius:2.6vh;
@@ -169,7 +160,7 @@ ul {
     top:-1vh;
     width:19vw;
     height:9vh;
-    padding:2.6vh;
+    padding:3vh 2vh;
     margin:-0.5vh auto;
     border-radius:2.6vw;
     background-color:var(--roxo);
@@ -529,7 +520,7 @@ button.btn-close:focus {
 #wrapcard-5,
 #wrapcard-6 {
     padding: 0 1.4vh 1.4vh 1.4vh;
-    margin: 10vh auto;
+    margin:10vh auto;
     display:inline-table;
     text-shadow:unset;
     transition:all .5s ease;
@@ -561,8 +552,8 @@ button.btn-close:focus {
 #wrapcard-4:hover > #wrapcard-icon-4,
 #wrapcard-5:hover > #wrapcard-icon-5,
 #wrapcard-6:hover > #wrapcard-icon-6 {
-    width:15vh;
-    border-radius:10vw;
+    width:70%;
+    border-radius:50vw;
     box-shadow:6px 6px 6px rgba(0, 0, 0, 0.25);
 }
 #wrapcard-1:hover > #wrapcard-icon-1 {
@@ -625,8 +616,8 @@ button.btn-close:focus {
     font-weight:100;
 }
 #carouselFredomeeUsers {
-    font-size:1.6vh;
-    color:yellow!important;
+    width:100%;
+    height:auto;
     margin-top:6vh;
     margin-bottom:6vh;
 }
@@ -660,24 +651,31 @@ button.btn-close:focus {
 }
 #carouselFredomeeUsers .carousel-inner {
     background-color:transparent;
+    overflow: visible;
 }
 #carouselFredomeeUsers .carousel-item img {
     position:relative;
     width:65vh;
 }
 #carouselFredomeeUsers .carousel-caption {
-    min-height:61vh;
-    top:8vh;
-    right: unset;
-    bottom:unset;
-    left:59vh;
+    width:65%;
+    height: auto;
+    top:10%;
+    right:0;
+    bottom:10%;
+    left:35%;
     padding:1vh 1vh 0 0;
     background:linear-gradient(286.88deg, #F6F6F6 12.23%, #C4C4C4 84.94%);
     z-index:2;
 }
 #carouselFredomeeUsers .caption-content {
-    position:relative;
-    min-height:60vh;
+    position:absolute;
+    top:1%;
+    right:1%;
+    bottom:0;
+    left:0;
+    width:99%;
+    height:fit-content;
     padding:1vh;
     color:black;
     background:linear-gradient(288.09deg, rgba(248, 248, 248, 0.9) 20.01%, #C4C4C4 95.96%);
@@ -696,7 +694,7 @@ button.btn-close:focus {
     text-align:center;
 }
 #carouselFredomeeUsers .btn-primary {
-    margin-top:6vh;
+    margin-top:1vh;
 }
 .oquesomos01slide,
 .oquesomos02slide,
@@ -820,12 +818,12 @@ button.btn-close:focus {
     transition:all .5s ease;
 }
 #modalFreedomeeUser .grafico01 {
-    width:25%;
+    width:100%;
     margin:0 auto;
     transition:all .5s ease;
 }
 #modalFreedomeeUser .grafico01:hover {
-    width:40%;
+    width:140%;
 }
 #modalFreedomeeUser .grafico02,
 #modalFreedomeeUser .grafico03,
@@ -887,6 +885,9 @@ button.btn-close:focus {
     margin:2vh auto;
 }
 @media (max-width:1024px) {
+    .flag {
+        width:2vh;
+    }
     .navbar-dark .navbar-nav .nav-link,
     .navbar-dark .navbar-nav .nav-link.active {
         font-size:0.8vh;
@@ -924,13 +925,14 @@ button.btn-close:focus {
         padding-bottom:15vh;
     }
     #carouselFredomeeUsers {
-        font-size:1.5vh;
-        color:yellow!important;
         margin-top:3vh;
-        margin-bottom:0;
+        margin-bottom:10vh;
     }
-    #carouselFredomeeUsers .caption-content h1 {
-        font-size:3vh;
+    #carouselFredomeeUsers .carousel-indicators {
+        top:unset;
+        left:0;
+        bottom:-10vh;
+        right:0;
     }
     .oquesomos01slide,
     .oquesomos02slide,
@@ -946,25 +948,38 @@ button.btn-close:focus {
     .contenthash {
         top:2vh;
         left:4vh;
-        width:52vh;
-        height:36vh;
-    }
-    #carouselFredomeeUsers .carousel-caption {
-        width:100%;
-        top:39vh;
-        right:auto;
-        left: auto;
+        width: 85%;
+        height: 35vh;
     }
     #carouselFredomeeUsers .carousel-inner {
         width:100%;
         height:auto;
-        padding-bottom:75vh;
+        padding-bottom: 100vh;
+        overflow: visible;
+    }
+    #carouselFredomeeUsers .carousel-caption {
+        width:100%;
+        top:100%;
+        left:0;
+        padding: 1vh 1vh 100vh 0;
     }
     #carouselFredomeeUsers button i {
         font-size:4vh;
     }
     #carouselFredomeeUsers button i:hover {
         font-size:5vh;
+    }
+    #modalFreedomeeUser .grafico01 {
+        width:50%;
+    }
+    #modalFreedomeeUser .grafico01:hover {
+        width:65%;
+    }
+    #modalFreedomeeUser .grafico02:hover,
+    #modalFreedomeeUser .grafico03:hover,
+    #modalFreedomeeUser .grafico04:hover,
+    #modalFreedomeeUser .grafico05:hover {
+        width:100%;
     }
     #footer .navbar-nav {
         font-size:1vh;
@@ -985,6 +1000,9 @@ button.btn-close:focus {
         font-weight:400;
         line-height:120%;
         color:black;
+    }
+    .flag {
+        width:4vh;
     }
     .navbar-dark .navbar-nav .nav-link,
     .navbar-dark .navbar-nav .nav-link.active {
@@ -1008,10 +1026,36 @@ button.btn-close:focus {
         font-size:4vh;
         padding: 1vh 1vw 50vh 1vw;
     }
+    .section001-btn-01:hover,
+    .section001-btn-02:hover,
+    .section001-btn-03:hover,
+    .section001-btn-04:hover,
+    .section001-btn-01:focus,
+    .section001-btn-02:focus,
+    .section001-btn-03:focus,
+    .section001-btn-04:focus {
+        font-size:4.8vh;
+    }
     .section002 .container-fluid.cut {
-        background: linear-gradient(140deg, transparent 14%, white 0%);
-        padding-top:20vh;
+        background:linear-gradient(140deg, transparent 14%, white 0%);
+        padding-top:30vh;
         padding-bottom:10vh;
+    }
+    #wrapcard-icon-1,
+    #wrapcard-icon-2,
+    #wrapcard-icon-3,
+    #wrapcard-icon-4,
+    #wrapcard-icon-5,
+    #wrapcard-icon-6 {
+        width:30%;
+    }
+    #wrapcard-1:hover > #wrapcard-icon-1,
+    #wrapcard-2:hover > #wrapcard-icon-2,
+    #wrapcard-3:hover > #wrapcard-icon-3,
+    #wrapcard-4:hover > #wrapcard-icon-4,
+    #wrapcard-5:hover > #wrapcard-icon-5,
+    #wrapcard-6:hover > #wrapcard-icon-6 {
+        width:50%;
     }
     .wrapcard-retangle::before,
     .wrapcard-retangle::after {
@@ -1019,6 +1063,16 @@ button.btn-close:focus {
     }
     .wrapcard-retangle::before {
         transform:translateY(-1.2vh) translateX(-10.3vh);
+    }
+    #carouselFredomeeUsers {
+        margin-top:6vh;
+    }
+    #carouselFredomeeUsers .carousel-caption {
+        overflow-y:scroll;
+    }
+    #modalFreedomeeUser .grafico01,
+    #modalFreedomeeUser .grafico01:hover {
+        width:100%;
     }
     #footer .wrapcenter {
         height:35vh;
