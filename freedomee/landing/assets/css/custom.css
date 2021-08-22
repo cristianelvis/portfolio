@@ -25,6 +25,36 @@ body {
     line-height:120%;
     color:black;
 }
+body::after{
+   position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+   content:
+       url(../images/welcomeMulherPB-min.png)
+       url(../images/welcomeMulher-min.png)
+       url(../images/welcomeHomemPB-min.png)
+       url(../images/welcomeHomem-min.png)
+       url(../images/welcomeMulherNegraPB-min.png)
+       url(../images/welcomeMulherNegra-min.png)
+       url(../images/welcomeMulherOrientalPB-min.png)
+       url(../images/welcomeMulherOriental-min.png)
+       url(../images/oquesomosMulherGloboPB-min.png)
+       url(../images/oquesomosMulherGlobo-min.png)
+       url(../images/oquesomosApertoMaosPB-min.png)
+       url(../images/oquesomosApertoMaos-min.png)
+       url(../images/oquesomos01slidePB-min.png)
+       url(../images/oquesomos01slide-min.png)
+       url(../images/oquesomos02slidePB-min.png)
+       url(../images/oquesomos02slide-min.png)
+       url(../images/oquesomos03slidePB-min.png)
+       url(../images/oquesomos03slide-min.png)
+       url(../images/oquesomos04slidePB-min.png)
+       url(../images/oquesomos04slide-min.png)
+       url(../images/oquesomos05slidePB-min.png)
+       url(../images/oquesomos05slide-min.png)
+       url(../images/oquesomos06slidePB-min.png)
+       url(../images/oquesomos06slide-min.png)
+       url(../images/oquesomos07slidePB-min.png)
+       url(../images/oquesomos07slide-min.png);
+}
 .bgOut {
     background:unset!important;
 }
@@ -450,16 +480,9 @@ button.btn-close:focus {
     padding-top:15vh;
     padding-bottom:15vh;
 }
-.section002 .wrap {
-    height:auto;
-}
 .section002 .wrap p {
     text-align:left;
     margin-bottom:6vh;
-}
-#economyContent .modal-body {
-    background-position:top left;
-    background-image:url("../images/oquesomosMulherGloboPB-minX.png");
 }
 #businessContent .modal-body,
 #economyContent .modal-body {
@@ -1040,6 +1063,9 @@ button.btn-close:focus {
         background:linear-gradient(140deg, transparent 14%, white 0%);
         padding-top:30vh;
         padding-bottom:10vh;
+    }
+    .section002 .wrap {
+        height:auto;
     }
     #wrapcard-icon-1,
     #wrapcard-icon-2,
