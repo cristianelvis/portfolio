@@ -1017,7 +1017,11 @@ button.btn-close:focus {
     text-decoration:none;
     z-index:1;
 }
-
+.collapsing {
+    height:0;
+    overflow:hidden;
+    transition:height .35s ease
+}
 #footer {
     padding-top:0;
     padding-bottom:0;
