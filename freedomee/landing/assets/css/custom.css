@@ -26,36 +26,46 @@ body {
     color:black;
 }
 body::after{
-   position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
-   content:
-       url(../images/welcomeMulherPB-min.png)
-       url(../images/welcomeMulher-min.png)
-       url(../images/welcomeHomemPB-min.png)
-       url(../images/welcomeHomem-min.png)
-       url(../images/welcomeMulherNegraPB-min.png)
-       url(../images/welcomeMulherNegra-min.png)
-       url(../images/welcomeMulherOrientalPB-min.png)
-       url(../images/welcomeMulherOriental-min.png)
-       url(../images/oquesomosBackgroundImagePB-min.png)
-       url(../images/oquesomosBackgroundImage-min.png)
-       url(../images/oquesomosMulherGloboPB-min.png)
-       url(../images/oquesomosMulherGlobo-min.png)
-       url(../images/oquesomosApertoMaosPB-min.png)
-       url(../images/oquesomosApertoMaos-min.png)
-       url(../images/oquesomos01slidePB-min.png)
-       url(../images/oquesomos01slide-min.png)
-       url(../images/oquesomos02slidePB-min.png)
-       url(../images/oquesomos02slide-min.png)
-       url(../images/oquesomos03slidePB-min.png)
-       url(../images/oquesomos03slide-min.png)
-       url(../images/oquesomos04slidePB-min.png)
-       url(../images/oquesomos04slide-min.png)
-       url(../images/oquesomos05slidePB-min.png)
-       url(../images/oquesomos05slide-min.png)
-       url(../images/oquesomos06slidePB-min.png)
-       url(../images/oquesomos06slide-min.png)
-       url(../images/oquesomos07slidePB-min.png)
-       url(../images/oquesomos07slide-min.png);
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+    content:
+        url(../images/welcomeMulherPB-min.png)
+        url(../images/welcomeMulher-min.png)
+        url(../images/welcomeHomemPB-min.png)
+        url(../images/welcomeHomem-min.png)
+        url(../images/welcomeMulherNegraPB-min.png)
+        url(../images/welcomeMulherNegra-min.png)
+        url(../images/welcomeMulherOrientalPB-min.png)
+        url(../images/welcomeMulherOriental-min.png)
+        url(../images/oquesomosBackgroundImagePB-min.png)
+        url(../images/oquesomosBackgroundImage-min.png)
+        url(../images/oquesomosMulherGloboPB-min.png)
+        url(../images/oquesomosMulherGlobo-min.png)
+        url(../images/oquesomosApertoMaosPB-min.png)
+        url(../images/oquesomosApertoMaos-min.png)
+        url(../images/oquesomos01slidePB-min.png)
+        url(../images/oquesomos01slide-min.png)
+        url(../images/oquesomos02slidePB-min.png)
+        url(../images/oquesomos02slide-min.png)
+        url(../images/oquesomos03slidePB-min.png)
+        url(../images/oquesomos03slide-min.png)
+        url(../images/oquesomos04slidePB-min.png)
+        url(../images/oquesomos04slide-min.png)
+        url(../images/oquesomos05slidePB-min.png)
+        url(../images/oquesomos05slide-min.png)
+        url(../images/oquesomos06slidePB-min.png)
+        url(../images/oquesomos06slide-min.png)
+        url(../images/oquesomos07slidePB-min.png)
+        url(../images/oquesomos07slide-min.png)
+        url(../images/mediadorEconomicoPB-min.png)
+        url(../images/mediadorEconomico-min.png)
+        url(../images/mediadorHumanoPB-min.png)
+        url(../images/mediadorHumano-min.png)
+        url(../images/mediadorAntropicoPB-min.png)
+        url(../images/mediadorAntropico-min.png)
+        url(../images/mediadorTecnologicoPB-min.png)
+        url(../images/mediadorTecnologico-min.png)
+        url(../images/mediadorQualidadePB-min.png)
+        url(../images/mediadorQualidade-min.png);
 }
 .bgOut {
     background:unset!important;
@@ -864,6 +874,150 @@ button.btn-close:focus {
 #modalFreedomeeUser .grafico05:hover {
     width:120%;
 }
+#card1,
+#card2,
+#card3,
+#card4,
+#card5 {
+    margin:2vh auto 6vh auto;
+}
+.cardMediador {
+    width:25vh;
+    height:44vh;
+    margin:0 auto;
+    background-repeat:no-repeat;
+    background-size:cover;
+    transition:all .5s ease;
+}
+.mediadorEconomico {
+    background-image:url("../images/mediadorEconomicoPB-min.png");
+}
+.mediadorEconomico:hover {
+    background-image:url("../images/mediadorEconomico-min.png");
+}
+.mediadorHumano {
+    background-image:url("../images/mediadorHumanoPB-min.png");
+}
+.mediadorHumano:hover {
+    background-image:url("../images/mediadorHumano-min.png");
+}
+.mediadorAntropico {
+    background-image:url("../images/mediadorAntropicoPB-min.png");
+}
+.mediadorAntropico:hover {
+    background-image:url("../images/mediadorAntropico-min.png");
+}
+.mediadorTecnologico {
+    background-image:url("../images/mediadorTecnologicoPB-min.png");
+}
+.mediadorTecnologico:hover {
+    background-image:url("../images/mediadorTecnologico-min.png");
+}
+.mediadorQualidade {
+    background-image:url("../images/mediadorQualidadePB-min.png");
+}
+.mediadorQualidade:hover {
+    background-image:url("../images/mediadorQualidade-min.png");
+}
+.mediadorEconomicoContent,
+.mediadorHumanoContent,
+.mediadorAntropicoContent,
+.mediadorTecnologicoContent,
+.mediadorQualidadeContent {
+    color:white;
+    width:25vh;
+    height:55vh;
+    padding:2vh;
+    margin:0 auto;
+    text-align:center;
+    justify-content:center;
+    align-items:center;
+    display:inline-grid;
+    transition:all .5s ease;
+}
+.mediadorEconomicoContent {
+    color:black;
+    background:linear-gradient(0deg, rgba(253, 254, 0, 0.8), rgba(253, 254, 0, 0.8)), url("../images/mediadorEconomicoPB-min.png"), white;
+    background-position:top center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.mediadorHumanoContent {
+    background:linear-gradient(0deg, rgba(255, 54, 88, 0.8), rgba(255, 54, 88, 0.8)), url("../images/mediadorHumanoPB-min.png"), white;
+    background-position:top center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.mediadorAntropicoContent {
+    background:linear-gradient(0deg, rgba(19, 194, 165, 0.8), rgba(19, 194, 165, 0.8)), url("../images/mediadorAntropicoPB-min.png"), white;
+    background-position:top center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.mediadorTecnologicoContent {
+    background:linear-gradient(0deg, rgba(115, 150, 216, 0.8), rgba(115, 150, 216, 0.8)), url("../images/mediadorTecnologicoPB-min.png"), white;
+    background-position:top center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.mediadorQualidadeContent {
+    background:linear-gradient(0deg, rgba(199, 166, 231, 0.8), rgba(199, 166, 231, 0.8)), url("../images/mediadorQualidadePB-min.png"), white;
+    background-position:top center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+#card1 .warpicon,
+#card2 .warpicon,
+#card3 .warpicon,
+#card4 .warpicon,
+#card5 .warpicon,
+#card1 .warp,
+#card2 .warp,
+#card3 .warp,
+#card4 .warp,
+#card5 .warp {
+    text-align:center;
+    justify-content:center;
+    align-items:center;
+    display:inline-grid;
+}
+#card1 .icon,
+#card2 .icon,
+#card3 .icon,
+#card4 .icon,
+#card5 .icon {
+    width:100%;
+    margin:0 auto;
+}
+#card1 p,
+#card2 p,
+#card3 p,
+#card4 p,
+#card5 p {
+    position: relative;
+    top:-1vh;
+    text-align:center;
+    font-size:1.2vh;
+    margin:0 auto;
+}
+#card1 .warp p,
+#card2 .warp p,
+#card3 .warp p,
+#card4 .warp p,
+#card5 .warp p {
+    position:relative;
+    top:0;
+    font-size:2vh;
+}
+#card1 a,
+#card2 a,
+#card3 a,
+#card4 a,
+#card5 a {
+    text-decoration:none;
+    z-index:1;
+}
+
 #footer {
     padding-top:0;
     padding-bottom:0;
@@ -1101,6 +1255,19 @@ button.btn-close:focus {
     #modalFreedomeeUser .grafico01,
     #modalFreedomeeUser .grafico01:hover {
         width:100%;
+    }
+    .cardMediador {
+        width:100%;
+        height:100vh;
+    }
+    .mediadorEconomicoContent,
+    .mediadorHumanoContent,
+    .mediadorAntropicoContent,
+    .mediadorTecnologicoContent,
+    .mediadorQualidadeContent {
+        color:white;
+        width:100%;
+        height:100vh;
     }
     #footer .wrapcenter {
         height:35vh;
