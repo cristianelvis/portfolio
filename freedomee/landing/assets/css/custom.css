@@ -1269,6 +1269,18 @@ button.btn-close:focus {
         width:100%;
         height:100vh;
     }
+    #card1 p,
+    #card2 p,
+    #card3 p,
+    #card4 p,
+    #card5 p,
+    #card1 .warp p,
+    #card2 .warp p,
+    #card3 .warp p,
+    #card4 .warp p,
+    #card5 .warp p {
+        font-size: 2.4vh;
+    }
     #footer .wrapcenter {
         height:35vh;
     }
