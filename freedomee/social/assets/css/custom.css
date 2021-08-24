@@ -627,10 +627,10 @@ a.excluir:focus {
 }
 .thumb,
 .thumbcollection {
-    width:21%;
+    width:24.5%;
     min-height:20vh;
     padding:0;
-    margin:10px;
+    margin:10px auto 10px auto;
     display:inline-block;
     background-color:white;
 }
@@ -718,10 +718,10 @@ a.excluir:focus {
   margin-right: 10px;
 }
 @media (max-width:1024px) {
-    .thumb {
-        width:90%;
-    }
+
 }
 @media (max-width:576px) {
-
+    .thumb {
+        width:100%;
+    }
 }
