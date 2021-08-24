@@ -1132,7 +1132,7 @@ button.btn-close:focus {
     top:unset;
     right:-6vh;
     bottom:-6vh;
-    width:48vh;
+    width:44vh;
     height:6vh;
 }
 .section004 #card6:hover {
@@ -1477,6 +1477,23 @@ button.btn-close:focus {
     .section004 #card6 {
         width:90%;
         height:47.5vh;
+    }
+    .section004 #card6:after,
+    .section004 #card6:before {
+        position:absolute;
+        top:6vh;
+        right:-3vh;
+        width:3vh;
+        height:44vh;
+        background-color:var(--gray1);
+        content:" ";
+    }
+    .section004 #card6:after {
+        top:unset;
+        right:-3vh;
+        bottom:-3vh;
+        width:44vh;
+        height:3vh;
     }
     .section004 #card7 {
         width:90%;
