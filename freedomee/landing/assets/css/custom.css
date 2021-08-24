@@ -65,7 +65,17 @@ body::after{
         url(../images/mediadorTecnologicoPB-min.png)
         url(../images/mediadorTecnologico-min.png)
         url(../images/mediadorQualidadePB-min.png)
-        url(../images/mediadorQualidade-min.png);
+        url(../images/mediadorQualidade-min.png)
+        url(../images/SamantaBullock-min.png)
+        url(../images/SamantaBullockPB-min.png)
+        url(../images/valoresCard1-min.png)
+        url(../images/valoresCard2-min.png)
+        url(../images/valoresCard3-min.png)
+        url(../images/valoresCard4-min.png)
+        url(../images/valoresCard5-min.png);
+}
+.bg-dark {
+    background-color:var(--gray1)!important;
 }
 .bgOut {
     background:unset!important;
@@ -874,11 +884,11 @@ button.btn-close:focus {
 #modalFreedomeeUser .grafico05:hover {
     width:120%;
 }
-#card1,
-#card2,
-#card3,
-#card4,
-#card5 {
+.section003 #card1,
+.section003 #card2,
+.section003 #card3,
+.section003 #card4,
+.section003 #card5 {
     margin:2vh auto 6vh auto;
 }
 .cardMediador {
@@ -966,56 +976,209 @@ button.btn-close:focus {
     background-repeat:no-repeat;
     background-size:cover;
 }
-#card1 .warpicon,
-#card2 .warpicon,
-#card3 .warpicon,
-#card4 .warpicon,
-#card5 .warpicon,
-#card1 .warp,
-#card2 .warp,
-#card3 .warp,
-#card4 .warp,
-#card5 .warp {
+.section003 #card1 .warpicon,
+.section003 #card2 .warpicon,
+.section003 #card3 .warpicon,
+.section003 #card4 .warpicon,
+.section003 #card5 .warpicon,
+.section003 #card1 .warp,
+.section003 #card2 .warp,
+.section003 #card3 .warp,
+.section003 #card4 .warp,
+.section003 #card5 .warp {
     text-align:center;
     justify-content:center;
     align-items:center;
     display:inline-grid;
 }
-#card1 .icon,
-#card2 .icon,
-#card3 .icon,
-#card4 .icon,
-#card5 .icon {
+.section003 #card1 .icon,
+.section003 #card2 .icon,
+.section003 #card3 .icon,
+.section003 #card4 .icon,
+.section003 #card5 .icon {
     width:100%;
     margin:0 auto;
 }
-#card1 p,
-#card2 p,
-#card3 p,
-#card4 p,
-#card5 p {
+.section003 #card1 p,
+.section003 #card2 p,
+.section003 #card3 p,
+.section003 #card4 p,
+.section003 #card5 p {
     position: relative;
     top:-1vh;
     text-align:center;
     font-size:1.2vh;
     margin:0 auto;
 }
-#card1 .warp p,
-#card2 .warp p,
-#card3 .warp p,
-#card4 .warp p,
-#card5 .warp p {
+.section003 #card1 .warp p,
+.section003 #card2 .warp p,
+.section003 #card3 .warp p,
+.section003 #card4 .warp p,
+.section003 #card5 .warp p {
     position:relative;
     top:0;
     font-size:2vh;
 }
-#card1 a,
-#card2 a,
-#card3 a,
-#card4 a,
-#card5 a {
+.section003 #card1 a,
+.section003 #card2 a,
+.section003 #card3 a,
+.section003 #card4 a,
+.section003 #card5 a {
     text-decoration:none;
     z-index:1;
+}
+.section004 h1 {
+    margin-bottom:16vh;
+}
+.section004 .bg-dark {
+    margin-bottom:16vh;
+}
+.section004 #card1,
+.section004 #card2,
+.section004 #card3,
+.section004 #card4,
+.section004 #card5 {
+    position:relative;
+    width:26vh;
+    height:26vh;
+    padding:0;
+    margin:2vh auto 6vh auto;
+    border:0.8vh solid var(--gray5);
+    border-radius:0;
+    text-align:center;
+    justify-content:center;
+    align-items:center;
+    display:inline-grid;
+    box-shadow:6px 6px 6px rgba(0, 0, 0, 0.25);
+    transition:all .5s ease;
+}
+.section004 #card1:hover {
+    border-color:var(--azul);
+    border-radius:3vh;
+}
+.section004 #card2:hover {
+    border-color:var(--amarelo);
+    border-radius:3vh;
+}
+.section004 #card3:hover {
+    border-color:var(--vermelho);
+    border-radius:3vh;
+}
+.section004 #card4:hover {
+    border-color:var(--verde);
+    border-radius:3vh;
+}
+.section004 #card5:hover {
+    border-color:var(--roxo);
+    border-radius:3vh;
+}
+.section004 #card1 {
+    top:-12vh;
+    background:url("../images/valoresCard1-min.png"), var(--gray5);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.section004 #card2 {
+    top:15vh;
+    background:url("../images/valoresCard2-min.png"), var(--gray5);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.section004 #card3 {
+    top:-12vh;
+    background:url("../images/valoresCard3-min.png"), var(--gray5);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.section004 #card4 {
+    top:15vh;
+    background:url("../images/valoresCard4-min.png"), var(--gray5);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.section004 #card5 {
+    top:-12vh;
+    background:url("../images/valoresCard5-min.png"), var(--gray5);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.section004 #card6 {
+    position:relative;
+    width:48vh;
+    height:44vh;
+    margin:6vh auto 12vh auto;
+    background:url("../images/SamantaBullockPB-min.png");
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    transition:all .5s ease;
+}
+.section004 #card6:after,
+.section004 #card6:before {
+    position:absolute;
+    top:6vh;
+    right:-6vh;
+    width:6vh;
+    height:44vh;
+    background-color:var(--gray1);
+    content:" ";
+}
+.section004 #card6:after {
+    top:unset;
+    right:-6vh;
+    bottom:-6vh;
+    width:48vh;
+    height:6vh;
+}
+.section004 #card6:hover {
+    background:url("../images/SamantaBullock-min.png");
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.section004 .wrapCard {
+    height:60vh;
+    margin:0 auto;
+}
+.section004 #card7 {
+    position:relative;
+    width:70vh;
+    height:30vh;
+    padding:6vh;
+    margin:0 auto;
+    border:0.3vh solid var(--gray1);
+    text-align:left;
+    justify-content:center;
+    align-items:center;
+    display:inline-grid;
+}
+.section004 #card7:after,
+.section004 #card7:before {
+    position:absolute;
+    top:-3vh;
+    right:unset;
+    bottom:unset;    
+    left:-3vh;
+    width:10vh;
+    height:8vh;
+    background-color:white;
+    text-align:left;
+    justify-content:center;
+    align-items:center;
+    display:inline-grid;
+    content:url("../images/valoresCard7Symbol1.svg");
+}
+.section004 #card7:after {
+    top:unset;
+    right:-3vh;
+    bottom:-3vh;
+    left:unset;
+    content:url("../images/valoresCard7Symbol2.svg");
 }
 .collapsing {
     height:0;
@@ -1164,6 +1327,23 @@ button.btn-close:focus {
     #modalFreedomeeUser .grafico05:hover {
         width:100%;
     }
+    .section004 h1 {
+        margin-bottom:6vh;
+    }
+    .section004 .bg-dark {
+        margin-bottom:6vh;
+    }
+    .section004 #card1,
+    .section004 #card2,
+    .section004 #card3,
+    .section004 #card4,
+    .section004 #card5 {
+        top:0;
+    }
+    .section004 .wrapCard {
+        height:32vh;
+        margin-bottom:6vh;
+    }
     #footer .navbar-nav {
         font-size:1vh;
         text-align:center;
@@ -1273,17 +1453,38 @@ button.btn-close:focus {
         width:100%;
         height:100vh;
     }
-    #card1 p,
-    #card2 p,
-    #card3 p,
-    #card4 p,
-    #card5 p,
-    #card1 .warp p,
-    #card2 .warp p,
-    #card3 .warp p,
-    #card4 .warp p,
-    #card5 .warp p {
+    .section003 #card1 p,
+    .section003 #card2 p,
+    .section003 #card3 p,
+    .section003 #card4 p,
+    .section003 #card5 p,
+    .section003 #card1 .warp p,
+    .section003 #card2 .warp p,
+    .section003 #card3 .warp p,
+    .section003 #card4 .warp p,
+    .section003 #card5 .warp p {
         font-size: 2.4vh;
+    }
+    .section004 #card1,
+    .section004 #card2,
+    .section004 #card3,
+    .section004 #card4,
+    .section004 #card5 {
+        width:90%;
+        height:47.5vh;
+        margin:3vh auto;
+    }
+    .section004 #card6 {
+        width:95%;
+        height:47.5vh;
+    }
+    .section004 #card7 {
+        width:95%;
+        height:60vh;
+        margin-bottom:6vh;
+    }
+    .section004 .wrapCard {
+        margin:0 auto 40vh auto;
     }
     #footer .wrapcenter {
         height:35vh;
