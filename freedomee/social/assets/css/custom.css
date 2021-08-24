@@ -23,6 +23,9 @@
 .pr {
     position:relative;
 }
+.fr {
+    float:right;
+}
 .m-0 {
     margin:0 auto;
 }
@@ -75,10 +78,10 @@
     padding:0!important;
 }
 .pad-10 {
-    padding:10px;
+    padding:10px!important;
 }
 .pad-20 {
-    padding:20px;
+    padding:20px!important;
 }
 .top-0 {
     top:0;
