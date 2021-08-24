@@ -114,6 +114,12 @@
                                     </div>
                                 </div>
                                 <p>Selecione um ou mais vídeos para criar um novo álbum</p>
+                                <a href="#" role="button" class="btn btn-main btn-quality fr" onclick="$('#newImage').trigger('click'); return false;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M11 11V7h2v4h4v2h-4v4h-2v-4H7v-2h4zm1 11C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16z"></path></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="hide_fill_svg"><path fill="currentColor" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-11H7v2h4v4h2v-4h4v-2h-4V7h-2v4z"></path></svg>
+                                    Inserir Vídeos
+                                </a>
+                                <input type="file" class="hidden" id="newImage" accept="image/x-png, image/gif, image/jpeg" name="newImage">
                             </div>
                         </div>
                         <div class="row galleryEdit">
@@ -276,11 +282,7 @@
     </div>
 </div>
 <div class="col-md-4">
-    <ul class="page-margin wow_content negg_padd list-unstyled event-options-list right_user_info">
-        <li class="item2"><h3>R$ 00.000,00</h3></li>
-        <li class="item"><p>Arrecadados</p></li>
-        <!--<li class="item"><a href="#" class="btn btn-main btn-quality mt-10">Doar</a></li>-->
-        <div class="wo_page_hdng"></div>
+    <ul class="page-margin wow_content negg_padd list-unstyled event-options-list right_user_info pad-10">
         <li>
             <svg version="1.1" id="Capa_1" fill="currentColor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M467,30c-24.813,0-45,20.187-45,45v107.58c-15.832-5.57-34.181-2.038-46.819,10.6l-18,18 C346.969,192.613,327.218,180,304.573,180h-97.146c-22.645,0-42.395,12.614-52.607,31.18l-18-18 c-12.639-12.639-30.987-16.17-46.819-10.6V75c0-24.813-20.187-45-45-45C20.188,30,0,50.187,0,75v215.471l98.787,151V512h314.426 v-70.529l98.787-151V75C512,50.187,491.813,30,467,30z M241,482H128.787v-49.471L30,281.529V75c0-8.271,6.729-15,15-15 s15,6.729,15,15v150.5c0.141,11.832,4.799,22.939,13.181,31.319l112.217,112.217l21.213-21.213L94.394,235.606 c-5.849-5.849-5.849-15.364,0-21.213c5.848-5.848,15.365-5.848,21.213,0l112.252,112.252C236.333,335.122,241,346.435,241,358.5 V482z M256,313.417c-2.106-2.795-4.41-5.466-6.927-7.983l-71.102-71.102c2.658-13.84,14.852-24.332,29.456-24.332h97.146 c14.604,0,26.797,10.491,29.456,24.332l-71.104,71.103C260.409,307.951,258.105,310.623,256,313.417z M482,281.529l-98.787,151 V482H271V358.5c0-12.065,4.667-23.378,13.14-31.854l112.254-112.253c5.85-5.848,15.365-5.848,21.213,0 c5.849,5.849,5.849,15.364,0,21.213L305.39,347.823l21.213,21.213L438.82,256.819c8.646-8.646,13.022-19.963,13.147-31.319 C452,225.5,452,75,452,75c0-8.271,6.729-15,15-15s15,6.729,15,15V281.529z"></path></g></g><g><g><path d="M256,0c-41.355,0-75,33.645-75,75s33.645,75,75,75c41.355,0,75-33.645,75-75S297.355,0,256,0z M256,120 c-24.813,0-45-20.187-45-45s20.187-45,45-45s45,20.187,45,45S280.813,120,256,120z"></path></g></g></svg> Nome do projeto
         </li>
@@ -299,9 +301,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="M22.7,19L13.6,9.9C14.5,7.6 14,4.9 12.1,3C10.1,1 7.1,0.6 4.7,1.7L9,6L6,9L1.6,4.7C0.4,7.1 0.9,10.1 2.9,12.1C4.8,14 7.5,14.5 9.8,13.6L18.9,22.7C19.3,23.1 19.9,23.1 20.3,22.7L22.6,20.4C23.1,20 23.1,19.3 22.7,19Z"></path></svg> <a href="/freedomee/social/educacao-capacitacao-cadastro.html">Editar informações</a>
         </li>
     </ul>
-    <ul class="page-margin wow_content negg_padd list-unstyled event-options-list right_user_info">
-        <li class="item"><p>Prestação de contas</p></li>
-        <li class="item"><a data-toggle="modal" data-target="#prestacaoContas" class="btn btn-main btn-block btn-black">Visualizar</a></li>
-        <div class="wo_page_hdng"></div>
+    <ul class="page-margin wow_content negg_padd list-unstyled event-options-list right_user_info pad-10">
+        <li class="item"><a href="#" class="btn btn-main btn-block btn-quality">Acompanhe nosso trabalho</a></li>
     </ul>
 </div>
