@@ -19,7 +19,7 @@
 html,
 body {
     position:relative;
-    font-family:'Montserrat', sans-serif;
+    font-family:'Montserrat', Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
     font-size:2.2vh;
     font-weight:400;
     line-height:120%;
@@ -72,7 +72,10 @@ body::after{
         url(../images/valoresCard2-min.png)
         url(../images/valoresCard3-min.png)
         url(../images/valoresCard4-min.png)
-        url(../images/valoresCard5-min.png);
+        url(../images/valoresCard5-min.png)
+        url(../images/francesca-giobbi-min.png)
+        url(../images/idealizadoraFrancescaGiobbiPB-min.png)
+        url(../images/idealizadoraFrancescaGiobbi-min.png);
 }
 .bg-dark {
     background-color:var(--gray1)!important;
@@ -115,8 +118,24 @@ a {
 a:hover {
     color:var(--roxo)
 }
+.strong100 {
+    font-weight:100;
+}
+.strong300 {
+    font-weight:300;
+}
+.strong400 {
+    font-weight:400;
+}
+.strong600 {
+    font-weight:600;
+}
+.strong700 {
+    font-weight:700;
+}
 strong,
-.strong {
+.strong,
+.strong900 {
     font-weight:900;
 }
 .navbar {
@@ -410,7 +429,7 @@ button.btn-close:focus {
 #section001-btn-01-content .modal-fullscreen,
 #section001-btn-02-content .modal-fullscreen,
 #section001-btn-03-content .modal-fullscreen,
-#section001-btn-04-content .modal-fullscreen{
+#section001-btn-04-content .modal-fullscreen {
     width:50.5vw;
     border:6px solid var(--gray1);
     float:right;
@@ -427,7 +446,6 @@ button.btn-close:focus {
     right:-50%;
     transition:all .5s ease;
 }
-
 #section001-btn-01-content.fade.show .modal-dialog,
 #section001-btn-02-content.fade.show .modal-dialog,
 #section001-btn-03-content.fade.show .modal-dialog,
@@ -552,7 +570,7 @@ button.btn-close:focus {
 #businessContent ul li,
 #economyContent ul li {
     color:white;
-    font-weight:100;
+    font-weight:300;
     padding:0 0 6vh 0;
     margin:0 auto;
     list-style-type:disc;
@@ -658,7 +676,7 @@ button.btn-close:focus {
     margin-bottom:1vh;
 }
 .wrapcard-description {
-    font-weight:100;
+    font-weight:300;
 }
 #carouselFredomeeUsers {
     width:100%;
@@ -850,7 +868,7 @@ button.btn-close:focus {
 }
 #modalFreedomeeUser tr th {
     text-align:left;
-    font-weight:400;
+    font-weight:300;
 }
 #modalFreedomeeUser .thright {
     text-align:right;
@@ -1180,6 +1198,114 @@ button.btn-close:focus {
     left:unset;
     content:url("../images/valoresCard7Symbol2.svg");
 }
+.section005 {
+    
+}
+.section005 .wrapCard {
+    height:30vh;
+    margin:0 auto 6vh auto;
+}
+.section005 #card1 {
+    font-size:3.2vh;
+    font-weight:300;
+    line-height:3.8vh;
+    position:relative;
+    width:95%;
+    height:26vh;
+    padding:6vh;
+    margin:0 auto;
+    border:0.3vh solid var(--gray1);
+    text-align:left;
+    justify-content:center;
+    align-items:center;
+    display:inline-grid;
+}
+.section005 #card1:after,
+.section005 #card1:before {
+    position:absolute;
+    top:-3vh;
+    right:unset;
+    bottom:unset;    
+    left:-3vh;
+    width:10vh;
+    height:8vh;
+    background-color:white;
+    text-align:left;
+    justify-content:center;
+    align-items:center;
+    display:inline-grid;
+    content:url("../images/valoresCard7Symbol1.svg");
+}
+.section005 #card1:after {
+    top:unset;
+    right:-3vh;
+    bottom:-3vh;
+    left:unset;
+    content:url("../images/valoresCard7Symbol2.svg");
+}
+.section005 #card2 {
+    position:relative;
+    width:100%;
+    height:47.5vh;
+    margin:2vh auto 2vh auto;
+    background:url("../images/idealizadoraFrancescaGiobbiPB-min.png");
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    cursor:pointer;
+    transition:all .5s ease;
+}
+.section005 #card2:hover {
+    background:url("../images/idealizadoraFrancescaGiobbi-min.png");
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+#letterFreedomeeUsers .modal-fullscreen {
+    background-image:url("../images/francesca-giobbi-min.png");
+}
+#letterFreedomeeUsers .modal-fullscreen {
+    width:50.5vw;
+    border:6px solid var(--gray1);
+    float:right;
+    background-color:black;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+}
+#letterFreedomeeUsers.fade .modal-dialog {
+    right:-50%;
+    transition:all .5s ease;
+}
+#letterFreedomeeUsers.fade.show .modal-dialog {
+    right:0;
+    transition:all .5s ease;
+}
+#letterFreedomeeUsers .modal-content {
+    background-color:rgba(0, 0, 0, 0.1);;
+}
+#letterFreedomeeUsers .modal-content .modal-body {
+    padding:0;
+    overflow:hidden;
+}
+#letterFreedomeeUsers .wrapmodal {
+    position:absolute;
+    top:50%;
+    right:0;
+    bottom:0;
+    left:15%;
+    width:85%;
+    height:50vh;
+    padding:3vh;
+    margin:0 auto;
+    background:rgba(255, 255, 255, 0.7);
+    text-align:left;
+    justify-content:center;
+    align-items:center;
+    display:inline-block;
+    overflow-y: scroll;
+}
 .collapsing {
     height:0;
     overflow:hidden;
@@ -1262,7 +1388,8 @@ button.btn-close:focus {
     #section001-btn-01-content .modal-fullscreen,
     #section001-btn-02-content .modal-fullscreen,
     #section001-btn-03-content .modal-fullscreen,
-    #section001-btn-04-content .modal-fullscreen{
+    #section001-btn-04-content .modal-fullscreen,
+    #letterFreedomeeUsers .modal-fullscreen {
         width:100%;
     }
     .section002 .container-fluid.cut {
@@ -1343,6 +1470,13 @@ button.btn-close:focus {
     .section004 .wrapCard {
         height:32vh;
         margin-bottom:6vh;
+    }
+    .section005 .wrapCard {
+        margin-bottom:6vh;
+    }
+    .section005 #card1 {
+        font-size:2.2vh;
+        line-height:120%;
     }
     #footer .navbar-nav {
         font-size:1vh;
@@ -1495,13 +1629,25 @@ button.btn-close:focus {
         width:44vh;
         height:3vh;
     }
+    .section004 .wrapCard {
+        margin:0 auto 40vh auto;
+    }
     .section004 #card7 {
         width:90%;
         height:60vh;
         margin-bottom:6vh;
     }
-    .section004 .wrapCard {
-        margin:0 auto 40vh auto;
+    .section005 .wrapCard {
+        height:50vh;
+    }
+    .section005 #card1 {
+        font-size:3.2vh;
+        line-height:3.8vh;
+        height:50vh;
+        margin-bottom:6vh;
+    }
+    .section005 .border-end {
+        border-color:transparent!important;
     }
     #footer .wrapcenter {
         height:35vh;
