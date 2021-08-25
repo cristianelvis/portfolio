@@ -24,6 +24,7 @@ body {
     font-weight:400;
     line-height:120%;
     color:black;
+    background-color:var(--gray5);
 }
 body::after{
     position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
@@ -75,7 +76,9 @@ body::after{
         url(../images/valoresCard5-min.png)
         url(../images/francesca-giobbi-min.png)
         url(../images/idealizadoraFrancescaGiobbiPB-min.png)
-        url(../images/idealizadoraFrancescaGiobbi-min.png);
+        url(../images/idealizadoraFrancescaGiobbi-min.png)
+        url(../images/parceiros-diplomacia-business-min.png)
+        url(../images/parceiros-hera-min.png);
 }
 .bg-dark {
     background-color:var(--gray1)!important;
@@ -309,7 +312,7 @@ button.btn-close:focus {
     padding-top:15vh;
     padding-bottom:15vh;
     border:0;
-    background-color:white;
+    background-color:var(--gray5);
 }
 #navigation {
     padding-top:0;
@@ -516,7 +519,7 @@ button.btn-close:focus {
     transition:all .5s ease;
 }
 .section002 .container-fluid.cut {
-    background: linear-gradient(140deg, transparent 37%, white 0%);
+    background: linear-gradient(140deg, transparent 37%, var(--gray5) 0%);
     padding-top:15vh;
     padding-bottom:15vh;
 }
@@ -1306,6 +1309,18 @@ button.btn-close:focus {
     display:inline-block;
     overflow-y: scroll;
 }
+.section006 table {
+    width:85%;
+    margin:0 auto;
+}
+.section006 table tr td {
+    text-align:center;
+    padding:3vh;
+}
+.section006 .logo {
+    width:40vh;
+    margin:0 auto;
+}
 .collapsing {
     height:0;
     overflow:hidden;
@@ -1648,6 +1663,10 @@ button.btn-close:focus {
     }
     .section005 .border-end {
         border-color:transparent!important;
+    }
+    .section006 .logo {
+        width:40vh;
+        margin:0 auto;
     }
     #footer .wrapcenter {
         height:35vh;
