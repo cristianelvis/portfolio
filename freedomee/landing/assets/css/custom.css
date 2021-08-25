@@ -78,7 +78,9 @@ body::after{
         url(../images/idealizadoraFrancescaGiobbiPB-min.png)
         url(../images/idealizadoraFrancescaGiobbi-min.png)
         url(../images/parceiros-diplomacia-business-min.png)
-        url(../images/parceiros-hera-min.png);
+        url(../images/parceiros-hera-min.png)
+        url(../images/impulsionarBackgroundImagePB-min.png)
+        Url(../images/impulsionarBackgroundImage-min.png);
 }
 .bg-dark {
     background-color:var(--gray1)!important;
@@ -1048,6 +1050,11 @@ button.btn-close:focus {
     text-decoration:none;
     z-index:1;
 }
+.collapsing {
+    height:0;
+    overflow:hidden;
+    transition:height .35s ease
+}
 .section004 h1 {
     margin-bottom:16vh;
 }
@@ -1321,10 +1328,44 @@ button.btn-close:focus {
     width:40vh;
     margin:0 auto;
 }
-.collapsing {
-    height:0;
-    overflow:hidden;
-    transition:height .35s ease
+.section008 {
+    padding-top:0;
+    padding-bottom:0;
+}
+.section008 .background {
+    background:url('../images/impulsionarBackgroundImagePB-min.png') no-repeat;
+    background-position:right bottom;
+    -webkit-background-size:70%;
+    -moz-background-size:70%;
+    -o-background-size:70%;
+    background-size:70%;
+    background-color:black;
+    transition:all .5s ease;
+}
+.section008 .background:hover {
+    background:url('../images/impulsionarBackgroundImage-min.png') no-repeat;
+    background-position:right bottom;
+    -webkit-background-size:70%;
+    -moz-background-size:70%;
+    -o-background-size:70%;
+    background-size:70%;
+    background-color:black;
+    transition:all .5s ease;
+}
+.section008 .container-fluid.cut {
+    background:linear-gradient(148deg, var(--gray5) 65%, transparent 0%);
+    padding-top:10vh;
+    padding-bottom:10vh;
+}
+.section008 .wrap {
+    width:100%;
+    height:50vh;
+    padding:0;
+    margin:0 auto;
+    text-align:center;
+    justify-content:center;
+    align-items:center;
+    display:inline-grid;
 }
 #footer {
     padding-top:0;
@@ -1492,6 +1533,23 @@ button.btn-close:focus {
     .section005 #card1 {
         font-size:2.2vh;
         line-height:120%;
+    }
+    .section008 .container-fluid.cut {
+        padding-bottom:40vh;
+    }
+    .section008 .background {
+        background-position:center bottom;
+        -webkit-background-size:170%;
+        -moz-background-size:170%;
+        -o-background-size:170%;
+        background-size:170%;
+    }
+    .section008 .background:hover {
+        background-position:center bottom;
+        -webkit-background-size:170%;
+        -moz-background-size:170%;
+        -o-background-size:170%;
+        background-size:170%;
     }
     #footer .navbar-nav {
         font-size:1vh;
