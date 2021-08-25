@@ -17,4 +17,6 @@ $(document).ready(function(){
     $("#valores").load("section004.html");
     $("#idealizadora").load("section005.html");
     $("#parceiros").load("section006.html");
+    $("#passos").load("section007.html");
+    $("#impulsionar").load("section008.html");
 });
