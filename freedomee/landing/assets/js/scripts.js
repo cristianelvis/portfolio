@@ -16,4 +16,5 @@ $(document).ready(function(){
     $("#cincomediadores").load("section003.html");
     $("#valores").load("section004.html");
     $("#idealizadora").load("section005.html");
+    $("#parceiros").load("section006.html");
 });
