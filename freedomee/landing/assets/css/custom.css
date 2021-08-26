@@ -1342,55 +1342,66 @@ button.btn-close:focus {
     position:relative;
     width:100%;
     height:65vh;
+    margin-bottom: 12vh;
 }
 #section007card1 {
-    top:18vh;
-    right:16vh;
+    top:5vh;
+    left:3vh;
     z-index:5;
     background-image:url("../images/passos01PB-min.png");
+    transform:rotate(-15deg);
 }
 #section007card1:hover {
     background-image:url("../images/passos01-min.png");
+    transform:rotate(0deg);
     z-index:6;
 }
 #section007card2 {
-    top:15vh;
-    right:12vh;
+    top:5vh;
+    left:25vh;
     z-index:4;
     background-image:url("../images/passos02PB-min.png");
+    transform:rotate(30deg);
 }
 #section007card2:hover {
     background-image:url("../images/passos02-min.png");
+    transform:rotate(0deg);
     z-index:6;
 }
 #section007card3 {
-    top:12vh;
-    right:8vh;
+    top:26vh;
+    left:3vh;
     z-index:3;
     background-image:url("../images/passos03PB-min.png");
+    transform:rotate(-10deg);
 }
 #section007card3:hover {
     background-image:url("../images/passos03-min.png");
+    transform:rotate(0deg);
     z-index:6;
 }
 #section007card4 {
-    top:9vh;
-    right:4vh;
+    top:28vh;
+    left:25vh;
     z-index:2;
     background-image:url("../images/passos04PB-min.png");
+    transform:rotate(10deg);
 }
 #section007card4:hover {
     background-image:url("../images/passos04-min.png");
+    transform:rotate(0deg);
     z-index:6;
 }
 #section007card5 {
-    top:6vh;
-    right:0vh;
+    top:43vh;
+    left:15vh;
     z-index:1;
     background-image:url("../images/passos05PB-min.png");
+    transform:rotate(-15deg);
 }
 #section007card5:hover {
     background-image:url("../images/passos05-min.png");
+    transform:rotate(0deg);
     z-index:6;
 }
 #section007card1,
@@ -1399,13 +1410,14 @@ button.btn-close:focus {
 #section007card4,
 #section007card5 {
     position:absolute;
-    width:40vh;
-    height:40vh;
+    width:25vh;
+    height:31vh;
     margin:0 auto;
     background-position:top center;
     background-repeat:no-repeat;
     background-size:cover;
     cursor:pointer;
+    box-shadow:6px 6px 6px rgba(0, 0, 0, 0.25);
     transition:all .5s ease;
 }
 #section007card1:hover,
@@ -1413,10 +1425,10 @@ button.btn-close:focus {
 #section007card3:hover,
 #section007card4:hover,
 #section007card5:hover {
-    top:3vh;
-    right:0;
-    width:100%;
-    height:55vh;
+    top:5vh;
+    left:5vh;
+    width:92%;
+    height:68vh;
     box-shadow:6px 6px 6px rgba(0, 0, 0, 0.25);
 }
 .section007 .table > tbody > tr > td:first-child {
@@ -1847,7 +1859,8 @@ button.btn-close:focus {
     #section007card3,
     #section007card4,
     #section007card5 {
-        width: 35vh;
+        width:20vh;
+        height:26vh;
     }
     #footer .wrapcenter {
         height:35vh;
