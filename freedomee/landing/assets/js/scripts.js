@@ -25,5 +25,7 @@ $(document).ready(function(){
     $("#parceiros").load("section006.html");
     $("#partners").load("section006.html");
     $("#passos").load("section007.html");
+    $("#steps").load("section007.html");
     $("#impulsionar").load("section008.html");
+    $("#boost").load("section008.html");
 });
