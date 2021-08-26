@@ -26,7 +26,7 @@ body {
     color:black;
     background-color:var(--gray5);
 }
-body::after{
+body::after {
     position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
     content:
         url(../images/welcomeMulherPB-min.png)
@@ -80,7 +80,17 @@ body::after{
         url(../images/parceiros-diplomacia-business-min.png)
         url(../images/parceiros-hera-min.png)
         url(../images/impulsionarBackgroundImagePB-min.png)
-        Url(../images/impulsionarBackgroundImage-min.png);
+        url(../images/impulsionarBackgroundImage-min.png)
+        url(../images/passos01PB-min.png)
+        url(../images/passos01-min.png)
+        url(../images/passos02PB-min.png)
+        url(../images/passos02-min.png)
+        url(../images/passos03PB-min.png)
+        url(../images/passos03-min.png)
+        url(../images/passos04PB-min.png)
+        url(../images/passos04-min.png)
+        url(../images/passos05PB-min.png)
+        url(../images/passos05-min.png);
 }
 .bg-dark {
     background-color:var(--gray1)!important;
@@ -1194,7 +1204,7 @@ button.btn-close:focus {
     left:-3vh;
     width:10vh;
     height:8vh;
-    background-color:white;
+    background-color:var(--gray5);
     text-align:left;
     justify-content:center;
     align-items:center;
@@ -1239,7 +1249,7 @@ button.btn-close:focus {
     left:-3vh;
     width:10vh;
     height:8vh;
-    background-color:white;
+    background-color:var(--gray5);
     text-align:left;
     justify-content:center;
     align-items:center;
@@ -1327,6 +1337,112 @@ button.btn-close:focus {
 .section006 .logo {
     width:40vh;
     margin:0 auto;
+}
+.section007 .wrapcard {
+    position:relative;
+    width:100%;
+    height:65vh;
+}
+#section007card1 {
+    top:18vh;
+    right:16vh;
+    z-index:5;
+    background-image:url("../images/passos01PB-min.png");
+}
+#section007card1:hover {
+    background-image:url("../images/passos01-min.png");
+    z-index:6;
+}
+#section007card2 {
+    top:15vh;
+    right:12vh;
+    z-index:4;
+    background-image:url("../images/passos02PB-min.png");
+}
+#section007card2:hover {
+    background-image:url("../images/passos02-min.png");
+    z-index:6;
+}
+#section007card3 {
+    top:12vh;
+    right:8vh;
+    z-index:3;
+    background-image:url("../images/passos03PB-min.png");
+}
+#section007card3:hover {
+    background-image:url("../images/passos03-min.png");
+    z-index:6;
+}
+#section007card4 {
+    top:9vh;
+    right:4vh;
+    z-index:2;
+    background-image:url("../images/passos04PB-min.png");
+}
+#section007card4:hover {
+    background-image:url("../images/passos04-min.png");
+    z-index:6;
+}
+#section007card5 {
+    top:6vh;
+    right:0vh;
+    z-index:1;
+    background-image:url("../images/passos05PB-min.png");
+}
+#section007card5:hover {
+    background-image:url("../images/passos05-min.png");
+    z-index:6;
+}
+#section007card1,
+#section007card2,
+#section007card3,
+#section007card4,
+#section007card5 {
+    position:absolute;
+    width:40vh;
+    height:40vh;
+    margin:0 auto;
+    background-position:top center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    cursor:pointer;
+    transition:all .5s ease;
+}
+#section007card1:hover,
+#section007card2:hover,
+#section007card3:hover,
+#section007card4:hover,
+#section007card5:hover {
+    top:3vh;
+    right:0;
+    width:100%;
+    height:55vh;
+    box-shadow:6px 6px 6px rgba(0, 0, 0, 0.25);
+}
+.section007 .table > tbody > tr > td:first-child {
+    position:relative;
+}
+.section007 .table > tbody > tr > td:first-child span {
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    width:1px;
+    height:100%;
+    margin:0 auto;
+    border:1px dashed var(--gray1);
+}
+#section007title1,
+#section007title2,
+#section007title3,
+#section007title4,
+#section007title5 {
+    font-size:3.2vh;
+    line-height:3.8vh;
+    font-weight:900;
+    text-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
+    transition:all .5s ease;
 }
 .section008 {
     padding-top:0;
@@ -1725,6 +1841,13 @@ button.btn-close:focus {
     .section006 .logo {
         width:40vh;
         margin:0 auto;
+    }
+    #section007card1,
+    #section007card2,
+    #section007card3,
+    #section007card4,
+    #section007card5 {
+        width: 35vh;
     }
     #footer .wrapcenter {
         height:35vh;
