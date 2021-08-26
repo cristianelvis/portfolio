@@ -1426,7 +1426,7 @@ button.btn-close:focus {
 #section007card4:hover,
 #section007card5:hover {
     top:5vh;
-    left:5vh;
+    left:3vh;
     width:92%;
     height:68vh;
     box-shadow:6px 6px 6px rgba(0, 0, 0, 0.25);
