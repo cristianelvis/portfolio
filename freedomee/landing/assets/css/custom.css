@@ -1334,99 +1334,6 @@ button.btn-close:focus {
     width:40vh;
     margin:0 auto;
 }
-.section007 .wrapcard {
-    position:relative;
-    width:100%;
-    height:65vh;
-    margin-bottom: 12vh;
-}
-#section007card1 {
-    top:5vh;
-    left:3vh;
-    z-index:5;
-    background-image:url("../images/passos01PB-min.png");
-    transform:rotate(-15deg);
-}
-#section007card1:hover {
-    background-image:url("../images/passos01-min.png");
-    transform:rotate(0deg);
-    z-index:6;
-}
-#section007card2 {
-    top:5vh;
-    left:25vh;
-    z-index:4;
-    background-image:url("../images/passos02PB-min.png");
-    transform:rotate(30deg);
-}
-#section007card2:hover {
-    background-image:url("../images/passos02-min.png");
-    transform:rotate(0deg);
-    z-index:6;
-}
-#section007card3 {
-    top:26vh;
-    left:3vh;
-    z-index:3;
-    background-image:url("../images/passos03PB-min.png");
-    transform:rotate(-10deg);
-}
-#section007card3:hover {
-    background-image:url("../images/passos03-min.png");
-    transform:rotate(0deg);
-    z-index:6;
-}
-#section007card4 {
-    top:28vh;
-    left:25vh;
-    z-index:2;
-    background-image:url("../images/passos04PB-min.png");
-    transform:rotate(10deg);
-}
-#section007card4:hover {
-    background-image:url("../images/passos04-min.png");
-    transform:rotate(0deg);
-    z-index:6;
-}
-#section007card5 {
-    top:43vh;
-    left:15vh;
-    z-index:1;
-    background-image:url("../images/passos05PB-min.png");
-    transform:rotate(-15deg);
-}
-#section007card5:hover {
-    background-image:url("../images/passos05-min.png");
-    transform:rotate(0deg);
-    z-index:6;
-}
-#section007card1,
-#section007card2,
-#section007card3,
-#section007card4,
-#section007card5 {
-    position:absolute;
-    width:25vh;
-    height:31vh;
-    margin:0 auto;
-    background-position:top center;
-    background-repeat:no-repeat;
-    background-size:cover;
-    cursor:pointer;
-    box-shadow:6px 6px 6px rgba(0, 0, 0, 0.25);
-    transition:all .5s ease;
-}
-#section007card1:hover,
-#section007card2:hover,
-#section007card3:hover,
-#section007card4:hover,
-#section007card5:hover {
-    top:5vh;
-    left:2vh;
-    width:92%;
-    height:68vh;
-    box-shadow:6px 6px 6px rgba(0, 0, 0, 0.25);
-}
 .section007 .table > tbody > tr > td:first-child {
     position:relative;
 }
@@ -1450,6 +1357,112 @@ button.btn-close:focus {
     line-height:3.8vh;
     font-weight:900;
     text-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
+    transition:all .5s ease;
+}
+#section007content1,
+#section007content2,
+#section007content3,
+#section007content4,
+#section007content5 {
+    position:relative;
+}
+#section007card1 {
+    top:-5vh;
+    left:-55vh;
+    z-index:5;
+    background-image:url("../images/passos01PB-min.png");
+    transform:rotate(-15deg);
+}
+#section007card1:hover,
+#section007content1:hover > #section007card1 {
+    width:50vh;
+    height:68vh;
+    background-image:url("../images/passos01-min.png");
+    transform:rotate(0deg);
+    z-index:6;
+}
+#section007card2 {
+    top:-10vh;
+    left:-35vh;
+    z-index:4;
+    background-image:url("../images/passos02PB-min.png");
+    transform:rotate(30deg);
+}
+#section007card2:hover,
+#section007content2:hover > #section007card2 {
+    top:-20vh;
+    left:-55vh;
+    width:50vh;
+    height:68vh;
+    background-image:url("../images/passos02-min.png");
+    transform:rotate(0deg);
+    z-index:6;
+}
+#section007card3 {
+    top:-10vh;
+    left:-55vh;
+    z-index:3;
+    background-image:url("../images/passos03PB-min.png");
+    transform:rotate(-10deg);
+}
+#section007card3:hover,
+#section007content3:hover > #section007card3 {
+    top:-30vh;
+    left:-55vh;
+    width:50vh;
+    height:68vh;
+    background-image:url("../images/passos03-min.png");
+    transform:rotate(0deg);
+    z-index:6;
+}
+#section007card4 {
+    top:-20vh;
+    left:-35vh;
+    z-index:2;
+    background-image:url("../images/passos04PB-min.png");
+    transform:rotate(10deg);
+}
+#section007card4:hover,
+#section007content4:hover > #section007card4 {
+    top:-40vh;
+    left:-55vh;
+    width:50vh;
+    height:68vh;
+    background-image:url("../images/passos04-min.png");
+    transform:rotate(0deg);
+    z-index:6;
+}
+#section007card5 {
+    top:-20vh;
+    left:-50vh;
+    z-index:1;
+    background-image:url("../images/passos05PB-min.png");
+    transform:rotate(-15deg);
+}
+#section007card5:hover,
+#section007content5:hover > #section007card5 {
+    top:-60vh;
+    left:-55vh;
+    width:50vh;
+    height:68vh;
+    background-image:url("../images/passos05-min.png");
+    transform:rotate(0deg);
+    z-index:6;
+}
+#section007card1,
+#section007card2,
+#section007card3,
+#section007card4,
+#section007card5 {
+    position:absolute;
+    width:25vh;
+    height:31vh;
+    margin:0 auto;
+    background-position:top center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    cursor:pointer;
+    box-shadow:6px 6px 6px rgba(0, 0, 0, 0.25);
     transition:all .5s ease;
 }
 .section008 {
