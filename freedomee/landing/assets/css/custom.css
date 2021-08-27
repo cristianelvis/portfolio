@@ -660,17 +660,13 @@ button.btn-close:focus {
     margin:0 auto;
     background-color:black;
 }
-.wrapcard-retangle::before,
-.wrapcard-retangle::after {
+.wrapcard-retangle::before {
     display:inline-block;
     content:"";
     border-top:0.3vh dashed black;
-    width:10.3vh;
+    width:26.5vh;
     margin:0 auto;
-    transform:translateY(-3.2vh) translateX(3.1vh);
-}
-.wrapcard-retangle::before {
-    transform:translateY(-0.6vh) translateX(-10.3vh);
+    transform:translateY(-0.4vh) translateX(-11.8vh);
 }
 #wrapcard-1:hover > .wrapcard-retangle,
 #wrapcard-2:hover > .wrapcard-retangle,
@@ -1758,12 +1754,8 @@ button.btn-close:focus {
     #wrapcard-6:hover > #wrapcard-icon-6 {
         width:50%;
     }
-    .wrapcard-retangle::before,
-    .wrapcard-retangle::after {
-        transform:translateY(-4.9vh) translateX(3.1vh);
-    }
     .wrapcard-retangle::before {
-        transform:translateY(-1.2vh) translateX(-10.3vh);
+        transform:translateY(-1vh) translateX(-11.8vh);
     }
     #carouselFredomeeUsers {
         margin-top:6vh;
