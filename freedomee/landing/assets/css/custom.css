@@ -153,6 +153,17 @@ strong,
 .strong900 {
     font-weight:900;
 }
+.banner {
+    width:100%;
+    margin-top:6vh;
+    margin-bottom:6vh;
+}
+.banner img {
+    width:100%;
+    height:auto;
+    margin:0 auto;
+    display:block;
+}
 .navbar {
     font-family:'Otomanopee One', sans-serif;
     padding:0.6vh 1.2vw 0.6vh 1.2vw;
