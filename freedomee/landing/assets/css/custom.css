@@ -1078,6 +1078,13 @@ button.btn-close:focus {
 .section004 .bg-dark {
     margin-bottom:16vh;
 }
+.section004 #card1 span,
+.section004 #card2 span,
+.section004 #card3 span,
+.section004 #card4 span,
+.section004 #card5 span {
+    display:none;
+}
 .section004 #card1,
 .section004 #card2,
 .section004 #card3,
