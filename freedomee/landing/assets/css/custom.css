@@ -1614,7 +1614,7 @@ button.btn-close:focus {
         width:100%;
     }
     .section002 .container-fluid.cut {
-        background:linear-gradient(140deg, transparent 21%, white 0%);
+        background:linear-gradient(140deg, transparent 21%, var(--gray5) 0%);
         padding-top:25vh;
         padding-bottom:15vh;
     }
