@@ -32,6 +32,7 @@
             lang = lang.toLowerCase();
             
             console.log(lang);
+            return false
 
             if(typeof sites[lang] === 'undefined') {
               window.location.replace(sites["en"]);
