@@ -546,12 +546,12 @@ button.btn-close:focus {
     -moz-background-size:100%;
     -o-background-size:100%;
     background-size:100%;
-    background-color:black;
+    background-color:var(--gray5);
     transition:all .5s ease;
 }
 .section002 .container-fluid.cut {
-    background: linear-gradient(140deg, transparent 37%, var(--gray5) 0%);
-    padding-top:30vh;
+    background: linear-gradient(90deg, transparent 37%, var(--gray5) 0%);
+    padding-top:15vh;
     padding-bottom:15vh;
 }
 .section002 .wrap p {
@@ -1518,7 +1518,7 @@ button.btn-close:focus {
     transition:all .5s ease;
 }
 .section008 .container-fluid.cut {
-    background:linear-gradient(148deg, var(--gray5) 65%, transparent 0%);
+    background:linear-gradient(90deg, var(--gray5) 65%, transparent 0%);
     padding-top:10vh;
     padding-bottom:10vh;
 }
@@ -1614,7 +1614,7 @@ button.btn-close:focus {
         width:100%;
     }
     .section002 .container-fluid.cut {
-        background:linear-gradient(140deg, transparent 21%, var(--gray5) 0%);
+        background:linear-gradient(90deg, transparent 21%, var(--gray5) 0%);
         padding-top:25vh;
         padding-bottom:15vh;
     }
@@ -1772,7 +1772,7 @@ button.btn-close:focus {
         font-size:4.8vh;
     }
     .section002 .container-fluid.cut {
-        background:linear-gradient(140deg, transparent 14%, var(--gray5) 0%);
+        background:linear-gradient(90deg, transparent 14%, var(--gray5) 0%);
         padding-top:30vh;
         padding-bottom:10vh;
     }
