@@ -22,32 +22,37 @@
         <link rel="stylesheet" href="../assets/css/custom.css">
         <script src="../assets/js/jquery.js"></script>
         <script src="../assets/js/scripts.js"></script>
-        <script>
+<script>
             const sites = {
-              'pt': 'https://dprimeira.com.br',
-              'en': 'https://cristianelvis.com',
-              'es': 'https://freedomee.social/es/'
-            };
-            var lang = navigator.language || navigator.userLanguage;
-            lang = lang.toLowerCase();
-            lang = lang.substr(0,2);
+  'pt': 'http://dprimeira.com.br',
+  'en': 'http://cristianelvis.com',
+  'es': 'http://site.com'
+};
 
-            if(typeof sites[lang] === 'undefined') {
+var lang = navigator.language || navigator.userLanguage;
+lang = lang.toLowerCase();
+lang = lang.substr(0,2);
+
+if(lang == 'undefined') {
   window.location.replace(sites["en"]);
 } else
-if(typeof sites[lang] === 'pt') {
+if(lang == 'pt') {
   window.location.replace(sites[lang]);
 } else
-if(typeof sites[lang] === 'en') {
+if(lang == 'en') {
   window.location.replace(sites[lang]);
 } else
-if(typeof sites[lang] === 'es') {
+if(lang === 'es') {
   window.location.replace(sites[lang]);
 }
 else
 {
-  window.location.replace(sites["pt"]);
-}
+  window.location.replace(sites["en"]);
+} 
+
+
+			
+			
         </script>
     </head>
     <body>
