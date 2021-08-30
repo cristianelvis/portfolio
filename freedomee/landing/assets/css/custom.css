@@ -198,6 +198,7 @@ strong,
 .navbar-dark .navbar-nav .nav-link.active {
     position:relative;
     top:0;
+    font-size:1.6vh;
     color:var(--gray4);
     padding:1vh 1.2vw;
     margin:0 auto;
