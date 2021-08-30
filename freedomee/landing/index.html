@@ -22,37 +22,33 @@
         <link rel="stylesheet" href="../assets/css/custom.css">
         <script src="../assets/js/jquery.js"></script>
         <script src="../assets/js/scripts.js"></script>
-<script>
+        <script>
             const sites = {
-  'pt': 'http://dprimeira.com.br',
-  'en': 'http://cristianelvis.com',
-  'es': 'http://site.com'
-};
+                'pt': 'https://freedomee.social/br/',
+                'en': 'https://freedomee.social/us/',
+                'es': 'https://freedomee.social/us/'
+            };
 
-var lang = navigator.language || navigator.userLanguage;
-lang = lang.toLowerCase();
-lang = lang.substr(0,2);
+            var lang = navigator.language || navigator.userLanguage;
+            lang = lang.toLowerCase();
+            lang = lang.substr(0,2);
 
-if(lang == 'undefined') {
-  window.location.replace(sites["en"]);
-} else
-if(lang == 'pt') {
-  window.location.replace(sites[lang]);
-} else
-if(lang == 'en') {
-  window.location.replace(sites[lang]);
-} else
-if(lang === 'es') {
-  window.location.replace(sites[lang]);
-}
-else
-{
-  window.location.replace(sites["en"]);
-} 
-
-
-			
-			
+            if(lang == 'undefined') {
+                window.location.replace(sites["en"]);
+            } else
+            if(lang == 'pt') {
+                window.location.replace(sites[lang]);
+            } else
+            if(lang == 'en') {
+                window.location.replace(sites[lang]);
+            } else
+            if(lang === 'es') {
+                window.location.replace(sites[lang]);
+            }
+            else
+            {
+                window.location.replace(sites["en"]);
+            }
         </script>
     </head>
     <body>
