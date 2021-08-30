@@ -30,6 +30,8 @@
             };
             var lang = navigator.language || navigator.userLanguage;
             lang = lang.toLowerCase();
+            
+            console.log(lang);
 
             if(typeof sites[lang] === 'undefined') {
               window.location.replace(sites["en"]);
