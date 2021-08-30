@@ -536,7 +536,7 @@ button.btn-close:focus {
     -moz-background-size:100%;
     -o-background-size:100%;
     background-size:100%;
-    background-color:black;
+    background-color:var(--gray5);
     transition:all .5s ease;
 }
 .section002 .background:hover {
