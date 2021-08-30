@@ -31,7 +31,8 @@
             var lang = navigator.language || navigator.userLanguage;
             lang = lang.toLowerCase();
             lang = lang.substr(0,2);
-if(typeof sites[lang] === 'undefined') {
+
+            if(typeof sites[lang] === 'undefined') {
   window.location.replace(sites["en"]);
 } else
 if(typeof sites[lang] === 'pt') {
@@ -45,7 +46,7 @@ if(typeof sites[lang] === 'es') {
 }
 else
 {
-  window.location.replace(sites["en"]);
+  window.location.replace(sites["pt"]);
 }
         </script>
     </head>
