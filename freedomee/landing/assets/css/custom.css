@@ -356,10 +356,10 @@ button.btn-close:focus {
     padding:0;
     margin:0;
 }
-.section001 a {
+.section001 h1 a {
     color:white;
 }
-.section001 a:hover {
+.section001 h1 a:hover {
     color:var(--roxo);
 }
 .section001 .edge {
@@ -706,6 +706,7 @@ button.btn-close:focus {
     margin-bottom:1vh;
 }
 .wrapcard-description {
+    text-align:center;
     font-weight:300;
 }
 #carouselFredomeeUsers {
