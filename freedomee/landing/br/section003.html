@@ -107,7 +107,7 @@
     </div>
     <div class="row">
         <div class="col-xs-12 col-md-12 col-lg-12 col-xl-10 offset-xl-1">
-            <p>FreedomeE.com, mais que uma plataforma digital de negócios, é um grande movimento baseado em 5 mediadores sustentáveis desenvolvidos pela fundadora Francesca Giobbi.</p>
+            <p>FreedomeE.com, mais que uma plataforma digital de negócios, é um grande movimento baseado em 5 mediadores sustentáveis desenvolvidos pela fundadora <a href="#" data-bs-toggle="modal" data-tagVideo="https://www.youtube.com/embed/eiSKawh-JxI" data-bs-target="#videoOne">Francesca Giobbi</a>.</p>
             <p>Com a união de empreendedores, consumidores, profissionais liberais, filantropos, educadores, investidores, políticos e diplomatas, os 5 mediadores FreedomeE.com agregam no mesmo espaço digital, pessoas e empresas com a mesma visão, para que produzam e gerem impactos positivos através do comércio justo, investimentos coletivos e cooperativos, trazendo benefícios para a humanidade através de uma Economia Circular Integrada, Cooperativa, Coletiva e Inclusiva.</p>
             <div class="banner">
                 <a href="//social.freedomee.social/" alt="#EuSouFreedomeEUser" title="#EuSouFreedomeEUser">
@@ -118,3 +118,33 @@
         </div>
     </div>
 </div>
+<div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalFreedomeeUserLabel" aria-hidden="true" id="videoOne">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-square"></i></button>
+                <iframe src="" allow="autoplay;" allowfullscreen width="100%" height="100%"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // Get and autoplay Video from data
+    function autoPlayYouTubeModal() {
+      var triggerOpen = $("body").find('[data-tagVideo]');
+      triggerOpen.click(function() {
+        var theModal = $(this).data("bs-target"),
+          videoSRC = $(this).attr("data-tagVideo"),
+          videoSRCauto = videoSRC + "?autoplay=1";
+        $(theModal + ' iframe').attr('src', videoSRCauto);
+        $(theModal + ' button.btn-close').click(function() {
+          $(theModal + ' iframe').attr('src', videoSRC);
+        });
+      });
+    }
+</script>
+<script>
+    $(document).ready(function() {
+        autoPlayYouTubeModal();
+    });
+</script>
