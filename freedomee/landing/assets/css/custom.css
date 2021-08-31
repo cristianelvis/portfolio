@@ -155,8 +155,8 @@ strong,
 }
 .banner {
     width:100%;
-    margin-top:6vh;
-    margin-bottom:6vh;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
 }
 .banner img {
     width:100%;
@@ -307,6 +307,7 @@ button.btn-close:hover {
     font-size:8vh;
     color:var(--amarelo);
     text-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
+
     box-shadow:unset;
 }
 button.btn-close:active,
@@ -332,8 +333,8 @@ button.btn-close:focus {
 #footer {
     width:100%;
     height:auto;
-    padding-top:15vh;
-    padding-bottom:15vh;
+    padding-top:13vh;
+    padding-bottom:13vh;
     border:0;
     background-color:var(--gray5);
 }
@@ -401,7 +402,7 @@ button.btn-close:focus {
     -moz-background-size:cover;
     -o-background-size:cover;
     background-size:cover;
-    text-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow:0 2px 2px rgba(0, 0, 0, 0.25);
     transition:all .5s ease;
 }
 .section001-btn-01:hover,
@@ -422,13 +423,13 @@ button.btn-close:focus {
     color:var(--roxo);
 }
 .section001-btn-02:hover {
-    color:var(--azul);
+    color:#3c456a;
 }
 .section001-btn-03:hover {
     color:var(--verde);
 }
 .section001-btn-04:hover {
-    color:var(--amarelo);
+    color:darkred;
 }
 .section001-btn-01,
 #section001-btn-01-content .modal-fullscreen {
@@ -527,7 +528,7 @@ button.btn-close:focus {
     padding-bottom:0;
 }
 .section002 .wrapcut {
-    padding-top:15vh;
+    padding-top: 13vh;
 }
 .section002 .background {
     background:url('../images/oquesomosBackgroundImagePB-min.png') no-repeat;
@@ -550,13 +551,27 @@ button.btn-close:focus {
     transition:all .5s ease;
 }
 .section002 .container-fluid.cut {
-    background: linear-gradient(90deg, transparent 37%, var(--gray5) 0%);
-    padding-top:15vh;
-    padding-bottom:15vh;
+    background:linear-gradient(90deg, transparent 45%, var(--gray5) 0%);
+    padding-top: 10vh;
+    padding-bottom: 0;
 }
 .section002 .wrap p {
     text-align:left;
-    margin-bottom:6vh;
+    margin-bottom:3vh;
+}
+.section002 .contentfoto {
+    color: white;
+    position:relative;
+    top:0;
+    left:-10vh;
+    width:100%;
+    height:85vh;
+    justify-content:start;
+    align-items:end;
+    display:inline-grid;
+}
+.section002 .contentfoto img {
+    width:35vh!important;
 }
 #businessContent .modal-body,
 #economyContent .modal-body {
@@ -1025,6 +1040,9 @@ button.btn-close:focus {
     background-repeat:no-repeat;
     background-size:cover;
 }
+.section003 {
+    padding-bottom:0;
+}
 .section003 #card1 .warpicon,
 .section003 #card2 .warpicon,
 .section003 #card3 .warpicon,
@@ -1081,6 +1099,9 @@ button.btn-close:focus {
     overflow:hidden;
     transition:height .35s ease
 }
+.section004 {
+    padding-bottom:0;
+}
 .section004 h1 {
     margin-bottom:16vh;
 }
@@ -1114,22 +1135,32 @@ button.btn-close:focus {
     transition:all .5s ease;
 }
 .section004 #card1:hover {
+    color:var(--gray5);
+    background:var(--gray2);
     border-color:var(--azul);
     border-radius:3vh;
 }
 .section004 #card2:hover {
+    color:var(--gray5);
+    background:var(--gray2);
     border-color:var(--amarelo);
     border-radius:3vh;
 }
 .section004 #card3:hover {
+    color:var(--gray5);
+    background:var(--gray2);
     border-color:var(--vermelho);
     border-radius:3vh;
 }
 .section004 #card4:hover {
+    color:var(--gray5);
+    background:var(--gray2);
     border-color:var(--verde);
     border-radius:3vh;
 }
 .section004 #card5:hover {
+    color:var(--gray5);
+    background:var(--gray2);
     border-color:var(--roxo);
     border-radius:3vh;
 }
@@ -1242,7 +1273,7 @@ button.btn-close:focus {
     content:url("../images/valoresCard7Symbol2.svg");
 }
 .section005 {
-    
+    padding-bottom:0;
 }
 .section005 .wrapCard {
     height:30vh;
@@ -1266,6 +1297,7 @@ button.btn-close:focus {
 .section005 #card1:after,
 .section005 #card1:before {
     position:absolute;
+
     top:-3vh;
     right:unset;
 
@@ -1350,6 +1382,10 @@ button.btn-close:focus {
     display:inline-block;
     overflow-y: scroll;
 }
+.section006 {
+    padding-top:3vh;
+    padding-bottom:0;
+}
 .section006 table {
     width:85%;
     margin:0 auto;
@@ -1361,6 +1397,10 @@ button.btn-close:focus {
 .section006 .logo {
     width:40vh;
     margin:0 auto;
+}
+.section007 {
+    padding-top:3vh;
+    padding-bottom:0;
 }
 .section007 .table > tbody > tr > td:first-child {
     position:relative;
@@ -1439,6 +1479,7 @@ button.btn-close:focus {
     left:-55vh;
     width:50vh;
     height:68vh;
+
     background-image:url("../images/passos03-min.png");
     transform:rotate(0deg);
     z-index:6;
@@ -1518,7 +1559,7 @@ button.btn-close:focus {
     transition:all .5s ease;
 }
 .section008 .container-fluid.cut {
-    background:linear-gradient(90deg, var(--gray5) 65%, transparent 0%);
+    background:linear-gradient(148deg, var(--gray5) 65%, transparent 0%);
     padding-top:10vh;
     padding-bottom:10vh;
 }
@@ -1614,9 +1655,14 @@ button.btn-close:focus {
         width:100%;
     }
     .section002 .container-fluid.cut {
-        background:linear-gradient(90deg, transparent 21%, var(--gray5) 0%);
-        padding-top:25vh;
+        background:linear-gradient(90deg, transparent 100%, var(--gray5) 0%);
+        padding-top:30vh;
         padding-bottom:15vh;
+    }
+    .section002 .contentfoto {
+        top:3vh;
+        left:0;
+        height:auto;
     }
     #carouselFredomeeUsers {
         margin-top:3vh;
@@ -1772,11 +1818,16 @@ button.btn-close:focus {
         font-size:4.8vh;
     }
     .section002 .container-fluid.cut {
-        background:linear-gradient(90deg, transparent 14%, var(--gray5) 0%);
-        padding-top:30vh;
-        padding-bottom:10vh;
+        background:linear-gradient(90deg, transparent 100%, var(--gray5) 0%);
+        padding-top: 30vh;
+        padding-bottom: 0;
     }
     .section002 .wrap {
+        height:auto;
+    }
+    .section002 .contentfoto {
+        top:-55px;
+        left:0;
         height:auto;
     }
     #wrapcard-icon-1,
