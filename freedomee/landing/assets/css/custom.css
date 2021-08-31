@@ -192,8 +192,11 @@ strong,
     display:inline-block;
 }
 .dropdown-menu {
+    font-size:unset;
+    padding:0;
     background-color:var(--gray2);
     border:0;
+    margin:0 auto!important;
 }
 .dropdown-item .flag {
     width:3vh;
@@ -203,7 +206,6 @@ strong,
 .navbar-dark .navbar-nav .nav-link.active {
     position:relative;
     top:0;
-    font-size:2vh;
     color:var(--gray4);
     padding:1.2vh 1.2vh;
     margin:0 auto;
@@ -1832,6 +1834,7 @@ button.btn-close:focus {
     .navbar-dark .navbar-nav .nav-link.btn-secondary {
         width:100%;
         padding:2vh 3vw 2vh 3vw!important;
+        margin:2vh auto 2vh auto;
     }
     .navbar-dark .navbar-collapse {
         height:80vh;
