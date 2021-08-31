@@ -714,8 +714,11 @@ a.excluir:focus {
     display:none
 }
 .setting-avatar {
-  width: 30px;
-  margin-right: 10px;
+  width:30px;
+  margin-right:10px;
+}
+.tab-content .wow_content {
+    padding:15px 15px 30px 15px;
 }
 @media (max-width:1024px) {
 
