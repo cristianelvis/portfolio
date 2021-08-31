@@ -531,6 +531,7 @@ button.btn-close:focus {
     padding-top: 13vh;
 }
 .section002 .background {
+    position:relative;
     background:url('../images/oquesomosBackgroundImagePB-min.png') no-repeat;
     background-position:0 0;
     -webkit-background-size:100%;
@@ -541,6 +542,7 @@ button.btn-close:focus {
     transition:all .5s ease;
 }
 .section002 .background:hover {
+    position:relative;
     background:url('../images/oquesomosBackgroundImage-min.png') no-repeat;
     background-position:0 0;
     -webkit-background-size:100%;
@@ -549,6 +551,13 @@ button.btn-close:focus {
     background-size:100%;
     background-color:var(--gray5);
     transition:all .5s ease;
+}
+.section002 .background .photocaption {
+    position:absolute;
+    top:1vh;
+    left:1vh;
+    font-size:1vh;
+    color:var(--gray5);
 }
 .section002 .container-fluid.cut {
     background:linear-gradient(90deg, transparent 45%, var(--gray5) 0%);
@@ -1130,6 +1139,7 @@ button.btn-close:focus {
     margin:2vh auto 6vh auto;
     border:0.8vh solid var(--gray5);
     border-radius:0;
+    font-weight:900;
     text-align:center;
     justify-content:center;
     align-items:center;
@@ -1236,6 +1246,12 @@ button.btn-close:focus {
     background-repeat:no-repeat;
     background-size:cover;
 }
+.section004 #card6 .photocaption {
+    position:absolute;
+    right:1vh;
+    bottom:1vh;
+    font-size:1vh;
+}
 .section004 .wrapCard {
     height:60vh;
     margin:0 auto;
@@ -1301,10 +1317,8 @@ button.btn-close:focus {
 .section005 #card1:after,
 .section005 #card1:before {
     position:absolute;
-
     top:-3vh;
     right:unset;
-
     bottom:unset;    
     left:-3vh;
     width:10vh;
@@ -1340,6 +1354,12 @@ button.btn-close:focus {
     background-position:center center;
     background-repeat:no-repeat;
     background-size:cover;
+}
+.section005 #card2 .photocaption {
+    position:absolute;
+    right:1vh;
+    bottom:1vh;
+    font-size:1vh;
 }
 #letterFreedomeeUsers .modal-fullscreen {
     background-image:url("../images/francesca-giobbi-min.png");
@@ -1605,6 +1625,7 @@ button.btn-close:focus {
     font-size:1.6vh;
     color:white;
     margin:0 auto;
+
 }
 #footer .social {
     width:2vh;
@@ -1796,7 +1817,11 @@ button.btn-close:focus {
     }
     .navbar-dark .navbar-nav .nav-link.btn-secondary {
         width:100%;
-        padding:2vh 3vw 2vh 3vw !important;
+        padding:2vh 3vw 2vh 3vw!important;
+    }
+    .navbar-dark .navbar-collapse {
+        height:80vh;
+        overflow-y:scroll;
     }
     .btn-primary {
         width:50vw;
@@ -1809,7 +1834,7 @@ button.btn-close:focus {
     .section001-btn-03,
     .section001-btn-04 {
         font-size:4vh;
-        padding: 1vh 1vw 50vh 1vw;
+        padding:1vh 1vw 50vh 1vw;
     }
     .section001-btn-01:hover,
     .section001-btn-02:hover,
@@ -1858,6 +1883,19 @@ button.btn-close:focus {
     }
     #carouselFredomeeUsers .carousel-caption {
         overflow-y:scroll;
+    }
+    #carouselFredomeeUsers .carousel-control-next,
+    #carouselFredomeeUsers .carousel-control-prev {
+        top:unset;
+        bottom:-10.3vh;
+        width:10%;
+        height:10vh;
+    }
+    #carouselFredomeeUsers button i {
+        font-size:6vh;
+    }
+    #carouselFredomeeUsers button i:hover {
+        font-size:8vh;
     }
     #modalFreedomeeUser .grafico01,
     #modalFreedomeeUser .grafico01:hover {
@@ -1919,11 +1957,11 @@ button.btn-close:focus {
         height:3vh;
     }
     .section004 .wrapCard {
-        margin:0 auto 40vh auto;
+        margin:0 auto 45vh auto;
     }
     .section004 #card7 {
         width:90%;
-        height:60vh;
+        height:70vh;
         margin-bottom:6vh;
     }
     .section005 .wrapCard {
