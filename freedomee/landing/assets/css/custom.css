@@ -743,7 +743,7 @@ button.btn-close:focus {
     margin-bottom:6vh;
 }
 #carouselFredomeeUsers .carousel-indicators {
-    left:49vh;
+    left:66.5vh;
     bottom:-2vh;
 }
 #carouselFredomeeUsers .carousel-indicators [data-bs-target]{
@@ -1010,7 +1010,7 @@ button.btn-close:focus {
 .mediadorAntropicoContent,
 .mediadorTecnologicoContent,
 .mediadorQualidadeContent {
-    color:white;
+    color:black;
     width:25vh;
     height:55vh;
     padding:2vh;
@@ -1023,31 +1023,31 @@ button.btn-close:focus {
 }
 .mediadorEconomicoContent {
     color:black;
-    background:linear-gradient(0deg, rgba(253, 254, 0, 0.8), rgba(253, 254, 0, 0.8)), url("../images/mediadorEconomicoPB-min.png"), white;
+    background:linear-gradient(0deg, rgba(253, 254, 0, 0.9), rgba(253, 254, 0, 0.9)), url("../images/mediadorEconomicoPB-min.png"), white;
     background-position:top center;
     background-repeat:no-repeat;
     background-size:cover;
 }
 .mediadorHumanoContent {
-    background:linear-gradient(0deg, rgba(255, 54, 88, 0.8), rgba(255, 54, 88, 0.8)), url("../images/mediadorHumanoPB-min.png"), white;
+    background:linear-gradient(0deg, rgba(255, 54, 88, 0.9), rgba(255, 54, 88, 0.9)), url("../images/mediadorHumanoPB-min.png"), white;
     background-position:top center;
     background-repeat:no-repeat;
     background-size:cover;
 }
 .mediadorAntropicoContent {
-    background:linear-gradient(0deg, rgba(19, 194, 165, 0.8), rgba(19, 194, 165, 0.8)), url("../images/mediadorAntropicoPB-min.png"), white;
+    background:linear-gradient(0deg, rgba(19, 194, 165, 0.9), rgba(19, 194, 165, 0.9)), url("../images/mediadorAntropicoPB-min.png"), white;
     background-position:top center;
     background-repeat:no-repeat;
     background-size:cover;
 }
 .mediadorTecnologicoContent {
-    background:linear-gradient(0deg, rgba(115, 150, 216, 0.8), rgba(115, 150, 216, 0.8)), url("../images/mediadorTecnologicoPB-min.png"), white;
+    background:linear-gradient(0deg, rgba(115, 150, 216, 0.9), rgba(115, 150, 216, 0.9)), url("../images/mediadorTecnologicoPB-min.png"), white;
     background-position:top center;
     background-repeat:no-repeat;
     background-size:cover;
 }
 .mediadorQualidadeContent {
-    background:linear-gradient(0deg, rgba(199, 166, 231, 0.8), rgba(199, 166, 231, 0.8)), url("../images/mediadorQualidadePB-min.png"), white;
+    background:linear-gradient(0deg, rgba(199, 166, 231, 0.9), rgba(199, 166, 231, 0.9)), url("../images/mediadorQualidadePB-min.png"), white;
     background-position:top center;
     background-repeat:no-repeat;
     background-size:cover;
@@ -1139,6 +1139,7 @@ button.btn-close:focus {
     margin:2vh auto 6vh auto;
     border:0.8vh solid var(--gray5);
     border-radius:0;
+    font-size:2vh;
     font-weight:900;
     text-align:center;
     justify-content:center;
@@ -1887,7 +1888,7 @@ button.btn-close:focus {
     #carouselFredomeeUsers .carousel-control-next,
     #carouselFredomeeUsers .carousel-control-prev {
         top:unset;
-        bottom:-10.3vh;
+        bottom:87.5vh;
         width:10%;
         height:10vh;
     }
@@ -1910,7 +1911,6 @@ button.btn-close:focus {
     .mediadorAntropicoContent,
     .mediadorTecnologicoContent,
     .mediadorQualidadeContent {
-        color:white;
         width:100%;
         height:100vh;
     }
