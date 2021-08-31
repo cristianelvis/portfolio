@@ -198,6 +198,9 @@ strong,
     border:0;
     margin:0 auto!important;
 }
+.dropdown-menu[data-bs-popper] {
+    top:120%;
+}
 .dropdown-item .flag {
     width:3vh;
 }
@@ -1837,7 +1840,7 @@ button.btn-close:focus {
         margin:2vh auto 2vh auto;
     }
     .navbar-dark .navbar-collapse {
-        height:80vh;
+        height:85vh;
         overflow-y:scroll;
     }
     .btn-primary {
