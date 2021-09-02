@@ -92,6 +92,11 @@ body::after {
         url(../images/passos05PB-min.png)
         url(../images/passos05-min.png);
 }
+.col-xl-2,
+.col-xl-6,
+.col-xl-10 {
+	padding:0;
+}
 .bg-dark {
     background-color:var(--gray1)!important;
 }
@@ -748,9 +753,9 @@ button.btn-close:focus {
     display:inline-block;
     content:"";
     border-top:0.3vh dashed black;
-    width:26.5vh;
+    width:18vh;
     margin:0 auto;
-    transform:translateY(-0.4vh) translateX(-11.8vh);
+    transform:translateY(-0.4vh) translateX(-7.5vh);
 }
 #wrapcard-1:hover > .wrapcard-retangle,
 #wrapcard-2:hover > .wrapcard-retangle,
@@ -1114,7 +1119,7 @@ button.btn-close:focus {
 .section003 #card3 .icon,
 .section003 #card4 .icon,
 .section003 #card5 .icon {
-    width:100%;
+    width:90px;
     margin:0 auto;
 }
 .section003 #card1 p,
@@ -1344,7 +1349,7 @@ button.btn-close:focus {
     font-weight:300;
     line-height:3.8vh;
     position:relative;
-    width:95%;
+    width:98%;
     height:26vh;
     padding:6vh;
     margin:0 auto;
