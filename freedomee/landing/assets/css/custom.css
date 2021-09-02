@@ -213,8 +213,9 @@ strong,
     padding:1.2vh 1.2vh;
     margin:0 auto;
     text-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
-    transition:all .5s ease;
     display:inline-block;
+    white-space:nowrap;
+    transition:all .5s ease;
 }
 .navbar-dark .navbar-nav .nav-link.active {
     color:var(--azul);
@@ -235,8 +236,9 @@ strong,
     padding:1.2vh 1.2vh;
     margin:0 auto;
     text-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
-    transition:all .5s ease;
     display:inline-block;
+    white-space:nowrap;
+    transition:all .5s ease;
 }
 .dropdown-item.active,.dropdown-item:active {
     color:var(--azul);
@@ -253,7 +255,6 @@ strong,
     background-color:var(--gray2);
 }
 .btn {
-    display:inline-block;
     font-weight:unset;
     line-height: unset;
     color:unset;
@@ -269,6 +270,8 @@ strong,
     padding:unset;
     font-size:unset;
     border-radius:unset;
+    display:inline-block;
+    white-space:nowrap;
     transition:unset;
 }
 .btn-primary {
@@ -285,6 +288,9 @@ strong,
     background-color:var(--gray1);
     text-shadow:unset;
     box-shadow:unset;
+    box-shadow:unset;
+    display:inline-block;
+    white-space:nowrap;
     transition:all .5s ease;
   }
 .btn-primary:hover,
@@ -314,6 +320,8 @@ strong,
     background-color:var(--gray3);
     text-shadow:unset;
     box-shadow:unset;
+    display:inline-block;
+    white-space:nowrap;
     transition:all .5s ease;
 }
 .btn-secondary:hover,
