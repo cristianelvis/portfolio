@@ -722,11 +722,20 @@ a.excluir:focus {
 .tab-content .wow_content {
     padding:15px 15px 30px 15px;
 }
+.mobileline {
+    margin-left:20px;
+}
 @media (max-width:1024px) {
 
 }
 @media (max-width:576px) {
     .thumb {
         width:100%;
+    }
+    .mobileline {
+        width:100%;
+        margin-top:20px;
+        margin-left:0;
+        display:inline-block;
     }
 }
