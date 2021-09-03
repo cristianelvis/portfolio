@@ -16,6 +16,7 @@ $(function(){
     $("#includePaginaVendedorListaProdutosContent").load("assets/html/paginaVendedorListaProdutosContent.html");
     $("#includeUsuarioContent").load("assets/html/usuarioContent.html");
     $("#includeLojaOnlineContent").load("assets/html/lojaOnlineContent.html");
+    $("#includeLojaOnlinePostContent").load("assets/html/lojaOnlinePostContent.html");
     $("#includeEducacaoCapacitacaoContent").load("assets/html/educacaoCapacitacaoContent.html");
     $("#includeEducacaoCapacitacaoCadastroContent").load("assets/html/educacaoCapacitacaoCadastroContent.html");
     $("#includeProjetosNomedoprojetoContent").load("assets/html/projetosNomedoprojetoContent.html");
