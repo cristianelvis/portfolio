@@ -446,6 +446,8 @@
     position:unset;
     text-shadow:unset;
     color:unset;
+    width:80%;
+    margin:0 auto;
 }
 .quiz-caption h1,
 .quiz-caption h2{
