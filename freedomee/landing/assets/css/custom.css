@@ -405,6 +405,7 @@ button.btn-close:focus {
 .section001 h1 a {
     color:white;
 }
+.section001 .wrap h1:hover,
 .section001 h1 a:hover {
     color:var(--roxo);
 }
@@ -421,6 +422,8 @@ button.btn-close:focus {
 .section001 .wrap h1 {
     width:33vw;
     margin:0 auto;
+    text-decoration:underline;
+    cursor:pointer;
     text-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
 }
 .section001 .wrap h2 {
