@@ -416,7 +416,7 @@ button.btn-close:focus {
     padding:2vh 6vh;
 }
 .section001 .wrap .logotipo {
-    max-width:16vw;
+    max-width:50vh;
     margin:0 auto;
 }
 .section001 .wrap h1 {
@@ -1696,6 +1696,17 @@ button.btn-close:focus {
     width:50%;
     margin:2vh auto;
 }
+.popover {
+    font-family:'Montserrat', Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+    background-color:var(--roxo);
+}
+.bs-popover-auto[data-popper-placement^=top]>.popover-arrow::after,.bs-popover-top>.popover-arrow::after{bottom:1px;border-width:.5rem .5rem 0;border-top-color:var(--roxo)}
+.bs-popover-auto[data-popper-placement^=right]>.popover-arrow::after,.bs-popover-end>.popover-arrow::after{left:1px;border-width:.5rem .5rem .5rem 0;border-right-color:var(--roxo)}
+.bs-popover-auto[data-popper-placement^=bottom]>.popover-arrow::after,.bs-popover-bottom>.popover-arrow::after{top:1px;border-width:0 .5rem .5rem .5rem;border-bottom-color:var(--roxo)}
+.bs-popover-auto[data-popper-placement^=left]>.popover-arrow::after,.bs-popover-start>.popover-arrow::after{right:1px;border-width:.5rem 0 .5rem .5rem;border-left-color:var(--roxo)}
+.popover-body {
+    color:white
+}
 @media (max-width:1024px) {
     .flag {
         width:2vh;
@@ -1714,7 +1725,7 @@ button.btn-close:focus {
         border-radius:6.6vw;
     }
     .section001 .wrap .logotipo {
-        max-width:55vw;
+        max-width:40vh;
     }
     .section001 .wrap h1 {
         width:90vw;
