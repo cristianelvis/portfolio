@@ -20,5 +20,7 @@ $(function(){
     $("#includeEducacaoCapacitacaoContent").load("assets/html/educacaoCapacitacaoContent.html");
     $("#includeEducacaoCapacitacaoCadastroContent").load("assets/html/educacaoCapacitacaoCadastroContent.html");
     $("#includeProjetosNomedoprojetoContent").load("assets/html/projetosNomedoprojetoContent.html");
+    $("#includeSettingGeneralContent").load("assets/html/settingGeneralContent.html");
+    $("#includeSettingPaymentsContent").load("assets/html/settingPaymentsContent.html");
 });
 
