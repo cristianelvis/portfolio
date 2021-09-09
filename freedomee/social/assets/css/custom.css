@@ -725,6 +725,14 @@ a.excluir:focus {
     color:#2196F3;
     margin-left:20px;
 }
+.btn-cloud {
+    color:white;
+    background-color:rgb(0, 128, 255);
+}
+.btn-cloud:hover {
+    color:white;
+    background-color:rgb(0, 102, 204);
+}
 @media (max-width:1024px) {
 
 }
