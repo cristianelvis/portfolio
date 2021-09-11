@@ -1,8 +1,10 @@
 @charset "UTF-8";
-/*!
+/*
  * Cristian Elvis - v1.0 (http://cristianelvis.com)
  * Copyright 2021 Cristian Elvis
  */
+
+ /* */
 :root {
     --azul:#7495da;
     --azulcalro:#f3e3fd;
@@ -167,7 +169,8 @@ strong,
 .navbar {
     font-family:'Otomanopee One', sans-serif;
     padding:0.6vh 1.2vw 0.6vh 1.2vw;
-    background-color:var(--gray2);
+    /*background-color:var(--gray2);*/
+    background-color:green;
 }
 .navHide,
 .navShow {
