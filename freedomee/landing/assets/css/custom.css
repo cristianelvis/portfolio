@@ -231,6 +231,11 @@ strong,
 .navbar-dark .navbar-nav .nav-link:focus {
     color:var(--verde);
 }
+.nav-link-btn {
+    font-family:'Montserrat', sans-serif;
+    border-radius:2.6vh;
+    background-color:var(--gray3);
+}
 .dropdown-item {
     position:relative;
     top:0;
@@ -309,10 +314,6 @@ strong,
     background-color:var(--roxo);
     text-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
     box-shadow:6px 6px 6px rgba(0, 0, 0, 0.25);
-}
-.nav-link-btn {
-    border-radius:2.6vh;
-    background-color:var(--gray3);
 }
 .btn-secondary {
     font-family:'Montserrat', sans-serif;
