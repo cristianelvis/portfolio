@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/*
+ * Cristian Elvis - v1.0 (http://cristianelvis.com)
+ * Copyright 2021 Cristian Elvis
+ */
+.navbar {
+    background:rgba(65, 62, 62, 0.5);
+}
+.navbar-brand {
+    width:28vh;
+}
+.dropdown-menu {
+    background:rgba(65, 62, 62, 0.5);
+}
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-nav .nav-link.active {
+    position:relative;
+    top:0;
+    font-size:1.8vh;
+    color:var(--gray4);
+    padding:1.2vh 2.4vh;
+    text-shadow:unset;
+}
+.nav-link-btn {
+    background-color:var(--gray1);
+}
+#tab001,
+#tab002,
+#tab003,
+#tab004,
+#tab005,
+#tab006,
+#event-tabContent.tab-content {
+    height:100vh;
+    background-color:gray;
+}
+#tab001 {
+    background-color:blue;
+}
+#tab002 {
+    background-color:green;
+}
+#tab003 {
+    background-color:red;
+}
+#tab004 {
+    background-color:blue;
+}
+#tab005 {
+    background-color:green;
+}
+#tab006 {
+    background-color:red;
+}
+@media (max-width:1024px) {
+
+}
+@media (max-width:576px) {
+    .dropdown-item,
+    .navbar-dark .navbar-nav .nav-link,
+    .navbar-dark .navbar-nav .nav-link.active {
+        font-size:3vh;
+        padding:2vh 2vw 2vh 2vw;
+    }
+}
