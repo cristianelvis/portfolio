@@ -2,6 +2,9 @@
  * Cristian Elvis - v1.0 (http://cristianelvis.com)
  * Copyright 2021 Cristian Elvis
  */
+ .bold {
+    font-weight:bold;
+ }
 .copyLink {
     max-width: 300px!important;
 }
