@@ -28,4 +28,11 @@ $(document).ready(function(){
     $("#steps").load("section007.html");
     $("#impulsionar").load("section008.html");
     $("#boost").load("section008.html");
+    $("#tab001").load("tab001.html");
+    $("#tab002").load("tab002.html");
+    $("#tab003").load("tab003.html");
+    $("#tab004").load("tab004.html");
+    $("#tab005").load("tab005.html");
+    $("#tab006").load("tab006.html");
+    $("#tab007").load("tab007.html");
 });
