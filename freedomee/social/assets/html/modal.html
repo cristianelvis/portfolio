@@ -1,4 +1,4 @@
-<div class="modal fade" role="dialog" id="representanteMarca">
+<div class="modal fade" role="dialog" id="empreendedorVendedor">
   <div class="modal-dialog modal-md">
     <div class="modal-content">
       <div class="wow_pops_head quiz-head">
@@ -9,25 +9,44 @@
             </path>
           </svg>
         </button>
-        <h4>REPRESENTANTE DE MARCA</h4>
+        <h4>EMPREENDEDOR VENDEDOR</h4>
       </div>
       <div class="modal-body">
-        <p>Esta ação permite o ganho de 1% das vendas, caso o convidado abra uma loja e venda produtos. Para prosseguir,
-          será necessário abertura de uma conta para receber esse comissionamento, caso ele ocorra. Para isso,
-          precisamos de mais alguns dados.</p>
+        <p>Esta ação permite o ganho de 8% da venda desse produto caso a compra aconteça pelo link compartilhado em sua loja. Para prosseguir, será necessário abertura de uma conta para receber esse comissionamento, caso ele ocorra.</p>
+        <p class="bold">Para isso, precisamos de mais alguns dados:</p>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="wow_form_fields">
+              <label for="username">Nome de usuário</label>
+              <input name="username" type="text" value="Nome de usuário">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="wow_form_fields">
+              <label for="first_name">Primeiro nome</label>  
+              <input name="first_name" type="text" value="Primeiro nome">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="wow_form_fields">
+              <label for="last_name">Último nome</label>  
+              <input name="last_name" type="text" value="Último nome">
+            </div>
+          </div>
+        </div>
         <div class="row">
           <div class="col-md-6">
             <div class="wow_form_fields">
               <label for="userCPF">CPF</label>
-              <input id="userCPF" name="userCPF" type="text" value="Digite o número do CPF" autocomplete="off">
-              <span class="help-block checking"></span>
+              <input name="userCPF" type="text" value="Digite o número do CPF">
             </div>
           </div>
           <div class="col-md-6">
             <div class="wow_form_fields">
               <label for="phone_number">Telefone Celular</label>
-              <input name="phone_number" id="phone_number" type="tel" value="Digite o número do celular"
-                autocomplete="off">
+              <input name="phone_number" type="text" value="Digite o número do celular">
             </div>
           </div>
         </div>
@@ -39,7 +58,7 @@
   </div>
 </div>
 
-<div class="modal fade" role="dialog" id="indicadorMarca">
+<div class="modal fade" role="dialog" id="empreendedorEmbaixador">
   <div class="modal-dialog modal-md">
     <div class="modal-content">
       <div class="wow_pops_head quiz-head">
@@ -50,25 +69,104 @@
             </path>
           </svg>
         </button>
-        <h4>INDICADOR DE MARCA</h4>
+        <h4>EMPREENDEDOR EMBAIXADOR DE MARCA</h4>
       </div>
       <div class="modal-body">
-        <p>Esta ação permite o ganho de 1% da venda desse produto, caso a compra aconteça pelo link compartilhado. Para
-          prosseguir, será necessário abertura de uma conta para receber esse comissionamento, caso ele ocorra. Para
-          isso, precisamos de mais alguns dados.</p>
+        <p>Esta ação permite o ganho de 1% das vendas, caso o convidado abra uma loja e venda produtos. Para prosseguir, será necessário abertura de uma conta para receber esse comissionamento, caso ele ocorra.</p>
+        <p class="bold">Para isso, precisamos de mais alguns dados:</p>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="wow_form_fields">
+              <label for="username">Nome de usuário</label>
+              <input name="username" type="text" value="Nome de usuário">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="wow_form_fields">
+              <label for="first_name">Primeiro nome</label>  
+              <input name="first_name" type="text" value="Primeiro nome">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="wow_form_fields">
+              <label for="last_name">Último nome</label>  
+              <input name="last_name" type="text" value="Último nome">
+            </div>
+          </div>
+        </div>
         <div class="row">
           <div class="col-md-6">
             <div class="wow_form_fields">
               <label for="userCPF">CPF</label>
-              <input id="userCPF" name="userCPF" type="text" value="Digite o número do CPF" autocomplete="off">
-              <span class="help-block checking"></span>
+              <input name="userCPF" type="text" value="Digite o número do CPF">
             </div>
           </div>
           <div class="col-md-6">
             <div class="wow_form_fields">
               <label for="phone_number">Telefone Celular</label>
-              <input name="phone_number" id="phone_number" type="tel" value="Digite o número do celular"
-                autocomplete="off">
+              <input name="phone_number" type="text" value="Digite o número do celular">
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-main btn-mat btn-mat-raised" data-dismiss="modal">Salvar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" role="dialog" id="empreendedorInfluenciador">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <div class="wow_pops_head quiz-head">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="currentColor"
+              d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z">
+            </path>
+          </svg>
+        </button>
+        <h4>EMPREENDEDOR INFLUENCIADOR</h4>
+      </div>
+      <div class="modal-body">
+        <p>Esta ação permite o ganho de 1% da venda desse produto, caso a compra aconteça pelo link compartilhado. Para prosseguir, será necessário abertura de uma conta para receber esse comissionamento, caso ele ocorra.</p>
+        <p class="bold">Para isso, precisamos de mais alguns dados:</p>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="wow_form_fields">
+              <label for="username">Nome de usuário</label>
+              <input name="username" type="text" value="Nome de usuário">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="wow_form_fields">
+              <label for="first_name">Primeiro nome</label>  
+              <input name="first_name" type="text" value="Primeiro nome">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="wow_form_fields">
+              <label for="last_name">Último nome</label>  
+              <input name="last_name" type="text" value="Último nome">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="wow_form_fields">
+              <label for="userCPF">CPF</label>
+              <input name="userCPF" type="text" value="Digite o número do CPF">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="wow_form_fields">
+              <label for="phone_number">Telefone Celular</label>
+              <input name="phone_number" type="text" value="Digite o número do celular">
             </div>
           </div>
         </div>
