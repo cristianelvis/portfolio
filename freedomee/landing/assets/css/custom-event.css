@@ -3,6 +3,68 @@
  * Cristian Elvis - v1.0 (http://cristianelvis.com)
  * Copyright 2021 Cristian Elvis
  */
+ body::after {
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+    content:
+        url(../images/tab001BackgroundImage-min.png)
+        url(../images/tab002BackgroundImage-min.png)
+        url(../images/tab003BackgroundImage-min.png)
+        url(../images/tab004BackgroundImage-min.png)
+        url(../images/tab005BackgroundImage-min.png)
+        url(../images/tab006BackgroundImage-min.png)
+        url(../images/tab007BackgroundImage-min.png);
+}
+h1 {
+    font-size:4vh;
+    margin-bottom:0;
+}
+.h2,h2 {
+    font-size:2.4vh;
+    font-weight:600;
+}
+.container-fluid,
+.col-xl-6 {
+    padding-right:0;
+    padding-left:0;
+}
+.stageTab1-1,
+.stageTab1-2,
+.stageTab2-1,
+.stageTab2-2,
+.stageTab3-1,
+.stageTab3-2,
+.stageTab4-1,
+.stageTab4-2,
+.stageTab5-1,
+.stageTab5-2,
+.stageTab6-1,
+.stageTab6-2,
+.stageTab7-1,
+.stageTab7-2 {
+    text-align:center;
+    background:rgba(255, 255, 255, 0.6);
+}
+.stageTab1-1,
+.stageTab1-2,
+.stageTab2-2,
+.stageTab3-2,
+.stageTab4-2,
+.stageTab5-2,
+.stageTab6-2,
+.stageTab7-2 {
+    background:transparent;
+}
+.wrapTabLeft,
+.wrapTabRight {
+    width:95%;
+    height:85vh;
+    padding:0 2vh 0 2vh;
+    margin:2vh auto;
+    text-align:center;
+    justify-content:center;
+    align-items:end;
+    display:inline-grid;
+}
 .navbar {
     background:rgba(65, 62, 62, 0.5);
 }
@@ -14,15 +76,38 @@
 }
 .navbar-dark .navbar-nav .nav-link,
 .navbar-dark .navbar-nav .nav-link.active {
-    position:relative;
-    top:0;
-    font-size:1.8vh;
-    color:var(--gray4);
-    padding:1.2vh 2.4vh;
     text-shadow:unset;
 }
 .nav-link-btn {
     background-color:var(--gray1);
+}
+#tab001 {
+    background-image:url(../images/tab001BackgroundImage-min.png);
+    background-color:#e39b09;
+}
+#tab002 {
+    background-image:url(../images/tab002BackgroundImage-min.png);
+    background-color:#dee3e4;
+}
+#tab003 {
+    background-image:url(../images/tab003BackgroundImage-min.png);
+    background-color:gray;
+}
+#tab004 {
+    background-image:url(../images/tab004BackgroundImage-min.png);
+    background-color:#50b1c7;
+}
+#tab005 {
+    background-image:url(../images/tab005BackgroundImage-min.png);
+    background-color:gray;
+}
+#tab006 {
+    background-image:url(../images/tab006BackgroundImage-min.png);
+    background-color:#459cb0;
+}
+#tab007 {
+    background-image:url(../images/tab007BackgroundImage-min.png);
+    background-color:gray;
 }
 #tab001,
 #tab002,
@@ -30,30 +115,140 @@
 #tab004,
 #tab005,
 #tab006,
-#event-tabContent.tab-content {
+#tab007 {
     height:100vh;
-    background-color:gray;
+    overflow:hidden;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:top center;
 }
-#tab001 {
-    background-color:blue;
+#tab001,
+#tab002,
+#tab003,
+#tab004,
+#tab005,
+#tab006,
+#tab007 {
+    padding:11.5vh 0;
 }
-#tab002 {
-    background-color:green;
+#tab001 .wrapTabRight,
+#tab002 .wrapTabRight,
+#tab003 .wrapTabRight,
+#tab004 .wrapTabRight,
+#tab005 .wrapTabRight,
+#tab006 .wrapTabRight,
+#tab007 .wrapTabRight {
+    color:white;
+    text-align:right;
+    justify-content:right;
 }
-#tab003 {
-    background-color:red;
+#tab002 .wrapTabRight {
+    color:black;
 }
-#tab004 {
-    background-color:blue;
+.cie {
+    width:20vh;
 }
-#tab005 {
-    background-color:green;
+.fade {
+    transition:opacity .15s linear;
 }
-#tab006 {
-    background-color:red;
+.fade:not(.show) {
+    opacity:0;
+    transition:opacity .15s linear;
+}
+#card1 {
+    position:relative;
+    width:45vh;
+    height:22vh;
+    padding:6vh;
+    margin:0 18vh 0 0;
+    border:0.3vh solid var(--gray5);
+    text-align:left;
+    justify-content:center;
+    align-items:center;
+    display:inline-grid;
+}
+#card1:after,
+#card1:before {
+    position:absolute;
+    top:-4.5vh;
+    right:unset;
+    bottom:unset;    
+    left:-3vh;
+    width:10vh;
+    height:8vh;
+    background-color:transparent;
+    text-align:left;
+    justify-content:center;
+    align-items:center;
+    display:inline-grid;
+    content:url("../images/valoresCard7Symbol1white.svg");
+}
+#card1:after {
+    top:unset;
+    right:-3vh;
+    bottom:-4.5vh;
+    left:unset;
+    content:url("../images/valoresCard7Symbol2white.svg");
 }
 @media (max-width:1024px) {
-
+    h2 {
+        font-size:3vh;
+    }
+    .smallT,
+    .medT {
+        font-size:2vh;
+    }
+    .container-fluid,
+    .col-xl-6 {
+        padding-right:calc(var(--bs-gutter-x) * .5);
+        padding-left:calc(var(--bs-gutter-x) * .5);
+    }
+    #tab001 .wrapTabLeft,
+    #tab002 .wrapTabLeft,
+    #tab003 .wrapTabLeft,
+    #tab004 .wrapTabLeft,
+    #tab005 .wrapTabLeft,
+    #tab006 .wrapTabLeft,
+    #tab007 .wrapTabLeft,
+    #tab001 .wrapTabRight,
+    #tab002 .wrapTabRight,
+    #tab003 .wrapTabRight,
+    #tab004 .wrapTabRight,
+    #tab005 .wrapTabRight,
+    #tab006 .wrapTabRight,
+    #tab007 .wrapTabRight {
+        width:100%;
+        height:150vh;
+    }
+    #tab001 .wrapTabRight,
+    #tab002 .wrapTabRight,
+    #tab003 .wrapTabRight,
+    #tab004 .wrapTabRight,
+    #tab005 .wrapTabRight,
+    #tab006 .wrapTabRight,
+    #tab007 .wrapTabRight {
+        height:40vh;
+        text-align:center;
+        justify-content:center;
+    }
+    #tab003 .wrapTabRight {
+        height:100vh;
+    }
+    #tab001,
+    #tab002,
+    #tab003,
+    #tab004,
+    #tab005,
+    #tab006,
+    #tab007 {
+        background-image:unset;
+        overflow-y:scroll;
+    }
+    #card1 {
+        width:90%;
+        height:50vh;
+        margin:6vh 0 6vh 0;
+    }
 }
 @media (max-width:576px) {
     .dropdown-item,

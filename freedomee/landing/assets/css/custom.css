@@ -3,8 +3,6 @@
  * Cristian Elvis - v1.0 (http://cristianelvis.com)
  * Copyright 2021 Cristian Elvis
  */
-
- /* */
 :root {
     --azul:#7495da;
     --azulcalro:#f3e3fd;
@@ -109,7 +107,7 @@ body::after {
 .wrap,
 .wrapmodal {
     width:100%;
-    height: 80vh;
+    height:80vh;
     padding:0;
     margin:6vh auto;
     text-align:center;
@@ -128,6 +126,12 @@ h1 {
 }
 p {
     margin-bottom:1vh;
+}
+.smallT {
+    font-size:1.2vh;
+}
+.medT {
+    font-size:1.6vh;
 }
 a {
     color:black;
@@ -157,8 +161,8 @@ strong,
 }
 .banner {
     width:100%;
-    margin-top: 6vh;
-    margin-bottom: 6vh;
+    margin-top:6vh;
+    margin-bottom:6vh;
 }
 .banner img {
     width:100%;
@@ -220,12 +224,13 @@ strong,
     white-space:nowrap;
     transition:all .5s ease;
 }
-.navbar-dark .navbar-nav .nav-link.active {
-    color:var(--azul);
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .show>.nav-link {
+    color:var(--amarelo)!important;
     text-decoration:none;
 }
 .navbar-dark .navbar-nav .nav-link:hover {
-    color:var(--amarelo);
+    color:var(--azul);
     top:-0.6vh;
 }
 .navbar-dark .navbar-nav .nav-link:focus {
@@ -1345,7 +1350,6 @@ button.btn-close:focus {
     display:inline-grid;
     content:url("../images/valoresCard7Symbol1.svg");
 }
-
 .section004 #card7:after {
     top:unset;
     right:-3vh;
