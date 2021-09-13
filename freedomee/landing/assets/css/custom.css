@@ -173,8 +173,7 @@ strong,
 .navbar {
     font-family:'Otomanopee One', sans-serif;
     padding:0.6vh 1.2vw 0.6vh 1.2vw;
-    /*background-color:var(--gray2);*/
-    background-color:green;
+    background-color:var(--gray2);
 }
 .navHide,
 .navShow {
