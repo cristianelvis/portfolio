@@ -92,6 +92,12 @@ body::after {
         url(../images/passos05PB-min.png)
         url(../images/passos05-min.png);
 }
+.white {
+    color:white;
+}
+.black {
+    color:black;
+}
 .bg-dark {
     background-color:var(--gray1)!important;
 }
