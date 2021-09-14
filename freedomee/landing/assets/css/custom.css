@@ -1906,7 +1906,7 @@ button.btn-close:focus {
         margin:2vh auto 2vh auto;
     }
     .navbar-dark .navbar-collapse {
-        height:100vh;
+        height:80vh;
         overflow-y:scroll;
     }
     .btn-primary {
