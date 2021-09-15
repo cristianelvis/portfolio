@@ -22,10 +22,8 @@
         </div>
       </div>
       <hr>
-
       <form class="setting-general-form form-horizontal" method="post">
         <div class="setting-general-alert setting-update-alert"></div>
-
         <div class="row">
           <div class="col-md-6">
             <div class="wow_form_fields">
@@ -39,6 +37,22 @@
             <div class="wow_form_fields">
               <label for="phone_number">Telefone </label>
               <input name="phone_number" id="phone_number" type="tel" value="" autocomplete="off">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="wow_form_fields">
+              <label for="usercpf">CPF</label>
+              <input id="usercpf" name="usercpf" type="text" value="CPF"
+                onkeyup="Wo_CheckUsercpf(this.value);" autocomplete="off">
+              <span class="help-block checking"></span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="wow_form_fields">
+              <label for="mobilephone_number">Telefone Celular</label>
+              <input name="mobilephone_number" id="mobilephone_number" type="tel" value="" autocomplete="off">
             </div>
           </div>
         </div>
