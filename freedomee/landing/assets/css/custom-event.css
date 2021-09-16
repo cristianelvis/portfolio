@@ -328,6 +328,6 @@ h1 {
         width:95%;
         height:25vh;
         padding:6vh 2vh 6vh 2vh;
-        margin:0 auto;
+        margin:0 auto;background-color: green;
     }
 }
