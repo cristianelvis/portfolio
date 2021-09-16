@@ -326,8 +326,8 @@ h1 {
     #card1,
     #card1Gray {
         width:95%;
-        height:25vh;
-        padding:6vh 2vh 6vh 2vh;
+        height:30vh;
+        padding:3vh;
         margin:0 auto;background-color: blue;
     }
 }
