@@ -12,6 +12,7 @@ body {
     content:
         url(../images/tab001BackgroundImage-min.png)
         url(../images/tab002BackgroundImage-min.png)
+        url(../images/tab002mBackgroundImage-min.png)
         url(../images/tab003BackgroundImage-min.png)
         url(../images/tab004BackgroundImage-min.png)
         url(../images/tab005BackgroundImage-min.png)
@@ -65,7 +66,7 @@ h1 {
     background-color:#50b1c7;
 }
 #tab005 {
-    background-image:url(../images/tab000BackgroundImage-min.png);
+    background-image:url(../images/tab005BackgroundImage-min.png);
     background-color:gray;
 }
 #tab006 {
