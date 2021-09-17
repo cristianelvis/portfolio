@@ -179,11 +179,13 @@ h1 {
 #card1,
 #card1Gray {
     position:relative;
+    top:30px;
     width:45vh;
     height:22vh;
     padding:6vh;
     margin:0 22vh 0 0;
     border:0.3vh solid var(--gray5);
+    background: rgba(255, 255, 255, 0.6);
     text-align:left;
     justify-content:center;
     align-items:center;
@@ -343,6 +345,7 @@ h1 {
     }
     #card1,
     #card1Gray {
+        top:0;
         width:60%;
         height:20vh;
         padding:5vh;
@@ -443,6 +446,7 @@ h1 {
     }
     #card1,
     #card1Gray {
+        top:0;
         width:95%;
         height:30vh;
         padding:3vh;
