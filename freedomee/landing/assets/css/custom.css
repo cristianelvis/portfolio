@@ -1700,7 +1700,10 @@ button.btn-close:focus {
     font-size:1.6vh;
     color:white;
     margin:0 auto;
-
+    transition:all .5s ease;
+}
+#footer .link:hover {
+    color:var(--roxo);
 }
 #footer .social {
     width:2vh;
