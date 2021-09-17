@@ -140,10 +140,12 @@ p {
 .medT {
     font-size:1.6vh;
 }
-a {
+a,
+.link {
     color:black;
 }
-a:hover {
+a:hover,
+.link:hover {
     color:var(--roxo)
 }
 .strong100 {
