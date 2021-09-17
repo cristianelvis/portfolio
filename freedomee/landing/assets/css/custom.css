@@ -531,7 +531,6 @@ button.btn-close:focus {
 #section001-btn-01-content .modal-fullscreen,
 #section001-btn-02-content .modal-fullscreen,
 #section001-btn-03-content .modal-fullscreen,
-
 #section001-btn-04-content .modal-fullscreen {
     width:50.5vw;
     border:6px solid var(--gray1);
@@ -560,7 +559,7 @@ button.btn-close:focus {
 #section001-btn-02-content .modal-content,
 #section001-btn-03-content .modal-content,
 #section001-btn-04-content .modal-content {
-    background-color:rgba(0, 0, 0, 0.7);;
+    background-color:rgba(0, 0, 0, 0.7);
 }
 #section001-btn-01-content .modal-content .modal-body,
 #section001-btn-02-content .modal-content .modal-body,

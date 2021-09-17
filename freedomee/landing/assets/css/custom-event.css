@@ -66,7 +66,7 @@ h1 {
     background-color:red;
 }
 #tab005 {
-    background-image:url(../images/tab005BackgroundImage-min.png);
+    background-image:url(../images/tab002mBackgroundImage-min.png);
     background-color:gray;
 }
 #tab006 {
@@ -134,13 +134,17 @@ h1 {
     padding:0 2vh 0 2vh;
     margin:2vh auto;
     text-align:center;
-    justify-content:center;
     align-items:end;
     display:inline-grid;
 }
 #tab001 .wrapTabLeft,
-#tab001 .wrapTabLeft a {
+#tab001 .wrapTabLeft a,
+#tab007 .wrapTabLeft,
+#tab007 .wrapTabLeft a {
     color:white;
+}
+#tab005 .wrapTabLeft {
+    padding:0;
 }
 #tab001 .wrapTabRight,
 #tab002 .wrapTabRight,
@@ -155,6 +159,7 @@ h1 {
 }
 #tab002 .wrapTabRight,
 #tab004 .wrapTabRight,
+#tab005 .wrapTabRight,
 #tab006 .wrapTabRight {
     color:black;
 }
@@ -217,6 +222,88 @@ h1 {
 #card1Gray:after {
     content:url("../images/valoresCard7Symbol2.svg");
 }
+.speakerStage {
+    width:100%;
+    height:60vh;
+    overflow-y:auto;
+}
+.speakerCard {
+    font-size:80%;
+    color:var(--gray1);
+    width:21vh;
+    margin:0.7vh 0.5vh 3vh 0.5vh;
+    border-radius:0 20px 0 20px;
+    background-color:var(--gray4);
+    cursor:pointer;
+    display:inline-grid;
+    box-shadow:6px 6px 6px rgba(0, 0, 0, 0.25);
+    transition:all .5s ease;
+}
+.speakerCard:hover {
+    color:var(--azul);
+    width:23vh;
+    cursor:pointer;
+    display:inline-grid;
+    box-shadow:6px 6px 6px rgba(0, 0, 0, 0.25);
+}
+.photo img {
+    width:100%;
+    border-radius:0 20px 0 0;
+}
+.name {
+    width:100%;
+    padding:0.5vh;
+    font-weight:900;
+    text-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.title {
+    width:100%;
+    padding:0.5vh;
+}
+.location {
+    width:100%;
+    padding:0.5vh;
+}
+#speaker000 .pic {
+    background-image:url("../images/speakers/speakerPlaceHolder.png");
+}
+#speaker001 .pic {
+    background-image:url("../images/speakers/MariaChristinaMendesCaldeira.png");
+}
+#speaker000 .pic,
+#speaker001 .pic {
+    height:100vh;
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;
+}
+#tab005 .modal-fullscreen {
+    width:80vw;
+    border:0;
+    float:right;
+}
+#tab005 .modal.fade .modal-dialog {
+    right:-50%;
+    transition:all .5s ease;
+}
+#tab005 .modal.fade.show .modal-dialog {
+    right:0;
+    transition:all .5s ease;
+}
+#tab005 .modal-content {
+    background-color:transparent;
+}
+#tab005 .modal-content .modal-body {
+    color:var(--gray1);
+    padding:0;
+    background-color:var(--gray3);
+    overflow-y:unset;
+}
+#tab005 .wrapmodal {
+    padding:6vh;
+}
+
+
 
 @media (max-width:1024px) {
     .container-fluid,
@@ -258,6 +345,9 @@ h1 {
         padding:5vh;
         margin:0 auto;
     }
+    #tab005 .modal-fullscreen {
+        width:100%;
+    }
 }
 @media (max-width:576px) {
     h2 {
@@ -274,12 +364,16 @@ h1 {
         padding:2vh 2vw 2vh 2vw;
     }
     #tab001,
-    #tab002 {
+    #tab002,
+    #tab005,
+    #tab007 {
         background-image:unset;
         background-color:transparent;
     }
     #tab001::before,
-    #tab002::before {
+    #tab002::before,
+    #tab005::before,
+    #tab007::before {
         content:"";
         position:absolute;
         width:100%;
@@ -288,16 +382,28 @@ h1 {
         left:0;
         z-index:-1;
         background:url(../images/tab001BackgroundImage-min.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top center;
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:top center;
         transform: rotate(180deg);
     }
     #tab002::before {
         background:url(../images/tab002mBackgroundImage-min.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top center;
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:top center;
+    }
+    #tab005::before {
+        background:url(../images/tab002mBackgroundImage-min.png);
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:top center;
+    }
+    #tab007::before {
+        background:url(../images/tab007BackgroundImage-min.png);
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:top center;
     }
     #tab001 .wrapTabLeft,
     #tab002 .wrapTabLeft,
@@ -330,5 +436,14 @@ h1 {
         height:30vh;
         padding:3vh;
         margin:0 auto;
+    }
+    .speakerStage {
+        height:80vh;
+    }
+    .speakerCard {
+        width:75%;
+    }
+    #tab005 .wrapmodal {
+        height:auto;
     }
 }
