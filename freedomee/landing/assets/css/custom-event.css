@@ -138,9 +138,7 @@ h1 {
     display:inline-grid;
 }
 #tab001 .wrapTabLeft,
-#tab001 .wrapTabLeft a,
-#tab007 .wrapTabLeft,
-#tab007 .wrapTabLeft a {
+#tab001 .wrapTabLeft a {
     color:white;
 }
 #tab005 .wrapTabLeft {
@@ -160,7 +158,8 @@ h1 {
 #tab002 .wrapTabRight,
 #tab004 .wrapTabRight,
 #tab005 .wrapTabRight,
-#tab006 .wrapTabRight {
+#tab006 .wrapTabRight,
+#tab007 .wrapTabRight {
     color:black;
 }
 .cie {
