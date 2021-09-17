@@ -74,7 +74,7 @@ h1 {
     background-color:red;
 }
 #tab007 {
-    background-image:url(../images/tab007BackgroundImage-min.png);
+    background-image:url(../images/tab002mBackgroundImage-min.png);
     background-color:gray;
 }
 #tab001,
@@ -400,7 +400,7 @@ h1 {
         background-position:top center;
     }
     #tab007::before {
-        background:url(../images/tab007BackgroundImage-min.png);
+        background:url(../images/tab002mBackgroundImage-min.png);
         background-repeat:no-repeat;
         background-size:cover;
         background-position:top center;
