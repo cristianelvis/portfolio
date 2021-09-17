@@ -10,6 +10,7 @@ body {
  body::after {
     position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
     content:
+        url(../images/tab000BackgroundImage-min.png)
         url(../images/tab001BackgroundImage-min.png)
         url(../images/tab002BackgroundImage-min.png)
         url(../images/tab002mBackgroundImage-min.png)
@@ -17,6 +18,7 @@ body {
         url(../images/tab004BackgroundImage-min.png)
         url(../images/tab005BackgroundImage-min.png)
         url(../images/tab006BackgroundImage-min.png)
+        url(../images/tab006mBackgroundImage-min.png)
         url(../images/tab007BackgroundImage-min.png);
 }
 h1 {
@@ -58,24 +60,24 @@ h1 {
     background-color:#e6e8e6;
 }
 #tab003 {
-    background-image:url(../images/tab003BackgroundImage-minX.png);
-    background-color:red;
+    background-image:url(../images/tab003BackgroundImage-min.png);
+    background-color:#bf916b;
 }
 #tab004 {
-    background-image:url(../images/tab004BackgroundImage-minX.png);
-    background-color:red;
+    background-image:url(../images/tab004BackgroundImage-min.png);
+    background-color:#e7eaf4;
 }
 #tab005 {
     background-image:url(../images/tab002mBackgroundImage-min.png);
-    background-color:gray;
+    background-color:#e6e8e6;
 }
 #tab006 {
-    background-image:url(../images/tab006BackgroundImage-minX.png);
-    background-color:red;
+    background-image:url(../images/tab006BackgroundImage-min.png);
+    background-color:#48abc0;
 }
 #tab007 {
     background-image:url(../images/tab002mBackgroundImage-min.png);
-    background-color:gray;
+    background-color:#e6e8e6;
 }
 #tab001,
 #tab002,
@@ -116,14 +118,14 @@ h1 {
     text-align:center;
     background:rgba(255, 255, 255, 0.6);
 }
-.stageTab1-1,
 .stageTab1-2,
-.stageTab2-1,
 .stageTab2-2,
 .stageTab3-2,
 .stageTab4-2,
+.stageTab5-1,
 .stageTab5-2,
 .stageTab6-2,
+.stageTab7-1,
 .stageTab7-2 {
     background:transparent;
 }
@@ -137,10 +139,10 @@ h1 {
     align-items:end;
     display:inline-grid;
 }
-#tab001 .wrapTabLeft,
+/* #tab001 .wrapTabLeft,
 #tab001 .wrapTabLeft a {
     color:white;
-}
+} */
 #tab005 .wrapTabLeft {
     padding:0;
 }
@@ -155,7 +157,9 @@ h1 {
     text-align:right;
     justify-content:right;
 }
+#tab001 .wrapTabRight,
 #tab002 .wrapTabRight,
+#tab003 .wrapTabRight,
 #tab004 .wrapTabRight,
 #tab005 .wrapTabRight,
 #tab006 .wrapTabRight,
@@ -178,7 +182,7 @@ h1 {
     width:45vh;
     height:22vh;
     padding:6vh;
-    margin:0 12vh 0 0;
+    margin:0 22vh 0 0;
     border:0.3vh solid var(--gray5);
     text-align:left;
     justify-content:center;
@@ -365,6 +369,7 @@ h1 {
     #tab001,
     #tab002,
     #tab005,
+    #tab006,
     #tab007 {
         background-image:unset;
         background-color:transparent;
@@ -372,6 +377,7 @@ h1 {
     #tab001::before,
     #tab002::before,
     #tab005::before,
+    #tab006::before,
     #tab007::before {
         content:"";
         position:absolute;
@@ -394,6 +400,12 @@ h1 {
     }
     #tab005::before {
         background:url(../images/tab002mBackgroundImage-min.png);
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:top center;
+    }
+    #tab006::before {
+        background:url(../images/tab006mBackgroundImage-min.png);
         background-repeat:no-repeat;
         background-size:cover;
         background-position:top center;
