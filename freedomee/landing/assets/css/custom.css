@@ -1409,25 +1409,31 @@ button.btn-close:focus {
     left:unset;
     content:url("../images/valoresCard7Symbol2.svg");
 }
-.section005 #card2 {
+.section005 #card2,
+.section005 #card3 {
+    font-weight:900;
     position:relative;
     width:100%;
-    height:47.5vh;
+    height:71.5vh;
+    padding:2vh;
     margin:2vh auto 2vh auto;
-    background:url("../images/idealizadoraFrancescaGiobbiPB-min.png");
+    background:url("../images/francesca-giobbi-min.png");
     background-position:center center;
     background-repeat:no-repeat;
     background-size:cover;
     cursor:pointer;
     transition:all .5s ease;
 }
-.section005 #card2:hover {
-    background:url("../images/idealizadoraFrancescaGiobbi-min.png");
+.section005 #card3 {
+    background:url("../images/bruna-leo-PB-min.png");
     background-position:center center;
     background-repeat:no-repeat;
     background-size:cover;
+    cursor:unset;
 }
-.section005 #card2 .photocaption {
+.section005 #card2 .photocaption,
+.section005 #card3 .photocaption {
+    font-weight:400;
     position:absolute;
     right:1vh;
     bottom:1vh;
