@@ -1418,12 +1418,18 @@ button.btn-close:focus {
     height:71.5vh;
     padding:2vh;
     margin:2vh auto 2vh auto;
-    background:url("../images/francesca-giobbi-min.png");
+    background:url("../images/francesca-giobbi-PB-min.png");
     background-position:center center;
     background-repeat:no-repeat;
     background-size:cover;
     cursor:pointer;
     transition:all .5s ease;
+}
+.section005 #card2:hover {
+    background:url("../images/francesca-giobbi-min.png");
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
 }
 .section005 #card3 {
     background:url("../images/bruna-leo-PB-min.png");
