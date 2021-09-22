@@ -13,15 +13,18 @@ $(document).ready(function(){
     $("#start").load("section001.html");
     $("#oquesomos").load("section002-1.html");
     $("#whoarewe").load("section002-1.html");
+    $("#quesomos").load("section002-1.html");
     $("#porqueusarnossaplataforma").load("section002-2.html");
     $("#whyuseourplatform").load("section002-2.html");
     $("#freedomeeuser").load("section002-3.html");
     $("#cincomediadores").load("section003.html");
     $("#fivemediators").load("section003.html");
+    $("#loscincomediadores").load("section003.html");
     $("#valores").load("section004.html");
     $("#values").load("section004.html");
     $("#idealizadora").load("section005.html");
     $("#founder").load("section005.html");
+    $("#idealizador").load("section005.html");
     $("#parceiros").load("section006.html");
     $("#partners").load("section006.html");
     $("#passos").load("section007.html");
