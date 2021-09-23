@@ -1020,7 +1020,8 @@ button.btn-close:focus {
 #modalFreedomeeUser .grafico03,
 #modalFreedomeeUser .grafico04,
 #modalFreedomeeUser .grafico05,
-#modalFreedomeeUser .grafico06 {
+#modalFreedomeeUser .grafico06,
+#modalFreedomeeUser .grafico07 {
     width:100%;
     margin:0 auto;
     transition:all .5s ease;
@@ -1029,7 +1030,8 @@ button.btn-close:focus {
 #modalFreedomeeUser .grafico03:hover,
 #modalFreedomeeUser .grafico04:hover,
 #modalFreedomeeUser .grafico05:hover,
-#modalFreedomeeUser .grafico06:hover {
+#modalFreedomeeUser .grafico06:hover,
+#modalFreedomeeUser .grafico07:hover {
     width:120%;
 }
 .section003 #card1,
@@ -1846,7 +1848,8 @@ button.btn-close:focus {
     #modalFreedomeeUser .grafico03:hover,
     #modalFreedomeeUser .grafico04:hover,
     #modalFreedomeeUser .grafico05:hover,
-    #modalFreedomeeUser .grafico06:hover {
+    #modalFreedomeeUser .grafico06:hover,
+    #modalFreedomeeUser .grafico07:hover {
         width:100%;
     }
     .section004 h1 {
