@@ -973,65 +973,68 @@ button.btn-close:focus {
 .contenthash img {
     width:35vh!important;
 }
-#modalFreedomeeUser h1 {
+.modalFreedomeeUser h1 {
+    margin-bottom:1vh;
+}
+.modalFreedomeeUser h2 {
     margin-bottom:6vh;
 }
-#modalFreedomeeUser p {
+.modalFreedomeeUser p {
     margin-bottom:3vh;
 }
-#modalFreedomeeUser dl,
-#modalFreedomeeUser ol,
-#modalFreedomeeUser ul {
+.modalFreedomeeUser dl,
+.modalFreedomeeUser ol,
+.modalFreedomeeUser ul {
     margin-bottom:6vh;
 }
-#modalFreedomeeUser .table {
+.modalFreedomeeUser .table {
     margin-top:6vh;
     margin-bottom:6vh;
 }
-#modalFreedomeeUser .pad1 {
+.modalFreedomeeUser .pad1 {
     padding:0.5rem 0.5rem 0.5rem 3rem;
 }
-#modalFreedomeeUser .pad2 {
+.modalFreedomeeUser .pad2 {
     padding:0.5rem 0.5rem 0.5rem 6rem;
 }
-#modalFreedomeeUser tr th {
+.modalFreedomeeUser tr th {
     text-align:left;
     font-weight:300;
 }
-#modalFreedomeeUser .thright {
+.modalFreedomeeUser .thright {
     text-align:right;
 }
-#modalFreedomeeUser .table-hover tr:hover,
-#modalFreedomeeUser .table-hover tr:hover > .thright,
-#modalFreedomeeUser .table-hover tr:hover > th {
+.modalFreedomeeUser .table-hover tr:hover,
+.modalFreedomeeUser .table-hover tr:hover > .thright,
+.modalFreedomeeUser .table-hover tr:hover > th {
     color:var(--amarelo);
     background-color:var(--verde);
     transition:all .5s ease;
 }
-#modalFreedomeeUser .grafico01 {
+.modalFreedomeeUser .grafico01 {
     width:100%;
     margin:0 auto;
     transition:all .5s ease;
 }
-#modalFreedomeeUser .grafico01:hover {
+.modalFreedomeeUser .grafico01:hover {
     width:140%;
 }
-#modalFreedomeeUser .grafico02,
-#modalFreedomeeUser .grafico03,
-#modalFreedomeeUser .grafico04,
-#modalFreedomeeUser .grafico05,
-#modalFreedomeeUser .grafico06,
-#modalFreedomeeUser .grafico07 {
+.modalFreedomeeUser .grafico02,
+.modalFreedomeeUser .grafico03,
+.modalFreedomeeUser .grafico04,
+.modalFreedomeeUser .grafico05,
+.modalFreedomeeUser .grafico06,
+.modalFreedomeeUser .grafico07 {
     width:100%;
     margin:0 auto;
     transition:all .5s ease;
 }
-#modalFreedomeeUser .grafico02:hover,
-#modalFreedomeeUser .grafico03:hover,
-#modalFreedomeeUser .grafico04:hover,
-#modalFreedomeeUser .grafico05:hover,
-#modalFreedomeeUser .grafico06:hover,
-#modalFreedomeeUser .grafico07:hover {
+.modalFreedomeeUser .grafico02:hover,
+.modalFreedomeeUser .grafico03:hover,
+.modalFreedomeeUser .grafico04:hover,
+.modalFreedomeeUser .grafico05:hover,
+.modalFreedomeeUser .grafico06:hover,
+.modalFreedomeeUser .grafico07:hover {
     width:120%;
 }
 .section003 #card1,
@@ -1838,18 +1841,18 @@ button.btn-close:focus {
     #carouselFredomeeUsers button i:hover {
         font-size:5vh;
     }
-    #modalFreedomeeUser .grafico01 {
+    .modalFreedomeeUser .grafico01 {
         width:50%;
     }
-    #modalFreedomeeUser .grafico01:hover {
+    .modalFreedomeeUser .grafico01:hover {
         width:65%;
     }
-    #modalFreedomeeUser .grafico02:hover,
-    #modalFreedomeeUser .grafico03:hover,
-    #modalFreedomeeUser .grafico04:hover,
-    #modalFreedomeeUser .grafico05:hover,
-    #modalFreedomeeUser .grafico06:hover,
-    #modalFreedomeeUser .grafico07:hover {
+    .modalFreedomeeUser .grafico02:hover,
+    .modalFreedomeeUser .grafico03:hover,
+    .modalFreedomeeUser .grafico04:hover,
+    .modalFreedomeeUser .grafico05:hover,
+    .modalFreedomeeUser .grafico06:hover,
+    .modalFreedomeeUser .grafico07:hover {
         width:100%;
     }
     .section004 h1 {
@@ -2006,8 +2009,8 @@ button.btn-close:focus {
     #carouselFredomeeUsers button i:hover {
         font-size:8vh;
     }
-    #modalFreedomeeUser .grafico01,
-    #modalFreedomeeUser .grafico01:hover {
+    .modalFreedomeeUser .grafico01,
+    .modalFreedomeeUser .grafico01:hover {
         width:100%;
     }
     .cardMediador {
