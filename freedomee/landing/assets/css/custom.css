@@ -1381,7 +1381,7 @@ button.btn-close:focus {
     position:relative;
     width:98%;
     height:26vh;
-    padding:6vh;
+    padding:6vh 8vh;
     margin:0 auto;
     border:0.3vh solid var(--gray1);
     text-align:left;
