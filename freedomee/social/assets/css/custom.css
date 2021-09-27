@@ -2,6 +2,20 @@
  * Cristian Elvis - v1.0 (http://cristianelvis.com)
  * Copyright 2021 Cristian Elvis
  */
+ :root {
+    --azul:#7495da;
+    --azulcalro:#f3e3fd;
+    --amarelo:#feff01;
+    --vermelho:#ff3657;
+    --verde:#13c2a5;
+    --roxo:#cc9afd;
+    --gray0:#262626;
+    --gray1:#413e3e;
+    --gray2:#626060;
+    --gray3:#c4c4c4;
+    --gray4:#f4f4f4;
+    --gray5:#f6f6f6;
+}
  .bold {
     font-weight:bold;
  }
@@ -76,6 +90,9 @@
 }
 .mb-40 {
     margin-bottom:-40px!important;
+}
+.ml-0 {
+    margin-left:0;
 }
 .pad-0 {
     padding:0!important;
@@ -736,6 +753,68 @@ a.excluir:focus {
     color:white;
     background-color:rgb(0, 102, 204);
 }
+.select_card_btn .wow_form_fields > label {
+    width:100%;
+    padding:0;
+    margin:0 auto;
+}
+.select_card_btn .card {
+    position:relative;
+    text-align:center;
+    width:47%;
+    min-height:42vh;
+    margin:0 6px 20px 6px;
+    padding:20px 10px;
+    border-radius:6px;
+    border:1px solid white;
+    display:inline-table;
+    cursor:pointer;
+    transition:all 0.2s ease;
+}
+.select_card_btn .card .avatar {
+    width:60px;
+    height:60px;
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:#f1f1f1;
+    border-radius:50%;
+    overflow:hidden;
+    transition:all 0.2s;
+}
+.select_card_btn .card img {
+    width:100%;
+    margin:0 auto;
+}
+.card h1 {
+    font-size: 21px;
+}
+.card h2 {
+    font-size: 19px;
+}
+.card button {
+    width:45%;
+    margin:0 3px 0 3px;
+    display:inline-block;
+}
+.cardCommercial {background-color:rgba(116, 149, 218, 1);}
+.cardCommercial:hover {
+    background-color:rgba(116, 149, 218, 0.8);
+    border:1px solid white;
+}
+.cardAmbassador {background-color:rgba(19, 194, 165, 1);}
+.cardAmbassador:hover {
+    background-color:rgba(19, 194, 165, 0.8);
+    border:1px solid white;
+}
+
+.cardMarketing {background-color:rgba(204, 154, 253, 1);}
+.cardMarketing:hover {
+    background-color:rgba(204, 154, 253, 0.8);
+    border:1px solid white;
+}
+
 @media (max-width:1024px) {
 
 }
@@ -748,5 +827,11 @@ a.excluir:focus {
         margin-top:20px;
         margin-left:0;
         display:inline-block;
+    }
+    .select_card_btn .card {
+        width:95%;
+    }
+    .select_card_btn .ml-0 {
+        margin-left:-15px;
     }
 }
