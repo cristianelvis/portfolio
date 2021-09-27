@@ -801,6 +801,7 @@ a.excluir:focus {
 }
 .cardCommercial {
     border:2px solid rgba(116, 149, 218, 1)!important;
+    background-color:rgba(116, 149, 218, 0.4);
 }
 .cardCommercial:hover {
     border:2px solid rgba(116, 149, 218, 0.8)!important;
@@ -808,6 +809,7 @@ a.excluir:focus {
 }
 .cardAmbassador {
     border:2px solid rgba(19, 194, 165, 1)!important;
+    background-color:rgba(19, 194, 165, 0.4);
 }
 .cardAmbassador:hover {
     border:2px solid rgba(19, 194, 165, 0.8)!important;
@@ -815,6 +817,7 @@ a.excluir:focus {
 }
 .cardMarketing {
     border:2px solid rgba(204, 154, 253, 1)!important;
+    background-color:rgba(204, 154, 253, 0.4);
 }
 .cardMarketing:hover {
     border:2px solid rgba(204, 154, 253, 0.8)!important;
