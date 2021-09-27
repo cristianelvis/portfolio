@@ -22,5 +22,6 @@ $(function(){
     $("#includeProjetosNomedoprojetoContent").load("assets/html/projetosNomedoprojetoContent.html");
     $("#includeSettingGeneralContent").load("assets/html/settingGeneralContent.html");
     $("#includeSettingPaymentsContent").load("assets/html/settingPaymentsContent.html");
+    $("#includeSettingAffiliatesContent").load("assets/html/settingAffiliatesContent.html");
 });
 
