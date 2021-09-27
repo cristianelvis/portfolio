@@ -236,6 +236,7 @@ h1 {
     font-size:80%;
     color:var(--gray1);
     width:21vh;
+    height:41vh;
     margin:0.7vh 0.5vh 3vh 0.5vh;
     border-radius:0 20px 0 20px;
     background-color:var(--gray4);
@@ -247,6 +248,7 @@ h1 {
 .speakerCard:hover {
     color:var(--azul);
     width:23vh;
+    height:43vh;
     cursor:pointer;
     display:inline-grid;
     box-shadow:6px 6px 6px rgba(0, 0, 0, 0.25);
@@ -269,14 +271,22 @@ h1 {
     width:100%;
     padding:0.5vh;
 }
-#speaker000 .pic {
+#NOMEdoMODAL .pic {
     background-image:url("../images/speakers/speakerPlaceHolder.png");
 }
-#speaker001 .pic {
+#BrunaLeo .pic {
+    background-image:url("../images/bruna-leo-min.png");
+}
+#FrancescaGiobbi .pic {
+    background-image:url("../images/francesca-giobbi-min.png");
+}
+#MariaChristinaMendesCaldeira .pic {
     background-image:url("../images/speakers/MariaChristinaMendesCaldeira.png");
 }
-#speaker000 .pic,
-#speaker001 .pic {
+#NOMEdoMODAL .pic,
+#BrunaLeo .pic,
+#FrancescaGiobbi .pic,
+#MariaChristinaMendesCaldeira .pic {
     height:100vh;
     background-repeat:no-repeat;
     background-position:center center;
@@ -457,6 +467,7 @@ h1 {
     }
     .speakerCard {
         width:75%;
+        height:auto;
     }
     #tab005 .wrapmodal {
         height:auto;
