@@ -760,7 +760,9 @@ a.excluir:focus {
 }
 .select_card_btn .card {
     position:relative;
+    color:black;
     text-align:center;
+    text-decoration:none;
     width:45%;
     min-height:42vh;
     margin:0 3px 10px 3px;
