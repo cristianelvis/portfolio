@@ -760,44 +760,61 @@ a.excluir:focus {
 }
 .select_card_btn .card {
     position:relative;
-    text-align:center;
-    width:47%;
-    min-height:42vh;
-    margin:0 6px 20px 6px;
-    padding:20px 10px;
+    text-align:left;
+    width:40%;
+    margin:0 3px 10px 3px;
+    padding:10px 3px;
     border-radius:6px;
     border:1px solid white;
-    display:inline-table;
+    display:inline-block;
     cursor:pointer;
     transition:all 0.2s ease;
 }
 .select_card_btn .card .avatar {
-    width:60px;
-    height:60px;
-    margin:0 auto;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background-color:#f1f1f1;
-    border-radius:50%;
-    overflow:hidden;
-    transition:all 0.2s;
-}
-.select_card_btn .card img {
+    font-size:14px;
     width:100%;
     margin:0 auto;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    display:inline-block;
 }
-.card h1 {
-    font-size: 21px;
+.select_card_btn .card .avatar img {
+    position:relative;
+    top:-3px;
+    width:40px;
+    margin:0 auto;
+    border-radius:50%;
+    overflow:hidden;
 }
-.card h2 {
-    font-size: 19px;
+.select_card_btn .card .content {
+    font-size:8px;
+    font-weight:400;
+    text-align:center;
 }
-.card button {
-    width:25%;
+.select_card_btn .card .content b {
+    font-weight:900;
+    margin-right:unset;
+}
+.select_card_btn .card .title {
+    font-size:14px;
+    font-weight:900;
+    text-align:center;
+    margin-top:6px;
+    margin-bottom:6px;
+}
+.card .click button {
+    width:40%;
     padding:0;
     margin:0 3px 0 3px;
+    border:0;
+    background-color:transparent;
     display:inline-block;
+    transition:all 0.2s ease;
+}
+.card .click button:hover {
+    color:var(--roxo);
+    font-weight:600;
 }
 .cardCommercial {
     border:2px solid rgba(116, 149, 218, 1)!important;
