@@ -771,6 +771,18 @@ a.excluir:focus {
     cursor:pointer;
     transition:all 0.2s ease;
 }
+.cardCommercial:hover {
+    border:3px solid rgba(116, 149, 218, 1)!important;
+    background-color:rgba(116, 149, 218, 0.6);
+}
+.cardAmbassador:hover {
+    border:3px solid rgba(19, 194, 165, 1)!important;
+    background-color:rgba(19, 194, 165, 0.6);
+}
+.cardMarketing:hover {
+    border:3px solid rgba(204, 154, 253, 1)!important;
+    background-color:rgba(204, 154, 253, 0.6);
+}
 .select_card_btn .card .avatar,
 .select_card_btn .card .name {
     font-size:21px;
@@ -819,18 +831,6 @@ a.excluir:focus {
 .click button:hover {
     font-weight:600;
     box-shadow:0 2px 4px rgba(0,0,0,.3);
-}
-.cardCommercial:hover {
-    border:3px solid rgba(116, 149, 218, 1)!important;
-    background-color:rgba(116, 149, 218, 0.8);
-}
-.cardAmbassador:hover {
-    border:3px solid rgba(19, 194, 165, 1)!important;
-    background-color:rgba(19, 194, 165, 0.8);
-}
-.cardMarketing:hover {
-    border:3px solid rgba(204, 154, 253, 1)!important;
-    background-color:rgba(204, 154, 253, 0.8);
 }
 .click-green {
     background-color:#93bc58;
