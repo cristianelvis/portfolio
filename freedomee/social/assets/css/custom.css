@@ -775,13 +775,22 @@ a.excluir:focus {
     cursor:pointer;
     transition:all 0.2s ease;
 }
+.cardCommercial {
+    border:3px solid rgba(116, 149, 218, 1)!important;
+}
 .cardCommercial:hover {
     border:3px solid rgba(116, 149, 218, 1)!important;
     background-color:rgba(116, 149, 218, 0.6);
 }
+.cardAmbassador {
+    border:3px solid rgba(19, 194, 165, 1)!important;
+}
 .cardAmbassador:hover {
     border:3px solid rgba(19, 194, 165, 1)!important;
     background-color:rgba(19, 194, 165, 0.6);
+}
+.cardMarketing {
+    border:3px solid rgba(204, 154, 253, 1)!important;
 }
 .cardMarketing:hover {
     border:3px solid rgba(204, 154, 253, 1)!important;
