@@ -769,7 +769,6 @@ a.excluir:focus {
     border:3px solid #f1f1f1;
     display:inline-grid;
     cursor:pointer;
-    box-shadow:2px 2px 3px rgba(0,0,0,.3);
     transition:all 0.2s ease;
 }
 .select_card_btn .card .avatar,
