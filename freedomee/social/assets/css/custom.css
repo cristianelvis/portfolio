@@ -761,15 +761,15 @@ a.excluir:focus {
 .select_card_btn .card {
     position:relative;
     text-align:center;
-    color:white;
     width:46%;
     min-height:43vh;
     margin:0 3px 10px 3px;
     padding:20px 0 0 0;
     border-radius:6px;
-    border:1px solid white;
+    border:3px solid #f1f1f1;
     display:inline-grid;
     cursor:pointer;
+    box-shadow:2px 2px 3px rgba(0,0,0,.3);
     transition:all 0.2s ease;
 }
 .select_card_btn .card .avatar,
@@ -821,30 +821,27 @@ a.excluir:focus {
     box-shadow:0 2px 4px rgba(0,0,0,.3);
 }
 .cardCommercial {
-    border:2px solid rgba(116, 149, 218, 1)!important;
-    background-color:rgba(116, 149, 218, 1);
+    Xborder:2px solid rgba(116, 149, 218, 1)!important;
+    Xbackground-color:rgba(116, 149, 218, 1);
 }
 .cardCommercial:hover {
-    color:black;
-    border:2px solid rgba(116, 149, 218, 1)!important;
+    border:3px solid rgba(116, 149, 218, 1)!important;
     background-color:#f1f1f1;
 }
 .cardAmbassador {
-    border:2px solid rgba(19, 194, 165, 1)!important;
-    background-color:rgba(19, 194, 165, 1);
+    Xborder:2px solid rgba(19, 194, 165, 1)!important;
+    Xbackground-color:rgba(19, 194, 165, 1);
 }
 .cardAmbassador:hover {
-    color:black;
-    border:2px solid rgba(19, 194, 165, 1)!important;
+    border:3px solid rgba(19, 194, 165, 1)!important;
     background-color:#f1f1f1;
 }
 .cardMarketing {
-    border:2px solid rgba(204, 154, 253, 1)!important;
-    background-color:rgba(204, 154, 253, 1);
+    Xborder:2px solid rgba(204, 154, 253, 1)!important;
+    Xbackground-color:rgba(204, 154, 253, 1);
 }
 .cardMarketing:hover {
-    color:black;
-    border:2px solid rgba(204, 154, 253, 1)!important;
+    border:3px solid rgba(204, 154, 253, 1)!important;
     background-color:#f1f1f1;
 }
 
