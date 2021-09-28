@@ -16,7 +16,7 @@
     --gray4:#f4f4f4;
     --gray5:#f6f6f6;
 }
- .bold {
+.bold {
     font-weight:bold;
  }
 .copyLink {
@@ -804,46 +804,46 @@ a.excluir:focus {
     text-align:center;
     margin:0 auto;
 }
-.card .click button {
+.click button {
     width:40%;
     font-size:13px;
     color:white;
     padding:5px 10px;
     margin:0 3px 0 3px;
     border:0;
-    background-color:transparent;
+    border-radius:3px;
     display:inline-block;
     transition:all 0.2s ease;
 }
-.card .click button:hover {
+.click button:hover {
     font-weight:600;
     box-shadow:0 2px 4px rgba(0,0,0,.3);
 }
-.cardCommercial {
-    Xborder:2px solid rgba(116, 149, 218, 1)!important;
-    Xbackground-color:rgba(116, 149, 218, 1);
-}
 .cardCommercial:hover {
     border:3px solid rgba(116, 149, 218, 1)!important;
-    background-color:#f1f1f1;
-}
-.cardAmbassador {
-    Xborder:2px solid rgba(19, 194, 165, 1)!important;
-    Xbackground-color:rgba(19, 194, 165, 1);
+    background-color:rgba(116, 149, 218, 0.8);
 }
 .cardAmbassador:hover {
     border:3px solid rgba(19, 194, 165, 1)!important;
-    background-color:#f1f1f1;
-}
-.cardMarketing {
-    Xborder:2px solid rgba(204, 154, 253, 1)!important;
-    Xbackground-color:rgba(204, 154, 253, 1);
+    background-color:rgba(19, 194, 165, 0.8);
 }
 .cardMarketing:hover {
     border:3px solid rgba(204, 154, 253, 1)!important;
-    background-color:#f1f1f1;
+    background-color:rgba(204, 154, 253, 0.8);
 }
 
+.click-green {
+    background-color:#93bc58;
+}
+.click-green:hover {
+    background-color:#93bc58;
+}
+.click-red {
+    background-color:#ff3658;
+}
+.click-red:hover {
+    background-color:#b2263e;
+}
 @media (max-width:1024px) {
 
 }
