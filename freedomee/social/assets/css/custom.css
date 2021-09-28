@@ -822,29 +822,29 @@ a.excluir:focus {
 }
 .cardCommercial {
     border:2px solid rgba(116, 149, 218, 1)!important;
-    background-color:rgba(116, 149, 218, 0.8);
+    background-color:rgba(116, 149, 218, 1);
 }
 .cardCommercial:hover {
     color:black;
-    border:2px solid rgba(116, 149, 218, 0.8)!important;
+    border:2px solid rgba(116, 149, 218, 1)!important;
     background-color:#f1f1f1;
 }
 .cardAmbassador {
     border:2px solid rgba(19, 194, 165, 1)!important;
-    background-color:rgba(19, 194, 165, 0.8);
+    background-color:rgba(19, 194, 165, 1);
 }
 .cardAmbassador:hover {
     color:black;
-    border:2px solid rgba(19, 194, 165, 0.8)!important;
+    border:2px solid rgba(19, 194, 165, 1)!important;
     background-color:#f1f1f1;
 }
 .cardMarketing {
     border:2px solid rgba(204, 154, 253, 1)!important;
-    background-color:rgba(204, 154, 253, 0.8);
+    background-color:rgba(204, 154, 253, 1);
 }
 .cardMarketing:hover {
     color:black;
-    border:2px solid rgba(204, 154, 253, 0.8)!important;
+    border:2px solid rgba(204, 154, 253, 1)!important;
     background-color:#f1f1f1;
 }
 
