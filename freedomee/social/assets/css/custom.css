@@ -781,7 +781,7 @@ a.excluir:focus {
 }
 .select_card_btn .card .avatar img {
     position:relative;
-    top:-3px;
+    top:0;
     width:40px;
     margin:0 auto;
     border-radius:50%;
