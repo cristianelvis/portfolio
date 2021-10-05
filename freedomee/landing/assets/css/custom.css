@@ -1745,9 +1745,14 @@ button.btn-close:focus {
 }
 #modalTutorialFreedomeeUser p {
     font-size:2.2vh;
+    text-align:left!important;
     color:black;
 }
+#modalTutorialFreedomeeUser h1 {
+    text-align:left!important;
+}
 #modalTutorialFreedomeeUser h2 {
+    text-align: left!important;
     color:black;
     margin-top:6vh;
 }
@@ -1755,7 +1760,7 @@ button.btn-close:focus {
     width:40%;
     font-size:2.2vh;
     color:black;
-    text-align:center;    
+    text-align:center;
     margin:6vh auto;
     text-shadow: 0 4px 4px rgb(0 0 0 / 25%);
 }
