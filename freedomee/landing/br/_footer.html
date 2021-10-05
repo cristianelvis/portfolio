@@ -26,6 +26,9 @@
                                     <a class="nav-link" href="#">Termos</a>
                                 </li>-->
                                 <li class="nav-item">
+                                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalTutorialFreedomeeUser">Tutorial</a>
+                                </li>
+                                <li class="nav-item">
                                     <a class="nav-link" href="//social.freedomee.social/">Rede comercial</a>
                                 </li>
                                 <li class="nav-item">
@@ -44,6 +47,60 @@
                         <p>Crie conosco uma economia sustentável onde todos ganham. Seja um usuário Freedomee.</p>
                         <a class="nav-link btn btn-secondary" href="//social.freedomee.social">Junte-se a nós!</a><br>
                         <a class="link" href="mailto:info@freedomee.com">info@freedomee.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" tabindex="-1" aria-labelledby="modalTutorialFreedomeeUserLabel" aria-hidden="true" id="modalTutorialFreedomeeUser">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-square"></i></button>
+                <div class="row">
+                    <div class="col-xs-12 col-md-12 col-lg-12 col-xl-10 offset-xl-1">
+                        <h1>Manual do FreedomeEuser</h1>
+                        <p>Olá! Seja muito bem-vindo(a) à FreedomeE.com, a plataforma que vai ajudar você a ter prosperidade em sua vida econômica.</p>
+                        <p>Por que a FreedomeE? Porque aqui você ganha com as <a href="#" class="collapsed stop" data-bs-toggle="collapse" data-bs-target="#PorqueFreedomeE">4 rendas: ativa, passiva, coletiva e social!</a></p>
+                        <p class="collapse text-center" id="PorqueFreedomeE"><iframe src="https://www.youtube.com/embed/SIG7Dc3NtBo?html5=1&enablejsapi=1" frameborder="0" allowfullscreen id="PorqueFreedomeEVideo"></iframe><a href="#" class="stop" data-bs-toggle="collapse" data-bs-target="#PorqueFreedomeE">Fechar o vídeo</a></p>
+                        <p>Neste manual você vai encontrar os tutoriais com os primeiros passos para se tornar um <b>FreedomeEuser!</b></p>
+                        <a href="#" class="collapsed stop" data-bs-toggle="collapse" data-bs-target="#ComoSeInscrever"><h2>Vídeo 1 - Como se inscrever</h2></a>
+                        <p class="collapse text-center" id="ComoSeInscrever"><iframe src="https://www.youtube.com/embed/0SOP-ehaoR8?html5=1&enablejsapi=1" frameborder="0" allowfullscreen id="ComoSeInscreverVideo"></iframe><a href="#" class="stop" data-bs-toggle="collapse" data-bs-target="#ComoSeInscrever">Fechar o vídeo</a></p>
+                        <a href="#" class="collapsed stop" data-bs-toggle="collapse" data-bs-target="#ComoCriarGrupos"><h2>Vídeo 2 - Como criar Grupos Comerciais de Interesse</h2></a>
+                        <p class="collapse text-center" id="ComoCriarGrupos"><iframe src="https://www.youtube.com/embed/rf6-Yf6orow?html5=1&enablejsapi=1" frameborder="0" allowfullscreen id="ComoCriarGruposVideeo"></iframe><a href="#" class="stop" data-bs-toggle="collapse" data-bs-target="#ComoCriarGrupos">Fechar o vídeo</a></p>
+                        <a href="#" class="collapsed stop" data-bs-toggle="collapse" data-bs-target="#ComoCriarSuaLoja"><h2>Vídeo 3 - Como criar sua loja eE</h2></a>
+                        <p class="collapse text-center" id="ComoCriarSuaLoja"><iframe src="https://www.youtube.com/embed/9Jpg-1UTTWM?html5=1&enablejsapi=1" frameborder="0" allowfullscreen id="ComoCriarSuaLojaVideo"></iframe><a href="#" class="stop" data-bs-toggle="collapse" data-bs-target="#ComoCriarSuaLoja">Fechar o vídeo</a></p>
+                        <a href="#" class="collapsed stop" data-bs-toggle="collapse" data-bs-target="#PublicandoConteudo"><h2>Vídeo 4 - Publicando Conteúdo</h2></a>
+                        <p class="collapse text-center" id="PublicandoConteudo"><iframe src="https://www.youtube.com/embed/L5CokQKj-P4?html5=1&enablejsapi=1" frameborder="0" allowfullscreen id="PublicandoConteudoVideo"></iframe><a href="#" class="stop" data-bs-toggle="collapse" data-bs-target="#PublicandoConteudo">Fechar o vídeo</a></p>
+                        <p class="end">Feito para Mim;<br>Feito para Você;<br>Feito para Nós.<br><br><br><a href="https://social.freedomee.social/" class="btn btn-primary" aria-label="Junte-se a nós!" title="Junte-se a nós!">Junte-se a nós!</a><br><br><img src="../assets/images/logotipo-eusoufreedomeeuser-black.svg" alt="#EuSouFreedomeEUser" title="#EuSouFreedomeEUser"></p>
+                        <script>
+                            $('.modal').on('hide.bs.modal', function () {
+                                var memory = $(this).html();
+                                $(this).html(memory);
+                            })
+                        </script>
+                        <script>
+                            $(document).ready(function () {
+                                console.log("ready");
+                                $(".start").click(function (e) {
+                                    e.preventDefault();
+                                    console.log("Start");
+                                    // Start
+                                    jQuery("iframe").each(function () {
+                                        jQuery(this)[0].contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*')
+                                    });
+                                })
+                                $(".stop").click(function (e) {
+                                    e.preventDefault();
+                                    console.log("Stop");
+                                    // Stop
+                                    jQuery("iframe").each(function () {
+                                        jQuery(this)[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')
+                                    });
+                                })
+                            })
+                        </script>
                     </div>
                 </div>
             </div>
