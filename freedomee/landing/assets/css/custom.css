@@ -1739,6 +1739,26 @@ button.btn-close:focus {
     width:50%;
     margin:2vh auto;
 }
+#modalTutorialFreedomeeUser iframe {
+    width:100%;
+    height:60vh;
+}
+#modalTutorialFreedomeeUser p {
+    font-size:2.2vh;
+    color:black;
+}
+#modalTutorialFreedomeeUser h2 {
+    color:black;
+    margin-top:6vh;
+}
+#modalTutorialFreedomeeUser .end {
+    width:40%;
+    font-size:2.2vh;
+    color:black;
+    text-align:center;    
+    margin:6vh auto;
+    text-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+}
 .popover {
     font-family:'Montserrat', Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
     background-color:var(--roxo);
