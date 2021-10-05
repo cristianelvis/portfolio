@@ -1760,7 +1760,7 @@ button.btn-close:focus {
     width:40%;
     font-size:2.2vh;
     color:black;
-    text-align:center;
+    text-align:center!important;
     margin:6vh auto;
     text-shadow: 0 4px 4px rgb(0 0 0 / 25%);
 }
