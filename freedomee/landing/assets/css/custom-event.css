@@ -19,7 +19,15 @@ body {
         url(../images/tab005BackgroundImage-min.png)
         url(../images/tab006BackgroundImage-min.png)
         url(../images/tab006mBackgroundImage-min.png)
-        url(../images/tab007BackgroundImage-min.png);
+        url(../images/tab007BackgroundImage-min.png)
+        url(../images/speakers/AnaPaolaFrade-min.png)
+        url(../images/speakers/BelPimenta-min.png)
+        url(../images/bruna-leo-min.png)
+        url(../images/speakers/DaniMello-min.png)
+        url(../images/speakers/FernandaSimon-min.png)
+        url(../images/francesca-giobbi-min.png)
+        url(../images/speakers/MariaChristinaMendesCaldeira-min.png)
+        url(../images/speakers/TaniaVieira-min.png);
 }
 h1 {
     font-size:4vh;
@@ -274,19 +282,39 @@ h1 {
 #NOMEdoMODAL .pic {
     background-image:url("../images/speakers/speakerPlaceHolder.png");
 }
+#AnaPaolaFrade .pic {
+    background-image:url("../images/speakers/AnaPaolaFrade-min.png");
+}
+#BelPimenta .pic {
+    background-image:url("../images/speakers/BelPimenta-min.png");
+}
 #BrunaLeo .pic {
     background-image:url("../images/bruna-leo-min.png");
+}
+#DaniMello .pic {
+    background-image:url("../images/speakers/DaniMello-min.png");
+}
+#FernandaSimon .pic {
+    background-image:url("../images/speakers/FernandaSimon-min.png");
 }
 #FrancescaGiobbi .pic {
     background-image:url("../images/francesca-giobbi-min.png");
 }
 #MariaChristinaMendesCaldeira .pic {
-    background-image:url("../images/speakers/MariaChristinaMendesCaldeira.png");
+    background-image:url("../images/speakers/MariaChristinaMendesCaldeira-min.png");
+}
+#TaniaVieira .pic {
+    background-image:url("../images/speakers/TaniaVieira-min.png");
 }
 #NOMEdoMODAL .pic,
+#AnaPaolaFrade .pic,
+#BelPimenta .pic,
 #BrunaLeo .pic,
+#DaniMello .pic,
+#FernandaSimon .pic,
 #FrancescaGiobbi .pic,
-#MariaChristinaMendesCaldeira .pic {
+#MariaChristinaMendesCaldeira .pic,
+#TaniaVieira .pic {
     height:100vh;
     background-repeat:no-repeat;
     background-position:center center;
