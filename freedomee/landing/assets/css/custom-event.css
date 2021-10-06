@@ -26,8 +26,15 @@ body {
         url(../images/speakers/DaniMello-min.png)
         url(../images/speakers/FernandaSimon-min.png)
         url(../images/francesca-giobbi-min.png)
+        url(../images/speakers/GeorgiaAmaral-min.png)
+        url(../images/speakers/IsabelleJabour-min.png)
+        url(../images/speakers/JoaoMaia-min.png)
         url(../images/speakers/MariaChristinaMendesCaldeira-min.png)
-        url(../images/speakers/TaniaVieira-min.png);
+        url(../images/speakers/RicardoGomes-min.png)
+        url(../images/speakers/RodrigoVertulo-min.png)
+        url(../images/speakers/SandroVita-min.png)
+        url(../images/speakers/TaniaVieira-min.png)
+        url(../images/speakers/ValeriaMattoso-min.png);
 }
 h1 {
     font-size:4vh;
@@ -300,11 +307,32 @@ h1 {
 #FrancescaGiobbi .pic {
     background-image:url("../images/francesca-giobbi-min.png");
 }
+#GeorgiaAmaral .pic {
+    background-image:url("../images/speakers/GeorgiaAmaral-min.png");
+}
+#IsabelleJabour .pic {
+    background-image:url("../images/speakers/IsabelleJabour-min.png");
+}
+#JoaoMaia .pic {
+    background-image:url("../images/speakers/JoaoMaia-min.png");
+}
 #MariaChristinaMendesCaldeira .pic {
     background-image:url("../images/speakers/MariaChristinaMendesCaldeira-min.png");
 }
+#RicardoGomes .pic {
+    background-image:url("../images/speakers/RicardoGomes-min.png");
+}
+#RodrigoVertulo .pic {
+    background-image:url("../images/speakers/RodrigoVertulo-min.png");
+}
+#SandroVita .pic {
+    background-image:url("../images/speakers/SandroVita-min.png");
+}
 #TaniaVieira .pic {
     background-image:url("../images/speakers/TaniaVieira-min.png");
+}
+#ValeriaMattoso .pic {
+    background-image:url("../images/speakers/ValeriaMattoso-min.png");
 }
 #NOMEdoMODAL .pic,
 #AnnaPaolaFrade .pic,
@@ -313,8 +341,15 @@ h1 {
 #DaniMello .pic,
 #FernandaSimon .pic,
 #FrancescaGiobbi .pic,
+#GeorgiaAmaral .pic,
+#IsabelleJabour .pic,
+#JoaoMaia .pic,
 #MariaChristinaMendesCaldeira .pic,
-#TaniaVieira .pic {
+#RicardoGomes .pic,
+#RodrigoVertulo .pic,
+#SandroVita .pic,
+#TaniaVieira .pic,
+#ValeriaMattoso .pic {
     height:100vh;
     background-repeat:no-repeat;
     background-position:center center;
