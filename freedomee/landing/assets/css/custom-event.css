@@ -20,7 +20,7 @@ body {
         url(../images/tab006BackgroundImage-min.png)
         url(../images/tab006mBackgroundImage-min.png)
         url(../images/tab007BackgroundImage-min.png)
-        url(../images/speakers/AnaPaolaFrade-min.png)
+        url(../images/speakers/AnnaPaolaFrade-min.png)
         url(../images/speakers/BelPimenta-min.png)
         url(../images/bruna-leo-min.png)
         url(../images/speakers/DaniMello-min.png)
@@ -282,8 +282,8 @@ h1 {
 #NOMEdoMODAL .pic {
     background-image:url("../images/speakers/speakerPlaceHolder.png");
 }
-#AnaPaolaFrade .pic {
-    background-image:url("../images/speakers/AnaPaolaFrade-min.png");
+#AnnaPaolaFrade .pic {
+    background-image:url("../images/speakers/AnnaPaolaFrade-min.png");
 }
 #BelPimenta .pic {
     background-image:url("../images/speakers/BelPimenta-min.png");
@@ -307,7 +307,7 @@ h1 {
     background-image:url("../images/speakers/TaniaVieira-min.png");
 }
 #NOMEdoMODAL .pic,
-#AnaPaolaFrade .pic,
+#AnnaPaolaFrade .pic,
 #BelPimenta .pic,
 #BrunaLeo .pic,
 #DaniMello .pic,
