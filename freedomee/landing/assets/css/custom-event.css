@@ -34,7 +34,14 @@ body {
         url(../images/speakers/RodrigoVertulo-min.png)
         url(../images/speakers/SandroVita-min.png)
         url(../images/speakers/TaniaVieira-min.png)
-        url(../images/speakers/ValeriaMattoso-min.png);
+        url(../images/speakers/ValeriaMattoso-min.png)
+        url(../images/speakers/AndreKok-min.png)
+        url(../images/speakers/CelinaHissa-min.png)
+        url(../images/speakers/GabrielMayr-min.png)
+        url(../images/speakers/MarianelaMirpuri-min.png)
+        url(../images/speakers/RobertaVieira-min.png)
+        url(../images/speakers/RodrigoMuller-min.png)
+        url(../images/speakers/RosiOrozco-min.png);
 }
 h1 {
     font-size:4vh;
@@ -289,6 +296,27 @@ h1 {
 #NOMEdoMODAL .pic {
     background-image:url("../images/speakers/speakerPlaceHolder.png");
 }
+#AndreKok .pic {
+    background-image:url("../images/speakers/AndreKok-min.png");
+}
+#CelinaHissa .pic {
+    background-image:url("../images/speakers/CelinaHissa-min.png");
+}
+#GabrielMayr .pic {
+    background-image:url("../images/speakers/GabrielMayr-min.png");
+}
+#MarianelaMirpuri .pic {
+    background-image:url("../images/speakers/MarianelaMirpuri-min.png");
+}
+#RobertaVieira .pic {
+    background-image:url("../images/speakers/RobertaVieira-min.png");
+}
+#RodrigoMuller .pic {
+    background-image:url("../images/speakers/RodrigoMuller-min.png");
+}
+#RosiOrozco .pic {
+    background-image:url("../images/speakers/RosiOrozco-min.png");
+}
 #AnnaPaolaFrade .pic {
     background-image:url("../images/speakers/AnnaPaolaFrade-min.png");
 }
@@ -335,6 +363,13 @@ h1 {
     background-image:url("../images/speakers/ValeriaMattoso-min.png");
 }
 #NOMEdoMODAL .pic,
+#AndreKok .pic,
+#CelinaHissa .pic,
+#GabrielMayr .pic,
+#MarianelaMirpuri .pic,
+#RobertaVieira .pic,
+#RodrigoMuller .pic,
+#RosiOrozco .pic,
 #AnnaPaolaFrade .pic,
 #BelPimenta .pic,
 #BrunaLeo .pic,
@@ -378,11 +413,9 @@ h1 {
     overflow-y:unset;
 }
 #tab005 .wrapmodal {
-    padding:6vh;
+    padding:3vh 6vh;
+    height:85vh;
 }
-
-
-
 @media (max-width:1024px) {
     .container-fluid,
     .col-xl-6 {
