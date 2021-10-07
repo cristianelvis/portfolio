@@ -613,7 +613,35 @@
                             <h1>Rodrigo Vertulo</h1>
                             <h2>Engineer with a focus on Accessibility</h2>
                             <p>Brazil</p>
-                            <p class="text-start">Italian-Brazilian, Electronics and Computer Engineer with nearly 30 years of experience in the technology industry developing hardware and software solutions. He has worked at large multinational technology companies, especially at IBM do Brasil, where he worked for 15 years as a Software Engineer developing solutions for the telecommunications and financial segments.<br><br>His interests are related to the development of technologies related to artificial intelligence, embedded systems, digital games and assistive technologies. Among its projects, the development of a wheelchair simulator using partially immersive virtual reality for the practice of physical activities for people with reduced mobility stands out.<br><br>This project, called Haphoop, received awards and gained high visibility both nationally and internationally.</p>
+                            <p class="text-start">Italian-Brazilian, Electronics and Computer Engineer with nearly 30 years of experience in the technology industry developing hardware and software solutions. He has worked at large multinational technology companies, especially at IBM do Brasil, where he worked for 15 years as a Software Engineer developing solutions for the telecommunications and financial segments.<br><br>His interests are related to the development of technologies related to artificial intelligence, embedded systems, digital games and assistive technologies. Among its projects, the development of a wheelchair simulator using partially immersive virtual reality for the practice of physical activities for people with reduced mobility stands out.<br><br>This project, called Haphoop, received awards and gained high visibility both nationally and internationally.<br><br><a href="#" class="collapsed stop" data-bs-toggle="collapse" data-bs-target="#YoutubeRodrigoVertulo">Brief presentation of the topic I will cover during the event "COLLABORATIVE CIRCULAR ECONOMY"</a></p>
+                            <p class="collapse pvideo" id="YoutubeRodrigoVertulo"><iframe src="https://www.youtube.com/embed/OPWNMDumT8E?html5=1&enablejsapi=1" frameborder="0" allowfullscreen id="YoutubeRodrigoVertuloVideo"></iframe><a href="#" class="stop" data-bs-toggle="collapse" data-bs-target="#YoutubeRodrigoVertulo">close the video</a></p>
+                            <script>
+                                $('.modal').on('hide.bs.modal', function () {
+                                    var memory = $(this).html();
+                                    $(this).html(memory);
+                                })
+                            </script>
+                            <script>
+                                $(document).ready(function () {
+                                    console.log("ready");
+                                    $(".start").click(function (e) {
+                                        e.preventDefault();
+                                        console.log("Start");
+                                        // Start
+                                        jQuery("iframe").each(function () {
+                                            jQuery(this)[0].contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*')
+                                        });
+                                    })
+                                    $(".stop").click(function (e) {
+                                        e.preventDefault();
+                                        console.log("Stop");
+                                        // Stop
+                                        jQuery("iframe").each(function () {
+                                            jQuery(this)[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')
+                                        });
+                                    })
+                                })
+                            </script>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-12 col-lg-12 col-xl-6 pic">
