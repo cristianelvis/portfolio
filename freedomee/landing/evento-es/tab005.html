@@ -613,7 +613,35 @@
                             <h1>Rodrigo Vertulo</h1>
                             <h2>Ingeniero con enfoque en Accesibilidad</h2>
                             <p>Brasil</p>
-                            <p class="text-start">Italiano y  Brasileño, Ingeniero Electrónico e Informático con casi 30 años de experiencia en la industria de la tecnología desarrollando soluciones de hardware y software. Ha trabajado en grandes empresas multinacionales de tecnología, especialmente en IBM do Brasil, donde trabajó durante 15 años como Ingeniero de Software desarrollando soluciones para los segmentos de telecomunicaciones y financiero.<br><br>Sus intereses están relacionados con el desarrollo de tecnologías relacionadas con la inteligencia artificial, sistemas embebidos, juegos digitales y tecnologías asistenciales. Entre sus proyectos destaca el desarrollo de un simulador de silla de ruedas utilizando realidad virtual parcialmente inmersiva para la práctica de actividades físicas para personas con movilidad reducida.<br><br>Este proyecto, denominado Haphoop, recibió premios y ganó gran visibilidad tanto a nivel nacional como internacional.</p>
+                            <p class="text-start">Italiano y  Brasileño, Ingeniero Electrónico e Informático con casi 30 años de experiencia en la industria de la tecnología desarrollando soluciones de hardware y software. Ha trabajado en grandes empresas multinacionales de tecnología, especialmente en IBM do Brasil, donde trabajó durante 15 años como Ingeniero de Software desarrollando soluciones para los segmentos de telecomunicaciones y financiero.<br><br>Sus intereses están relacionados con el desarrollo de tecnologías relacionadas con la inteligencia artificial, sistemas embebidos, juegos digitales y tecnologías asistenciales. Entre sus proyectos destaca el desarrollo de un simulador de silla de ruedas utilizando realidad virtual parcialmente inmersiva para la práctica de actividades físicas para personas con movilidad reducida.<br><br>Este proyecto, denominado Haphoop, recibió premios y ganó gran visibilidad tanto a nivel nacional como internacional.<br><br><a href="#" class="collapsed stop" data-bs-toggle="collapse" data-bs-target="#YoutubeRodrigoVertulo">Breve presentación del tema que cubriré durante el evento "ECONOMÍA CIRCULAR COLABORATIVA"</a></p>
+                            <p class="collapse pvideo" id="YoutubeRodrigoVertulo"><iframe src="https://www.youtube.com/embed/OPWNMDumT8E?html5=1&enablejsapi=1" frameborder="0" allowfullscreen id="YoutubeRodrigoVertuloVideo"></iframe><a href="#" class="stop" data-bs-toggle="collapse" data-bs-target="#YoutubeRodrigoVertulo">cierra el video</a></p>
+                            <script>
+                                $('.modal').on('hide.bs.modal', function () {
+                                    var memory = $(this).html();
+                                    $(this).html(memory);
+                                })
+                            </script>
+                            <script>
+                                $(document).ready(function () {
+                                    console.log("ready");
+                                    $(".start").click(function (e) {
+                                        e.preventDefault();
+                                        console.log("Start");
+                                        // Start
+                                        jQuery("iframe").each(function () {
+                                            jQuery(this)[0].contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*')
+                                        });
+                                    })
+                                    $(".stop").click(function (e) {
+                                        e.preventDefault();
+                                        console.log("Stop");
+                                        // Stop
+                                        jQuery("iframe").each(function () {
+                                            jQuery(this)[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')
+                                        });
+                                    })
+                                })
+                            </script>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-12 col-lg-12 col-xl-6 pic">
