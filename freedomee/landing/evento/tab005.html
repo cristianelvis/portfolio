@@ -641,7 +641,35 @@
                             <h1>Rodrigo Vertulo</h1>
                             <h2>Engenheiro com foco na Acessibilidade</h2>
                             <p>Brasil</p>
-                            <p class="text-start">Ítalo Brasileiro, Engenheiro Eletrônico e da Computação com quase 30 anos de experiência na indústria de tecnologia desenvolvendo soluções em hardware e software. Possui passagem em grandes empresas multinacionais de tecnologia, em especial na IBM do Brasil, onde atuou durante 15 anos como Engenheiro de Software desenvolvendo soluções para os segmentos de telecomunicações e financeiro.<br><br>Seus interesses relacionam-se ao desenvolvimento de tecnologias ligadas à inteligência artificial, sistemas embarcados, jogos digitais e tecnologias assistivas. Entre seus projetos destaca-se o desenvolvimento de um simulador de cadeiras de rodas utilizando realidade virtual parcialmente imersiva para a prática de atividades físicas de pessoas com mobilidade reduzida.<br><br>Este projeto, chamado Haphoop, recebeu prêmios e obteve grande visibilidade tanto nacionalmente quanto internacionalmente.</p>
+                            <p class="text-start">Ítalo Brasileiro, Engenheiro Eletrônico e da Computação com quase 30 anos de experiência na indústria de tecnologia desenvolvendo soluções em hardware e software. Possui passagem em grandes empresas multinacionais de tecnologia, em especial na IBM do Brasil, onde atuou durante 15 anos como Engenheiro de Software desenvolvendo soluções para os segmentos de telecomunicações e financeiro.<br><br>Seus interesses relacionam-se ao desenvolvimento de tecnologias ligadas à inteligência artificial, sistemas embarcados, jogos digitais e tecnologias assistivas. Entre seus projetos destaca-se o desenvolvimento de um simulador de cadeiras de rodas utilizando realidade virtual parcialmente imersiva para a prática de atividades físicas de pessoas com mobilidade reduzida.<br><br>Este projeto, chamado Haphoop, recebeu prêmios e obteve grande visibilidade tanto nacionalmente quanto internacionalmente.<br><br><a href="#" class="collapsed stop" data-bs-toggle="collapse" data-bs-target="#YoutubeRodrigoVertulo">Breve apresentação do tema que abordarei durante o evento "ECONOMIA CIRCULAR COLABORATIVA"</a></p>
+                            <p class="collapse pvideo" id="YoutubeRodrigoVertulo"><iframe src="https://www.youtube.com/embed/OPWNMDumT8E?html5=1&enablejsapi=1" frameborder="0" allowfullscreen id="YoutubeRodrigoVertuloVideo"></iframe><a href="#" class="stop" data-bs-toggle="collapse" data-bs-target="#YoutubeRodrigoVertulo">Fechar o vídeo</a></p>
+                            <script>
+                                $('.modal').on('hide.bs.modal', function () {
+                                    var memory = $(this).html();
+                                    $(this).html(memory);
+                                })
+                            </script>
+                            <script>
+                                $(document).ready(function () {
+                                    console.log("ready");
+                                    $(".start").click(function (e) {
+                                        e.preventDefault();
+                                        console.log("Start");
+                                        // Start
+                                        jQuery("iframe").each(function () {
+                                            jQuery(this)[0].contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*')
+                                        });
+                                    })
+                                    $(".stop").click(function (e) {
+                                        e.preventDefault();
+                                        console.log("Stop");
+                                        // Stop
+                                        jQuery("iframe").each(function () {
+                                            jQuery(this)[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')
+                                        });
+                                    })
+                                })
+                            </script>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-12 col-lg-12 col-xl-6 pic">
