@@ -42,7 +42,8 @@ body {
         url(../images/speakers/RobertaVieira-min.png)
         url(../images/speakers/RodrigoMuller-min.png)
         url(../images/speakers/RosiOrozco-min.png)
-        url(../images/speakers/MarcioJoseFelipe-min.png);
+        url(../images/speakers/MarcioJoseFelipe-min.png)
+        url(../images/speakers/RaphaelKling-min.png);
 }
 h1 {
     font-size:4vh;
@@ -298,6 +299,9 @@ h1 {
 #NOMEdoMODAL .pic {
     background-image:url("../images/speakers/speakerPlaceHolder.png");
 }
+#RaphaelKling .pic {
+    background-image:url("../images/speakers/RaphaelKling-min.png");
+}
 #MarcioJoseFelipe .pic {
     background-image:url("../images/speakers/MarcioJoseFelipe-min.png");
 }
@@ -368,6 +372,7 @@ h1 {
     background-image:url("../images/speakers/ValeriaMattoso-min.png");
 }
 #NOMEdoMODAL .pic,
+#RaphaelKling .pic,
 #MarcioJoseFelipe .pic,
 #AndreKok .pic,
 #CelinaHissa .pic,
