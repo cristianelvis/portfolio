@@ -41,7 +41,8 @@ body {
         url(../images/speakers/MarianelaMirpuri-min.png)
         url(../images/speakers/RobertaVieira-min.png)
         url(../images/speakers/RodrigoMuller-min.png)
-        url(../images/speakers/RosiOrozco-min.png);
+        url(../images/speakers/RosiOrozco-min.png)
+        url(../images/speakers/MarcioJoseFelipe-min.png);
 }
 h1 {
     font-size:4vh;
@@ -293,8 +294,12 @@ h1 {
     width:100%;
     padding:0.5vh;
 }
+
 #NOMEdoMODAL .pic {
     background-image:url("../images/speakers/speakerPlaceHolder.png");
+}
+#MarcioJoseFelipe .pic {
+    background-image:url("../images/speakers/MarcioJoseFelipe-min.png");
 }
 #AndreKok .pic {
     background-image:url("../images/speakers/AndreKok-min.png");
@@ -363,6 +368,7 @@ h1 {
     background-image:url("../images/speakers/ValeriaMattoso-min.png");
 }
 #NOMEdoMODAL .pic,
+#MarcioJoseFelipe .pic,
 #AndreKok .pic,
 #CelinaHissa .pic,
 #GabrielMayr .pic,
