@@ -70,6 +70,7 @@ h1 {
 }
 .navbar-dark .navbar-nav .nav-link,
 .navbar-dark .navbar-nav .nav-link.active {
+    font-size:1.4vh;
     text-shadow:unset;
 }
 .nav-link-btn {
