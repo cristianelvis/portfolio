@@ -44,7 +44,9 @@ body {
         url(../images/speakers/RosiOrozco-min.png)
         url(../images/speakers/MarcioJoseFelipe-min.png)
         url(../images/speakers/RaphaelKling-min.png)
-        url(../images/speakers/PrisciliaQueiroz-min.png);
+        url(../images/speakers/PrisciliaQueiroz-min.png)
+        url(../images/speakers/LilianaGomes-min.png)
+        url(../images/speakers/JosiMedeiros-min.png);
 }
 h1 {
     font-size:4vh;
@@ -300,6 +302,12 @@ h1 {
 #NOMEdoMODAL .pic {
     background-image:url("../images/speakers/speakerPlaceHolder-min.png");
 }
+#JosiMedeiros .pic {
+    background-image:url("../images/speakers/JosiMedeiros-min.png");
+}
+#LilianaGomes .pic {
+    background-image:url("../images/speakers/LilianaGomes-min.png");
+}
 #PrisciliaQueiroz .pic {
     background-image:url("../images/speakers/PrisciliaQueiroz-min.png");
 }
@@ -376,6 +384,8 @@ h1 {
     background-image:url("../images/speakers/ValeriaMattoso-min.png");
 }
 #NOMEdoMODAL .pic,
+#JosiMedeiros .pic,
+#LilianaGomes .pic,
 #PrisciliaQueiroz .pic,
 #RaphaelKling .pic,
 #MarcioJoseFelipe .pic,
