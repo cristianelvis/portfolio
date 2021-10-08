@@ -43,7 +43,8 @@ body {
         url(../images/speakers/RodrigoMuller-min.png)
         url(../images/speakers/RosiOrozco-min.png)
         url(../images/speakers/MarcioJoseFelipe-min.png)
-        url(../images/speakers/RaphaelKling-min.png);
+        url(../images/speakers/RaphaelKling-min.png)
+        url(../images/speakers/PrisciliaQueiroz-min.png);
 }
 h1 {
     font-size:4vh;
@@ -262,7 +263,7 @@ h1 {
     color:var(--gray1);
     width:21vh;
     height:41vh;
-    margin:0.7vh 0.5vh 3vh 0.5vh;
+    margin:0 1.3vh 3vh 1.3vh;
     border-radius:0 20px 0 20px;
     background-color:var(--gray4);
     cursor:pointer;
@@ -296,9 +297,11 @@ h1 {
     width:100%;
     padding:0.5vh;
 }
-
 #NOMEdoMODAL .pic {
-    background-image:url("../images/speakers/speakerPlaceHolder.png");
+    background-image:url("../images/speakers/speakerPlaceHolder-min.png");
+}
+#PrisciliaQueiroz .pic {
+    background-image:url("../images/speakers/PrisciliaQueiroz-min.png");
 }
 #RaphaelKling .pic {
     background-image:url("../images/speakers/RaphaelKling-min.png");
@@ -373,6 +376,7 @@ h1 {
     background-image:url("../images/speakers/ValeriaMattoso-min.png");
 }
 #NOMEdoMODAL .pic,
+#PrisciliaQueiroz .pic,
 #RaphaelKling .pic,
 #MarcioJoseFelipe .pic,
 #AndreKok .pic,
