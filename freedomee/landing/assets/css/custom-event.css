@@ -46,7 +46,13 @@ body {
         url(../images/speakers/RaphaelKling-min.png)
         url(../images/speakers/PrisciliaQueiroz-min.png)
         url(../images/speakers/LilianaGomes-min.png)
-        url(../images/speakers/JosiMedeiros-min.png);
+        url(../images/speakers/JosiMedeiros-min.png)
+        url(../images/speakers/MarcellaKanner-min.png)
+        url(../images/speakers/IboroOtu-min.png)
+        url(../images/speakers/AnaBeatrizGoldstein-min.png)
+        url(../images/speakers/AllinePedra-min.png)
+        url(../images/speakers/LuizaBrunet-min.png)
+        url(../images/speakers/DeboraAguillar-min.png);
 }
 h1 {
     font-size:4vh;
@@ -294,6 +300,8 @@ h1 {
 .title {
     width:100%;
     padding:0.5vh;
+    overflow:hidden;
+    text-overflow:clip;
 }
 .location {
     width:100%;
@@ -301,6 +309,24 @@ h1 {
 }
 #NOMEdoMODAL .pic {
     background-image:url("../images/speakers/speakerPlaceHolder-min.png");
+}
+#MarcellaKanner .pic {
+    background-image:url("../images/speakers/MarcellaKanner-min.png");
+}
+#IboroOtu .pic {
+    background-image:url("../images/speakers/IboroOtu-min.png");
+}
+#AnaBeatrizGoldstein .pic {
+    background-image:url("../images/speakers/AnaBeatrizGoldstein-min.png");
+}
+#AllinePedra .pic {
+    background-image:url("../images/speakers/AllinePedra-min.png");
+}
+#LuizaBrunet .pic {
+    background-image:url("../images/speakers/LuizaBrunet-min.png");
+}
+#DeboraAguillar .pic {
+    background-image:url("../images/speakers/DeboraAguillar-min.png");
 }
 #JosiMedeiros .pic {
     background-image:url("../images/speakers/JosiMedeiros-min.png");
@@ -384,6 +410,12 @@ h1 {
     background-image:url("../images/speakers/ValeriaMattoso-min.png");
 }
 #NOMEdoMODAL .pic,
+#MarcellaKanner .pic,
+#IboroOtu .pic,
+#AnaBeatrizGoldstein .pic,
+#AllinePedra .pic,
+#LuizaBrunet .pic,
+#DeboraAguillar .pic,
 #JosiMedeiros .pic,
 #LilianaGomes .pic,
 #PrisciliaQueiroz .pic,
@@ -441,6 +473,7 @@ h1 {
 #tab005 .wrapmodal {
     padding:3vh 6vh;
     height:85vh;
+    overflow-y:auto;
 }
 #tab005 .pvideo {
     position:relative;
