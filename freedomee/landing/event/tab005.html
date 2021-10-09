@@ -513,7 +513,35 @@
                             <h1>Roberta Vieira</h1>
                             <h2>EnLife Group Manager</h2>
                             <p>Brazil</p>
-                            <p class="text-start">Roberta Vieira is Brazilian, with more than  20 years of experience in the beauty market, specifically in the nail segment. She is the Manager of EnLife Group, working on the creation and launch of private label products, Adore Professional. She is also an educational manager at Instituto EnLife Cursos Profissionalizantes, developing professionals in the nail segment.<br><br><a href="https://www.linkedin.com/company/enlife-group/">https://www.linkedin.com/company/enlife-group/</a></p>
+                            <p class="text-start">Roberta Vieira is Brazilian, with more than  20 years of experience in the beauty market, specifically in the nail segment. She is the Manager of EnLife Group, working on the creation and launch of private label products, Adore Professional. She is also an educational manager at Instituto EnLife Cursos Profissionalizantes, developing professionals in the nail segment.<br><br><a href="https://www.linkedin.com/company/enlife-group/">https://www.linkedin.com/company/enlife-group/</a><br><br><a href="#" class="collapsed stop" data-bs-toggle="collapse" data-bs-target="#YoutubeRobertaVieira">Invitation from Roberta Vieira of the Enlife Group</a></p>
+                            <p class="collapse pvideo" id="YoutubeRobertaVieira"><iframe src="https://www.youtube.com/embed/bzA-4uJQQXU?html5=1&enablejsapi=1" frameborder="0" allowfullscreen id="YoutubeRobertaVieira"></iframe><a href="#" class="stop" data-bs-toggle="collapse" data-bs-target="#YoutubeRobertaVieira">close the video</a></p>
+                            <script>
+                                $('.modal').on('hide.bs.modal', function () {
+                                    var memory = $(this).html();
+                                    $(this).html(memory);
+                                })
+                            </script>
+                            <script>
+                                $(document).ready(function () {
+                                    console.log("ready");
+                                    $(".start").click(function (e) {
+                                        e.preventDefault();
+                                        console.log("Start");
+                                        // Start
+                                        jQuery("iframe").each(function () {
+                                            jQuery(this)[0].contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*')
+                                        });
+                                    })
+                                    $(".stop").click(function (e) {
+                                        e.preventDefault();
+                                        console.log("Stop");
+                                        // Stop
+                                        jQuery("iframe").each(function () {
+                                            jQuery(this)[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')
+                                        });
+                                    })
+                                })
+                            </script>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-12 col-lg-12 col-xl-6 pic">
@@ -937,7 +965,35 @@
                             <h1>Tania Vieira</h1>
                             <h2>COO at EnLife Group</h2>
                             <p>Brazil</p>
-                            <p class="text-start">Tania Vieira is Brazilian, with over 25 years of experience in managing, creating, negotiating and implementing technology systems. She has worked at companies GLOBOSAT, in Brazil and MEDIAGENIX, in Belgium. She is currently manager of the IT and Marketing areas of EnLife Group-Adore Professional, and operational manager of Instituto EnLife Cursos Profissionalizantes<br><br><a href="https://www.linkedin.com/in/tania-vieira">https://www.linkedin.com/in/tania-vieira</a></p>
+                            <p class="text-start">Tania Vieira is Brazilian, with over 25 years of experience in managing, creating, negotiating and implementing technology systems. She has worked at companies GLOBOSAT, in Brazil and MEDIAGENIX, in Belgium. She is currently manager of the IT and Marketing areas of EnLife Group-Adore Professional, and operational manager of Instituto EnLife Cursos Profissionalizantes<br><br><a href="https://www.linkedin.com/in/tania-vieira">https://www.linkedin.com/in/tania-vieira</a><br><br><a href="#" class="collapsed stop" data-bs-toggle="collapse" data-bs-target="#YoutubeTaniaVieira">Invitation from Tania Vieira of Enlife Group</a></p>
+                            <p class="collapse pvideo" id="YoutubeTaniaVieira"><iframe src="https://www.youtube.com/embed/RBCOp3vXvsk?html5=1&enablejsapi=1" frameborder="0" allowfullscreen id="YoutubeTaniaVieira"></iframe><a href="#" class="stop" data-bs-toggle="collapse" data-bs-target="#YoutubeTaniaVieira">close the video</a></p>
+                            <script>
+                                $('.modal').on('hide.bs.modal', function () {
+                                    var memory = $(this).html();
+                                    $(this).html(memory);
+                                })
+                            </script>
+                            <script>
+                                $(document).ready(function () {
+                                    console.log("ready");
+                                    $(".start").click(function (e) {
+                                        e.preventDefault();
+                                        console.log("Start");
+                                        // Start
+                                        jQuery("iframe").each(function () {
+                                            jQuery(this)[0].contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*')
+                                        });
+                                    })
+                                    $(".stop").click(function (e) {
+                                        e.preventDefault();
+                                        console.log("Stop");
+                                        // Stop
+                                        jQuery("iframe").each(function () {
+                                            jQuery(this)[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')
+                                        });
+                                    })
+                                })
+                            </script>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-12 col-lg-12 col-xl-6 pic">
