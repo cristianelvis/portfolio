@@ -866,6 +866,7 @@ a.excluir:focus {
     background-color:rgb(30, 35, 33);
 }
 .cc-color-override-digitalAcc .cc-btn {
+    margin:1em!important;
     color:rgb(255, 255, 255);
     border-color:transparent;
     background-color:rgb(168, 72, 73);
