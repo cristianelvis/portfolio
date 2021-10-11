@@ -859,9 +859,9 @@ a.excluir:focus {
 }
 .cc-color-override-digitalAcc.cc-window {
     color:rgb(255, 255, 255);
-    text-align:left;
+    text-align:left!important;
     padding:1em!important;
-    background-color:rgb(30, 35, 33);
+    background-color:rgb(30, 35, 33)!important;
 }
 .cc-color-override-digitalAcc .cc-btn {
     margin:1em!important;
