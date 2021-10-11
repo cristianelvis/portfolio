@@ -857,6 +857,21 @@ a.excluir:focus {
 .click-red:hover {
     background-color:#b2263e;
 }
+.cc-color-override-digitalAcc.cc-window {
+    top:0;
+    bottom:unset;
+    color:rgb(255, 255, 255);
+    background-color:rgb(30, 35, 33);
+}
+.cc-color-override-digitalAcc .cc-btn {
+    color:rgb(255, 255, 255);
+    border-color:transparent;
+    background-color:rgb(168, 72, 73);
+}
+.cc-color-override-digitalAcc .cc-btn:hover,
+.cc-color-override-digitalAcc .cc-btn:focus {
+    background-color:rgb(206, 110, 111);
+}
 @media (max-width:1024px) {
 
 }
