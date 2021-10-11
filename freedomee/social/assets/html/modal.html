@@ -1,9 +1,20 @@
-<div role="dialog" class="cc-window cc-banner cc-type-info cc-theme-edgeless cc-bottom cc-color-override-digitalAcc">
+<div role="dialog" class="cc-window cc-banner cc-type-info cc-theme-edgeless cc-bottom cc-color-override-digitalAcc" id="modalHide">
   <span id="cookieconsent:desc" class="cc-message">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
     <a role="button" tabindex="0" class="cc-link" href="#" target="_blank">Sabiba mais</a>
   </span>
   <div class="cc-compliance">
-    <button type="button" class="cc-btn cc-dismiss" title="Aceitar!" data-dismiss="modal">Aceitar!</button>
+    <button type="button" class="cc-btn cc-dismiss" title="Aceitar!" id="hide">Aceitar!</button>
+    <script>
+        const targetDiv = document.getElementById("modalHide");
+        const btn = document.getElementById("hide");
+        btn.onclick = function () {
+          if (targetDiv.style.display !== "none") {
+            targetDiv.style.display = "none";
+          } else {
+            targetDiv.style.display = "block";
+          }
+        };
+    </script>
   </div>
 </div>
 
