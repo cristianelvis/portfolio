@@ -52,7 +52,10 @@ body {
         url(../images/speakers/AnaBeatrizGoldstein-min.png)
         url(../images/speakers/AllinePedra-min.png)
         url(../images/speakers/LuizaBrunet-min.png)
-        url(../images/speakers/DeboraAguillar-min.png);
+        url(../images/speakers/DeboraAguillar-min.png)
+        url(../images/speakers/FaraiIanMuvuti-min.png)
+        url(../images/speakers/GilBakhtiar-min.png)
+        url(../images/speakers/MuftahBenomran-min.png);
 }
 h1 {
     font-size:4vh;
@@ -310,6 +313,15 @@ h1 {
 #NOMEdoMODAL .pic {
     background-image:url("../images/speakers/speakerPlaceHolder-min.png");
 }
+#FaraiIanMuvuti .pic {
+    background-image:url("../images/speakers/FaraiIanMuvuti-min.png");
+}
+#GilBakhtiar .pic {
+    background-image:url("../images/speakers/GilBakhtiar-min.png");
+}
+#MuftahBenomran .pic {
+    background-image:url("../images/speakers/MuftahBenomran-min.png");
+}
 #MarcellaKanner .pic {
     background-image:url("../images/speakers/MarcellaKanner-min.png");
 }
@@ -410,6 +422,9 @@ h1 {
     background-image:url("../images/speakers/ValeriaMattoso-min.png");
 }
 #NOMEdoMODAL .pic,
+#MuftahBenomran .pic,
+#GilBakhtiar .pic,
+#FaraiIanMuvuti .pic,
 #MarcellaKanner .pic,
 #IboroOtu .pic,
 #AnaBeatrizGoldstein .pic,
