@@ -858,8 +858,6 @@ a.excluir:focus {
     background-color:#b2263e;
 }
 .cc-color-override-digitalAcc.cc-window {
-    top:0;
-    bottom:unset;
     color:rgb(255, 255, 255);
     text-align:left;
     padding:1em!important;
