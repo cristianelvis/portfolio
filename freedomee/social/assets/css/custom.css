@@ -861,6 +861,7 @@ a.excluir:focus {
     top:0;
     bottom:unset;
     color:rgb(255, 255, 255);
+    padding:1em;
     background-color:rgb(30, 35, 33);
 }
 .cc-color-override-digitalAcc .cc-btn {
