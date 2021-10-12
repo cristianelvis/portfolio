@@ -55,7 +55,8 @@ body {
         url(../images/speakers/DeboraAguillar-min.png)
         url(../images/speakers/FaraiIanMuvuti-min.png)
         url(../images/speakers/GilBakhtiar-min.png)
-        url(../images/speakers/MuftahBenomran-min.png);
+        url(../images/speakers/MuftahBenomran-min.png)
+        url(../images/speakers/ClaudioPelizari-min.png);
 }
 h1 {
     font-size:4vh;
@@ -313,6 +314,9 @@ h1 {
 #NOMEdoMODAL .pic {
     background-image:url("../images/speakers/speakerPlaceHolder-min.png");
 }
+#ClaudioPelizari .pic {
+    background-image:url("../images/speakers/ClaudioPelizari-min.png");
+}
 #FaraiIanMuvuti .pic {
     background-image:url("../images/speakers/FaraiIanMuvuti-min.png");
 }
@@ -422,6 +426,7 @@ h1 {
     background-image:url("../images/speakers/ValeriaMattoso-min.png");
 }
 #NOMEdoMODAL .pic,
+#ClaudioPelizari .pic,
 #MuftahBenomran .pic,
 #GilBakhtiar .pic,
 #FaraiIanMuvuti .pic,
