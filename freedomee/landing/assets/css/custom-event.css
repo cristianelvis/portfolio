@@ -56,7 +56,11 @@ body {
         url(../images/speakers/FaraiIanMuvuti-min.png)
         url(../images/speakers/GilBakhtiar-min.png)
         url(../images/speakers/MuftahBenomran-min.png)
-        url(../images/speakers/ClaudioPelizari-min.png);
+        url(../images/speakers/ClaudioPelizari-min.png)
+        url(../images/speakers/RubersonSaraiva-min.png)
+        url(../images/speakers/MarianaTodorova-min.png)
+        url(../images/speakers/LarissaRibeiro-min.png)
+        url(../images/speakers/AndreiaDahdal-min.png);
 }
 h1 {
     font-size:4vh;
@@ -314,6 +318,18 @@ h1 {
 #NOMEdoMODAL .pic {
     background-image:url("../images/speakers/speakerPlaceHolder-min.png");
 }
+#AndreiaDahdal .pic {
+    background-image:url("../images/speakers/AndreiaDahdal-min.png");
+}
+#LarissaRibeiro .pic {
+    background-image:url("../images/speakers/LarissaRibeiro-min.png");
+}
+#MarianaTodorova .pic {
+    background-image:url("../images/speakers/MarianaTodorova-min.png");
+}
+#RubersonSaraiva .pic {
+    background-image:url("../images/speakers/RubersonSaraiva-min.png");
+}
 #ClaudioPelizari .pic {
     background-image:url("../images/speakers/ClaudioPelizari-min.png");
 }
@@ -426,6 +442,10 @@ h1 {
     background-image:url("../images/speakers/ValeriaMattoso-min.png");
 }
 #NOMEdoMODAL .pic,
+#AndreiaDahdal .pic,
+#LarissaRibeiro .pic,
+#MarianaTodorova .pic,
+#RubersonSaraiva .pic,
 #ClaudioPelizari .pic,
 #MuftahBenomran .pic,
 #GilBakhtiar .pic,
