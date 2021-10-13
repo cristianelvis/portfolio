@@ -60,7 +60,12 @@ body {
         url(../images/speakers/RubersonSaraiva-min.png)
         url(../images/speakers/MarianaTodorova-min.png)
         url(../images/speakers/LarissaRibeiro-min.png)
-        url(../images/speakers/AndreiaDahdal-min.png);
+        url(../images/speakers/AndreiaDahdal-min.png)
+        url(../images/speakers/BrunaDayan-min.png)
+        url(../images/speakers/IshuShiva-min.png)
+        url(../images/speakers/MalebinaTsotsotso-min.png)
+        url(../images/speakers/HenriqueLopesMatos-min.png)
+        url(../images/speakers/AyodeleOjo-min.png);
 }
 h1 {
     font-size:4vh;
@@ -318,6 +323,21 @@ h1 {
 #NOMEdoMODAL .pic {
     background-image:url("../images/speakers/speakerPlaceHolder-min.png");
 }
+#AyodeleOjo .pic {
+    background-image:url("../images/speakers/AyodeleOjo-min.png");
+}
+#BrunaDayan .pic {
+    background-image:url("../images/speakers/BrunaDayan-min.png");
+}
+#IshuShiva .pic {
+    background-image:url("../images/speakers/IshuShiva-min.png");
+}
+#MalebinaTsotsotso .pic {
+    background-image:url("../images/speakers/MalebinaTsotsotso-min.png");
+}
+#HenriqueLopesMatos .pic {
+    background-image:url("../images/speakers/HenriqueLopesMatos-min.png");
+}
 #AndreiaDahdal .pic {
     background-image:url("../images/speakers/AndreiaDahdal-min.png");
 }
@@ -442,6 +462,11 @@ h1 {
     background-image:url("../images/speakers/ValeriaMattoso-min.png");
 }
 #NOMEdoMODAL .pic,
+#AyodeleOjo .pic,
+#BrunaDayan .pic,
+#IshuShiva .pic,
+#MalebinaTsotsotso .pic,
+#HenriqueLopesMatos .pic,
 #AndreiaDahdal .pic,
 #LarissaRibeiro .pic,
 #MarianaTodorova .pic,
