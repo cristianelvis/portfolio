@@ -50,6 +50,7 @@ body::after {
         url(../images/welcomeComoGanharDinheiroPlataforma-min.png)
         url(../images/welcomeAsTrocasQueNosMovemPB-min.png)
         url(../images/welcomeAsTrocasQueNosMovem-min.png)
+        url(../images/welcomeBackground-min.png)
         url(../images/oquesomosBackgroundImagePB-min.png)
         url(../images/oquesomosBackgroundImage-min.png)
         url(../images/oquesomosMulherGloboPB-min.png)
@@ -713,6 +714,48 @@ button.btn-close:focus {
 }
 .list-group-item-action:focus {
     background-color:var(--verde);
+}
+#ganhos.nav-pills .nav-link {
+    position:relative;
+    top:0;
+    color:white;
+    margin:0 0.5vh 0 0.5vh;
+    border-radius:1.2vh;
+    background-color:var(--roxo);
+    transition:all .5s ease;
+}
+#ganhos.nav-pills .nav-link:hover {
+    top:-0.6vh;
+    color:var(--amarelo);
+    border-radius:2.4vh;
+    background-color:var(--gray1);
+}
+#ganhosBackground {
+    width:100%;
+    height:auto;
+    padding:20vh 0 20vh 0;
+    background-image:url('../images/welcomeBackground-min.png');
+    background-position:center;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+}
+#ganhos-tabContent .col-md-4,
+#ganhos-tabContent .col-md-6,
+#ganhos-tabContent .col-lg-4,
+#ganhos-tabContent .col-lg-6,
+#ganhos-tabContent .col-xl-4,
+#ganhos-tabContent .col-xl-4 {
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin: auto;
+}
+#ganhos-tabContent h1 {
+    color:var(--amarelo);
+}
+#ganhos-tabContent p {
+    color:white;
 }
 .section002 {
     padding-top:0;
