@@ -369,12 +369,12 @@ button.btn-close {
     background:unset;
     box-shadow:unset;
     transition:all .5s ease;
+    z-index:1;
 }
 button.btn-close:hover {
     font-size:8vh;
     color:var(--amarelo);
     text-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
-
     box-shadow:unset;
 }
 button.btn-close:active,
@@ -416,11 +416,17 @@ button.btn-close:focus {
 .section001 .container-fluid,
 .section001 .row,
 .section001 .col-md-3,
+.section001 .col-md-4,
 .section001 .col-md-6,
-.section001 .col-lg-3, 
+.section001 .col-md-12,
+.section001 .col-lg-3,
+.section001 .col-lg-4,
 .section001 .col-lg-6,
+.section001 .col-lg-12,
 .section001 .col-xl-3, 
-.section001 .col-xl-6 {
+.section001 .col-xl-4,
+.section001 .col-xl-6,
+.section001 .col-xl-12 {
     padding:0;
     margin:0;
 }
@@ -454,54 +460,6 @@ button.btn-close:focus {
     text-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
 }
 .section001-btn-01,
-.section001-btn-02,
-.section001-btn-03,
-.section001-btn-04 {
-    font-family:'Otomanopee One', sans-serif;
-    color:white;
-    text-align:right;
-    width:100%;
-    height:0;
-    padding:1vh 1vw 47.5vh 1vw;
-    margin:0 auto;
-    border:0.4vh solid var(--gray1);
-    border-radius:0;
-    background-color:var(--gray1);
-    background-repeat:no-repeat;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    background-size:cover;
-    text-shadow:0 2px 2px rgba(0, 0, 0, 0.25);
-    transition:all .5s ease;
-}
-.section001-btn-01:hover,
-.section001-btn-02:hover,
-.section001-btn-03:hover,
-.section001-btn-04:hover,
-.section001-btn-01:focus,
-.section001-btn-02:focus,
-.section001-btn-03:focus,
-.section001-btn-04:focus {
-    font-size:2.8vh;
-    color:var(--amarelo);
-    padding:3vh 3vw 44.5 0;
-    border:0.4vh solid var(--gray1);
-    box-shadow:unset;
-}
-.section001-btn-01:hover {
-    color:var(--roxo);
-}
-.section001-btn-02:hover {
-    color:#3c456a;
-}
-.section001-btn-03:hover {
-    color:var(--verde);
-}
-.section001-btn-04:hover {
-    color:darkred;
-}
-.section001-btn-01,
 #section001-btn-01-content .modal-fullscreen {
     background-image:url("../images/welcomeMulherPB-min.png");
 }
@@ -530,6 +488,157 @@ button.btn-close:focus {
 }
 .section001-btn-04:hover {
     background-image:url("../images/welcomeMulherOriental-min.png");
+}
+.section001-btn-05,
+#section001-btn-05-content .modal-fullscreen {
+    background-image:url("../images/welcomeComeceGanharDinheiroAgoraPB-min.png");
+}
+.section001-btn-05:hover {
+    background-image:url("../images/welcomeComeceGanharDinheiroAgora-min.png");
+}
+.section001-btn-06,
+#section001-btn-06-content .modal-fullscreen {
+    background-image:url("../images/welcomeVendedorSemInvestimentoPB-min.png");
+}
+.section001-btn-06:hover {
+    background-image:url("../images/welcomeVendedorSemInvestimento-min.png");
+}
+.section001-btn-07,
+#section001-btn-07-content .modal-fullscreen {
+    background-image:url("../images/welcomeFinancieSeuNegocioPB-min.png");
+}
+.section001-btn-07:hover {
+    background-image:url("../images/welcomeFinancieSeuNegocio-min.png");
+}
+.section001-btn-08,
+#section001-btn-08-content .modal-fullscreen {
+    background-image:url("../images/welcomeNovoModeloNegocioPB-min.png");
+}
+.section001-btn-08:hover {
+    background-image:url("../images/welcomeNovoModeloNegocio-min.png");
+}
+.section001-btn-09,
+#section001-btn-09-content .modal-fullscreen {
+    background-image:url("../images/welcomeComoGanharDinheiroPlataformaPB-min.png");
+}
+.section001-btn-09:hover {
+    background-image:url("../images/welcomeComoGanharDinheiroPlataforma-min.png");
+}
+.section001-btn-10,
+#section001-btn-10-content .modal-fullscreen {
+    background-image:url("../images/welcomeAsTrocasQueNosMovemPB-min.png");
+}
+.section001-btn-10:hover {
+    background-image:url("../images/welcomeAsTrocasQueNosMovem-min.png");
+}
+.section001-btn-01,
+.section001-btn-02,
+.section001-btn-03,
+.section001-btn-04,
+.section001-btn-05,
+.section001-btn-06,
+.section001-btn-07,
+.section001-btn-08,
+.section001-btn-09,
+.section001-btn-10 {
+    font-family:'Otomanopee One', sans-serif;
+    color:white;
+    text-align:right;
+    width:100%;
+    height:0;
+    padding:1vh 1vw 47.5vh 1vw;
+    margin:0 auto;
+    border:0.4vh solid var(--gray1);
+    border-radius:0;
+    background-color:var(--gray1);
+    background-repeat:no-repeat;
+    background-position:center;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    text-shadow:0 2px 2px rgba(0, 0, 0, 0.25);
+    transition:all .5s ease;
+}
+.section001-btn-05,
+.section001-btn-06,
+.section001-btn-07 {
+    font-size:4.8vh;
+    line-height:5vh;
+    text-align:left;
+    padding:1vh 1vw 70vh 1vw;
+    border:0;
+}
+.section001-btn-08,
+.section001-btn-09,
+.section001-btn-10 {
+    text-align:left;
+    padding:1vh 1vw 30vh 1vw;
+    border:0;
+}
+.section001-btn-01:hover,
+.section001-btn-02:hover,
+.section001-btn-03:hover,
+.section001-btn-04:hover,
+.section001-btn-05:hover,
+.section001-btn-06:hover,
+.section001-btn-07:hover,
+.section001-btn-08:hover,
+.section001-btn-09:hover,
+.section001-btn-10:hover,
+.section001-btn-01:focus,
+.section001-btn-02:focus,
+.section001-btn-03:focus,
+.section001-btn-04:focus,
+.section001-btn-05:focus,
+.section001-btn-06:focus,
+.section001-btn-07:focus,
+.section001-btn-08:focus,
+.section001-btn-09:focus,
+.section001-btn-10:focus {
+    font-size:2.8vh;
+    color:var(--amarelo);
+    padding:3vh 3vw 44.5 0;
+    border:0.4vh solid var(--gray1);
+    box-shadow:unset;
+}
+.section001-btn-05:hover,
+.section001-btn-06:hover,
+.section001-btn-07:hover,
+.section001-btn-05:focus,
+.section001-btn-06:focus,
+.section001-btn-07:focus {
+    font-size:4.8vh;
+    line-height:5vh;
+    border:0;
+}
+.section001-btn-08:hover,
+.section001-btn-09:hover,
+.section001-btn-10:hover,
+.section001-btn-08:focus,
+.section001-btn-09:focus,
+.section001-btn-10:focus {
+    border:0;
+}
+.section001-btn-01:hover {
+    color:var(--roxo);
+}
+.section001-btn-02:hover {
+    color:#3c456a;
+}
+.section001-btn-03:hover {
+    color:var(--verde);
+}
+.section001-btn-04:hover {
+    color:darkred;
+}
+#section001-btn-05-content .modal-body,
+#section001-btn-06-content .modal-body,
+#section001-btn-07-content .modal-body,
+#section001-btn-08-content .modal-body,
+#section001-btn-09-content .modal-body,
+#section001-btn-10-content .modal-body {
+    padding:0;
 }
 #section001-btn-01-content .modal-fullscreen,
 #section001-btn-02-content .modal-fullscreen,
