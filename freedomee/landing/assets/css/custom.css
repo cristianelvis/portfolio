@@ -719,7 +719,7 @@ button.btn-close:focus {
     position:relative;
     top:0;
     color:white;
-    margin:0 0.5vh 0 0.5vh;
+    margin:1vh;
     border-radius:1.2vh;
     background-color:var(--roxo);
     transition:all .5s ease;
