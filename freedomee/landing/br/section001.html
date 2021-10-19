@@ -80,7 +80,16 @@
     </div>
     <div class="row" id="ganhosBackground">
         <div class="tab-content" id="ganhos-tabContent">
-            <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="Ganhos Investidor" id="GanhosInvestidor">
+            <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="Consumidor" id="Consumidor">
+                <div class="row">
+                    <div class="col-xs-12 col-md-10 offset-md-1 col-lg-10 offset-lg-1 col-xl-10 offset-xl-1">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/KCQ3WINkGqs?controls=0&amp;start=1" title="Economia Circular Colaborativa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" role="tabpanel" aria-labelledby="Ganhos Investidor" id="GanhosInvestidor">
                 <div class="row">
                     <div class="col-xs-12 col-md-4 offset-md-1 col-lg-4 offset-lg-1 col-xl-4 offset-xl-1">
                         <h1>Ganhos Investidor</h1>
@@ -159,10 +168,7 @@
                 </div>
             </div>
         </div>
-        <ul class="nav nav-pills justify-content-center mt-5" role="tablist" id="ganhos">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" type="button" role="tab" data-bs-toggle="pill" data-bs-target="#GanhosInvestidor" aria-controls="GanhosInvestidor" aria-selected="true" id="GanhosInvestidor-tab">Ganhos Investidor</button>
-            </li>
+        <!--<ul class="nav nav-pills justify-content-center mt-5" role="tablist" id="ganhos">
             <li class="nav-item" role="presentation">
                 <button class="nav-link" type="button" role="tab" data-bs-toggle="pill" data-bs-target="#GanhosProdutor" aria-controls="GanhosProdutor" aria-selected="false" id="GanhosProdutor-tab">Ganhos Produtor</button>
             </li>
@@ -170,13 +176,36 @@
                 <button class="nav-link" type="button" role="tab" data-bs-toggle="pill" data-bs-target="#GanhosVendedor" aria-controls="GanhosVendedor" aria-selected="false" id="GanhosVendedor-tab">Ganhos Vendedor</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" type="button" role="tab" data-bs-toggle="pill" data-bs-target="#GanhosFilantropicos" aria-controls="GanhosFilantropicos" aria-selected="false" id="GanhosFilantropicos-tab">Ganhos Filantrópicos</button>
-            </li>
-            <li class="nav-item" role="presentation">
                 <button class="nav-link" type="button" role="tab" data-bs-toggle="pill" data-bs-target="#GanhosInfluenciador" aria-controls="GanhosInfluenciador" aria-selected="false" id="GanhosInfluenciador-tab">Ganhos Influenciador</button>
             </li>
             <li class="nav-item" role="presentation">
                 <button class="nav-link" type="button" role="tab" data-bs-toggle="pill" data-bs-target="#GanhosEmbaixador" aria-controls="GanhosEmbaixador" aria-selected="false" id="GanhosEmbaixador-tab">Ganhos Embaixador</button>
+            </li>   
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" type="button" role="tab" data-bs-toggle="pill" data-bs-target="#GanhosInvestidor" aria-controls="GanhosInvestidor" aria-selected="true" id="GanhosInvestidor-tab">Ganhos Investidor</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" type="button" role="tab" data-bs-toggle="pill" data-bs-target="#GanhosFilantropicos" aria-controls="GanhosFilantropicos" aria-selected="false" id="GanhosFilantropicos-tab">Ganhos Filantrópicos</button>
+            </li>
+        </ul>-->
+        <ul class="nav nav-pills justify-content-center mt-5" role="tablist" id="ganhos">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" type="button" data-bs-toggle="modal" data-bs-target="#modalFreedomeeUserProdutor" id="GanhosProdutor-tab">Ganhos Produtor</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" type="button" data-bs-toggle="modal" data-bs-target="#modalFreedomeeUserVendedor" id="GanhosVendedor-tab">Ganhos Vendedor</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" type="button" data-bs-toggle="modal" data-bs-target="#modalFreedomeeUserInfluenciador" id="GanhosInfluenciador-tab">Ganhos Influenciador</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" type="button" data-bs-toggle="modal" data-bs-target="#modalFreedomeeUserEmbaixador" id="GanhosEmbaixador-tab">Ganhos Embaixador</button>
+            </li>   
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" type="button" data-bs-toggle="modal" data-bs-target="#modalFreedomeeUserInvestidor" id="GanhosInvestidor-tab">Ganhos Investidor</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" type="button" data-bs-toggle="modal" data-bs-target="#modalFreedomeeUserFilantropo" id="GanhosFilantropicos-tab">Ganhos Filantrópicos</button>
             </li>
         </ul>
     </div>
@@ -312,60 +341,6 @@
                         $('a').popover({ trigger: "hover" });
                     </script>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade" tabindex="-1" aria-labelledby="section001-btn-05-content" aria-hidden="true" id="section001-btn-05-content">
-    <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content">
-            <div class="modal-body">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-square"></i></button>
-                <div class="ratio ratio-16x9">
-                    <iframe src="https://www.youtube.com/embed/KCQ3WINkGqs?controls=0&amp;start=1" title="Economia Circular Colaborativa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <script>
-                    $('.modal').on('hide.bs.modal', function () {
-                        var memory = $(this).html();
-                        $(this).html(memory);
-                    })
-                </script>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade" tabindex="-1" aria-labelledby="section001-btn-06-content" aria-hidden="true" id="section001-btn-06-content">
-    <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content">
-            <div class="modal-body">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-square"></i></button>
-                <div class="ratio ratio-16x9">
-                    <iframe src="https://www.youtube.com/embed/wxLoDJ77jfI?controls=0&amp;start=1" title="Rede comercial que transforma desemprego em empreendedorismo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <script>
-                    $('.modal').on('hide.bs.modal', function () {
-                        var memory = $(this).html();
-                        $(this).html(memory);
-                    })
-                </script>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade" tabindex="-1" aria-labelledby="section001-btn-07-content" aria-hidden="true" id="section001-btn-07-content">
-    <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content">
-            <div class="modal-body">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-square"></i></button>
-                <div class="ratio ratio-16x9">
-                    <iframe src="https://www.youtube.com/embed/xskUvj2eshc?controls=0&amp;start=1" title="Rede comercial que reverte vendas em impactos positivos de sustentabilidade" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <script>
-                    $('.modal').on('hide.bs.modal', function () {
-                        var memory = $(this).html();
-                        $(this).html(memory);
-                    })
-                </script>
             </div>
         </div>
     </div>
