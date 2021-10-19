@@ -451,7 +451,8 @@ button.btn-close:focus {
     color:var(--roxo);
 }
 .section001 .edge {
-    border:0.4vh solid var(--gray1);
+    border:0 solid var(--gray1);
+    /* border:0.4vh solid var(--gray1); */
 }
 .section001 .wrapmodal {
     padding:2vh 6vh;
@@ -561,7 +562,8 @@ button.btn-close:focus {
     height:0;
     padding:1vh 1vw 47.5vh 1vw;
     margin:0 auto;
-    border:0.4vh solid var(--gray1);
+    border:0;
+    /* border:0.4vh solid var(--gray1); */
     border-radius:0;
     background-color:var(--gray1);
     background-repeat:no-repeat;
@@ -612,7 +614,8 @@ button.btn-close:focus {
     font-size:2.8vh;
     color:var(--amarelo);
     padding:3vh 3vw 44.5 0;
-    border:0.4vh solid var(--gray1);
+    border:0;
+    /* border:0.4vh solid var(--gray1); */
     box-shadow:unset;
 }
 .section001-btn-05:hover,
@@ -718,6 +721,7 @@ button.btn-close:focus {
 #ganhos.nav-pills .nav-link {
     position:relative;
     top:0;
+    font-size:1.6vh;
     color:white;
     margin:1vh;
     border-radius:1.2vh;
@@ -733,7 +737,7 @@ button.btn-close:focus {
 #ganhosBackground {
     width:100%;
     height:auto;
-    padding:20vh 0 20vh 0;
+    padding:10vh 0 10vh 0;
     background-image:url('../images/welcomeBackground-min.png');
     background-position:center;
     -webkit-background-size:cover;
