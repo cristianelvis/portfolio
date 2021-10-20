@@ -772,10 +772,10 @@ button.btn-close:focus {
     position:relative;
     background:url('../images/oquesomosBackgroundImagePB-min.png') no-repeat;
     background-position:0 0;
-    -webkit-background-size:100%;
-    -moz-background-size:100%;
-    -o-background-size:100%;
-    background-size:100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     background-color:var(--gray5);
     transition:all .5s ease;
 }
@@ -783,10 +783,10 @@ button.btn-close:focus {
     position:relative;
     background:url('../images/oquesomosBackgroundImage-min.png') no-repeat;
     background-position:0 0;
-    -webkit-background-size:100%;
-    -moz-background-size:100%;
-    -o-background-size:100%;
-    background-size:100%;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
     background-color:var(--gray5);
     transition:all .5s ease;
 }
@@ -811,14 +811,15 @@ button.btn-close:focus {
 }
 .section002 .contentfoto {
     color: white;
-    position:relative;
-    top:0;
-    left:-10vh;
-    width:100%;
-    height:85vh;
-    justify-content:start;
-    align-items:end;
-    display:inline-grid;
+    position: absolute;
+    bottom: 2vh;
+    left: 2vh;
+    width: auto;
+    height: auto;
+    /* justify-content:start; */
+    /* align-items:end; */
+    /* display:inline-grid; */
+    /* background-color: red; */
 }
 .section002 .contentfoto img {
     width:35vh!important;
@@ -1979,15 +1980,21 @@ button.btn-close:focus {
     #letterFreedomeeUsers .modal-fullscreen {
         width:100%;
     }
+    .section002 .background,
+    .section002 .background:hover {
+        -webkit-background-size:100%;
+        -moz-background-size:100%;
+        -o-background-size:100%;
+        background-size:100%;
+    }
     .section002 .container-fluid.cut {
         background:linear-gradient(90deg, transparent 100%, var(--gray5) 0%);
-        padding-top:30vh;
+        padding-top:40vh;
         padding-bottom:15vh;
     }
     .section002 .contentfoto {
-        top:3vh;
-        left:0;
-        height:auto;
+        top:32vh;
+        bottom:unset;
     }
     #carouselFredomeeUsers {
         margin-top:3vh;
@@ -2153,16 +2160,17 @@ button.btn-close:focus {
     }
     .section002 .container-fluid.cut {
         background:linear-gradient(90deg, transparent 100%, var(--gray5) 0%);
-        padding-top: 30vh;
-        padding-bottom: 0;
+        padding-top:30vh;
+        padding-bottom:0;
     }
     .section002 .wrap {
         height:auto;
     }
     .section002 .contentfoto {
-        top:-55px;
-        left:0;
-        height:auto;
+        top:21vh;
+        bottom:unset;
+        /* left:0; */
+        /* height:auto; */
     }
     #wrapcard-icon-1,
     #wrapcard-icon-2,
