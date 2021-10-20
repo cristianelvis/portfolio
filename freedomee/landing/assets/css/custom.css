@@ -2167,10 +2167,8 @@ button.btn-close:focus {
         height:auto;
     }
     .section002 .contentfoto {
-        top:21vh;
+        top:35vw;
         bottom:unset;
-        /* left:0; */
-        /* height:auto; */
     }
     #wrapcard-icon-1,
     #wrapcard-icon-2,
