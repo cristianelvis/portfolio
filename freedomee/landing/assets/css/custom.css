@@ -1682,6 +1682,10 @@ button.btn-close:focus {
     width:40vh;
     margin:0 auto;
 }
+.section006 #modalHera .modal-body,
+.section006 #modalDiplomacia .modal-body {
+    padding:0;
+}
 .section007 {
     padding-top:3vh;
     padding-bottom:0;
