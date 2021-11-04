@@ -33,7 +33,14 @@ body::after {
     z-index:-1;
     content:url(../images/underconstruction-background-min.png);
 }
-
+a {
+    color:var(--cor01);
+    transition:all .15s ease-in-out;
+}
+a:hover {
+    color:var(--cor02);
+    font-weight:700;
+}
 .mt-50 {
     margin-top:50px;
 }
