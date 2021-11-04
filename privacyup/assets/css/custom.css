@@ -88,8 +88,8 @@ a:hover {
         height:100%;
     }
     #underconstruction .strip {
-        position:relative;
-        left:-140%;
         width:1366px;
+        margin-left:50%;
+        transform:translateX(-50%);
     }
 }
