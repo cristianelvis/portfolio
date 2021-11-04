@@ -1,0 +1,579 @@
+/*!
+ * Cristian Elvis - v1.0 (http://cristianelvis.com)
+ * Copyright 2021 Cristian Elvis
+ */
+:root {
+    --cor1:#243860;
+	--cor2:#7abdd9;
+    --cor3:#e5e5e5;
+    --cor4:#272525;
+    --cor5:#4c4c4c;
+    --cor6:#e7ae32;
+    --cor7:#8ebbde;
+    --cor8:#345973;
+    --cor9:#2db758;
+    --cor10:#cdd8ec;
+    --cor11:#ebc700;
+    --cor12:#dcb94a;
+    --cor13:#f9f3a0;
+    --red:red;
+	--black:black;
+	--white:white;
+}
+html,
+body {
+    height:100%!important;
+}
+body {
+    width:100%;
+    font-family:'Montserrat',sans-serif;
+    line-height:calc(1rem + 1vmin);
+    font-weight:400;
+    color:var(--cor4);
+    background-color:var(--cor3);
+    flex-direction:column!important;
+    display:flex!important;
+}
+.m-0 {
+    margin:0 auto;
+}
+.mt-5 {
+    margin-top:5px!important;
+}
+.mt-10 {
+    margin-top:10px!important;
+}
+.mt-20 {
+    margin-top:20px!important;
+}
+.mt-30 {
+    margin-top:30px;
+}
+.mt-40 {
+    margin-top:40px;
+}
+.pad-0 {
+    padding:0;
+}
+.pad-10 {
+    padding:10px;
+}
+.pad-20 {
+    padding:20px;
+}
+.container-fluid.fluid-0 {
+    padding-right:0;
+    padding-left:0;
+    margin-right:0;
+    margin-left:0;
+}
+.h1, h1 {
+    font-size:2rem;
+    font-weight:900;
+    text-decoration:underline;
+}
+.tdn {
+    text-decoration:none;
+}
+.lead,
+.small,
+.big {
+    font-weight:unset;
+}
+.big {
+	font-size:1.6rem;
+	color:var(--white);
+	font-weight:900;
+}
+b, strong {
+    font-weight:900;
+}
+.bg-dark {
+    color:var(--white);
+    background-color:var(--black)!important;
+}
+#mainNav {
+    text-transform:uppercase;
+    background-color:transparent;
+}
+#mainNav .navbar-nav li.nav-item a.nav-link,
+#mainNav .navbar-nav li.nav-item a.nav-link.active,
+#mainNav .navbar-nav li.nav-item a.nav-link.active:active,
+#mainNav .navbar-nav li.nav-item a.nav-link.active:focus,
+#mainNav .navbar-nav li.nav-item a.nav-link.active:hover {
+	color:var(--white);
+}
+#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+    color:var(--cor2);
+}
+.navbar-shrink {
+    background-color:var(--white)!important;
+    border-bottom:5px solid var(--cor2);
+    -webkit-transition:background-color 0.3s;
+    transition:background-color 0.3s;
+}
+.navbar-shrink:after {
+    border-right:solid 15px transparent;
+    border-left:solid 15px transparent;
+    border-top:solid 15px var(--white);
+    transform:translateX(-50%);
+    position:absolute;
+    z-index:-0;
+    content:'';
+    top:100%;
+    left:50%;
+    height:0;
+    width:0;
+}
+#mainNav.navbar-shrink .navbar-nav li.nav-item a.nav-link {
+	color:var(--cor1);
+}
+#mainNav.navbar-shrink .navbar-nav li.nav-item a.nav-link.active,
+#mainNav.navbar-shrink .navbar-nav li.nav-item a.nav-link.active:active,
+#mainNav.navbar-shrink .navbar-nav li.nav-item a.nav-link.active:focus,
+#mainNav.navbar-shrink .navbar-nav li.nav-item a.nav-link.active:hover {
+    color:var(--cor2);
+}
+.nav-center {
+    margin:0 auto;
+}
+.hideLogo,
+.showLogo {
+    width:100%;
+    max-width:190px;
+    display:none;
+}
+.showLogo {
+    display:unset;
+    -webkit-transition:display 0.5s;
+    transition:display 0.5s;
+}
+.nav-scroller {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    width:100%;
+    height:100%;
+    padding:4rem 0.1rem;
+    margin:0 auto;
+    z-index:3000;
+}
+#carouselDimensao {
+	background-color:var(--cor10);
+}
+video {
+    width:100%
+}
+#bannerOne .carousel-caption,
+#bannerTwo .carousel-caption,
+#bannerThree .carousel-caption {
+	top:10%;
+	bottom:unset;
+    text-align: start;
+}
+#bannerOne .carousel-caption img,
+#bannerTwo .carousel-caption img {
+    width:60%;
+}
+#bannerThree .carousel-caption img {
+    width: 50%;
+}
+#bannerOne .carousel-caption h2,
+#bannerTwo .carousel-caption h2,
+#bannerThree .carousel-caption h2 {
+    color:var(--cor6);
+    font-weight:900;
+}
+#bannerTwo .carousel-caption h2 {
+    color: var(--cor1);
+}
+#bannerThree .carousel-caption h2 {
+    color: var(--cor2);
+}
+#carousel-caption-mobile1.carousel-caption,
+#carousel-caption-mobile2.carousel-caption,
+#carousel-caption-mobile3.carousel-caption{
+	position:initial;
+    text-align:center!important;
+	padding:2rem 1rem;
+	background-color:var(--black);
+}
+#carousel-caption-mobile2.carousel-caption {
+	background-color:var(--cor7);
+}
+#carousel-caption-mobile3.carousel-caption {
+	background-color:var(--cor8);
+}
+.page-section {
+    padding:10rem 0;
+}
+/* PÁGINAS DO SITE */
+/* QUEM SOMOS */
+#quemSomos,
+#faleConosco {
+    padding:10rem 0 0 0;
+    background-color:var(--cor10);
+}
+#quemSomosMissao {
+    padding:5rem 0 0 0;
+    height:55rem;
+    background:url(/assets/images/quemSomosBackgroundAguia.png) no-repeat bottom center;
+    background-size:100%;
+    background-color:var(--cor10);
+}
+#quemSomos p,
+#quemSomosMissao p,
+#quemSomos .h1,
+#quemSomos h1 {
+    color:var(--cor1);
+}
+#quemSomosMissao p {
+	width:75%;
+    font-size:1.8rem;
+    line-height:1.8rem;
+    font-weight:900;
+}
+/* EQUIPE DIMENSÃO */
+#equipeDimensao {
+    color:var(--white);
+    background-image:url(/assets/images/pattern01.png);
+    background-color:var(--cor1);
+}
+#equipeDimensao a {
+    color:var(--white);
+    text-decoration:none;
+}
+#equipeDimensao i {
+    margin:0 5px 0 5px;
+}
+.OnOverIcon {
+    width:12rem;
+    height:12rem;
+    padding:1rem;
+    margin:0.5rem auto;
+    background-color:var(--white);
+    border:0.15rem solid var(--white);
+    border-radius:6rem;
+    display:flex;
+    cursor:unset;
+    text-shadow:1px 1px 1px rgba(70, 70, 70, 1);
+    transition:all 0.8s;
+}
+.equipe001,
+.equipe002,
+.equipe003,
+.equipe004 {
+    background-image:url(/assets/images/placeHolder.png);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+.equipe001 {background-image:url(/assets/images/carlossaad.jpg);}
+.equipe001:hover {background-image:url(/assets/images/carlossaad.jpg);}
+.equipe002 {background-image:url(/assets/images/fabianathomaz.jpg);}
+.equipe002:hover {background-image:url(/assets/images/fabianathomaz.jpg);}
+.equipe003 {background-image:url(/assets/images/placeHolderOut.png);}
+.equipe003:hover {background-image:url(/assets/images/placeHolderOver.png);}
+.equipe004 {background-image:url(/assets/images/placeHolderOut.png);}
+.equipe004:hover {background-image:url(/assets/images/placeHolderOver.png);}
+/* QUESTÃO DE HONRA */
+#questaoDeHonra,
+#expandindoSuaVisao {
+	color:var(--cor1);
+    padding:10rem 0 10rem 0;
+    background-image:url(/assets/images/pattern01.png);
+    background-color:var(--cor2);
+}
+#expandindoSuaVisao {
+    background-color:var(--cor3);
+}
+#questaoDeHonra .box,
+#expandindoSuaVisao .box
+#vinteQuatroHorasDeHonra .box {
+    padding:0;
+	border-radius:1rem;
+    box-shadow:2px 2px 10px var(--black);
+}
+#questaoDeHonra a,
+#expandindoSuaVisao a {
+	color:var(--cor1)
+}
+#questaoDeHonra a:hover {
+    color:var(--white)
+}
+#questaoDeHonra .lead .big {
+	color:var(--white);
+    text-shadow:1px 1px 1px var(--black);
+}
+.productIcon,
+.productDate,
+.productCart {
+    text-align:center;
+    width:100%;
+    padding:1rem;
+    margin:0 auto;
+	color:var(--white);
+    background-color:var(--cor1);
+    display:inline-block;
+}
+.productIcon svg {
+	fill:var(--white);
+    width:60%;
+}
+.productIcon {
+	padding:2rem 1rem 0 1rem;
+	border-radius:1rem 1rem 0 0;
+    margin-bottom:-1rem;
+}
+.productDate h1 {
+	font-size:1.8rem;
+    text-decoration:none;
+    margin-bottom:1.6rem;
+}
+.productDate .big {
+	font-size:1.6rem;
+	color:var(--cor6);
+}
+.productCart {
+	color:var(--white);
+    background-color:var(--cor9);
+	border-radius:0 0 1rem 1rem;
+}
+.productCart a {
+	font-size:1.4rem;
+	font-weight:bold;
+	color:var(--white)!important;
+	text-decoration:none;
+}
+.productCart a:hover {
+	color:var(--cor1)!important;
+}
+/* 24 HORAS */
+#carousel24horasIntro.page-section {
+    padding:10rem 0 10rem 0;
+}
+#carousel24horasIntro img {
+	width:20%;
+	margin:0 auto;
+	margin-bottom:2rem;
+}
+#carousel24horasIntro h1,
+#carousel24horasOne h1,
+#carousel24horasTwo h1,
+#carousel24horasSeven h1 {
+	text-decoration:none;
+	margin:0 auto;
+	text-align:center;
+}
+#carousel24horasOne h1 {
+	text-align:left;
+}
+#carousel24horasTwo h1 {
+	color:var(--cor11);
+}
+#carousel24horasOne.page-section,
+#carousel24horasThree.page-section,
+#carousel24horasFour.page-section {
+	color:var(--black);
+    padding:10rem 0 10rem 0;
+	background-color:var(--cor11);
+}
+#carousel24horasOne p,
+#carousel24horasThree p,
+#carousel24horasFour p,
+#carousel24horasSix p {
+    margin-bottom:1rem;
+}
+#carousel24horasOne ul,
+#carousel24horasSix ul {
+    margin-bottom:0;
+}
+#carousel24horasOne li,
+#carousel24horasFive li,
+#carousel24horasSix li {
+	list-style:disc inside;
+    margin-bottom:0.2rem;
+}
+#carousel24horasTwo.page-section {
+    background-image:url(/assets/images/BackgroundBlackRock.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+#carousel24horasThree h1,
+#carousel24horasFour h1,
+#carousel24horasFive h1,
+#carousel24horasSix h1 {
+	text-decoration:none;
+	margin:0 auto;
+}
+#carousel24horasFour.page-section,
+#carousel24horasSix.page-section {
+	color:var(--black);
+    padding:10rem 0 10rem 0;
+	background-color:var(--cor13);
+}
+#carousel24horasFive {
+    color:var(--cor13);
+}
+#carousel24horasFive ul {
+    margin:1rem 0 0 0;
+}
+#carousel24horasSix li {
+	list-style:none;
+}
+#carousel24horasSix img {
+	width:100%;
+	margin:0 auto;
+}
+.btn-24h {
+	width:20rem;
+	padding:1rem 0 1rem 0;
+	margin:5rem auto;
+	color:var(--black)!important;
+	font-weight:bold!important;
+	background-color:var(--cor11)!important;
+	border:0;
+}
+.btn-24h:hover {
+	background-color:var(--cor13)!important;
+}
+
+
+
+
+/* EXPANDINDO SUA VISÃO */
+#expandindoSuaVisao .lead .big {
+	color:var(--cor2);
+    text-shadow:1px 1px 1px var(--black);
+}
+#expandindoSuaVisao .st0 {
+    fill:var(--cor2)!important;
+}
+#expandindoSuaVisao .st1 {
+    fill:var(--white)!important;
+}
+#expandindoSuaVisao .st2 {
+    fill:var(--cor1)!important;
+}
+#symbolExpandindoSuaVisao .st0 {
+    fill:var(--white);
+}
+#symbolExpandindoSuaVisao .st1 {
+    fill:var(--cor1);
+}
+#symbolExpandindoSuaVisao .st2 {
+    fill:var(--cor2);
+}
+#faleConosco {
+	color:var(--cor1);
+    background-color:var(--cor2);
+}
+#footer {
+    position:relative;
+	color:var(--white);
+    background-color:var(--cor1);
+    border-top:5px solid var(--cor2);
+    padding:5rem 0 5rem 0;
+}
+#footer:before {
+    border-right:solid 15px transparent;
+    border-left:solid 15px transparent;
+    border-bottom:solid 15px var(--cor1);
+    transform:translateX(-50%);
+    position:absolute;
+    z-index:0;
+    content:'';
+    top:-15px;
+    left:50%;
+    height:0;
+    width:0;
+}
+#footer a img {
+    width:20%;
+}
+#equipeDimensao a,
+#footer a,
+#copyright a {
+	color:var(--cor2);
+}
+#equipeDimensao a:hover,
+#expandindoSuaVisao a:hover,
+#footer a:hover,
+#copyright a:hover {
+	color:var(--cor6);
+}
+#footer .contato {
+	line-height:0.8rem;
+	margin-top:3rem;
+	margin-bottom:3rem;
+}
+#copyright {
+    font-size:0.6rem;
+    padding:0 0 0.5rem 0;
+}
+#copyright {
+    color:var(--white);
+    background-color:var(--cor1);
+}
+#copyright p {
+    margin-top:0.5rem;
+    margin-bottom:0;
+}
+.btn-primary {
+    color:var(--white);
+    background-color:var(--cor2);
+    border-color:var(--cor2);
+}
+.cartButton {
+    position:fixed;
+    width:200px;
+    height:60px;
+    top:67px;
+    right:-34px;
+    border-radius:50px;
+    z-index:3000;
+}
+.btn-social {
+    border-radius:100%;
+    display:-webkit-inline-box;
+    display:-ms-inline-flexbox;
+    display:inline-flex;
+    width:3rem;
+    height:3rem;
+    font-size:1.25rem;
+    -webkit-box-pack:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
+}
+.btn-outline-dark {
+    background-color:var(--cor1);
+    border-color:var(--cor2);
+}
+.btn-outline-dark:hover {
+    background-color:var(--cor2);
+    border-color:var(--cor2);
+}
+.simpleCart_shelfItem {
+    border:0;
+    padding:0;
+    margin:0;
+}
+.one-half.column,
+.one-third.column {
+    width:100%;
+    margin:0 auto;
+}
+
+@media (max-width:320px) {
+    #quemSomosMissao {
+        padding:3rem 0 0 0;
+        height:45rem;
+    }
+    #footer a img {
+        width:50%;
+    }
+}
