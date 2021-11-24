@@ -77,9 +77,13 @@ body::after {
     font-size:calc(0.6rem + 3.6vh);
     font-weight:700;
 }
-#underConstruction .l5,
+#underConstruction .l5 {
+    color:white;
+}
 #underConstruction .l6 {
     color:white;
+    font-size:calc(0.6rem + 0.8vh);
+    margin-bottom:15vh;
 }
 #underConstruction .btn-whats {
     position:fixed;
