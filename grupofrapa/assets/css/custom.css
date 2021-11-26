@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/*
+ * Cristian Elvis - v1.0 (http://cristianelvis.com)
+ * Copyright 2021 Cristian Elvis
+ */
+:root {
+    --cor01:#000000;
+    --cor02:#b5934c;
+    --gray0:#262626;
+    --gray1:#413e3e;
+    --gray2:#626060;
+    --gray3:#c4c4c4;
+    --gray4:#f4f4f4;
+    --gray5:#f6f6f6;
+}
+html,
+body {
+    position:relative;
+    width:100vw;
+    height:100vh;
+    font-family:'Montserrat', Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+    font-size:calc(0.6rem + 1vh);
+    font-weight:400;
+    line-height:120%;
+    color:var(--cor01);
+    text-align:center;
+    background-image:url(../images/mbp-underconstruction-background-min.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center center;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+body::after {
+    position:absolute;
+    width:0;
+    height:0;
+    overflow:hidden;
+    z-index:-1;
+    content:url(../images/mbp-underconstruction-background-min.png);
+}
+a {
+    color:white;
+    text-decoration:none;
+    transition:all .15s ease-in-out;
+}
+a:hover {
+    color:var(--cor02);
+    font-weight:700;
+}
+
+.btn-whats {
+    position:fixed;
+    right:6vh;
+    bottom:6vh;
+    z-index:999999999;
+    display:block;
+}
+.btn-whats-pulse {
+    position:relative;
+    color:white;
+    font-size:calc(0.6rem + 3vh);
+    padding:15% 25%;
+    border:none;
+    box-shadow:0 0 0 0 rgba(0,255,0,0.2);
+    border-radius:50%;
+    background:#25D366;
+    background-image:linear-gradient(to bottom, #25D366, #25D366);
+    background-size:cover;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    animation:pulse 1.25s infinite cubic-bezier(0.16, 0, 0, 1);
+}
+.btn-whats-pulse:hover {
+    color:white;
+    animation:none;
+}
+@keyframes pulse {
+    to {box-shadow:0 0 0 20px rgba(0,255,0,0.2);}
+}
+@media (max-width:1024px) {
+
+}
+@media (max-width:576px) {
+
+}
