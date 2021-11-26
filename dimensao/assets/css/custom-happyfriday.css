@@ -12,6 +12,12 @@
 	--white:#ffffff;
 	--black:#000000;
 }
+.mt-20 {
+    margin-top:20px;
+}
+.pac {
+    padding:30px;
+}
 a,
 a:hover {
 	color:var(--black);
