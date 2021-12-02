@@ -665,8 +665,11 @@
                         </svg></span>
                         </div>
                         <div class="row sx">
-                            Boleto Bancário
+                            Boleto Bancário<br>
+                            <br>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#alertaNovaLoja2">ALERTA - NOVA LOJA</a>
                         </div>
+                       
                     </div>
                 </div>
                 <div class="row pt20">
@@ -725,6 +728,29 @@
                 <div class="pt30"></div>
 
             </div>
+<div class="modal fade" tabindex="-1" aria-labelledby="alertaNovaLojaLabel" aria-hidden="true" id="alertaNovaLoja2">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="alertaNovaLojaLabel">Nova loja</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p><b>Em qual país está sediada a loja?</b></p>
+            <select class="form-select">
+                <option value="1" selected="">Selecione o país</option>  
+                <option value="2">Nome do País 01</option>
+                <option value="3">Nome do País 02</option>
+                <option value="4">Nome do País 03</option>
+            </select>
+            <h6>Se o país de origem da loja não estiver na lista de paises, significa que este serviço ainda não esta disponível em sua região.</h6>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+</div>
         </section><!-- /HTMLdoCRIS -->
 
         <script src="assets/js/jquery-3.1.1.min.js"></script>
