@@ -1,3 +1,59 @@
+<div class="modal fade" role="dialog" id="alertaNovaLoja">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <div class="wow_pops_head quiz-head">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="currentColor"
+              d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z">
+            </path>
+          </svg>
+        </button>
+        <h4>Nova loja</h4>
+      </div>
+      <div class="modal-body">
+        <div class="wow_form_fields">
+          <label for="group_category">Em qual país está sediada a loja?</label>
+          <select id="group_category" name="group_category" onchange="GetGroupSubCategory(this)">
+            <option value="1" selected="">Selecione o país</option>  
+            <option value="2">Nome do País 01</option>
+            <option value="3">Nome do País 02</option>
+            <option value="4">Nome do País 03</option>
+          </select>
+        </div>
+        <p class="small-mention">Se o país de origem da loja não estiver na lista de paises, significa que este serviço ainda não esta disponível em sua região.</p>
+        <div class="text-center">
+          <button type="submit" class="btn btn-main btn-mat btn-mat-raised" data-dismiss="modal">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" role="dialog" id="alertaProdutoForaAreaAtuacao">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <div class="wow_pops_head quiz-head">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="currentColor"
+              d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z">
+            </path>
+          </svg>
+        </button>
+        <h4>EMPREENDEDOR INFLUENCIADOR</h4>
+      </div>
+      <div class="modal-body">
+        <p class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="red" class="bi bi-exclamation-triangle" viewBox="0 0 16 16"><path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"></path><path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z"></path></svg></p>
+        <p>Esta ação gera comissionamento, porem este produto está fora da sua área de atuação.</p>
+        <div class="text-center">
+          <button type="submit" class="btn btn-main btn-mat btn-mat-raised" data-dismiss="modal">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div role="dialog" class="cc-window cc-banner cc-type-info cc-theme-edgeless cc-bottom cc-color-override-digitalAcc" id="modalHide">
   <span id="cookieconsent:desc" class="cc-message">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
     <a role="button" tabindex="0" class="cc-link" href="#" target="_blank">Sabiba mais</a>
@@ -361,9 +417,7 @@
               <div class="sr_btn_lab_innr">
                 <div class="sr_btn_img">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path fill="#4d91ea"
-                      d="M5,2V8H3V2H5M3,22H5V16H3V22M6,12A2,2 0 0,0 4,10A2,2 0 0,0 2,12A2,2 0 0,0 4,14A2,2 0 0,0 6,12M22,7V17A2,2 0 0,1 20,19H11A2,2 0 0,1 9,17V14L7,12L9,10V7A2,2 0 0,1 11,5H20A2,2 0 0,1 22,7M17,13H12V15H17V13M19,9H12V11H19V9Z">
-                    </path>
+                    <path fill="#4d91ea" d="M5,2V8H3V2H5M3,22H5V16H3V22M6,12A2,2 0 0,0 4,10A2,2 0 0,0 2,12A2,2 0 0,0 4,14A2,2 0 0,0 6,12M22,7V17A2,2 0 0,1 20,19H11A2,2 0 0,1 9,17V14L7,12L9,10V7A2,2 0 0,1 11,5H20A2,2 0 0,1 22,7M17,13H12V15H17V13M19,9H12V11H19V9Z"></path>
                   </svg>
                 </div>
                 <span>Minha linha do tempo</span>
