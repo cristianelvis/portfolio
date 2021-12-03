@@ -49,11 +49,36 @@ i {
 }
 #slide01 button,
 .nav-link-btn,
-h5,
+h1,
+h2,
 button,
 #slide01 button,
 #slide02 button {
     font-family:'StagSans-Bold','Montserrat',Segoe,"Segoe UI","DejaVu Sans","Trebuchet MS",Verdana,"sans-serif";
+}
+h1 {font-size:calc(0.6rem + 3.5vh);}
+h2 {font-size:calc(0.6rem + 3vh);}
+h3 {font-size:calc(0.6rem + 2.5vh);}
+h4 {font-size:calc(0.6rem + 2vh);}
+h5 {font-size:calc(0.6rem + 1.5vh);}
+h6 {font-size:calc(0.6rem + 1vh);}
+.mt1 {
+	margin-top:1vh;
+}
+.mt2 {
+	margin-top:2vh;
+}
+.mt3 {
+	margin-top:3vh;
+}
+.mt4 {
+	margin-top:4vh;
+}
+.mt5 {
+	margin-top:5vh;
+}
+.mt6 {
+	margin-top:6vh;
 }
 .navbar.navbar-expand-lg.navbar-dark {
 	color:var(--gray5);
@@ -63,7 +88,7 @@ button,
 .navbar.navbar-expand-lg.navbar-light {
 	color:var(--gray5);
 	padding:0.6vh 1.2vw 0.6vh 1.2vw;
-    background-color:var(--gray5);
+    background-color:white;
 }
 .navHide,
 .navShow {
@@ -199,13 +224,12 @@ a:hover {
 		text-align:center;
 	}
 }
-#slide01 h5 {
-    font-size:calc(0.6rem + 6vh);
+#slide01 h1 {
     color:var(--cor04);
     text-shadow:0 2px 2px rgba(0, 0, 0, 0.25);
 }
 @media (max-width: 576px) {
-	#slide01 h5 {
+	#slide01 h1 {
 		font-size:calc(0.6rem + 3vh);
 	}	
 }
@@ -225,7 +249,7 @@ a:hover {
     color:var(--cor01);
     text-align:center;
     padding:1.8vh 3.6vh;
-    border-radius: 1.5625vh;
+    border-radius:1.5625vh;
     background-color:var(--cor04);
     box-shadow:0 2px 2px rgba(0, 0, 0, 0.25);
     cursor:pointer;
@@ -248,7 +272,6 @@ a:hover {
 		padding:1.8vh 2.6vh;
 	}
 }
-
 .btn-whats {
     position:fixed;
     right:6vh;
@@ -274,6 +297,82 @@ a:hover {
 .btn-whats-pulse:hover {
     color:white;
     animation:none;
+}
+#navigation,
+.section001,
+.section002,
+.section003,
+.section004,
+.section005,
+.section006,
+.section007,
+.section008,
+.section009,
+.section010,
+#footer {
+    width:100%;
+    height:auto;
+    padding-top:13vh;
+    padding-bottom:13vh;
+    border:0;
+    background-color:var(--gray5);
+}
+#navigation {
+    padding-top:0;
+    padding-bottom:0;
+}
+.section001,
+.section002 {
+    padding-top:0;
+    padding-bottom:0;
+}
+.section002 .showup {
+    width:100%;
+    font-size:calc(0.6rem + 0.3vh);
+    padding:1.2vh;
+    margin-bottom:6vh;
+    border-radius:1.5625vh;
+    background-color:white;
+    box-shadow:0 2px 2px rgba(0, 0, 0, 0.25);
+}
+.section002 .lines {
+    border-left:1px solid var(--gray3);
+    border-right:1px solid var(--gray3);
+}
+.disc {
+    width:5.2vh;
+    height:5.2vh;
+    border-radius:50%;
+    background-color:var(--cor03);
+    display:grid;
+    align-content:center;
+}
+.disc i {
+    position:relative;
+	left:1vh;
+    font-size:calc(0.6rem + 2vh);
+	color:var(--cor04);
+    fill:var(--cor04);
+}
+.section002 tbody, td, tfoot, th, thead, tr {
+    border:0;
+}
+.section002 h1,
+.section002 h2 {
+    color:var(--cor04);
+    text-shadow:0 2px 2px rgba(0, 0, 0, 0.25);
+}
+.banner {
+    padding-top:10vh;
+    padding-bottom:10vh;
+    background-image: url(../images/frapa-banner-background-min.png);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-color:var(--cor04);
+}
+.banner h1 {
+    color:white;
 }
 button {
     appearance:unset;
