@@ -4,7 +4,7 @@
  * Copyright 2021 Cristian Elvis
  */
 @font-face {
-    font-family:"StagSans";
+    font-family:"StagSans-Bold";
     src:url("../fonts/StagSans-Bold.woff") format('woff'),url("../fonts/StagSans-Bold.woff") format("woff");
     font-weight:bold;
 }
