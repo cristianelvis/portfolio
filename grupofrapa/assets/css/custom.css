@@ -9,8 +9,10 @@
     font-weight:bold;
 }
 :root {
-    --cor01:#000000;
-    --cor02:#b5934c;
+    --cor01:#1c2d47;
+    --cor02:#28385e;
+    --cor03:#2e5288;
+    --cor04:#bfa876;
     --gray0:#262626;
     --gray1:#413e3e;
     --gray2:#626060;
@@ -42,31 +44,62 @@ body::after {
     z-index:-1;
     content:url(../images/mbp-underconstruction-background-min.png);
 }
-.navHide,
-.navShow {
-    top:-150vh;
-    transition:all .15s ease-in-out;
+i {
+    margin-right:1vh;
 }
-.navShow {
-    top:0;
-    transition:all .15s ease-in-out;
+#slide01 button,
+.nav-link-btn,
+h5,
+button,
+#slide01 button,
+#slide02 button {
+    font-family:'StagSans-Bold','Montserrat',Segoe,"Segoe UI","DejaVu Sans","Trebuchet MS",Verdana,"sans-serif";
 }
-.navbar {
-    padding:0.6vh 1.2vw 0.6vh 1.2vw;
+.navbar.navbar-expand-lg.navbar-dark {
+	color:var(--gray5);
+	padding:1.2vh 1.2vw 1.2vh 1.2vw;
+    background-color:var(--cor03);
+}
+.navbar.navbar-expand-lg.navbar-light {
+	color:var(--gray5);
+	padding:0.6vh 1.2vw 0.6vh 1.2vw;
     background-color:var(--gray5);
 }
-.navbar-brand {
-    width:8vh;
-    padding:0;
-    margin:1vh 0;
-    font-size:unset;
-    text-decoration:unset;
-    white-space:nowrap;
+.navHide,
+.navShow {
+    top:4.90625vh;
+    transition:all .15s ease-in-out;
 }
-.flag {
-    width:3vh;
-    border-radius:0.3vw;
+.navShow {
+    top:4.90625vh;
+    transition:all .15s ease-in-out;
+}
+@media (max-width:576px) {.navHide,.navShow {top:7.90625vh;}}
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link.active {
+    position:relative;
+    top:0;
+    font-size:calc(0.6rem + 0.5vh);
+    color:var(--cor02);
+    padding:1.2vh 1.6vh;
+    margin:0 auto;
+    text-shadow:0 2px 2px rgba(0, 0, 0, 0.25);
     display:inline-block;
+    white-space:nowrap;
+    transition:all .5s ease;
+}
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color:var(--cor04)!important;
+    font-weight:bold;
+    text-decoration:none;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color:var(--cor04);
+    top:-0.6vh;
+}
+.navbar-light .navbar-nav .nav-link:focus {
+    color:var(--cor04);
 }
 .dropdown-menu {
     font-size:unset;
@@ -81,61 +114,45 @@ body::after {
 .dropdown-item .flag {
     width:3vh;
 }
-.navbar-dark .navbar-nav .nav-link,
-.navbar-dark .navbar-nav .nav-link.active {
-    position:relative;
-    top:0;
-    font-size:1.8vh;
-    color:var(--gray4);
-    padding:1.2vh 1.6vh;
-    margin:0 auto;
-    text-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
-    display:inline-block;
-    white-space:nowrap;
-    transition:all .5s ease;
-}
-.navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav .show>.nav-link {
-    color:var(--amarelo)!important;
-    text-decoration:none;
-}
-.navbar-dark .navbar-nav .nav-link:hover {
-    color:var(--azul);
-    top:-0.6vh;
-}
-.navbar-dark .navbar-nav .nav-link:focus {
-    color:var(--verde);
-}
-.nav-link-btn {
-    font-family:'Montserrat',Segoe,"Segoe UI","DejaVu Sans","Trebuchet MS",Verdana,"sans-serif";
-    border-radius:2.6vh;
-    background-color:var(--gray3);
-}
 .dropdown-item {
     position:relative;
     top:0;
-    font-size:1.8vh;
-    color:var(--gray4);
+    font-size:calc(0.6rem + 0.5vh);
+    color:var(--cor01);
     padding:1.2vh 1.2vh;
     margin:0 auto;
-    text-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow:0 2px 2px rgba(0, 0, 0, 0.25);
     display:inline-block;
     white-space:nowrap;
     transition:all .5s ease;
 }
-.dropdown-item.active,.dropdown-item:active {
-    color:var(--azul);
+.dropdown-item.active,
+.dropdown-item:active {
+    color:var(--gray5);
     text-decoration:none;
-    background-color:var(--gray2);
+    background-color:var(--cor04);
 }
 .dropdown-item:hover {
-    color:var(--amarelo);
+    color:var(--gray5);
     top:-0.6vh;
-    background-color:var(--gray2);
+    background-color:var(--cor04);
 }
 .dropdown-item:focus {
-    color:var(--verde);
-    background-color:var(--gray2);
+    color:var(--gray5);
+    background-color:var(--cor04);
+}
+.navbar-brand {
+    width:13.054882812499999vh;
+    padding:0;
+    margin:1vh 0;
+    font-size:unset;
+    text-decoration:unset;
+    white-space:nowrap;
+}
+.language-flag {
+    width:3vh;
+    border-radius:0.3vw;
+    display:inline-block;
 }
 a {
     color:white;
@@ -146,15 +163,8 @@ a:hover {
     color:var(--cor02);
     font-weight:700;
 }
-button {
-    font-family:'StagSans-Bold','Montserrat',Segoe,"Segoe UI","DejaVu Sans","Trebuchet MS",Verdana,"sans-serif";
-}
-
-
 #carouselGrupoFrapaInstitucional {
     width:100vw;
-    height:100vh;
-    border:1px solid;
 }
 .slide {
     width:100vw;
@@ -169,7 +179,75 @@ button {
     .slide1 {background-image:url("../images/frapa-site-institucional-slide-001-mobile-min.png")}
     .slide2 {background-image:url("../images/frapa-site-institucional-slide-002-mobile-min.png")}
 }
-
+#slide01.carousel-caption,
+#slide02.carousel-caption {
+    position:absolute;
+    top:25%;
+    right:30%;
+    bottom:unset;
+    left:10%;
+    padding-top:0;
+    padding-bottom:0;
+    color:#fff;
+    text-align:left;
+}
+@media (max-width: 576px) {
+	#slide01.carousel-caption,
+	#slide02.carousel-caption {
+		right:10%;
+		left:10%;
+		text-align:center;
+	}
+}
+#slide01 h5 {
+    font-size:calc(0.6rem + 6vh);
+    color:var(--cor04);
+    text-shadow:0 2px 2px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 576px) {
+	#slide01 h5 {
+		font-size:calc(0.6rem + 3vh);
+	}	
+}
+#slide02 img {
+    width:39vh;
+    margin-bottom:2vh;
+}
+#slide01 p,
+#slide02 p {
+    font-size:calc(0.6rem + 1.8vh);
+    color:var(--gray5);
+    text-shadow:0 2px 2px rgba(0, 0, 0, 0.25);
+}
+#slide01 button,
+#slide02 button {
+    font-size:calc(0.6rem + 1.8vh);
+    color:var(--cor01);
+    text-align:center;
+    padding:1.8vh 3.6vh;
+    border-radius: 1.5625vh;
+    background-color:var(--cor04);
+    box-shadow:0 2px 2px rgba(0, 0, 0, 0.25);
+    cursor:pointer;
+}
+#slide01 button:hover,
+#slide02 button:hover {
+	color:var(--gray5);
+    background-color:var(--cor03);
+}
+#slide01 button:active,
+#slide02 button:active {
+	color:var(--gray5);
+    background-color:var(--cor01);
+    box-shadow:unset;
+}
+@media (max-width: 576px) {
+	#slide01 button,
+	#slide02 button {
+		font-size:calc(0.6rem + 1vh);
+		padding:1.8vh 2.6vh;
+	}
+}
 
 .btn-whats {
     position:fixed;
@@ -196,6 +274,38 @@ button {
 .btn-whats-pulse:hover {
     color:white;
     animation:none;
+}
+button {
+    appearance:unset;
+    font-style:unset;
+    font-variant-ligatures:unset;
+    font-variant-caps:unset;
+    font-variant-numeric:unset;
+    font-variant-east-asian:unset;
+    font-weight:unset;
+    font-stretch:unset;
+    font-size:unset;
+    font-family:unset;
+    text-rendering:unset;
+    color:unset;
+    letter-spacing:unset;
+    word-spacing:unset;
+    line-height:unset;
+    text-transform:unset;
+    text-indent:unset;
+    text-shadow:unset;
+    display:unset;
+    text-align:unset;
+    align-items:unset;
+    cursor:unset;
+    box-sizing:unset;
+    background-color:unset;
+    margin:unset;
+    padding:unset;
+    border-width:unset;
+    border-style:unset;
+    border-color:unset;
+    border-image:unset;
 }
 @keyframes pulse {
     to {box-shadow:0 0 0 20px rgba(0,255,0,0.2);}
