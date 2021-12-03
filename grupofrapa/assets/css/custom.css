@@ -334,7 +334,7 @@ a:hover {
     width:100%;
     font-size:calc(0.6rem + 0.3vh);
     padding:1.2vh;
-    margin-bottom:6vh;
+    margin:0 auto 6vh auto;
     border-radius:1.5625vh;
     background-color:white;
     box-shadow:0 2px 2px rgba(0, 0, 0, 0.25);
