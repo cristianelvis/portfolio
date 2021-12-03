@@ -100,7 +100,7 @@ h6 {font-size:calc(0.6rem + 1vh);}
     top:4.90625vh;
     transition:all .15s ease-in-out;
 }
-@media (max-width:576px) {.navHide,.navShow {top:5.4vh;}}
+@media (max-width:576px) {.navHide,.navShow {top:5.3vh;}}
 .navbar-light .navbar-nav .nav-link,
 .navbar-light .navbar-nav .nav-link.active {
     position:relative;
