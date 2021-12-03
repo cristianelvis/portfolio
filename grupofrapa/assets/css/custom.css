@@ -343,6 +343,7 @@ a:hover {
     border-left:1px solid var(--gray3);
     border-right:1px solid var(--gray3);
 }
+@media (max-width:576px) {.section002 .lines {border:0;margin-top:3vh;margin-bottom:3vh;}}
 .disc {
     width:5.2vh;
     height:5.2vh;
