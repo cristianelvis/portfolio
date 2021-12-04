@@ -29,7 +29,6 @@ body {
     line-height:120%;
     color:var(--cor01);
     text-align:center;
-    background-image:url(../images/mbp-underconstruction-background-min.png);
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center center;
@@ -42,7 +41,19 @@ body::after {
     height:0;
     overflow:hidden;
     z-index:-1;
-    content:url(../images/mbp-underconstruction-background-min.png);
+    content:
+    url(../images/frapa-banner-background-min.png)
+    url(../images/frapa-faleconosco-background-min.png)
+    url(../images/frapa-faleconosco-background-mobile-min.png)
+    url(../images/frapa-site-institucional-slide-001-min.png)
+    url(../images/frapa-site-institucional-slide-001-mobile-min.png)
+    url(../images/frapa-site-institucional-slide-002-min.png)
+    url(../images/frapa-site-institucional-slide-002-mobile-min.png)
+    url(../images/frapa-slider-foto-001.png)
+    url(../images/frapa-slider-foto-002.png)
+    url(../images/frapa-slider-foto-003.png)
+    url(../images/frapa-slider-foto-004.png)
+    url(../images/frapa-underconstruction-background-min.png);
 }
 i {
     margin-right:1vh;
@@ -62,7 +73,7 @@ h6 {color:var(--cor01);font-size:calc(0.6rem + 1vh);}
 p {color:var(--cor01);}
 .small {font-size:calc(0.6rem + 0.3vh);}
 .tw {
-    color:white;
+    color:var(--gray5);
 }
 .tb {
     color:black;
@@ -96,7 +107,7 @@ p {color:var(--cor01);}
 .navbar.navbar-expand-lg.navbar-light {
 	color:var(--gray5);
 	padding:0.6vh 1.2vw 0.6vh 1.2vw;
-    background-color:white;
+    background-color:var(--gray5);
     box-shadow:0 2px 2px rgba(0, 0, 0, 0.25);
 }
 .navHide,
@@ -191,10 +202,10 @@ p {color:var(--cor01);}
 }
 a {
     font-weight:bold;
-    color:white;
+    color:var(--gray5);
     text-decoration:none;
     margin-right:1vh;
-    transition:all .15s ease-in-out;
+    transition:all .5s ease;
 }
 a:hover {
     color:var(--cor02);
@@ -206,11 +217,6 @@ a:hover {
 .section003,
 .section004,
 .section005,
-.section006,
-.section007,
-.section008,
-.section009,
-.section010,
 #footer {
     width:100%;
     height:auto;
@@ -221,12 +227,17 @@ a:hover {
 }
 #navigation,
 .section001,
-.section002,
-#footer {
+.section002 {
     padding-top:0;
     padding-bottom:0;
 }
-
+.section005 {
+    padding-bottom:0;
+}
+#footer {
+    padding-top:2vh;
+    padding-bottom:0.1vh;
+}
 .slide {
     width:100%;
     height:100vh;
@@ -288,7 +299,7 @@ a:hover {
     padding:1.2vh;
     margin:0 auto 10vh auto;
     border-radius:1.5625vh;
-    background-color:white;
+    background-color:var(--gray5);
     box-shadow:0 2px 2px rgba(0, 0, 0, 0.25);
 }
 .section002 .lines {
@@ -321,7 +332,11 @@ a:hover {
 	.section004 {padding-top:100vh;}
 	.section004 .box {top:-78vh;width:95%;margin:0 auto;}
 }
-.banner {
+.section005 .banner2 h3 {
+    color:var(--gray5);
+}
+.banner,
+.banner2 {
     padding-top:10vh;
     padding-bottom:10vh;
     background-image: url(../images/frapa-banner-background-min.png);
@@ -330,22 +345,38 @@ a:hover {
     background-size:cover;
     background-color:var(--cor04);
 }
-.banner h1 {
-    color:white;
+.banner2 {
+    background-color:var(--cor01);
 }
-.disc {
-    width:5.2vh;
-    height:5.2vh;
+.banner h1 {
+    color:var(--gray5);
+}
+.disc,
+.disc-social {
+    width:6vh;
+    height:6vh;
+    padding:0;
+    margin:0 auto;
     border-radius:50%;
     background-color:var(--cor03);
-    display:grid;
-    align-content:center;
+    display:inline-grid;
+    justify-content:center;
+    align-items:center;
+    transition:all .5s ease;
+}
+.disc-social {
+    background-color:transparent;
+    border:2px solid var(--cor04);
+}
+.disc-social:hover {
+    background-color:var(--cor03);
+    border:0;
 }
 .disc i {
     position:relative;
-	left:1vh;
+    left:0.5vh;
     font-size:calc(0.6rem + 2vh);
-	color:var(--cor04);
+    color:var(--cor04);
     fill:var(--cor04);
 }
 .btn-store {
@@ -382,7 +413,7 @@ a:hover {
 }
 .btn-whats-pulse {
     position:relative;
-    color:white;
+    color:var(--gray5);
     font-size:calc(0.6rem + 3vh);
     padding:15% 25%;
     border:none;
@@ -396,7 +427,7 @@ a:hover {
     animation:pulse 1.25s infinite cubic-bezier(0.16, 0, 0, 1);
 }
 .btn-whats-pulse:hover {
-    color:white;
+    color:var(--gray5);
     animation:none;
 }
 button {
