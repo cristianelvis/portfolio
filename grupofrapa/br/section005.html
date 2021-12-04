@@ -5,12 +5,38 @@
             <h3>Caso prefira nos enviar uma mensagem, fique a vontade, preencha o formulário e clique em enviar.</h3>
             <p>Observe os campos marcados com *, pois são obrigatórios.</p>
         </div>
-        <div class="col-xs-12 col-md-6 col-lg-6 col-xl-6 text-start">
-            Form
+        <div class="col-xs-12 col-md-6 col-lg-6 col-xl-6 text-center">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" name="name" placeholder="Insira seu nome">
+                <label for="floatingInput">Seu nome</label>
+            </div>
+            <div class="row g-2">
+                <div class="col-md">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" name="email" placeholder="Insira seu email name@example.com">
+                        <label for="floatingInput">Seu email</label>
+                    </div>
+                </div>
+                <div class="col-md">    
+                    <div class="form-floating">
+                        <input type="text" class="form-control" name="phone" placeholder="Insira o seu número">
+                        <label for="floatingPassword">Seu telefone ou celular</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" name="subject" placeholder="Insira o assunto">
+                <label for="floatingInput">Assunto</label>
+            </div>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" name="message" style="height: 100px"></textarea>
+                <label for="floatingTextarea">Comments</label>
+            </div>
+            <button type="button" class="btn-store mt3" onclick=""><i class="bi bi-send"></i> Enviar</button>
         </div>
     </div>
 </div>
-<div class="container-fluid banner2">
+<div class="container-fluid banner2 mt6">
     <div class="row">
         <div class="col-xs-12 col-md-12 col-lg-12 col-xl-10 offset-xl-1">
             <h3>Interaja em nossas redes sociais.</h3>
