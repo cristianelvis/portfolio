@@ -305,16 +305,21 @@ a:hover {
     text-shadow:0 2px 2px rgba(0, 0, 0, 0.25);
 }
 .section004 .box {
+	position:relative;
+	top:0;
     width:50vh;
     font-size:calc(0.6rem + 0.3vh);
     text-align:left;
-    /* color: white; */
     padding:6vh 1.2vh;
     margin:0 10vh 0 auto;
     border-radius:0 0 1.5625vh 1.5625vh;
     background-color: var(--cor04);
     box-shadow:0 2px 2px rgba(0, 0, 0, 0.25);
     z-index:2;
+}
+@media (max-width:576px) {
+	.section004 {padding-top:100vh;}
+	.section004 .box {top:-78vh;width:95%;margin:0 auto;}
 }
 .banner {
     padding-top:10vh;
