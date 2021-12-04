@@ -335,6 +335,19 @@ a:hover {
 .section005 .banner2 h3 {
     color:var(--gray5);
 }
+.section005 {
+    background-image: url(../images/frapa-faleconosco-background-min.png);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.section005 h1 {
+    color:var(--cor04);
+}
+.section005 h3,
+.section005 p {
+    color:var(--gray5);
+}
 .banner,
 .banner2 {
     padding-top:10vh;
