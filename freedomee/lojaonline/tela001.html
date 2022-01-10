@@ -167,9 +167,9 @@
                                     Quantidade:
                                 </span>
                                 <div class="input-group mt-1 mb-3">
-                                    <button class="btn btn-outline-secondary" type="button">-</button>
-                                    <input type="text" class="form-control" placeholder="" aria-label="Example text with two button addons">
-                                    <button class="btn btn-outline-secondary" type="button">+</button>
+                                    <button class="btn btn-outline-secondary" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+                                    <input type="number" class="form-control" min="1" name="quantity" value="1">
+                                    <button class="btn btn-outline-secondary" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" >+</button>
                                 </div>
                             </div>
                         </div>
