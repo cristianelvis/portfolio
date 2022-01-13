@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*
  * Cristian Elvis - v1.0 (http://cristianelvis.com)
- * Copyright 2021 Cristian Elvis
+ * Copyright 2022 Cristian Elvis
  */
 :root {
     --cor01:#2c3d4f;
@@ -53,9 +53,6 @@ a:hover {
 }
 .mt-50 {
     margin-top:50px;
-}
-#underconstruction {
-
 }
 #underconstruction .fluid-0 {
     padding-right:0;
