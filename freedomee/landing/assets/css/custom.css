@@ -168,10 +168,9 @@ a.active,a:hover {
     color:var(--green);
 }
 .checkbtn {
-    font-size:calc(0.75em + 2.2vmin);
+    font-size:calc(0.75em + 6vmin);
     color:var(--gray1);
-    line-height:10vh;
-    margin-right:5vh;
+    line-height:9vh;
     cursor:pointer;
     display:none;
 }
@@ -180,7 +179,7 @@ a.active,a:hover {
 }
 @media (max-width:952px){
     nav ul li a {
-        font-size:calc(0.75em + 0.1vmin);
+        font-size:calc(0.75em + 1vmin);
     }
 }
 @media (max-width:858px){
@@ -207,8 +206,8 @@ a.active,a:hover {
         margin:2vh 0;
     }
     nav ul li a {
-        font-size:calc(0.75em + 0.1vmin);
-        color:var(--gray4)
+        font-size: calc(0.75em + 1vmin);
+        color:var(--gray4);
     }
     a.active,a:hover {
         color:var(--violet);
