@@ -170,7 +170,7 @@ a.active,a:hover {
 .checkbtn {
     font-size:calc(0.75em + 6vmin);
     color:var(--gray1);
-    line-height:9vh;
+    line-height:10vh;
     cursor:pointer;
     display:none;
 }
@@ -188,7 +188,7 @@ a.active,a:hover {
     }
     ul {
         position:fixed;
-        top:7.1vh;
+        top:8vh;
         width:80%;
         height:100vh;
         padding:6vh;
