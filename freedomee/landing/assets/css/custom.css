@@ -25,6 +25,11 @@
     --gray5:#f6f6f6;
     --white:#ffffff;
 }
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
 html,
 body {
     position:relative;
@@ -33,10 +38,8 @@ body {
     font-weight:normal;
     line-height:120%;
     color:var(--gray1);
-    padding:0;
-    margin:0;
-    box-sizing:border-box;
     background-color:var(--gray5);
+    overflow-x:hidden;
 }
 h1, .h1,
 h2, .h2,
@@ -134,88 +137,6 @@ button:active {
     grid-gap:0 0;
     grid-template-areas:"nav nav" "conten conten" "footer footer";
 }
-nav {
-    grid-area:nav;
-    display:flex;
-    grid-template-columns:1fr;
-    grid-template-rows:10vh;
-    justify-content:space-between;
-    align-content:center;
-    padding:0.5vh 2vh 0.5vh 2vh;
-}
-nav .navbrand {
-    width:9vh;
-}
-nav ul {
-    display:flex;
-    justify-content:center;
-    align-content:center;
-}
-nav ul li {
-    list-style:none;
-    box-sizing:border-box;
-    padding:0 0 0 3vh;
-}
-nav ul li a {
-    font-size: calc(0.75em + 0.1vmin);
-    color:var(--gray1);
-    border-radius:0;
-    text-transform:none;
-    text-decoration:none;
-    transition:all 0.15s ease-in-out;
-}
-a.active,a:hover {
-    color:var(--green);
-}
-.checkbtn {
-    font-size:calc(0.75em + 6vmin);
-    color:var(--gray1);
-    line-height:10vh;
-    cursor:pointer;
-    display:none;
-}
-#check {
-    display:none;
-}
-@media (max-width:952px){
-    nav ul li a {
-        font-size:calc(0.75em + 1vmin);
-    }
-}
-@media (max-width:858px){
-    .checkbtn {
-        display:block;
-    }
-    ul {
-        position:fixed;
-        top:8vh;
-        width:80%;
-        height:100vh;
-        padding:6vh;
-        background:var(--gray1);
-        left:-120%;
-        display:grid!important;
-        justify-content:end!important;
-        align-content:start!important;
-        text-align:right!important;
-        transition:all 0.15s ease-in-out;
-    }
-    nav ul li {
-        width:100%;
-        display:block;
-        margin:2vh 0;
-    }
-    nav ul li a {
-        font-size: calc(0.75em + 1vmin);
-        color:var(--gray4);
-    }
-    a.active,a:hover {
-        color:var(--violet);
-    }
-    #check:checked ~ ul{
-        left:0;
-    }
-}
 main {
     background-color:var(--blue);
     grid-area:conten;
@@ -224,3 +145,116 @@ footer {
     background-color:var(--green);
     grid-area:footer;
 }
+nav {
+    grid-area:nav;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 2vh 0 2vh;
+    background-color:var(--gray3);
+}
+nav .nav-brand {
+    width:8vh;
+    display:flex;
+}
+nav .nav-brand img {
+    min-width:100%;
+    margin:0 auto;
+}
+nav .nav-links {
+    display:flex;
+    justify-content:center;
+    align-content:center;
+}
+nav .nav-links li {
+    list-style:none;
+    padding:0 2vh 0 2vh;
+    transition:all 0.15s ease-in-out;
+}
+nav .nav-links a {
+    color:var(--gray1);
+    font-size:calc(0.75em + 0.1vmin);
+    font-weight:bold;
+    letter-spacing:0.2vh;
+    text-decoration:none;
+    transition:all 0.15s ease-in-out;
+}
+nav .nav-links a:hover {
+    color:var(--blue);
+}
+nav .nav-links a:active,
+nav .nav-links a:focus {
+    color:var(--yellow);
+}
+.burger {
+    cursor:pointer;
+    display:none;
+}
+.burger div{
+    width:25px;
+    height:3px;
+    background-color:var(--gray1);
+    margin:5px;
+    transition:all 0.15s ease-in-out;
+}
+.burgerChange .line1 {
+    transform:rotate(-45deg) translate(-5px,6px);
+}
+.burgerChange .line2 {
+    opacity:0;
+}
+.burgerChange .line3 {
+    transform:rotate(45deg) translate(-5px,-6px);
+}
+@media screen and (max-width:768px) {
+    nav .nav-links {
+        position:absolute;
+        top:10vh;
+        right:0;
+        width:80vw;
+        height:100vh;
+        padding:4vh 0;
+        display:flex;
+        flex-direction:column;
+        justify-content:start;
+        align-content:center;
+        align-items:center;
+        background-color:rgba(255, 255, 255, 0.8);
+        backdrop-filter:blur(1reem);
+        transform:translateX(100%);
+        transition:transform 0.5s ease-in;
+    }
+    nav .nav-links.active {
+        transform:translateX(0%);
+    }
+    nav .nav-links li {
+        padding:4vh 0 4vh 0;
+        animation:navLinkFade 3s 1;
+    }
+    nav .nav-links a {
+        font-size:calc(0.75em + 1vmin);
+    }
+    .burger {
+        display:block;
+    }
+}
+@keyframes navLinkFade {
+    from {
+        opacity:0;
+        transform:translateX(300%);
+    }
+    to {
+        opacity:1;
+        transform:translateX(0%);
+    }
+}
+@keyframes slidein {
+    from {
+        opacity:0;
+        margin-left:100%;
+    }
+    to {
+        opacity:1;
+        margin-left:0%;
+    }
+  }
