@@ -151,7 +151,7 @@ nav {
     justify-content:space-between;
     align-items:center;
     padding:0 2vh 0 2vh;
-    background-color:var(--gray3);
+    background-color:transparent;
 }
 nav .nav-brand {
     width:8vh;
@@ -172,6 +172,8 @@ nav .nav-links li {
     transition:all 0.15s ease-in-out;
 }
 nav .nav-links a {
+    position:relative;
+    top:0;
     color:var(--gray1);
     font-size:1vw;
     font-weight:normal;
@@ -180,12 +182,12 @@ nav .nav-links a {
     transition:all 0.15s ease-in-out;
 }
 nav .nav-links a:hover {
-    color:var(--lavander);
+    top:-0.6vh;
+    color:var(--blue);
 }
 nav .nav-links a:active,
 nav .nav-links a:focus {
-    color:var(--yellow);
-    font-weight:bold;
+    color:var(--green);
 }
 .burger {
     cursor:pointer;
