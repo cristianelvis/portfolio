@@ -154,7 +154,7 @@ nav {
     background-color:transparent;
 }
 nav .nav-brand {
-    width:8vh;
+    width:6vh;
     display:flex;
 }
 nav .nav-brand img {
@@ -269,4 +269,4 @@ nav .nav-links a:focus {
         opacity:1;
         margin-left:0%;
     }
-  }
+}
