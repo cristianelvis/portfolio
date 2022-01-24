@@ -173,18 +173,19 @@ nav .nav-links li {
 }
 nav .nav-links a {
     color:var(--gray1);
-    font-size:calc(0.55em + 0.5vw);
-    font-weight:bold;
+    font-size:1vw;
+    font-weight:normal;
     letter-spacing:0.2vh;
     text-decoration:none;
     transition:all 0.15s ease-in-out;
 }
 nav .nav-links a:hover {
-    color:var(--blue);
+    color:var(--lavander);
 }
 nav .nav-links a:active,
 nav .nav-links a:focus {
     color:var(--yellow);
+    font-weight:bold;
 }
 .burger {
     cursor:pointer;
@@ -206,17 +207,7 @@ nav .nav-links a:focus {
 .burgerChange .line3 {
     transform:rotate(45deg) translate(-5px,-6px);
 }
-@media screen and (max-width:1024px) {
-    nav .nav-links a {
-        font-size: calc(0.30em + 0.5vw);
-    }
-}
 @media screen and (max-width:768px) {
-    nav .nav-links a {
-        font-size: calc(0.20em + 0.3vw);
-    }
-}
-@media screen and (max-width:576px) {
     nav .nav-links {
         position:absolute;
         top:10vh;
@@ -248,6 +239,15 @@ nav .nav-links a:focus {
         display:block;
     }
 }
+
+
+
+
+
+@media screen and (max-width:1024px) {}
+@media screen and (max-width:768px) {}
+@media screen and (max-width:576px) {}
+
 @keyframes navLinkFade {
     from {
         opacity:0;
