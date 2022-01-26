@@ -29,27 +29,25 @@
                     <form action="" class="form-control">
                         <input type="text" placeholder="Nome de usuário" name="username">
                         <div class="input-group">
-                            <input type="password" placeholder="Sua sennha" name="password" id="passSplash">
-                            <button class="btn btn-input" type="button">Entrar</button>
-                            <a href="#" onclick="seePass();openEye()">
-                                <i class="bi bi-eye-slash" id="see"></i>
-                            </a>
-                            <script>
-                                function seePass() {
-                                    var x = document.getElementById("passSplash");
-                                    if (x.type === "password") {
-                                        x.type = "text";
-                                    } else {
-                                        x.type = "password";
-                                    }
-                                }
-                                function openEye() {
-                                    var element = document.getElementById("see");
-                                    element.classList.toggle("bi-eye");
-                                }
-                            </script>
+                            <input type="password" placeholder="Sua senha" name="password" id="passSplash">
+                            <span class="input-group-text" onclick="seePass();openEye()"><i class="bi bi-eye-slash" id="see"></i></span>
+                            <button class="btn btn-input" type="button">Logar</button>
                         </div>
-                        <p><a href="#" class="fp">Esqueceu a sua senha?</a></p>
+                        <script>
+                            function seePass() {
+                                var x = document.getElementById("passSplash");
+                                if (x.type === "password") {
+                                    x.type = "text";
+                                } else {
+                                    x.type = "password";
+                                }
+                            }
+                            function openEye() {
+                                var element = document.getElementById("see");
+                                element.classList.toggle("bi-eye");
+                            }
+                        </script>
+                        <a href="#" class="fp">Esqueceu a sua senha?</a>
                         <p>Não tem uma conta?</p>
                         <button class="btn btn-primary" type="button">Inscreva-se!</button>
                     </form>
