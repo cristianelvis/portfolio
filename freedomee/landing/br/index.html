@@ -21,9 +21,47 @@
     </head>
     <body id="home">
         <div class="container">
-            <nav id="nav"></nav>
-            <main></main>
-            <footer></footer>
+            <nav id="navtop"></nav>
+            <main>
+                <div class="left">
+                    <img src="../assets/images/logotipo.svg" class="brand" alt="Junte-se a nós em uma economia colaborativa.">
+                    <h1>Junte-se a nós em uma economia colaborativa.</h1>
+                    <form action="" class="form-control">
+                        <input type="text" placeholder="Nome de usuário" name="username">
+                        <div class="input-group">
+                            <input type="password" placeholder="Sua sennha" name="password" id="passSplash">
+                            <button class="btn btn-input" type="button">Entrar</button>
+                            <a href="#" onclick="seePass();openEye()">
+                                <i class="bi bi-eye-slash" id="see"></i>
+                            </a>
+                            <script>
+                                function seePass() {
+                                    var x = document.getElementById("passSplash");
+                                    if (x.type === "password") {
+                                        x.type = "text";
+                                    } else {
+                                        x.type = "password";
+                                    }
+                                }
+                                function openEye() {
+                                    var element = document.getElementById("see");
+                                    element.classList.toggle("bi-eye");
+                                }
+                            </script>
+                        </div>
+                        <p><a href="#" class="fp">Esqueceu a sua senha?</a></p>
+                        <p>Não tem uma conta?</p>
+                        <button class="btn btn-primary" type="button">Inscreva-se!</button>
+                    </form>
+                </div>
+                <div class="right">
+                    <a href="" class="cta1">Clique para comprar</a>
+                    <a href="" class="cta2">Clique para vender</a>
+                    <a href="" class="cta3">Ganhe dinheiro com marketing de relacionamento!</a>
+                    <a href="" class="cta4">Ajude todos a crescer!</a>
+                </div>
+            </main>
+            <footer id="navbottom"></footer>
         </div>
         <script src="../assets/js/scripts-body.js"></script>
     </body>

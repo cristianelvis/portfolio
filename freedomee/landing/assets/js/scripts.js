@@ -1,3 +1,4 @@
 $(document).ready(function(){
-    $("#nav").load("_nav-content.html");
+    $("#navtop").load("_nav-top.html");
+    $("#navbottom").load("_nav-bottom.html");
 });
