@@ -122,26 +122,27 @@ a:active {
 #home main .left {
     position:relative;
     left:0;
-    height:88vh;
+    height:auto;
     grid-area:left;
-    display:grid;
+    display:flex;
+    flex-direction: column;
     justify-content:center;
     align-content:center;
-    padding:10vh;
+    padding:10vh 21vh;
     background-color:var(--white);
     animation:leftIn 2s 1;
 }
 #home main .left .brand {
-    width:30vh;
+    width:100%;
     margin:0 auto 1rem auto;
 }
 #home main .left h1 {
-    width:35vh;
+    width:100%;
     margin:0 auto 6vh auto;
     text-align:center;
 }
 #home main .left .form-control {
-    width:35vh;
+    width:100%;
     margin:0 auto;
     display:grid;
 }
@@ -163,14 +164,30 @@ a:active {
 #home main .left p {
     margin-top:6vh;
 }
+@media screen and (max-width:768px) {
+    #home main .left {
+        padding:10vh 21vh;
+    }
+    #home main .left .brand {
+        width:50%;
+    }
+}
+@media screen and (max-width:576px) {
+    #home main .left {
+        padding:10vh 8vh;
+    }
+    #home main .left .brand {
+        width:100%;
+    }
+}
 #home main .right {
     position:relative;
     right:0;
-    height:88vh;
+    height:auto;
     grid-area:right;
     display:grid;
-    grid-template-columns: 0fr 1fr;
-    grid-template-rows: 22vh 22vh 22vh 22vh;
+    grid-template-columns:0fr 1fr;
+    grid-template-rows:22vh 22vh 22vh 22vh;
     grid-gap:0 0;
     grid-template-areas:
         "cta1 cta1"
