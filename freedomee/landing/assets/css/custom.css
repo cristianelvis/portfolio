@@ -222,7 +222,7 @@ a:active {
 #cta4:hover {
     width:100%;
     color:var(--yellow);
-    font-size:1.8rem;
+    font-size:150%;
     text-decoration:none;
     padding:0 0 0 10%;
     -webkit-filter: grayscale(10%);
