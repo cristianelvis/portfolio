@@ -183,45 +183,84 @@ a:active {
     background-color:var(--white);
     animation:rightIn 2s 1;
 }
-.cta1 {
+#cta1 {
     grid-area:cta1;
-    background-color: darkred;
+    background-image:linear-gradient(rgba(65, 62, 62, 0.5), rgba(65, 62, 62, 0.5)), url("../images/freedomeeBackgroundHomeCTA01-min.png");
 }
-.cta2 {
+#cta2 {
     grid-area:cta2;
-    background-color: darkred;
+    background-image:linear-gradient(rgba(65, 62, 62, 0.5), rgba(65, 62, 62, 0.5)), url("../images/freedomeeBackgroundHomeCTA02-min.png");
 }
-.cta3 {
+#cta3 {
     grid-area:cta3;
-    background-color: darkred;
+    background-image:linear-gradient(rgba(65, 62, 62, 0.5), rgba(65, 62, 62, 0.5)), url("../images/freedomeeBackgroundHomeCTA03-min.png");
 }
-.cta4 {
+#cta4 {
     grid-area:cta4;
-    background-color: darkred;
+    background-image:linear-gradient(rgba(65, 62, 62, 0.5), rgba(65, 62, 62, 0.5)), url("../images/freedomeeBackgroundHomeCTA04-min.png");
 }
-.cta1:hover,
-.cta2:hover,
-.cta3:hover,
-.cta4:hover {
+#cta1:hover,
+#cta2:hover,
+#cta3:hover,
+#cta4:hover {
     width:100%;
+    color:var(--yellow);
+    font-size:1.8rem;
+    text-decoration:none;
+    padding:0 0 0 10%;
+    -webkit-filter: grayscale(10%);
+	filter: grayscale(10%);
+	filter:#413e3e; /* IE */
 }
-.cta1,
-.cta2,
-.cta3,
-.cta4 {
+#cta1,
+#cta2,
+#cta3,
+#cta4 {
     position:absolute;
     right:0;
     width:95%;
     height:100%;
+    color:var(--white);
+    font-size:1.2rem;
+    font-weight:bold;
+    line-height:100%;
+    text-decoration:none;
+    padding:0 0 0 5%;
     display:flex;
-    justify-content:start;
-    align-items:center;
+    flex-direction:column;
+    justify-content:center;
+    align-items:start;
+    background-position:center right;
+    background-repeat:no-repeat;
+    background-size:cover;
+    -webkit-filter:grayscale(100%);
+    filter:grayscale(100%);
+    filter:#413e3e; /* IE */
+}
+#cta1 span,
+#cta2 span,
+#cta3 span,
+#cta4 span {
+    color:var(--white);
+    font-size:1.2rem;
+    font-weight:normal;
+    line-height:100%;
+    opacity:0;
+    display:none;
+    transition:all 0.15s ease-in-out;
+}
+#cta1:hover span,
+#cta2:hover span,
+#cta3:hover span,
+#cta4:hover span {
+    opacity:1;
+    display:block;
 }
 @media screen and (max-width:768px) {
-    .cta1,
-    .cta2,
-    .cta3,
-    .cta4 {
+    #cta1,
+    #cta2,
+    #cta3,
+    #cta4 {
         width:100%;
         height:100%;
     }
