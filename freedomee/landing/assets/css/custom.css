@@ -81,6 +81,8 @@ a:active {
 
 #home {
     padding:0 6vh 0 6vh;
+    overflow-x:hidden;
+    overflow-y:hidden;
 }
 @media screen and (max-width:768px) {
     #home {
@@ -100,7 +102,6 @@ a:active {
 }
 #home main {
     grid-area:conten;
-    background-color:var(--white);
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows:auto;
@@ -110,7 +111,6 @@ a:active {
 @media screen and (max-width:768px) {
      #home main {
         grid-area:conten;
-        background-color:var(--white);
         display:grid;
         grid-template-columns:1fr 1fr;
         grid-template-areas:
@@ -119,11 +119,16 @@ a:active {
     }   
 }
 #home main .left {
+    position:relative;
+    left:0;
+    height:88vh;
     grid-area:left;
     display:grid;
     justify-content:center;
     align-content:center;
     padding:10vh;
+    background-color:var(--white);
+    animation:leftIn 2s 1;
 }
 #home main .left .brand {
     width:30vh;
@@ -132,7 +137,7 @@ a:active {
 #home main .left h1 {
     width:35vh;
     margin:0 auto 6vh auto;
-    text-align :center;
+    text-align:center;
 }
 #home main .left .form-control {
     width:35vh;
@@ -158,43 +163,78 @@ a:active {
     margin-top:6vh;
 }
 #home main .right {
+    position:relative;
+    right:0;
+    height:88vh;
     grid-area:right;
-    background-color:red;    
+    display:grid;
+    grid-template-columns: 0fr 1fr;
+    grid-template-rows: 22vh 22vh 22vh 22vh;
+    grid-gap:0 0;
+    grid-template-areas:
+        "cta1 cta1"
+        "cta2 cta2"
+        "cta3 cta3"
+        "cta4 cta4";
+    justify-content:end;
+    align-content:end;
+    padding:0;
+    background-color:var(--white);
+    animation:rightIn 2s 1;
 }
-
+.cta1 {
+    grid-area:cta1;
+    background-color: darkred;
+}
+.cta2 {
+    grid-area:cta2;
+    background-color: darkred;
+}
+.cta3 {
+    grid-area:cta3;
+    background-color: darkred;
+}
+.cta4 {
+    grid-area:cta4;
+    background-color: darkred;
+}
+.cta1:hover,
+.cta2:hover,
+.cta3:hover,
+.cta4:hover {
+    width:100%;
+}
 .cta1,
 .cta2,
 .cta3,
 .cta4 {
-    width:100%;
-    height:22vh;
-    margin:0 auto;
-}
-.cta1 {
-    background-color: darkred;
-}
-.cta2 {
-    background-color: darkcyan;
-}
-.cta3 {
-    background-color: darkslategrey;
-}
-.cta4 {
-    background-color: darkcyan;
+    position:absolute;
+    right:0;
+    width:95%;
+    height:100%;
+    display:flex;
+    justify-content:start;
+    align-items:center;
 }
 
+
+
 nav {
+    position:relative;
+    top:0;
     grid-area:nav;
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:0 1vh 0 1vh;
     background-color:transparent;
-}
+    animation:topIn 2s 1;
+}   
 nav .nav-brand {
     width:5vh;
     display:flex;
 }
+nav .nav-brand a,
 nav .nav-brand img {
     min-width:100%;
     margin:0 auto;
@@ -281,6 +321,8 @@ nav .nav-links a:focus {
     transform:rotate(45deg) translate(-5px,-6px);
 }
 footer {
+    position:relative;
+    bottom:0;
     grid-area:footer;
     display:flex;
     justify-content:space-between;
@@ -289,6 +331,7 @@ footer {
     margin-top: 1vh;
     border-top:1px solid var(--gray3);
     background-color:transparent;
+    animation:bottomIn 2s 1;
 }
 footer .nav-brand {
     font-size:x-small;
@@ -515,6 +558,7 @@ input {
 @media screen and (max-width:1024px) {}
 @media screen and (max-width:768px) {}
 @media screen and (max-width:576px) {}
+
 @keyframes navLinkFade {
     from {
         opacity:0;
@@ -522,16 +566,46 @@ input {
     }
     to {
         opacity:1;
-        transform:translateX(0%);
+        transform:translateX(0);
     }
 }
-@keyframes slidein {
+@keyframes topIn {
     from {
         opacity:0;
-        margin-left:100%;
+        top:-100px;
     }
     to {
         opacity:1;
-        margin-left:0%;
+        top:0;
+    }
+}
+@keyframes rightIn {
+    from {
+        opacity:0;
+        right:-100%;
+    }
+    to {
+        opacity:1;
+        right:0;
+    }
+}
+@keyframes bottomIn {
+    from {
+        opacity:0;
+        bottom:-50px;
+    }
+    to {
+        opacity:1;
+        bottom:0;
+    }
+}
+@keyframes leftIn {
+    from {
+        opacity:0;
+        left:-100%;
+    }
+    to {
+        opacity:1;
+        left:0;
     }
 }
