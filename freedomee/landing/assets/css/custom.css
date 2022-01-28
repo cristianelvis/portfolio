@@ -34,7 +34,7 @@ html,
 body {
     position:relative;
     width:100vw;
-    min-height:100vh;
+    height:100vh;
     font-family:Arial, Helvetica, sans-serif;
     font-size:14px;
     font-weight:normal;
@@ -43,7 +43,6 @@ body {
     background-color:var(--gray5);
     overflow-x:hidden;
     overflow-y:auto;
-    background-color:red;
 }
 h1, .h1,
 h2, .h2,
