@@ -15,21 +15,21 @@
             <form action="" class="form-control">
                 <input type="text" placeholder="Nome de usuário" name="username">
                 <div class="input-group">
-                    <input type="password" placeholder="Sua senha" name="password" id="passSplash">
-                    <span class="input-group-text" onclick="seePass();openEye()"><i class="bi bi-eye-slash" id="see"></i></span>
+                    <input type="password" placeholder="Sua senha" name="password" id="passSplashMenu">
+                    <span class="input-group-text" onclick="seePassMenu();openEyeMenu()"><i class="bi bi-eye-slash" id="seeMenu"></i></span>
                 </div>
                 <button class="btn btn-input" type="button">Logar</button>
                 <script>
-                    function seePass() {
-                        var x = document.getElementById("passSplash");
+                    function seePassMenu() {
+                        var x = document.getElementById("passSplashMenu");
                         if (x.type === "password") {
                             x.type = "text";
                         } else {
                             x.type = "password";
                         }
                     }
-                    function openEye() {
-                        var element = document.getElementById("see");
+                    function openEyeMenu() {
+                        var element = document.getElementById("seeMenu");
                         element.classList.toggle("bi-eye");
                     }
                 </script>
