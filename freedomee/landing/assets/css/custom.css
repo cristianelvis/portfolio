@@ -674,12 +674,15 @@ a:active {
         background:transparent;
         display:grid;
     }
-    .section003 .anthropic-content,
-    .section003 .economic-content,
-    .section003 .human-content,
-    .section003 .quality-content,
-    .section003 .technology-content {
-        color: var(--gray1);
+    .section003 .anthropic:hover .anthropic-content,
+    .section003 .economic:hover .economic-content,
+    .section003 .human:hover .human-content,
+    .section003 .quality:hover .quality-content,
+    .section003 .technology:hover .technology-content {
+        color:var(--gray1);
+    }
+    .section003 .contentHide {
+        display:flex;
     }
     #sobrenos main .section005 {
         grid-area:section005;
