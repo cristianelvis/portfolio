@@ -367,7 +367,7 @@ a:active {
     display:flex;
     flex-direction:column;
     justify-content:end;
-    padding:0 0 5vh 10vh;
+    padding:0 0 6vh 10vh;
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 20%, transparent 0%);
 }
 #sobrenos main .section002 .left .brand {
@@ -382,25 +382,6 @@ a:active {
     padding:25vh 25vh 0 0;
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 20%, transparent 0%);
 }
-
-
-#sobrenos main .section005 {
-    position:relative;
-    top:-6vh;
-    border-top:6vh solid black;
-    grid-area:section005;
-    width:100%;
-    height:100vh;
-    display:flex;
-    background-image:url(../images/backgroundSection003-min.png);
-    background-position:center center;
-    background-repeat:no-repeat;
-    background-size:cover;
-    z-index:0;
-}
-
-
-
 #sobrenos main .section003 {
     position:relative;
     top:-2vh;
@@ -614,6 +595,44 @@ a:active {
     background-color:var(--violet);
     z-index:0;
 }
+#sobrenos main .section005 {
+    position:relative;
+    top:-6vh;
+    border-top:6vh solid black;
+    grid-area:section005;
+    width:100%;
+    height:100vh;
+    display:flex;
+    background-image:url(../images/backgroundSection003-min.png);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    z-index:0;
+}
+#sobrenos main .section005 .left {
+    width:50%;
+    height:94vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:start;
+    padding:25vh 0 0 10vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 20%, transparent 0%);
+    color: var(--gray5);
+}
+#sobrenos main .section005 .right {
+    width:50%;
+    height:94vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:end;
+    align-items:end;
+    padding:0 10vh 6vh 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 20%, transparent 0%);
+    color: var(--gray5);
+}
+#sobrenos main .section005 .right .brand {
+    width: 25vh;
+}
 @media screen and (max-width:768px) {
     #sobrenos main .section001 {
         height:100vh;
@@ -633,7 +652,7 @@ a:active {
     }
     #sobrenos main .section002 .left {
         width:100%;
-        height:38vh;
+        height:40vh;
         display:flex;
         flex-direction:column;
         justify-content:end;
@@ -686,16 +705,45 @@ a:active {
     .section003 .contentHide {
         display:flex;
     }
+    #sobrenos main .section004 {
+        top:-2vh;
+        padding:0 5vh 0 5vh;
+    }
     #sobrenos main .section005 {
+        top:-2vh;
         grid-area:section005;
         width:100%;
         height:auto;
         display:flex;
         flex-direction:column;
         background-image:url(../images/backgroundSection003-min.png);
-        background-position:top left;
+        background-position-y:top;
+        background-position-x:90%;
         background-repeat:no-repeat;
-        background-size:210%;
+        background-size:200%;
+    }
+    #sobrenos main .section005 .left {
+        position:relative;
+        top:40vh;
+        width:100%;
+        height:60vh;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        padding:0 5vh 0 5vh;
+        color: var(--gray1);
+        background: unset;
+    }
+    #sobrenos main .section005 .right {
+        position:relative;
+        top:-60vh;
+        width:100%;
+        height:40vh;
+        display:flex;
+        flex-direction:column;
+        justify-content:end;
+        align-items:center;
+        padding:0;
     }
 
 }
