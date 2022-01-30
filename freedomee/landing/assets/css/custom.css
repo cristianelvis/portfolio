@@ -368,6 +368,7 @@ a:active {
     flex-direction:column;
     justify-content:end;
     padding:0 0 5vh 10vh;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 20%, transparent 0%);
 }
 #sobrenos main .section002 .left .brand {
     width: 25vh;
@@ -379,6 +380,7 @@ a:active {
     flex-direction:column;
     justify-content:start;
     padding:25vh 25vh 0 0;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 20%, transparent 0%);
 }
 
 
@@ -637,7 +639,6 @@ a:active {
         justify-content:end;
         align-items:center;
         padding:0;
-        background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 20%, transparent 0%);
     }
     #sobrenos main .section002 .right {
         width:100%;
