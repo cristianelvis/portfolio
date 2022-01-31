@@ -309,14 +309,16 @@ a:active {
 #sobrenos main {
     grid-area:conten;
     display:grid;
-    grid-template-columns:5fr 1fr;
+    grid-template-columns:6fr 1fr;
     grid-template-rows:auto;
     grid-template-areas:
         "section001 section001"
         "section002 section002"
         "section003 section003"
         "section004 section004"
-        "section005 section005";
+        "section005 section005"
+        "section006 section006"
+        "section007 section007";
     position:relative;
     top:0;
     padding:0;
@@ -395,7 +397,8 @@ a:active {
     text-align:center;
     z-index:1;
 }
-.section003 .mediator {
+.section003 .mediator,
+.section006 .value {
     width:17.5vw;
     height:60vh;
     color:var(--white);
@@ -407,7 +410,8 @@ a:active {
     cursor:pointer;
     transition:all 0.9s ease-in-out;
 }
-.section003 .mediator:hover {
+.section003 .mediator:hover,
+.section006 .value:hover {
     color:var(--gray1);
     padding:0 6vh 10vh 6vh;
 }
@@ -633,6 +637,144 @@ a:active {
 #sobrenos main .section005 .right .brand {
     width: 25vh;
 }
+#sobrenos main .section006 {
+    position:relative;
+    top:-8vh;
+    grid-area:section006;
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    z-index:1;
+}
+.section006 .value1 {
+    background:linear-gradient(0deg, rgba(65, 62, 62, 0.5), rgba(65, 62, 62, 0.5)),url(../images/value1-min.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+    border-radius:1.5vh 0 0 1.5vh;
+}
+.section006 .value1:hover,
+.section006 .value1-content {
+    background:linear-gradient(0deg, rgba(246, 246, 246, 0.8), rgba(246, 246, 246, 0.8)),url(../images/value1-min.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+.section006 .value2 {
+    background:linear-gradient(0deg, rgba(65, 62, 62, 0.5), rgba(65, 62, 62, 0.5)),url(../images/value2-min.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+.section006 .value2:hover,
+.section006 .value2-content {
+    background:linear-gradient(0deg, rgba(246, 246, 246, 0.8), rgba(246, 246, 246, 0.8)),url(../images/value2-min.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+.section006 .value3 {
+    background:linear-gradient(0deg, rgba(65, 62, 62, 0.5), rgba(65, 62, 62, 0.5)),url(../images/value3-min.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+.section006 .value3:hover,
+.section006 .value3-content {
+    background:linear-gradient(0deg, rgba(246, 246, 246, 0.8), rgba(246, 246, 246, 0.8)),url(../images/value3-min.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+.section006 .value4 {
+    background:linear-gradient(0deg, rgba(65, 62, 62, 0.5), rgba(65, 62, 62, 0.5)),url(../images/value4-min.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+.section006 .value4:hover,
+.section006 .value4-content {
+    background:linear-gradient(0deg, rgba(246, 246, 246, 0.8), rgba(246, 246, 246, 0.8)),url(../images/value4-min.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+.section006 .value5 {
+    background:linear-gradient(0deg, rgba(65, 62, 62, 0.5), rgba(65, 62, 62, 0.5)),url(../images/value5-min.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+    border-radius:0 1.5vh 1.5vh 0;
+}
+.section006 .value5:hover,
+.section006 .value5-content {
+    background:linear-gradient(0deg, rgba(246, 246, 246, 0.8), rgba(246, 246, 246, 0.8)),url(../images/value5-min.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+.section006 .value1-content,
+.section006 .value2-content,
+.section006 .value3-content,
+.section006 .value4-content,
+.section006 .value5-content {
+    position:absolute;
+    top:0;
+    width:17.5vw;
+    height:60vh;
+    color:var(--gray1);
+    font-weight:normal;
+    justify-content:center;
+    align-items:center;
+    padding:4vh;
+    margin:0 0 0 -6vh;
+    border-radius:0;
+    z-index:2;
+}
+.section006 .value1-content {
+    border-radius:1.5vh 0 0 1.5vh;
+}
+.section006 .value5-content {
+    border-radius:0 1.5vh 1.5vh 0;
+}
+.section006 .value1-content:hover,
+.section006 .value2-content:hover,
+.section006 .value3-content:hover,
+.section006 .value4-content:hover,
+.section006 .value5-content:hover {
+    color:var(--gray1);
+    font-weight:normal;
+}
+.section006 .contentHide {
+    display:none;
+}
+.section006 .contentShow {
+    display:block;
+}
+#sobrenos main .section007 {
+    grid-area:section007;
+    width:100%;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background-image:url(../images/backgroundSectionSubscribe-min.png);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    z-index:0;
+}
+#sobrenos main .section007 .brand  {
+    width:30vh;
+    margin-top:10vh;
+    margin-bottom:10vh;
+}
 @media screen and (max-width:768px) {
     #sobrenos main .section001 {
         height:100vh;
@@ -745,8 +887,55 @@ a:active {
         align-items:center;
         padding:0;
     }
-
+    #sobrenos main .section006 {
+        flex-direction:column;
+    }
+    .section006 .value {
+        width:100%;
+        margin:0;
+    }
+    .section006 .value1,
+    .section006 .value2,
+    .section006 .value3,
+    .section006 .value4,
+    .section006 .value5 {
+        border-radius:0;
+    }
+    .section006 .value1-content,
+    .section006 .value2-content,
+    .section006 .value3-content,
+    .section006 .value4-content,
+    .section006 .value5-content {
+        position:relative;
+        top:0;
+        width:100vw;
+        height:20vh;
+        color:var(--white);
+        border-radius:0;
+        background:transparent;
+        display:grid;
+    }
+    .section006 .value1:hover .value1-content,
+    .section006 .value2:hover .value2-content,
+    .section006 .value3:hover .value3-content,
+    .section006 .value4:hover .value4-content,
+    .section006 .value5:hover .value5-content {
+        color:var(--gray1);
+    }
+    .section006 .contentHide {
+        display:flex;
+    }
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
