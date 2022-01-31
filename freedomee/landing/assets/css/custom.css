@@ -102,18 +102,21 @@ a:active {
 .Show {
     display:block;
 }
-#home {
+#home,
+#inscrevase {
     padding:0 6vh 0 6vh;
     overflow-x:hidden;
     overflow-y:hidden;
 }
 @media screen and (max-width:768px) {
-    #home {
+    #home,
+    #inscrevase {
         padding:0;
         overflow-y:auto;
     }
 }
 #home .container,
+#inscrevase .container,
 #sobrenos .container,
 #termodeuso .container,
 #contato .container {
@@ -127,7 +130,8 @@ a:active {
         "conten conten"
         "footer footer";
 }
-#home main {
+#home main,
+#inscrevase main {
     grid-area:conten;
     display:grid;
     grid-template-columns:1fr 1fr;
@@ -136,7 +140,8 @@ a:active {
         "left right";
 }
 @media screen and (max-width:768px) {
-     #home main {
+     #home main,
+     #inscrevase main {
         grid-area:conten;
         display:grid;
         grid-template-columns:1fr 1fr;
@@ -145,64 +150,78 @@ a:active {
             "right right";
     }   
 }
-#home main .left {
+#home main .left,
+#inscrevase main .left {
     position:relative;
     left:0;
     height:auto;
     grid-area:left;
     display:flex;
-    flex-direction: column;
+    flex-direction:column;
     justify-content:center;
     align-content:center;
-    padding: 10vh 12vw 10vh 12vw;
+    text-align:center;
+    padding:10vh 12vw 10vh 12vw;
     background-color:var(--white);
     animation:leftIn 2s 1;
 }
-#home main .left .brand {
+#home main .left .brand,
+#inscrevase main .left .brand {
     width:100%;
     margin:0 auto 1rem auto;
 }
-#home main .left h1 {
+#home main .left h1,
+#inscrevase main .left h1 {
     width:100%;
     margin:0 auto 6vh auto;
     text-align:center;
 }
-#home main .left .form-control {
+#home main .left .form-control,
+#inscrevase main .left .form-control {
     width:100%;
     margin:0 auto;
     display:grid;
 }
 #home main .left p,
-#home main .left a {
+#home main .left a,
+#inscrevase main .left p,
+#inscrevase main .left a {
     text-align:center;
 }
-#home main .left .fp {
+#home main .left .fp,
+#inscrevase main .left .fp {
     color:var(--gray1);
     font-weight:bold;
     text-decoration:none;
     text-align:right;
     margin-top:1vmin;
 }
-#home main .left .fp:hover {
+#home main .left .fp:hover,
+#inscrevase main .left .fp:hover {
     color:var(--violet);
     text-decoration:underline;
 }
-#home main .left p {
+#home main .left p,
+#inscrevase main .left p {
     margin-top:6vh;
 }
 @media screen and (max-width:768px) {
-    #home main .left {
+    #home main .left,
+    #inscrevase main .left {
         padding:10vh 21vh;
     }
-    #home main .left .brand {
+    #home main .left .brand,
+    #inscrevase main .left .brand {
         width:50%;
     }
 }
 @media screen and (max-width:576px) {
-    #home main .left {
+    #home main .left,
+    #inscrevase main .left {
         padding:10vh 8vh;
     }
-    #home main .left .brand {
+    #home main .left .brand,
+    #inscrevase main .left .brand {
         width:100%;
     }
 }
@@ -224,6 +243,20 @@ a:active {
     align-content:end;
     padding:0;
     background-color:var(--white);
+    animation:rightIn 2s 1;
+}
+#inscrevase main .right {
+    position:relative;
+    right:0;
+    height:auto;
+    grid-area:right;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-content:center;
+    text-align:center;
+    padding:10vh 12vw 10vh 12vw;
+    background-color: var(--gray3);
     animation:rightIn 2s 1;
 }
 #cta1 {
@@ -1012,7 +1045,6 @@ nav .nav-links {
 }
 nav .nav-links li {
     list-style:none;
-    padding:0 2vh 0 2vh;
     transition:all 0.15s ease-in-out;
 }
 nav .nav-links a {
@@ -1021,6 +1053,7 @@ nav .nav-links a {
     color:var(--gray1);
     font-weight:normal;
     text-decoration:none;
+    padding:1vh 1.5vw 1vh 1.5vw;
     margin-bottom:0;
     transition:all 0.15s ease-in-out;
 }
@@ -1289,7 +1322,22 @@ input {
     background-color:var(--gray4);
     border:1px solid var(--gray4);
 }
-
+.inputleft,
+.inputright {
+    width:46.9%!important;
+    margin:0 0.9vh 2vh 0!important;
+    display:inline-block;
+}
+.inputright {
+    margin-right:0 0 2vh 0;
+}
+@media screen and (max-width:768px) {
+    .inputleft,
+    .inputright {
+        width:100%!important;
+        margin:0 0 2vh 0!important;
+    }
+}
 .input-group {
     position:relative;
     display:flex;
@@ -1393,6 +1441,22 @@ input {
 .btn-secondary:active {
     font-size:1.2rem;
     color:var(--gray1);
+    background-color:var(--yellow);
+    text-shadow:unset;
+    box-shadow:unset;
+}
+.btn-nav {
+    font-weight:bold!important;
+    background-color:var(--gray3);
+    border-radius:0.5vh;
+}
+.btn-nav:hover {
+    color:var(--gray5)!important;
+    background-color:var(--violet);
+    text-shadow:2px 2px 2px rgba(0, 0, 0, 0.25);
+    box-shadow:2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+.btn-nav:active {
     background-color:var(--yellow);
     text-shadow:unset;
     box-shadow:unset;

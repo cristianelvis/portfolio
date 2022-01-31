@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="CristianElvis">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="../assets/images/favicon.png">
+        <meta name="theme-color" content="#ffffff">
+        <title>Inscreva-se! - Freedomee | Plataforma digital que gera negócios</title>
+        <link rel="manifest" href="../manifest.json">
+        <link rel="icon" href="../assets/images/favicon.ico">
+        <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+        <link rel="apple-touch-icon" type="image/png" href="../assets/images/favicon.png">
+        <link rel="stylesheet" href="../assets/css/bootstrap-icons.css">
+        <link rel="stylesheet" href="../assets/css/custom.css">
+        <script src="../assets/js/jquery.js"></script>
+        <script src="../assets/js/scripts.js"></script>
+    </head>
+    <body id="inscrevase">
+        <div class="container">
+            <nav id="navtop"></nav>
+            <main>
+                <div class="left">
+                    <img src="../assets/images/logotipo.svg" class="brand" alt="Junte-se a nós em uma economia colaborativa.">
+                    <h1>Junte-se a nós em uma economia colaborativa.</h1>
+                    <form action="" class="form-control">
+                        <input type="text" placeholder="Nome de usuário" name="username">
+                        <div class="input-group">
+                            <input type="password" placeholder="Sua senha" name="password" id="passSplash">
+                            <span class="input-group-text" onclick="seePass();openEye()"><i class="bi bi-eye-slash" id="see"></i></span>
+                            <button class="btn btn-input" type="button">Logar</button>
+                        </div>
+                        <script>
+                            function seePass() {
+                                var x = document.getElementById("passSplash");
+                                if (x.type === "password") {
+                                    x.type = "text";
+                                } else {
+                                    x.type = "password";
+                                }
+                            }
+                            function openEye() {
+                                var element = document.getElementById("see");
+                                element.classList.toggle("bi-eye");
+                            }
+                        </script>
+                        <a href="#" class="fp">Esqueceu a senha?</a>
+                        
+                    </form>
+                </div>
+                <div class="right">
+                    <form action="" class="form-control">
+                        <h4>Criar uma nova conta</h4>
+                        <input type="text" placeholder="Insira o seu endereço de email" name="subscribeEmailUser">
+                        <input type="text" placeholder="Insira o seu nome de usuário" name="subscribeUserName">
+                        <input type="text" placeholder="Insira o seu código postal" name="subscribeZipcode">
+                        <input type="text" placeholder="Sua senha" name="subscribePassword" class="inputleft">
+                        <input type="text" placeholder="Confirme a senha" name="subscribePasswordConfirm" class="inputright">
+                        <input type="text" placeholder="Nome de usuário" name="username">
+                        <button class="btn btn-primary" type="button">Criar conta!</button>
+                    </form>
+                </div>
+            </main>
+            <footer id="navbottom"></footer>
+        </div>
+        <script src="../assets/js/scripts-body.js"></script>
+    </body>
+</html>
