@@ -1543,6 +1543,7 @@ input[type=checkbox]:checked:after {
     from {
         opacity:0;
         top:-100px;
+        height:50%;
     }
     to {
         opacity:1;
