@@ -520,7 +520,6 @@ a:active {
 .section006 .value:hover #valueFiveContent1 {
     color:var(--gray1);
     padding:0 6vh 10vh 6vh;
-    
 }
 #economicContent1,
 #humanContent1,
@@ -556,6 +555,7 @@ a:active {
     justify-content:center;
     align-items:center;
     background-color:rgba(255, 255, 255, 0.8);
+    border-radius:0;
     animation:topIn 2s 1;
 }
 #economicContent2,
@@ -565,6 +565,14 @@ a:active {
 #qualityContent2,
 #valueFiveContent2 {
     border-radius:0 1.5vh 1.5vh 0;
+}
+@media screen and (max-width:768px) {
+    #economicContent2,
+    #valueOneContent2,
+    #qualityContent2,
+    #valueFiveContent2 {
+        border-radius:0;
+    }
 }
 .section003 .mediator .icon {
     width:10vh;
