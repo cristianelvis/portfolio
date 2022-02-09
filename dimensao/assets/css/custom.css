@@ -576,7 +576,7 @@ video {
 
 /* WAVES */
 .waves {
-    background-color:red;
+    background-color:var(--cor1);
 }
 #wavesIntro.page-section {
     width:100%;
@@ -619,7 +619,11 @@ video {
 	background-color:var(--cor2);
 }
 #wavesTwo.page-section {
-	background-color:black;
+	background-color:var(--cor1);
+    background-image:url(../images/pattern01.png);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
 }
 #wavesOne p,
 #wavesTwo p,
@@ -649,6 +653,8 @@ video {
     background-repeat:no-repeat;
     background-size:cover;
 }
+#wavesIntro h1,
+#wavesTwo h1,
 #wavesFour h1 {
     color:white;
 }
