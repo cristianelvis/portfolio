@@ -590,11 +590,14 @@ video {
     justify-content:center;
     align-items:center;
 }
-#wavesIntro img,
-#wavesFour img {
+#wavesIntro img {
 	width:50%;
 	margin:0 auto;
 	margin-bottom:2rem;
+}
+#wavesFour img {
+	width:50%;
+	margin:0 auto;
 }
 #wavesIntro h1,
 #wavesOne h1,
