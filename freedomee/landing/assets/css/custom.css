@@ -53,10 +53,6 @@ body {
         "main main"
         "foot foot";
 }
-body#inicio,
-body#inscrevase {
-    grid-template-rows:8vh 85.9vh 5vh;
-}
 h1, .h1,
 h2, .h2,
 h3, .h3,
@@ -116,6 +112,7 @@ menu {
     position:relative;
     top:0;
     grid-area:menu;
+    animation:topIn 2s 1;
 }
 main {
     position:relative;
@@ -128,6 +125,7 @@ foot {
     position:relative;
     bottom:0;
     grid-area:foot;
+    animation:bottomIn 2s 1;
 }
 #navtop .navbar {
     animation:topIn 2s 1;
@@ -138,7 +136,7 @@ foot {
 .navbar {
     padding-top:0.6vh;
     padding-bottom:0.3vh;
-    background-color:var(--gray5);
+    background-color:var(--gray5);  
 }
 .navbar-brand,
 foot .navbar-brand {
@@ -512,7 +510,7 @@ input[type=checkbox]:checked:after {
 #inicio .content .right {
     position:relative;
     left:0;
-    min-height:87vh;
+    min-height:84.5vh;
     display: grid;
     flex-direction:column;
     justify-content:center;
@@ -598,7 +596,7 @@ input[type=checkbox]:checked:after {
     position:absolute;
     right:0;
     width:95%;
-    height:21.75vh;
+    height:21.125vh;
     color:var(--white);
     font-size:1.2rem;
     font-weight:bold;
@@ -621,13 +619,13 @@ input[type=checkbox]:checked:after {
     top:0;
 }
 #cta2 {
-    top:21.75vh;
+    top:21.125vh;
 }
 #cta3 {
-    top:43.5vh;
+    top:42.25vh;
 }
 #cta4 {
-    top:65.25vh;
+    top:63.375vh;
 }
 #cta1:hover,
 #cta2:hover,
@@ -676,7 +674,7 @@ input[type=checkbox]:checked:after {
 #inscrevase .content .right {
     position:relative;
     left:0;
-    min-height:87vh;
+    min-height:84.5vh;
     display: grid;
     flex-direction:column;
     justify-content:center;
