@@ -46,12 +46,16 @@ body {
     display:grid;
     align-items:start;
     grid-template-columns:3fr 1fr;
-    grid-template-rows: 8vh auto 5vh;
+    grid-template-rows:8vh auto 5vh;
     grid-gap:0 0;
     grid-template-areas:
         "menu menu"
         "main main"
         "foot foot";
+}
+body#inicio,
+body#inscrevase {
+    grid-template-rows:8vh 85.9vh 5vh;
 }
 h1, .h1,
 h2, .h2,
@@ -112,7 +116,6 @@ menu {
     position:relative;
     top:0;
     grid-area:menu;
-    animation:topIn 2s 1;
 }
 main {
     position:relative;
@@ -125,13 +128,17 @@ foot {
     position:relative;
     bottom:0;
     grid-area:foot;
+}
+#navtop .navbar {
+    animation:topIn 2s 1;
+}
+#navbottom .navbar {
     animation:bottomIn 2s 1;
 }
 .navbar {
     padding-top:0.6vh;
     padding-bottom:0.3vh;
     background-color:var(--gray5);
-    animation:topIn 2s 1;
 }
 .navbar-brand,
 foot .navbar-brand {
@@ -2070,7 +2077,7 @@ input[type=checkbox]:checked:after {
 @keyframes bottomIn {
     from {
         opacity:0;
-        bottom:-50px;
+        bottom:-100px;
     }
     to {
         opacity:1;
