@@ -1803,7 +1803,7 @@ input[type=checkbox]:checked:after {
 #card-title5 {
     font-size:3.2vh;
     line-height:3.8vh;
-    font-weight:900;
+    font-weight:bold;
     transition:all .5s ease;
 }
 #card-content1,
@@ -1812,6 +1812,13 @@ input[type=checkbox]:checked:after {
 #card-content4,
 #card-content5 {
     position:relative;
+}
+#card-content1:hover,
+#card-content2:hover,
+#card-content3:hover,
+#card-content4:hover,
+#card-content5:hover {
+    font-weight:bold;
 }
 #card-card1 {
     top:-5vh;
@@ -1931,11 +1938,19 @@ input[type=checkbox]:checked:after {
     #video3Content2 {
         display:none;    
     }
+    #primeirospassos .section003 {
+        flex-direction:column;
+    }
     #primeirospassos .section003 .left {
         width:100%;
+        height: auto;
+        display: inline-block;
     }
     #primeirospassos .section003 .right {
         width:100%;
+        height:auto;
+        padding: 0 0 0 0;
+        display: inline-block;
     }
 }
 /* TERMO DE USO */
