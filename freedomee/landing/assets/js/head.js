@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("#navtop").load("../inicio/_nav-top.html");
-    $("#navbottom").load("../inicio/_nav-bottom.html");
-    $("#modal").load("../inicio/_modal.html");
+    $("#navtop").load("../sobrenos/_nav-top.html");
+    $("#navbottom").load("../sobrenos/_nav-bottom.html");
+    $("#modal").load("../sobrenos/_modal.html");
 });
