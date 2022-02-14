@@ -2073,6 +2073,44 @@ input[type=checkbox]:checked:after {
     overflow-x:hidden;
     overflow-y:auto;
 }
+.modalFreedomeeUser .table {
+    margin-bottom:6vh;
+}
+.modalFreedomeeUser .pad1 {
+    padding:0.5rem 0.5rem 0.5rem 3rem;
+}
+.modalFreedomeeUser .pad2 {
+    padding:0.5rem 0.5rem 0.5rem 6rem;
+}
+.modalFreedomeeUser tr th {
+    text-align:left;
+    font-weight:300;
+}
+.modalFreedomeeUser .thright {
+    text-align:right;
+}
+.modalFreedomeeUser .table-hover tr:hover,
+.modalFreedomeeUser .table-hover tr:hover > .thright,
+.modalFreedomeeUser .table-hover tr:hover > th {
+    color:var(--amarelo);
+    background-color:var(--verde);
+    transition:all .5s ease;
+}
+.modalFreedomeeUser .grafico01 {
+    width:100%;
+    margin:0 auto;
+    transition:all .5s ease;
+}
+.modalFreedomeeUser .grafico02,
+.modalFreedomeeUser .grafico03,
+.modalFreedomeeUser .grafico04,
+.modalFreedomeeUser .grafico05,
+.modalFreedomeeUser .grafico06,
+.modalFreedomeeUser .grafico07 {
+    width:100%;
+    margin:0 auto;
+    transition:all .5s ease;
+}
 @keyframes topIn {
     from {
         opacity:0;
