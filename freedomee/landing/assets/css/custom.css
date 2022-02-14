@@ -4,20 +4,22 @@
  * Copyright 2022 Cristian Elvis
  */
  :root {
+    --orange:#fc6c4f;
+    --orange-light:#fda795;
     --yellow:#feff01;
     --yellow-light:#ffff99;
-    --red:#ff3657;
+    --red:#DD2842;
     --red-light:#ffafbc;
-    --green:#13c2a5;
+    --green:#22B573;
     --green-light:#a1e7db;
-    --blue:#7495da;
+    --blue:#013183;
     --blue-dark:#1d2436;
     --blue-light:#c7d5f0;
     --violet:#cc9afd;
     --violet-light:#ebd7fe;
     --lavander:#f3e3fd;
     --lavander-light:#faf4fe;
-    --black:#000000;
+    --black:#0A0A0A;
     --gray1:#413e3e;
     --gray2:#626060;
     --gray3:#c4c4c4;
@@ -182,7 +184,7 @@ foot .navbar-brand {
     background-color:var(--gray3);
 }
 .dropdown-item:hover {
-    color:var(--yellow);
+    color:var(--orange);
     top:-0.6vh;
     background-color:var(--gray3);
 }
@@ -250,7 +252,7 @@ foot .navbar-brand {
 .btn-secondary:active {
     font-size:1.2rem;
     color:var(--gray1);
-    background-color:var(--yellow);
+    background-color:var(--orange);
     text-shadow:none;
     box-shadow:none;
 }
@@ -266,7 +268,7 @@ foot .navbar-brand {
     box-shadow:2px 2px 2px rgba(0, 0, 0, 0.25);
 }
 .btn-nav:active {
-    background-color:var(--yellow);
+    background-color:var(--orange);
     text-shadow:none;
     box-shadow:none;
 }
@@ -288,7 +290,7 @@ foot .navbar-brand {
 }
 .btn-input:active {
     color:var(--gray1);
-    background-color:var(--yellow);
+    background-color:var(--orange);
     text-shadow:unset;
 }
 .btn-see {
@@ -333,7 +335,7 @@ foot .navbar-brand {
 }
 .btn-close:hover {
     font-size:130%;
-    color:var(--yellow);
+    color:var(--orange);
     text-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
 }
 .btn-close:active,
@@ -465,7 +467,7 @@ input[type=checkbox]:checked:after {
     cursor:pointer;
 }
 .check label:before {
-    background-color:var(--yellow);
+    background-color:var(--orange);
     color:var(--gray5);
     content:" ";
     display:block;
@@ -632,7 +634,7 @@ input[type=checkbox]:checked:after {
 #cta3:hover,
 #cta4:hover {
     width:100%;
-    color:var(--yellow);
+    color:var(--orange);
     font-size:150%;
     text-decoration:none;
     padding:0 0 0 10%;
@@ -775,7 +777,7 @@ input[type=checkbox]:checked:after {
 }
 #sobrenos .btn-close:hover {
     font-size:130%;
-    color:var(--yellow);
+    color:var(--orange);
     text-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
 }
 #sobrenos .btn-close:active,
@@ -1707,7 +1709,7 @@ input[type=checkbox]:checked:after {
 }
 #primeirospassos .btn-close:hover {
     font-size:130%;
-    color:var(--yellow);
+    color:var(--orange);
     text-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
 }
 #primeirospassos .btn-close:active,
@@ -1803,7 +1805,7 @@ input[type=checkbox]:checked:after {
 #video1Content1 b,
 #video2Content1 b,
 #video3Content1 b {
-    color:var(--yellow);
+    color:var(--orange);
     font-size:130%;
 }
 #primeirospassos .section003 {
