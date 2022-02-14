@@ -1507,7 +1507,7 @@ input[type=checkbox]:checked:after {
 }
 #eusoufreedomeeuser .modal-body .right {
     height:100vh;
-    padding:6vh;
+    padding:6vh 3vh 3vh 3vh;
     overflow-x:hidden;
     overflow-y:scroll;
 }
@@ -1515,7 +1515,7 @@ input[type=checkbox]:checked:after {
 #eusoufreedomeeuser .table-right {
     width:50%;
     height:45vh;
-    padding:6vh 0 6vh 6vh;
+    padding:6vh 0 6vh 3vh;
     background-color:var(--violet-light);
     display:inline-flex;
     flex-direction:column;
