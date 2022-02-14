@@ -19,7 +19,33 @@
         <link rel="stylesheet" href="assets/css/custom.css">
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/head.js"></script>
-        <meta http-equiv="refresh" content="0;url=sobrenos/" />
+        <script>
+            const sites = {
+                'pt': 'sobrenos/',
+                'en': 'aboutus/',
+                'es': 'sobrenosotros/'
+            };
+            var lang = navigator.language || navigator.userLanguage;
+            lang = lang.toLowerCase();
+            lang = lang.substr(0,2);
+
+            if(lang == 'undefined') {
+                window.location.replace(sites["en"]);
+            } else
+            if(lang == 'pt') {
+                window.location.replace(sites[lang]);
+            } else
+            if(lang == 'en') {
+                window.location.replace(sites[lang]);
+            } else
+            if(lang === 'es') {
+                window.location.replace(sites[lang]);
+            }
+            else
+            {
+                window.location.replace(sites["en"]);
+            }
+        </script>
     </head>
     <body id="redirect">
 
