@@ -825,7 +825,7 @@ input[type=checkbox]:checked:after {
     justify-content:center;
     align-items:center;
     text-align:center;
-    background-color:var(--gray4);
+    background-color:var(--violet);
     z-index:1;
 }
 #sobrenos .section003 .mediator,
@@ -1034,8 +1034,8 @@ input[type=checkbox]:checked:after {
 }
 #sobrenos .section004 {
     width:100%;
-    height:60vh;
-    padding: 0 70vh 0 10vh;
+    height:auto;
+    padding:5vh 70vh 5vh 10vh;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -1051,7 +1051,7 @@ input[type=checkbox]:checked:after {
     background-position:center center;
     background-repeat:no-repeat;
     background-size:cover;
-    background-color: var(--black);
+    background-color:var(--black);
     z-index:0;
 }
 #sobrenos .section005 .left {
