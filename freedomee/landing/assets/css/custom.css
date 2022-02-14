@@ -129,10 +129,14 @@ foot {
     grid-area:foot;
     animation:bottomIn 2s 1;
 }
-#navtop .navbar {
+#navtop .navbar,
+#navtopen .navbar,
+#navtopes .navbar {
     animation:topIn 2s 1;
 }
-#navbottom .navbar {
+#navbottom .navbar,
+#navbottomen .navbar,
+#navbottomes .navbar {
     animation:bottomIn 2s 1;
 }
 .navbar {
@@ -816,7 +820,7 @@ input[type=checkbox]:checked:after {
     padding:25vh 25vh 0 0;
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 20%, transparent 0%);
 }
-#sobrenos .section002 .right h4 {
+#sobrenos .section002 .right h1 {
     font-weight:bold;
 }
 #sobrenos .section003 {
@@ -1810,11 +1814,21 @@ input[type=checkbox]:checked:after {
 }
 #primeirospassos .section003 {
     width:100%;
+    padding-top:3vh;
+    padding-bottom:3vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+#primeirospassos .section004 {
+    width:100%;
     height:auto;
     display:flex;
     z-index:0;
 }
-#primeirospassos .section003 .left {
+#primeirospassos .section004 .left {
     width:50%;
     height:100vh;
     display:flex;
@@ -1824,7 +1838,7 @@ input[type=checkbox]:checked:after {
     text-align:center;
     padding:0;
 }
-#primeirospassos .section003 .right {
+#primeirospassos .section004 .right {
     width:50%;
     height:100vh;
     display:flex;
@@ -1834,13 +1848,13 @@ input[type=checkbox]:checked:after {
     text-align:start;
     padding:0 30vh 0 0;
 }
-#primeirospassos .section003 .right .table {
+#primeirospassos .section004 .right .table {
     color:var(--gray1);
 }
-#primeirospassos .section003 .right .table > tbody > tr > td:first-child {
+#primeirospassos .section004 .right .table > tbody > tr > td:first-child {
     position:relative;
 }
-#primeirospassos .section003 .right .table > tbody > tr > td:first-child span {
+#primeirospassos .section004 .right .table > tbody > tr > td:first-child span {
     position:absolute;
     left:0;
     right:0;
@@ -1993,15 +2007,15 @@ input[type=checkbox]:checked:after {
     #video3Content2 {
         display:none;    
     }
-    #primeirospassos .section003 {
+    #primeirospassos .section004 {
         flex-direction:column;
     }
-    #primeirospassos .section003 .left {
+    #primeirospassos .section004 .left {
         width:100%;
         height: auto;
         display: inline-block;
     }
-    #primeirospassos .section003 .right {
+    #primeirospassos .section004 .right {
         width:100%;
         height:auto;
         padding: 0 0 0 0;
@@ -2113,9 +2127,9 @@ input[type=checkbox]:checked:after {
 /* MODAIS */
 #eusoufreedomeeuser .modal-body,
 #sobrenosManifesto .modal-body,
-#video1br .modal-body,
-#video2br .modal-body,
-#video3br .modal-body {
+#video1 .modal-body,
+#video2 .modal-body,
+#video3 .modal-body {
     height:100%;
     padding:0;
     overflow-x:hidden;
