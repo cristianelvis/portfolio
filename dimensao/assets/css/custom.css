@@ -85,7 +85,7 @@ body {
 	color:var(--white);
 	font-weight:900;
 }
-b, strong {
+b, .strong {
     font-weight:900;
 }
 .bg-dark {
@@ -426,6 +426,12 @@ video {
 	width:100%;
 	margin:0 auto;
 }
+/* remove borda dos botões */
+.btn:focus,.btn:active:focus,.btn.active:focus,
+.btn.focus,.btn:active.focus,.btn.active.focus {
+    outline:none;
+    box-shadow:none;
+}
 .btn-24h {
 	width:20rem;
 	padding:1rem 0 1rem 0;
@@ -563,24 +569,14 @@ video {
     width:100%;
     margin:0 auto;
 }
-
-@media (max-width:320px) {
-    #quemSomosMissao {
-        padding:3rem 0 0 0;
-        height:45rem;
-    }
-    #footer a img {
-        width:50%;
-    }
-}
-
 /* WAVES */
 .waves {
     background-color:var(--cor1);
 }
-#wavesIntro.page-section {
+#wavesIntro.page-section,
+#wavesFive.page-section {
     width:100%;
-    height:95vh;
+    height:auto;
     background-image:url(../images/waves/section1-background.png);
     background-position:center center;
     background-repeat:no-repeat;
@@ -588,83 +584,80 @@ video {
     display:flex;
     flex-direction:column;
     justify-content:center;
-    align-items:center;
-}
-#wavesIntro img {
-	width:50%;
-	margin:0 auto;
-	margin-bottom:2rem;
-}
-#wavesFour img {
-	width:50%;
-	margin:0 auto;
-}
-#wavesIntro h1,
-#wavesOne h1,
-#wavesTwo h1,
-#wavesFour h1 {
-	text-decoration:none;
-	margin:0 auto;
-	text-align:center;
-}
-#wavesOne h1 {
-	text-align:left;
-}
-#wavesTwo h1 {
-	color:var(--cor11);
+    align-items: center;
+    text-align: center;
 }
 #wavesOne.page-section,
-#wavesTwo.page-section,
 #wavesThree.page-section,
 #wavesFour.page-section {
-	color:var(--black);
-	padding:10rem 0 10rem 0;
+	color: var(--cor1);
 	background-color:var(--cor2);
 }
 #wavesTwo.page-section {
+	color:var(--white);
 	background-color:var(--cor1);
-    background-image:url(../images/pattern01.png);
+	background-image:url(../images/pattern01.png);
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+#wavesThree.page-section {
+	color: var(--cor1);
+	background-color:var(--cor3);
+}
+#wavesFive.page-section {
+	color:var(--white);
+	background-color:var(--cor1);
+    background-image:url(../images/waves/section4-background.png);
     background-position:center center;
     background-repeat:no-repeat;
     background-size:cover;
 }
-#wavesOne p,
-#wavesTwo p,
-#wavesThree p,
-#wavesFour p {
-    margin-bottom:1rem;
+#wavesIntro p,
+#wavesFive p {
+	color:var(--white);
+	font-size:180%;
+	line-height:130%;
 }
-#wavesOne ul {
+#wavesIntro img,
+#wavesFive img {
+	width:20%;
+	margin:0 auto;
+	margin-bottom:2rem;
+}
+#wavesOne ul,
+#wavesFour ul {
     margin-bottom:0;
 }
-#wavesOne li {
+#wavesOne li,
+#wavesFour li {
 	list-style:disc inside;
-    margin-bottom:0.2rem;
 }
+#wavesOne h1,
+#wavesTwo h1,
 #wavesThree h1,
 #wavesFour h1,
 #wavesFive h1,
 #wavesSix h1 {
 	text-decoration:none;
 	margin:0 auto;
+	text-align:center;
 }
-#wavesFour.page-section {
-	color:var(--black);
-    padding:10rem 0 10rem 0;
-    background-image:url(../images/waves/section4-background.png);
-    background-position:center center;
-    background-repeat:no-repeat;
-    background-size:cover;
-}
-#wavesIntro h1,
-#wavesTwo h1,
+#wavesOne h1,
 #wavesFour h1 {
+	text-align:left;
+}
+#wavesTwo h1 {
     color:white;
+}
+#wavesTwo p {
+	color:var(--cor2);
+	font-size:150%;
 }
 .btn-waves {
 	width:20rem;
 	padding:1rem 0 1rem 0;
-	margin:5rem auto;
+	margin-top: 5rem;
 	color:var(--white)!important;
 	font-weight:bold!important;
 	background-color:var(--cor1)!important;
@@ -673,10 +666,21 @@ video {
 .btn-waves:hover {
 	background-color:var(--cor2)!important;
 }
+@media screen and (max-width:768px) {
+    #quemSomosMissao {
+        padding:3rem 0 0 0;
+        height:45rem;
+    }
+    #footer a img {
+        width:50%;
+    }
+   	#wavesIntro.page-section,
+    #wavesFive.page-section {
+   		padding:10vh 2vh 10vh 2vh;
+   	}
+	#wavesIntro img,
+	#wavesFive img {
+		width:50%;
+	}
 
-/* remove borda dos botões */
-.btn:focus,.btn:active:focus,.btn.active:focus,
-.btn.focus,.btn:active.focus,.btn.active.focus {
-    outline:none;
-    box-shadow:none;
 }
