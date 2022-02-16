@@ -614,10 +614,14 @@ video {
     background-size:cover;
 }
 #wavesIntro p,
+#wavesTwo p,
 #wavesFive p {
 	color:var(--white);
 	font-size:180%;
 	line-height:130%;
+}
+#wavesTwo p {
+	color:var(--cor2);
 }
 #wavesIntro img,
 #wavesFive img {
@@ -649,10 +653,6 @@ video {
 }
 #wavesTwo h1 {
     color:white;
-}
-#wavesTwo p {
-	color:var(--cor2);
-	font-size:150%;
 }
 .btn-waves {
 	width:20rem;
