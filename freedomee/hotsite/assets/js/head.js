@@ -1,5 +1,11 @@
 $(document).ready(function(){
     $("#navtop").load("../inicio/_nav-top.html");
+    $("#navtopen").load("../start/_nav-top.html");
+    $("#navtopes").load("../comienzo/_nav-top.html");
     $("#navbottom").load("../inicio/_nav-bottom.html");
+    $("#navbottomen").load("../start/_nav-bottom.html");
+    $("#navbottomes").load("../comienzo/_nav-bottom.html");
     $("#modal").load("../inicio/_modal.html");
+    $("#modalen").load("../start/_modal.html");
+    $("#modales").load("../comienzo/_modal.html");
 });
