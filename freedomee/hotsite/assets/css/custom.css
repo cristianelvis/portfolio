@@ -1831,7 +1831,7 @@ input[type=checkbox]:checked:after {
 }
 #primeirospassos .section004 .left {
     width:50%;
-    height:100vh;
+    height: auto;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -1841,11 +1841,11 @@ input[type=checkbox]:checked:after {
 }
 #primeirospassos .section004 .right {
     width:50%;
-    height:100vh;
+    height: auto;
     display:flex;
     flex-direction:column;
-    justify-content:center;
-    align-items:center;
+    justify-content: start;
+    align-items: start;
     text-align:start;
     padding:0 30vh 0 0;
 }
