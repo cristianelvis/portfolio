@@ -1,7 +1,7 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-light">
     <div class="container-fluid">
         <div class="navbar-brand">
-            <a href="../inicio/" title="Bem vindo a FreedomeE.com">
+            <a href="../sobrenos/" title="Bem vindo a FreedomeE.com">
                 <img src="../assets/images/favicon.svg" alt="Bem vindo a FreedomeE.com">
             </a>
         </div>
@@ -12,10 +12,10 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
             <ul class="navbar-nav justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link btn-nav" href="../inscrevase/">Inscreva-se</a>
+                    <a class="nav-link btn-nav" href="https://social.freedomee.social/register/">Inscreva-se</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../inicio/">Início</a>
+                    <a class="nav-link" href="../inicio/">Início</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="../sobrenos/">Sobre nós</a>
@@ -25,36 +25,6 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="../primeirospassos/">Primeiros passos</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Conecte-se
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
-                        <form action="" class="dropdown-form">
-                            <input type="text" class="form-control" placeholder="Nome de usuário" name="username">
-                            <div class="input-group">
-                                <input type="password" class="form-control" placeholder="Sua senha" name="password" id="passSplashMenu">
-                                <span class="btn-see" onclick="seePassMenu();openEyeMenu()"><i class="bi bi-eye-slash" id="seeMenu"></i></span>
-                                <button type="button" class="btn btn-input" onclick="window.location.href='//social.freedomee.social'">Logar</button>
-                            </div>
-                            <a href="#" class="fp">Esqueceu a senha?</a>
-                            <script>
-                                function seePassMenu() {
-                                    var x = document.getElementById("passSplashMenu");
-                                    if (x.type === "password") {
-                                        x.type = "text";
-                                    } else {
-                                        x.type = "password";
-                                    }
-                                }
-                                function openEyeMenu() {
-                                    var element = document.getElementById("seeMenu");
-                                    element.classList.toggle("bi-eye");
-                                }
-                            </script>
-                        </form>
-                    </div>
                 </li>
             </ul>
         </div>
