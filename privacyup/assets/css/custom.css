@@ -41,12 +41,12 @@ body::after {
 .navShow {
     top:0;
     background-color:transparent;
-    transition:all 0.15s ease-in-out;
+    transition:all 0.5s ease;
 }
 .navShow {
     top:0;
     background-color:var(--cor03);
-    transition:all 0.15s ease-in-out;
+    transition:all 0.5s ease;
 }
 .navbar-brand {
     width:20vh;
@@ -126,15 +126,49 @@ body::after {
 .btn-primary:active,
 .btn-primary:focus,
 .btn-primary:hover {
-    color:var(--gray5);
+    color:var(--gray5)!important;
     background-color:var(--cor02);
     border-color:var(--cor02);
 }
-.section001,
+.btn-close {
+    font-size:100%;
+    color:var(--cor03);
+    position:fixed;
+    top:4vh;
+    right:4vh;
+    width:unset;
+    height:unset;
+    padding:0;
+    margin:0 auto;
+    border:0;
+    border-radius:0;
+    background:unset;
+    box-shadow:unset;
+    display:flex;
+    flex-direction:column;
+    justify-content:start;
+    align-items:center;
+    transition:all 0.5s ease;
+    opacity:1;
+    z-index:2;
+}
+.btn-close:hover {
+    font-size:130%;
+    font-weight:900;
+    color:var(--cor02);
+    text-shadow:2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+.btn-close:active,
+.btn-close:focus {
+    color:var(--cor02);
+}
+.btn-close i {
+    font-size:200%;
+    margin-bottom:1vh;
+}
 .section002,
 .section003,
-.section004,
-.section005 {
+.section004 {
     width:100%;
     height:100vh;
     padding:20vh 0 0 0;
@@ -145,6 +179,7 @@ body::after {
 }
 /* INÍCIO */
 #inicio.section001 {
+    width:100%;
     height:auto;
     padding:0;
 }
@@ -194,6 +229,68 @@ body::after {
 
 
 
+/* CONTATO */
+#contato.section005 {
+    width:100%;
+    height:auto;
+    padding:10vh 48vh 10vh 48vh;
+    background-color:var(--cor04);
+}
+#contato .grid {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+#contato h1 {
+    font-weight:900;
+}
+#contato a {
+    font-size:100%;
+    color:var(--gray5);
+    text-align:left;
+    text-decoration:none;
+    margin:1vh;
+    transition:all 0.5s ease;
+}
+#contato a:hover {
+    color:var(--cor02);
+}
+#contato .btn-primary {
+    text-align:center;
+}
+#contato #enviarMensagem a {
+    color:var(--cor01);
+}
+
+/* FOOTER  */
+#footer {
+    color:var(--gray5);
+    padding:3vh 0 3vh 0;
+    background-color:var(--cor01);
+}
+#footer .social {
+    font-size:150%;
+    color:var(--gray5);
+    text-decoration:none;
+    margin:1vh;
+    transition:all 0.5s ease;
+}
+#footer .social:hover {
+    color:var(--cor02);
+}
+@media screen and (max-width:768px) {
+    #footer .text-start,
+    #footer .text-end {
+        position:relative;
+        text-align:center!important;
+    }
+    #footer .text-start {
+        top:30px
+    }
+    #footer .text-end {
+        top:-20px
+    }
+}
 
 
 
