@@ -233,7 +233,7 @@ body::after {
 #contato.section005 {
     width:100%;
     height:auto;
-    padding:10vh 48vh 10vh 48vh;
+    padding:10vh 3vh;
     background-color:var(--cor04);
 }
 #contato .grid {
