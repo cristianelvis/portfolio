@@ -7,11 +7,13 @@ $(window).scroll(function() {
     }
 });
 $(document).ready(function(){
-    $("#navigation").load("_navigation.html");
-    $("#inicio").load("section001.html");
-    $("#sobrenos").load("section002.html");
-    $("#servicos").load("section003.html");
-    $("#quiz").load("section004.html");
-    $("#contato").load("section005.html");
-    $("#footer").load("_footer.html");
+    $("#navigation").load("../inicio/_navigation.html");
+    $("#inicio").load("../inicio/section001.html");
+    $("#sobrenos").load("../inicio/section002.html");
+    $("#servicos").load("../inicio/section003.html");
+    $("#quiz").load("../inicio/section004.html");
+    $("#contato").load("../inicio/section005.html");
+    $("#mensagemEnviada").load("../mensagem-enviada/section005.html");
+    $("#footer").load("../inicio/_footer.html");
 });
+

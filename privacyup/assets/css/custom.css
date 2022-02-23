@@ -115,7 +115,8 @@ body::after {
     border-radius:0.3vw;
     display:inline-block;
 }
-.btn-primary {
+.btn-primary,
+.btn-secondary {
     color:var(--gray5);
     padding:1vh 2.5vh;
     background-color:var(--cor03);
@@ -126,6 +127,17 @@ body::after {
 .btn-primary:active,
 .btn-primary:focus,
 .btn-primary:hover {
+    color:var(--gray5)!important;
+    background-color:var(--cor02);
+    border-color:var(--cor02);
+}
+.btn-secondary {
+    background-color:var(--cor01);
+    border-color:var(--cor01);
+}
+.btn-secondary:active,
+.btn-secondary:focus,
+.btn-secondary:hover {
     color:var(--gray5)!important;
     background-color:var(--cor02);
     border-color:var(--cor02);
@@ -155,7 +167,7 @@ body::after {
 .btn-close:hover {
     font-size:130%;
     font-weight:900;
-    color:var(--cor02);
+    color:var(--cor02)!important;
     text-shadow:2px 2px 2px rgba(0, 0, 0, 0.25);
 }
 .btn-close:active,
@@ -231,6 +243,7 @@ body::after {
 
 /* CONTATO */
 #contato.section005 {
+    color:var(--gray5);
     width:100%;
     height:auto;
     padding:10vh 3vh;
@@ -247,7 +260,6 @@ body::after {
 #contato a {
     font-size:100%;
     color:var(--gray5);
-    text-align:left;
     text-decoration:none;
     margin:1vh;
     transition:all 0.5s ease;
@@ -255,13 +267,92 @@ body::after {
 #contato a:hover {
     color:var(--cor02);
 }
-#contato .btn-primary {
+#contato .btn-secondary {
     text-align:center;
+    margin:0 auto;
 }
-#contato #enviarMensagem a {
+#contato #mensagemEnviar a,
+#contato #mensagemEnviada a {
     color:var(--cor01);
 }
-
+#mensagemEnviar .modal-content,
+#mensagemEnviada .modal-content {
+    background-image:url(../images/privacyup-background-inicio-section005-min.png);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+#mensagemEnviar .btn-close,
+#mensagemEnviada .btn-close {
+    color:var(--gray5);
+}
+#contato .grid-left {
+    color:var(--gray5);
+    width:50vh;
+    height:auto;
+    padding:5vh 0;
+    margin:10vh 10vh 10vh auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:start;
+}
+#contato .grid-left .brand {
+    width:30vh;
+    margin:0 auto;
+}
+#contato .grid-left a {
+    color:var(--gray5)!important;
+}
+#contato .grid-left a:hover {
+    color:var(--cor01)!important;
+}
+#contato .grid-right {
+    position:relative;
+    top:15vh;
+    left:0;
+    width:60vh;
+    height:auto;
+    color:var(--gray5);
+    padding:5vh;
+    background-color:var(--cor04);
+    border-radius:2vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+#contato .grid-right p {
+    text-align:start;
+}
+#contato #mensagemEnviada .grid-right p {
+    text-align:center;
+}
+#contato .form-control,
+#contato .form-floating>label {
+    color:var(--gray1)!important;
+}
+#contato .form-control:focus {
+    background-color:var(--gray4);
+    border-color:var(--gray4);
+    outline:0;
+    box-shadow:0 0 0 0 rgba(0,0,0,0);
+}
+@media screen and (max-width:768px) {
+    #mensagemEnviar .modal-content,
+    #mensagemEnviada .modal-content {
+        background-position:85% 0%;
+    }
+    #contato .grid-left,
+    #contato .grid-right {
+        width:100%;
+        padding:2vh;
+        margin:10vh 0 0 0;
+    }
+    #contato .grid-right {
+        top:0;
+        margin:0;
+    }
+}
 /* FOOTER  */
 #footer {
     color:var(--gray5);
