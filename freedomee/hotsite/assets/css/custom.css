@@ -222,6 +222,9 @@ foot .navbar-brand {
         bottom:42px;
         right:0;
     }
+    .dropdown-item {
+        text-align:center;
+    }
 }
 .btn,
 .btn:focus,
