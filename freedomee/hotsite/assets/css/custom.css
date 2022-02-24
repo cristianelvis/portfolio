@@ -216,6 +216,12 @@ foot .navbar-brand {
     .dropdown-form {
         width:100%;
     }
+    #navbarNavDropdownFooter {
+        position: absolute;
+        left:0;
+        bottom:42px;
+        right:0;
+    }
 }
 .btn,
 .btn:focus,
