@@ -562,7 +562,7 @@ input[type=checkbox]:checked:after {
 #inicio .content .left h1 {
     width:100%;
     font-weight:900;
-    margin:0 auto 6vh auto;
+    margin:0 auto;
     text-align:center;
 }
 #inicio .content .left form {
