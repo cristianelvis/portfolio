@@ -43,7 +43,7 @@ if (
     if (mail($to,$subject,$body,$header)) {
         echo("<script>window.location='../mensagem-enviada/'</script>");
     } else {
-        echo("Algo deu errado, e-mail não enviado...");
+        echo("Algo deu errado, e-mail não enviado... {$mail->ErrorInfo}");
     }
 } else {
     echo("<script>window.location='../mensagem-nao-enviada/'</script>");
