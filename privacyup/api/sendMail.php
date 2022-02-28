@@ -8,7 +8,12 @@
     use PHPMailer\PHPMailer\Exception;
 
     $mail = new PHPMailer(true);
-
+    $userName    = $_POST['userName'];
+	$userEmail   = $_POST['userEmail'];
+    $userPhone   = $_POST['userPhone'];
+	$userSubject = $_POST['userSubject'];
+	$userMessage = $_POST['userMessage'];
+    
     try {
         //Server settings
         $mail->SMTPDebug = SMTP::DEBUG_SERVER;
@@ -40,7 +45,5 @@
             echo ("Algo deu errado, e-mail não enviado... {$mail->ErrorInfo}");
         }
 
-    } catch (Exception $e) {
-        echo "Erro ao enviar: {$mail->ErrorInfo}";
     }
 ?>
