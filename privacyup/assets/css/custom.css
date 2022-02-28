@@ -311,7 +311,7 @@ body::after {
     position:relative;
     top:15vh;
     left:0;
-    width:60vh;
+    width:65vh;
     height:auto;
     color:var(--gray5);
     padding:5vh;
