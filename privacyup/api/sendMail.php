@@ -1,51 +1,46 @@
 <?php
-    require 'phpmailer/PHPMailer.php';
-    require 'phpmailer/Exception.php';
-    require 'phpmailer/SMTP.php';
+    require_once ('phpmailer/PHPMailer.php');
+    require_once ('phpmailer/Exception.php');
+    require_once ('phpmailer/SMTP.php');
 
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\SMTP;
     use PHPMailer\PHPMailer\Exception;
 
-    $mail = new PHPMailer();
-    $mail->isSMTP();
-    $mail->Host       = "smtp.gmail.com";
-    $mail->SMTPAuth   = "true";
-    $mail->SMTPSecure = "tls";
-    $mail->Port       = "587";
-    $mail->Username   = "cristianelvis.privacyup@gmail.com";
-    $mail->Password   = "01Escolh@s01";
+    $mail = new PHPMailer(true);
 
-if (
-    (isset($_POST['userName']) && !empty(trim($_POST['userName']))) && 
-    (isset($_POST['userEmail']) && !empty(trim($_POST['userEmail']))) && 
-    (isset($_POST['userPhone']) && !empty(trim($_POST['userPhone']))) && 
-    (isset($_POST['userSubject']) && !empty(trim($_POST['userSubject']))) && 
-    (isset($_POST['userMessage']) && !empty(trim($_POST['userMessage'])))
-) {
-    $userName    = $_POST['userName'];
-	$userEmail   = $_POST['userEmail'];
-    $userPhone   = $_POST['userPhone'];
-	$userSubject = $_POST['userSubject'];
-	$userMessage = $_POST['userMessage'];
+    try {
+        //Server settings
+        $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+        $mail->isSMTP();
+        $mail->Host = 'smtp.gmail.com';
+        $mail->SMTPAuth = true;
+        $mail->Username = 'cristianelvis.privacyup@gmail.com';                     //SMTP username
+        $mail->Password = '01Escolh@s01';
+        $mail->Port = 587;
 
-    $to           = "cristianelvisdesign@gmail.com";
+        //Recipients
+        $mail->addAddress('cristianelvisdesign@gmail.com', 'PrivacyUP');
+        $mail->setFrom($_POST['userEmail'], $_POST['userName']);
+        $mail->addReplyTo($_POST['userEmail'], $_POST['userName']);
 
-    $subject      = "$userSubject - Mensagem enviada via site Privacy UP";
-    $body         = "Nome: ".$userName. "\r\n".
-                    "E-mail: ".$userEmail. "\r\n".
-                    "Telefone: ".$userPhone. "\r\n".
-                    "Mensagem: ".$userMessage. "\r\n";
-    $header       = "From:".$userEmail."\r\n".    
-                    "Reply-To:".$userEmail."\r\n".
-                    "X=Mailer:PHP/".phpversion();
+        //Content
+        $mail->isHTML(true);
+        $mail->Subject = 'Contato via site: '.$_POST['userSubject'];
+        $mail->Body    = 'Contato através do site <b>Privacy up</b><br>
+                            Nome: '.$_POST['userName']'<br>
+                            E-mail: '.$_POST['userEmail'].'<br>
+                            Contato: '.$_POST['userPhone'].'<br>
+                            Assunto: '.$_POST['userSubject'].'<br>
+                            Menssagem: '.$_POST['userMessage'].'';
 
-    if (mail($to,$subject,$body,$header)) {
-        echo("<script>window.location='../mensagem-enviada/'</script>");
-    } else {
-        echo("Algo deu errado, e-mail não enviado... {$mail->ErrorInfo}");
+        if ($mail->send()) {
+            echo ("<script>window.location='../mensagem-enviada/'</script>");
+        } else {
+            echo ("Algo deu errado, e-mail não enviado... {$mail->ErrorInfo}");
+        }
+
+    } catch (Exception $e) {
+        echo "Erro ao enviar: {$mail->ErrorInfo}";
     }
-} else {
-    echo("<script>window.location='../mensagem-nao-enviada/'</script>");
-}
 ?>
