@@ -7,9 +7,11 @@ $(window).scroll(function() {
     }
 });
 $(document).ready(function(){
-    $("#navigation").load("_navigation.html");
-    $("#inicio").load("section001.html");
-    $("#sobrenos").load("section002.html");
-    $("#faleconosco").load("section003.html");
-    $("#footer").load("_footer.html");
+    $("#navigation").load("../inicio/_navigation.html");
+    $("#inicio").load("../inicio/section001.1.html");
+    $("#CallToAction").load("../inicio/section001.2.html");
+    $("#sobrenos").load("../inicio/section002.html");
+    $("#servicos").load("../inicio/section003.html");
+    $("#faleconosco").load("../inicio/section004.html");
+    $("#footer").load("../inicio/_footer.html");
 });
