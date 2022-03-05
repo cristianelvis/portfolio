@@ -1054,6 +1054,9 @@
 .bi-question-square-fill::before { content: "\f50a"; }
 .bi-question-square::before { content: "\f50b"; }
 .bi-question::before { content: "\f50c"; }
+
+.bi-quora::before { content: "\f6af"; }
+
 .bi-rainbow::before { content: "\f50d"; }
 .bi-receipt-cutoff::before { content: "\f50e"; }
 .bi-receipt::before { content: "\f50f"; }

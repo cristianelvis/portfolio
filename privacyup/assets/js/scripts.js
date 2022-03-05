@@ -9,9 +9,9 @@ $(window).scroll(function() {
 $(document).ready(function(){
     $("#navigation").load("../inicio/_navigation.html");
     $("#inicio").load("../inicio/section001.html");
-    $("#sobrenos").load("../inicio/section002.html");
-    $("#servicos").load("../inicio/section003.html");
-    $("#quiz").load("../inicio/section004.html");
+    $("#quiz").load("../inicio/section002.html");
+    $("#sobrenos").load("../inicio/section003.html");
+    $("#servicos").load("../inicio/section004.html");
     $("#contato").load("../inicio/section005.html");
     $("#mensagemEnviada").load("../mensagem-enviada/section005.html");
     $("#footer").load("../inicio/_footer.html");

@@ -72,11 +72,21 @@
                                     </div>
                                 </div>
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" name="userSubject" placeholder="Insira o assunto">
+                                    <input list="userSubject" class="form-control" name="userSubject" placeholder="Insira o assunto" required="" oninvalid="this.setCustomValidity('Por favor inserir o assunto')" oninput="setCustomValidity('')">
                                     <label for="floatingInput">Insira o assunto</label>
+                                    <datalist id="userSubject">
+                                        <option value="LGPD - Implementação">
+                                        <option value="LGPD - Em Andamento">
+                                        <option value="Governança & Compliance">
+                                        <option value="Elaboração/revisão de documentos - LGPD">
+                                        <option value="Vazamento de Dados">
+                                        <option value="Direito Digital (Nacional e/ou Internacional)">
+                                        <option value="DPO as a service">
+                                        <option value="Outros">
+                                    </datalist>
                                 </div>
                                 <div class="form-floating mb-3">
-                                    <textarea class="form-control" name="userMessage" placeholder="Deixe sua mensagem aqui." style="height:150px"></textarea>
+                                    <textarea class="form-control" name="userMessage" placeholder="Deixe sua mensagem aqui." style="height:150px" required="" oninvalid="this.setCustomValidity('Digite sua mensagem')" oninput="setCustomValidity('')"></textarea>
                                     <label for="floatingTextarea">Deixe sua mensagem aqui.</label>
                                 </div>
                                 <p class="small">Campos com * são obrigatórios</p>
