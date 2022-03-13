@@ -12,8 +12,10 @@ $(document).ready(function(){
     $("#quiz").load("../inicio/section002.html");
     $("#sobrenos").load("../inicio/section003.html");
     $("#servicos").load("../inicio/section004.html");
-    $("#contato").load("../inicio/section005.html");
-    $("#mensagemEnviada").load("../mensagem-enviada/section005.html");
+    $("#lgpd").load("../inicio/section005.html");
+    $("#publicacoes").load("../inicio/section006.html");
+    $("#contato").load("../inicio/section007.html");
+    $("#mensagemEnviada").load("../mensagem-enviada/section007.html");
     $("#footer").load("../inicio/_footer.html");
 });
 

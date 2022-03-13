@@ -8,7 +8,7 @@
     --cor02:#8d3353;
     --cor03:#00a8c3;
     --cor04:#259a98;
-    --cor05:#b9b9b9;
+    --cor05:#acacac;
     --gray0:#262626;
     --gray1:#413e3e;
     --gray2:#626060;
@@ -25,8 +25,6 @@ body {
     line-height:120%;
     color:var(--cor01);
     text-align:center;
-    overflow-x:hidden;
-    scroll-behavior:smooth;
 }
 body::after {
     position:absolute;
@@ -41,6 +39,10 @@ body::after {
     flex-direction:column;
     justify-content:center;
 }
+.grid-cards {
+    display:flex;
+    justify-content:center;
+}
 .navbar {
     padding:0.6vh 1.2vw 0.6vh 1.2vw;
 }
@@ -52,11 +54,11 @@ body::after {
 }
 .navShow {
     top:0;
-    background-color: rgba(0, 168, 195, .8);
+    background-color:var(--cor03);
     transition:all 0.5s ease;
 }
 .navbar-brand {
-    width: 40vh;
+    width:20vh;
     padding:0;
     margin:1vh 0;
     font-size:unset;
@@ -123,9 +125,6 @@ body::after {
     display:inline-block;
 }
 @media screen and (max-width:768px) {
-    .navbar-brand {
-        width: 30vh;
-    }
     .navbar-dark .navbar-nav .nav-link,
     .navbar-dark .navbar-nav .nav-link.active {
         margin:2vh auto;
@@ -179,9 +178,6 @@ body::after {
     border:1px dashed;
     border-color:var(--cor03);
 }
-.bt-services {
-    margin-bottom:2vh;
-}
 .btn-close {
     font-size:100%;
     color:var(--cor03);
@@ -222,14 +218,10 @@ body::after {
 .section002,
 .section003,
 .section004,
-.section005,
-.section006,
-.section007 {
-    color: var(--gray1);
+.section005 {
     width:100%;
     height:auto;
-    padding: 20vh 3vh 20vh 3vh;
-    background-color: var(--gray4);
+    padding:30vh 0 30vh 0;
 }
 /* INÍCIO */
 #inicio.section001 {
@@ -247,9 +239,9 @@ body::after {
 }
 #inicio #carouselPrivacyupInicio .carousel-caption {
     position: absolute;
-    top: unset;
+    top:35%;
     right:10%;
-    bottom: 10%;
+    bottom:unset;
     left:10%;
     padding-top:1vh;
     padding-bottom:1vh;
@@ -287,16 +279,6 @@ body::after {
 #quiz.section002 h1 {
     font-weight:900;
 }
-#quiz .modal-body {
-    color:var(--cor01);
-}
-#quiz .card {
-    border: 3px solid black;
-    width:50vh;
-    padding:20px;
-    margin:0 auto;
-    display:none;
-}
 @media screen and (max-width:768px) {
     #quiz.section002 {
         padding:20vh 3vh;
@@ -319,233 +301,316 @@ body::after {
 }
 @media screen and (max-width:768px) {
     #sobrenos.section003 {
-        padding: 3vh 3vh 0 3vh;
+        padding:8vh 3vh 0 3vh;
         background:unset;
         background-color:var(--gray5);
     }
 }
 /* SERVIÇOS */
 #servicos.section004 {
-    color: var(--gray5);
+    color:var(--gray5);
     width:100%;
     height:auto;
-    padding: 20vh 3vh 3vh 3vh;
-    background-color: var(--cor01);
-}
-#servicos .grid {
-    padding:0 1vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
+    padding:30vh 3vh 3vh 3vh;
+    background-image:url(../images/privacyup-background-inicio-section004-min.png);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
 }
 #servicos.section004 h1 {
     font-weight:900;
 }
-#servicos .modal-body {
-    padding:0;
-}
-#servicos .banner {
+#servicos .shield {
     width:100%;
-    height:40vh;
-    /* margin-bottom:2vh; */
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    background-color:var(--cor02);
 }
-#servicos .banner h1 {
-    color:var(--gray5);
+#service1 {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service1background-min.png);
 }
-#servicos .btn-close {
-    color:var(--gray5);
+#service1:hover {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service1background-min.png);
 }
-#servicos .btn-close:hover {
-    color:var(--cor03)!important;
+#service1content2 {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service1background-min.png);
 }
-#servicos .btn-close:active,
-#servicos .btn-close:focus {
-    color:var(--gray5);
+#service2 {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service2background-min.png);
 }
-#servicos .grid-left {
-    color:var(--cor01);
-    padding:5vh;
-    margin: 0 10vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:start;
-    text-align:start;
+#service2:hover {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service2background-min.png);
 }
-#servicos .grid-left a {
-    color:var(--gray1)!important;
-    text-align: left;
+#service2content2 {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service2background-min.png);
 }
-#servicos .grid-left a:hover {
-    color:var(--cor01)!important;
+#service3 {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service3background-min.png);
 }
-#servicos .grid-right {
-    padding:5vh;
-    margin: 0 10vh;
-    background-color: var(--cor03);
-    border-radius: 0 0 2vh 2vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items: center;
-    text-align:center;
+#service3:hover {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service3background-min.png);
 }
-#servicos .grid-right h3,
-#servicos .grid-right p {
-    text-align:start;
+#service3content2 {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service3background-min.png);
 }
-#servicos .form-control,
-#servicos .form-floating>label {
-    color:var(--gray1)!important;
+#service4 {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service4background-min.png);
 }
-#servicos .form-control:focus {
-    background-color:var(--gray4);
-    border-color:var(--gray4);
-    outline:0;
-    box-shadow:0 0 0 0 rgba(0,0,0,0);
+#service4:hover {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service4background-min.png);
 }
-#lgpd.section005 {
-     color: var(--gray5);
-     width:100%;
-     height:auto;
-     padding: 0 3vh 20vh 3vh;
-     background-color: var(--cor01);
+#service4content2 {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service4background-min.png);
 }
-#lgpd .carousel-indicators {
-    bottom:-7vh;
+#service5 {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service5background-min.png);
 }
-#lgpd .carousel-item {
-    height:30vh;
+#service5:hover {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service5background-min.png);
 }
-#service01 {
-    background:url(../images/service1background-min.png);
+#service5content2 {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service5background-min.png);
 }
-#service02 {
-    background:url(../images/service2background-min.png);
+#service6 {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service6background-min.png);
 }
-#service03 {
-    background:url(../images/service3background-min.png);
+#service6:hover {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service6background-min.png);
 }
-#service04 {
-    background:url(../images/service4background-min.png);
+#service6content2 {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service6background-min.png);
 }
-#service05 {
-    background:url(../images/service5background-min.png);
+#service7 {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service7background-min.png);
 }
-#service06 {
-    background:url(../images/service6background-min.png);
+#service7:hover {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service7background-min.png);
 }
-#service07 {
-    background:url(../images/service7background-min.png);
+#service7content2 {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service7background-min.png);
 }
-#service08 {
-    background:url(../images/service8background-min.png);
+#service8 {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service8background-min.png);
 }
-#service09 {
-    background:url(../images/service9background-min.png);
+#service8:hover {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service8background-min.png);
+}
+#service8content2 {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service8background-min.png);
+}
+#service9 {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service9background-min.png);
+}
+#service9:hover {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service9background-min.png);
+}
+#service9content2 {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service9background-min.png);
 }
 #service10 {
-    background:url(../images/service10background-min.png);
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service10background-min.png);
+}
+#service10:hover {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service10background-min.png);
+}
+#service10content2 {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service10background-min.png);
 }
 #service11 {
-    background:url(../images/service11background-min.png);
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service11background-min.png);
+}
+#service11:hover {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service11background-min.png);
+}
+#service11content2 {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service11background-min.png);
 }
 #service12 {
-    background:url(../images/service12background-min.png);
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service12background-min.png);
+}
+#service12:hover {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service12background-min.png);
+}
+#service12content2 {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service12background-min.png);
 }
 #service13 {
-    background:url(../images/service13background-min.png);
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service13background-min.png);
+}
+#service13:hover {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service13background-min.png);
+}
+#service13content2 {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service13background-min.png);
 }
 #service14 {
-    background:url(../images/service14background-min.png);
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service14background-min.png);
+}
+#service14:hover {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service14background-min.png);
+}
+#service14content2 {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service14background-min.png);
 }
 #service15 {
-    background:url(../images/service15background-min.png);
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service15background-min.png);
 }
-#service01,
-#service02,
-#service03,
-#service04,
-#service05,
-#service06,
-#service07,
-#service08,
-#service09,
+#service15:hover {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service15background-min.png);
+}
+#service15content2 {
+    background:linear-gradient(0deg, rgba(141, 51, 83, 0.9), rgba(141, 51, 83, 0.0)),url(../images/service15background-min.png);
+}
+#service1,
+#service2,
+#service3,
+#service4,
+#service5,
+#service6,
+#service7,
+#service8,
+#service9,
 #service10,
 #service11,
 #service12,
 #service13,
 #service14,
 #service15 {
-    width:30vh;
+    width:20%;
     height:30vh;
     color:var(--white);
-    font-weight:400;
     text-decoration:none;
-    padding:2.5vh 5vh;
-    margin:0 auto;
+    padding:0;
+    margin:1vh;
+    border-radius:1vh;
     background-position:center center;
     background-repeat:no-repeat;
-    background-size: 100%;
-    display: inline-flex;
+    background-size:cover;
+    display:flex;
     flex-direction:column;
-    justify-content: start;
+    justify-content:end;
     align-items:center;
     cursor:pointer;
     transition:all 0.9s ease-in-out;
 }
-#service01:hover,
-#service02:hover,
-#service03:hover,
-#service04:hover,
-#service05:hover,
-#service06:hover,
-#service07:hover,
-#service08:hover,
-#service09:hover,
+#service1:hover,
+#service2:hover,
+#service3:hover,
+#service4:hover,
+#service5:hover,
+#service6:hover,
+#service7:hover,
+#service8:hover,
+#service9:hover,
 #service10:hover,
 #service11:hover,
 #service12:hover,
 #service13:hover,
 #service14:hover,
 #service15:hover {
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+#service1:hover #service1content1,
+#service2:hover #service2content1,
+#service3:hover #service3content1,
+#service4:hover #service4content1,
+#service5:hover #service5content1,
+#service6:hover #service6content1,
+#service7:hover #service7content1,
+#service8:hover #service8content1,
+#service9:hover #service9content1,
+#service10:hover #service10content1,
+#service11:hover #service11content1,
+#service12:hover #service12content1,
+#service13:hover #service13content1,
+#service14:hover #service14content1,
+#service15:hover #service15content1 {
+    color:var(--gray5);
     font-weight:900;
-    text-decoration:underline;
+    padding:0 6vh 10vh 6vh;
+}
+#service1content1,
+#service2content1,
+#service3content1,
+#service4content1,
+#service5content1,
+#service6content1,
+#service7content1,
+#service8content1,
+#service9content1,
+#service10content1,
+#service11content1,
+#service12content1,
+#service13content1,
+#service14content1,
+#service15content1 {
+    padding:0 6vh 6vh 6vh;
+    transition:all 0.9s ease-in-out;
+}
+#service1content2,
+#service2content2,
+#service3content2,
+#service4content2,
+#service5content2,
+#service6content2,
+#service7content2,
+#service8content2,
+#service9content2,
+#service10content2,
+#service11content2,
+#service12content2,
+#service13content2,
+#service14content2,
+#service15content2 {
+    font-weight:bold;
+    width:100%;
+    height:60vh;
+    padding:0 1.5vh 0 1.5vh;
+    transition:all 0.9s ease-in-out;
+    display:none;
+    justify-content: center;
+    align-items:center;
 }
 @media screen and (max-width:768px) {
-    #servicos.section004 {
-        padding: 15vh 1vh 1vh 1vh;
-    }
-    #servicos .text-start h1.mt-5,
-    .bt-services {
+    #servicos .text-start h1.mt-5 {
         text-align:center!important;
     }
-    #servicos .grid-left {
-        width:100%;
-        padding: 2vh;
-        margin: 0 auto;
+    #servicos .grid-cards {
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
     }
-    #servicos .grid-right {
-        top:0;
+    #servicos.section004 {
+        padding:20vh 1vh 3vh 1vh;
+    }
+    #service1,
+    #service2,
+    #service3,
+    #service4,
+    #service5,
+    #service6,
+    #service7,
+    #service8,
+    #service9,
+    #service10,
+    #service11,
+    #service12,
+    #service13,
+    #service14,
+    #service15 {
         width:100%;
-        padding: 2vh;
-        margin: 0 auto 2vh auto;
+        margin: 1vh auto;
     }
 }
 /* CONTATO */
-#contato.section007,
-#mensagemEnviada.section007 {
+#contato.section005,
+#mensagemEnviada.section005 {
     color:var(--gray5);
     width:100%;
     height:auto;
     padding:15vh 3vh;
-    background-color: var(--cor03);
+    background-color:var(--cor04);
 }
-#mensagemEnviada.section007 {
+#mensagemEnviada.section005 {
     height:100vh;
     padding:3vh;
     display:flex;
@@ -616,7 +681,6 @@ body::after {
 }
 #contato .grid-left a {
     color:var(--gray5)!important;
-    text-align: left;
 }
 #contato .grid-left a:hover {
     color:var(--cor01)!important;
@@ -629,7 +693,7 @@ body::after {
     height:auto;
     color:var(--gray5);
     padding:5vh;
-    background-color: var(--cor03);
+    background-color:var(--cor04);
     border-radius:2vh;
     display:flex;
     flex-direction:column;
@@ -702,8 +766,3 @@ body::after {
 @media screen and (max-width:1024px) {}
 @media screen and (max-width:768px) {}
 @media screen and (max-width:576px) {}
-
-@keyframes enterLeft {
-    from {}
-    to {}
-}

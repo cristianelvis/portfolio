@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="CristianElvis">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>Quiz - Privacy UP Consulting</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700;900&display=swap">
+        <link rel="stylesheet" href="../assets/css/bootstrap.css">
+        <link rel="stylesheet" href="../assets/css/bootstrap-icons.css">
+        <link rel="stylesheet" href="../assets/css/custom.css">
+        <script src="../assets/js/jquery.js"></script>
+        <script src="../assets/js/scripts.js"></script>
+        <style>
+        
+            .card {
+                border: 3px solid black;
+                border-radius: 10px;
+                width: 60%;
+                padding: 20px;
+                margin: 0 auto;
+                display: none;
+            }
+    
+            button {
+                margin-top: 10px;
+            }
+            
+        </style>
+    </head>
+    <body data-bs-spy="scroll" data-bs-target="#menu">
+            <div class="card">
+                Q1 Question 1?<hr>
+                <input type="radio" name="question1" id="correct1" required>SIM<br>
+                <input type="radio" name="question1">Não<br>
+                <button class="next" onclick="next(1)">NEXT</button>
+            </div>
+            <div class="card">
+                Q2 Question 2?<hr>
+                <input type="radio" name="question2" id="correct2">SIM<br>
+                <input type="radio" name="question2">Não<br>
+                <button class="next" onclick="next(2)">NEXT</button>
+            </div>
+            <div class="card">
+                Q3 Question 3?<hr>
+                <input type="radio" name="question3" id="correct3">SIM<br>
+                <input type="radio" name="question3">Não<br>
+                <button onclick="result()">SUBMIT QUIZ</button>
+            </div>
+        <script>
+            // displaying the first block of question
+            document.getElementsByClassName('card')[0].style.display = "block";
+    
+            // DEFINING THE NEXT FUNCTION
+            function next(id) {
+                document.getElementsByClassName('card')[id-1].style.display = "none";
+                document.getElementsByClassName('card')[id].style.display = "block";
+            }
+
+            //getting final result
+            function result() {
+                var score = 0;
+                if (document.getElementById('correct1').checked) {
+                    score++;
+                }
+                if (document.getElementById('correct2').checked) {
+                    score++;
+                }
+                if (document.getElementById('correct3').checked) {
+                    score++;
+                }
+                alert("your score is: "+ score);
+            }
+        </script>
+        <script src="../assets/js/bootstrap.bundle.js"></script>
+    </body>
+</html>
