@@ -1,0 +1,439 @@
+<div class="container-fluid">
+    <div class="row banner">
+        <div class="col-xs-12 col-sm-8 offset-sm-2 col-md-8 offset-md-2 col-lg-8 offset-lg-2">
+            <h1>MRH - Desligamento</h1>
+        </div>
+    </div>
+    <div class="row banner2">
+        <div class="col-xs-12 col-sm-8 offset-sm-2 col-md-8 offset-md-2 col-lg-8 offset-lg-2">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 mb-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control shadow-none" placeholder="*Solicitante (Gestor):" aria-describedby="btnSearch1">
+                        <button type="button" class="input-group-text" id="btnSearch1"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 mb-3">
+                    <input type="text" class="form-control shadow-none" placeholder="*Data da Solicitação: 00/00/0000">
+                </div>
+                <div class="col-xs-12 col-sm-4 mb-3">
+                    <input type="text" class="form-control shadow-none" placeholder="*Número MRH:">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 mb-3">
+                    <select class="form-select shadow-none">
+                        <option selected>*Tipo de Solicitação:</option>
+                        <option value="1">Demissão/Iniciativa Empresa</option>
+                        <option value="2">Demissão/Iniciativa Funcionário</option>
+                        <option value="3">Demissão/Iniciativa Empresa e Funcionário</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 mb-3">
+                    <input list="motivoList" class="form-control shadow-none" placeholder="*Motivo:">
+                    <datalist id="motivoList">
+                        <option selected>*Motivo:</option>
+                        <option value="Redução da Demanda"></option>
+                        <option value="Redução do Quadro"></option>
+                        <option value="Não Atende aos Requisitos Técnicos do Cargo"></option>
+                        <option value="Não Atende aos Requisitos Comportamentais"></option>
+                        <option value="Término de Contrato Prazo Determinado"></option>
+                        <option value="Término de Contrato de Estágio"></option>
+                        <option value="Outros - Especifique: "></option>
+                    </datalist>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <input type="text" class="form-control shadow-none" placeholder="*Data da Efetivação: 00/00/0000">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-8 offset-sm-2 col-md-8 offset-md-2 col-lg-8 offset-lg-2">
+            <!-- Nav tabs -->
+            <div class="wrapper">
+                <ul class="nav nav-tabs justify-content-center" role="tablist" id="NavMRHDesligamento">
+                    <li class="nav-item" role="presentation">
+                        <a href="#" class="nav-link active" id="Solicitante-tab" data-bs-toggle="tab" data-bs-target="#Solicitante"
+                            role="tab" aria-controls="Solicitante" aria-selected="true">Solicitante</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a href="#" class="nav-link" id="agn1-tab" data-bs-toggle="tab" data-bs-target="#agn1"
+                            role="tab" aria-controls="agn1" aria-selected="false">Aprovação Ger. niv.1</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="agn2-tab" data-bs-toggle="tab" data-bs-target="#agn2"
+                            role="tab" aria-controls="agn2" aria-selected="false">Aprovação Ger. niv.2</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a href="#" class="nav-link" id="vcirh-tab" data-bs-toggle="tab" data-bs-target="#vcirh"
+                            role="tab" aria-controls="vcirh" aria-selected="false">Validação Consultoria Interna RH</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a href="#" class="nav-link" id="ad-tab" data-bs-toggle="tab" data-bs-target="#ad"
+                            role="tab" aria-controls="ad" aria-selected="false">Aprovação diretor</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a href="#" class="nav-link" id="asup-tab" data-bs-toggle="tab" data-bs-target="#asup"
+                            role="tab" aria-controls="asup" aria-selected="false">Aprovação SUP</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a href="#" class="nav-link" id="egap-tab" data-bs-toggle="tab" data-bs-target="#egap"
+                            role="tab" aria-controls="egap" aria-selected="false">Efetivação GAP</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="Solicitante" role="tabpanel" aria-labelledby="Solicitante-tab">
+                    <h3 class="text-start">Situação Proposta (Recisão de Contrato)</h3>
+                    <hr>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-8 mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="*colaborador: Nome Sobrenome">
+                        </div>
+                        <div class="col-xs-12 col-sm-4 mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="*Matricula:">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4 mb-3">
+                            <select class="form-select shadow-none">
+                                <option value="1" selected>*Estabelecimento: 1 - SESI SEDE</option>
+                                <option value="2">*Estabelecimento: 2 - FIRJAN</option>
+                                <option value="3">*Estabelecimento: 3 - CIRJ</option>
+                                <option value="4">*Estabelecimento: 4 - SENAI</option>
+                                <option value="5">*Estabelecimento: 5 - IEL</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 col-sm-8 mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="*Cargo: 78 ANALISTA RECURSOS HUMANOS I">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4 mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="*Especialidade: Remuneração">
+                        </div>
+                        <div class="col-xs-12 col-sm-8 mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="*Última avaliação desempenho: 00/00/0000">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4 mb-3">
+                            <select class="form-select shadow-none">
+                                <option selected>*Possui estabilidade: SIM</option>
+                                <option value="2">*Possui estabilidade: NÃO</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 mb-3">
+                            <select class="form-select shadow-none">
+                                <option selected>*Pessoa com deficiência: SIM</option>
+                                <option value="2">*Pessoa com deficiência: NÃO</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 mb-3">
+                            <select class="form-select shadow-none">
+                                <option selected>*Substituição do Funcionário: SIM</option>
+                                <option value="2">*Substituição do Funcionário: NÃO</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-8 mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="*Lotação: 0409000000 GDE - GER DESIGN ORG REMUN ESTRAT">
+                        </div>
+                        <div class="col-xs-12 col-sm-4 mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="*Telefone: (00) 00000-0000">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control shadow-none" name="Justificativa" placeholder="Justificativa:" style="height:150px"></textarea>
+                            <label for="floatingTextarea">Justificativa:</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="agn1" role="tabpanel" aria-labelledby="agn1-tab">
+                    <h3 class="text-start">Características da Aprovação/Reprovação</h3>
+                    <hr>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="*Gerente niv. 1: Nome Sobrenome">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="*Data de aprovação: 00/00/0000">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 mb-3">
+                            <select class="form-select shadow-none">
+                                <option selected>*Aprovado: SIM</option>
+                                <option value="2">*Aprovado: NÃO</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control shadow-none" name="Motivo" placeholder="Motivo:" style="height:150px"></textarea>
+                            <label for="floatingTextarea">Observações:</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="agn2" role="tabpanel" aria-labelledby="agn2-tab">
+                    <h3 class="text-start">Características da Aprovação/Reprovação</h3>
+                    <hr>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="*Gerente niv. 2: Nome Sobrenome">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="*Data de aprovação: 00/00/0000">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 mb-3">
+                            <select class="form-select shadow-none">
+                                <option selected>*Aprovado: SIM</option>
+                                <option value="2">*Aprovado: NÃO</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control shadow-none" name="Motivo" placeholder="Motivo:" style="height:150px"></textarea>
+                            <label for="floatingTextarea">Observações:</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="vcirh" role="tabpanel" aria-labelledby="vcirh-tab">
+                    <h3 class="text-start">Características da Aprovação/Reprovação</h3>
+                    <hr>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="*Analista RH: Nome Sobrenome">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="*Data: 00/00/0000">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control shadow-none" name="Motivo" placeholder="Motivo:" style="height:150px"></textarea>
+                            <label for="floatingTextarea">Observações:</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="ad" role="tabpanel" aria-labelledby="ad-tab">
+                    <h3 class="text-start">Características da Aprovação/Reprovação</h3>
+                    <hr>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="*Diretor (A): Nome Sobrenome">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="*Data de aprovação: 00/00/0000">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 mb-3">
+                            <select class="form-select shadow-none">
+                                <option selected>*Aprovado: SIM</option>
+                                <option value="2">*Aprovado: NÃO</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control shadow-none" name="Motivo" placeholder="Motivo:" style="height:150px"></textarea>
+                            <label for="floatingTextarea">Observações:</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="asup" role="tabpanel" aria-labelledby="asup-tab">
+                    <h3 class="text-start">Características da Aprovação/Reprovação</h3>
+                    <hr>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="*Superintendente: Nome Sobrenome">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="*Data de aprovação: 00/00/0000">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 mb-3">
+                            <select class="form-select shadow-none">
+                                <option selected>*Aprovado: SIM</option>
+                                <option value="2">*Aprovado: NÃO</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control shadow-none" name="Motivo" placeholder="Motivo:" style="height:150px"></textarea>
+                            <label for="floatingTextarea">Observações:</label>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="tab-pane fade" id="egap" role="tabpanel" aria-labelledby="egap-tab">
+                    <h3 class="text-start">Efetivação GAP</h3>
+                    <hr>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 mb-3 text-start">
+                            <input class="form-check-input shadow-none" type="checkbox" value="" id="check1" checked>
+                            <label class="form-check-label" for="check1">
+                                Integra na Folha
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="*Situação:">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="*Data Desligamento: 00/00/0000">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 mb-3">
+                            <select class="form-select shadow-none">
+                                <option selected>*Tipo Aviso: Indenizado</option>
+                                <option value="2">*Tipo Aviso: Trabalhando</option>
+                                <option value="2">*Tipo Aviso: Não tem aviso</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="*Início Aviso: 00/00/0000">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="*Dias Aviso:">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="*Término Aviso:">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 mb-3">
+                            <select class="form-select shadow-none">
+                                <option selected>*Jornada Trabalho: Não definido</option>
+                                <option value="2">*Jornada Trabalho: Reduz 2 horas dia</option>
+                                <option value="3">*Jornada Trabalho: Reduz 7 dias corridos</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="*Data Pagamento: 00/00/0000">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="*Local:">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="*Data Aviso:">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="*FGTS Período:">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="*Recebe Dias Até:">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="*Percentual Multa FGTS:">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 mb-3">
+                            <select class="form-select shadow-none">
+                                <option selected>*Tipo Movimentação: Manual</option>
+                                <option value="2">*Tipo Movimentação: Automática</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="*Código Saque FGTS:">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="*Valor Depósitos FGTS:">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="*Valor Juros FGTS:">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 mb-3">
+                            <select class="form-select shadow-none">
+                                <option selected>*Tipo Cheque: Nenhum</option>
+                                <option value="2">*Tipo Cheque: Administrativa</option>
+                                <option value="3">*Tipo Cheque: Comum</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 mb-3 text-start">
+                            <input class="form-check-input shadow-none" type="checkbox" value="" id="check2">
+                            <label class="form-check-label" for="check2">*Recebido Férias Proporcionais:</label>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 mb-3 text-start">
+                            <input class="form-check-input shadow-none" type="checkbox" value="" id="check3">
+                            <label class="form-check-label" for="check3">*Imprime Aviso</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 mb-3 text-start">
+                            <input class="form-check-input shadow-none" type="checkbox" value="" id="check4">
+                            <label class="form-check-label" for="check4">*Recebe 13º Proporcional:</label>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 mb-3 text-start">
+                            <input class="form-check-input shadow-none" type="checkbox" value="" id="check5">
+                            <label class="form-check-label" for="check5">*Cálculo Adicional Admitidos:</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 mb-3 text-start">
+                            <input class="form-check-input shadow-none" type="checkbox" value="" id="check6">
+                            <label class="form-check-label" for="check6">*FGTS Mês Anterior GRFP:</label>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 mb-3 text-start">
+                            <input class="form-check-input shadow-none" type="checkbox" value="" id="check7">
+                            <label class="form-check-label" for="check7">*Novo Emprego:</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 mb-3 text-start">
+                            <input class="form-check-input shadow-none" type="checkbox" value="" id="check8">
+                            <label class="form-check-label" for="check8">*Jornada Trabalho Semana integral:</label>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 mb-3 text-start">
+                            <input class="form-check-input shadow-none" type="checkbox" value="" id="check9">
+                            <label class="form-check-label" for="check9">*Sábado Compensado:</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="*Qtd. DSR Mês Desligamento:">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="*Faltas Injust. Mês Desligamento:">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="*Saldo devedor Atual Emprést. Cons:">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 mb-3 text-start">
+                            <input class="form-check-input shadow-none" type="checkbox" value="" id="check10">
+                            <label class="form-check-label" for="check10">*Integra Rescrisão:</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
