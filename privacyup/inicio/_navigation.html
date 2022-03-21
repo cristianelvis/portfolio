@@ -24,6 +24,9 @@
                     <a class="nav-link" href="#publicacoes">Publicações</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#orcamento">Orçamento</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#contato">Contato</a>
                 </li>
                 <li class="nav-item dropdown">
@@ -50,3 +53,79 @@
             $('.navbar-collapse').collapse('hide');
     });
 </script>
+<div class="modal fade" tabindex="-1" aria-hidden="true" aria-labelledby="orcamento" id="orcamento">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="bi bi-x-square"></i> Close
+                </button>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-">
+                        <div class="grid-left">
+                            <img src="../assets/images/logotipo-privacyup-white.svg" class="brand" alt="Privacy UP Consulting" title="Privacy UP Consulting">
+                            <h1>Orçamento:</h1>
+                            <p>Preencha os dados e solicite um orçamento sem compromisso!</p>
+                            <a href="mailto:privacyup@privacyupconsulting.com">
+                                <i class="bi bi-envelope"></i> privacyup@privacyupconsulting.com
+                            </a>
+                            <a href="tel:1133821378">
+                                <i class="bi bi-telephone"></i> (11) 3382-1378
+                            </a>
+                            <a href="tel:11954466777">
+                                <i class="bi bi-phone"></i> (11) 95446-6777
+                            </a>
+                            <a href="https://www.google.com/maps/place/Av.+Paulista,+2421+-+Cerqueira+C%C3%A9sar,+S%C3%A3o+Paulo+-+SP,+01311-300/@-23.5666724,-46.6518475,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce59b8c236b55f:0x35b6b49b01d42ba4!8m2!3d-23.5666773!4d-46.6496588" title="Clique para ver nossa localização no mapa.">
+                                <i class="bi bi-geo-alt"></i> Avenida Paulista, 2421 - 11º andar - São Paulo - SP
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        <div class="grid-right">
+                            <form action="../api/sendMail.php" method="post">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" name="userName" placeholder="*Seu Nome" required="" oninvalid="this.setCustomValidity('Por favor inserir seu nome')" oninput="setCustomValidity('')">
+                                    <label for="floatingInput">*Seu Nome</label>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md">
+                                        <div class="form-floating mb-3">
+                                            <input type="email" class="form-control" name="userEmail" placeholder="*Seu email" required="" oninvalid="this.setCustomValidity('Por favor inserir seu e-mail')" oninput="setCustomValidity('')">
+                                            <label for="floatingInput">*Seu email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md">    
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" name="userPhone" placeholder="*Número para contato" required="" oninvalid="this.setCustomValidity('Por favor inserir seu número para contato')" oninput="setCustomValidity('')">
+                                            <label for="floatingPassword">*Número para contato</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input list="userSubject" class="form-control" name="userSubject" placeholder="Escolha o serviço" required="" oninvalid="this.setCustomValidity('Por favor inserir o assunto')" oninput="setCustomValidity('')">
+                                    <label for="floatingInput">Escolha o serviço</label>
+                                    <datalist id="userSubject">
+                                        <option value="Orçamento - Consultoria em Proteção de Dados - LGPD">
+                                        <option value="Orçamento - Governança & Compliance">
+                                        <option value="Orçamento - Segurança da Informação">
+                                        <option value="Orçamento - DPO as a Service">
+                                        <option value="Orçamento - Treinamentos e Mentorias">
+                                        <option value="Orçamento - Outros">
+                                    </datalist>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control" name="userMessage" placeholder="Deixe suas observações" style="height:150px" required="" oninvalid="this.setCustomValidity('Digite sua mensagem')" oninput="setCustomValidity('')"></textarea>
+                                    <label for="floatingTextarea">Suas observações...</label>
+                                </div>
+                                <p class="small">Campos com * são obrigatórios</p>
+                                <button type="submit" class="btn btn-secondary">
+                                    <i class="bi bi-send"></i> Enviar!
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
