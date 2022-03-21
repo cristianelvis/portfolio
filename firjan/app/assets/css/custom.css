@@ -382,6 +382,7 @@ body::after {
 #mrh-desligamento .banner i {
     font-size: 200%;
 }
+/*
 .nav.nav-tabs {
     margin:1vh 0 0 0;
     border-bottom: 1px solid var(--gray3);
@@ -411,17 +412,37 @@ body::after {
     font-weight: bold;
     background-color:var(--gray5);
 }
+*/
 .tab-content {
     width: 100%;
     padding: 3vh;
     background-color: var(--gray5);
     border-radius: 0 0 1vh 1vh;
 }
-
-
+#mrh-desligamento .dropdown-menu {
+    width:100%;
+}
+#mrh-desligamento .dropdown-item {
+    color:var(--CinzaFirjan);
+}
+#mrh-desligamento .dropdown-item.active,
+#mrh-desligamento .dropdown-item:active,
+#mrh-desligamento .dropdown-item:hover {
+    top:0;
+    color:var(--gray5);
+    background-color:var(--gray2);
+}
+#mrh-desligamento .dropdown-item:focus {
+    color:var(--gray5);
+    background-color:var(--VerdeCIRJ);
+}
 .form-floating>label {
     left:1vh;
 }
+
+
+
+
 /* FOOTER */
 #footer {
     background-color:white;
