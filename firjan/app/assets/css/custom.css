@@ -398,7 +398,7 @@ body::after {
     border-bottom: 1px solid var(--gray3);
 }
 .nav-tabs .nav-link {
-    width: 12vh;
+    width: 14vh;
     height: 10vh;
     border-top-left-radius: 1vh;
     border-top-right-radius: 1vh;
