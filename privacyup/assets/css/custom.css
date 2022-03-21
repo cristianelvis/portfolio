@@ -580,6 +580,33 @@ body::after {
         margin: 0 auto 2vh auto;
     }
 }
+/* PUBLICAÇÕES */
+#publicacoes.section006 {
+    color: var(--cor1);
+    width:100%;
+    height:auto;
+    padding: 20vh 3vh 20vh 3vh;
+    background-color: var(--gray5);
+}
+#publicacoes .card {
+    width:100%;
+    border-radius:1vh;
+}
+#publicacoes .card-body {
+    color:var(--gray5);
+    background-color: var(--cor01);
+    border-bottom-left-radius:1vh;
+    border-bottom-right-radius:1vh;
+}
+#publicacoes .card-img, .card-img-top {
+    border-top-left-radius:1vh;
+    border-top-right-radius:1vh;
+}
+@media screen and (max-width:576px) {
+    #publicacoes .card {
+        margin:1vh auto;
+    }
+}
 /* CONTATO */
 #contato.section007,
 #mensagemEnviada.section007,
