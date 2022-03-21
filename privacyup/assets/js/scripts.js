@@ -15,7 +15,7 @@ $(document).ready(function(){
     $("#lgpd").load("../inicio/section005.html");
     $("#publicacoes").load("../inicio/section006.html");
     $("#contato").load("../inicio/section007.html");
-    $("#mensagemEnviada").load("../mensagem-enviada/section007.html");
+    $("#mensagemEnviada").load("../inicio/section008.html");
+    $("#quizEnviada").load("../inicio/section009.html");
     $("#footer").load("../inicio/_footer.html");
 });
-

@@ -32,7 +32,7 @@ if (
                     "Content-type:text/html; charset=iso-8859-1";
 
     if (mail($to, $subject, $message, $header)) {
-        echo("<script>window.location='../mensagem-enviada/'</script>");
+        echo("<script>window.location='../inicio/mensagem-enviada.html'</script>");
     } else {
         echo("Algo deu errado, e-mail não enviado...");
     }

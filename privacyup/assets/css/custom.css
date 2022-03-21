@@ -52,7 +52,7 @@ body::after {
 }
 .navShow {
     top:0;
-    background-color: rgba(0, 168, 195, .8);
+    background-color:rgba(0, 168, 195, .8);
     transition:all 0.5s ease;
 }
 .navbar-brand {
@@ -287,15 +287,59 @@ body::after {
 #quiz.section002 h1 {
     font-weight:900;
 }
+#quiz .modal-content,
+#quizEnviada.section007 {
+    background-image:url(../images/privacyup-background-inicio-section002-min.png);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
 #quiz .modal-body {
     color:var(--cor01);
 }
+#quiz .modal-body .grid {
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-content:center;
+    text-align:center;
+}
+#quiz .btn-close {
+    color:var(--gray5);
+}
 #quiz .card {
-    border: 3px solid black;
-    width:50vh;
-    padding:20px;
+    color:var(--gray1);
+    width:100%;
+    padding:6vh;
     margin:0 auto;
+    background-color:rgba(0, 168, 195, .6);
+    border:0;
+    border-radius:3vh 0 3vh 0;
     display:none;
+}
+#quiz .card-start {
+    background-color:transparent;
+}
+#quiz .card h1,
+#quiz .card-title,
+#quiz .card-text {
+    color:var(--gray5);
+}
+#quiz .card .card-input label {
+    color:var(--gray5);
+    font-size:150%;
+    font-weight:900;
+    padding:0;
+    margin:1vh 2vh;
+    cursor:pointer;
+    text-transform:uppercase;
+}
+#quiz .card .card-input label:hover {
+    color:var(--cor02);
+}
+#quiz .card .card-input label [type=radio] { 
+    opacity:0;
 }
 @media screen and (max-width:768px) {
     #quiz.section002 {
@@ -538,14 +582,16 @@ body::after {
 }
 /* CONTATO */
 #contato.section007,
-#mensagemEnviada.section007 {
+#mensagemEnviada.section007,
+#quizEnviada.section007 {
     color:var(--gray5);
     width:100%;
     height:auto;
     padding:15vh 3vh;
-    background-color: var(--cor03);
+    background-color:var(--cor03);
 }
-#mensagemEnviada.section007 {
+#mensagemEnviada.section007,
+#quizEnviada.section007 {
     height:100vh;
     padding:3vh;
     display:flex;
@@ -553,37 +599,46 @@ body::after {
     justify-content:center;
 }
 #contato .grid,
-#mensagemEnviada .grid {
+#mensagemEnviada .grid,
+#quizEnviada .grid {
     display:flex;
     flex-direction:column;
     justify-content:center;
 }
-#mensagemEnviada .brand {
+#mensagemEnviada .brand,
+#quizEnviada .brand {
     width:30vh;
 }
+#orcamento h1,
 #contato h1,
-#mensagemEnviada h1 {
+#mensagemEnviada h1,
+#quizEnviada h1 {
     font-weight:900;
 }
+#orcamento a,
 #contato a,
-#mensagemEnviada a {
+#mensagemEnviada a,
+#quizEnviada a {
     font-size:100%;
     color:var(--gray5);
     text-decoration:none;
     margin:1vh;
     transition:all 0.5s ease;
 }
+#orcamento a:hover,
 #contato a:hover,
-#mensagemEnviada a:hover {
+#mensagemEnviada a:hover,
+#quizEnviada a:hover {
     color:var(--cor02);
 }
-#contato .btn-secondary,
-#mensagemEnviada .btn-secondary {
+#orcamento .btn-secondary,
+#contato .btn-secondary {
     text-align:center;
     margin:0 auto;
 }
 #contato #mensagemEnviar a,
-#contato #mensagemEnviada a {
+#contato #mensagemEnviada a,
+#orcamento a {
     color:var(--cor01);
 }
 #mensagemEnviar .modal-content,
@@ -593,10 +648,18 @@ body::after {
     background-repeat:no-repeat;
     background-size:cover;
 }
+#orcamento .modal-content {
+    background-image:url(../images/privacyup-background-inicio-orcamento-min.png);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
 #mensagemEnviar .btn-close,
-#mensagemEnviada .btn-close {
+#mensagemEnviada .btn-close,
+#orcamento .btn-close {
     color:var(--gray5);
 }
+#orcamento .grid-left,
 #contato .grid-left,
 #mensagemEnviada .grid-left {
     color:var(--gray5);
@@ -606,21 +669,25 @@ body::after {
     margin:10vh 10vh 10vh auto;
     display:flex;
     flex-direction:column;
-    justify-content:center;
+    justify-content: start;
     align-items:start;
+    text-align: start;
 }
+#orcamento .grid-left .brand,
 #contato .grid-left .brand,
 #mensagemEnviada .grid-left .brand {
     width:30vh;
-    margin:0 auto;
 }
+#orcamento .grid-left a,
 #contato .grid-left a {
     color:var(--gray5)!important;
     text-align: left;
 }
+#orcamento .grid-left a:hover,
 #contato .grid-left a:hover {
     color:var(--cor01)!important;
 }
+#orcamento .grid-right,
 #contato .grid-right {
     position:relative;
     top:15vh;
@@ -635,16 +702,20 @@ body::after {
     flex-direction:column;
     justify-content:center;
 }
+#orcamento .grid-right p,
 #contato .grid-right p {
     text-align:start;
 }
 #contato #mensagemEnviada .grid-right p {
     text-align:center;
 }
+#orcamento .form-control,
+#orcamento .form-floating>label,
 #contato .form-control,
 #contato .form-floating>label {
     color:var(--gray1)!important;
 }
+#orcamento .form-control:focus,
 #contato .form-control:focus {
     background-color:var(--gray4);
     border-color:var(--gray4);
@@ -653,15 +724,19 @@ body::after {
 }
 @media screen and (max-width:768px) {
     #mensagemEnviar .modal-content,
-    #mensagemEnviada .modal-content {
+    #mensagemEnviada .modal-content,
+    #orcamento .modal-content {
         background-position:85% 0%;
     }
+    #orcamento .grid-left,
+    #orcamento .grid-right,
     #contato .grid-left,
     #contato .grid-right {
         width:100%;
         padding:2vh;
         margin:10vh 0 0 0;
     }
+    #orcamento .grid-right,
     #contato .grid-right {
         top:0;
         margin:0;
@@ -681,6 +756,12 @@ body::after {
     transition:all 0.5s ease;
 }
 #footer .social:hover {
+    color:var(--cor02);
+}
+#footer a {
+    color:var(--gray5);
+}
+#footer a:hover {
     color:var(--cor02);
 }
 @media screen and (max-width:768px) {
