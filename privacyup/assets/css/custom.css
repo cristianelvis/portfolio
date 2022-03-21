@@ -602,9 +602,44 @@ body::after {
     border-top-left-radius:1vh;
     border-top-right-radius:1vh;
 }
+#publicacoes .title-img-top {
+    width: 100%;
+    margin: 0 auto;
+    border-radius:1vh;
+}
+#publicacoes .card-news-content {
+    padding: 2vh;
+    background-color: var(--gray4);
+    border-radius:1vh;
+    box-shadow:2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+#publicacoes .card-news-quiz {
+    color: var(--gray5);
+    padding: 3vh;
+    background-color: var(--cor02);
+    border-radius:1vh;
+}
+#publicacoes .card-news-quiz h1 {
+    font-size: 140%;
+}
+#publicacoes .gadget-news {
+    padding: 2vh;
+    margin:0 0 0 3vh;
+    background-color: var(--gray4);
+    border-radius:1vh;
+    box-shadow:2px 2px 2px rgba(0, 0, 0, 0.25);
+    text-align: start;
+}
+#publicacoes .gadget-news h3 {
+    font-weight: bold;
+}
+
 @media screen and (max-width:576px) {
     #publicacoes .card {
         margin:1vh auto;
+    }
+    #publicacoes .gadget-news {
+        margin:0 auto;
     }
 }
 /* CONTATO */
