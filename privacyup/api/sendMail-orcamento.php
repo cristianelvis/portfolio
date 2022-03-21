@@ -13,7 +13,7 @@ if (
 	$orcamentoSubject  = $_POST['orcamentoSubject'];
 	$orcamentoMessage  = $_POST['orcamentoMessage'];
 
-    $to           = "cristianelvisdesign@gmail.com";
+    $to           = "contato@privacyupconsulting.com";
 
     $subject      = "$orcamentoSubject - Contato via site Privacy UP";
     $message      = "<html>

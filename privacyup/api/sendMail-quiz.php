@@ -31,7 +31,7 @@ if (
     $score               = $_POST['score'];
 	$userMessage         = $_POST['userMessage'];
 
-    $to = "cristianelvisdesign@gmail.com";
+    $to = "contato@privacyupconsulting.com";
 
     $subject = "$quizSubject - via site Privacy UP";
     $message = "<!DOCTYPE html>

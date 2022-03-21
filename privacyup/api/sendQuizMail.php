@@ -17,7 +17,7 @@ if (
 	$userNumbersEmployees   = $_POST['usersNumbersEmployees'];
 	$questions              = json_decode($_POST['questions']);
     $score                  = $_POST['score'];
-    $to                     = "cristianelvisdesign@gmail.com";
+    $to                     = "contato@privacyupconsulting.com";
 
     $question = '';
     foreach($questions as $q) {

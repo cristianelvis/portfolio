@@ -13,7 +13,7 @@ if (
 	$userSubject  = $_POST['userSubject'];
 	$userMessage  = $_POST['userMessage'];
 
-    $to           = "cristianelvisdesign@gmail.com";
+    $to           = "contato@privacyupconsulting.com";
 
     $subject      = "$userSubject - Contato via site Privacy UP";
     $message      = "<html>
