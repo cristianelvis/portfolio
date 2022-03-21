@@ -265,8 +265,6 @@ body::after {
 }
 /* MAINCONTENT */
 #maincontent {
-    display: grid;
-    grid-template-columns: 1fr;
     padding: 12vh 0;
 }
 #sidebar {
@@ -300,9 +298,11 @@ body::after {
 }
 /* MRH Desligamento */
 #mrh-desligamento .banner {
+    width: 100%;
     color:var(--AzulFirjan);
     font-weight: bold;
     padding:6vh 2vh;
+    margin: 0 auto;
     background-color:white;
     display: flex;
     flex-direction:initial;
@@ -314,8 +314,9 @@ body::after {
     width: 25vh;
 }
 #mrh-desligamento .banner2 {
+    width: 100%;
     padding:6vh 2vh;
-    margin-bottom:2vh;
+    margin: 2vh auto;
     background-color:var(--AzulFirjanII);
     display: flex;
     flex-direction:initial;
@@ -327,7 +328,9 @@ body::after {
     color: white;
 }
 #mrh-desligamento .banner3 {
+    width: 100%;
     padding:6vh 2vh;
+    margin: 0 auto;
     background-color:var(--AzulFirjanII);
     display: flex;
     flex-direction:initial;
@@ -382,9 +385,16 @@ body::after {
 #mrh-desligamento .banner i {
     font-size: 200%;
 }
-/*
+.tabs-responsive {
+    width:100%;
+    height:10vh;
+    overflow: hidden;
+    overflow-x: auto;
+    display: block;
+}
 .nav.nav-tabs {
-    margin:1vh 0 0 0;
+    width: max-content;
+    margin:1vh auto 0 auto;
     border-bottom: 1px solid var(--gray3);
 }
 .nav-tabs .nav-link {
@@ -412,7 +422,6 @@ body::after {
     font-weight: bold;
     background-color:var(--gray5);
 }
-*/
 .tab-content {
     width: 100%;
     padding: 3vh;
@@ -439,7 +448,6 @@ body::after {
 .form-floating>label {
     left:1vh;
 }
-
 
 
 
