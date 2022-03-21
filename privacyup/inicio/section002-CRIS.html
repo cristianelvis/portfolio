@@ -1,0 +1,163 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-10 offset-lg-1 col-xl-10 offset-xl-1">
+            <h1>Será que sua empresa precisa se adaptar a LGPD?</h1>
+            <p>Responda nosso quiz para descobrir.</p>
+            <a href="#" class="btn btn-tertiary shadow-none" data-bs-toggle="modal" data-bs-target="#quizStart">
+                <i class="bi bi-quora"></i> Quiz
+            </a>
+        </div>
+    </div>
+</div>
+<div class="modal fade" tabindex="-1" aria-hidden="true" aria-labelledby="quizStart" id="quizStart">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="bi bi-x-square"></i> Close
+                </button>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 offset-sm-3 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-6 offset-xl-3 grid">
+                        <div class="card card-start">
+                            <h1>Quiz</h1>
+                            <p>Vamos fazer algumas perguntas e avaliaremos as suas necessidades na LGPD!</p>
+                            <button class="btn btn-primary shadow-none" onclick="next(1)">
+                                <i class="bi bi-quora"></i> Conheçar!
+                            </button>
+                        </div>
+                        <div class="card">
+                            <h1>Quiz</h1>
+                            <h3 class="card-title">Pergunta 1</h3>
+                            <p class="card-text">No desempenho de suas atividades, a empresa armazena dados pessoais - de clientes, funcionários e/ou fornecedores? (Ex: CPF, data de nascimento, e-mail, etc.)</p>
+                            <input type="radio" name="question1" id="correct1" onclick="next(2)">SIM<br><br>
+                            <input type="radio" name="question1" onclick="next(2)">Não<br><br>
+                            <a href="#" class="btn btn-secondary shadow-none btn-prev">Voltar</a>
+                            <a href="#" class="btn btn-secondary shadow-none btn-next">próximo</a>
+                        </div>
+                        <div class="card">
+                            <h1>Quiz</h1>
+                            <h3 class="card-title">Pergunta 2</h3>
+                            <p class="card-text">A empresa solicita o consentimento específico para coleta, tratamento de dados e/ou ações de marketing?</p>
+                            <input type="radio" name="question2" id="correct2" onclick="next(3)">SIM<br><br>
+                            <input type="radio" name="question2" onclick="next(3)">Não<br><br>
+                            <a href="#" class="btn btn-secondary shadow-none btn-prev">Voltar</a>
+                            <a href="#" class="btn btn-secondary shadow-none btn-next">próximo</a>
+                        </div>
+                        <div class="card">
+                            <h1>Quiz</h1>
+                            <h3 class="card-title">Pergunta 3</h3>
+                            <p class="card-text">A empresa conta atualmente com uma política de dados de cibersegurança e proteção e privacidade de dados?</p>
+                            <input type="radio" name="question3" id="correct3" onclick="next(4)">SIM<br><br>
+                            <input type="radio" name="question3" onclick="next(4)">Não<br><br>
+                            <a href="#" class="btn btn-secondary shadow-none btn-prev">Voltar</a>
+                            <a href="#" class="btn btn-secondary shadow-none btn-next">próximo</a>
+                        </div>
+                        <div class="card">
+                            <h1>Quiz</h1>
+                            <h3 class="card-title">Pergunta 4</h3>
+                            <p class="card-text">A empresa possui ações/treinamentos recorrentes visando a conscientização dos colaboradores sobre a importância da segurança de dados?</p>
+                            <input type="radio" name="question4" id="correct4" onclick="next(5)">SIM<br><br>
+                            <input type="radio" name="question4" onclick="next(5)">Não<br><br>
+                            <a href="#" class="btn btn-secondary shadow-none btn-prev">Voltar</a>
+                            <a href="#" class="btn btn-secondary shadow-none btn-next">próximo</a>
+                        </div>
+                        <div class="card">
+                            <h1>Quiz</h1>
+                            <h3 class="card-title">Pergunta 5</h3>
+                            <p class="card-text">A empresa conta, atualmente, com planos de resposta a incidentes e remediações no caso de vazamento dos dados?</p>
+                            <input type="radio" name="question5" id="correct5" onclick="next(6)">SIM<br><br>
+                            <input type="radio" name="question5" onclick="next(6)">Não<br><br>
+                            <a href="#" class="btn btn-secondary shadow-none btn-prev">Voltar</a>
+                            <a href="#" class="btn btn-secondary shadow-none btn-next">próximo</a>
+                        </div>
+                        <div class="card">
+                            <h1>Quiz</h1>
+                            <h3 class="card-title">Pergunta 6</h3>
+                            <p class="card-text">A empresa possui um Encarregado de Proteção de Dados Nomeado (DPO)?</p>
+                            <input type="radio" name="question6" id="correct6" onclick="next(7)">SIM<br><br>
+                            <input type="radio" name="question6" onclick="next(7)">Não<br><br>
+                            <a href="#" class="btn btn-secondary shadow-none btn-prev">Voltar</a>
+                            <a href="#" class="btn btn-secondary shadow-none btn-next">próximo</a>
+                        </div>
+                        <div class="card">
+                            <h1>Quiz</h1>
+                            <h3 class="card-title">Resultado</h3>
+                            <p class="card-text">Para ter acesso aos resultados, preencha os dados abaixo:</p>
+                            <form action="../api/sendMail.php" method="post">
+                                <input type="hidden" name="quizSubject" value="QUIZ - Participação no quiz da Privacy Up">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" name="userName" placeholder="*Seu Nome" required="" oninvalid="this.setCustomValidity('Por favor inserir seu nome')" oninput="setCustomValidity('')">
+                                    <label for="floatingInput">*Seu Nome</label>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md">
+                                        <div class="form-floating mb-3">
+                                            <input type="email" class="form-control" name="userEmail" placeholder="*Seu email" required="" oninvalid="this.setCustomValidity('Por favor inserir seu e-mail')" oninput="setCustomValidity('')">
+                                            <label for="floatingInput">*Seu email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md">    
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" name="userPhone" placeholder="*Número para contato" required="" oninvalid="this.setCustomValidity('Por favor inserir seu número para contato')" oninput="setCustomValidity('')">
+                                            <label for="floatingPassword">*Número para contato</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" name="userSetor" placeholder="Setor da empresa">
+                                            <label for="floatingInput">Setor da empresa</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md">    
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" name="userQtaFuncionarios" placeholder="Quantidade de Funcionários">
+                                            <label for="floatingInput">Quantidade de Funcionários</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control" name="userMessage" placeholder="Deixe sua mensagem aqui." style="height:150px" required="" oninvalid="this.setCustomValidity('Digite sua mensagem')" oninput="setCustomValidity('')"></textarea>
+                                    <label for="floatingTextarea">Deixe sua mensagem aqui.</label>
+                                </div>
+                                <p class="small">Campos com * são obrigatórios</p>
+                                <button type="submit" class="btn btn-secondary">
+                                    <i class="bi bi-send"></i> Quero avaliar meu resultado!
+                                </button>
+                                <!--<button class="btn btn-primary shadow-none next" onclick="result()">
+                                    <i class="bi bi-arrow-down-circle"></i> Resultado!
+                                </button>-->
+                            </form>
+                        </div>
+                        <script>
+                            // displaying the first block of question
+                            document.getElementsByClassName('card')[0].style.display = "block";
+
+                            // defining the next function
+                            function next(id) {
+                                document.getElementsByClassName('card')[id-1].style.display = "none";
+                                document.getElementsByClassName('card')[id].style.display = "block";
+                            }
+
+                            //getting final result
+                            function result() {
+                                var score = 0;
+                                if (document.getElementById('correct1').checked) {
+                                    score++;
+                                }
+                                if (document.getElementById('correct2').checked) {
+                                    score++;
+                                }
+                                if (document.getElementById('correct3').checked) {
+                                    score++;
+                                }
+                                alert("your score is: "+ score);
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
