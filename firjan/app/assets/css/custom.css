@@ -310,8 +310,8 @@ body::after {
     align-items: start;
     text-align: start;
 }
-#mrh-desligamento .banner .brand {
-    width: 25vh;
+#mrh-desligamento .banner h3 {
+    color: var(--CinzaFirjan);
 }
 #mrh-desligamento .banner2 {
     width: 100%;
@@ -338,65 +338,21 @@ body::after {
     align-items: start;
     text-align: start;
 }
-#mrh-desligamento .form-select
-#mrh-desligamento .form-control {
-    line-height:2.5;
-}
-#mrh-desligamento .form-floating>label {
-    color:var(--gray1)!important;
-}
-#mrh-desligamento #accordionTipo label,
-#mrh-desligamento #accordionMotivo label,
-#mrh-desligamento #accordionEstabilidade label,
-#mrh-desligamento #accordionDeficiencia label,
-#mrh-desligamento #accordionSubstituicao label,
-#mrh-desligamento #accordionAprovado label {
-    color:var(--AzulFirjan);
-    font-size:100%;
-    font-weight:900;
-    padding:0;
-    cursor:pointer;
-    display: inline-block;
-}
-.accordion-button:not(.collapsed) {
-    font-weight: bold;
-    background-color: var(--AzulSENAI);
-}
-.accordion-body label {
-    margin: 1vh;
-}
-#mrh-desligamento #accordionTipo label:hover,
-#mrh-desligamento #accordionMotivo label:hover,
-#mrh-desligamento #accordionEstabilidade label:hover,
-#mrh-desligamento #accordionDeficiencia label:hover,
-#mrh-desligamento #accordionSubstituicao label:hover,
-#mrh-desligamento #accordionAprovado label:hover {
-    color:var(--CinzaFirjan);
-}
-#mrh-desligamento #accordionTipo label [type=radio],  
-#mrh-desligamento #accordionMotivo label [type=radio],
-#mrh-desligamento #accordionEstabilidade label [type=radio],
-#mrh-desligamento #accordionDeficiencia label [type=radio],
-#mrh-desligamento #accordionSubstituicao label [type=radio],
-#mrh-desligamento #accordionAprovado label [type=radio]
- {
-    opacity:0;
-}
 #mrh-desligamento .banner i {
     font-size: 200%;
 }
-.tabs-responsive {
+#mrh-desligamento .tabs-responsive {
     width:100%;
     overflow: hidden;
     overflow-x: auto;
     display: block;
 }
-.nav.nav-tabs {
+#mrh-desligamento .nav.nav-tabs {
     width: max-content;
     margin:1vh auto 0 auto;
     border-bottom: 1px solid var(--gray3);
 }
-.nav-tabs .nav-link {
+#mrh-desligamento .nav-tabs .nav-link {
     width: 18vh;
     height: 10vh;
     border-top-left-radius: 1vh;
@@ -411,17 +367,17 @@ body::after {
     align-items: center;
     text-align: center;
 }
-.nav-tabs .nav-link:focus,
-.nav-tabs .nav-link:hover {
+#mrh-desligamento .nav-tabs .nav-link:focus,
+#mrh-desligamento .nav-tabs .nav-link:hover {
     background-color: var(--AzulSENAI);
 }
-.nav-tabs .nav-item.show .nav-link,
-.nav-tabs .nav-link.active {
+#mrh-desligamento .nav-tabs .nav-item.show .nav-link,
+#mrh-desligamento .nav-tabs .nav-link.active {
     color:var(--gray1);
     font-weight: bold;
     background-color:var(--gray5);
 }
-.tab-content {
+#mrh-desligamento .tab-content {
     width: 100%;
     padding: 3vh;
     background-color: var(--gray5);
@@ -444,8 +400,17 @@ body::after {
     color:var(--gray5);
     background-color:var(--VerdeCIRJ);
 }
-.form-floating>label {
+#mrh-desligamento .form-selectX,
+#mrh-desligamento .form-controlX {
+    line-height:2.5;
+}
+#mrh-desligamento .form-floating label {
     left:1vh;
+    transition:all 0.5s ease;
+}
+
+#mrh-desligamento .input-group .form-floating label {
+    left:0;    
 }
 
 
