@@ -3,7 +3,7 @@
  * Cristian Elvis - v1.0 (http://cristianelvis.com)
  * Copyright 2022 Cristian Elvis
  */
- @font-face {
+@font-face {
     font-family: Averta Regular;
     src: url(../fonts/Averta-Regular.woff);
     font-weight: normal;
@@ -353,7 +353,7 @@ body::after {
     border-bottom: 1px solid var(--gray3);
 }
 #mrh-desligamento .nav-tabs .nav-link {
-    width: 18vh;
+    width: 20vh;
     height: 10vh;
     border-top-left-radius: 1vh;
     border-top-right-radius: 1vh;
@@ -408,7 +408,6 @@ body::after {
     left:1vh;
     transition:all 0.5s ease;
 }
-
 #mrh-desligamento .input-group .form-floating label {
     left:0;    
 }
