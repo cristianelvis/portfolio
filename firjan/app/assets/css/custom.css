@@ -369,7 +369,8 @@ body::after {
 }
 #mrh-desligamento .nav-tabs .nav-link:focus,
 #mrh-desligamento .nav-tabs .nav-link:hover {
-    background-color: var(--AzulSENAI);
+    border-color: var(--AzulSENAI);
+    border-bottom: transparent;
 }
 #mrh-desligamento .nav-tabs .nav-item.show .nav-link,
 #mrh-desligamento .nav-tabs .nav-link.active {
