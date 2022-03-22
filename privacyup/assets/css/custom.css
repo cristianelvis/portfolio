@@ -78,7 +78,7 @@ body::after {
 .navbar-brand {
     width: 40vh;
     padding:0;
-    margin:1vh 0;
+    margin:2vh 0;
     font-size:unset;
     text-decoration:unset;
     white-space:nowrap;
@@ -226,7 +226,7 @@ body::after {
 }
 .btn-close:hover {
     font-size:130%;
-    font-weight:900;
+    font-weight:700;
     color:var(--cor02)!important;
     text-shadow:2px 2px 2px rgba(0, 0, 0, 0.25);
 }
@@ -284,7 +284,7 @@ body::after {
     font-family: Afrah-Bold;
     font-size: 300%;
     line-height:120%;
-    font-weight:900;
+    font-weight:700;
     margin-bottom: 3vh;
 }
 #inicio .l2 {
@@ -312,7 +312,7 @@ body::after {
     background-color:var(--cor02);
 }
 #quiz.section002 h1 {
-    font-weight:900;
+    font-weight:700;
 }
 #quiz .modal-content,
 #quizEnviada.section007 {
@@ -356,7 +356,7 @@ body::after {
 #quiz .card .card-input label {
     color:var(--gray5);
     font-size:150%;
-    font-weight:900;
+    font-weight:700;
     padding:0;
     margin:1vh 2vh;
     cursor:pointer;
@@ -382,7 +382,7 @@ body::after {
     background:linear-gradient(0deg, var(--gray5) 70%, var(--cor02) 0%);
 }
 #sobrenos.section003 h1 {
-    font-weight:900;
+    font-weight:700;
     margin-top:12vh;
 }
 #sobrenos .statue {
@@ -410,7 +410,7 @@ body::after {
     justify-content:center;
 }
 #servicos.section004 h1 {
-    font-weight:900;
+    font-weight:700;
 }
 #servicos .modal-body {
     padding:0;
@@ -584,7 +584,7 @@ body::after {
 #service13:hover,
 #service14:hover,
 #service15:hover {
-    font-weight:900;
+    font-weight:700;
     text-decoration:underline;
 }
 @media screen and (max-width:768px) {
@@ -702,7 +702,7 @@ body::after {
 #contato h1,
 #mensagemEnviada h1,
 #quizEnviada h1 {
-    font-weight:900;
+    font-weight:700;
 }
 #orcamento a,
 #contato a,
