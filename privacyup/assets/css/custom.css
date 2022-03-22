@@ -3,10 +3,25 @@
  * Cristian Elvis - v1.0 (http://cristianelvis.com)
  * Copyright 2022 Cristian Elvis
  */
- @font-face {
-    font-family: AfrahBold;
+@font-face {
+    font-family: Afrah-Bold;
     src: url(../fonts/Afrah-Bold.woff);
-    font-weight: bold;
+}
+@font-face {
+    font-family: Afrah-Light;
+    src: url(../fonts/Afrah-Light.woff);
+}
+@font-face {
+    font-family: Afrah-Regular;
+    src: url(../fonts/Afrah-Regular.woff);
+}
+@font-face {
+    font-family: Afrah-Round;
+    src: url(../fonts/Afrah-Round.woff);
+}
+@font-face {
+    font-family: Afrah-Thin;
+    src: url(../fonts/Afrah-Thin.woff);
 }
 :root {
     --cor01:#2c3d4f;
@@ -266,7 +281,7 @@ body::after {
     justify-content: center;
 }
 #inicio .l1 {
-    font-family:AfrahBold;
+    font-family: Afrah-Bold;
     font-size: 300%;
     line-height:120%;
     font-weight:900;
@@ -280,6 +295,7 @@ body::after {
     #inicio #carouselPrivacyupInicio .carousel-caption {
             top:unset;
             bottom:10%;
+            min-height: unset;
             text-align:left;
     }
     #inicio .section001Image001 {
