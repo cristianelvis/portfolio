@@ -372,6 +372,9 @@ body::after {
     #quiz.section002 {
         padding:20vh 3vh;
     }
+    #quiz .card {
+        padding:6vh 3vh;
+    }
 }
 /* SOBRE NÓS */
 #sobrenos.section003 {
