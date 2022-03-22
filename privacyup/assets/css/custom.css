@@ -3,6 +3,11 @@
  * Cristian Elvis - v1.0 (http://cristianelvis.com)
  * Copyright 2022 Cristian Elvis
  */
+ @font-face {
+    font-family: AfrahBold;
+    src: url(../fonts/Afrah-Bold.woff);
+    font-weight: bold;
+}
 :root {
     --cor01:#2c3d4f;
     --cor02:#8d3353;
@@ -247,22 +252,28 @@ body::after {
 }
 #inicio #carouselPrivacyupInicio .carousel-caption {
     position: absolute;
+    min-height: 100%;
     top: unset;
     right:10%;
-    bottom: 10%;
-    left:10%;
+    bottom: 0;
+    left: 10%;
     padding-top:1vh;
     padding-bottom:1vh;
     color:white;
     text-align:left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 #inicio .l1 {
-    font-size:300%;
+    font-family:AfrahBold;
+    font-size: 300%;
     line-height:120%;
     font-weight:900;
+    margin-bottom: 3vh;
 }
 #inicio .l2 {
-    font-size:150%;
+    font-size: 100%;
     line-height:120%;
 }
 @media screen and (max-width:768px) {
