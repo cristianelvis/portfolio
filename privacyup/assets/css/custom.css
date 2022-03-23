@@ -830,14 +830,14 @@ h1 {
     padding:3vh 0 3vh 0;
     background-color:var(--cor01);
 }
-#footer .social {
+#footer .social-icon {
     font-size:150%;
     color:var(--gray5);
     text-decoration:none;
     margin:1vh;
     transition:all 0.5s ease;
 }
-#footer .social:hover {
+#footer .social-icon:hover {
     color:var(--cor02);
 }
 #footer a {
@@ -847,16 +847,14 @@ h1 {
     color:var(--cor02);
 }
 @media screen and (max-width:768px) {
-    #footer .text-start,
+    #footer .politics {
+        padding-top:3vh;
+        padding-bottom:3vh;
+    }
+    #footer .copyright,
     #footer .text-end {
         position:relative;
         text-align:center!important;
-    }
-    #footer .text-start {
-        top:30px
-    }
-    #footer .text-end {
-        top:-20px
     }
 }
 
