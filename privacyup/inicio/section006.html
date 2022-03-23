@@ -5,38 +5,109 @@
             <p>Artigos para atualizar você, sobre o que está acontecendo na área da LGPD.</p>
         </div>
         <div class="col-xs-12 col-sm-8 offset-sm-2 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
-            <div class="row">
-                <div class="col-xs-12 col-sm-4 text-center">
-                    <div class="card">
-                        <img src="../assets/images/publicacoes-000.png" class="card-img-top" alt="Clique para saber mais!">
-                        <div class="card-body">
-                          <h5 class="card-title">What is Lorem Ipsum?</h5>
-                          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#public-000">Ler mais.</a>
+            <div class="carousel slide" data-bs-ride="carousel" id="publicacoesCards">
+                <button class="carousel-control-prev" type="button" data-bs-target="#publicacoesCards" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#publicacoesCards" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <!--<div class="carousel-indicators">
+                    <button type="button" data-bs-target="#publicacoesCards" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Card 01"></button>
+                    <button type="button" data-bs-target="#publicacoesCards" data-bs-slide-to="1" aria-label="Card 02"></button>
+                    <button type="button" data-bs-target="#publicacoesCards" data-bs-slide-to="2" aria-label="Card 03"></button>
+                </div>-->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card">
+                            <img src="../assets/images/publicacoes-000.png" class="card-img-top" alt="Clique para saber mais!">
+                            <div class="card-body">
+                            <h5 class="card-title">001 - What is Lorem Ipsum?</h5>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#public-000">Ler mais.</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xs-12 col-sm-4 text-center">
-                    <div class="card">
-                        <img src="../assets/images/publicacoes-000.png" class="card-img-top" alt="Clique para saber mais!">
-                        <div class="card-body">
-                          <h5 class="card-title">What is Lorem Ipsum?</h5>
-                          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                          <a href="#" class="btn btn-primary">Ler mais.</a>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="../assets/images/publicacoes-000.png" class="card-img-top" alt="Clique para saber mais!">
+                            <div class="card-body">
+                            <h5 class="card-title">002 - What is Lorem Ipsum?</h5>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                            <a href="#" class="btn btn-primary">Ler mais.</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xs-12 col-sm-4 text-center">
-                    <div class="card">
-                        <img src="../assets/images/publicacoes-000.png" class="card-img-top" alt="Clique para saber mais!">
-                        <div class="card-body">
-                          <h5 class="card-title">What is Lorem Ipsum?</h5>
-                          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                          <a href="#" class="btn btn-primary">Ler mais.</a>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="../assets/images/publicacoes-000.png" class="card-img-top" alt="Clique para saber mais!">
+                            <div class="card-body">
+                            <h5 class="card-title">003 - What is Lorem Ipsum?</h5>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                            <a href="#" class="btn btn-primary">Ler mais.</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <script>
+                (function() {
+  /*  
+  ...customise bootstrap carousel 
+  ...change bootstrap carousel interval
+  */
+  $('#publicacoesCards .carousel-item').carousel({
+    interval: 4000
+  });
+}());
+
+(function() {
+  $('.carousel-inner .carousel-item').each(function() {
+    var itemToClone = $(this);
+    /* number  of item show  in slide (3) */
+    for (var i = 1; i < 3; i++) {
+      /* go to the  next  item */
+      itemToClone = itemToClone.next();
+
+      /*  ....
+        when that  item is last  item  in cauarsol-item  do this choos first sibling item and 
+         go to do  add it , clone, add class, and add to collection
+      */
+      /*    else..... 
+            skip this condition and go to  add item content  and  clone it ....
+      */
+
+      if (!itemToClone.length) {
+        itemToClone = $(this).siblings(':first');
+      }
+
+      /* 
+        .... show the first-child in item class  " this div contain the content inside in" 
+        ... then clone this selector "clearly meaning copy the data"
+        ...  and give  it tha css style 
+        ...  then add it  to collection in slide 
+      */
+      itemToClone.children(':first-child').clone()
+        .addClass("cloneditem-" + (i))
+        .appendTo($(this));
+
+      $(".carousel-inner ").find(".carousel-item").css("transition", "   500ms ease-in-out all  ").css("transition", "  500ms ease-in-out all").css("backface-visibility", "visible").css("transform", "none!important")
+
+      /*
+       .... you  can  use  bootstrap function  if you used bootstrap CDN 
+       .... but iam used  always  bootstrap.min.js   so  i do  this 
+      
+       .... @media all and (min-width: 768px) and (transform-3d),
+           all and (min-width: 768px) and (-webkit-transform-3d)
+      
+      */
+
+    }
+  });
+}());
+            </script>
         </div>
     </div>
 </div>
