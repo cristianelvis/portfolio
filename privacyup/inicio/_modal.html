@@ -1,1 +1,520 @@
-teste
+<!-- PUBLICAÇÃO 000-->
+<div class="modal fade public-modal" tabindex="-1" aria-hidden="true" aria-labelledby="public-000" id="public-000">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="bi bi-x-square"></i> Close
+                </button>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 offset-sm-1 col-md-6 offset-md-1 col-lg-6 offset-lg-1 col-xl-6 offset-xl-1 text-start">
+                        <div class="card-news-content">
+                            <img src="../assets/images/publicacoes-title-000.png" class="title-img-top" alt="">
+                            <h1>What is Lorem Ipsum?</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                        <div class="gadget-news">
+                            <h3>Quiz</h3>
+                            <hr>
+                            <div class="row card-news-quiz">
+                                <h1>Será que sua empresa precisa se adaptar a LGPD?</h1>
+                                <p>Responda nosso quiz para descobrir.</p>
+                                <a href="#" class="btn btn-tertiary shadow-none" data-bs-toggle="modal" data-bs-target="#quizStart">
+                                    <i class="bi bi-quora"></i> Quiz
+                                </a>
+                                <script>
+                                    $("#quizStart").on('show.bs.modal', function (e) {
+                                        $("#public-000").modal("hide");
+                                    });
+                                </script>
+                            </div>
+                            <br><br>
+                            <h3>Mais artigos</h3>
+                            <hr>
+                            <p>Nenhum artigo inserido.</p>
+                            <br><br><br><br>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- SEVIÇO - Consultoria em Proteção de Dados - LGPD -->
+<div class="modal fade service-modal" tabindex="-1" aria-hidden="true" aria-labelledby="service-01" id="service-01">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="bi bi-x-square"></i> Close
+                </button>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 banner">
+                            <h1>Consultoria em Proteção de Dados - LGPD</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            <div class="grid-left">
+                                <h3>What is Lorem Ipsum?</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            <div class="grid-right">
+                                <form action="../api/sendMail-orcamento.php" method="post">
+                                    <h3>Solicitar um orçamento.</h3>
+                                    <p>Sem compromisso!</p>
+                                    <input type="hidden" name="orcamentoSubject" value="Orçamento - Consultoria em Proteção de Dados">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" name="orcamentoName" placeholder="*Seu Nome" required="" oninvalid="this.setCustomValidity('Por favor inserir seu nome')" oninput="setCustomValidity('')">
+                                        <label for="floatingInput">*Seu Nome</label>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md">
+                                            <div class="form-floating mb-3">
+                                                <input type="email" class="form-control" name="orcamentoEmail" placeholder="*Seu email" required="" oninvalid="this.setCustomValidity('Por favor inserir seu e-mail')" oninput="setCustomValidity('')">
+                                                <label for="floatingInput">*Seu email</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md">    
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control" name="orcamentoPhone" placeholder="*Número para contato" required="" oninvalid="this.setCustomValidity('Por favor inserir seu número para contato')" oninput="setCustomValidity('')">
+                                                <label for="floatingPassword">*Número para contato</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <textarea class="form-control" name="orcamentoMessage" placeholder="Deixe sua mensagem aqui." style="height:150px" required="" oninvalid="this.setCustomValidity('Digite sua mensagem')" oninput="setCustomValidity('')"></textarea>
+                                        <label for="floatingTextarea">Deixe sua mensagem aqui.</label>
+                                    </div>
+                                    <p class="small">Campos com * são obrigatórios</p>
+                                    <button type="submit" class="btn btn-secondary">
+                                        <i class="bi bi-send"></i> Solicitar Orçamento!
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SEVIÇO - Governança e Compliance -->
+<div class="modal fade service-modal" tabindex="-1" aria-hidden="true" aria-labelledby="service-02" id="service-02">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="bi bi-x-square"></i> Close
+                </button>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 banner">
+                            <h1>Governança e Compliance</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            <div class="grid-left">
+                                <h3>What is Lorem Ipsum?</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            <div class="grid-right">
+                                <form action="../api/sendMail-orcamento.php" method="post">
+                                    <h3>Solicitar um orçamento.</h3>
+                                    <p>Sem compromisso!</p>
+                                    <input type="hidden" name="orcamentoSubject" value="Orçamento - Governança e Compliance">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" name="orcamentoName" placeholder="*Seu Nome" required="" oninvalid="this.setCustomValidity('Por favor inserir seu nome')" oninput="setCustomValidity('')">
+                                        <label for="floatingInput">*Seu Nome</label>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md">
+                                            <div class="form-floating mb-3">
+                                                <input type="email" class="form-control" name="orcamentoEmail" placeholder="*Seu email" required="" oninvalid="this.setCustomValidity('Por favor inserir seu e-mail')" oninput="setCustomValidity('')">
+                                                <label for="floatingInput">*Seu email</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md">    
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control" name="orcamentoPhone" placeholder="*Número para contato" required="" oninvalid="this.setCustomValidity('Por favor inserir seu número para contato')" oninput="setCustomValidity('')">
+                                                <label for="floatingPassword">*Número para contato</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <textarea class="form-control" name="orcamentoMessage" placeholder="Deixe sua mensagem aqui." style="height:150px" required="" oninvalid="this.setCustomValidity('Digite sua mensagem')" oninput="setCustomValidity('')"></textarea>
+                                        <label for="floatingTextarea">Deixe sua mensagem aqui.</label>
+                                    </div>
+                                    <p class="small">Campos com * são obrigatórios</p>
+                                    <button type="submit" class="btn btn-secondary">
+                                        <i class="bi bi-send"></i> Solicitar Orçamento!
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SEVIÇO - Segurança da Informação -->
+<div class="modal fade service-modal" tabindex="-1" aria-hidden="true" aria-labelledby="service-03" id="service-03">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="bi bi-x-square"></i> Close
+                </button>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 banner">
+                            <h1>Segurança da Informação</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            <div class="grid-left">
+                                <h3>What is Lorem Ipsum?</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            <div class="grid-right">
+                                <form action="../api/sendMail-orcamento.php" method="post">
+                                    <h3>Solicitar um orçamento.</h3>
+                                    <p>Sem compromisso!</p>
+                                    <input type="hidden" name="orcamentoSubject" value="Orçamento - Segurança da Informação">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" name="orcamentoName" placeholder="*Seu Nome" required="" oninvalid="this.setCustomValidity('Por favor inserir seu nome')" oninput="setCustomValidity('')">
+                                        <label for="floatingInput">*Seu Nome</label>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md">
+                                            <div class="form-floating mb-3">
+                                                <input type="email" class="form-control" name="orcamentoEmail" placeholder="*Seu email" required="" oninvalid="this.setCustomValidity('Por favor inserir seu e-mail')" oninput="setCustomValidity('')">
+                                                <label for="floatingInput">*Seu email</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md">    
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control" name="orcamentoPhone" placeholder="*Número para contato" required="" oninvalid="this.setCustomValidity('Por favor inserir seu número para contato')" oninput="setCustomValidity('')">
+                                                <label for="floatingPassword">*Número para contato</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <textarea class="form-control" name="orcamentoMessage" placeholder="Deixe sua mensagem aqui." style="height:150px" required="" oninvalid="this.setCustomValidity('Digite sua mensagem')" oninput="setCustomValidity('')"></textarea>
+                                        <label for="floatingTextarea">Deixe sua mensagem aqui.</label>
+                                    </div>
+                                    <p class="small">Campos com * são obrigatórios</p>
+                                    <button type="submit" class="btn btn-secondary">
+                                        <i class="bi bi-send"></i> Solicitar Orçamento!
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SEVIÇO - DPO as a Service -->
+<div class="modal fade service-modal" tabindex="-1" aria-hidden="true" aria-labelledby="service-04" id="service-04">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="bi bi-x-square"></i> Close
+                </button>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 banner">
+                            <h1>DPO as a Service</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            <div class="grid-left">
+                                <h3>What is Lorem Ipsum?</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            <div class="grid-right">
+                                <form action="../api/sendMail-orcamento.php" method="post">
+                                    <h3>Solicitar um orçamento.</h3>
+                                    <p>Sem compromisso!</p>
+                                    <input type="hidden" name="orcamentoSubject" value="Orçamento - DPO as a Service">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" name="orcamentoName" placeholder="*Seu Nome" required="" oninvalid="this.setCustomValidity('Por favor inserir seu nome')" oninput="setCustomValidity('')">
+                                        <label for="floatingInput">*Seu Nome</label>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md">
+                                            <div class="form-floating mb-3">
+                                                <input type="email" class="form-control" name="orcamentoEmail" placeholder="*Seu email" required="" oninvalid="this.setCustomValidity('Por favor inserir seu e-mail')" oninput="setCustomValidity('')">
+                                                <label for="floatingInput">*Seu email</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md">    
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control" name="orcamentoPhone" placeholder="*Número para contato" required="" oninvalid="this.setCustomValidity('Por favor inserir seu número para contato')" oninput="setCustomValidity('')">
+                                                <label for="floatingPassword">*Número para contato</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <textarea class="form-control" name="orcamentoMessage" placeholder="Deixe sua mensagem aqui." style="height:150px" required="" oninvalid="this.setCustomValidity('Digite sua mensagem')" oninput="setCustomValidity('')"></textarea>
+                                        <label for="floatingTextarea">Deixe sua mensagem aqui.</label>
+                                    </div>
+                                    <p class="small">Campos com * são obrigatórios</p>
+                                    <button type="submit" class="btn btn-secondary">
+                                        <i class="bi bi-send"></i> Solicitar Orçamento!
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SEVIÇO - Treinamentos e Mentorias -->
+<div class="modal fade service-modal" tabindex="-1" aria-hidden="true" aria-labelledby="service-05" id="service-05">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="bi bi-x-square"></i> Close
+                </button>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 banner">
+                            <h1>Treinamentos e Mentorias</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            <div class="grid-left">
+                                <h3>What is Lorem Ipsum?</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            <div class="grid-right">
+                                <form action="../api/sendMail-orcamento.php" method="post">
+                                    <h3>Solicitar um orçamento.</h3>
+                                    <p>Sem compromisso!</p>
+                                    <input type="hidden" name="orcamentoSubject" value="Orçamento - Treinamentos e Mentorias">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" name="orcamentoName" placeholder="*Seu Nome" required="" oninvalid="this.setCustomValidity('Por favor inserir seu nome')" oninput="setCustomValidity('')">
+                                        <label for="floatingInput">*Seu Nome</label>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md">
+                                            <div class="form-floating mb-3">
+                                                <input type="email" class="form-control" name="orcamentoEmail" placeholder="*Seu email" required="" oninvalid="this.setCustomValidity('Por favor inserir seu e-mail')" oninput="setCustomValidity('')">
+                                                <label for="floatingInput">*Seu email</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md">    
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control" name="orcamentoPhone" placeholder="*Número para contato" required="" oninvalid="this.setCustomValidity('Por favor inserir seu número para contato')" oninput="setCustomValidity('')">
+                                                <label for="floatingPassword">*Número para contato</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <textarea class="form-control" name="orcamentoMessage" placeholder="Deixe sua mensagem aqui." style="height:150px" required="" oninvalid="this.setCustomValidity('Digite sua mensagem')" oninput="setCustomValidity('')"></textarea>
+                                        <label for="floatingTextarea">Deixe sua mensagem aqui.</label>
+                                    </div>
+                                    <p class="small">Campos com * são obrigatórios</p>
+                                    <button type="submit" class="btn btn-secondary">
+                                        <i class="bi bi-send"></i> Solicitar Orçamento!
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ORÇAMENTO -->
+<div class="modal fade" tabindex="-1" aria-hidden="true" aria-labelledby="orcamento" id="orcamento">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="bi bi-x-square"></i> Close
+                </button>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        <div class="grid-left">
+                            <img src="../assets/images/logotipo-privacyup-white.svg" class="brand" alt="Privacy UP Consulting" title="Privacy UP Consulting">
+                            <h1>Orçamento:</h1>
+                            <p>Preencha os dados e solicite um orçamento sem compromisso!</p>
+                            <a href="mailto:privacyup@privacyupconsulting.com">
+                                <i class="bi bi-envelope"></i> privacyup@privacyupconsulting.com
+                            </a>
+                            <a href="tel:1133821378">
+                                <i class="bi bi-telephone"></i> (11) 3382-1378
+                            </a>
+                            <a href="tel:11954466777">
+                                <i class="bi bi-phone"></i> (11) 95446-6777
+                            </a>
+                            <a href="https://www.google.com/maps/place/Av.+Paulista,+2421+-+Cerqueira+C%C3%A9sar,+S%C3%A3o+Paulo+-+SP,+01311-300/@-23.5666724,-46.6518475,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce59b8c236b55f:0x35b6b49b01d42ba4!8m2!3d-23.5666773!4d-46.6496588" title="Clique para ver nossa localização no mapa.">
+                                <i class="bi bi-geo-alt"></i> Avenida Paulista, 2421 - 11º andar - São Paulo - SP
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        <div class="grid-right">
+                            <form action="../api/sendMail.php" method="post">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" name="userName" placeholder="*Seu Nome" required="" oninvalid="this.setCustomValidity('Por favor inserir seu nome')" oninput="setCustomValidity('')">
+                                    <label for="floatingInput">*Seu Nome</label>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md">
+                                        <div class="form-floating mb-3">
+                                            <input type="email" class="form-control" name="userEmail" placeholder="*Seu email" required="" oninvalid="this.setCustomValidity('Por favor inserir seu e-mail')" oninput="setCustomValidity('')">
+                                            <label for="floatingInput">*Seu email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md">    
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" name="userPhone" placeholder="*Número para contato" required="" oninvalid="this.setCustomValidity('Por favor inserir seu número para contato')" oninput="setCustomValidity('')">
+                                            <label for="floatingPassword">*Número para contato</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input list="userSubject" class="form-control" name="userSubject" placeholder="Escolha o serviço" required="" oninvalid="this.setCustomValidity('Por favor inserir o assunto')" oninput="setCustomValidity('')">
+                                    <label for="floatingInput">Escolha o serviço</label>
+                                    <datalist id="userSubject">
+                                        <option value="Orçamento - Consultoria em Proteção de Dados - LGPD">
+                                        <option value="Orçamento - Governança & Compliance">
+                                        <option value="Orçamento - Segurança da Informação">
+                                        <option value="Orçamento - DPO as a Service">
+                                        <option value="Orçamento - Treinamentos e Mentorias">
+                                        <option value="Orçamento - Outros">
+                                    </datalist>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control" name="userMessage" placeholder="Deixe suas observações" style="height:150px" required="" oninvalid="this.setCustomValidity('Digite sua mensagem')" oninput="setCustomValidity('')"></textarea>
+                                    <label for="floatingTextarea">Suas observações...</label>
+                                </div>
+                                <p class="small">Campos com * são obrigatórios</p>
+                                <button type="submit" class="btn btn-secondary">
+                                    <i class="bi bi-send"></i> Enviar!
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CONTATO -->
+<div class="modal fade contato-modal" tabindex="-1" aria-hidden="true" aria-labelledby="mensagemEnviar" id="mensagemEnviar">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="bi bi-x-square"></i> Close
+                </button>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        <div class="grid-left">
+                            <img src="../assets/images/logotipo-privacyup-white.svg" class="brand" alt="Privacy UP Consulting" title="Privacy UP Consulting">
+                            <h1>Entre em contato conosco:</h1>
+                            <a href="mailto:contato@privacyupconsulting.com">
+                                <i class="bi bi-envelope"></i> contato@privacyupconsulting.com
+                            </a>
+                            <a href="tel:1133821378">
+                                <i class="bi bi-telephone"></i> (11) 3382-1378
+                            </a>
+                            <a href="tel:11954466777">
+                                <i class="bi bi-phone"></i> (11) 95446-6777
+                            </a>
+                            <a href="https://www.google.com/maps/place/Av.+Paulista,+2421+-+Cerqueira+C%C3%A9sar,+S%C3%A3o+Paulo+-+SP,+01311-300/@-23.5666724,-46.6518475,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce59b8c236b55f:0x35b6b49b01d42ba4!8m2!3d-23.5666773!4d-46.6496588" title="Clique para ver nossa localização no mapa.">
+                                <i class="bi bi-geo-alt"></i> Avenida Paulista, 2421 - 11º andar - São Paulo - SP
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        <div class="grid-right">
+                            <form action="../api/sendMail.php" method="post">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" name="userName" placeholder="*Seu Nome" required="" oninvalid="this.setCustomValidity('Por favor inserir seu nome')" oninput="setCustomValidity('')">
+                                    <label for="floatingInput">*Seu Nome</label>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md">
+                                        <div class="form-floating mb-3">
+                                            <input type="email" class="form-control" name="userEmail" placeholder="*Seu email" required="" oninvalid="this.setCustomValidity('Por favor inserir seu e-mail')" oninput="setCustomValidity('')">
+                                            <label for="floatingInput">*Seu email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md">    
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" name="userPhone" placeholder="*Número para contato" required="" oninvalid="this.setCustomValidity('Por favor inserir seu número para contato')" oninput="setCustomValidity('')">
+                                            <label for="floatingPassword">*Número para contato</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input list="userSubject" class="form-control" name="userSubject" placeholder="Insira o assunto" required="" oninvalid="this.setCustomValidity('Por favor inserir o assunto')" oninput="setCustomValidity('')">
+                                    <label for="floatingInput">Insira o assunto</label>
+                                    <datalist id="userSubject">
+                                        <option value="LGPD - Implementação">
+                                        <option value="LGPD - Em Andamento">
+                                        <option value="Governança & Compliance">
+                                        <option value="Elaboração/revisão de documentos - LGPD">
+                                        <option value="Vazamento de Dados">
+                                        <option value="Direito Digital (Nacional e/ou Internacional)">
+                                        <option value="DPO as a service">
+                                        <option value="Outros">
+                                    </datalist>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control" name="userMessage" placeholder="Deixe sua mensagem aqui." style="height:150px" required="" oninvalid="this.setCustomValidity('Digite sua mensagem')" oninput="setCustomValidity('')"></textarea>
+                                    <label for="floatingTextarea">Deixe sua mensagem aqui.</label>
+                                </div>
+                                <p class="small">Campos com * são obrigatórios</p>
+                                <button type="submit" class="btn btn-secondary">
+                                    <i class="bi bi-send"></i> Enviar!
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

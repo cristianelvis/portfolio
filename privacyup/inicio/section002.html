@@ -9,6 +9,7 @@
         </div>
     </div>
 </div>
+<!-- QUIZ -->
 <div class="modal fade" tabindex="-1" aria-hidden="true" aria-labelledby="quizStart" id="quizStart">
     <div class="modal-dialog modal-fullscreen">
         <div class="modal-content">
@@ -134,49 +135,49 @@
                                 </button>
                             </div>
                         </form>
-                        <script>
-                            // displaying the first block of question
-                            document.getElementsByClassName('card')[0].style.display = "block";
-
-                            // defining the next/prev function
-                            function next(id) {
-                                document.getElementsByClassName('card')[id - 1].style.display = "none";
-                                document.getElementsByClassName('card')[id].style.display = "block";
-                            }
-                            function prev(id) {
-                                document.getElementsByClassName('card')[id - 1].style.display = "block";
-                                document.getElementsByClassName('card')[id].style.display = "none";
-                            }
-
-                            //getting final result
-                            function result() {
-                                var score = 0;
-                                if (document.getElementById('sim1').checked) {
-                                    score++;
-                                }
-                                if (document.getElementById('sim2').checked) {
-                                    score++;
-                                }
-                                if (document.getElementById('sim3').checked) {
-                                    score++;
-                                }
-                                if (document.getElementById('sim4').checked) {
-                                    score++;
-                                }
-                                if (document.getElementById('sim5').checked) {
-                                    score++;
-                                }
-                                if (document.getElementById('sim6').checked) {
-                                    score++;
-                                }
-                                // print result inside the ID
-                                jQuery('#score').val(score);
-                                //alert("your score is: "+ score);
-                            }
-                        </script>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<script>
+    // displaying the first block of question
+    document.getElementsByClassName('card')[0].style.display = "block";
+
+    // defining the next/prev function
+    function next(id) {
+        document.getElementsByClassName('card')[id - 1].style.display = "none";
+        document.getElementsByClassName('card')[id].style.display = "block";
+    }
+    function prev(id) {
+        document.getElementsByClassName('card')[id - 1].style.display = "block";
+        document.getElementsByClassName('card')[id].style.display = "none";
+    }
+
+    //getting final result
+    function result() {
+        var score = 0;
+        if (document.getElementById('sim1').checked) {
+            score++;
+        }
+        if (document.getElementById('sim2').checked) {
+            score++;
+        }
+        if (document.getElementById('sim3').checked) {
+            score++;
+        }
+        if (document.getElementById('sim4').checked) {
+            score++;
+        }
+        if (document.getElementById('sim5').checked) {
+            score++;
+        }
+        if (document.getElementById('sim6').checked) {
+            score++;
+        }
+        // print result inside the ID
+        jQuery('#score').val(score);
+        //alert("your score is: "+ score);
+    }
+</script>
