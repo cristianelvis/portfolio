@@ -611,12 +611,14 @@ h1 {
     color: var(--cor1);
     width:100%;
     height:auto;
-    padding: 20vh 3vh 20vh 3vh;
+    padding: 15vh 3vh 15vh 3vh;
     background-color: var(--gray5);
 }
 #publicacoes .card {
-    width:100%;
+    width:30vh;
+    margin:1vh;
     border-radius:1vh;
+    display: inline-flex;
 }
 #publicacoes .card-body {
     color:var(--gray5);
@@ -659,8 +661,15 @@ h1 {
 #publicacoes .gadget-news h3 {
     font-weight: bold;
 }
-
+@media screen and (min-width:576px) {
+    #publicacoes .carousel-inner {
+        height: 56vh;
+    }
+}
 @media screen and (max-width:576px) {
+    #publicacoes .carousel-inner {
+        height: 56vh;
+    }
     #publicacoes .card {
         margin:1vh auto;
     }
