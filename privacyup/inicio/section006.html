@@ -54,59 +54,29 @@
             </div>
             <script>
                 (function() {
-  /*  
-  ...customise bootstrap carousel 
-  ...change bootstrap carousel interval
-  */
-  $('#publicacoesCards .carousel-item').carousel({
-    interval: 4000
-  });
-}());
+                $('#publicacoesCards .carousel-item').carousel({
+                    interval: 6000
+                });
+                }());
 
-(function() {
-  $('.carousel-inner .carousel-item').each(function() {
-    var itemToClone = $(this);
-    /* number  of item show  in slide (3) */
-    for (var i = 1; i < 3; i++) {
-      /* go to the  next  item */
-      itemToClone = itemToClone.next();
+                (function() {
+                $('#publicacoesCards .carousel-inner .carousel-item').each(function() {
+                    var itemToClone = $(this);
+                    /* number  of item show  in slide (3) */
+                    for (var i = 1; i < 3; i++) {
+                    itemToClone = itemToClone.next();
+                    if (!itemToClone.length) {
+                        itemToClone = $(this).siblings(':first');
+                    }
+                    itemToClone.children(':first-child').clone()
+                        .addClass("cloneditem-" + (i))
+                        .appendTo($(this));
 
-      /*  ....
-        when that  item is last  item  in cauarsol-item  do this choos first sibling item and 
-         go to do  add it , clone, add class, and add to collection
-      */
-      /*    else..... 
-            skip this condition and go to  add item content  and  clone it ....
-      */
+                    $(".carousel-inner ").find(".carousel-item").css("transition", "   500ms ease-in-out all  ").css("transition", "  500ms ease-in-out all").css("backface-visibility", "visible").css("transform", "none!important")
 
-      if (!itemToClone.length) {
-        itemToClone = $(this).siblings(':first');
-      }
-
-      /* 
-        .... show the first-child in item class  " this div contain the content inside in" 
-        ... then clone this selector "clearly meaning copy the data"
-        ...  and give  it tha css style 
-        ...  then add it  to collection in slide 
-      */
-      itemToClone.children(':first-child').clone()
-        .addClass("cloneditem-" + (i))
-        .appendTo($(this));
-
-      $(".carousel-inner ").find(".carousel-item").css("transition", "   500ms ease-in-out all  ").css("transition", "  500ms ease-in-out all").css("backface-visibility", "visible").css("transform", "none!important")
-
-      /*
-       .... you  can  use  bootstrap function  if you used bootstrap CDN 
-       .... but iam used  always  bootstrap.min.js   so  i do  this 
-      
-       .... @media all and (min-width: 768px) and (transform-3d),
-           all and (min-width: 768px) and (-webkit-transform-3d)
-      
-      */
-
-    }
-  });
-}());
+                    }
+                });
+                }());
             </script>
         </div>
     </div>
