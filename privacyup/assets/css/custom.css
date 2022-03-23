@@ -631,7 +631,7 @@ h1 {
     border-top-right-radius:1vh;
 }
 .public-modal .card-news-content {
-    padding: 2vh;
+    padding: 3vh;
     background-color: var(--gray4);
     border-radius:1vh 1vh 0 0;
     box-shadow:2px 2px 2px rgba(0, 0, 0, 0.25);
@@ -670,7 +670,7 @@ h1 {
     font-size: 140%;
 }
 .public-modal .gadget-news {
-    padding: 2vh;
+    padding: 3vh;
     margin:0 0 0 3vh;
     background-color: var(--gray4);
     border-radius:1vh;
