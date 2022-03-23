@@ -621,6 +621,7 @@ h1 {
 }
 #publicacoes .card-body {
     color:var(--gray5);
+    text-align: start;
     background-color: var(--cor01);
     border-bottom-left-radius:1vh;
     border-bottom-right-radius:1vh;
