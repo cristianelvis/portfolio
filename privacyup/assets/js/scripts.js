@@ -18,4 +18,5 @@ $(document).ready(function(){
     $("#mensagemEnviada").load("../inicio/section008.html");
     $("#quizEnviada").load("../inicio/section009.html");
     $("#footer").load("../inicio/_footer.html");
+    $("#modalBR").load("../inicio/_modal.html");
 });
