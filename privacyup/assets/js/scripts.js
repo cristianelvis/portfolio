@@ -6,6 +6,7 @@ $(window).scroll(function() {
         $(".navHide").removeClass("navShow");
     }
 });
+
 $(document).ready(function(){
     $("#navigation").load("../inicio/_navigation.html");
     $("#inicio").load("../inicio/section001.html");
