@@ -912,7 +912,9 @@ h1 {
     animation: slideUp 0.5s forwards;
     z-index: 999;
 }
-
+.cookies-save {
+    margin-top: 2vh;
+}
 
 @media screen and (max-width:1024px) {}
 @media screen and (max-width:768px) {}
