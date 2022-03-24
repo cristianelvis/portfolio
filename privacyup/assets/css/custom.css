@@ -899,6 +899,20 @@ h1 {
         text-align:center!important;
     }
 }
+/* COOKIES */
+.cookies-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 6vh;
+    color: var(--gray5);
+    background-color: var(--cor02);
+    opacity:0;
+    transform: translateY(100%);
+    animation: slideUp 0.5s forwards;
+    z-index: 999;
+}
+
 
 @media screen and (max-width:1024px) {}
 @media screen and (max-width:768px) {}
@@ -925,4 +939,10 @@ h1 {
 [data-anima].animacao {
     opacity: 1;
     transform: translate3d(0,0,0);
+}
+@keyframes slideUp {
+	to {
+        opacity:initial;
+		transform:initial;
+	}
 }
