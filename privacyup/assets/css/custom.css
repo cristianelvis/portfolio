@@ -54,7 +54,28 @@ body::after {
     height:0;
     overflow:hidden;
     z-index:-1;
-    content:url(../images/underconstruction-background-min.png);
+    content:
+        url(../images/old-statue-of-young-woman-with-smartphone-in-museum-min.png)
+        url(../images/privacyup-background-inicio-orcamento-min.png)
+        url(../images/privacyup-background-inicio-section001-min.png)
+        url(../images/privacyup-background-inicio-section002-min.png)
+        url(../images/privacyup-background-inicio-section005-min.png)
+        url(../images/publicacoes-000-min.png)
+        url(../images/publicacoes-title-000-min.png)
+        url(../images/service1background-min.png)
+        url(../images/service2background-min.png)
+        url(../images/service3background-min.png)
+        url(../images/service4background-min.png)
+        url(../images/service5background-min.png)
+        url(../images/service6background-min.png)
+        url(../images/service7background-min.png)
+        url(../images/service8background-min.png)
+        url(../images/service9background-min.png)
+        url(../images/service10background-min.png)
+        url(../images/service11background-min.png)
+        url(../images/service12background-min.png)
+        url(../images/service13background-min.png)
+        url(../images/service14background-min.png);
 }
 .grid {
     display:flex;
