@@ -8,14 +8,19 @@ $(window).scroll(function() {
 });
 $(document).ready(function(){
     $("#head").load("../dashboard/_include_head.html");
-    $("#sidebar").load("../dashboard/_include_sidebar.html");
     $("#footer").load("../dashboard/_include_footer.html");
     $("#modal").load("../dashboard/_include_modal.html");
     $("#dashboard").load("section_001.html");
-    $("#mrh").load("section_001.html");
-    $("#mrh-desligamento").load("section_001.html");
+    $("#solicitacoesRecursosHumanos").load("section_001.html");
+    $("#solicitacoesRecursosHumanosDesligamento").load("section_001.html");
 });
-
-document.getElementById("login").onclick = function () {
-    location.href = "dashboard/";
-};
+$(document).ready(function() {
+    $("body").tooltip({ selector: '[data-bs-toggle=tooltip]' });
+});
+function showDiv(select) {
+    if (select.value==7) {
+        document.getElementById('hiddenMotivoOutros').style.display = "flex";
+    } else{
+        document.getElementById('hiddenMotivoOutros').style.display = "none";
+    }
+ }
