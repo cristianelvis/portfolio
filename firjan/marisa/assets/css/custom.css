@@ -79,9 +79,6 @@ body::after {
     text-align:center;
     }
 }
-.table-responsive {
-    width: 100%;
-}
 .navbar {
     padding:0.6vh 1.2vw 0.6vh 1.2vw;
 }
@@ -585,6 +582,9 @@ body::after {
 }
 
 @media screen and (max-width:576px) {
+    .table-responsive {
+        width: 100%;
+    }
     #tablePositionCard,
     #tableListPosition {
         width:140%;
