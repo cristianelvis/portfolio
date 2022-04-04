@@ -79,6 +79,9 @@ body::after {
     text-align:center;
     }
 }
+.table-responsive {
+    width: 100%;
+}
 .navbar {
     padding:0.6vh 1.2vw 0.6vh 1.2vw;
 }
@@ -110,7 +113,7 @@ body::after {
     top:0;
     font-size:100%;
     color:var(--CinzaFirjan);
-    padding:1vh 2.5vh;
+    padding:0 2.5vh;
     margin:0 auto;
     display:inline-flex;
     flex-direction: column;
@@ -129,8 +132,14 @@ body::after {
     color:var(--VerdeCIRJ);
 }
 .nav-link i {
-    font-size: 200%;
-    margin-bottom: 1vh;
+    font-size: 180%;
+    margin-bottom: 1.2vh;
+}
+.nav-link .nav-link-user {
+    width: 4.5vh;
+    margin:0 auto;
+    margin-bottom: 0;
+    border-radius:50%;
 }
 .dropdown-menu {
     background-color:var(--gray1);
@@ -465,7 +474,7 @@ body::after {
     background-color:var(--AzulFirjanII)!important;
 }
 .rh-card:hover img {
-    transform: scale(1.20);
+    transform: scale(1.18);
 }
 .rh-card:hover .user-name {
     bottom: 12vh;
@@ -485,8 +494,101 @@ body::after {
     border:1px dashed var(--AzulFirjan);
     transition:all 0.5s ease;
 }
+.position-card {
+    position: relative;
+    width: 28vh;
+    height: 34vh;
+    color: white;
+    padding: 2vh;
+    margin: 1vh auto;
+    background-position: center;
+    border-radius: 1vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: var(--CinzaFirjan);
+}
+.position-card i {
+    position: absolute;
+    top:4vh;
+	font-size: 600%;
+	transition:all 0.5s ease;
+}
+.position-card .position-name {
+    position: absolute;
+    bottom: 10vh;
+    width: 100%;
+    font-size: 160%;
+    font-weight: bold;
+    line-height:120%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition:all 0.5s ease;
+}
+.position-card .position-action {
+    position: absolute;
+    bottom: 2vh;
+    right:2vh;
+    transition:all 0.5s ease;
+}
+.position-card .position-action a {
+    color: white;
+    font-size:200%;
+    padding:.5vh;
+    margin:.6vh;
+    border:1px dashed white;
+    border-radius:.6vh;
+    display: inline-flex;
+    flex-direction: initial;
+    transition:all 0.5s ease;
+}
+.position-card .position-action a:hover {
+    color:white!important;
+    transform: scale(1.4);
+    background-color:var(--AzulFirjanII)!important;
+}
+.position-card a i {
+    position: relative;
+    top:0!important;
+	font-size: 100%;
+}
+.position-card:hover {
+    color: var(--CinzaFirjan);
+    background-color: var(--CinzaFirjanII);
+}
+.position-card:hover i {
+    top:5vh;
+}
+.position-card:hover .position-name {
+    bottom: 11vh;
+}
+.position-card:hover .position-action {
+    bottom: 2vh;
+}
+.position-card:hover .position-action a {
+    color: var(--gray5);
+    background-color:var(--AzulFirjan);
+    border:1px dashed var(--AzulFirjan);
+    transition:all 0.5s ease;
+}
+#Posicoes .table-position .include-position {
+    color: var(--gray5);
+    text-decoration:none;
+    padding:.4vh 2vh;
+    background-color: var(--AzulFirjan);
+    border-radius: .6vh;
+    transition:all 0.5s ease;
+}
+#Posicoes .table-position .include-position:hover {
+    background-color: var(--AzulFirjanII);
+}
 
 @media screen and (max-width:576px) {
+    #tablePositionCard,
+    #tableListPosition {
+        width:140%;
+    }
     #solicitacoesRecursosHumanos .nav-tabs,
     #solicitacoesRecursosHumanos .search,
     #solicitacoesRecursosHumanos .tab-content{
@@ -547,6 +649,7 @@ body::after {
 #solicitacoesRecursosHumanosDesligamento .nav.nav-tabs {
     width: 100%;
     height:12vh;
+    padding: 1vh;
     border: 0;
 }
 #solicitacoesRecursosHumanosDesligamento .nav-tabs .nav-link {
@@ -587,10 +690,13 @@ body::after {
 }
 #solicitacoesRecursosHumanosDesligamento .tab-content {
     width: 100%;
-    padding: 3vh 1vh;
+    padding: 2vh 1vh;
     background-color: white;
     border-radius: 1vh;
     box-shadow: 6px 6px 18px -12px rgb(0 0 0 / 50%);
+}
+#solicitacoesRecursosHumanosDesligamento .tab-content .grid-left h3 {
+    margin:0;
 }
 #solicitacoesRecursosHumanosDesligamento .dropdown-menu {
     width:100%;
@@ -641,6 +747,18 @@ body::after {
     font-size: 200%;
     padding: 4vh 2vh;
     display: inline-block;
+}
+/* DISPLAY NONE */
+#line-hide-0001,
+#line-hide-0002,
+#line-hide-0003,
+#line-hide-0004,
+#line-hide-0005,
+#line-hide-0006,
+#line-hide-0007,
+#line-hide-0008,
+#line-hide-0009 {
+    display: none;
 }
 /* remove outline and box-shadow for all btn */
 .btn:focus,.btn:active:focus,.btn.active:focus,
