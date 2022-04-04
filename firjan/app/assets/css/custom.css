@@ -515,12 +515,12 @@ body::after {
     position: absolute;
     bottom: 10vh;
     width: 100%;
-    font-size: 160%;
+    font-size: 130%;
     font-weight: bold;
     line-height:120%;
     overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    padding: .3vh;/* text-overflow: ellipsis; */
+    /* white-space: nowrap; */
     transition:all 0.5s ease;
 }
 .position-card .position-action {
