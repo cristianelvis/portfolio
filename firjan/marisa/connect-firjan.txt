@@ -1,5 +1,0 @@
-Cliente: Firjan
-
-Credenciais para acesso ao ambiente:
-Login: COGTIT716@firjan.com.br
-Passsword: E@
