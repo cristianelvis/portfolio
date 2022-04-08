@@ -6,15 +6,15 @@
                     <h1><i class="bi bi-power"></i> MRH - Desligamento</h1>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid-right">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-floating">
-                        <input type="text" class="form-control shadow-none" placeholder="" value="NOME DO GESTOR(A) com nome bem extenso." id="solicitante" disabled>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-floating mb-3">
+                        <input type="text" class="form-control shadow-none" placeholder="" value="NOME DO GESTOR(A)" id="solicitante" disabled>
                         <label for="solicitante">Solicitante "Gestor(a)":</label>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-floating">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-floating mb-3">
                         <input type="text" class="form-control shadow-none" placeholder="" value="00/00/0000" id="dataSolicitacao" disabled>
                         <label for="dataSolicitacao">Data da Solicitação:</label>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-floating">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-floating mb-3">
                         <input type="text" class="form-control shadow-none" placeholder="" value="00000000" id="dataSolicitacao" disabled>
                         <label for="dataSolicitacao">Número da MRH:</label>
                     </div>
@@ -22,50 +22,6 @@
             </div>
         </div>
     </div>
-    <!--<div class="row banner2">
-        <div class="col-xs-12 col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-10 offset-lg-1">
-            <div class="row">
-                <div class="col-xs-12 col-sm-8 form-floating mb-3">
-                    <input type="text" class="form-control shadow-none" placeholder="" value="NOME SOBRENOME" id="solicitante" disabled>
-                    <label for="solicitante">*Solicitante "Gestor(a)":</label>
-                </div>
-                <div class="col-xs-12 col-sm-4 form-floating mb-3">
-                    <input type="text" class="form-control shadow-none" placeholder="" value="00/00/0000" id="dataSolicitacao" disabled>
-                    <label for="dataSolicitacao">*Data da Solicitação:</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 form-floating mb-3">
-                    <select class="form-select shadow-none" id="tipoSolicitacao">
-                        <option value="0">Escolha uma opção</option>
-                        <option value="1">Demissão/Iniciativa Empresa</option>
-                        <option value="2">Demissão/Iniciativa Funcionário</option>
-                        <option value="3">Demissão/Iniciativa Empresa e Funcionário</option>
-                    </select>
-                    <label for="tipoSolicitacao">*Tipo de Solicitação:</label>
-                </div>
-                <div class="col-xs-12 col-sm-6 form-floating mb-3">
-                    <input list="motivoList" class="form-control shadow-none" placeholder="Motivo" value="" id="motivoSolicitacao" >
-                    <label for="motivoSolicitacao">*Motivo:</label>
-                    <datalist id="motivoList">
-                        <option value="Redução da Demanda"></option>
-                        <option value="Redução do Quadro"></option>
-                        <option value="Não Atende aos Requisitos Técnicos do Cargo"></option>
-                        <option value="Não Atende aos Requisitos Comportamentais"></option>
-                        <option value="Término de Contrato Prazo Determinado"></option>
-                        <option value="Término de Contrato de Estágio"></option>
-                        <option value="Outros - Especifique: "></option>
-                    </datalist>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-4 form-floating">
-                    <input type="text" class="form-control shadow-none" placeholder="00/00/0000" value="" id="dataEfetivacao" onkeypress="mascaraData(this);" onblur="mascaraData(this);">
-                    <label for="dataEfetivacao">*Data da Efetivação:</label>
-                </div>
-            </div>
-        </div>
-    </div>-->
     <div class="row">
         <div class="col-xs-12 col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-10 offset-lg-1">
             <!-- Nav tabs -->
@@ -107,11 +63,6 @@
                             <img src="../assets/images/avatar-male.png" class="avatar">
                         </a>
                     </li>
-                    <!--<li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="GAP">
-                        <a href="#" class="nav-link" id="egap-tab" data-bs-toggle="tab" data-bs-target="#egap" role="tab" aria-controls="egap" aria-selected="false">
-                            <img src="../assets/images/avatar-female.png" class="avatar">
-                        </a>
-                    </li>-->
                 </ul>
             </div>
             
@@ -133,41 +84,41 @@
                             </div>
                             <hr>
                             <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-floating">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-floating mb-3">
                                     <input type="text" class="form-control fc-title shadow-none" placeholder="" value="NOME DO COLABORADOR(A)" id="colaboradorNome" disabled>
                                     <label for="colaboradorNome">Nome do colaborador(a):</label>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating">
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
                                     <input type="text" class="form-control shadow-none" placeholder="" value="78 ANALISTA RECURSOS HUMANOS I" id="cargo" disabled>
                                     <label for="cargo">Cargo:</label>
                                 </div>
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating">
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
                                     <input type="text" class="form-control shadow-none" placeholder="" value="REMUNERAÇÃO" id="especialidade" disabled>
                                     <label for="especialidade">Especialidade:</label>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating">
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
                                     <input type="text" class="form-control shadow-none" placeholder="" value="000000" id="colaboradorMatricula" disabled>
                                     <label for="colaboradorMatricula">Matricula:</label>
                                 </div>
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating">
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
                                     <input type="text" class="form-control shadow-none" placeholder="" value="1 - SESI SEDE" id="estabelecimento" disabled>
                                     <label for="estabelecimento">Estabelecimento:</label>
                                 </div>
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating">
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
                                     <input type="text" class="form-control shadow-none" placeholder="" value="ACIMA" id="ultimaAvaliacaoDesempenho" disabled>
                                     <label for="ultimaAvaliacaoDesempenho">Última avaliação desempenho:</label>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 form-floating">
+                                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 form-floating mb-3">
                                     <input type="text" class="form-control shadow-none" placeholder="" value="0409000000 GDE - GER DESIGN ORG REMUN ESTRAT" id="lotacao" disabled>
                                     <label for="lotacao">Lotação:</label>
                                 </div>
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating">
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
                                     <input type="text" class="form-control shadow-none" placeholder="" value="NÃO" id="deficiencia" disabled>
                                     <label for="deficiencia">Pessoa com deficiência:</label>
                                 </div>
@@ -230,6 +181,7 @@
                                     <label for="justificativa">Justificativa:</label>
                                 </div>
                             </div>
+                            <hr>
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-end">
                                     <button type="button" class="btn btn-outline-primary" onclick="window.location.href='../solicitacoes-recursos-humanos/'">Voltar</button>
@@ -268,6 +220,7 @@
                             <label for="gestorObserva">Observações:</label>
                         </div>
                     </div>
+                    <hr>
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-end">
                             <button type="button" class="btn btn-outline-primary">Voltar</button>
@@ -304,6 +257,7 @@
                             <label for="gestor2Observa">Observações:</label>
                         </div>
                     </div>
+                    <hr>
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-end">
                             <button type="button" class="btn btn-outline-primary">Voltar</button>
@@ -340,6 +294,7 @@
                             <label for="consultorObserva">Observações:</label>
                         </div>
                     </div>
+                    <hr>
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-end">
                             <button type="button" class="btn btn-outline-primary">Voltar</button>
@@ -376,6 +331,7 @@
                             <label for="diretorObserva">Observações:</label>
                         </div>
                     </div>
+                    <hr>
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-end">
                             <button type="button" class="btn btn-outline-primary">Voltar</button>
@@ -412,6 +368,7 @@
                             <label for="superintendenteObserva">Observações:</label>
                         </div>
                     </div>
+                    <hr>
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-end">
                             <button type="button" class="btn btn-outline-primary">Voltar</button>
@@ -419,185 +376,6 @@
                         </div>
                     </div>
                 </div>
-                <!--<div class="tab-pane fade" id="egap" role="tabpanel" aria-labelledby="egap-tab">
-                    <h3 class="text-start">Efetivação GAP</h3>
-                    <hr>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 mb-3 text-start">
-                            <input class="form-check-input shadow-none" type="checkbox" value="" id="check1" checked>
-                            <label class="form-check-label" for="check1">Integra na Folha</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6 form-floating mb-3">
-                            <input type="text" class="form-control shadow-none" placeholder="*Situação:" value="" id="gapSituacao">
-                            <label for="gapSituacao">*Situação:</label>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 form-floating mb-3">
-                            <input type="text" class="form-control shadow-none" placeholder="00/00/0000" value="" id="gapDataDesligamento" onkeypress="mascaraData(this);" onblur="mascaraData(this);">
-                            <label for="gapDataDesligamento">*Data Desligamento:</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6 form-floating mb-3">
-                            <select class="form-select shadow-none" id="gapTipoAviso">
-                                <option value="0">Escolha uma opção</option>
-                                <option value="1">Indenizado</option>
-                                <option value="2">Trabalhando</option>
-                                <option value="2">Não tem aviso</option>
-                            </select>
-                            <label for="gapTipoAviso">*Tipo Aviso:</label>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 form-floating mb-3">
-                            <input type="text" class="form-control shadow-none" placeholder="00/00/0000" value="" id="gapInicioAviso" onkeypress="mascaraData(this);" onblur="mascaraData(this);">
-                            <label for="gapInicioAviso">*Início Aviso:</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6 form-floating mb-3">
-                            <input type="text" class="form-control shadow-none" placeholder="*Dias Aviso:" value="" id="gapDiasAviso">
-                            <label for="gapDiasAviso">*Dias Aviso:</label>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 form-floating mb-3">
-                            <input type="text" class="form-control shadow-none" placeholder="00/00/0000" value="" id="gapTerminoAviso" onkeypress="mascaraData(this);" onblur="mascaraData(this);">
-                            <label for="gapTerminoAviso">*Término Aviso:</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6 form-floating mb-3">
-                            <select class="form-select shadow-none" id="gapJornadaTrabalho">
-                                <option value="0">Escolha uma opção</option>
-                                <option value="1">Não definido</option>
-                                <option value="2">Reduz 2 horas dia</option>
-                                <option value="3">Reduz 7 dias corridos</option>
-                            </select>
-                            <label for="gapJornadaTrabalho">*Jornada Trabalho:</label>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 form-floating mb-3">
-                            <input type="text" class="form-control shadow-none" placeholder="00/00/0000" value="" id="gapDataPagamento" onkeypress="mascaraData(this);" onblur="mascaraData(this);">
-                            <label for="gapDataPagamento">*Data Pagamento:</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6 form-floating mb-3">
-                            <input type="text" class="form-control shadow-none" placeholder="*Local:" value="" id="gapLocal">
-                            <label for="gapLocal">*Local:</label>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 form-floating mb-3">
-                            <input type="text" class="form-control shadow-none" placeholder="*Data Aviso:" value="" id="gapDataAviso" onkeypress="mascaraData(this);" onblur="mascaraData(this);">
-                            <label for="gapDataAviso">*Data Aviso:</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6 form-floating mb-3">
-                            <input type="text" class="form-control shadow-none" placeholder="*FGTS Período:" value="" id="gapFgtsPeriodo" onkeypress="mascaraData(this);" onblur="mascaraData(this);">
-                            <label for="gapFgtsPeriodo">*FGTS Período:</label>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 form-floating mb-3">
-                            <input type="text" class="form-control shadow-none" placeholder="*Recebe Dias Até:" value="" id="gapRecebeDiasAte" onkeypress="mascaraData(this);" onblur="mascaraData(this);">
-                            <label for="gapRecebeDiasAte">*Recebe Dias Até:</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6 form-floating mb-3">
-                            <input type="text" class="form-control shadow-none" placeholder="*Percentual Multa FGTS:" value="" id="gapPercentualMultaFgts">
-                            <label for="gapPercentualMultaFgts">*Percentual Multa FGTS:</label>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 form-floating mb-3">
-                            <select class="form-select shadow-none" id="gapTipomovimentacao">
-                                <option value="0">Escolha uma opção</option>
-                                <option value="1">Manual</option>
-                                <option value="2">Automática</option>
-                            </select>
-                            <label for="gapTipomovimentacao">*Tipo Movimentação:</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6 form-floating mb-3">
-                            <input type="text" class="form-control shadow-none" placeholder="*Código Saque FGTS:" value="" id="gapCodigoSaqueFgts">
-                            <label for="gapCodigoSaqueFgts">*Código Saque FGTS:</label>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 form-floating mb-3">
-                            <input type="text" class="form-control shadow-none" placeholder="*Valor Depósitos FGTS:" value="" id="gapValorDepositosFgts">
-                            <label for="gapValorDepositosFgts">*Valor Depósitos FGTS:</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6 form-floating mb-3">
-                            <input type="text" class="form-control shadow-none" placeholder="*Valor Juros FGTS:" value="" id="gapValorJurosFgts">
-                            <label for="gapValorJurosFgts">*Valor Juros FGTS:</label>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 form-floating mb-3">
-                            <select class="form-select shadow-none" id="gapTipoCheque">
-                                <option value="0">Escolha uma opção</option>
-                                <option value="1">Nenhum</option>
-                                <option value="2">Administrativa</option>
-                                <option value="3">Comum</option>
-                            </select>
-                            <label for="gapTipoCheque">*Tipo Cheque:</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 mb-3 text-start">
-                            <input class="form-check-input shadow-none" type="checkbox" value="" id="check2">
-                            <label class="form-check-label" for="check2">*Recebido Férias Proporcionais:</label>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 mb-3 text-start">
-                            <input class="form-check-input shadow-none" type="checkbox" value="" id="check3">
-                            <label class="form-check-label" for="check3">*Imprime Aviso</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 mb-3 text-start">
-                            <input class="form-check-input shadow-none" type="checkbox" value="" id="check4">
-                            <label class="form-check-label" for="check4">*Recebe 13º Proporcional:</label>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 mb-3 text-start">
-                            <input class="form-check-input shadow-none" type="checkbox" value="" id="check5">
-                            <label class="form-check-label" for="check5">*Cálculo Adicional Admitidos:</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 mb-3 text-start">
-                            <input class="form-check-input shadow-none" type="checkbox" value="" id="check6">
-                            <label class="form-check-label" for="check6">*FGTS Mês Anterior GRFP:</label>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 mb-3 text-start">
-                            <input class="form-check-input shadow-none" type="checkbox" value="" id="check7">
-                            <label class="form-check-label" for="check7">*Novo Emprego:</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 mb-3 text-start">
-                            <input class="form-check-input shadow-none" type="checkbox" value="" id="check8">
-                            <label class="form-check-label" for="check8">*Jornada Trabalho Semana integral:</label>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 mb-3 text-start">
-                            <input class="form-check-input shadow-none" type="checkbox" value="" id="check9">
-                            <label class="form-check-label" for="check9">*Sábado Compensado:</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6 form-floating mb-3">
-                            <input type="text" class="form-control shadow-none" placeholder="*Qtd. DSR Mês Desligamento:" value="" id="gapQtdDsrMesDesligamento">
-                            <label for="gapQtdDsrMesDesligamento">*Qtd. DSR Mês Desligamento:</label>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 form-floating mb-3">
-                            <input type="text" class="form-control shadow-none" placeholder="*Faltas Injust. Mês Desligamento:" value="" id="gapFaltasInjustMesDesligamento">
-                            <label for="gapFaltasInjustMesDesligamento">*Faltas Injust. Mês Desligamento:</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6 form-floating mb-3">
-                            <input type="text" class="form-control shadow-none" placeholder="*Saldo devedor Atual Emprést. Cons:" value="" id="gapSaldoDevedorAtualEmprestCons">
-                            <label for="gapSaldoDevedorAtualEmprestCons">*Saldo devedor Atual Emprést. Cons:</label>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 mb-3 text-start">
-                            <input class="form-check-input shadow-none" type="checkbox" value="" id="check10">
-                            <label class="form-check-label" for="check10">*Integra Rescrisão:</label>
-                        </div>
-                    </div>
-                </div>-->
             </div>
         </div>
     </div>
