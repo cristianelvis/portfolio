@@ -842,6 +842,11 @@ body::after {
     border-radius: 1vh;
     box-shadow: 6px 6px 18px -12px rgb(0 0 0 / 50%);
 }
+#solicitacoesRecursosHumanosAdmissao .tab-content #Solicitante h4 {
+    color:var(--AzulFirjan);
+    font-weight:bold;
+    margin-top: 3vh;
+}
 #solicitacoesRecursosHumanosAdmissao .accordion-button {
     font-weight: bold;
 }
