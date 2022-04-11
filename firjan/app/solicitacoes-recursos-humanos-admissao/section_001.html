@@ -108,33 +108,37 @@
                     <hr>
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-floating mb-3">
-                            <input type="text" class="form-control fc-title shadow-none" placeholder="" value="NOME DO CARGO" id="cargoNome" disabled>
+                            <input type="text" class="form-control fc-title shadow-none" placeholder="" value="2386 - Espec TI I" id="cargoNome" disabled>
                             <label for="cargoNome">Cargo:</label>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                            <input type="text" class="form-control shadow-none" placeholder="" value="000" id="cargoNumero" disabled>
-                            <label for="cargoNumero">Número:</label>
+                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 form-floating mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="" value="Periculosidade" id="cargoPericulosidade" disabled>
+                            <label for="cargoPericulosidade">Periculosidade:</label>
                         </div>
-                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                            <input type="text" class="form-control shadow-none" placeholder="" value="Lorem Ipsum is simply dummy text" id="cargoDescricao" disabled>
-                            <label for="cargoDescricao">Descrição:</label>
+                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 form-floating mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="" value="Insalubridade" id="cargoInsalubridade" disabled>
+                            <label for="cargoInsalubridade">Insalubridade:</label>
                         </div>
-                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                            <input type="text" class="form-control shadow-none" placeholder="" value="Lorem Ipsum is simply dummy text" id="cargoNivel" disabled>
-                            <label for="cargoNivel">Nível:</label>
+                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 form-floating mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="" value="Grau de insalubridade" id="cargoGrauInsalubridade" disabled>
+                            <label for="cargoGrauInsalubridade">Grau de insalubridade:</label>
+                        </div>
+                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 form-floating mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="" value="Aposentadoria especial" id="cargoAposentadoriaEspecial" disabled>
+                            <label for="cargoAposentadoriaEspecial">Aposentadoria especial:</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
                             <select class="form-select shadow-none" id="cargoEspecialidade">
                                 <option value="0">Escolha uma opção</option>
-                                <option value="1">opção de especialidade</option>
-                                <option value="2">opção de especialidade</option>
-                                <option value="3">opção de especialidade</option>
-                                <option value="4">opção de especialidade</option>
-                                <option value="5">opção de especialidade</option>
+                                <option value="1">Opção de especialidade</option>
+                                <option value="2">Opção de especialidade</option>
+                                <option value="3">Opção de especialidade</option>
+                                <option value="4">Opção de especialidade</option>
+                                <option value="5">Opção de especialidade</option>
                             </select>
                             <label for="cargoEspecialidade">*Especialidade:</label>
                         </div>
@@ -160,12 +164,12 @@
                         </div>
                         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
                             <select class="form-select shadow-none" id="cargoCategoriaSalarial" disabled>
-                                <option value="0">Escolha uma opção</option>
-                                <option value="1">opção de especialidade</option>
-                                <option value="2">opção de especialidade</option>
-                                <option value="3">opção de especialidade</option>
-                                <option value="4">opção de especialidade</option>
-                                <option value="5">opção de especialidade</option>
+                                <option value="0">Opção de categoria salarial</option>
+                                <option value="1">Opção de categoria salarial</option>
+                                <option value="2">Opção de categoria salarial</option>
+                                <option value="3">Opção de categoria salarial</option>
+                                <option value="4">Opção de categoria salarial</option>
+                                <option value="5">Opção de categoria salarial</option>
                             </select>
                             <label for="cargoCategoriaSalarial">Categoria Salarial:</label>
                         </div>
@@ -175,10 +179,6 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                            <input type="text" class="form-control shadow-none" placeholder="" value="R$ 000.000,00" id="cargoSalarioInicialFaixa" disabled>
-                            <label for="cargoSalarioInicialFaixa">Salário inicial da faixa:</label>
-                        </div>
                         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
                             <input type="text" class="form-control shadow-none" placeholder="000" value="" id="cargoCargaHorariaSemanal">
                             <label for="cargoCargaHorariaSemanal">*Carga horária semanal:</label>
@@ -194,8 +194,6 @@
                             </select>
                             <label for="cargoHorarioForponto">*Horário Forponto:</label>
                         </div>
-                    </div>
-                    <div class="row">
                         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
                             <select class="form-select shadow-none" id="cargoLocalFisico">
                                 <option value="0">Escolha uma opção</option>
@@ -206,6 +204,12 @@
                                 <option value="5">Local Físico</option>
                             </select>
                             <label for="cargoLocalFisico">*Local Físico:</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="" value="R$ 000.000,00" id="cargoSalarioInicialFaixa" disabled>
+                            <label for="cargoSalarioInicialFaixa">Salário inicial da faixa:</label>
                         </div>
                         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
                             <input type="text" class="form-control shadow-none" placeholder="" value="000 Horas" id="cargoDSR" disabled>
@@ -245,7 +249,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 form-floating mb-3">
                             <select class="form-select shadow-none" id="cargoLotacaoContratacao">
                                 <option value="0">Escolha uma opção</option>
                                 <option value="1">Código e descrição das lotações</option>
@@ -256,16 +260,15 @@
                             </select>
                             <label for="cargoLotacaoContratacao">*Lotação da contratação:</label>
                         </div>
-                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 form-floating mb-3">
                             <select class="form-select shadow-none" id="cargoTipoRecrutamento">
-                                <option value="0">Escolha uma opção</option>
-                                <option value="1">Interno</option>
-                                <option value="2">Externo</option>
-                                <option value="3">Misto</option>
+                                <option value="0">Interno</option>
+                                <option value="1">Externo</option>
+                                <option value="2"Misto></option>
                             </select>
                             <label for="cargoTipoRecrutamento">*Tipo de recrutamento:</label>
                         </div>
-                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 form-floating mb-3">
                             <select class="form-select shadow-none" id="cargoIntermitente">
                                 <option value="0">Escolha uma opção</option>
                                 <option value="1">SIM</option>
@@ -362,24 +365,6 @@
                         <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 form-floating mb-3">
                             <textarea class="form-control shadow-none" placeholder="Detalhar eescopo das atividades" value="" id="cargoDetalharEscopoAtividades" style="height:150px"></textarea>
                             <label for="cargoDetalharEscopoAtividades">*Detalhar escopo das atividades (Riscos e local de atuação):</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 form-floating mb-3">
-                            <input type="text" class="form-control shadow-none" placeholder="" value="Periculosidade" id="cargoPericulosidade" disabled>
-                            <label for="cargoPericulosidade">Periculosidade:</label>
-                        </div>
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 form-floating mb-3">
-                            <input type="text" class="form-control shadow-none" placeholder="" value="Insalubridade" id="cargoInsalubridade" disabled>
-                            <label for="cargoInsalubridade">Insalubridade:</label>
-                        </div>
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 form-floating mb-3">
-                            <input type="text" class="form-control shadow-none" placeholder="" value="Grau de insalubridade" id="cargoGrauInsalubridade" disabled>
-                            <label for="cargoGrauInsalubridade">Grau de insalubridade:</label>
-                        </div>
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 form-floating mb-3">
-                            <input type="text" class="form-control shadow-none" placeholder="" value="Aposentadoria especial" id="cargoAposentadoriaEspecial" disabled>
-                            <label for="cargoAposentadoriaEspecial">Aposentadoria especial:</label>
                         </div>
                     </div>
                     <div class="row">
@@ -688,7 +673,7 @@
                                                 <option value="4">Lista com todos os funcionários ativos</option>
                                                 <option value="5">Lista com todos os funcionários ativos</option>
                                             </select>
-                                            <label for="recselFuncionarioNomeMatricula">*Funcionário (Nome E Matrícula):</label>
+                                            <label for="recselFuncionarioNomeMatricula">*Funcionário:</label>
                                         </div>
                                     </div>
                                     <div class="row">
