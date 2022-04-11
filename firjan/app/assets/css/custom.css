@@ -701,28 +701,6 @@ body::after {
     border-radius: 1vh;
     box-shadow: 6px 6px 18px -12px rgb(0 0 0 / 50%);
 }
-/*
-#solicitacoesRecursosHumanosDesligamento .tab-content .grid-left h3 {
-    margin:0;
-}
-#solicitacoesRecursosHumanosDesligamento .dropdown-menu {
-    width:100%;
-}
-#solicitacoesRecursosHumanosDesligamento .dropdown-item {
-    color:var(--CinzaFirjan);
-}
-#solicitacoesRecursosHumanosDesligamento .dropdown-item.active,
-#solicitacoesRecursosHumanosDesligamento .dropdown-item:active,
-#solicitacoesRecursosHumanosDesligamento .dropdown-item:hover {
-    top:0;
-    color:var(--gray5);
-    background-color:var(--gray2);
-}
-#solicitacoesRecursosHumanosDesligamento .dropdown-item:focus {
-    color:var(--gray5);
-    background-color:var(--VerdeCIRJ);
-}
-*/
 #solicitacoesRecursosHumanosDesligamento .userAvatar {
     width: 100%;
     max-width: 30vh;
@@ -848,7 +826,9 @@ body::after {
     margin-top: 3vh;
 }
 #solicitacoesRecursosHumanosAdmissao .accordion-button {
-color: var(--AzulFirjan);;;;;;;;;;;;;;;;;;;;font-weight: bold;
+color: var(--AzulFirjan);
+font-size: 100%;
+font-weight: bold;
 }
 #solicitacoesRecursosHumanosAdmissao .accordion-button:hover {
     border-color:var(--AzulFirjanII);
@@ -873,10 +853,6 @@ color: var(--AzulFirjan);;;;;;;;;;;;;;;;;;;;font-weight: bold;
     background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
     transform:rotate(-180deg)
 }
-
-
-
-
 @media screen and (max-width:576px) {
     #solicitacoesRecursosHumanosAdmissao .nav.nav-tabs {
         width: max-content;
