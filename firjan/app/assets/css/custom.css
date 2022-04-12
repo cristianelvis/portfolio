@@ -168,7 +168,7 @@ body::after {
     background-color:var(--VerdeCIRJ);
 }
 .form-floating label {
-    font-size:100%;
+    font-size:120%;
     left:1vh;
     text-align:start;
     transition:all 0.5s ease;
@@ -620,7 +620,7 @@ body::after {
     top: -1vh;
     right: 0;
     opacity: 1!important;
-    font-size: 100%;
+    font-size: 120%;
     font-weight: normal;
     left:0;
     text-align: end;
@@ -634,6 +634,9 @@ body::after {
     font-weight: bold;
     text-align: end;
     padding: 0 .75rem 0 0;
+}
+#solicitacoesRecursosHumanosDesligamento .form-control {
+    font-size: 120%;
 }
 #solicitacoesRecursosHumanosDesligamento .form-control:disabled,
 #solicitacoesRecursosHumanosDesligamento .form-control[readonly],
@@ -739,7 +742,7 @@ body::after {
     top: -1vh;
     right: 0;
     opacity: 1!important;
-    font-size: 100%;
+    font-size: 120%;
     font-weight: normal;
     left:0;
     text-align: end;
@@ -754,6 +757,9 @@ body::after {
     text-align: end;
     padding: 0 .75rem 0 0;
 }
+#solicitacoesRecursosHumanosAdmissao .form-control {
+    font-size: 120%;
+}
 #solicitacoesRecursosHumanosAdmissao .form-control:disabled,
 #solicitacoesRecursosHumanosAdmissao .form-control[readonly],
 #solicitacoesRecursosHumanosAdmissao .form-select:disabled,
@@ -762,7 +768,7 @@ body::after {
     border-color: transparent;
 }
 #solicitacoesRecursosHumanosAdmissao .fc-title {
-    font-size: 180%;
+    
     font-weight: bold;
 }
 #solicitacoesRecursosHumanosAdmissao .tabs-responsive {
