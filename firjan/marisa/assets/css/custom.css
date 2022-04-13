@@ -176,6 +176,20 @@ body::after {
 .input-group .form-floating label {
     left:0;    
 }
+.form-control,
+.form-select {
+    font-size: 120%;
+}
+.form-control:disabled,
+.form-control[readonly],
+.form-select:disabled,
+.form-select[readonly] {
+    background-color: transparent;
+    border-color: transparent;
+}
+.fc-title {
+    font-weight: bold;
+}
 @media screen and (max-width:768px) {
     .navbar-brand {
         width: 30vh;
@@ -341,13 +355,13 @@ body::after {
     transition:all 0.5s ease;
 }
 /* SOLICITAÇÕES RECURSOS HUMANO */
-#solicitacoesRecursosHumanos {
+#gestaodepessoas {
     width: 100%;
     height: auto;
     padding: 10vh 0 10vh 0;
     background-color: var(--gray4);
 }
-#solicitacoesRecursosHumanos .banner {
+#gestaodepessoas .banner {
     color: var(--gray5);
     padding:6vh 0 6vh 0;
     background-color:var(--AzulFirjanII);
@@ -357,14 +371,14 @@ body::after {
     align-items: center;
     text-align: center;
 }
-#solicitacoesRecursosHumanos .nav-tabs {
+#gestaodepessoas .nav-tabs {
     width: 60vw;
     box-shadow: 6px 6px 18px -12px rgb(0 0 0 / 50%);
 }
-#solicitacoesRecursosHumanos .nav-item {
+#gestaodepessoas .nav-item {
     width: 50%;
 }
-#solicitacoesRecursosHumanos .nav-tabs .nav-item .nav-link {
+#gestaodepessoas .nav-tabs .nav-item .nav-link {
     color: var(--gray5);
     font-size:120%;
     letter-spacing: 1px;
@@ -373,16 +387,16 @@ body::after {
     border: 0;
     border-radius: 0;
 }
-#solicitacoesRecursosHumanos .nav-tabs .nav-item.show .nav-link,
-#solicitacoesRecursosHumanos .nav-tabs .nav-link.active {
+#gestaodepessoas .nav-tabs .nav-item.show .nav-link,
+#gestaodepessoas .nav-tabs .nav-link.active {
     background-color: var(--CinzaFirjanII);
     cursor: default;
 }
-#solicitacoesRecursosHumanos .nav-tabs .nav-link:focus,
-#solicitacoesRecursosHumanos .nav-tabs .nav-link:hover {
+#gestaodepessoas .nav-tabs .nav-link:focus,
+#gestaodepessoas .nav-tabs .nav-link:hover {
     background-color:var(--CinzaFirjanII);
 }
-#solicitacoesRecursosHumanos .search {
+#gestaodepessoas .search {
     width: 60vw;
     color: var(--gray1);
     padding: 1.4vh 1.4vh 0vh 1.4vh;
@@ -392,10 +406,10 @@ body::after {
     border-radius: 0 0 2vh 2vh;
     box-shadow: 6px 6px 18px -12px rgb(0 0 0 / 50%);
 }
-#solicitacoesRecursosHumanos .tab-content {
+#gestaodepessoas .tab-content {
     padding: 0;
 }
-#solicitacoesRecursosHumanos #tablePositionCard {
+#gestaodepessoas #tablePositionCard {
     border-color: transparent;
 }
 .rh-card {
@@ -576,37 +590,36 @@ body::after {
 #Posicoes .table-position .include-position {
     color: var(--gray5);
     text-decoration:none;
-    padding:.4vh 2vh;
+    padding: .6vh 2vh;
     background-color: var(--AzulFirjan);
     border-radius: .6vh;
     transition:all 0.5s ease;
-}
+display: inline-flex;}
 #Posicoes .table-position .include-position:hover {
     background-color: var(--AzulFirjanII);
 }
-
 @media screen and (max-width:576px) {
     .table-responsive {
         width: 100%;
     }
     #tablePositionCard,
     #tableListPosition {
-        width:140%;
+        width: 170%;
     }
-    #solicitacoesRecursosHumanos .nav-tabs,
-    #solicitacoesRecursosHumanos .search,
-    #solicitacoesRecursosHumanos .tab-content{
+    #gestaodepessoas .nav-tabs,
+    #gestaodepessoas .search,
+    #gestaodepessoas .tab-content{
         width:95vw;
     }
 }
-/* Solicitações Recursos Humanos Desligamento */
-#solicitacoesRecursosHumanosDesligamento {
+/* Gestão de pessoas - Desligamento */
+#gestaodepessoasDesligamento {
     width: 100%;
     height: auto;
     padding: 10vh 0 10vh 0;
     background-color: var(--gray4);
 }
-#solicitacoesRecursosHumanosDesligamento .banner {
+#gestaodepessoasDesligamento .banner {
     color: var(--gray5);
     padding: 6vh 0 6vh 0;
     background-color:var(--AzulFirjanII);
@@ -616,7 +629,7 @@ body::after {
     align-items: start;
     text-align: start;
 }
-#solicitacoesRecursosHumanosDesligamento .banner .form-floating label {
+#gestaodepessoasDesligamento .banner .form-floating label {
     top: -1vh;
     right: 0;
     opacity: 1!important;
@@ -626,7 +639,7 @@ body::after {
     text-align: end;
     transform: scale(1)!important;
 }
-#solicitacoesRecursosHumanosDesligamento .banner .form-control {
+#gestaodepessoasDesligamento .banner .form-control {
     position: relative;
     top: 1vh;
     color: var(--gray5);
@@ -635,33 +648,19 @@ body::after {
     text-align: end;
     padding: 0 .75rem 0 0;
 }
-#solicitacoesRecursosHumanosDesligamento .form-control {
-    font-size: 120%;
-}
-#solicitacoesRecursosHumanosDesligamento .form-control:disabled,
-#solicitacoesRecursosHumanosDesligamento .form-control[readonly],
-#solicitacoesRecursosHumanosDesligamento .form-select:disabled,
-#solicitacoesRecursosHumanosDesligamento .form-select[readonly]{
-    background-color: transparent;
-    border-color: transparent;
-}
-#solicitacoesRecursosHumanosDesligamento .fc-title {
-    font-size: 180%;
-    font-weight: bold;
-}
-#solicitacoesRecursosHumanosDesligamento .tabs-responsive {
+#gestaodepessoasDesligamento .tabs-responsive {
     width:100%;
     overflow: hidden;
     overflow-x: auto;
     display: block;
 }
-#solicitacoesRecursosHumanosDesligamento .nav.nav-tabs {
+#gestaodepessoasDesligamento .nav.nav-tabs {
     width: 100%;
     height:12vh;
     padding: 1vh;
     border: 0;
 }
-#solicitacoesRecursosHumanosDesligamento .nav-tabs .nav-link {
+#gestaodepessoasDesligamento .nav-tabs .nav-link {
     width: 5vh;
     height: auto;
     color: var(--gray1);
@@ -679,32 +678,32 @@ body::after {
     box-shadow: 6px 6px 18px -12px rgb(0 0 0 / 50%);
     transition:all 0.5s ease;
 }
-#solicitacoesRecursosHumanosDesligamento .nav-tabs .nav-link:focus,
-#solicitacoesRecursosHumanosDesligamento .nav-tabs .nav-link:hover {
+#gestaodepessoasDesligamento .nav-tabs .nav-link:focus,
+#gestaodepessoasDesligamento .nav-tabs .nav-link:hover {
     border-color: var(--AzulSENAI);
     transform: scale(1.2);
 }
-#solicitacoesRecursosHumanosDesligamento .nav-tabs .nav-item.show .nav-link,
-#solicitacoesRecursosHumanosDesligamento .nav-tabs .nav-link.active {
+#gestaodepessoasDesligamento .nav-tabs .nav-item.show .nav-link,
+#gestaodepessoasDesligamento .nav-tabs .nav-link.active {
     border-color:var(--gray3);
     transform: scale(1.2);
     animation: pulse 5s infinite;
 }
-#solicitacoesRecursosHumanosDesligamento .nav-tabs .nav-link img {
+#gestaodepessoasDesligamento .nav-tabs .nav-link img {
     width: 100%;
 }
-#solicitacoesRecursosHumanosDesligamento .nav-tabs .nav-link.disabled img {
+#gestaodepessoasDesligamento .nav-tabs .nav-link.disabled img {
     opacity: .6;
     filter: grayscale(100%);
 }
-#solicitacoesRecursosHumanosDesligamento .tab-content {
+#gestaodepessoasDesligamento .tab-content {
     width: 100%;
     padding: 2vh 1vh;
     background-color: white;
     border-radius: 1vh;
     box-shadow: 6px 6px 18px -12px rgb(0 0 0 / 50%);
 }
-#solicitacoesRecursosHumanosDesligamento .userAvatar {
+#gestaodepessoasDesligamento .userAvatar {
     width: 100%;
     max-width: 30vh;
     margin: 0 auto;
@@ -712,23 +711,23 @@ body::after {
     border-radius: 50%;
     transition:all 0.5s ease;
 }
-#solicitacoesRecursosHumanosDesligamento #hiddenMotivoOutros {
+#gestaodepessoasDesligamento #hiddenMotivoOutros {
     display: none;
 }
 @media screen and (max-width:576px) {
-    #solicitacoesRecursosHumanosDesligamento .nav.nav-tabs {
+    #gestaodepessoasDesligamento .nav.nav-tabs {
         width: max-content;
         height:100px;
     }
 }
-/* Solicitações Recursos Humanos Admissão */
-#solicitacoesRecursosHumanosAdmissao {
+/* Gestão de pessoas - Admissão */
+#gestaodepessoasAdmissao {
     width: 100%;
     height: auto;
     padding: 10vh 0 10vh 0;
     background-color: var(--gray4);
 }
-#solicitacoesRecursosHumanosAdmissao .banner {
+#gestaodepessoasAdmissao .banner {
     color: var(--gray5);
     padding: 6vh 0 6vh 0;
     background-color:var(--AzulFirjanII);
@@ -738,7 +737,7 @@ body::after {
     align-items: start;
     text-align: start;
 }
-#solicitacoesRecursosHumanosAdmissao .banner .form-floating label {
+#gestaodepessoasAdmissao .banner .form-floating label {
     top: -1vh;
     right: 0;
     opacity: 1!important;
@@ -748,7 +747,7 @@ body::after {
     text-align: end;
     transform: scale(1)!important;
 }
-#solicitacoesRecursosHumanosAdmissao .banner .form-control {
+#gestaodepessoasAdmissao .banner .form-control {
     position: relative;
     top: 1vh;
     color: var(--gray5);
@@ -757,33 +756,19 @@ body::after {
     text-align: end;
     padding: 0 .75rem 0 0;
 }
-#solicitacoesRecursosHumanosAdmissao .form-control {
-    font-size: 120%;
-}
-#solicitacoesRecursosHumanosAdmissao .form-control:disabled,
-#solicitacoesRecursosHumanosAdmissao .form-control[readonly],
-#solicitacoesRecursosHumanosAdmissao .form-select:disabled,
-#solicitacoesRecursosHumanosAdmissao .form-select[readonly] {
-    background-color: transparent;
-    border-color: transparent;
-}
-#solicitacoesRecursosHumanosAdmissao .fc-title {
-    
-    font-weight: bold;
-}
-#solicitacoesRecursosHumanosAdmissao .tabs-responsive {
+#gestaodepessoasAdmissao .tabs-responsive {
     width:100%;
     overflow: hidden;
     overflow-x: auto;
     display: block;
 }
-#solicitacoesRecursosHumanosAdmissao .nav.nav-tabs {
+#gestaodepessoasAdmissao .nav.nav-tabs {
     width: 100%;
     height:12vh;
     padding: 1vh;
     border: 0;
 }
-#solicitacoesRecursosHumanosAdmissao .nav-tabs .nav-link {
+#gestaodepessoasAdmissao .nav-tabs .nav-link {
     width: 5vh;
     height: auto;
     color: var(--gray1);
@@ -801,46 +786,46 @@ body::after {
     box-shadow: 6px 6px 18px -12px rgb(0 0 0 / 50%);
     transition:all 0.5s ease;
 }
-#solicitacoesRecursosHumanosAdmissao .nav-tabs .nav-link:focus,
-#solicitacoesRecursosHumanosAdmissao .nav-tabs .nav-link:hover {
+#gestaodepessoasAdmissao .nav-tabs .nav-link:focus,
+#gestaodepessoasAdmissao .nav-tabs .nav-link:hover {
     border-color: var(--AzulSENAI);
     transform: scale(1.2);
 }
-#solicitacoesRecursosHumanosAdmissao .nav-tabs .nav-item.show .nav-link,
-#solicitacoesRecursosHumanosAdmissao .nav-tabs .nav-link.active {
+#gestaodepessoasAdmissao .nav-tabs .nav-item.show .nav-link,
+#gestaodepessoasAdmissao .nav-tabs .nav-link.active {
     border-color:var(--gray3);
     transform: scale(1.2);
     animation: pulse 5s infinite;
 }
-#solicitacoesRecursosHumanosAdmissao .nav-tabs .nav-link img {
+#gestaodepessoasAdmissao .nav-tabs .nav-link img {
     width: 100%;
 }
-#solicitacoesRecursosHumanosAdmissao .nav-tabs .nav-link.disabled img {
+#gestaodepessoasAdmissao .nav-tabs .nav-link.disabled img {
     opacity: .6;
     filter: grayscale(100%);
 }
-#solicitacoesRecursosHumanosAdmissao .tab-content {
+#gestaodepessoasAdmissao .tab-content {
     width: 100%;
     padding: 2vh 1vh;
     background-color: white;
     border-radius: 1vh;
     box-shadow: 6px 6px 18px -12px rgb(0 0 0 / 50%);
 }
-#solicitacoesRecursosHumanosAdmissao .tab-content #Solicitante h4 {
+#gestaodepessoasAdmissao .tab-content #Solicitante h4 {
     color:var(--AzulFirjan);
     font-weight:bold;
     margin-top: 3vh;
 }
-#solicitacoesRecursosHumanosAdmissao .accordion-button {
+#gestaodepessoasAdmissao .accordion-button {
 color: var(--AzulFirjan);
 font-size: 100%;
 font-weight: bold;
 }
-#solicitacoesRecursosHumanosAdmissao .accordion-button:hover {
+#gestaodepessoasAdmissao .accordion-button:hover {
     border-color:var(--AzulFirjanII);
     background-color:var(--gray3);
 }
-#solicitacoesRecursosHumanosAdmissao .accordion-button::after {
+#gestaodepessoasAdmissao .accordion-button::after {
     flex-shrink:0;
     width:1.25rem;
     height:1.25rem;
@@ -851,16 +836,16 @@ font-weight: bold;
     background-size:1.25rem;
     transition:transform .2s ease-in-out
 }
-#solicitacoesRecursosHumanosAdmissao .accordion-button:not(.collapsed) {
+#gestaodepessoasAdmissao .accordion-button:not(.collapsed) {
     color: var(--AzulFirjan);
     background-color: white;
 }
-#solicitacoesRecursosHumanosAdmissao .accordion-button:not(.collapsed)::after {
+#gestaodepessoasAdmissao .accordion-button:not(.collapsed)::after {
     background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
     transform:rotate(-180deg)
 }
 @media screen and (max-width:576px) {
-    #solicitacoesRecursosHumanosAdmissao .nav.nav-tabs {
+    #gestaodepessoasAdmissao .nav.nav-tabs {
         width: max-content;
         height:100px;
     }
