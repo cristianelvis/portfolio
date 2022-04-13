@@ -3,9 +3,9 @@ $(document).ready(function(){
     $("#footer").load("../dashboard/_include_footer.html");
     $("#modal").load("../dashboard/_include_modal.html");
     $("#dashboard").load("section_001.html");
-    $("#solicitacoesRecursosHumanos").load("section_001.html");
-    $("#solicitacoesRecursosHumanosDesligamento").load("section_001.html");
-    $("#solicitacoesRecursosHumanosAdmissao").load("section_001.html");
+    $("#gestaodepessoas").load("section_001.html");
+    $("#gestaodepessoasDesligamento").load("section_001.html");
+    $("#gestaodepessoasAdmissao").load("section_001.html");
 });
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
