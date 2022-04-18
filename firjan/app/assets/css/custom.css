@@ -469,7 +469,7 @@ body::after {
 .rh-card .user-action {
     position: absolute;
     bottom: 4vh;
-    height: 4.6vh;display: flex;flex-direction: initial;overflow: visible;transition:all 0.5s ease;
+    display: flex;flex-direction: initial;overflow: visible;transition:all 0.5s ease;
 }
 .rh-card .user-action a {
     color:var(--CinzaFirjanII);
