@@ -420,7 +420,7 @@ body::after {
     padding: 2vh;
     margin: 0 auto;
     background-position: center;
-    overflow: hidden;
+    overflow: visible;
     display: flex;
     justify-content: center;
 }
@@ -469,7 +469,7 @@ body::after {
 .rh-card .user-action {
     position: absolute;
     bottom: 4vh;
-    transition:all 0.5s ease;
+    height: 4.6vh;display: flex;flex-direction: initial;overflow: visible;transition:all 0.5s ease;
 }
 .rh-card .user-action a {
     color:var(--CinzaFirjanII);
@@ -507,6 +507,22 @@ body::after {
     background-color:var(--AzulFirjan);
     border:1px dashed var(--AzulFirjan);
     transition:all 0.5s ease;
+}
+.rh-card .user-action .dropup .dropdown-menu.show {
+    background-color: var(--gray3);
+    transform: translate(-45px, -35px)!important;
+}
+.rh-card .user-action .dropup .dropdown-menu .dropdown-item {
+    color:var(--CinzaFirjan);
+    font-size: 100%;
+    padding: 1vh;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+}
+.rh-card .user-action .dropup .dropdown-menu .dropdown-item:hover {
+    transform: scale(1);
 }
 .position-card {
     position: relative;
@@ -594,7 +610,8 @@ body::after {
     background-color: var(--AzulFirjan);
     border-radius: .6vh;
     transition:all 0.5s ease;
-display: inline-flex;}
+    display: inline-flex;
+}
 #Posicoes .table-position .include-position:hover {
     background-color: var(--AzulFirjanII);
 }
@@ -846,6 +863,114 @@ font-weight: bold;
 }
 @media screen and (max-width:576px) {
     #gestaodepessoasAdmissao .nav.nav-tabs {
+        width: max-content;
+        height:100px;
+    }
+}
+/* Gestão de pessoas - Movimentação - Alterar carga horária */
+#gestaodepessoasMovimentacaoACH {
+    width: 100%;
+    height: auto;
+    padding: 10vh 0 10vh 0;
+    background-color: var(--gray4);
+}
+#gestaodepessoasMovimentacaoACH .banner {
+    color: var(--gray5);
+    padding: 6vh 0 6vh 0;
+    background-color:var(--AzulFirjanII);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: start;
+}
+#gestaodepessoasMovimentacaoACH .banner .form-floating label {
+    top: -1vh;
+    right: 0;
+    opacity: 1!important;
+    font-size: 120%;
+    font-weight: normal;
+    left:0;
+    text-align: end;
+    transform: scale(1)!important;
+}
+#gestaodepessoasMovimentacaoACH .banner .form-control {
+    position: relative;
+    top: 1vh;
+    color: var(--gray5);
+    font-size: 120%;
+    font-weight: bold;
+    text-align: end;
+    padding: 0 .75rem 0 0;
+}
+#gestaodepessoasMovimentacaoACH .tabs-responsive {
+    width:100%;
+    overflow: hidden;
+    overflow-x: auto;
+    display: block;
+}
+#gestaodepessoasMovimentacaoACH .nav.nav-tabs {
+    width: 100%;
+    height:12vh;
+    padding: 1vh;
+    border: 0;
+}
+#gestaodepessoasMovimentacaoACH .nav-tabs .nav-link {
+    width: 5vh;
+    height: auto;
+    color: var(--gray1);
+    padding: 0;
+    margin: 1vh;
+    background-color: white;
+    border: 2px solid var(--gray3);
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 6px 6px 18px -12px rgb(0 0 0 / 50%);
+    transition:all 0.5s ease;
+}
+#gestaodepessoasMovimentacaoACH .nav-tabs .nav-link:focus,
+#gestaodepessoasMovimentacaoACH .nav-tabs .nav-link:hover {
+    border-color: var(--AzulSENAI);
+    transform: scale(1.2);
+}
+#gestaodepessoasMovimentacaoACH .nav-tabs .nav-item.show .nav-link,
+#gestaodepessoasMovimentacaoACH .nav-tabs .nav-link.active {
+    border-color:var(--gray3);
+    transform: scale(1.2);
+    animation: pulse 5s infinite;
+}
+#gestaodepessoasMovimentacaoACH .nav-tabs .nav-link img {
+    width: 100%;
+}
+#gestaodepessoasMovimentacaoACH .nav-tabs .nav-link.disabled img {
+    opacity: .6;
+    filter: grayscale(100%);
+}
+#gestaodepessoasMovimentacaoACH .tab-content {
+    width: 100%;
+    padding: 2vh 1vh;
+    background-color: white;
+    border-radius: 1vh;
+    box-shadow: 6px 6px 18px -12px rgb(0 0 0 / 50%);
+}
+#gestaodepessoasMovimentacaoACH .userAvatar {
+    width: 100%;
+    max-width: 30vh;
+    margin: 0 auto;
+    border: 3px solid var(--CinzaFirjanII);
+    border-radius: 50%;
+    transition:all 0.5s ease;
+}
+#gestaodepessoasMovimentacaoACH #hiddenMotivoOutros {
+    display: none;
+}
+@media screen and (max-width:576px) {
+    #gestaodepessoasMovimentacaoACH .nav.nav-tabs {
         width: max-content;
         height:100px;
     }
