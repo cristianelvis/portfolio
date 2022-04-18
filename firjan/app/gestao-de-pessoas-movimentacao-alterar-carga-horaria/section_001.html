@@ -65,9 +65,13 @@
                             </div>
                             <hr>
                             <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-floating mb-3">
+                                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 form-floating mb-3">
                                     <input type="text" class="form-control fc-title shadow-none" placeholder="" value="NOME DO COLABORADOR(A)" id="colaboradorNome" disabled>
                                     <label for="colaboradorNome">Nome do colaborador(a):</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="Aumento de CH" id="carTipoSolicitacaogo" disabled>
+                                    <label for="TipoSolicitacao">*Tipo de solicitação:</label>
                                 </div>
                             </div>
                             <div class="row">
@@ -96,23 +100,6 @@
                             </div>
                             <div class="row">
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <select class="form-select shadow-none" id="TipoSolicitacao">
-                                        <option value="0">Aumento</option>
-                                        <option value="1">Redução</option>
-                                    </select>
-                                    <label for="TipoSolicitacao">*Tipo de solicitação:</label>
-                                </div>
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="" value="NÃO" id="alteracaoMP" disabled>
-                                    <label for="alteracaoMP">Alteração via MP:</label>
-                                </div>
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="00/00/0000" value="" id="dataVigencia" onkeypress="mascaraData(this);" onblur="mascaraData(this);">
-                                    <label for="dataVigencia">*Data de vigência:</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
                                     <input type="text" class="form-control shadow-none" placeholder="" value="Horista" id="categoriaSalarial" disabled>
                                     <label for="categoriaSalarial">Categoria salarial:</label>
                                 </div>
@@ -131,18 +118,29 @@
                                     <label for="codHorario">*Cod Horário:</label>
                                 </div>
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="" value="40" id="novaCargaHorariaSemanal">
-                                    <label for="novaCargaHorariaSemanal">*Nova carga horária semanal:</label>
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="R$ 00.0000,00" id="salarioAtual" disabled>
+                                    <label for="salarioAtual">*Salário Atual:</label>
                                 </div>
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="" value="Novo Cod Horário" id="novoCodHorario" disabled>
-                                    <label for="novoCodHorario">*Novo Cod Horário:</label>
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="NÃO" id="alteracaoMP" disabled>
+                                    <label for="alteracaoMP">Alteração via MP:</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="00/00/0000" value="" id="dataVigencia" onkeypress="mascaraData(this);" onblur="mascaraData(this);">
+                                    <label for="dataVigencia">*Data de vigência:</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="40" id="novaCargaHorariaSemanal">
+                                    <label for="novaCargaHorariaSemanal">*Nova carga horária semanal:</label>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="" value="R$ 00.0000,00" id="salarioAtual" disabled>
-                                    <label for="salarioAtual">*Salário Atual:</label>
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="Novo Cod Horário" id="novoCodHorario" disabled>
+                                    <label for="novoCodHorario">*Novo Cod Horário:</label>
                                 </div>
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
                                     <input type="text" class="form-control shadow-none" placeholder="" value="R$ 00.0000,00" id="novoSalario" disabled>
