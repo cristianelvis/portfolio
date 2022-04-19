@@ -187,6 +187,9 @@ body::after {
     background-color: transparent;
     border-color: transparent;
 }
+.input-group-text {
+    margin-left: -2px!important;
+}
 .fc-title {
     font-weight: bold;
 }
