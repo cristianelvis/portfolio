@@ -516,7 +516,7 @@ h1 {
 }
 .rh-card .user-action .dropup .dropdown-menu.show {
     background-color: var(--gray3);
-    transform: translate(-45px, -35px)!important;
+    transform: translate(-45px, -65px)!important;
 }
 .rh-card .user-action .dropup .dropdown-menu .dropdown-item {
     color:var(--CinzaFirjan);
