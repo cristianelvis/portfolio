@@ -46,6 +46,9 @@ body::after {
     z-index:-1;
     content:url(../images/bandeira-firjan.png);
 }
+h1 {
+    font-size: 200%;
+}
 .grid,
 .grid-left,
 .grid-right,
@@ -632,14 +635,14 @@ body::after {
         width:95vw;
     }
 }
-/* Gestão de pessoas - Desligamento */
-#gestaodepessoasDesligamento {
+/* Gestão de pessoas - MRH Desligamento */
+#mrhDesligamento {
     width: 100%;
     height: auto;
     padding: 10vh 0 10vh 0;
     background-color: var(--gray4);
 }
-#gestaodepessoasDesligamento .banner {
+#mrhDesligamento .banner {
     color: var(--gray5);
     padding: 6vh 0 6vh 0;
     background-color:var(--AzulFirjanII);
@@ -649,7 +652,7 @@ body::after {
     align-items: start;
     text-align: start;
 }
-#gestaodepessoasDesligamento .banner .form-floating label {
+#mrhDesligamento .banner .form-floating label {
     top: -1vh;
     right: 0;
     opacity: 1!important;
@@ -659,7 +662,7 @@ body::after {
     text-align: end;
     transform: scale(1)!important;
 }
-#gestaodepessoasDesligamento .banner .form-control {
+#mrhDesligamento .banner .form-control {
     position: relative;
     top: 1vh;
     color: var(--gray5);
@@ -668,19 +671,19 @@ body::after {
     text-align: end;
     padding: 0 .75rem 0 0;
 }
-#gestaodepessoasDesligamento .tabs-responsive {
+#mrhDesligamento .tabs-responsive {
     width:100%;
     overflow: hidden;
     overflow-x: auto;
     display: block;
 }
-#gestaodepessoasDesligamento .nav.nav-tabs {
+#mrhDesligamento .nav.nav-tabs {
     width: 100%;
     height:12vh;
     padding: 1vh;
     border: 0;
 }
-#gestaodepessoasDesligamento .nav-tabs .nav-link {
+#mrhDesligamento .nav-tabs .nav-link {
     width: 5vh;
     height: auto;
     color: var(--gray1);
@@ -698,32 +701,32 @@ body::after {
     box-shadow: 6px 6px 18px -12px rgb(0 0 0 / 50%);
     transition:all 0.5s ease;
 }
-#gestaodepessoasDesligamento .nav-tabs .nav-link:focus,
-#gestaodepessoasDesligamento .nav-tabs .nav-link:hover {
+#mrhDesligamento .nav-tabs .nav-link:focus,
+#mrhDesligamento .nav-tabs .nav-link:hover {
     border-color: var(--AzulSENAI);
     transform: scale(1.2);
 }
-#gestaodepessoasDesligamento .nav-tabs .nav-item.show .nav-link,
-#gestaodepessoasDesligamento .nav-tabs .nav-link.active {
+#mrhDesligamento .nav-tabs .nav-item.show .nav-link,
+#mrhDesligamento .nav-tabs .nav-link.active {
     border-color:var(--gray3);
     transform: scale(1.2);
     animation: pulse 5s infinite;
 }
-#gestaodepessoasDesligamento .nav-tabs .nav-link img {
+#mrhDesligamento .nav-tabs .nav-link img {
     width: 100%;
 }
-#gestaodepessoasDesligamento .nav-tabs .nav-link.disabled img {
+#mrhDesligamento .nav-tabs .nav-link.disabled img {
     opacity: .6;
     filter: grayscale(100%);
 }
-#gestaodepessoasDesligamento .tab-content {
+#mrhDesligamento .tab-content {
     width: 100%;
     padding: 2vh 1vh;
     background-color: white;
     border-radius: 1vh;
     box-shadow: 6px 6px 18px -12px rgb(0 0 0 / 50%);
 }
-#gestaodepessoasDesligamento .userAvatar {
+#mrhDesligamento .userAvatar {
     width: 100%;
     max-width: 30vh;
     margin: 0 auto;
@@ -731,23 +734,23 @@ body::after {
     border-radius: 50%;
     transition:all 0.5s ease;
 }
-#gestaodepessoasDesligamento #hiddenMotivoOutros {
+#mrhDesligamento #hiddenMotivoOutros {
     display: none;
 }
 @media screen and (max-width:576px) {
-    #gestaodepessoasDesligamento .nav.nav-tabs {
+    #mrhDesligamento .nav.nav-tabs {
         width: max-content;
         height:100px;
     }
 }
-/* Gestão de pessoas - Admissão */
-#gestaodepessoasAdmissao {
+/* Gestão de pessoas - MRH Admissão */
+#mrhAdmissao {
     width: 100%;
     height: auto;
     padding: 10vh 0 10vh 0;
     background-color: var(--gray4);
 }
-#gestaodepessoasAdmissao .banner {
+#mrhAdmissao .banner {
     color: var(--gray5);
     padding: 6vh 0 6vh 0;
     background-color:var(--AzulFirjanII);
@@ -757,7 +760,7 @@ body::after {
     align-items: start;
     text-align: start;
 }
-#gestaodepessoasAdmissao .banner .form-floating label {
+#mrhAdmissao .banner .form-floating label {
     top: -1vh;
     right: 0;
     opacity: 1!important;
@@ -767,7 +770,7 @@ body::after {
     text-align: end;
     transform: scale(1)!important;
 }
-#gestaodepessoasAdmissao .banner .form-control {
+#mrhAdmissao .banner .form-control {
     position: relative;
     top: 1vh;
     color: var(--gray5);
@@ -776,19 +779,19 @@ body::after {
     text-align: end;
     padding: 0 .75rem 0 0;
 }
-#gestaodepessoasAdmissao .tabs-responsive {
+#mrhAdmissao .tabs-responsive {
     width:100%;
     overflow: hidden;
     overflow-x: auto;
     display: block;
 }
-#gestaodepessoasAdmissao .nav.nav-tabs {
+#mrhAdmissao .nav.nav-tabs {
     width: 100%;
     height:12vh;
     padding: 1vh;
     border: 0;
 }
-#gestaodepessoasAdmissao .nav-tabs .nav-link {
+#mrhAdmissao .nav-tabs .nav-link {
     width: 5vh;
     height: auto;
     color: var(--gray1);
@@ -806,46 +809,46 @@ body::after {
     box-shadow: 6px 6px 18px -12px rgb(0 0 0 / 50%);
     transition:all 0.5s ease;
 }
-#gestaodepessoasAdmissao .nav-tabs .nav-link:focus,
-#gestaodepessoasAdmissao .nav-tabs .nav-link:hover {
+#mrhAdmissao .nav-tabs .nav-link:focus,
+#mrhAdmissao .nav-tabs .nav-link:hover {
     border-color: var(--AzulSENAI);
     transform: scale(1.2);
 }
-#gestaodepessoasAdmissao .nav-tabs .nav-item.show .nav-link,
-#gestaodepessoasAdmissao .nav-tabs .nav-link.active {
+#mrhAdmissao .nav-tabs .nav-item.show .nav-link,
+#mrhAdmissao .nav-tabs .nav-link.active {
     border-color:var(--gray3);
     transform: scale(1.2);
     animation: pulse 5s infinite;
 }
-#gestaodepessoasAdmissao .nav-tabs .nav-link img {
+#mrhAdmissao .nav-tabs .nav-link img {
     width: 100%;
 }
-#gestaodepessoasAdmissao .nav-tabs .nav-link.disabled img {
+#mrhAdmissao .nav-tabs .nav-link.disabled img {
     opacity: .6;
     filter: grayscale(100%);
 }
-#gestaodepessoasAdmissao .tab-content {
+#mrhAdmissao .tab-content {
     width: 100%;
     padding: 2vh 1vh;
     background-color: white;
     border-radius: 1vh;
     box-shadow: 6px 6px 18px -12px rgb(0 0 0 / 50%);
 }
-#gestaodepessoasAdmissao .tab-content #Solicitante h4 {
+#mrhAdmissao .tab-content #Solicitante h4 {
     color:var(--AzulFirjan);
     font-weight:bold;
     margin-top: 3vh;
 }
-#gestaodepessoasAdmissao .accordion-button {
+#mrhAdmissao .accordion-button {
 color: var(--AzulFirjan);
 font-size: 100%;
 font-weight: bold;
 }
-#gestaodepessoasAdmissao .accordion-button:hover {
+#mrhAdmissao .accordion-button:hover {
     border-color:var(--AzulFirjanII);
     background-color:var(--gray3);
 }
-#gestaodepessoasAdmissao .accordion-button::after {
+#mrhAdmissao .accordion-button::after {
     flex-shrink:0;
     width:1.25rem;
     height:1.25rem;
@@ -856,28 +859,28 @@ font-weight: bold;
     background-size:1.25rem;
     transition:transform .2s ease-in-out
 }
-#gestaodepessoasAdmissao .accordion-button:not(.collapsed) {
+#mrhAdmissao .accordion-button:not(.collapsed) {
     color: var(--AzulFirjan);
     background-color: white;
 }
-#gestaodepessoasAdmissao .accordion-button:not(.collapsed)::after {
+#mrhAdmissao .accordion-button:not(.collapsed)::after {
     background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
     transform:rotate(-180deg)
 }
 @media screen and (max-width:576px) {
-    #gestaodepessoasAdmissao .nav.nav-tabs {
+    #mrhAdmissao .nav.nav-tabs {
         width: max-content;
         height:100px;
     }
 }
-/* Gestão de pessoas - Movimentação - Alterar carga horária */
-#gestaodepessoasMovimentacaoACH {
+/* Gestão de pessoas - MRH Alteração de carga horária */
+#mrhAlteracaoCargaHoraria {
     width: 100%;
     height: auto;
     padding: 10vh 0 10vh 0;
     background-color: var(--gray4);
 }
-#gestaodepessoasMovimentacaoACH .banner {
+#mrhAlteracaoCargaHoraria .banner {
     color: var(--gray5);
     padding: 6vh 0 6vh 0;
     background-color:var(--AzulFirjanII);
@@ -887,7 +890,7 @@ font-weight: bold;
     align-items: start;
     text-align: start;
 }
-#gestaodepessoasMovimentacaoACH .banner .form-floating label {
+#mrhAlteracaoCargaHoraria .banner .form-floating label {
     top: -1vh;
     right: 0;
     opacity: 1!important;
@@ -897,7 +900,7 @@ font-weight: bold;
     text-align: end;
     transform: scale(1)!important;
 }
-#gestaodepessoasMovimentacaoACH .banner .form-control {
+#mrhAlteracaoCargaHoraria .banner .form-control {
     position: relative;
     top: 1vh;
     color: var(--gray5);
@@ -906,19 +909,19 @@ font-weight: bold;
     text-align: end;
     padding: 0 .75rem 0 0;
 }
-#gestaodepessoasMovimentacaoACH .tabs-responsive {
+#mrhAlteracaoCargaHoraria .tabs-responsive {
     width:100%;
     overflow: hidden;
     overflow-x: auto;
     display: block;
 }
-#gestaodepessoasMovimentacaoACH .nav.nav-tabs {
+#mrhAlteracaoCargaHoraria .nav.nav-tabs {
     width: 100%;
     height:12vh;
     padding: 1vh;
     border: 0;
 }
-#gestaodepessoasMovimentacaoACH .nav-tabs .nav-link {
+#mrhAlteracaoCargaHoraria .nav-tabs .nav-link {
     width: 5vh;
     height: auto;
     color: var(--gray1);
@@ -936,32 +939,32 @@ font-weight: bold;
     box-shadow: 6px 6px 18px -12px rgb(0 0 0 / 50%);
     transition:all 0.5s ease;
 }
-#gestaodepessoasMovimentacaoACH .nav-tabs .nav-link:focus,
-#gestaodepessoasMovimentacaoACH .nav-tabs .nav-link:hover {
+#mrhAlteracaoCargaHoraria .nav-tabs .nav-link:focus,
+#mrhAlteracaoCargaHoraria .nav-tabs .nav-link:hover {
     border-color: var(--AzulSENAI);
     transform: scale(1.2);
 }
-#gestaodepessoasMovimentacaoACH .nav-tabs .nav-item.show .nav-link,
-#gestaodepessoasMovimentacaoACH .nav-tabs .nav-link.active {
+#mrhAlteracaoCargaHoraria .nav-tabs .nav-item.show .nav-link,
+#mrhAlteracaoCargaHoraria .nav-tabs .nav-link.active {
     border-color:var(--gray3);
     transform: scale(1.2);
     animation: pulse 5s infinite;
 }
-#gestaodepessoasMovimentacaoACH .nav-tabs .nav-link img {
+#mrhAlteracaoCargaHoraria .nav-tabs .nav-link img {
     width: 100%;
 }
-#gestaodepessoasMovimentacaoACH .nav-tabs .nav-link.disabled img {
+#mrhAlteracaoCargaHoraria .nav-tabs .nav-link.disabled img {
     opacity: .6;
     filter: grayscale(100%);
 }
-#gestaodepessoasMovimentacaoACH .tab-content {
+#mrhAlteracaoCargaHoraria .tab-content {
     width: 100%;
     padding: 2vh 1vh;
     background-color: white;
     border-radius: 1vh;
     box-shadow: 6px 6px 18px -12px rgb(0 0 0 / 50%);
 }
-#gestaodepessoasMovimentacaoACH .userAvatar {
+#mrhAlteracaoCargaHoraria .userAvatar {
     width: 100%;
     max-width: 30vh;
     margin: 0 auto;
@@ -969,15 +972,154 @@ font-weight: bold;
     border-radius: 50%;
     transition:all 0.5s ease;
 }
-#gestaodepessoasMovimentacaoACH #hiddenMotivoOutros {
+#mrhAlteracaoCargaHoraria #hiddenMotivoOutros {
     display: none;
 }
 @media screen and (max-width:576px) {
-    #gestaodepessoasMovimentacaoACH .nav.nav-tabs {
+    #mrhAlteracaoCargaHoraria .nav.nav-tabs {
         width: max-content;
         height:100px;
     }
 }
+/* Gestão de pessoas - MRH Alteração de cargo ou especialidade */
+#mrhAlteracaoCargoEspecialidade {
+    width: 100%;
+    height: auto;
+    padding: 10vh 0 10vh 0;
+    background-color: var(--gray4);
+}
+#mrhAlteracaoCargoEspecialidade .banner {
+    color: var(--gray5);
+    padding: 6vh 0 6vh 0;
+    background-color:var(--AzulFirjanII);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: start;
+}
+#mrhAlteracaoCargoEspecialidade .banner .form-floating label {
+    top: -1vh;
+    right: 0;
+    opacity: 1!important;
+    font-size: 120%;
+    font-weight: normal;
+    left:0;
+    text-align: end;
+    transform: scale(1)!important;
+}
+#mrhAlteracaoCargoEspecialidade .banner .form-control {
+    position: relative;
+    top: 1vh;
+    color: var(--gray5);
+    font-size: 120%;
+    font-weight: bold;
+    text-align: end;
+    padding: 0 .75rem 0 0;
+}
+#mrhAlteracaoCargoEspecialidade .tabs-responsive {
+    width:100%;
+    overflow: hidden;
+    overflow-x: auto;
+    display: block;
+}
+#mrhAlteracaoCargoEspecialidade .nav.nav-tabs {
+    width: 100%;
+    height:12vh;
+    padding: 1vh;
+    border: 0;
+}
+#mrhAlteracaoCargoEspecialidade .nav-tabs .nav-link {
+    width: 5vh;
+    height: auto;
+    color: var(--gray1);
+    padding: 0;
+    margin: 1vh;
+    background-color: white;
+    border: 2px solid var(--gray3);
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 6px 6px 18px -12px rgb(0 0 0 / 50%);
+    transition:all 0.5s ease;
+}
+#mrhAlteracaoCargoEspecialidade .nav-tabs .nav-link:focus,
+#mrhAlteracaoCargoEspecialidade .nav-tabs .nav-link:hover {
+    border-color: var(--AzulSENAI);
+    transform: scale(1.2);
+}
+#mrhAlteracaoCargoEspecialidade .nav-tabs .nav-item.show .nav-link,
+#mrhAlteracaoCargoEspecialidade .nav-tabs .nav-link.active {
+    border-color:var(--gray3);
+    transform: scale(1.2);
+    animation: pulse 5s infinite;
+}
+#mrhAlteracaoCargoEspecialidade .nav-tabs .nav-link img {
+    width: 100%;
+}
+#mrhAlteracaoCargoEspecialidade .nav-tabs .nav-link.disabled img {
+    opacity: .6;
+    filter: grayscale(100%);
+}
+#mrhAlteracaoCargoEspecialidade .tab-content {
+    width: 100%;
+    padding: 2vh 1vh;
+    background-color: white;
+    border-radius: 1vh;
+    box-shadow: 6px 6px 18px -12px rgb(0 0 0 / 50%);
+}
+#mrhAlteracaoCargoEspecialidade .userAvatar {
+    width: 100%;
+    max-width: 30vh;
+    margin: 0 auto;
+    border: 3px solid var(--CinzaFirjanII);
+    border-radius: 50%;
+    transition:all 0.5s ease;
+}
+#mrhAlteracaoCargoEspecialidade .tab-content #Solicitante h4 {
+    color:var(--AzulFirjan);
+    font-weight:bold;
+    margin-top: 3vh;
+}
+#mrhAlteracaoCargoEspecialidade .accordion-button {
+color: var(--AzulFirjan);
+font-size: 100%;
+font-weight: bold;
+}
+#mrhAlteracaoCargoEspecialidade .accordion-button:hover {
+    border-color:var(--AzulFirjanII);
+    background-color:var(--gray3);
+}
+#mrhAlteracaoCargoEspecialidade .accordion-button::after {
+    flex-shrink:0;
+    width:1.25rem;
+    height:1.25rem;
+    margin-left:auto;
+    content:"";
+    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    background-repeat:no-repeat;
+    background-size:1.25rem;
+    transition:transform .2s ease-in-out
+}
+#mrhAlteracaoCargoEspecialidade .accordion-button:not(.collapsed) {
+    color: var(--AzulFirjan);
+    background-color: white;
+}
+#mrhAlteracaoCargoEspecialidade .accordion-button:not(.collapsed)::after {
+    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    transform:rotate(-180deg)
+}
+@media screen and (max-width:576px) {
+    #mrhAlteracaoCargoEspecialidade .nav.nav-tabs {
+        width: max-content;
+        height:100px;
+    }
+}
+
 /* FOOTER */
 #footer {
     background-color: var(--gray5);

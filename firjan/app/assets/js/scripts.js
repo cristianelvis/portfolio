@@ -4,9 +4,10 @@ $(document).ready(function(){
     $("#modal").load("../dashboard/_include_modal.html");
     $("#dashboard").load("section_001.html");
     $("#gestaodepessoas").load("section_001.html");
-    $("#gestaodepessoasDesligamento").load("section_001.html");
-    $("#gestaodepessoasAdmissao").load("section_001.html");
-    $("#gestaodepessoasMovimentacaoACH").load("section_001.html");
+    $("#mrhDesligamento").load("section_001.html");
+    $("#mrhAdmissao").load("section_001.html");
+    $("#mrhAlteracaoCargaHoraria").load("section_001.html");
+    $("#mrhAlteracaoCargoEspecialidade").load("section_001.html");
 });
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
