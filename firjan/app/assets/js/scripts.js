@@ -8,6 +8,7 @@ $(document).ready(function(){
     $("#mrhAdmissao").load("section_001.html");
     $("#mrhAlteracaoCargaHoraria").load("section_001.html");
     $("#mrhAlteracaoCargoEspecialidade").load("section_001.html");
+    $("#mrhMovimentacaoHorizontal").load("section_001.html");
 });
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();

@@ -74,12 +74,6 @@
                         </a>
                     </li>
                     <i class="bi bi-arrow-right-short"></i>
-                    <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Recrutamento e Seleção">
-                        <a href="#" class="nav-link" id="recsel-tab" data-bs-toggle="tab" data-bs-target="#recsel" role="tab" aria-controls="recsel" aria-selected="false">
-                            <img src="../assets/images/avatar-female.png" class="avatar">
-                        </a>
-                    </li>
-                    <i class="bi bi-arrow-right-short"></i>
                     <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Saúde">
                         <a href="#" class="nav-link" id="saude-tab" data-bs-toggle="tab" data-bs-target="#saude" role="tab" aria-controls="saude" aria-selected="false">
                             <img src="../assets/images/avatar-male.png" class="avatar">
@@ -119,13 +113,17 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 form-floating mb-3">
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
                                     <input type="text" class="form-control fc-title shadow-none" placeholder="" value="NOME DO COLABORADOR(A)" id="colaboradorAtualNome" disabled>
                                     <label for="colaboradorAtualNome">Nome do colaborador(a):</label>
                                 </div>
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
                                     <input type="text" class="form-control shadow-none" placeholder="" value="000000" id="colaboradorAtualMatricula" disabled>
                                     <label for="colaboradorAtualMatricula">Matricula:</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="GES" id="colaboradorAtualGES" disabled>
+                                    <label for="colaboradorAtualGES">GES:</label>
                                 </div>
                             </div>
                             <div class="row">
@@ -172,26 +170,15 @@
                                     <label for="colaboradorAtualCargaHoraria">*Carga horária:</label>
                                 </div>
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <select class="form-select shadow-none" id="colaboradorAtualGES">
-                                        <option value="0">Escolha uma opção</option>
-                                        <option value="1">Lista de GES</option>
-                                        <option value="2">Lista de GES</option>
-                                        <option value="3">Lista de GES</option>
-                                        <option value="4">Lista de GES</option>
-                                        <option value="5">Lista de GES</option>
-                                    </select>
-                                    <label for="colaboradorAtualGES">*GES:</label>
-                                </div>
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
                                     <input type="text" class="form-control shadow-none" placeholder="" value="Periculosidade" id="colaboradorAtualPericulosidade" disabled>
                                     <label for="colaboradorAtualPericulosidade">Periculosidade:</label>
                                 </div>
-                            </div>
-                            <div class="row">
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
                                     <input type="text" class="form-control shadow-none" placeholder="" value="Insalubridade" id="colaboradorAtualInsalubridade" disabled>
                                     <label for="colaboradorAtualInsalubridade">Insalubridade:</label>
                                 </div>
+                            </div>
+                            <div class="row">
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
                                     <input type="text" class="form-control shadow-none" placeholder="" value="Grau de insalubridade" id="colaboradorAtualGrauInsalubridade" disabled>
                                     <label for="colaboradorAtualGrauInsalubridade">Grau de insalubridade:</label>
@@ -220,16 +207,6 @@
                                     <label for="propostoCargoNivel">*Cargo e Nível:</label>
                                 </div>
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="" value="GS" id="propostoGS" disabled>
-                                    <label for="propostoGS">GS:</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="REMUNERAÇÃO" value="" id="propostoEspecialidade">
-                                    <label for="propostoEspecialidade">*Especialidade:</label>
-                                </div>
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
                                     <select class="form-select shadow-none" id="propostoGES">
                                         <option value="0">Escolha uma opção</option>
                                         <option value="1">Lista de GES</option>
@@ -239,6 +216,17 @@
                                         <option value="5">Lista de GES</option>
                                     </select>
                                     <label for="propostoGES">*GES:</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="REMUNERAÇÃO" value="" id="propostoEspecialidade">
+                                    <label for="propostoEspecialidade">*Especialidade:</label>
+                                </div>
+                                
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="GS" id="propostoGS" disabled>
+                                    <label for="propostoGS">GS:</label>
                                 </div>
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
                                     <input type="text" class="form-control shadow-none" placeholder="" value="Periculosidade" id="propostoPericulosidade" disabled>
@@ -495,7 +483,7 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-floating mb-3">
                             <input type="text" class="form-control shadow-none" placeholder="" value="Nome Sobrenome" id="superintendente" disabled>
-                            <label for="superintendente">*Diretor(a) reg. superintendente:</label>
+                            <label for="superintendente">*Diretor(a) Reg. Superintendente:</label>
                         </div>
                     </div>
                     <div class="row">
@@ -516,315 +504,6 @@
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-floating mb-3">
                             <textarea class="form-control shadow-none" placeholder="Motivo:" value="" id="superintendenteObserva" style="height:150px"></textarea>
                             <label for="superintendenteObserva">Observações:</label>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-end">
-                            <button type="button" class="btn btn-outline-primary">Voltar</button>
-                            <button type="button" class="btn btn-primary">Salvar e Enviar</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="recsel" role="tabpanel" aria-labelledby="recsel-tab">
-                    <h3 class="text-start">Recrutamento e Seleção</h3>
-                    <hr>
-                    <div class="accordion" id="accordionRecrutamentoSelecao">
-                        <div class="accordion-item">
-                            <h4 class="accordion-header" id="accordionRecrutamentoSelecaoPanel-01">
-                                <button class="accordion-button shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#accordionRecrutamentoSelecaoPanelOpen-01" aria-expanded="true" aria-controls="accordionRecrutamentoSelecaoPanelOpen-01">
-                                    Informações do candidato
-                                </button>
-                            </h4>
-                            <div class="accordion-collapse collapse show" aria-labelledby="accordionRecrutamentoSelecaoPanel-01" id="accordionRecrutamentoSelecaoPanelOpen-01">
-                                <div class="accordion-body">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <select class="form-select shadow-none" id="recselFuncionario">
-                                                <option value="0">Escolha uma opção</option>
-                                                <option value="1">SIM</option>
-                                                <option value="2">NÃO</option>
-                                            </select>
-                                            <label for="recselFuncionario">*Funcionário?:</label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="00/00/0000" value="" id="recselData" onkeypress="mascaraData(this);" onblur="mascaraData(this);">
-                                            <label for="recselData">*Data da vigência:</label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <select class="form-select shadow-none" id="recselFuncionarioNomeMatricula">
-                                                <option value="0">Escolha uma opção</option>
-                                                <option value="1">Lista com todos os funcionários ativos</option>
-                                                <option value="2">Lista com todos os funcionários ativos</option>
-                                                <option value="3">Lista com todos os funcionários ativos</option>
-                                                <option value="4">Lista com todos os funcionários ativos</option>
-                                                <option value="5">Lista com todos os funcionários ativos</option>
-                                            </select>
-                                            <label for="recselFuncionarioNomeMatricula">*Funcionário:</label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="" value="Empresa atrelada ao funcionário" id="recselEmpresa" disabled>
-                                            <label for="recselEmpresa">Empresa:</label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="" value="Estabelecimento atrelado ao funcionário" id="recselEstabelecimento" disabled>
-                                            <label for="recselEstabelecimento">Estabelecimento:</label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="" value="Gestor atrelado ao funcionário" id="recselGestor" disabled>
-                                            <label for="recselGestor">Gestor:</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h4 class="accordion-header" id="accordionRecrutamentoSelecaoPanel-02">
-                                <button class="accordion-button shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionRecrutamentoSelecaoPanelOpen-02" aria-expanded="false" aria-controls="accordionRecrutamentoSelecaoPanelOpen-02">
-                                    Dados Pessoais
-                                </button>
-                            </h4>
-                            <div class="accordion-collapse collapse" aria-labelledby="accordionRecrutamentoSelecaoPanel-02" id="accordionRecrutamentoSelecaoPanelOpen-02">
-                                <div class="accordion-body">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="Candidato" value="" id="recselCandidato">
-                                            <label for="recselCandidato">*Candidato:</label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="Nome do Pai" value="" id="recselNomePai">
-                                            <label for="recselNomePai">*Nome do Pai:</label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="Nome da Mãe" value="" id="recselNomeMae">
-                                            <label for="recselNomeMae">*Nome da Mãe:</label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="00/00/0000" value="" id="recselDataNascimento" onkeypress="mascaraData(this);" onblur="mascaraData(this);">
-                                            <label for="recselDataNascimento">*Data de Nascimento:</label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="País de Nascimento" value="" id="recselPaisNascimento">
-                                            <label for="recselPaisNascimento">*País de Nascimento:</label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="Uf (Nascimento)" value="" id="recselUfNascimento">
-                                            <label for="recselUfNascimento">*Uf (Nascimento):</label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="Naturalidade" value="" id="recselNaturalidade">
-                                            <label for="recselNaturalidade">*Naturalidade:</label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="Estado Civil" value="" id="recselEstadoCivil">
-                                            <label for="recselEstadoCivil">*Estado Civil:</label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="Sexo" value="" id="recselSexo">
-                                            <label for="recselSexo">*Sexo:</label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="Grau Instrução" value="" id="recselGrauInstrucao">
-                                            <label for="recselGrauInstrucao">*Grau Instrução:</label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="Endereço" value="" id="recselEndereco">
-                                            <label for="recselEndereco">*Endereço:</label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="Bairro" value="" id="recselBairro">
-                                            <label for="recselBairro">*Bairro:</label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="Cidade" value="" id="recselCidade">
-                                            <label for="recselCidade">*Cidade:</label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="Cep" value="" id="recselCep">
-                                            <label for="recselCep">*Cep:</label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="País" value="" id="recselPais">
-                                            <label for="recselPais">*País:</label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="Uf" value="" id="recselUf">
-                                            <label for="recselUf">*Uf:</label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="E-Mail" value="" id="recselEMail">
-                                            <label for="recselEMail">*E-Mail:</label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="(00) 00000-0000" value="" id="recselTelefone" onkeypress="mascaraFone(event);" onblur="mascaraFone(event);">
-                                            <label for="recselTelefone">*Telefone:</label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="00/00/0000" value="" id="recselDataAdmissao" onkeypress="mascaraData(this);" onblur="mascaraData(this);">
-                                            <label for="recselDataAdmissao">*Data de Admissão:</label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <select class="form-select shadow-none" id="recselPrimeiroEmprego">
-                                                <option value="0">Escolha uma opção</option>
-                                                <option value="1">SIM</option>
-                                                <option value="2">NÃO</option>
-                                            </select>
-                                            <label for="recselPrimeiroEmprego">*Primeiro Emprego?:</label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <select class="form-select shadow-none" id="recselPessoaDeficiencia">
-                                                <option value="0">Escolha uma opção</option>
-                                                <option value="1">SIM</option>
-                                                <option value="2">NÃO</option>
-                                            </select>
-                                            <label for="recselPessoaDeficiencia">*Pessoa Com Deficiência?:</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h4 class="accordion-header" id="accordionRecrutamentoSelecaoPanel-03">
-                                <button class="accordion-button shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionRecrutamentoSelecaoPanelOpen-03" aria-expanded="false" aria-controls="accordionRecrutamentoSelecaoPanelOpen-03">
-                                    Documentos
-                                </button>
-                            </h4>
-                            <div class="accordion-collapse collapse" aria-labelledby="accordionRecrutamentoSelecaoPanel-03" id="accordionRecrutamentoSelecaoPanelOpen-03">
-                                <div class="accordion-body">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="Cpf" value="" id="recselCpf">
-                                            <label for="recselCpf">*Cpf:</label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="Identidade" value="" id="recselIdentidade">
-                                            <label for="recselIdentidade">*Identidade:</label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="Orgão" value="" id="recselOrgao">
-                                            <label for="recselOrgao">*Orgão:</label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="Data Emissão" value="" id="recselDataEmissao">
-                                            <label for="recselDataEmissao">*Data Emissão:</label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="Uf Emissor" value="" id="recselUfEmissor">
-                                            <label for="recselUfEmissor">*Uf Emissor:</label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="Título Eleitor" value="" id="recselTituloEleitor">
-                                            <label for="recselTituloEleitor">*Título Eleitor:</label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="Zona" value="" id="recselZona">
-                                            <label for="recselZona">*Zona:</label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="Seção" value="" id="recselSecao">
-                                            <label for="recselSecao">*Seção:</label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="Cidade" value="" id="recselCidade">
-                                            <label for="recselCidade">*Cidade:</label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="Uf" value="" id="recselCidadeUf">
-                                            <label for="recselCidadeUf">*Uf:</label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="Pis" value="" id="recselPis">
-                                            <label for="recselPis">*Pis:</label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="Ctps" value="" id="recselCtps">
-                                            <label for="recselCtps">*Ctps:</label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="Série" value="" id="recselSerie">
-                                            <label for="recselSerie">*Série:</label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="Série Trct/Esocial" value="" id="recselSerieTrctEsocial">
-                                            <label for="recselSerieTrctEsocial">*Série Trct/Esocial:</label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="Cnh" value="" id="recselCnh">
-                                            <label for="recselCnh">*Cnh:</label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="Categoria" value="" id="recselCNHCategoria">
-                                            <label for="recselCNHCategoria">*Categoria:</label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="Vencimento" value="" id="recselCNHVencimento">
-                                            <label for="recselCNHVencimento">*Vencimento:</label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="Uf" value="" id="recselCNHUf">
-                                            <label for="recselCNHUf">*Uf:</label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="Origem" value="" id="recselOrigem">
-                                            <label for="recselOrigem">*Origem:</label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="Tipo visto" value="" id="recselTipoVisto">
-                                            <label for="recselTipoVisto">*Tipo visto:</label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="Identidade Estrangeira" value="" id="recselIdentidadeEstrangeira">
-                                            <label for="recselIdentidadeEstrangeira">*Identidade Estrangeira:</label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="Validade" value="" id="recselValidade">
-                                            <label for="recselValidade">*Validade:</label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="Documento Militar" value="" id="recselDocumentoMilitar">
-                                            <label for="recselDocumentoMilitar">*Documento Militar:</label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="Número" value="" id="recselDocumentoMilitarNumero">
-                                            <label for="recselDocumentoMilitarNumero">*Número:</label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                            <input type="text" class="form-control shadow-none" placeholder="Série" value="" id="recselDocumentoMilitarSerie">
-                                            <label for="recselDocumentoMilitarSerie">*Série:</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <hr>
