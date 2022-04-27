@@ -22,8 +22,6 @@
             </div>
         </div>
     </div>
-    Em produção ...
-    <!--
     <div class="row">
         <div class="col-xs-12 col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-10 offset-lg-1">
             <div class="tabs-responsive">
@@ -35,20 +33,20 @@
                     </li>
                     <i class="bi bi-arrow-right-short"></i>
                     <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Gestor(a) 1º nível">
-                        <a href="#" class="nav-link disabled id="agn1-tab" data-bs-toggle="tab" data-bs-target="#agn1" role="tab" aria-controls="agn1" aria-selected="false">
+                        <a href="#" class="nav-link" id="agn1-tab" data-bs-toggle="tab" data-bs-target="#agn1" role="tab" aria-controls="agn1" aria-selected="false">
                             <img src="../assets/images/fabio-pinto.jpg" class="avatar">
                         </a>
                     </li>
                     <i class="bi bi-arrow-right-short"></i>
                     <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Gestor(a) 2º nível">
-                        <a href="#" class="nav-link disabled" id="agn2-tab" data-bs-toggle="tab" data-bs-target="#agn2" role="tab" aria-controls="agn2" aria-selected="false">
+                        <a href="#" class="nav-link" id="agn2-tab" data-bs-toggle="tab" data-bs-target="#agn2" role="tab" aria-controls="agn2" aria-selected="false">
                             <img src="../assets/images/marisa.jpg" class="avatar">
                         </a>
                     </li>
                     <i class="bi bi-arrow-right-short"></i>
                     <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Validação Remuneração">
                         <a href="#" class="nav-link" id="valrem-tab" data-bs-toggle="tab" data-bs-target="#valrem" role="tab" aria-controls="valrem" aria-selected="false">
-                            <img src="../assets/images/avatar-RH.png" class="avatar">
+                            <img src="../assets/images/avatar-male.png" class="avatar">
                         </a>
                     </li>
                     <i class="bi bi-arrow-right-short"></i>
@@ -146,8 +144,22 @@
                             </div>
                             <div class="row">
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="" value="000000" id="colaboradorAtualPosicaoFaixaAtual" disabled>
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="000000" id="colaboradorAtualPosicaoFaixaAtual" disabled="">
                                     <label for="colaboradorAtualPosicaoFaixaAtual">Posição na faixa atual:</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="Orçado dentro da regra" id="colaboradorAtualResultUltAvalDesempenho" disabled="">
+                                    <label for="colaboradorAtualResultUltAvalDesempenho">Result. Ult. Aval. Desempenho:</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="Saldo" id="colaboradorAtualSaldo" disabled="">
+                                    <label for="colaboradorAtualSaldo">Saldo:</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="Marco zero" id="colaboradorAtualMarcoZero" disabled="">
+                                    <label for="colaboradorAtualMarcoZero">Marco zero:</label>
                                 </div>
                             </div>
                             <div class="row">
@@ -191,14 +203,14 @@
                             </div>
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-floating mb-3">
-                                    <textarea class="form-control shadow-none" placeholder="Justificativa:" value="" id="propostoJustificativamovimentacao" style="height:150px"></textarea>
-                                    <label for="propostoJustificativamovimentacao">*Justificativa da movimentação:</label>
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="Orçado dentro da regra" id="propostoCaracteristicaMovimentacao" disabled>
+                                    <label for="propostoCaracteristicaMovimentacao">Característica da movimentação:</label>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-floating mb-3">
-                                    <textarea class="form-control shadow-none" placeholder="Justificativa:" value="" id="propostoCaracteristicaMovimentacao" style="height:150px"></textarea>
-                                    <label for="propostoCaracteristicaMovimentacao">*Característica da movimentação:</label>
+                                    <textarea class="form-control shadow-none" placeholder="Justificativa:" value="" id="propostoJustificativamovimentacao" style="height:150px"></textarea>
+                                    <label for="propostoJustificativamovimentacao">*Justificativa</label>
                                 </div>
                             </div>
                             <hr>
@@ -421,7 +433,7 @@
                 </div>
             </div>
         </div>
-    </div>-->
+    </div>
 </div>
 <script>
     function formatarCampo(campoTexto) {
