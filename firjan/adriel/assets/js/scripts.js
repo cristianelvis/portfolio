@@ -6,6 +6,7 @@ $(document).ready(function(){
     $("#gestaodepessoas").load("section_001.html");
     $("#mrhDesligamento").load("section_001.html");
     $("#mrhAdmissao").load("section_001.html");
+    $("#mrhAdmissaoSubstituicao").load("section_001.html");
     $("#mrhAlteracaoCargaHoraria").load("section_001.html");
     $("#mrhAlteracaoCargoEspecialidade").load("section_001.html");
     $("#mrhMovimentacaoHorizontal").load("section_001.html");
