@@ -286,30 +286,34 @@
                             </div>
                             <div class="row">
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <select class="form-select shadow-none" id="cargoEmpresaContratacao">
+                                    <select class="form-select shadow-none" id="cargoAtuacao">
                                         <option value="0">Escolha uma opção</option>
-                                        <option value="1">Empresa do sistema</option>
-                                        <option value="2">Empresa do sistema</option>
-                                        <option value="3">Empresa do sistema</option>
-                                        <option value="4">Empresa do sistema</option>
-                                        <option value="5">Empresa do sistema</option>
+                                        <option value="1">Interna</option>
+                                        <option value="2">Externa</option>
                                     </select>
-                                    <label for="cargoEmpresaContratacao">*Empresa Contratação:</label>
+                                    <label for="cargoAtuacao">*Atuação:</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="Cliente" value="" id="cargoCliente">
+                                    <label for="cargoCliente">*Cliente:</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <select class="form-select shadow-none" id="cargoRegimeOffshore">
+                                        <option value="0">Escolha uma opção</option>
+                                        <option value="1">SIM</option>
+                                        <option value="2">NÃO</option>
+                                    </select>
+                                    <label for="cargoRegimeOffshore">*Regime offshore:</label>
                                 </div>
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <select class="form-select shadow-none" id="cargoEstabelecimentoContratacao">
+                                    <select class="form-select shadow-none" id="cargoTipoJornadaOffshore">
                                         <option value="0">Escolha uma opção</option>
-                                        <option value="1">Estabelecimentos da EMPRESA</option>
-                                        <option value="2">Estabelecimentos da EMPRESA</option>
-                                        <option value="3">Estabelecimentos da EMPRESA</option>
-                                        <option value="4">Estabelecimentos da EMPRESA</option>
-                                        <option value="5">Estabelecimentos da EMPRESA</option>
+                                        <option value="1">Integral</option>
+                                        <option value="2">Eventual</option>
                                     </select>
-                                    <label for="cargoEstabelecimentoContratacao">*Estabelecimento Contratação:</label>
-                                </div>
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="" value="00.000.000/0000-00" id="cargoCNPJ" onfocus="javascript: retirarFormatacao(this);" onblur="javascript: formatarCampo(this);">
-                                    <label for="cargoCNPJ">*CNPJ do estabelecimento:</label>
+                                    <label for="cargoTipoJornadaOffshore">*Tipo de jornada offshore:</label>
                                 </div>
                             </div>
                             <div class="row">
@@ -438,49 +442,6 @@
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
                                     <input type="text" class="form-control shadow-none" placeholder="" value="Aposentadoria especial" id="colaboradorPropostoAposentadoriaEspecial" disabled>
                                     <label for="colaboradorPropostoAposentadoriaEspecial">Aposentadoria especial:</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-floating mb-3">
-                                    <textarea class="form-control shadow-none" placeholder="Justificativa:" value="" id="propostoDetalharMovimentacao" style="height:150px"></textarea>
-                                    <label for="propostoDetalharMovimentacao">*Detalhar escopo das atividades (Riscos e local de atuação)</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <h4 class="text-start">Informações da contratação</h4>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <select class="form-select shadow-none" id="cargoAtuacao">
-                                        <option value="0">Escolha uma opção</option>
-                                        <option value="1">Interna</option>
-                                        <option value="2">Externa</option>
-                                    </select>
-                                    <label for="cargoAtuacao">*Atuação:</label>
-                                </div>
-                                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="Cliente" value="" id="cargoCliente">
-                                    <label for="cargoCliente">*Cliente:</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <select class="form-select shadow-none" id="cargoRegimeOffshore">
-                                        <option value="0">Escolha uma opção</option>
-                                        <option value="1">SIM</option>
-                                        <option value="2">NÃO</option>
-                                    </select>
-                                    <label for="cargoRegimeOffshore">*Regime offshore:</label>
-                                </div>
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <select class="form-select shadow-none" id="cargoTipoJornadaOffshore">
-                                        <option value="0">Escolha uma opção</option>
-                                        <option value="1">Integral</option>
-                                        <option value="2">Eventual</option>
-                                    </select>
-                                    <label for="cargoTipoJornadaOffshore">*Tipo de jornada offshore:</label>
                                 </div>
                             </div>
                             <div class="row">
