@@ -239,141 +239,49 @@
                             </div>
                             <div class="row">
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control fc-title shadow-none" placeholder="" value="2386 - Espec TI I" id="cargoNome" disabled>
-                                    <label for="cargoNome">Cargo:</label>
-                                </div>
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control fc-title shadow-none" placeholder="" value="Orçada" id="cargoCaracteristicaOrcamento " disabled>
-                                    <label for="cargoCaracteristicaOrcamento">Característica de Orçamento:</label>
-                                </div>
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <select class="form-select shadow-none" id="cargoGES">
-                                        <option value="0">Escolha uma opção</option>
-                                        <option value="1">Lista de GES</option>
-                                        <option value="2">Lista de GES</option>
-                                        <option value="3">Lista de GES</option>
-                                        <option value="4">Lista de GES</option>
-                                        <option value="5">Lista de GES</option>
+                                    <select class="form-select shadow-none" id="colaboradorPropostoCaracteristicaOrcamento">
+                                        <option value="0">Orçado</option>
+                                        <option value="1">Não orçado</option>
                                     </select>
-                                    <label for="cargGES">*GES:</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="" value="Periculosidade" id="cargoPericulosidade" disabled>
-                                    <label for="cargoPericulosidade">Periculosidade:</label>
+                                    <label for="colaboradorPropostoCaracteristicaOrcamento">*Característica de orçamento:</label>
                                 </div>
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="" value="Insalubridade" id="cargoInsalubridade" disabled>
-                                    <label for="cargoInsalubridade">Insalubridade:</label>
-                                </div>
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="" value="Grau de insalubridade" id="cargoGrauInsalubridade" disabled>
-                                    <label for="cargoGrauInsalubridade">Grau de insalubridade:</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="" value="Aposentadoria especial" id="cargoAposentadoriaEspecial" disabled>
-                                    <label for="cargoAposentadoriaEspecial">Aposentadoria especial:</label>
-                                </div>
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="" value="Lorem Ipsum is simply dummy text" id="cargoCBO" disabled>
-                                    <label for="cargoCBO">CBO:</label>
-                                </div>
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="" value="Lorem Ipsum is simply dummy text" id="cargoCategoriaSalarial" disabled>
-                                    <label for="cargoCategoriaSalarial">Categoria Salarial:</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <select class="form-select shadow-none" id="cargoEspecialidade">
-                                        <option value="0">Escolha uma opção</option>
-                                        <option value="1">Opção de especialidade</option>
-                                        <option value="2">Opção de especialidade</option>
-                                        <option value="3">Opção de especialidade</option>
-                                        <option value="4">Opção de especialidade</option>
-                                        <option value="5">Opção de especialidade</option>
-                                    </select>
-                                    <label for="cargoEspecialidade">*Especialidade:</label>
-                                </div>
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="000" value="" id="cargoCargaHorariaSemanal">
-                                    <label for="cargoCargaHorariaSemanal">*Carga horária semanal:</label>
-                                </div>
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <select class="form-select shadow-none" id="cargoHorarioForponto">
-                                        <option value="0">Escolha uma opção</option>
-                                        <option value="1">Horário Forponto disponível</option>
-                                        <option value="2">Horário Forponto disponível</option>
-                                        <option value="3">Horário Forponto disponível</option>
-                                        <option value="4">Horário Forponto disponível</option>
-                                        <option value="5">Horário Forponto disponível</option>
-                                    </select>
-                                    <label for="cargoHorarioForponto">*Horário Forponto:</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <select class="form-select shadow-none" id="cargoLocalFisico">
-                                        <option value="0">Escolha uma opção</option>
-                                        <option value="1">Local Físico</option>
-                                        <option value="2">Local Físico</option>
-                                        <option value="3">Local Físico</option>
-                                        <option value="4">Local Físico</option>
-                                        <option value="5">Local Físico</option>
-                                    </select>
-                                    <label for="cargoLocalFisico">*Local Físico:</label>
-                                </div>
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <select class="form-select shadow-none" id="cargoEditarVagaOrcada">
+                                    <select class="form-select shadow-none" id="colaboradorPropostoEditarVagaOrcada">
                                         <option value="0">NÃO</option>
                                         <option value="1">SIM</option>
                                     </select>
-                                    <label for="cargoEditarVagaOrcada">*Editar vaga orçada?:</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <h4 class="text-start">Informações salariais</h4>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="" value="00" id="cargoGS " disabled>
-                                    <label for="cargoGS">GS:</label>
+                                    <label for="colaboradorPropostoEditarVagaOrcada">*Editar vaga orçada?:</label>
                                 </div>
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="" value="R$ 000.000,00" id="cargoSalarioInicialFaixa" disabled>
-                                    <label for="cargoSalarioInicialFaixa">Salário inicial da faixa:</label>
-                                </div>
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="" value="R$ 000.000,00" id="cargoDSR" disabled>
-                                    <label for="cargoDSR">DSR:</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="" value="R$ 000.000,00 " id="cargoSalarioCalculadoDSR" disabled>
-                                    <label for="cargoSalarioCalculadoDSR">Salário calculado com DSR:</label>
-                                </div>
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="Negociação de Salário" value="" id="cargoNegociacaoSalario">
-                                    <label for="cargoNegociacaoSalario">*Negociação de Salário:</label>
-                                </div>
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <select class="form-select shadow-none" id="cargoDeAcordoNegociacaoSalarial">
-                                        <option value="0">Escolha uma opção</option>
-                                        <option value="1">SIM</option>
-                                        <option value="2">NÃO</option>
+                                    <select class="form-select shadow-none" id="colaboradorPropostoCategoriaSalarial">
+                                        <option value="0">Horista</option>
+                                        <option value="1">Mensalista</option>
                                     </select>
-                                    <label for="cargoDeAcordoNegociacaoSalarial">*De acordo negoc. salarial?:</label>
+                                    <label for="colaboradorPropostoCategoriaSalarial">*Categoria salarial:</label>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <h4 class="text-start">Informações de locais</h4>
+                                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="78 ANALISTA RECURSOS HUMANOS I" id="colaboradorPropostoCargo">
+                                    <label for="colaboradorPropostoCargo">*Cargo:</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="00" id="colaboradorPropostoGS" disabled>
+                                    <label for="colaboradorPropostoGS">GS:</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="REMUNERAÇÃO" id="colaboradorPropostoEspecialidade">
+                                    <label for="colaboradorPropostoEspecialidade">*Especialidade:</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="000" id="colaboradorPropostoCargaHorariaSemanal">
+                                    <label for="colaboradorPropostoCargaHorariaSemanal">*Carga horária (Semanal):</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="Cod Horário" id="colaboradorPropostoCodHorario">
+                                    <label for="colaboradorPropostoCodHorario">*Cod Horário:</label>
                                 </div>
                             </div>
                             <div class="row">
@@ -402,47 +310,6 @@
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
                                     <input type="text" class="form-control shadow-none" placeholder="" value="00.000.000/0000-00" id="cargoCNPJ" onfocus="javascript: retirarFormatacao(this);" onblur="javascript: formatarCampo(this);">
                                     <label for="cargoCNPJ">*CNPJ do estabelecimento:</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <select class="form-select shadow-none" id="cargoLotacaoContratacao">
-                                        <option value="0">Escolha uma opção</option>
-                                        <option value="1">Código e descrição das lotações</option>
-                                        <option value="2">Código e descrição das lotações</option>
-                                        <option value="3">Código e descrição das lotações</option>
-                                        <option value="4">Código e descrição das lotações</option>
-                                        <option value="5">Código e descrição das lotações</option>
-                                    </select>
-                                    <label for="cargoLotacaoContratacao">*Lotação da contratação:</label>
-                                </div>
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <select class="form-select shadow-none" id="cargoItemContabil">
-                                        <option value="0">Escolha uma opção</option>
-                                        <option value="1">Códigos e descrição dos itens contábeis</option>
-                                        <option value="2">Códigos e descrição dos itens contábeis</option>
-                                        <option value="3">Códigos e descrição dos itens contábeis</option>
-                                        <option value="4">Códigos e descrição dos itens contábeis</option>
-                                        <option value="5">Códigos e descrição dos itens contábeis</option>
-                                    </select>
-                                    <label for="cargoItemContabil">*Item Contábil:</label>
-                                </div>
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <select class="form-select shadow-none" id="cargoCC">
-                                        <option value="0">Escolha uma opção</option>
-                                        <option value="1">Códigos e descrição dos CCs ativos</option>
-                                        <option value="2">Códigos e descrição dos CCs ativos</option>
-                                        <option value="3">Códigos e descrição dos CCs ativos</option>
-                                        <option value="4">Códigos e descrição dos CCs ativos</option>
-                                        <option value="5">Códigos e descrição dos CCs ativos</option>
-                                    </select>
-                                    <label for="cargoCC">*Centro de custo:</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <h4 class="text-start">Informações da contratação</h4>
-                                    <hr>
                                 </div>
                             </div>
                             <div class="row">
@@ -482,6 +349,110 @@
                                     <label for="cargoData">*Data de contratação:</label>
                                 </div>
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <select class="form-select shadow-none" id="cargoCC">
+                                        <option value="0">Escolha uma opção</option>
+                                        <option value="1">Códigos e descrição dos CCs ativos</option>
+                                        <option value="2">Códigos e descrição dos CCs ativos</option>
+                                        <option value="3">Códigos e descrição dos CCs ativos</option>
+                                        <option value="4">Códigos e descrição dos CCs ativos</option>
+                                        <option value="5">Códigos e descrição dos CCs ativos</option>
+                                    </select>
+                                    <label for="cargoCC">*Centro de custo:</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <select class="form-select shadow-none" id="cargoLotacaoContratacao">
+                                        <option value="0">Escolha uma opção</option>
+                                        <option value="1">Código e descrição das lotações</option>
+                                        <option value="2">Código e descrição das lotações</option>
+                                        <option value="3">Código e descrição das lotações</option>
+                                        <option value="4">Código e descrição das lotações</option>
+                                        <option value="5">Código e descrição das lotações</option>
+                                    </select>
+                                    <label for="cargoLotacaoContratacao">*Lotação da contratação:</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <select class="form-select shadow-none" id="cargoItemContabil">
+                                        <option value="0">Escolha uma opção</option>
+                                        <option value="1">Códigos e descrição dos itens contábeis</option>
+                                        <option value="2">Códigos e descrição dos itens contábeis</option>
+                                        <option value="3">Códigos e descrição dos itens contábeis</option>
+                                        <option value="4">Códigos e descrição dos itens contábeis</option>
+                                        <option value="5">Códigos e descrição dos itens contábeis</option>
+                                    </select>
+                                    <label for="cargoItemContabil">*Item Contábil:</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="000" id="colaboradorPropostoPercentagemReajuste">
+                                    <label for="colaboradorPropostoPercentagemReajuste">* % de reajuste:</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="R$ 00.000,00" id="colaboradorPropostoSalarioProposto" disabled>
+                                    <label for="colaboradorPropostoSalarioProposto">Salário proposto:</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="000000" id="colaboradorPropostoDSR" disabled>
+                                    <label for="colaboradorAPropostoDSR">DSR:</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="R$ 00.000,00" id="colaboradorPropostoSalarioDSR" disabled>
+                                    <label for="colaboradorPropostoSalarioDSR">Salário proposto cal. com DSR:</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="000000" id="colaboradorPropostoPosicaoFaixaProposta" disabled>
+                                    <label for="colaboradorPropostoPosicaoFaixaProposta">Posição na faixa proposta:</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="Orçado dentro da regra" id="propostoCaracteristicaMovimentacao" disabled>
+                                    <label for="propostoCaracteristicaMovimentacao">Caracterist. da movimentação:</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="R$ 00.000,00" id="colaboradorPropostoSaldo" disabled>
+                                    <label for="colaboradorPropostoSaldo">Saldo:</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="000" id="colaboradorPropostoGES" disabled>
+                                    <label for="colaboradorPropostoGES">GES:</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="Periculosidade" id="colaboradorPropostoPericulosidade" disabled>
+                                    <label for="colaboradorPropostoPericulosidade">Periculosidade:</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="Insalubridade" id="colaboradorPropostoInsalubridade" disabled>
+                                    <label for="colaboradorPropostoInsalubridade">Insalubridade:</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="Grau de insalubridade" id="colaboradorPropostoGrauInsalubridade" disabled>
+                                    <label for="colaboradorPropostoGrauInsalubridade">Grau de insalubridade:</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="Aposentadoria especial" id="colaboradorPropostoAposentadoriaEspecial" disabled>
+                                    <label for="colaboradorPropostoAposentadoriaEspecial">Aposentadoria especial:</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-floating mb-3">
+                                    <textarea class="form-control shadow-none" placeholder="Justificativa:" value="" id="propostoDetalharMovimentacao" style="height:150px"></textarea>
+                                    <label for="propostoDetalharMovimentacao">*Detalhar escopo das atividades (Riscos e local de atuação)</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <h4 class="text-start">Informações da contratação</h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
                                     <select class="form-select shadow-none" id="cargoAtuacao">
                                         <option value="0">Escolha uma opção</option>
                                         <option value="1">Interna</option>
@@ -489,12 +460,12 @@
                                     </select>
                                     <label for="cargoAtuacao">*Atuação:</label>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 form-floating mb-3">
                                     <input type="text" class="form-control shadow-none" placeholder="Cliente" value="" id="cargoCliente">
                                     <label for="cargoCliente">*Cliente:</label>
                                 </div>
+                            </div>
+                            <div class="row">
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
                                     <select class="form-select shadow-none" id="cargoRegimeOffshore">
                                         <option value="0">Escolha uma opção</option>
