@@ -11,6 +11,7 @@ $(document).ready(function(){
     $("#mrhAlteracaoCargoEspecialidade").load("section_001.html");
     $("#mrhMovimentacaoHorizontal").load("section_001.html");
     $("#mrhMovimentacaoVertical").load("section_001.html");
+    $("#mrhTransferencia").load("section_001.html");
 });
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();

@@ -3,7 +3,7 @@
         <div class="col-xs-12 col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-10 offset-lg-1">
             <div class="row">
                 <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 grid-left">
-                    <h1><i class="bi bi-arrows-move"></i> MRH - Movimentação horizontal</h1>
+                    <h1><i class="bi bi-arrow-left-right"></i> MRH - Transferência</h1>
                 </div>
                 <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 grid-right">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-floating mb-3">
@@ -32,6 +32,24 @@
                         </a>
                     </li>
                     <i class="bi bi-arrow-right-short"></i>
+                    <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Gestor(a) cedente">
+                        <a href="#" class="nav-link" id="agc-tab" data-bs-toggle="tab" data-bs-target="#agc" role="tab" aria-controls="agc" aria-selected="false">
+                            <img src="../assets/images/avatar-male.png" class="avatar">
+                        </a>
+                    </li>
+                    <i class="bi bi-arrow-right-short"></i>
+                    <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="SESMT">
+                        <a href="#" class="nav-link" id="sesmt-tab" data-bs-toggle="tab" data-bs-target="#sesmt" role="tab" aria-controls="sesmt" aria-selected="false">
+                            <img src="../assets/images/avatar-RH.png" class="avatar">
+                        </a>
+                    </li>
+                    <i class="bi bi-arrow-right-short"></i>
+                    <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Validação Técnica">
+                        <a href="#" class="nav-link" id="valtec-tab" data-bs-toggle="tab" data-bs-target="#valtec" role="tab" aria-controls="valtec" aria-selected="false">
+                            <img src="../assets/images/avatar-RH.png" class="avatar">
+                        </a>
+                    </li>
+                    <i class="bi bi-arrow-right-short"></i>
                     <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Gestor(a) 1º nível">
                         <a href="#" class="nav-link" id="agn1-tab" data-bs-toggle="tab" data-bs-target="#agn1" role="tab" aria-controls="agn1" aria-selected="false">
                             <img src="../assets/images/avatar-male.png" class="avatar">
@@ -46,7 +64,7 @@
                     <i class="bi bi-arrow-right-short"></i>
                     <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Validação Remuneração">
                         <a href="#" class="nav-link" id="valrem-tab" data-bs-toggle="tab" data-bs-target="#valrem" role="tab" aria-controls="valrem" aria-selected="false">
-                            <img src="../assets/images/avatar-male.png" class="avatar">
+                            <img src="../assets/images/avatar-RH.png" class="avatar">
                         </a>
                     </li>
                     <i class="bi bi-arrow-right-short"></i>
@@ -58,6 +76,12 @@
                     <i class="bi bi-arrow-right-short"></i>
                     <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Diretor(a) Regional / Superintendente">
                         <a href="#" class="nav-link" id="asup-tab" data-bs-toggle="tab" data-bs-target="#asup" role="tab" aria-controls="asup" aria-selected="false">
+                            <img src="../assets/images/avatar-male.png" class="avatar">
+                        </a>
+                    </li>
+                    <i class="bi bi-arrow-right-short"></i>
+                    <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Saúde">
+                        <a href="#" class="nav-link" id="saude-tab" data-bs-toggle="tab" data-bs-target="#saude" role="tab" aria-controls="saude" aria-selected="false">
                             <img src="../assets/images/avatar-male.png" class="avatar">
                         </a>
                     </li>
@@ -120,12 +144,40 @@
                                     <label for="colaboradorAtualTipoContratacao">Tipo de contratação:</label>
                                 </div>
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="Centro de custo" id="colaboradorAtualCentroCusto" disabled>
+                                    <label for="colaboradorAtualCentroCusto">Centro de custo:</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="Item contábil" id="colaboradorAtualItemContabil" disabled>
+                                    <label for="colaboradorAtualItemContabil">Item contábil:</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
                                     <input type="text" class="form-control shadow-none" placeholder="" value="78 ANALISTA RECURSOS HUMANOS I" id="colaboradorAtualCargo" disabled>
                                     <label for="colaboradorAtualCargo">Cargo:</label>
                                 </div>
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="Horista" id="colaboradorAtualCategoriaSalarial" disabled="">
+                                    <label for="colaboradorAtualCategoriaSalarial">Categoria salarial:</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
                                     <input type="text" class="form-control shadow-none" placeholder="" value="00" id="colaboradorAtualGS" disabled>
                                     <label for="colaboradorAtualGS">GS:</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="REMUNERAÇÃO" id="colaboradorAtualEspecialidade" disabled="">
+                                    <label for="colaboradorAtualEspecialidade">Especialidade:</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="000" id="colaboradorAtualCargaHoraria" disabled>
+                                    <label for="colaboradorAtualCargaHoraria">Carga horária:</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="Cod Horário" id="colaboradorAtualCodHorario" disabled>
+                                    <label for="colaboradorAtualCodHorario">Cod Horário:</label>
                                 </div>
                             </div>
                             <div class="row">
@@ -144,22 +196,26 @@
                             </div>
                             <div class="row">
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="" value="000000" id="colaboradorAtualPosicaoFaixaAtual" disabled="">
-                                    <label for="colaboradorAtualPosicaoFaixaAtual">Posição na faixa atual:</label>
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="000" id="colaboradorAtualGES" disabled>
+                                    <label for="colaboradorAtualGES">GES:</label>
                                 </div>
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="" value="Orçado dentro da regra" id="colaboradorAtualResultUltAvalDesempenho" disabled="">
-                                    <label for="colaboradorAtualResultUltAvalDesempenho">Result. Ult. Aval. Desempenho:</label>
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="Periculosidade" id="colaboradorAtualPericulosidade" disabled>
+                                    <label for="colaboradorAtualPericulosidade">Periculosidade:</label>
                                 </div>
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="" value="R$ 00.0000,00" id="colaboradorAtualSaldo" disabled="">
-                                    <label for="colaboradorAtualSaldo">Saldo:</label>
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="Insalubridade" id="colaboradorAtualInsalubridade" disabled>
+                                    <label for="colaboradorAtualInsalubridade">Insalubridade:</label>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="" value="Marco zero" id="colaboradorAtualMarcoZero" disabled="">
-                                    <label for="colaboradorAtualMarcoZero">Marco zero:</label>
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="Grau de insalubridade" id="colaboradorAtualGrauInsalubridade" disabled>
+                                    <label for="colaboradorAtualGrauInsalubridade">Grau de insalubridade:</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="Aposentadoria especial" id="colaboradorAtualAposentadoriaEspecial" disabled>
+                                    <label for="colaboradorAtualAposentadoriaEspecial">Aposentadoria especial:</label>
                                 </div>
                             </div>
                             <div class="row">
@@ -169,48 +225,169 @@
                             </div>
                             <div class="row">
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="" value="00" id="colaboradorPropostoPercentagemReajuste">
-                                    <label for="colaboradorPropostoPercentagemReajuste">* % de reajuste:</label>
+                                    <select class="form-select shadow-none" id="colaboradorPropostoCaracteristicaOrcamento">
+                                        <option value="0">Orçado</option>
+                                        <option value="1">Não orçado</option>
+                                    </select>
+                                    <label for="colaboradorPropostoCaracteristicaOrcamento">*Característica de orçamento:</label>
                                 </div>
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="00/00/0000" value="" id="propostoDataInicioMudanca" onkeypress="mascaraData(this);" onblur="mascaraData(this);">
-                                    <label for="propostoDataInicioMudanca">*Data de início da mudança:</label>
+                                    <select class="form-select shadow-none" id="colaboradorPropostoEditarVagaOrcada">
+                                        <option value="0">NÃO</option>
+                                        <option value="1">SIM</option>
+                                    </select>
+                                    <label for="colaboradorPropostoEditarVagaOrcada">*Editar vaga orçada?:</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <select class="form-select shadow-none" id="colaboradorPropostoCategoriaSalarial">
+                                        <option value="0">Horista</option>
+                                        <option value="1">Mensalista</option>
+                                    </select>
+                                    <label for="colaboradorPropostoCategoriaSalarial">*Categoria salarial:</label>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="" value="R$ 00.000,00" id="colaboradorPropostoSalarioProposto" disabled>
-                                    <label for="colaboradorPropostoSalarioProposto">Salário proposto:</label>
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="1 - SESI SEDE" id="colaboradorPropostoEstabelecimento">
+                                    <label for="colaboradorPropostoEstabelecimento">*Estabelecimento:</label>
                                 </div>
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="" value="000000" id="colaboradorPropostoDSR" disabled>
-                                    <label for="colaboradorAPropostoDSR">DSR:</label>
-                                </div>
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="" value="R$ 00.000,00" id="colaboradorPropostoSalarioDSR" disabled>
-                                    <label for="colaboradorPropostoSalarioDSR">Salário proposto cal. com DSR:</label>
+                                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="0409000000 - GDE - GER DESIGN ORG REMUN ESTRAT" id="colaboradorPropostoLotacao">
+                                    <label for="colaboradorPropostoLotacao">*Lotação:</label>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="" value="000000" id="colaboradorPropostoPosicaoFaixaProposta" disabled>
-                                    <label for="colaboradorPropostoPosicaoFaixaProposta">Posição na faixa proposta:</label>
+                                    <select class="form-select shadow-none" id="cargoTipoContratacao">
+                                        <option value="0">Escolha uma opção</option>
+                                        <option value="1">Prazo indeterminado</option>
+                                        <option value="2">Estágio</option>
+                                        <option value="3">Prazo determinado</option>
+                                    </select>
+                                    <label for="cargoTipoContratacao">*Tipo de contratação:</label>
                                 </div>
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="" value="R$ 00.000,00" id="colaboradorPropostoSaldo" disabled>
-                                    <label for="colaboradorPropostoSaldo">Saldo:</label>
-                                </div>                                
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="Centro de custo" id="colaboradorPropostoCentroCusto">
+                                    <label for="colaboradorPropostoCentroCusto">*Centro de custo:</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="Item contábil" id="colaboradorPropostoItemContabil">
+                                    <label for="colaboradorPropostoItemContabil">*Item contábil:</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="78 ANALISTA RECURSOS HUMANOS I" id="colaboradorPropostoCargo">
+                                    <label for="colaboradorPropostoCargo">*Cargo:</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="Horista" id="colaboradorPropostoCategoriaSalarial"="">
+                                    <label for="colaboradorPropostoCategoriaSalarial">*Categoria salarial:</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="00" id="colaboradorPropostoGS">
+                                    <label for="colaboradorPropostoGS">*GS:</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="REMUNERAÇÃO" id="colaboradorPropostoEspecialidade"="">
+                                    <label for="colaboradorPropostoEspecialidade">*Especialidade:</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="000" id="colaboradorPropostoCargaHorariaSemanal">
+                                    <label for="colaboradorPropostoCargaHorariaSemanal">*Carga horária (Semanal):</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="Cod Horário" id="colaboradorPropostoCodHorario">
+                                    <label for="colaboradorPropostoCodHorario">*Cod Horário:</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="R$ 00.000,00" id="colaboradorPropostoSalarioInicialFaixa">
+                                    <label for="colaboradorPropostoSalarioInicialFaixa">*Salário inicial da faixa:</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="000000" id="colaboradorPropostoDSR">
+                                    <label for="colaboradorPropostoDSR">*DSR:</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="R$ 00.000,00" id="colaboradorPropostoSalarioDSR">
+                                    <label for="colaboradorPropostoSalarioDSR">*Salário calculado com DSR:</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="000" id="colaboradorPropostoGES">
+                                    <label for="colaboradorPropostoGES">*GES:</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="Periculosidade" id="colaboradorPropostoPericulosidade">
+                                    <label for="colaboradorPropostoPericulosidade">*Periculosidade:</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="Insalubridade" id="colaboradorPropostoInsalubridade">
+                                    <label for="colaboradorPropostoInsalubridade">*Insalubridade:</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="Grau de insalubridade" id="colaboradorPropostoGrauInsalubridade">
+                                    <label for="colaboradorPropostoGrauInsalubridade">*Grau de insalubridade:</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="Aposentadoria especial" id="colaboradorPropostoAposentadoriaEspecial">
+                                    <label for="colaboradorPropostoAposentadoriaEspecial">*Aposentadoria especial:</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="00/00/0000" value="" id="colaboradorPropostoDataInicioMudanca" onkeypress="mascaraData(this);" onblur="mascaraData(this);">
+                                    <label for="colaboradorPropostoDataInicioMudanca">*Data de início da mudança:</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <select class="form-select shadow-none" id="colaboradorPropostoGratificacaoTransferenciaLocalidade">
+                                        <option value="0">Escolha uma opção</option>
+                                        <option value="1">SIM</option>
+                                        <option value="2">NÃO</option>
+                                    </select>
+                                    <label for="colaboradorPropostoGratificacaoTransferenciaLocalidade">*Gratific. transferência local.?:</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <select class="form-select shadow-none" id="colaboradorPropostoTemporaridade">
+                                        <option value="0">Escolha uma opção</option>
+                                        <option value="1">Provisório</option>
+                                        <option value="2">Definitivo</option>
+                                    </select>
+                                    <label for="colaboradorPropostoTemporaridade">*Temporaridade:</label>
+                                </div>
                             </div>
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="" value="Orçado dentro da regra" id="propostoCaracteristicaMovimentacao" disabled>
-                                    <label for="propostoCaracteristicaMovimentacao">Característica da movimentação:</label>
+                                    <textarea class="form-control shadow-none" placeholder="Detalhar eescopo das atividades" value="" id="colaboradorPropostoDetalharEscopoAtividades" style="height:150px"></textarea>
+                                    <label for="colaboradorPropostoDetalharEscopoAtividades">*Detalhar escopo das atividades (Riscos e local de atuação):</label>
+                                </div>
+                            </div>
+                            <div class="row">  
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-floating mb-3">
+                                    <textarea class="form-control shadow-none" placeholder="Justificativas" value="" id="colaboradorPropostoJustificativaTransferencia" style="height:150px"></textarea>
+                                    <label for="colaboradorPropostoJustificativaTransferencia">*Justificativa da transferência:</label>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-floating mb-3">
-                                    <textarea class="form-control shadow-none" placeholder="Justificativa:" value="" id="propostoJustificativamovimentacao" style="height:150px"></textarea>
-                                    <label for="propostoJustificativamovimentacao">*Justificativa</label>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <h4 class="text-start">Ativos</h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <select class="form-select shadow-none" id="cargoEquipamentoTi">
+                                        <option value="0">Escolha uma opção</option>
+                                        <option value="1">SIM</option>
+                                        <option value="2">NÃO</option>
+                                    </select>
+                                    <label for="cargoEquipamentoTi">*Equipamento de Ti:</label>
                                 </div>
                             </div>
                             <hr>
@@ -220,6 +397,105 @@
                                     <button type="button" class="btn btn-primary" onclick="window.location.href='../dashboard/'">Salvar e Enviar</button>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="agc" role="tabpanel" aria-labelledby="agc-tab">
+                    <h3 class="text-start">Aprovação/Reprovação</h3>
+                    <hr>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-floating mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="" value="Nome Sobrenome" id="gestor" disabled>
+                            <label for="gestor">*Gestor(a) cedente:</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="" value="00/00/0000" id="gestorData" onkeypress="mascaraData(this);" onblur="mascaraData(this);" disabled>
+                            <label for="gestorData">*Data:</label>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                            <select class="form-select shadow-none" id="gestorAprova">
+                                <option value="0">Escolha uma opção</option>
+                                <option value="1">SIM</option>
+                                <option value="2">NÃO</option>
+                            </select>
+                            <label for="gestorAprova">*Aprovado:</label>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                            <select class="form-select shadow-none" id="gestorSubstituir">
+                                <option value="0">Escolha uma opção</option>
+                                <option value="1">SIM</option>
+                                <option value="2">NÃO</option>
+                            </select>
+                            <label for="gestorSubstituir">*Substituir colaborador?:</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-floating mb-3">
+                            <textarea class="form-control shadow-none" placeholder="Motivo:" value="" id="gestorObserva" style="height:150px"></textarea>
+                            <label for="gestorObserva">Observações:</label>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-end">
+                            <button type="button" class="btn btn-outline-primary">Voltar</button>
+                            <button type="button" class="btn btn-primary">Salvar e Enviar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="sesmt" role="tabpanel" aria-labelledby="sesmt-tab">
+                    <h3 class="text-start">Aprovação/Reprovação</h3>
+                    <hr>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-floating mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="" value="Nome Sobrenome" id="consultorSesmt" disabled>
+                            <label for="consultorSesmt">*Label:</label>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-end">
+                            <button type="button" class="btn btn-outline-primary">Voltar</button>
+                            <button type="button" class="btn btn-primary">Salvar e Enviar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="valtec" role="tabpanel" aria-labelledby="valtec-tab">
+                    <h3 class="text-start">Aprovação/Reprovação</h3>
+                    <hr>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-floating mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="" value="Nome Sobrenome" id="consultorValTec" disabled>
+                            <label for="consultorValTec">*Avaliador técnico:</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 form-floating mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="" value="00/00/0000" id="consultorValTecData" onkeypress="mascaraData(this);" onblur="mascaraData(this);" disabled>
+                            <label for="consultorValTecData">*Data:</label>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 form-floating mb-3">
+                            <select class="form-select shadow-none" id="consultorValTecAprova">
+                                <option value="0">Escolha uma opção</option>
+                                <option value="1">SIM</option>
+                                <option value="2">NÃO</option>
+                            </select>
+                            <label for="consultorValTecAprova">*Aprovado:</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-floating mb-3">
+                            <textarea class="form-control shadow-none" placeholder="Motivo:" value="" id="consultorValTecObserva" style="height:150px"></textarea>
+                            <label for="consultorValTecObserva">Observações:</label>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-end">
+                            <button type="button" class="btn btn-outline-primary">Voltar</button>
+                            <button type="button" class="btn btn-primary">Salvar e Enviar</button>
                         </div>
                     </div>
                 </div>
@@ -398,6 +674,41 @@
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-floating mb-3">
                             <textarea class="form-control shadow-none" placeholder="Motivo:" value="" id="superintendenteObserva" style="height:150px"></textarea>
                             <label for="superintendenteObserva">Observações:</label>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-end">
+                            <button type="button" class="btn btn-outline-primary">Voltar</button>
+                            <button type="button" class="btn btn-primary">Salvar e Enviar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="saude" role="tabpanel" aria-labelledby="saude-tab">
+                    <h3 class="text-start">Saúde</h3>
+                    <hr>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="Riscos" value="" id="saudeRiscos">
+                            <label for="saudeRiscos">*Riscos:</label>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="Descrição Atividade" value="" id="saudeDescricaoAtividade">
+                            <label for="saudeDescricaoAtividade">*Descrição Atividade:</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="Exame 1" value="" id="saudeExame1">
+                            <label for="saudeExame1">*Exame 1:</label>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="Exame 2" value="" id="saudeExame2">
+                            <label for="saudeExame2">*Exame 2:</label>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                            <input type="text" class="form-control shadow-none" placeholder="Exame N" value="" id="saudeExameN">
+                            <label for="saudeExameN">*Exame N:</label>
                         </div>
                     </div>
                     <hr>
