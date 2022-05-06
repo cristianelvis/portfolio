@@ -133,11 +133,11 @@ h1 {
 }
 .nav-link i {
     font-size: 180%;
-    margin-bottom: 1.2vh;
+    margin: 1vh;
 }
 .nav-link .nav-link-user {
-    width: 4.5vh;
-    margin:0 auto;
+    width: 4.3vh;
+    margin: 1vh auto 1vh auto;
     margin-bottom: 0;
     border-radius:50%;
 }
@@ -172,7 +172,7 @@ h1 {
 }
 .form-floating label {
     font-size:120%;
-    left:1vh;
+    line-height: 130%;left:1vh;
     text-align:start;
     transition:all 0.5s ease;
 }
@@ -189,6 +189,10 @@ h1 {
 .form-select[readonly] {
     background-color: transparent;
     border-color: transparent;
+}
+.form-select {
+    font-size: 120%;
+    height: calc(3.5rem + 6px)!important;
 }
 .input-group-text {
     margin-left: -2px!important;
