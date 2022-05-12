@@ -364,14 +364,14 @@ h1 {
     transform: translateY(0);
     transition:all 0.5s ease;
 }
-/* SOLICITAÇÕES RECURSOS HUMANO */
-#gestaodepessoas {
+/* Gestão de pessoas - Novas solicitações */
+#gestaoDePessoasNovasSolicitacoes {
     width: 100%;
     height: auto;
     padding: 10vh 0 10vh 0;
     background-color: var(--gray4);
 }
-#gestaodepessoas .banner {
+#gestaoDePessoasNovasSolicitacoes .banner {
     color: var(--gray5);
     padding:6vh 0 6vh 0;
     background-color:var(--AzulFirjanII);
@@ -381,32 +381,33 @@ h1 {
     align-items: center;
     text-align: center;
 }
-#gestaodepessoas .nav-tabs {
+#gestaoDePessoasNovasSolicitacoes .nav-tabs {
     width: 60vw;
     box-shadow: 6px 6px 18px -12px rgb(0 0 0 / 50%);
 }
-#gestaodepessoas .nav-item {
+#gestaoDePessoasNovasSolicitacoes .nav-item {
     width: 50%;
 }
-#gestaodepessoas .nav-tabs .nav-item .nav-link {
-    color: var(--gray5);
+#gestaoDePessoasNovasSolicitacoes .nav-tabs .nav-item .nav-link {
+    color: var(--CinzaFirjan);
     font-size:120%;
     letter-spacing: 1px;
     padding:1vh;
     background-color: var(--gray3);
-    border: 0;
+    border:0;
     border-radius: 0;
 }
-#gestaodepessoas .nav-tabs .nav-item.show .nav-link,
-#gestaodepessoas .nav-tabs .nav-link.active {
+#gestaoDePessoasNovasSolicitacoes .nav-tabs .nav-item.show .nav-link,
+#gestaoDePessoasNovasSolicitacoes .nav-tabs .nav-link.active {
     background-color: var(--CinzaFirjanII);
     cursor: default;
 }
-#gestaodepessoas .nav-tabs .nav-link:focus,
-#gestaodepessoas .nav-tabs .nav-link:hover {
-    background-color:var(--CinzaFirjanII);
+#gestaoDePessoasNovasSolicitacoes .nav-tabs .nav-link:focus,
+#gestaoDePessoasNovasSolicitacoes .nav-tabs .nav-link:hover {
+    color: var(--gray5);
+    background-color:var(--AzulFirjanII);
 }
-#gestaodepessoas .search {
+#gestaoDePessoasNovasSolicitacoes .search {
     width: 60vw;
     color: var(--gray1);
     padding: 1.4vh 1.4vh 0vh 1.4vh;
@@ -416,10 +417,10 @@ h1 {
     border-radius: 0 0 2vh 2vh;
     box-shadow: 6px 6px 18px -12px rgb(0 0 0 / 50%);
 }
-#gestaodepessoas .tab-content {
+#gestaoDePessoasNovasSolicitacoes .tab-content {
     padding: 0;
 }
-#gestaodepessoas #tablePositionCard {
+#gestaoDePessoasNovasSolicitacoes #tablePositionCard {
     border-color: transparent;
 }
 .rh-card {
@@ -633,10 +634,156 @@ h1 {
     #tableListPosition {
         width: 170%;
     }
-    #gestaodepessoas .nav-tabs,
-    #gestaodepessoas .search,
-    #gestaodepessoas .tab-content{
+    #gestaoDePessoasNovasSolicitacoes .nav-tabs,
+    #gestaoDePessoasNovasSolicitacoes .search,
+    #gestaoDePessoasNovasSolicitacoes .tab-content{
         width:95vw;
+    }
+}
+/* Gestão de pessoas - Consultar solicitações */
+#gestaoDePessoasConsultarSolicitacoes {
+    width: 100%;
+    height: auto;
+    padding: 10vh 0 10vh 0;
+    background-color: var(--gray4);
+}
+#gestaoDePessoasConsultarSolicitacoes .banner {
+    color: var(--gray5);
+    padding:6vh 0 6vh 0;
+    background-color:var(--AzulFirjanII);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#gestaoDePessoasConsultarSolicitacoes .banner .form-floating label {
+    top: -1vh;
+    right: 0;
+    opacity: 1!important;
+    font-size: 120%;
+    font-weight: normal;
+    left:0;
+    text-align: end;
+    transform: scale(1)!important;
+}
+#gestaoDePessoasConsultarSolicitacoes .banner .form-control {
+    position: relative;
+    top: 1vh;
+    color: var(--gray5);
+    font-size: 120%;
+    font-weight: bold;
+    text-align: end;
+    padding: 0 .75rem 0 0;
+}
+#gestaoDePessoasConsultarSolicitacoes .content-panel {
+    width: 100%;
+    color: var(--gray1);
+    padding: 1.4vh 1.4vh 0vh 1.4vh;
+    margin: 0 auto;
+    margin-bottom: 3vh;
+    background-color: white;
+    border-radius: 0 0 2vh 2vh;
+    box-shadow: 6px 6px 18px -12px rgb(0 0 0 / 50%);
+}
+#gestaoDePessoasConsultarSolicitacoes .tabs-responsive {
+    width:100%;
+    overflow: hidden;
+    overflow-x: auto;
+    display: block;
+}
+#gestaoDePessoasConsultarSolicitacoes .nav-tabs {
+    width: 100%;
+    margin-bottom: 2vh;
+}
+#gestaoDePessoasConsultarSolicitacoes .nav-item {
+    width: 33.33333333333333333333333333333333333333333333333333333333333333%;
+}
+#gestaoDePessoasConsultarSolicitacoes .nav-tabs .nav-item .nav-link {
+    color: var(--CinzaFirjan);
+    font-size:120%;
+    letter-spacing: 1px;
+    padding:1vh;
+    background-color: var(--gray3);
+    border: 1px solid white;
+    border-radius: 0;
+}
+#gestaoDePessoasConsultarSolicitacoes .nav-tabs .nav-item.show .nav-link,
+#gestaoDePessoasConsultarSolicitacoes .nav-tabs .nav-link.active {
+    color: var(--CinzaFirjan);
+    background-color: var(--CinzaFirjanII);
+    cursor: default;
+}
+#gestaoDePessoasConsultarSolicitacoes .nav-tabs .nav-link:focus,
+#gestaoDePessoasConsultarSolicitacoes .nav-tabs .nav-link:hover {
+    color: var(--gray5);
+    background-color:var(--AzulFirjanII);
+}
+#gestaoDePessoasConsultarSolicitacoes .search {
+    width: 60vw;
+    color: var(--gray1);
+    padding: 1.4vh 1.4vh 0vh 1.4vh;
+    margin: 0 auto;
+    margin-bottom: 3vh;
+    background-color: white;
+    border-radius: 0 0 2vh 2vh;
+    box-shadow: 6px 6px 18px -12px rgb(0 0 0 / 50%);
+}
+#gestaoDePessoasConsultarSolicitacoes .tab-content {
+    padding: 0;
+}
+#gestaoDePessoasConsultarSolicitacoes #tablePositionCard {
+    border-color: transparent;
+}
+
+
+
+
+#gestaoDePessoasConsultarSolicitacoes .form-range {
+    margin-bottom:20px;
+}
+#gestaoDePessoasConsultarSolicitacoes .range-001 label {
+    height: auto;
+}
+#gestaoDePessoasConsultarSolicitacoes .range-001 label.justify-content-end {
+    left: unset;
+    right:0;
+}
+#gestaoDePessoasConsultarSolicitacoes .form-switch .form-check-input {
+    margin-top: 7px;margin-left: -19px;
+}
+#gestaoDePessoasConsultarSolicitacoes .form-check-label {
+    width: 90%;
+    top: -13px;
+    left: 39px;
+}
+#gestaoDePessoasConsultarSolicitacoes #hiddenResponsabilidade {
+    display: none;
+}
+#gestaoDePessoasConsultarSolicitacoes .export {
+    color: var(--gray5);
+    text-decoration:none;
+    padding: .6vh 2vh;
+    background-color: var(--AzulFirjan);
+    border-radius: .6vh;
+    transition:all 0.5s ease;
+    display: inline-flex;
+}
+@media screen and (max-width:576px) {
+    #gestaoDePessoasConsultarSolicitacoes .nav-tabs,
+    #gestaoDePessoasConsultarSolicitacoes .search,
+    #gestaoDePessoasConsultarSolicitacoes .tab-content,
+    #gestaoDePessoasConsultarSolicitacoes .content-panel {
+        width:95vw;
+    }
+    #gestaoDePessoasConsultarSolicitacoes .nav-tabs {
+        width: max-content;
+    }
+    #gestaoDePessoasConsultarSolicitacoes .nav-item {
+        width: 33vh;
+    }
+    #tableResultadoConsulta {
+        width: max-content;
     }
 }
 /* Gestão de pessoas - MRH Desligamento */
@@ -1711,6 +1858,13 @@ font-weight: bold;
 .btn.focus,.btn:active.focus,.btn.active.focus {
     outline:none;
     box-shadow:none;
+}
+.bs-popover-auto[data-popper-placement^=top]>.popover-arrow::after,.bs-popover-top>.popover-arrow::after{bottom:1px;border-width:.5rem .5rem 0;border-top-color:white;}
+.bs-popover-auto[data-popper-placement^=right]>.popover-arrow::after,.bs-popover-end>.popover-arrow::after{left:1px;border-width:.5rem .5rem .5rem 0;border-right-color:white;}
+.bs-popover-auto[data-popper-placement^=bottom]>.popover-arrow::after,.bs-popover-bottom>.popover-arrow::after{top:1px;border-width:0 .5rem .5rem .5rem;border-bottom-color:white}
+.bs-popover-auto[data-popper-placement^=left]>.popover-arrow::after,.bs-popover-start>.popover-arrow::after{right:1px;border-width:.5rem 0 .5rem .5rem;border-left-color:white;}
+.popover-body {
+    font-size: 120%;
 }
 @keyframes pulse {
     0% {
