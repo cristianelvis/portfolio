@@ -5,6 +5,7 @@ $(document).ready(function(){
     $("#dashboard").load("section_001.html");
     $("#gestaoDePessoasNovasSolicitacoes").load("section_001.html");
     $("#gestaoDePessoasConsultarSolicitacoes").load("section_001.html");
+    $("#tarefasAConcluir").load("section_001.html");    
     $("#mrhDesligamento").load("section_001.html");
     $("#mrhAdmissao").load("section_001.html");
     $("#mrhAdmissaoSubstituicao").load("section_001.html");
