@@ -27,15 +27,8 @@
     --gray5:#f6f6f6;
     --white:#ffffff;
 }
-#navtop .navbar,
-#navtopen .navbar,
-#navtopes .navbar {
-    animation:topIn 2s 1;
-}
-#navbottom .navbar,
-#navbottomen .navbar,
-#navbottomes .navbar {
-    animation:bottomIn 2s 1;
+.content {
+    margin-top: 100px;
 }
 
 
