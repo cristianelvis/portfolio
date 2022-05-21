@@ -1,0 +1,91 @@
+@charset "UTf-8";
+/*
+ * Cristian Elvis - (http://cristianelvis.com)
+ * Copyright 2022 Cristian Elvis
+ */
+ :root {
+    --orange:#fc6c4f;
+    --orange-light:#fda795;
+    --yellow:#feff01;
+    --yellow-light:#ffff99;
+    --red:#DD2842;
+    --red-light:#ffafbc;
+    --green:#22B573;
+    --green-light:#a1e7db;
+    --blue:#013183;
+    --blue-dark:#1d2436;
+    --blue-light:#c7d5f0;
+    --violet:#cc9afd;
+    --violet-light:#ebd7fe;
+    --lavander:#f3e3fd;
+    --lavander-light:#faf4fe;
+    --black:#0A0A0A;
+    --gray1:#413e3e;
+    --gray2:#626060;
+    --gray3:#c4c4c4;
+    --gray4:#f4f4f4;
+    --gray5:#f6f6f6;
+    --white:#ffffff;
+}
+#navtop .navbar,
+#navtopen .navbar,
+#navtopes .navbar {
+    animation:topIn 2s 1;
+}
+#navbottom .navbar,
+#navbottomen .navbar,
+#navbottomes .navbar {
+    animation:bottomIn 2s 1;
+}
+
+
+@keyframes topIn {
+    from {
+        opacity:0;
+        top:-100px;
+    }
+    to {
+        opacity:1;
+        top:0;
+    }
+}
+@keyframes rightIn {
+    from {
+        opacity:0;
+        right:-100%;
+    }
+    to {
+        opacity:1;
+        right:0;
+    }
+}
+@keyframes bottomIn {
+    from {
+        opacity:0;
+        bottom:-100px;
+    }
+    to {
+        opacity:1;
+        bottom:0;
+    }
+}
+@keyframes leftIn {
+    from {
+        opacity:0;
+        left:-100%;
+    }
+    to {
+        opacity:1;
+        left:0;
+    }
+}
+@keyframes mainIn {
+    from {
+        opacity:0;
+        top:100%;
+    }
+    to {
+        opacity:1;
+        top:0;
+    }
+}
