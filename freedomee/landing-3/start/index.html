@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="CristianElvis">
         <meta name="description" content="">
         <meta name="keywords" content="">
@@ -28,33 +28,32 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-3B72KJ32RM');
         </script>
     </head>
     <body id="inicio">
-        <menu id="navtopen"></menu>
-        <main class="content">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-12 col-xl-6 left">
-                        <img src="../assets/images/logotipo.svg" class="brand" alt="Join us in a collaborative economy.">
+        <nav class="navbar navbar-expand-lg fixed-top" id="navtopen"></nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-xl-6 left">
+                    <div class="content">
+                        <img src="../assets/images/logo-gray.svg" class="brand" alt="Join us in a collaborative economy.">
                         <h1>Join us in a collaborative economy.</h1>
                         <p>Don't have an account?</p>
                         <button type="button" class="btn btn-primary" onclick="window.location.href='https://freedomee.com/register/'">Subscribe!</button>
                         <p class="mt-5">Are you already a user?</p>
-                        <button type="button" class="btn btn-secondary" onclick="window.location.href='https://freedomee.com/welcome/'">Login!</button>
-                    </div>
-                    <div class="col-xs-12 col-xl-6 right">
-                        <div id="cta1">At FreedomeE you can buy<span>thousands of products!</span></div>
-                        <div id="cta2">You can sell<span>your products here, at no fixed cost!</span></div>
-                        <div id="cta3">Make money with relationship marketing!<span>Inviting companies to sell and earn commissions!</span></div>
-                        <div id="cta4">Or help everyone grow!<span>Choosing projects to invest!</span></div>
+                        <button type="button" class="btn btn-outline-primary" onclick="window.location.href='https://freedomee.com/welcome/'">Login!</button>
                     </div>
                 </div>
+                <div class="col-xs-12 col-xl-6 right">
+                    <div id="cta1">At FreedomeE you can buy<span>thousands of products!</span></div>
+                    <div id="cta2">You can sell<span>your products here, at no fixed cost!</span></div>
+                    <div id="cta3">Make money with relationship marketing!<span>Inviting companies to sell and earn commissions!</span></div>
+                    <div id="cta4">Or help everyone grow!<span>Choosing projects to invest!</span></div>
+                </div>
             </div>
-        </main>
-        <foot id="navbottomen"></foot>
+        </div>
+        <nav class="navbar navbar-expand-lg" id="navbottomen"></nav>
         <div id="modalen"></div>
         <script src="../assets/js/popper.min.js"></script>
         <script src="../assets/js/bootstrap.min.js"></script>
