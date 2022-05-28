@@ -255,17 +255,17 @@ a:active {
 #inicio .container .content p {
     color: rgb(var(--gray1));
 }
-#cta1 {background-image: linear-gradient(rgba(var(--gray1), 0.6), rgba(var(--gray1), 0.6)), url(../images/backgroundHomeCTA01-min.png);}
-#cta2 {background-image: linear-gradient(rgba(var(--gray1), 0.6), rgba(var(--gray1), 0.6)), url(../images/backgroundHomeCTA02-min.png);}
-#cta3 {background-image: linear-gradient(rgba(var(--gray1), 0.6), rgba(var(--gray1), 0.6)), url(../images/backgroundHomeCTA03-min.png);}
-#cta4 {background-image: linear-gradient(rgba(var(--gray1), 0.6), rgba(var(--gray1), 0.6)), url(../images/backgroundHomeCTA04-min.png);}
+#cta1 {background-image: linear-gradient(rgba(var(--gray1), 0.6), rgba(var(--gray1), 0.9)), url(../images/backgroundHomeCTA01-min.png);}
+#cta2 {background-image: linear-gradient(rgba(var(--gray1), 0.6), rgba(var(--gray1), 0.9)), url(../images/backgroundHomeCTA02-min.png);}
+#cta3 {background-image: linear-gradient(rgba(var(--gray1), 0.6), rgba(var(--gray1), 0.9)), url(../images/backgroundHomeCTA03-min.png);}
+#cta4 {background-image: linear-gradient(rgba(var(--gray1), 0.6), rgba(var(--gray1), 0.9)), url(../images/backgroundHomeCTA04-min.png);}
 #inicio #cta1,
 #inicio #cta2,
 #inicio #cta3,
 #inicio #cta4 {
     position: relative;
     width: 0;
-    min-height: 10rem;
+    height: 10rem;
     color:rgb(var(--gray5));
     font-size: 140%;
     font-weight: 900;
@@ -278,7 +278,7 @@ a:active {
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     text-align: start;
     transition: all .5s ease;
@@ -289,10 +289,11 @@ a:active {
 #inicio #cta4::before {
     content: '';
     position: absolute;
-    top: 2rem;
-    left: -6rem;
-    width: 6rem;
-    height: 6rem;
+    top: 3rem;
+    left: -4rem;
+    width: 4rem;
+    height: 4rem;
+    border:1px dashed rgb(var(--gray5));
     border-radius: 50%;
     display: grid;
     justify-content: center;
@@ -317,7 +318,8 @@ a:active {
 #inicio #cta3:hover,
 #inicio #cta4:hover {
     width: 100%;
-    padding: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     filter:grayscale(0%);
 }
 #inicio #cta1:hover::before,
@@ -329,166 +331,50 @@ a:active {
     left: 0;
     width: 0.5rem;
     height: 10rem;
-    background-color: rgb(var(--gray5));
+    border:0;
     border-radius: 0;
     animation: none;
 }
-
-#inicio #cta1 span,
-#inicio #cta2 span,
-#inicio #cta3 span,
-#inicio #cta4 span {
+#inicio #cta1 .ctaMainContent,
+#inicio #cta2 .ctaMainContent,
+#inicio #cta3 .ctaMainContent,
+#inicio #cta4 .ctaMainContent {
     display: none;
     transition: all .5s ease;
 }
-#inicio #cta1:hover span,
-#inicio #cta2:hover span,
-#inicio #cta3:hover span,
-#inicio #cta4:hover span {
+#inicio #cta1:hover .ctaMainContent,
+#inicio #cta2:hover .ctaMainContent,
+#inicio #cta3:hover .ctaMainContent,
+#inicio #cta4:hover .ctaMainContent {
     display: flex;
-    animation: fadeIn 2s 1;
 }
-
-
-/*
-#inicio #cta1::before {
-    background-image: url(../images/backgroundHomeCTA01-min.png);
-}
-#inicio #cta2::before {
-    background-image: url(../images/backgroundHomeCTA02-min.png);
-}
-#inicio #cta3::before {
-    background-image: url(../images/backgroundHomeCTA03-min.png);
-}
-#inicio #cta4::before {
-    background-image: url(../images/backgroundHomeCTA04-min.png);
-}
-#inicio #cta1::before,
-#inicio #cta2::before,
-#inicio #cta3::before,
-#inicio #cta4::before,
-#inicio #cta1::after,
-#inicio #cta2::after,
-#inicio #cta3::after,
-#inicio #cta4::after {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    content: '';
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
-#inicio #cta1::before,
-#inicio #cta2::before,
-#inicio #cta3::before,
-#inicio #cta4::before {
-    filter: grayscale(0%);
-    opacity: 0.2;
-}
-#inicio #cta1::after,
-#inicio #cta2::after,
-#inicio #cta3::after,
-#inicio #cta4::after {
-    width: 15%;
-    font-size: 120%;
-    font-weight: 900;
+#inicio #cta1 .ctaCallContent,
+#inicio #cta2 .ctaCallContent,
+#inicio #cta3 .ctaCallContent,
+#inicio #cta4 .ctaCallContent {
+    min-width:25rem;
     color: rgb(var(--gray1));
-}
-#inicio #cta1::after {
-    transform: translate(12rem, 0);
-}
-#inicio #cta2::after {
-    transform: translate(8rem, 0);
-}
-#inicio #cta3::after {
-    transform: translate(0, 0);
-}
-#inicio #cta4::after {
-    transform: translate(4rem, 0);
-}
-#inicio #cta1:hover::before,
-#inicio #cta2:hover::before,
-#inicio #cta3:hover::before,
-#inicio #cta4:hover::before {
-    filter: grayscale(100%);
-} 
-#inicio #cta1:hover::after,
-#inicio #cta2:hover::after,
-#inicio #cta3:hover::after,
-#inicio #cta4:hover::after {
-    width: 100%;
-    height: 100%;
-    padding: 3rem;
-    color:rgb(var(--gray5));
-    font-size: 140%;
-    line-height: 120%;
-    transform: translate(0, 0);
-}
-#inicio #cta1::after {
-    content: 'Na FreedomeE';
-}
-#inicio #cta1:hover::after {
-    content: 'Na FreedomeE você compra de empreendedores do bem.';
-    background-color: rgba(var(--orange), 0.6);
-}
-#inicio #cta2::after {
-    content: 'você pode vender';
-}
-#inicio #cta2:hover::after {
-    content: 'Você pode vender e se conectar com empreendedores e influenciadores do bem.';
-    background-color: rgba(var(--blue), 0.6);
-}
-#inicio #cta3::after {
-    content: 'Ganhar dinheiro';
-}
-#inicio #cta3:hover::after {
-    content: 'Você pode ganhar dinheiro com o SISTEMA DE REMUNERAÇÃO COLABORATIVO.';
-    background-color: rgba(var(--green), 0.6);
-}
-#inicio #cta4::after {
-    content: 'multiplicar conexões';
-}
-#inicio #cta4:hover::after {
-    content: 'Você pode multiplicar conexões locais e globais através de ALGORITMOS DE CONEXÃO.';
-    background-color: rgba(var(--red), 0.6);
-}
-#inicio #cta1,
-#inicio #cta2,
-#inicio #cta3,
-#inicio #cta4 {
-    position: relative;
-    width: 100%;
-    height: 11rem;
-    background-color: rgb(var(--white));
+    font-weight: 900;
+    padding: 0.5rem;
+    border:1px dashed;
+    border-color: transparent rgb(var(--gray5)) rgb(var(--gray5)) transparent;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: end;
+    align-items: end;
+    text-align: end;
+    transform: translate(-18rem, 0);
+    opacity: 1;
+    animation: fadeIn 2s 1;
     transition: all .5s ease;
-    cursor: pointer;
+    pointer-events: none;
 }
-#inicio #cta1 {
-    clip-path: circle(16% at 80% 50%);
+#inicio #cta1:hover .ctaCallContent,
+#inicio #cta2:hover .ctaCallContent,
+#inicio #cta3:hover .ctaCallContent,
+#inicio #cta4:hover .ctaCallContent {
+    display: none;
+    opacity: 0;
 }
-#inicio #cta2 {
-    clip-path: circle(16% at 70% 50%);
-}
-#inicio #cta3 {
-    clip-path: circle(16% at 50% 50%);
-}
-#inicio #cta4 {
-    clip-path: circle(16% at 60% 50%);
-}
-#inicio #cta1:hover,
-#inicio #cta2:hover,
-#inicio #cta3:hover,
-#inicio #cta4:hover {
-    clip-path: circle(300% at 0% 0%);
-}
-*/
 #inicio #navbottom.navbar,
 #inicio #navbottomen.navbar,
 #inicio #navbottomes.navbar {
@@ -507,7 +393,42 @@ a:active {
     color: rgb(var(--gray5));
     font-size:small;
 }
-
+@media screen and (max-width:576px) {
+    #inicio #cta1,
+    #inicio #cta2,
+    #inicio #cta3,
+    #inicio #cta4 {
+        width: 100%;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    #inicio #cta1::before,
+    #inicio #cta2::before,
+    #inicio #cta3::before,
+    #inicio #cta4::before {
+        content: '';
+        top: 0;
+        left: 0;
+        width: 0.5rem;
+        height: 10rem;
+        border-radius: 0;
+        border:0;
+        animation: none;
+    }
+    #inicio #cta1 .ctaMainContent,
+    #inicio #cta2 .ctaMainContent,
+    #inicio #cta3 .ctaMainContent,
+    #inicio #cta4 .ctaMainContent {
+        display: flex;
+    }
+    #inicio #cta1 .ctaCallContent,
+    #inicio #cta2 .ctaCallContent,
+    #inicio #cta3 .ctaCallContent,
+    #inicio #cta4 .ctaCallContent {
+        display: none;
+        opacity: 0;
+    }
+}
 /* PROBLEMAS E SOLUÇÃO */
 
 
