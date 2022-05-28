@@ -181,6 +181,9 @@ a:active {
     .dropdown-item {
         text-align:center;
     }
+    .btn-nav {
+        padding: 0.5rem 1rem;
+    }
 }
 #navtop .navbar-toggler,
 #navtopen .navbar-toggler,
