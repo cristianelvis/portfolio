@@ -163,7 +163,7 @@ a:active {
         left:0;
         bottom:42px;
         right:0;
-        background-color: rgb(var(--white));
+        background-color: rgb(var(--gray1));
     }
     .dropdown-item {
         text-align:center;
