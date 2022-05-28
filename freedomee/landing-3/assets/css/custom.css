@@ -154,6 +154,16 @@ a:active {
     margin:-0.5rem auto;
     background-color:rgb(var(--violet));
 }
+.btn-nav {
+    color:var(--gray1)!important;
+    font-weight:bold;
+    background-color:rgb(var(--gray5));
+    border-radius:0.3rem;
+}
+.btn-nav:hover {
+    color:var(--gray5)!important;
+    background-color: rgb(var(--violet));
+}
 @media screen and (max-width:768px) {
     .navbar-collapse {
         text-align:center;
