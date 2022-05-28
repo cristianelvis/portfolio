@@ -33,27 +33,35 @@
     </head>
     <body id="inicio">
         <nav class="navbar navbar-expand-lg fixed-top" id="navtop"></nav>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-xl-6 left">
-                    <div class="content">
-                        <img src="../assets/images/logo-gray.svg" class="brand" alt="Junte-se a nós em uma COLABOCRACIA.">
-                        <h1>Junte-se a nós em uma COLABOCRACIA.</h1>
-                        <p>Não tem uma conta?</p>
-                        <button type="button" class="btn btn-primary" onclick="window.location.href='https://freedomee.com/register/'">Inscreva-se!</button>
-                        <p class="mt-5">Já é um usuário?</p>
-                        <button type="button" class="btn btn-outline-primary" onclick="window.location.href='https://freedomee.com/welcome/'">Login!</button>
+        <video poster="../assets/images/background-animation-freedomee-white.png" autoplay playsinline muted loop id="video-background">
+            <source src="../assets/videos/background-animation-freedomee-white.mp4" type="video/mp4">
+        </video>
+        <div id="video-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-xl-6 left">
+                        <div class="content">
+                            <img src="../assets/images/logo-gray.svg" class="brand" alt="JUNTE-SE A NÓS NA COLABOCRACIA!">
+                            <h1>JUNTE-SE A NÓS NA COLABOCRACIA!</h1>
+                            <h4>Educação e empoderamento do ser, aprender, produzir, ganhar e consumir.</h4>
+                            <p>Não tem uma conta?</p>
+                            <button type="button" class="btn btn-primary" onclick="window.location.href='https://freedomee.com/register/'">Inscreva-se!</button>
+                            <p class="mt-5">Já é um usuário?</p>
+                            <button type="button" class="btn btn-outline-primary" onclick="window.location.href='https://freedomee.com/welcome/'">Login!</button>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-xl-6 right">
+                        <div class="content">
+                            <a id="cta1"><span>Na FreedomeE você compra de empreendedores do bem.</span></a>
+                            <a id="cta2"><span>Você pode vender e se conectar com empreendedores e influenciadores do bem.</span></a>
+                            <a id="cta3"><span>Você pode ganhar dinheiro com o SISTEMA DE REMUNERAÇÃO COLABORATIVO.</span></a>
+                            <a id="cta4"><span>Você pode multiplicar conexões locais e globais através de ALGORITMOS DE CONEXÃO.</span></a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-xl-6 right">
-                    <div id="cta1">Na FreedomeE você compra de empreendedores do bem.</div>
-                    <div id="cta2">Você pode vender e se conectar com empreendedores e influenciadores do bem.</div>
-                    <div id="cta3">Você pode ganhar dinheiro com o sistema colaborativo de remuneração.</div>
-                    <div id="cta4">Você pode multiplicar conexões locais e globais  mediante aos algoritmos de conexão.</div>
-                </div>
             </div>
-        </div>
-        <nav class="navbar navbar-expand-lg" id="navbottom"></nav>
+            <nav class="navbar navbar-expand-lg" id="navbottom"></nav>
+        </div>        
         <div id="modal"></div>
         <script src="../assets/js/popper.min.js"></script>
         <script src="../assets/js/bootstrap.min.js"></script>
