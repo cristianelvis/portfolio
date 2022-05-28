@@ -265,6 +265,23 @@ a:active {
 #inicio .container .content p {
     color: rgb(var(--gray1));
 }
+#inicio .container .content h1 span {
+    text-decoration: underline;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+#inicio .container .content h1 span:hover {
+    color: rgb(var(--violet));
+}
+.bs-popover-auto[data-popper-placement^=top]>.popover-arrow::after,.bs-popover-top>.popover-arrow::after{bottom:1px;border-width:.5rem .5rem 0;border-top-color: rgb(var(--violet));}
+.bs-popover-auto[data-popper-placement^=right]>.popover-arrow::after,.bs-popover-end>.popover-arrow::after{left:1px;border-width:.5rem .5rem .5rem 0;border-right-color: rgb(var(--violet));}
+.bs-popover-auto[data-popper-placement^=bottom]>.popover-arrow::after,.bs-popover-bottom>.popover-arrow::after{top:1px;border-width:0 .5rem .5rem .5rem;border-bottom-color: rgb(var(--violet));}
+.bs-popover-auto[data-popper-placement^=left]>.popover-arrow::after,.bs-popover-start>.popover-arrow::after{right:1px;border-width:.5rem 0 .5rem .5rem;border-left-color: rgb(var(--violet));}
+.popover-body {
+    font-size: 150%;
+    color: rgb(var(--gray5));
+    background-color: rgb(var(--violet));
+}
 #cta1 {background-image: linear-gradient(rgba(var(--gray1), 0.6), rgba(var(--gray1), 0.9)), url(../images/backgroundHomeCTA01-min.png);}
 #cta2 {background-image: linear-gradient(rgba(var(--gray1), 0.6), rgba(var(--gray1), 0.9)), url(../images/backgroundHomeCTA02-min.png);}
 #cta3 {background-image: linear-gradient(rgba(var(--gray1), 0.6), rgba(var(--gray1), 0.9)), url(../images/backgroundHomeCTA03-min.png);}
@@ -413,6 +430,7 @@ a:active {
     color: rgb(var(--gray5));
     font-size:small;
 }
+
 @media screen and (max-width:576px) {
     #inicio #cta1,
     #inicio #cta2,
