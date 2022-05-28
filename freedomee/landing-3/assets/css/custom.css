@@ -55,13 +55,13 @@ h6, .h6 {
     font-weight: 900;
 }
 a {
-    color: rgb(var(--orange));
+    color: rgb(var(--violet));
     display: inline-block;
     transition: all 0.15s ease-in-out;
 }
 a:hover,
 a:focus {
-    color: rgb(var(--orange-light));
+    color: rgb(var(--violet-light));
 }
 a:active {
     color: rgb(var(--green));
@@ -105,7 +105,7 @@ a:active {
 .navbar-nav .nav-link:hover,
 .dropdown-item:hover {
     top:-0.2rem;
-    color:rgb(var(--orange));
+    color:rgb(var(--violet));
 }
 .navbar-nav .nav-link:focus {
     color:rgb(var(--green));
@@ -152,7 +152,7 @@ a:active {
     color:rgb(var(--gray5));
     padding:1rem;
     margin:-0.5rem auto;
-    background-color:rgb(var(--orange));
+    background-color:rgb(var(--violet));
 }
 @media screen and (max-width:768px) {
     .navbar-collapse {
