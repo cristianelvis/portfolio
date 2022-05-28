@@ -42,12 +42,17 @@
                     <div class="col-xs-12 col-xl-6 left">
                         <div class="content">
                             <img src="../assets/images/logo-gray.svg" class="brand" alt="¡ÚNETE A NOSOTROS EN COLABOCRACIA!">
-                            <h1>¡ÚNETE A NOSOTROS EN COLABOCRACIA!</h1>
+                            <h1>¡ÚNETE A NOSOTROS EN <span data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-html="true" data-bs-content="Mensagem simples sobre a <b>COLABOCRACIA:</b><br><br>Aguardando os textos.">COLABOCRACIA</span>!</h1>
                             <h4>Educación y empoderamiento del ser, aprender, producir, ganar y consumir.</h4>
                             <p>¿No tienes una cuenta?</p>
                             <button type="button" class="btn btn-primary" onclick="window.location.href='https://freedomee.com/register/'">¡Suscribirse!</button>
                             <p class="mt-5">¿Ya eres un usuario?</p>
                             <button type="button" class="btn btn-outline-primary" onclick="window.location.href='https://freedomee.com/welcome/'">¡Login!</button>
+                            <script>
+                                $(function () {
+                                    $('[data-bs-toggle="popover"]').popover({ trigger: "hover" })
+                                })
+                            </script>
                         </div>
                     </div>
                     <div class="col-xs-12 col-xl-6 right">
@@ -60,8 +65,8 @@
                     </div>
                 </div>
             </div>
+            <nav class="navbar navbar-expand-lg" id="navbottomes"></nav>
         </div>
-        <nav class="navbar navbar-expand-lg" id="navbottomes"></nav>
         <div id="modales"></div>
         <script src="../assets/js/popper.min.js"></script>
         <script src="../assets/js/bootstrap.min.js"></script>
