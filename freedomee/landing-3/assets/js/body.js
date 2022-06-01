@@ -29,4 +29,7 @@ $(document).ready(function () {
     $('#card-quality').mouseleave(function(){
         $('#content-quality').addClass('closed').removeClass('open');
     });
+    $(function () {
+        $('[data-bs-toggle="popover"]').popover({ trigger: "hover" })
+    })
 })
