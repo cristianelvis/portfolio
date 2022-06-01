@@ -1,152 +1,32 @@
-function showEconomicContent() {
-    var x = document.getElementById("economicContent1");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    };
-    var x = document.getElementById("economicContent2");
-    if (x.style.display === "flex") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "flex";
-    }
-}
-function showHumanContent() {
-    var x = document.getElementById("humanContent1");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    };
-    var x = document.getElementById("humanContent2");
-    if (x.style.display === "flex") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "flex";
-    }
-}
-function showAnthropicContent() {
-    var x = document.getElementById("anthropicContent1");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    };
-    var x = document.getElementById("anthropicContent2");
-    if (x.style.display === "flex") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "flex";
-    }
-}
-function showTechnologyContent() {
-    var x = document.getElementById("technologyContent1");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    };
-    var x = document.getElementById("technologyContent2");
-    if (x.style.display === "flex") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "flex";
-    }
-}
-function showQualityContent() {
-    var x = document.getElementById("qualityContent1");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    };
-    var x = document.getElementById("qualityContent2");
-    if (x.style.display === "flex") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "flex";
-    }
-}
-function showValueOneContent() {
-    var x = document.getElementById("valueOneContent1");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    };
-    var x = document.getElementById("valueOneContent2");
-    if (x.style.display === "flex") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "flex";
-    }
-}
-function showValueTwoContent() {
-    var x = document.getElementById("valueTwoContent1");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    };
-    var x = document.getElementById("valueTwoContent2");
-    if (x.style.display === "flex") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "flex";
-    }
-}
-function showValueThreeContent() {
-    var x = document.getElementById("valueThreeContent1");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    };
-    var x = document.getElementById("valueThreeContent2");
-    if (x.style.display === "flex") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "flex";
-    }
-}
-function showValueFourContent() {
-    var x = document.getElementById("valueFourContent1");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    };
-    var x = document.getElementById("valueFourContent2");
-    if (x.style.display === "flex") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "flex";
-    }
-}
-function showValueFiveContent() {
-    var x = document.getElementById("valueFiveContent1");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    };
-    var x = document.getElementById("valueFiveContent2");
-    if (x.style.display === "flex") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "flex";
-    }
-}
-function seePass() {
-    var x = document.getElementById("passSplash");
-    if (x.type === "password") {
-        x.type = "text";
-    } else {
-        x.type = "password";
-    }
-}
-function openEye() {
-    var element = document.getElementById("see");
-    element.classList.toggle("bi-eye");
-}
+$(document).ready(function () {
+    $('#card-economic').mouseenter(function(){
+        $('#content-economic').addClass('open').removeClass('closed');
+    });
+    $('#card-economic').mouseleave(function(){
+        $('#content-economic').addClass('closed').removeClass('open');
+    });
+    $('#card-human').mouseenter(function(){
+        $('#content-human').addClass('open').removeClass('closed');
+    });
+    $('#card-human').mouseleave(function(){
+        $('#content-human').addClass('closed').removeClass('open');
+    });
+    $('#card-anthropic').mouseenter(function(){
+        $('#content-anthropic').addClass('open').removeClass('closed');
+    });
+    $('#card-anthropic').mouseleave(function(){
+        $('#content-anthropic').addClass('closed').removeClass('open');
+    });
+    $('#card-technology').mouseenter(function(){
+        $('#content-technology').addClass('open').removeClass('closed');
+    });
+    $('#card-technology').mouseleave(function(){
+        $('#content-technology').addClass('closed').removeClass('open');
+    });
+    $('#card-quality').mouseenter(function(){
+        $('#content-quality').addClass('open').removeClass('closed');
+    });
+    $('#card-quality').mouseleave(function(){
+        $('#content-quality').addClass('closed').removeClass('open');
+    });
+})
