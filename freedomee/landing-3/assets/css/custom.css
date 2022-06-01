@@ -3,29 +3,32 @@
  * Cristian Elvis - (http://cristianelvis.com)
  * Copyright 2022 Cristian Elvis
  */
- :root {
-    --orange: 252, 108, 79;
-    --orange-light: 253, 167, 149;
-    --yellow: 254, 255, 1;
-    --yellow-light: 255, 255, 153;
-    --red: 221, 40, 66;
-    --red-light: 255, 175, 188;
-    --green: 34, 181, 115;
-    --green-light: 161, 231, 219;
-    --blue: 1, 49, 131;
-    --blue-dark: 29, 36, 54;
-    --blue-light: 199, 213, 240;
-    --violet: 204, 154, 253;
-    --violet-light: 235, 215, 254;
-    --lavander: 243, 227, 253;
-    --lavander-light: 250, 244, 254;
-    --black: 10, 10, 10;
-    --gray1: 62, 62, 62;
-    --gray2: 96, 96, 96;
-    --gray3: 196, 196, 196;
-    --gray4: 244, 244, 244;
-    --gray5: 246, 246, 246;
-    --white: 255, 255, 255;
+:root {
+    --orange:250,105,80;
+    --orange-light:251,135,115;
+    --orange-dark:187,79,60;
+    --blue:160,183,227;
+    --blue-light:179,197,233;
+    --blue-dark:120,137,170;
+    --green:34,181,115;
+    --green-light:78,196,143;
+    --green-dark:26,136,86;
+    --yellow:253,212,106;
+    --yellow-light:253,221,136;
+    --yellow-dark:190,159,80;
+    --violet:220,183,252;
+    --violet-light:227,197,253;
+    --violet-dark:165,137,189;
+    --red:221,40,66;
+    --red-light:228,83,104;
+    --red-dark:166,30,50;
+    --black:10,10,10;
+    --gray1:62,62,62;
+    --gray2:96,96,96;
+    --gray3:196,196,196;
+    --gray4:244,244,244;
+    --gray5:246,246,246;
+    --white:255,255,255;
 }
 html,
 body {
@@ -126,6 +129,10 @@ h1 span {
     text-decoration: underline;
     transition: all .5s ease;
     cursor: pointer;
+}
+h1 span:hover {
+    text-decoration: none;
+    text-shadow: 2px 2px 6px rgba(var(--gray1), 0.5);
 }
 h1 span:hover {
     color: rgb(var(--violet));
@@ -364,7 +371,7 @@ a:active {
     background-color: rgb(var(--green));
 }
 #inicio #cta4::before {
-    background-color: rgb(var(--red));
+    background-color: rgb(var(--yellow));
 }
 #inicio #cta1:hover,
 #inicio #cta2:hover,
@@ -511,7 +518,7 @@ a:active {
 }
 #problemasesolucao #section002 .h1Element {
     position: relative;
-    color: rgb(var(--blue));
+    color: rgb(var(--yellow));
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
@@ -524,7 +531,7 @@ a:active {
     width: 25rem;
     height: 0;
     border: 1px solid;
-    border-color: rgb(var(--blue)) transparent transparent transparent;
+    border-color: rgb(var(--yellow)) transparent transparent transparent;
     transform: translate(-50%, 0);
 }
 #problemasesolucao #section002 .h1Element::after {
@@ -532,17 +539,17 @@ a:active {
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-top: 10px solid rgb(var(--blue));
+    border-top: 10px solid rgb(var(--yellow));
 }
 #problemasesolucao #section002 .card {
     position: relative;
-    color: rgb(var(--black))!important;
+    color: rgb(var(--white));
     font-size: 120%;
     font-weight: 900;
     min-width: 15rem;
     height: 15rem;
     margin:1rem;
-    background-color: rgb(var(--blue-light));
+    background-color: rgb(var(--blue));
     border: 3px dashed rgb(var(--white));
     border-radius: 50%;
     display: inline-flex;
@@ -571,7 +578,7 @@ a:active {
     width: 50px;
     height: 50px;
     margin:0 auto;
-    background-color: rgb(var(--blue));
+    background-color: rgb(var(--blue-dark));
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 60%;
@@ -624,25 +631,23 @@ a:active {
 }
 #problemasesolucao #section004 {
     padding-bottom: 0;
-    background-color: rgb(var(--yellow));
+    background-color: rgb(var(--yellow-light));
 }
 #problemasesolucao #section004 h1 {
+    color: rgb(var(--blue-dark));
     margin-top: 2rem;
-}
-#problemasesolucao #section004 h2 {
-    color: rgb(var(--black));
+    text-align: left;
 }
 #problemasesolucao #section004 h4 {
-    color: rgb(var(--blue));
+    color: rgb(var(--blue-dark));
     margin-top: 2rem;
 }
 #problemasesolucao #section004 p {
-    color: rgb(var(--black));
     margin-top: 2rem;
 }
 #problemasesolucao #section005 {
     padding-top: 0;
-    background-color: rgb(var(--yellow));
+    background-color: rgb(var(--yellow-light));
 }
 #problemasesolucao #section005 .quote {
     position: relative;
@@ -663,138 +668,111 @@ a:active {
 #problemasesolucao #section005 .quote::after {
     content: '"';
 }
-
-
-
-
-
-
-
-#card-economic {
+#problemasesolucao #section005 .gridLine {
+    align-items: start;
+    z-index: 0;
+}
+#problemasesolucao #section005 #card-economic {
     background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/mediadorEconomico-min.png);
-    border-radius:1.5vh 0 0 1.5vh;
 }
-#card-economic:hover {
-    background:linear-gradient(0deg, rgba(var(--gray5), 0.8), rgba(var(--gray5), 0.8)), url(../images/mediadorEconomico-min.png);
+#problemasesolucao #section005 #card-economic:hover {
+    background:linear-gradient(0deg, rgba(var(--yellow), 1), rgba(var(--yellow), 0.5)), url(../images/mediadorEconomico-min.png);
 }
-
-
-
-
-
-
+#problemasesolucao #section005 #card-human {
+    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/mediadorHumano-min.png);
+}
+#problemasesolucao #section005 #card-human:hover {
+    background:linear-gradient(0deg, rgba(var(--orange), 1), rgba(var(--orange), 0.5)), url(../images/mediadorHumano-min.png);
+}
+#problemasesolucao #section005 #card-anthropic {
+    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/mediadorAntropico-min.png);
+}
+#problemasesolucao #section005 #card-anthropic:hover {
+    background:linear-gradient(0deg, rgba(var(--green), 1), rgba(var(--green), 0.5)), url(../images/mediadorAntropico-min.png);
+}
+#problemasesolucao #section005 #card-technology {
+    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/mediadorTecnologico-min.png);
+}
+#problemasesolucao #section005 #card-technology:hover {
+    background:linear-gradient(0deg, rgba(var(--blue), 1), rgba(var(--blue), 0.5)), url(../images/mediadorTecnologico-min.png);
+}
+#problemasesolucao #section005 #card-quality {
+    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/mediadorQualidade-min.png);
+}
+#problemasesolucao #section005 #card-quality:hover {
+    background:linear-gradient(0deg, rgba(var(--violet), 1), rgba(var(--violet), 0.5)), url(../images/mediadorQualidade-min.png);
+}
+#problemasesolucao #section005 #card-economic,
+#problemasesolucao #section005 #card-economic:hover,
+#problemasesolucao #section005 #card-human,
+#problemasesolucao #section005 #card-human:hover,
+#problemasesolucao #section005 #card-anthropic,
+#problemasesolucao #section005 #card-anthropic:hover,
+#problemasesolucao #section005 #card-technology,
+#problemasesolucao #section005 #card-technology:hover,
+#problemasesolucao #section005 #card-quality,
+#problemasesolucao #section005 #card-quality:hover {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 #problemasesolucao #section005 .card {
     position: relative;
     width: 20vw;
-    height: 20rem;
-    color: rgb(var(--gray5));   
-    padding: 3rem;
+    height: 25rem;
+    color: rgb(var(--gray5));
+    padding: 0;
+    padding-top: 8rem;
     margin: 0;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 1px solid ;
+    border: 0;
     border-radius: 0;
-    justify-content: center;
+    justify-content: start;
     transition: all 0.5s ease;
 }
 #problemasesolucao #section005 .card:hover {
-    color: rgb(var(--gray1)); 
-    height: 24rem;
+    color: rgb(var(--black));
+    padding-top: 9rem;
 }
-
-.icon {
+#problemasesolucao #section005 .icon-economic {background: url(../images/icon-economic-white.svg);}
+#problemasesolucao #section005 .card:hover .icon-economic {background: url(../images/icon-economic.svg);}
+#problemasesolucao #section005 .icon-human {background: url(../images/icon-human-white.svg);}
+#problemasesolucao #section005 .card:hover .icon-human {background: url(../images/icon-human.svg);}
+#problemasesolucao #section005 .icon-anthropic {background: url(../images/icon-anthropic-white.svg);}
+#problemasesolucao #section005 .card:hover .icon-anthropic {background: url(../images/icon-anthropic.svg);}
+#problemasesolucao #section005 .icon-technology {background: url(../images/icon-technology-white.svg);}
+#problemasesolucao #section005 .card:hover .icon-technology {background: url(../images/icon-technology.svg);}
+#problemasesolucao #section005 .icon-quality {background: url(../images/icon-quality-white.svg);}
+#problemasesolucao #section005 .card:hover .icon-quality {background: url(../images/icon-quality.svg);}
+#problemasesolucao #section005 .icon {
     width: 10vh;
     height: 10vh;
     margin: 0 auto;
-    background-color: red;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-
-
-.wrap-cards-content {
-    margin-top: -2rem;
-    z-index: -1;
+#problemasesolucao #section005 .wrap-cards-content {
+    position: relative;
+    z-index: 1;
 }
-.card-content {
-    padding: 6rem;
-    background-color: rgb(var(--red));
-    border-radius:0 0 0.5rem 0.5rem;
+#problemasesolucao #section005 .card-content {
+    color: rgb(var(--black));
+    padding: 2rem 3rem;
+    border-radius:0 0 0.6rem 0.6rem;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    text-align: center;
-    z-index: -1;
+    justify-content: start;
+    align-content: start;
+    align-items: start;
+    text-align: start;
 }
-@media screen and (max-width:576px) {
-    #problemasesolucao #section005 .card {
-        position: relative;
-        min-width: 20rem;
-        height: 20rem;
-    }
-    #problemasesolucao #section005 #card-economic,
-    #problemasesolucao #section005 #card-human,
-    #problemasesolucao #section005 #card-anthropic,
-    #problemasesolucao #section005 #card-technology {
-        margin: 0 3rem 0 0;
-    }
-    #problemasesolucao #section005 #card-economic::after,
-    #problemasesolucao #section005 #card-human::after,
-    #problemasesolucao #section005 #card-anthropic::after,
-    #problemasesolucao #section005 #card-technology::after {
-        position: absolute;
-        top: 9.5rem;
-        right: -2.5rem;
-        content: '>';
-        font-size: 300%;
-        font-weight: 900;
-        color: rgb(var(--gray5));
-    }
+#problemasesolucao #section005 .card-content h5 {
+    font-weight: 400;
 }
-
-
-
-
-
-.nav-link.economic,
-.economic.active {background: linear-gradient(0deg, rgba(65, 62, 62, 0.5), rgba(65, 62, 62, 0.5)),url(../images/mediadorEconomico-min.png);}
-
-
-.nav-link.human,
-.human.active {background: linear-gradient(0deg, rgba(65, 62, 62, 0.5), rgba(65, 62, 62, 0.5)),url(../images/mediadorHumano-min.png);}
-
-.nav-link.anthropic,
-.anthropic.active {background: linear-gradient(0deg, rgba(65, 62, 62, 0.5), rgba(65, 62, 62, 0.5)),url(../images/mediadorAntropico-min.png);}
-
-.nav-link.technology,
-.technology.active {background: linear-gradient(0deg, rgba(65, 62, 62, 0.5), rgba(65, 62, 62, 0.5)),url(../images/mediadorTecnologico-min.png);}
-
-.nav-link.quality,
-.quality.active {background: linear-gradient(0deg, rgba(65, 62, 62, 0.5), rgba(65, 62, 62, 0.5)),url(../images/mediadorQualidade-min.png);}
-
-.nav-link.economic,
-.economic.active,
-
-.nav-link.human,
-.human.active,
-
-.nav-link.anthropic,
-.anthropic.active,
-
-.nav-link.technology,
-.technology.active,
-
-.nav-link.quality,
-.quality.active {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
+#content-economic {background-color: rgb(var(--yellow));}
+#content-human {background-color: rgb(var(--orange));}
+#content-anthropic {background-color: rgb(var(--green));}
+#content-technology {background-color: rgb(var(--blue));}
+#content-quality {background-color: rgb(var(--violet));}
 
 
 
@@ -836,14 +814,13 @@ a:active {
 #problemasesolucao #section006 .btn-outline-primary {
     width: 20rem;
 }
-
 #problemasesolucao #cta1 {background-color: rgb(var(--gray4));}
 #problemasesolucao #cta2 {background-color: rgb(var(--gray4));}
 #problemasesolucao #cta1,
 #problemasesolucao #cta2 {
     position: relative;
     width: 0;
-    height: 15vh;
+    height: 20vh;
     padding: 0;
     margin: 0 0 auto auto;
     background-position: center center;
@@ -875,7 +852,7 @@ a:active {
     background-color: rgb(var(--black));
 }
 #problemasesolucao #cta2::before {
-    background-color: rgb(var(--orange));
+    background-color: rgb(var(--red));
 }
 #problemasesolucao #cta1:hover,
 #problemasesolucao #cta2:hover {
@@ -885,7 +862,7 @@ a:active {
     filter: grayscale(0%);
 }
 #problemasesolucao #cta2:hover {
-    height:30vh;
+    height:35vh;
 }
 #problemasesolucao #cta1:hover::before,
 #problemasesolucao #cta2:hover::before {
@@ -893,13 +870,13 @@ a:active {
     top: 0;
     left: 0;
     width: 0.5rem;
-    height: 15vh;
+    height: 20vh;
     border:0;
     border-radius: 0;
     animation: none;
 }
 #problemasesolucao #cta2:hover::before {
-    height:30vh;
+    height:35vh;
 }
 #problemasesolucao #cta1 .ctaMainContent,
 #problemasesolucao #cta2 .ctaMainContent {
@@ -926,7 +903,7 @@ a:active {
 }
 #problemasesolucao #cta1 .ctaCallContent,
 #problemasesolucao #cta2 .ctaCallContent {
-    min-width:25rem;
+    min-width: 25rem;
     font-size: 140%;
     font-weight: 600;
     padding: 0.5rem;
@@ -974,6 +951,7 @@ a:active {
     background-size: cover;
     background-attachment: fixed;
     animation: backgroundScroll 100s linear infinite alternate;
+    animation: backgroundColors 15s ease infinite alternate;
 }
 /* FOOTER */
 #navbottom,
@@ -1118,6 +1096,29 @@ a:active {
         display: none;
         opacity: 0;
     }
+    #problemasesolucao #section005 .card {
+        position: relative;
+        min-width: 20rem;
+        height: 20rem;
+    }
+    #problemasesolucao #section005 #card-economic,
+    #problemasesolucao #section005 #card-human,
+    #problemasesolucao #section005 #card-anthropic,
+    #problemasesolucao #section005 #card-technology {
+        margin: 0 3rem 0 0;
+    }
+    #problemasesolucao #section005 #card-economic::after,
+    #problemasesolucao #section005 #card-human::after,
+    #problemasesolucao #section005 #card-anthropic::after,
+    #problemasesolucao #section005 #card-technology::after {
+        position: absolute;
+        top: 9.5rem;
+        right: -2.5rem;
+        content: '>';
+        font-size: 300%;
+        font-weight: 900;
+        color: rgb(var(--gray5));
+    }
 }
 /* ANIMATIONS */
 @keyframes topIn {
@@ -1175,12 +1176,11 @@ a:active {
     to {background-position: 100% 0;}
 }
 @keyframes backgroundColors {
-    0% {background-color: rgba(var(--orange-light), 0.8);}
-    20% {background-color: rgba(var(--yellow-light), 0.8);}
-    40% {background-color: rgba(var(--red-light), 0.8);}
-    60% {background-color: rgba(var(--green-light), 0.8);}
-    80% {background-color: rgba(var(--blue-light), 0.8);}
-    100% {background-color: rgba(var(--violet-light), 0.8);}
+    0% {background-color: rgba(var(--orange), 0.7);}
+    25% {background-color: rgba(var(--blue), 0.7);}
+    50% {background-color: rgba(var(--green), 0.7);}
+    75% {background-color: rgba(var(--yellow), 0.7);}
+    100% {background-color: rgba(var(--violet), 0.7);}
 }
 @keyframes fadeIn {
     0% {opacity:0;}
