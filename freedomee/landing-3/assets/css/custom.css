@@ -105,6 +105,12 @@ section {
     width: 100%;
     max-width: 100%;
 }
+.open {
+    display: block;
+}
+.closed {
+    display: none;
+}
 
 /* TYPOGRAPHY */
 h1, .h1,
@@ -137,7 +143,7 @@ p {
 #navtop,
 #navtopen,
 #navtopes {
-    animation:topIn 2s 1;
+    animation: topIn 2s 1;
 }
 .navbar {
     padding-right: 1rem;
@@ -617,10 +623,10 @@ a:active {
     width: 20rem;
 }
 #problemasesolucao #section004 {
-    background-color: rgb(var(--green));
+    padding-bottom: 0;
+    background-color: rgb(var(--yellow));
 }
 #problemasesolucao #section004 h1 {
-    color: rgb(var(--white));
     margin-top: 2rem;
 }
 #problemasesolucao #section004 h2 {
@@ -636,7 +642,7 @@ a:active {
 }
 #problemasesolucao #section005 {
     padding-top: 0;
-    background-color: rgb(var(--green));
+    background-color: rgb(var(--yellow));
 }
 #problemasesolucao #section005 .quote {
     position: relative;
@@ -664,46 +670,70 @@ a:active {
 
 
 
+#card-economic {
+    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/mediadorEconomico-min.png);
+    border-radius:1.5vh 0 0 1.5vh;
+}
+#card-economic:hover {
+    background:linear-gradient(0deg, rgba(var(--gray5), 0.8), rgba(var(--gray5), 0.8)), url(../images/mediadorEconomico-min.png);
+}
+
+
+
+
+
 
 #problemasesolucao #section005 .card {
     position: relative;
     width: 20vw;
-    height: 20vh;
-    color: rgb(var(--gray1));
+    height: 20rem;
+    color: rgb(var(--gray5));   
     padding: 3rem;
     margin: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border: 1px solid ;
     border-radius: 0;
     justify-content: center;
     transition: all 0.5s ease;
 }
+#problemasesolucao #section005 .card:hover {
+    color: rgb(var(--gray1)); 
+    height: 24rem;
+}
 
-#card-economic {}
-#card-human {}
-#card-anthropic {}
-#card-technology {}
-#card-quality {}
-
-
-.icon-economic {}
-.icon-human {}
-.icon-anthropic {}
-.icon-technology {}
-.icon-quality {}
 .icon {
     width: 10vh;
     height: 10vh;
     margin: 0 auto;
+    background-color: red;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 
+
+.wrap-cards-content {
+    margin-top: -2rem;
+    z-index: -1;
+}
+.card-content {
+    padding: 6rem;
+    background-color: rgb(var(--red));
+    border-radius:0 0 0.5rem 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: -1;
+}
 @media screen and (max-width:576px) {
     #problemasesolucao #section005 .card {
         position: relative;
-        width: 20rem;
+        min-width: 20rem;
         height: 20rem;
     }
     #problemasesolucao #section005 #card-economic,
@@ -729,47 +759,6 @@ a:active {
 
 
 
-.card-content {
-    padding: 1rem;
-    margin-top:-1rem;
-    background-color: rgb(var(--white));
-    border-radius:0 0 0.5rem 0.5rem;
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    text-align: center;
-
-    
-}
-#content-economic {}
-#content-human {}
-#content-anthropic {}
-#content-technology {}
-#content-quality {}
-
-
-
-
-
-
-
-
-
-.nav-tabs .nav-item {
-    padding: 0;
-}
-.nav-tabs .nav-link {
-
-
-}
-.nav-tabs .nav-item.show .nav-link,
-.nav-tabs .nav-link.active,
-.nav-tabs .nav-link:hover,
-.nav-tabs .nav-link:focus {
-    height: 60vh;
-}
 
 .nav-link.economic,
 .economic.active {background: linear-gradient(0deg, rgba(65, 62, 62, 0.5), rgba(65, 62, 62, 0.5)),url(../images/mediadorEconomico-min.png);}
