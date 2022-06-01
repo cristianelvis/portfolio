@@ -949,8 +949,6 @@ a:active {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    animation: backgroundScroll 100s linear infinite alternate;
     animation: backgroundColors 15s ease infinite alternate;
 }
 /* FOOTER */
