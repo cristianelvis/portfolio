@@ -145,7 +145,10 @@ p {
 .brand {
     width: 15rem;
 }
-
+.textBigBlue {
+    font-size: 140%;
+    color: rgb(var(--blue-dark));
+}
 /* NAVBAR */
 #navtop,
 #navtopen,
@@ -277,6 +280,43 @@ a:active {
 .btn-nav:hover {
     color: rgb(var(--gray5))!important;
     background-color: rgb(var(--violet));
+}
+.btn-close {
+    font-size:100%;
+    color: rgb(var(--orange));
+    position:fixed;
+    top:3vh;
+    right:4vh;
+    width:unset;
+    height:unset;
+    padding:0;
+    margin:0 auto;
+    border:0;
+    border-radius:0;
+    background:unset;
+    box-shadow:unset;
+    display:flex;
+    flex-direction:column;
+    justify-content:start;
+    align-items:center;
+    transition:all .5s ease;
+    z-index:2;
+}
+.btn-close:hover {
+    font-size:130%;
+    color: rgb(var(--orange));
+    text-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.btn-close:active,
+.btn-close:focus {
+    color:var(--red);
+}
+.btn-close i {
+    font-size:200%;
+    margin-bottom:1vh;
+}
+.btn-close i:hover {
+    font-size:230%;
 }
 
 /* INÍCIO - #inicio */
@@ -654,13 +694,14 @@ a:active {
 #problemasesolucao #section002 .card {
     position: relative;
     color: rgb(var(--white));
-    font-size: 120%;
-    font-weight: 900;
+    font-size: 160%;
+    line-height: 140%;
+    font-weight: 400;
     min-width: 15rem;
     height: 15rem;
     margin:1rem;
     background-color: rgb(var(--blue));
-    border: 3px dashed rgb(var(--white));
+    border: 2px dashed rgb(var(--white));
     border-radius: 50%;
     display: inline-flex;
     flex-direction: column;
@@ -730,7 +771,7 @@ a:active {
     padding-bottom: 8rem;
 }
 #problemasesolucao #section003 h4 {
-    margin-top: 1rem;
+    margin-top: 3rem;
 }
 #problemasesolucao #section003 ul {
     font-size: 140%;
@@ -745,12 +786,12 @@ a:active {
 }
 #problemasesolucao #section004 h1 {
     color: rgb(var(--blue-dark));
-    margin-top: 2rem;
+    margin-top: 3rem;
     text-align: left;
 }
 #problemasesolucao #section004 h4 {
     color: rgb(var(--blue-dark));
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 #problemasesolucao #section004 p {
     margin-top: 2rem;
@@ -831,17 +872,19 @@ a:active {
     width: 20vw;
     height: 25rem;
     color: rgb(var(--gray5));
+    font-weight: 600;
+    text-decoration: none;
     padding: 0;
-    padding-top: 8rem;
+    padding-bottom: 6rem;
     margin: 0;
     border: 0;
     border-radius: 0;
-    justify-content: start;
+    justify-content: end;
     transition: all 0.5s ease;
 }
 #problemasesolucao #section005 .card:hover {
     color: rgb(var(--black));
-    padding-top: 9rem;
+    padding-bottom: 4rem;
 }
 #problemasesolucao #section005 .icon-economic {background: url(../images/icon-economic-white.svg);}
 #problemasesolucao #section005 .card:hover .icon-economic {background: url(../images/icon-economic.svg);}
@@ -985,17 +1028,19 @@ a:active {
     width: 20vw;
     height: 25rem;
     color: rgb(var(--gray5));
+    font-weight: 600;
+    text-decoration: none;
     padding: 0;
-    padding-top: 8rem;
+    padding-bottom: 6rem;
     margin: 0;
     border: 0;
     border-radius: 0;
-    justify-content: start;
+    justify-content: end;
     transition: all 0.5s ease;
 }
 #problemasesolucao #section007 .card:hover {
-    color: rgb(var(--black));
-    padding-top: 9rem;
+    color: rgb(var(--gray5));
+    padding-bottom: 4rem;
 }
 #problemasesolucao #section007 .wrap-cards-content {
     position: relative;
@@ -1020,22 +1065,500 @@ a:active {
 #problemasesolucao #section007 #content-empower {background-color: rgb(var(--gray1));}
 #problemasesolucao #section007 #content-thrive {background-color: rgb(var(--gray1));}
 
-/* SEJA UM PATROCINADOR - #sejaumpatrocinador */
+/* COMO GANHAR DINHEIRO - #comoganhardinheiro */
+#comoganhardinheiro #section001 {
+    color: rgb(var(--black));
+    padding-top: 12rem;
+    background-color: rgb(var(--blue));
+}
+#comoganhardinheiro #section001 h1 {
+    color: rgb(var(--gray5));
+}
+#comoganhardinheiro #section002 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: rgb(var(--blue));
+}
+#comoganhardinheiro #section002 .gridLine {
+    height: 27vh;
+}
+#comoganhardinheiro #section002 #card-user1 {
+    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/user1-min.png);
+}
+#comoganhardinheiro #section002 #card-user1:hover {
+    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/user1-min.png);
+}
+#comoganhardinheiro #section002 #card-user2 {
+    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/user2-min.png);
+}
+#comoganhardinheiro #section002 #card-user2:hover {
+    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/user2-min.png);
+}
+#comoganhardinheiro #section002 #card-user3 {
+    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/user3-min.png);
+}
+#comoganhardinheiro #section002 #card-user3:hover {
+    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/user3-min.png);
+}
+#comoganhardinheiro #section002 #card-user4 {
+    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/user4-min.png);
+}
+#comoganhardinheiro #section002 #card-user4:hover {
+    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/user4-min.png);
+}
+#comoganhardinheiro #section002 #card-user5 {
+    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/user5-min.png);
+}
+#comoganhardinheiro #section002 #card-user5:hover {
+    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/user5-min.png);
+}
+#comoganhardinheiro #section002 #card-user6 {
+    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/user6-min.png);
+}
+#comoganhardinheiro #section002 #card-user6:hover {
+    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/user6-min.png);
+}
+#comoganhardinheiro #section002 #card-user7 {
+    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/user7-min.png);
+}
+#comoganhardinheiro #section002 #card-user7:hover {
+    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/user7-min.png);
+}
+#comoganhardinheiro #section002 #card-user8 {
+    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/user8-min.png);
+}
+#comoganhardinheiro #section002 #card-user8:hover {
+    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/user8-min.png);
+}
+#comoganhardinheiro #section002 #card-user1,
+#comoganhardinheiro #section002 #card-user1:hover,
+#comoganhardinheiro #section002 #card-user2,
+#comoganhardinheiro #section002 #card-user2:hover,
+#comoganhardinheiro #section002 #card-user3,
+#comoganhardinheiro #section002 #card-user3:hover,
+#comoganhardinheiro #section002 #card-user4,
+#comoganhardinheiro #section002 #card-user4:hover,
+#comoganhardinheiro #section002 #card-user5,
+#comoganhardinheiro #section002 #card-user5:hover,
+#comoganhardinheiro #section002 #card-user6,
+#comoganhardinheiro #section002 #card-user6:hover,
+#comoganhardinheiro #section002 #card-user7,
+#comoganhardinheiro #section002 #card-user7:hover,
+#comoganhardinheiro #section002 #card-user8,
+#comoganhardinheiro #section002 #card-user8:hover {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#comoganhardinheiro #section002 .card {
+    position: relative;
+    width: 12.5vw;
+    height: 25rem;
+    color: rgb(var(--gray5));
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0;
+    padding-bottom: 3rem;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    justify-content: end;
+    transition: all 0.5s ease;
+}
+#comoganhardinheiro #section002 .card:hover {
+    height: 27rem;
+    color: rgb(var(--gray5));
+    padding-bottom: 6rem;
+}
+#comoganhardinheiro #section003 p {
+    font-size: 160%;
+}
+#user1Content,
+#user2Content,
+#user3Content,
+#user4Content,
+#user5Content,
+#user6Content,
+#user7Content,
+#user8Content {
+    position:relative;
+    bottom: 0;
+    width:100%;
+    height:100%;
+    font-size:100%;
+    color: var(--gray5)!important;
+    padding:1vh;
+    display:none;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    border-radius:0;
+    animation: bottomIn 2s 1;
+}
+#user1Content span,
+#user2Content span,
+#user3Content span,
+#user4Content span,
+#user5Content span,
+#user6Content span,
+#user7Content span,
+#user8Content span {
+    color:var(--gray5);
+    font-size:120%;
+    font-weight:900;
+    text-transform:uppercase;
+    margin-top:1vh;
+}
+#comoganhardinheiro #user1ContentUS .left,
+#comoganhardinheiro #user1ContentES .left,
+#comoganhardinheiro #user1ContentBR .left {
+    background-image:url(../images/user1-min.png);    
+}
+#comoganhardinheiro #user2ContentUS .left,
+#comoganhardinheiro #user2ContentES .left,
+#comoganhardinheiro #user2ContentBR .left {
+    background-image:url(../images/user2-min.png);    
+}
+#comoganhardinheiro #user3ContentUS .left,
+#comoganhardinheiro #user3ContentES .left,
+#comoganhardinheiro #user3ContentBR .left {
+    background-image:url(../images/user3-min.png);    
+}
+#comoganhardinheiro #user4ContentUS .left,
+#comoganhardinheiro #user4ContentES .left,
+#comoganhardinheiro #user4ContentBR .left {
+    background-image:url(../images/user4-min.png);    
+}
+#comoganhardinheiro #user5ContentUS .left,
+#comoganhardinheiro #user5ContentES .left,
+#comoganhardinheiro #user5ContentBR .left {
+    background-image:url(../images/user5-min.png);    
+}
+#comoganhardinheiro #user6ContentUS .left,
+#comoganhardinheiro #user6ContentES .left,
+#comoganhardinheiro #user6ContentBR .left {
+    background-image:url(../images/user6-min.png);    
+}
+#comoganhardinheiro #user7ContentUS .left,
+#comoganhardinheiro #user7ContentES .left,
+#comoganhardinheiro #user7ContentBR .left {
+    background-image:url(../images/user7-min.png);    
+}
+#comoganhardinheiro #user8ContentUS .left,
+#comoganhardinheiro #user8ContentES .left,
+#comoganhardinheiro #user8ContentBR .left {
+    background-image:url(../images/user8-min.png);    
+}
+#comoganhardinheiro #user1ContentUS .left,
+#comoganhardinheiro #user2ContentUS .left,
+#comoganhardinheiro #user3ContentUS .left,
+#comoganhardinheiro #user4ContentUS .left,
+#comoganhardinheiro #user5ContentUS .left,
+#comoganhardinheiro #user6ContentUS .left,
+#comoganhardinheiro #user7ContentUS .left,
+#comoganhardinheiro #user8ContentUS .left,
+#comoganhardinheiro #user1ContentES .left,
+#comoganhardinheiro #user2ContentES .left,
+#comoganhardinheiro #user3ContentES .left,
+#comoganhardinheiro #user4ContentES .left,
+#comoganhardinheiro #user5ContentES .left,
+#comoganhardinheiro #user6ContentES .left,
+#comoganhardinheiro #user7ContentES .left,
+#comoganhardinheiro #user8ContentES .left,
+#comoganhardinheiro #user1ContentBR .left,
+#comoganhardinheiro #user2ContentBR .left,
+#comoganhardinheiro #user3ContentBR .left,
+#comoganhardinheiro #user4ContentBR .left,
+#comoganhardinheiro #user5ContentBR .left,
+#comoganhardinheiro #user6ContentBR .left,
+#comoganhardinheiro #user7ContentBR .left,
+#comoganhardinheiro #user8ContentBR .left {
+    height:100vh;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+#comoganhardinheiro .modal-body .right {
+    height:100vh;
+    padding:6rem 1rem 1rem 1rem;
+    overflow-x:hidden;
+    overflow-y:scroll;
+}
+#comoganhardinheiro .table-left,
+#comoganhardinheiro .table-right {
+    width: 100%;
+    padding: 1rem 0 1rem 1rem;
+    background-color: rgb(var(--orange));
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#comoganhardinheiro .table-right {
+    padding:0;
+}
+#comoganhardinheiro .left-hash {
+    position: absolute;
+    top: 4%;
+    right: 54%;
+    bottom: 4%;
+    left: 4%;
+    justify-content: start;
+    align-items: end;
+    display: inline-grid;
+    z-index:1;
+}
+#comoganhardinheiro .left-hash:before,
+#comoganhardinheiro .left-hash:after,
+#comoganhardinheiro .left-hash>:first-child:before,
+#comoganhardinheiro .left-hash>:first-child:after {
+    position:absolute;
+    width: 25vh;
+    height: 25vh;
+    border-color: rgb(var(--white));
+    border-style: solid;
+    content:' ';
+}
+#comoganhardinheiro .left-hash:before {top:0;left:0;border-width:4px 0 0 4px}
+#comoganhardinheiro .left-hash:after {top:0;right: 0;border-width:0 0 0 0}
+#comoganhardinheiro .left-hash>:first-child:before {bottom:0;right:0;border-width:0 4px 4px 0}
+#comoganhardinheiro .left-hash>:first-child:after {bottom:0;left:0;border-width:0 0 0 0}
+#comoganhardinheiro .left-hash img {
+    width: 35vh!important;
+}
 
-
-/* COMO GANHAR DINHEIRO - #comoganhardinheiro*/
-
-
-/* PASSOS DA PROSPERIDADE - #passosdaprosperidade .section004 */
-
+/* PASSOS DA PROSPERIDADE - #passosdaprosperidade */
+#passosdaprosperidade #section001 {
+    padding-top: 12rem;
+    background-color: rgb(var(--black));
+}
+#passosdaprosperidade #section001 h1 {
+    color: rgb(var(--white));
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+#passosdaprosperidade #section002 {
+    padding-top: 5rem;
+}
+#passosdaprosperidade #section002 .gridLine {
+    height: 37vh;
+}
+#passosdaprosperidade #section002 #card-video1 {
+    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/primeirosPassosNewBusinessModel-min.png);
+}
+#passosdaprosperidade #section002 #card-video1:hover {
+    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/primeirosPassosNewBusinessModel-min.png);
+}
+#passosdaprosperidade #section002 #card-video2 {
+    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/primeirosPassosTheExchangesThatMoveUs-min.png);
+}
+#passosdaprosperidade #section002 #card-video2:hover {
+    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/primeirosPassosTheExchangesThatMoveUs-min.png);
+}
+#passosdaprosperidade #section002 #card-video3 {
+    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/primeirosPassosHowToMakeMoney-min.png);
+}
+#passosdaprosperidade #section002 #card-video3:hover {
+    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/primeirosPassosHowToMakeMoney-min.png);
+}
+#passosdaprosperidade #section002 #card-video1,
+#passosdaprosperidade #section002 #card-video1:hover,
+#passosdaprosperidade #section002 #card-video2,
+#passosdaprosperidade #section002 #card-video2:hover,
+#passosdaprosperidade #section002 #card-video3,
+#passosdaprosperidade #section002 #card-video3:hover {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#passosdaprosperidade #section002 .card {
+    position: relative;
+    width: 33vw;
+    height: 35rem;
+    color: rgb(var(--gray5));
+    font-size: 140%;
+    line-height: 120%;;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0;
+    padding-bottom: 3rem;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    justify-content: end;
+    transition: all 0.5s ease;
+}
+#passosdaprosperidade #section002 .card i {
+    color: rgb(var(--red));
+    font-size: 300%;
+}
+#passosdaprosperidade #section002 .card:hover {
+    height: 37rem;
+    color: rgb(var(--violet));
+    padding-bottom: 6rem;
+}
+#passosdaprosperidade #section002 .card:hover i {
+    color: rgb(var(--violet));
+}
+#passosdaprosperidade #section003 .gridRight {
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+}
+#passosdaprosperidade #section003 .gridRight .table {
+    color: rgb(var(--gray1));
+}
+#passosdaprosperidade #section003 .gridRight .table > tbody > tr > td:first-child {
+    position:relative;
+}
+#passosdaprosperidade #section003 .gridRight .table > tbody > tr > td:first-child span {
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    width:1px;
+    height:100%;
+    margin:0 auto;
+    border:1px dashed rgb(var(--gray1));
+}
+#card-title1,
+#card-title2,
+#card-title3,
+#card-title4,
+#card-title5 {
+    font-size:3.2vh;
+    line-height:3.8vh;
+    font-weight:900;
+    transition:all .5s ease;
+}
+#card-content1,
+#card-content2,
+#card-content3,
+#card-content4,
+#card-content5 {
+    position:relative;
+}
+#card-content1:hover,
+#card-content2:hover,
+#card-content3:hover,
+#card-content4:hover,
+#card-content5:hover {
+    font-weight:900;
+}
+#card-card1 {
+    top:-5vh;
+    left:-55vh;
+    z-index:5;
+    background-image:url("../images/passos01PB-min.png");
+    transform:rotate(-15deg);
+}
+#card-card1:hover,
+#card-content1:hover > #card-card1 {
+    width:50vh;
+    height:68vh;
+    background-image:url("../images/passos01-min.png");
+    transform:rotate(0deg);
+    z-index:6;
+}
+#card-card2 {
+    top:-10vh;
+    left:-35vh;
+    z-index:4;
+    background-image:url("../images/passos02PB-min.png");
+    transform:rotate(30deg);
+}
+#card-card2:hover,
+#card-content2:hover > #card-card2 {
+    top:-20vh;
+    left:-55vh;
+    width:50vh;
+    height:68vh;
+    background-image:url("../images/passos02-min.png");
+    transform:rotate(0deg);
+    z-index:6;
+}
+#card-card3 {
+    top: -2vh;
+    left:-55vh;
+    z-index:3;
+    background-image:
+    url("../images/passos03PB-min.png");
+    transform:
+    rotate(-10deg);
+}
+#card-card3:hover,
+#card-content3:hover > #card-card3 {
+    top:-30vh;
+    left:-55vh;
+    width:50vh;
+    height:68vh;
+    background-image:url("../images/passos03-min.png");
+    transform:rotate(0deg);
+    z-index:6;
+}
+#card-card4 {
+    top:-20vh;
+    left:-35vh;
+    z-index:2;
+    background-image:url("../images/passos04PB-min.png");
+    transform:rotate(10deg);
+}
+#card-card4:hover,
+#card-content4:hover > #card-card4 {
+    top:-40vh;
+    left:-55vh;
+    width:50vh;
+    height:68vh;
+    background-image:url("../images/passos04-min.png");
+    transform:rotate(0deg);
+    z-index:6;
+}
+#card-card5 {
+    top:-20vh;
+    left:-50vh;
+    z-index:1;
+    background-image:url("../images/passos05PB-min.png");
+    transform:rotate(-15deg);
+}
+#card-card5:hover,
+#card-content5:hover > #card-card5 {
+    top:-60vh;
+    left:-55vh;
+    width:50vh;
+    height:68vh;
+    background-image:url("../images/passos05-min.png");
+    transform:rotate(0deg);
+    z-index:6;
+}
+#card-card1,
+#card-card2,
+#card-card3,
+#card-card4,
+#card-card5 {
+    position:absolute;
+    width:25vh;
+    height:31vh;
+    margin:0 auto;
+    background-position:top center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    cursor:pointer;
+    box-shadow:6px 6px 6px rgba(0, 0, 0, 0.25);
+    transition:all .5s ease;
+}
 
 /* TV FREEDOMEE - #tvfreedomee */
+
+
+/* SEJA UM PATROCINADOR - #sejaumpatrocinador */
 
 
 /* SEJA UM FRANQUEADO - #sejaumfranqueado*/
 
 
-/* SUBSCRIBE - #section-subscribe*/
+/* SUBSCRIBE - #section-subscribe */
 #section-subscribe {
     color: rgb(var(--gray5));
     margin-top: auto;
@@ -1072,6 +1595,60 @@ a:active {
     font-size:small;
 }
 /* FRAMEWORK - Bootstrap v5.2.0 */
+#comoganhardinheiro .modal-body,
+#sobrenosManifesto .modal-body,
+#video1 .modal-body,
+#video2 .modal-body,
+#video3 .modal-body {
+    height:100%;
+    padding:0;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+.modalFreedomeeUser ul,
+.modalFreedomeeUser li {
+    font-size: 120%;
+    line-height: 130%;
+    margin-bottom: 1rem;
+}
+.modalFreedomeeUser .table {
+    margin-bottom: 1rem;
+}
+.modalFreedomeeUser .pad1 {
+    padding:0.5rem 0.5rem 0.5rem 3rem;
+}
+.modalFreedomeeUser .pad2 {
+    padding:0.5rem 0.5rem 0.5rem 6rem;
+}
+.modalFreedomeeUser tr th {
+    text-align:left;
+    font-weight:300;
+}
+.modalFreedomeeUser .thright {
+    text-align:right;
+}
+.modalFreedomeeUser .table-hover tr:hover,
+.modalFreedomeeUser .table-hover tr:hover > .thright,
+.modalFreedomeeUser .table-hover tr:hover > th {
+    color:var(--amarelo);
+    background-color:var(--verde);
+    transition:all .5s ease;
+}
+.modalFreedomeeUser .grafico01 {
+    width:100%;
+    margin:0 auto;
+    transition:all .5s ease;
+}
+.modalFreedomeeUser .grafico02,
+.modalFreedomeeUser .grafico03,
+.modalFreedomeeUser .grafico04,
+.modalFreedomeeUser .grafico05,
+.modalFreedomeeUser .grafico06,
+.modalFreedomeeUser .grafico07 {
+    width:100%;
+    margin:0 auto;
+    transition:all .5s ease;
+}
 .btn:focus,.btn:active:focus,.btn.active:focus,
 .btn.focus,.btn:active.focus,.btn.active.focus {
     outline:none;
@@ -1189,6 +1766,9 @@ a:active {
         display: none;
         opacity: 0;
     }
+    #problemasesolucao #section005 .gridLine {
+        height: 22rem;
+    }
     #problemasesolucao #section005 .card {
         position: relative;
         min-width: 20rem;
@@ -1220,6 +1800,9 @@ a:active {
         text-align: center;
         padding-top: 8rem;
     }
+    #problemasesolucao #section007 .gridLine {
+        height: 22rem;
+    }
     #problemasesolucao #section007 .card {
         position: relative;
         min-width: 20rem;
@@ -1235,6 +1818,96 @@ a:active {
     #problemasesolucao #section007 #card-multiply::after,
     #problemasesolucao #section007 #card-humanize::after,
     #problemasesolucao #section007 #card-empower::after {
+        position: absolute;
+        top: 9.5rem;
+        right: -2.5rem;
+        content: '>';
+        font-size: 300%;
+        font-weight: 900;
+        color: rgb(var(--gray5));
+    }
+    #comoganhardinheiro #section002 .gridLine {
+        height: 22rem;
+    }
+    #comoganhardinheiro #section002 .card {
+        position: relative;
+        min-width: 20rem;
+        height: 20rem;
+    }
+    #comoganhardinheiro #section002 #card-user1,
+    #comoganhardinheiro #section002 #card-user2,
+    #comoganhardinheiro #section002 #card-user3,
+    #comoganhardinheiro #section002 #card-user4,
+    #comoganhardinheiro #section002 #card-user5,
+    #comoganhardinheiro #section002 #card-user6,
+    #comoganhardinheiro #section002 #card-user7 {
+        margin: 0 3rem 0 0;
+    }
+    #comoganhardinheiro #section002 #card-user1::after,
+    #comoganhardinheiro #section002 #card-user2::after,
+    #comoganhardinheiro #section002 #card-user3::after,
+    #comoganhardinheiro #section002 #card-user4::after,
+    #comoganhardinheiro #section002 #card-user5::after,
+    #comoganhardinheiro #section002 #card-user6::after,
+    #comoganhardinheiro #section002 #card-user7::after {
+        position: absolute;
+        top: 9.5rem;
+        right: -2.5rem;
+        content: '>';
+        font-size: 300%;
+        font-weight: 900;
+        color: rgb(var(--gray5));
+    }
+    #user1Content,
+    #user2Content,
+    #user3Content,
+    #user4Content,
+    #user5Content,
+    #user6Content,
+    #user7Content,
+    #user8Content {
+        background-color:rgba(65, 62, 62, 0.7);
+        display:flex;
+    }
+    #comoganhardinheiro .left-hash {
+        top: 4%;
+        right: 4%;
+        bottom: 4%;
+        left: 4%;
+    }
+    #comoganhardinheiro .table-left,
+    #comoganhardinheiro .table-right {
+        width:100%;
+        padding: 2vh 1rem;
+    }
+    #comoganhardinheiro .table-right {
+        justify-content:
+        start;
+    }
+    #passosdaprosperidade #section002 .gridLine {
+        height: 22rem;
+    }
+    #passosdaprosperidade #section002 .card {
+        position: relative;
+        min-width: 20rem;
+        height: 20rem;
+    }
+    #passosdaprosperidade #section002 #card-user1,
+    #passosdaprosperidade #section002 #card-user2,
+    #passosdaprosperidade #section002 #card-user3,
+    #passosdaprosperidade #section002 #card-user4,
+    #passosdaprosperidade #section002 #card-user5,
+    #passosdaprosperidade #section002 #card-user6,
+    #passosdaprosperidade #section002 #card-user7 {
+        margin: 0 3rem 0 0;
+    }
+    #passosdaprosperidade #section002 #card-user1::after,
+    #passosdaprosperidade #section002 #card-user2::after,
+    #passosdaprosperidade #section002 #card-user3::after,
+    #passosdaprosperidade #section002 #card-user4::after,
+    #passosdaprosperidade #section002 #card-user5::after,
+    #passosdaprosperidade #section002 #card-user6::after,
+    #passosdaprosperidade #section002 #card-user7::after {
         position: absolute;
         top: 9.5rem;
         right: -2.5rem;
