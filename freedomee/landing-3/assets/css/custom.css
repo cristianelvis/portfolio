@@ -495,6 +495,116 @@ a:active {
 #problemasesolucao #section001 .chart {
     width: 100%;
 }
+#problemasesolucao #cta1 {background-color: rgb(var(--gray4));}
+#problemasesolucao #cta2 {background-color: rgb(var(--gray4));}
+#problemasesolucao #cta1,
+#problemasesolucao #cta2 {
+    position: relative;
+    width: 0;
+    height: 20vh;
+    padding: 0;
+    margin: 0 0 auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    transition: all .5s ease;
+}
+#problemasesolucao #cta1::before,
+#problemasesolucao #cta2::before {
+    content: '';
+    position: absolute;
+    top: 4rem;
+    left: -4rem;
+    width: 4rem;
+    height: 4rem;
+    border: 1px dashed rgb(var(--gray5));
+    border-radius: 50%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    animation: pulse 2s infinite;
+    transition: all .5s ease;
+}
+#problemasesolucao #cta1::before {
+    background-color: rgb(var(--black));
+}
+#problemasesolucao #cta2::before {
+    background-color: rgb(var(--red));
+}
+#problemasesolucao #cta1:hover,
+#problemasesolucao #cta2:hover {
+    width: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    filter: grayscale(0%);
+}
+#problemasesolucao #cta2:hover {
+    height:35vh;
+}
+#problemasesolucao #cta1:hover::before,
+#problemasesolucao #cta2:hover::before {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0.5rem;
+    height: 20vh;
+    border:0;
+    border-radius: 0;
+    animation: none;
+}
+#problemasesolucao #cta2:hover::before {
+    height:35vh;
+}
+#problemasesolucao #cta1 .ctaMainContent,
+#problemasesolucao #cta2 .ctaMainContent {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    color: rgb(var(--gray1));
+    font-size: 140%;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 1px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: none;
+    flex-direction: column;
+    opacity: 0;
+    transition: all .5s ease;
+}
+#problemasesolucao #cta1:hover .ctaMainContent,
+#problemasesolucao #cta2:hover .ctaMainContent {
+    display: flex;
+    opacity: 1;
+    animation: fadeIn 2s 1;
+}
+#problemasesolucao #cta1 .ctaCallContent,
+#problemasesolucao #cta2 .ctaCallContent {
+    min-width: 25rem;
+    font-size: 140%;
+    font-weight: 600;
+    padding: 0.5rem;
+    border: 1px dashed;
+    border-color: transparent rgb(var(--gray5)) rgb(var(--gray5)) transparent;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    text-align: end;
+    transform: translate(-18rem, 0);
+    opacity: 1;
+    animation: fadeIn 2s 1;
+    transition: all .5s ease;
+    pointer-events: none;
+}
+#problemasesolucao #cta1:hover .ctaCallContent,
+#problemasesolucao #cta2:hover .ctaCallContent {
+    display: none;
+    opacity: 0;
+}
 #problemasesolucao #section002 {
     background-color: rgb(var(--black));
 }
@@ -663,7 +773,7 @@ a:active {
 }
 #problemasesolucao #section005 .quote::before {
     content: '"';
-    left:-25px
+    left:-25px;
 }
 #problemasesolucao #section005 .quote::after {
     content: '"';
@@ -768,18 +878,13 @@ a:active {
 #problemasesolucao #section005 .card-content h5 {
     font-weight: 400;
 }
-#content-economic {background-color: rgb(var(--yellow));}
-#content-human {background-color: rgb(var(--orange));}
-#content-anthropic {background-color: rgb(var(--green));}
-#content-technology {background-color: rgb(var(--blue));}
-#content-quality {background-color: rgb(var(--violet));}
-
-
-
-
-
+#problemasesolucao #section005 #content-economic {background-color: rgb(var(--yellow));}
+#problemasesolucao #section005 #content-human {background-color: rgb(var(--orange));}
+#problemasesolucao #section005 #content-anthropic {background-color: rgb(var(--green));}
+#problemasesolucao #section005 #content-technology {background-color: rgb(var(--blue));}
+#problemasesolucao #section005 #content-quality {background-color: rgb(var(--violet));}
 #problemasesolucao #section006 {
-    padding-top: 0;
+    padding-top: 8rem;
     padding-bottom: 0;
     background-image: url(../images/problemas-e-solucao-background-section-006-min.png);
     background-position: center center;
@@ -789,9 +894,9 @@ a:active {
     animation: backgroundScroll 85s linear infinite alternate;
 }
 #problemasesolucao #section006 .gridRight {
-    min-height: 65vh;
+    min-height: 75vh;
     background-image: url(../images/problemas-e-solucao-foto-section-006-min.png);
-    background-position: bottom center;
+    background-position: top center;
     background-repeat: no-repeat;
     background-size: 100%;
     justify-content: end;
@@ -799,13 +904,25 @@ a:active {
 }
 #problemasesolucao #section006 .gridLeft {
     color: rgb(var(--gray5));
+    justify-content: start;
     align-items: start;
     text-align: start;
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+}
+#problemasesolucao #section006 h2 {
+    color: rgb(var(--yellow));
+}
+#problemasesolucao #section006 h3 {
+    color: rgb(var(--violet));
+    text-decoration: underline;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease;
+}
+#problemasesolucao #section006 h3:hover {
+    color: rgb(var(--green));
+    text-decoration: none;
 }
 #problemasesolucao #section006 h4 {
-    margin-top: 1rem;
+    margin-bottom: 3rem;
 }
 #problemasesolucao #section006 ul {
     font-size: 140%;
@@ -814,116 +931,94 @@ a:active {
 #problemasesolucao #section006 .btn-outline-primary {
     width: 20rem;
 }
-#problemasesolucao #cta1 {background-color: rgb(var(--gray4));}
-#problemasesolucao #cta2 {background-color: rgb(var(--gray4));}
-#problemasesolucao #cta1,
-#problemasesolucao #cta2 {
-    position: relative;
-    width: 0;
-    height: 20vh;
-    padding: 0;
-    margin: 0 0 auto auto;
+#problemasesolucao #section007 {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: rgb(var(--gray3));
+}
+#problemasesolucao #section007 #card-encourage {
+    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/value1-min.png);
+}
+#problemasesolucao #section007 #card-encourage:hover {
+    background:linear-gradient(0deg, rgba(var(--gray1), 1), rgba(var(--gray1), 0.5)), url(../images/value1-min.png);
+}
+#problemasesolucao #section007 #card-multiply {
+    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/value2-min.png);
+}
+#problemasesolucao #section007 #card-multiply:hover {
+    background:linear-gradient(0deg, rgba(var(--gray1), 1), rgba(var(--gray1), 0.5)), url(../images/value2-min.png);
+}
+#problemasesolucao #section007 #card-humanize {
+    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/value3-min.png);
+}
+#problemasesolucao #section007 #card-humanize:hover {
+    background:linear-gradient(0deg, rgba(var(--gray1), 1), rgba(var(--gray1), 0.5)), url(../images/value3-min.png);
+}
+#problemasesolucao #section007 #card-empower {
+    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/value4-min.png);
+}
+#problemasesolucao #section007 #card-empower:hover {
+    background:linear-gradient(0deg, rgba(var(--gray1), 1), rgba(var(--gray1), 0.5)), url(../images/value4-min.png);
+}
+#problemasesolucao #section007 #card-thrive {
+    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/value5-min.png);
+}
+#problemasesolucao #section007 #card-thrive:hover {
+    background:linear-gradient(0deg, rgba(var(--gray1), 1), rgba(var(--gray1), 0.5)), url(../images/value5-min.png);
+}
+#problemasesolucao #section007 #card-encourage,
+#problemasesolucao #section007 #card-encourage:hover,
+#problemasesolucao #section007 #card-multiply,
+#problemasesolucao #section007 #card-multiply:hover,
+#problemasesolucao #section007 #card-humanize,
+#problemasesolucao #section007 #card-humanize:hover,
+#problemasesolucao #section007 #card-empower,
+#problemasesolucao #section007 #card-empower:hover,
+#problemasesolucao #section007 #card-thrive,
+#problemasesolucao #section007 #card-thrive:hover {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: start;
-    transition: all .5s ease;
 }
-#problemasesolucao #cta1::before,
-#problemasesolucao #cta2::before {
-    content: '';
-    position: absolute;
-    top: 4rem;
-    left: -4rem;
-    width: 4rem;
-    height: 4rem;
-    border: 1px dashed rgb(var(--gray5));
-    border-radius: 50%;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    animation: pulse 2s infinite;
-    transition: all .5s ease;
-}
-#problemasesolucao #cta1::before {
-    background-color: rgb(var(--black));
-}
-#problemasesolucao #cta2::before {
-    background-color: rgb(var(--red));
-}
-#problemasesolucao #cta1:hover,
-#problemasesolucao #cta2:hover {
-    width: 100%;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    filter: grayscale(0%);
-}
-#problemasesolucao #cta2:hover {
-    height:35vh;
-}
-#problemasesolucao #cta1:hover::before,
-#problemasesolucao #cta2:hover::before {
-    content: '';
-    top: 0;
-    left: 0;
-    width: 0.5rem;
-    height: 20vh;
-    border:0;
+#problemasesolucao #section007 .card {
+    position: relative;
+    width: 20vw;
+    height: 25rem;
+    color: rgb(var(--gray5));
+    padding: 0;
+    padding-top: 8rem;
+    margin: 0;
+    border: 0;
     border-radius: 0;
-    animation: none;
+    justify-content: start;
+    transition: all 0.5s ease;
 }
-#problemasesolucao #cta2:hover::before {
-    height:35vh;
+#problemasesolucao #section007 .card:hover {
+    color: rgb(var(--black));
+    padding-top: 9rem;
 }
-#problemasesolucao #cta1 .ctaMainContent,
-#problemasesolucao #cta2 .ctaMainContent {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    color: rgb(var(--gray1));
-    font-size: 140%;
-    font-weight: 400;
-    line-height: 120%;
-    letter-spacing: 1px;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    display: none;
+#problemasesolucao #section007 .wrap-cards-content {
+    position: relative;
+    z-index: 1;
+}
+#problemasesolucao #section007 .card-content {
+    color: rgb(var(--white));
+    padding: 2rem 3rem;
+    border-radius:0 0 0.6rem 0.6rem;
     flex-direction: column;
-    opacity: 0;
-    transition: all .5s ease;
+    justify-content: start;
+    align-content: start;
+    align-items: start;
+    text-align: start;
 }
-#problemasesolucao #cta1:hover .ctaMainContent,
-#problemasesolucao #cta2:hover .ctaMainContent {
-    display: flex;
-    opacity: 1;
-    animation: fadeIn 2s 1;
+#problemasesolucao #section007 .card-content h5 {
+    font-weight: 400;
 }
-#problemasesolucao #cta1 .ctaCallContent,
-#problemasesolucao #cta2 .ctaCallContent {
-    min-width: 25rem;
-    font-size: 140%;
-    font-weight: 600;
-    padding: 0.5rem;
-    border: 1px dashed;
-    border-color: transparent rgb(var(--gray5)) rgb(var(--gray5)) transparent;
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    text-align: end;
-    transform: translate(-18rem, 0);
-    opacity: 1;
-    animation: fadeIn 2s 1;
-    transition: all .5s ease;
-    pointer-events: none;
-}
-#problemasesolucao #cta1:hover .ctaCallContent,
-#problemasesolucao #cta2:hover .ctaCallContent {
-    display: none;
-    opacity: 0;
-}
+#problemasesolucao #section007 #content-encourage {background-color: rgb(var(--gray1));}
+#problemasesolucao #section007 #content-multiply {background-color: rgb(var(--gray1));}
+#problemasesolucao #section007 #content-humanize {background-color: rgb(var(--gray1));}
+#problemasesolucao #section007 #content-empower {background-color: rgb(var(--gray1));}
+#problemasesolucao #section007 #content-thrive {background-color: rgb(var(--gray1));}
 
 /* SEJA UM PATROCINADOR - #sejaumpatrocinador */
 
@@ -975,7 +1070,6 @@ a:active {
     width:fit-content;
     color: rgb(var(--gray5));
     font-size:small;
-    
 }
 /* FRAMEWORK - Bootstrap v5.2.0 */
 .btn:focus,.btn:active:focus,.btn.active:focus,
@@ -988,7 +1082,8 @@ a:active {
 .bs-popover-auto[data-popper-placement^=bottom]>.popover-arrow::after,.bs-popover-bottom>.popover-arrow::after{top:1px;border-width:0 .5rem .5rem .5rem;border-bottom-color: rgb(var(--violet));}
 .bs-popover-auto[data-popper-placement^=left]>.popover-arrow::after,.bs-popover-start>.popover-arrow::after{right:1px;border-width:.5rem 0 .5rem .5rem;border-left-color: rgb(var(--violet));}
 .popover-body {
-    color: rgb(var(--gray5));
+    color: rgb(var(--black));
+    font-size: 140%;
     background-color: rgb(var(--violet));
 }
 /* SMALL DEVICES */
@@ -1109,6 +1204,37 @@ a:active {
     #problemasesolucao #section005 #card-human::after,
     #problemasesolucao #section005 #card-anthropic::after,
     #problemasesolucao #section005 #card-technology::after {
+        position: absolute;
+        top: 9.5rem;
+        right: -2.5rem;
+        content: '>';
+        font-size: 300%;
+        font-weight: 900;
+        color: rgb(var(--gray5));
+    }
+    #problemasesolucao #section005 .quote::before {
+        left:50px;
+    }
+    #problemasesolucao #section006 .gridLeft {
+        align-items: center;
+        text-align: center;
+        padding-top: 8rem;
+    }
+    #problemasesolucao #section007 .card {
+        position: relative;
+        min-width: 20rem;
+        height: 20rem;
+    }
+    #problemasesolucao #section007 #card-encourage,
+    #problemasesolucao #section007 #card-multiply,
+    #problemasesolucao #section007 #card-humanize,
+    #problemasesolucao #section007 #card-empower {
+        margin: 0 3rem 0 0;
+    }
+    #problemasesolucao #section007 #card-encourage::after,
+    #problemasesolucao #section007 #card-multiply::after,
+    #problemasesolucao #section007 #card-humanize::after,
+    #problemasesolucao #section007 #card-empower::after {
         position: absolute;
         top: 9.5rem;
         right: -2.5rem;
