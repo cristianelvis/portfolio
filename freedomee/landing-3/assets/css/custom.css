@@ -146,6 +146,11 @@ p {
     font-size: 100%;
     color: rgb(var(--blue-dark));
 }
+.strong {
+    font-size: 160%;
+    font-weight: 900;
+}
+
 /* NAVBAR */
 #navtop,
 #navtopen,
@@ -1571,6 +1576,9 @@ a:active {
 .modalFreedomeE .right .content {
     padding: 3rem;
 }
+.modalFreedomeE .right .chart-content {
+    padding: 0.5rem;
+}
 .modalFreedomeE .table-left,
 .modalFreedomeE .table-right {
     width: 100%;
@@ -1595,7 +1603,7 @@ a:active {
 .modalFreedomeE .grafico04,
 .modalFreedomeE .grafico05,
 .modalFreedomeE .grafico06,
-.modalFreedomeE .grafico07 {
+.modalFreedomeE .grafico-comopodemosajudar {
     width:100%;
     margin:0 auto;
     transition:all .5s ease;
