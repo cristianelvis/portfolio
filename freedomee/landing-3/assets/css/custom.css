@@ -1231,28 +1231,27 @@ a:active {
     margin-bottom: 3rem;
 }
 #passosdaprosperidade #section002 {
-    padding-top:0;
-}
-#passosdaprosperidade #section002 .gridLine {
-    height: 35rem;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 #passosdaprosperidade #section002 #card-video1 {
-    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/primeirosPassosNewBusinessModel-min.png);
+    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/primeirosPassosWhatIsFredomeE-min.png);
 }
 #passosdaprosperidade #section002 #card-video1:hover {
-    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/primeirosPassosNewBusinessModel-min.png);
+    background:linear-gradient(0deg, rgba(var(--gray5), 0.5), rgba(var(--gray5), 0.5)), url(../images/primeirosPassosWhatIsFredomeE-min.png);
 }
 #passosdaprosperidade #section002 #card-video2 {
     background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/primeirosPassosTheExchangesThatMoveUs-min.png);
 }
 #passosdaprosperidade #section002 #card-video2:hover {
-    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/primeirosPassosTheExchangesThatMoveUs-min.png);
+    background:linear-gradient(0deg, rgba(var(--gray5), 0.5), rgba(var(--gray5), 0.5)), url(../images/primeirosPassosTheExchangesThatMoveUs-min.png);
 }
 #passosdaprosperidade #section002 #card-video3 {
-    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/primeirosPassosHowToMakeMoney-min.png);
+    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/primeirosPassosNewBusinessModel-min.png);
 }
 #passosdaprosperidade #section002 #card-video3:hover {
-    background:linear-gradient(0deg, rgba(var(--gray1), 0.5), rgba(var(--gray1), 0.5)), url(../images/primeirosPassosHowToMakeMoney-min.png);
+    background:linear-gradient(0deg, rgba(var(--gray5), 0.5), rgba(var(--gray5), 0.5)), url(../images/primeirosPassosNewBusinessModel-min.png);
+    transition: all 0.5s ease;
 }
 #passosdaprosperidade #section002 #card-video1,
 #passosdaprosperidade #section002 #card-video1:hover,
@@ -1264,21 +1263,24 @@ a:active {
     background-repeat: no-repeat;
     background-size: cover;
 }
+#passosdaprosperidade #section002 .gridLine {
+    height: 20rem;
+}
 #passosdaprosperidade #section002 .card {
     position: relative;
     width: 33vw;
-    height: 35rem;
+    height: 20rem;
     color: rgb(var(--gray5));
     font-size: 140%;
     line-height: 120%;;
     font-weight: 600;
     text-decoration: none;
     padding: 0;
-    padding-bottom: 3rem;
+    padding-top: 3rem;
     margin: 0;
     border: 0;
     border-radius: 0;
-    justify-content: end;
+    justify-content: center;
     transition: all 0.5s ease;
 }
 #passosdaprosperidade #section002 .card i {
@@ -1286,12 +1288,11 @@ a:active {
     font-size: 300%;
 }
 #passosdaprosperidade #section002 .card:hover {
-    height: 37rem;
-    color: rgb(var(--violet));
-    padding-bottom: 6rem;
+    height: 20rem;
+    color: rgb(var(--gray1));
 }
 #passosdaprosperidade #section002 .card:hover i {
-    color: rgb(var(--violet));
+    color: rgb(var(--gray1));
 }
 #passosdaprosperidade #section003 .gridRight {
     justify-content: start;
@@ -1517,188 +1518,108 @@ a:active {
     color: rgb(var(--gray5));
     font-size:small;
 }
-/* FRAMEWORK - Bootstrap v5.2.0 */
-.modalFreedomeeUser .modal-body {
+
+/* MODAL FREEDOMEE */
+
+.modalFreedomeE .modal-body {
     height:100%;
     padding:0;
     overflow-x:hidden;
     overflow-y:auto;
 }
-.modalFreedomeeUser ul,
-.modalFreedomeeUser li {
-    font-size: 120%;
-    line-height: 130%;
-    margin-bottom: 1rem;
-}
-.modalFreedomeeUser .table {
-    margin-bottom: 1rem;
-}
-.modalFreedomeeUser .pad1 {
-    padding:0.5rem 0.5rem 0.5rem 3rem;
-}
-.modalFreedomeeUser .pad2 {
-    padding:0.5rem 0.5rem 0.5rem 6rem;
-}
-.modalFreedomeeUser tr th {
-    text-align:left;
-    font-weight:300;
-}
-.modalFreedomeeUser .thright {
-    text-align:right;
-}
-.modalFreedomeeUser .table-hover tr:hover,
-.modalFreedomeeUser .table-hover tr:hover > .thright,
-.modalFreedomeeUser .table-hover tr:hover > th {
-    color:var(--amarelo);
-    background-color:var(--verde);
-    transition:all .5s ease;
-}
-.modalFreedomeeUser .grafico01 {
-    width:100%;
-    margin:0 auto;
-    transition:all .5s ease;
-}
-.modalFreedomeeUser .grafico02,
-.modalFreedomeeUser .grafico03,
-.modalFreedomeeUser .grafico04,
-.modalFreedomeeUser .grafico05,
-.modalFreedomeeUser .grafico06,
-.modalFreedomeeUser .grafico07 {
-    width:100%;
-    margin:0 auto;
-    transition:all .5s ease;
-}
-#user1Content,
-#user2Content,
-#user3Content,
-#user4Content,
-#user5Content,
-#user6Content,
-#user7Content,
-#user8Content {
-    position:relative;
-    bottom: 0;
-    width:100%;
-    height:100%;
-    font-size:100%;
-    color: var(--gray5)!important;
-    padding:1vh;
-    display:none;
-    flex-direction: column;
-    justify-content:center;
-    align-items:center;
-    border-radius:0;
-    animation: bottomIn 2s 1;
-}
-#user1Content span,
-#user2Content span,
-#user3Content span,
-#user4Content span,
-#user5Content span,
-#user6Content span,
-#user7Content span,
-#user8Content span {
-    color:var(--gray5);
-    font-size:120%;
-    font-weight:900;
-    text-transform:uppercase;
-    margin-top:1vh;
-}
-#saibaMaisSobreAFrancesca .left {
+#aboutFrancescaGiobbi .left {
     background-image:url(../images/problems-and-solution-section-003-photo-min.png);
 }
-#user1ContentUS .left,
-#user1ContentES .left,
-#user1ContentBR .left {
+#user1 .left {
     background-image:url(../images/user1-min.png);
 }
-#user2ContentUS .left,
-#user2ContentES .left,
-#user2ContentBR .left {
+#user2 .left {
     background-image:url(../images/user2-min.png);
 }
-#user3ContentUS .left,
-#user3ContentES .left,
-#user3ContentBR .left {
+#user3 .left {
     background-image:url(../images/user3-min.png);
 }
-#user4ContentUS .left,
-#user4ContentES .left,
-#user4ContentBR .left {
+#user4 .left {
     background-image:url(../images/user4-min.png);
 }
-#user5ContentUS .left,
-#user5ContentES .left,
-#user5ContentBR .left {
+#user5 .left {
     background-image:url(../images/user5-min.png);
 }
-#user6ContentUS .left,
-#user6ContentES .left,
-#user6ContentBR .left {
+#user6 .left {
     background-image:url(../images/user6-min.png);
 }
-#user7ContentUS .left,
-#user7ContentES .left,
-#user7ContentBR .left {
+#user7 .left {
     background-image:url(../images/user7-min.png);
 }
-#user8ContentUS .left,
-#user8ContentES .left,
-#user8ContentBR .left {
+#user8 .left {
     background-image:url(../images/user8-min.png);
 }
-#saibaMaisSobreAFrancesca .left,
-#user1ContentUS .left,
-#user2ContentUS .left,
-#user3ContentUS .left,
-#user4ContentUS .left,
-#user5ContentUS .left,
-#user6ContentUS .left,
-#user7ContentUS .left,
-#user8ContentUS .left,
-#user1ContentES .left,
-#user2ContentES .left,
-#user3ContentES .left,
-#user4ContentES .left,
-#user5ContentES .left,
-#user6ContentES .left,
-#user7ContentES .left,
-#user8ContentES .left,
-#user1ContentBR .left,
-#user2ContentBR .left,
-#user3ContentBR .left,
-#user4ContentBR .left,
-#user5ContentBR .left,
-#user6ContentBR .left,
-#user7ContentBR .left,
-#user8ContentBR .left {
+.modalFreedomeE .left {
     height:100vh;
-    background-position:center center;
-    background-repeat:no-repeat;
-    background-size:cover;
-    overflow-x:hidden;
-    overflow-y:hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
-.modal-body .right {
+.modalFreedomeE .right {
     height:100vh;
-    padding:6rem 1rem 1rem 1rem;
+    padding: 0;
     overflow-x:hidden;
     overflow-y:scroll;
 }
-.modal-body .table-left,
-.modal-body .table-right {
+.modalFreedomeE .right .content {
+    padding: 3rem;
+}
+.modalFreedomeE .table-left,
+.modalFreedomeE .table-right {
     width: 100%;
-    padding: 1rem 0 1rem 1rem;
+    padding: 1rem 3rem 1rem 3rem;
     background-color: rgb(var(--orange));
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
 }
-.modal-body .table-right {
-    padding:0;
+.modalFreedomeE #tableMoreAboutFrancesca {
+    margin-top: 6rem;
 }
-.left-hash,
-.left-hash-black {
+.modalFreedomeE #tableMoreAboutFrancesca td {
+    padding-right: 0;
+}
+.modalFreedomeE #tableMoreAboutFrancesca td p {
+    padding-right: 1.5rem;
+}
+.modalFreedomeE .grafico01,
+.modalFreedomeE .grafico02,
+.modalFreedomeE .grafico03,
+.modalFreedomeE .grafico04,
+.modalFreedomeE .grafico05,
+.modalFreedomeE .grafico06,
+.modalFreedomeE .grafico07 {
+    width:100%;
+    margin:0 auto;
+    transition:all .5s ease;
+}
+.modalFreedomeE table {
+    margin-bottom: 1rem;
+}
+.modalFreedomeE tr th {
+    text-align: left;
+    font-weight: 400;
+}
+.modalFreedomeE .thright {
+    font-weight: 900;
+    text-align:right;
+}
+.modalFreedomeE .table-hover tr:hover,
+.modalFreedomeE .table-hover tr:hover > .thright,
+.modalFreedomeE .table-hover tr:hover > th {
+    color: rgb(var(--yellow));
+    background-color: rgb(var(--green));
+    transition:all .5s ease;
+}
+.modalFreedomeE .hashtag,
+.modalFreedomeE .hashtag-black {
     position: absolute;
     top: 4%;
     right: 54%;
@@ -1709,14 +1630,14 @@ a:active {
     display: inline-grid;
     z-index:1;
 }
-.left-hash:before,
-.left-hash:after,
-.left-hash>:first-child:before,
-.left-hash>:first-child:after,
-.left-hash-black:before,
-.left-hash-black:after,
-.left-hash-black>:first-child:before,
-.left-hash-black>:first-child:after {
+.modalFreedomeE .hashtag:before,
+.modalFreedomeE .hashtag:after,
+.modalFreedomeE .hashtag>:first-child:before,
+.modalFreedomeE .hashtag>:first-child:after,
+.modalFreedomeE .hashtag-black:before,
+.modalFreedomeE .hashtag-black:after,
+.modalFreedomeE .hashtag-black>:first-child:before,
+.modalFreedomeE .hashtag-black>:first-child:after {
     position:absolute;
     width: 25vh;
     height: 25vh;
@@ -1724,24 +1645,36 @@ a:active {
     border-style: solid;
     content:' ';
 }
-.left-hash-black:before,
-.left-hash-black:after,
-.left-hash-black>:first-child:before,
-.left-hash-black>:first-child:after {
+.modalFreedomeE .hashtag-black:before,
+.modalFreedomeE .hashtag-black:after,
+.modalFreedomeE .hashtag-black>:first-child:before,
+.modalFreedomeE .hashtag-black>:first-child:after {
     border-color: rgb(var(--gray1));
 }
-.left-hash:before,
-.left-hash-black:before {top:0;left:0;border-width:4px 0 0 4px}
-.left-hash:after,
-.left-hash-black:after {top:0;right: 0;border-width:0 0 0 0}
-.left-hash>:first-child:before,
-.left-hash-black>:first-child:before {bottom:0;right:0;border-width:0 4px 4px 0}
-.left-hash>:first-child:after,
-.left-hash-black>:first-child:after {bottom:0;left:0;border-width:0 0 0 0}
-.left-hash img,
-.left-hash-black img {
+.modalFreedomeE .hashtag:before,
+.modalFreedomeE .hashtag-black:before {top:0;left:0;border-width:4px 0 0 4px}
+.modalFreedomeE .hashtag:after,
+.modalFreedomeE .hashtag-black:after {top:0;right: 0;border-width:0 0 0 0}
+.modalFreedomeE .hashtag>:first-child:before,
+.modalFreedomeE .hashtag-black>:first-child:before {bottom:0;right:0;border-width:0 4px 4px 0}
+.modalFreedomeE .hashtag>:first-child:after,
+.modalFreedomeE .hashtag-black>:first-child:after {bottom:0;left:0;border-width:0 0 0 0}
+.modalFreedomeE .hashtag img,
+.modalFreedomeE .hashtag-black img {
     width: 18rem;
 }
+.modalFreedomeE iframe {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    animation: fadeIn 5s ease;
+}
+
+/* FRAMEWORK - Bootstrap v5.2.0 */
 .btn:focus,.btn:active:focus,.btn.active:focus,
 .btn.focus,.btn:active.focus,.btn.active.focus {
     outline:none;
@@ -1758,7 +1691,238 @@ a:active {
 }
 /* SMALL DEVICES */
 @media screen and (max-width: 576px) {
-    Removi para ajustes...
+    .gridLeft,
+    .gridRight {
+        align-items: center;
+        text-align: center;
+    }
+    .gridLine {
+        justify-content: start;
+    }
+    .responsiveLine {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        overflow-x: scroll;
+    }
+    .navbar-collapse {
+        text-align:center;
+    }
+    #navbarNavDropdownFooter {
+        position: absolute;
+        left:0;
+        bottom:42px;
+        right:0;
+        background-color: rgb(var(--gray3));
+    }
+    .nav-item {
+        padding:1rem 2rem;
+    }
+    .dropdown-item {
+        text-align:center;
+    }
+    .btn-nav {
+        padding: 0.5rem 1rem;
+    }
+    #inicio #cta1,
+    #inicio #cta2,
+    #inicio #cta3,
+    #inicio #cta4 {
+        width: 100%;
+    }
+    #inicio #cta1::before,
+    #inicio #cta2::before,
+    #inicio #cta3::before,
+    #inicio #cta4::before {
+        top: 0;
+        left: 0;
+        width: 0.5rem;
+        height: 20vh;
+        border: 0;
+        border-radius: 0;
+        animation: none;
+    }
+    #inicio #cta1 .ctaMainContent,
+    #inicio #cta2 .ctaMainContent,
+    #inicio #cta3 .ctaMainContent,
+    #inicio #cta4 .ctaMainContent {
+        display: flex;
+        opacity: 1;
+    }
+    #inicio #cta1 .ctaCallContent,
+    #inicio #cta2 .ctaCallContent,
+    #inicio #cta3 .ctaCallContent,
+    #inicio #cta4 .ctaCallContent {
+        display: none;
+        opacity: 0;
+    }
+    #problemasesolucao #cta1,
+    #problemasesolucao #cta2 {
+        width: 100%;
+        height: 35vh;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-bottom: 2rem;
+    }
+    #problemasesolucao #cta1::before,
+    #problemasesolucao #cta2::before {
+        top: 0;
+        left: 0;
+        width: 0.5rem;
+        height: 35vh;
+        border: 0;
+        border-radius: 0;
+        animation: none;
+    }
+    #problemasesolucao #cta1:hover::before {
+        height:35vh;
+    }
+    #problemasesolucao #cta2,
+    #problemasesolucao #cta2::before,
+    #problemasesolucao #cta2:hover,
+    #problemasesolucao #cta2:hover::before {
+        height:65vh;
+    }    
+    #problemasesolucao #cta1 .ctaMainContent,
+    #problemasesolucao #cta2 .ctaMainContent {
+        display: flex;
+        opacity: 1;
+    }
+    #problemasesolucao #cta1 .ctaCallContent,
+    #problemasesolucao #cta2 .ctaCallContent {
+        display: none;
+        opacity: 0;
+    }
+    #problemasesolucao #section005 .gridLine {
+        height: 22rem;
+    }
+    #problemasesolucao #section005 .card {
+        position: relative;
+        min-width: 20rem;
+        height: 20rem;
+    }
+    #problemasesolucao #section005 #card-economic,
+    #problemasesolucao #section005 #card-human,
+    #problemasesolucao #section005 #card-anthropic,
+    #problemasesolucao #section005 #card-technology {
+        margin: 0 3rem 0 0;
+    }
+    #problemasesolucao #section005 #card-economic::after,
+    #problemasesolucao #section005 #card-human::after,
+    #problemasesolucao #section005 #card-anthropic::after,
+    #problemasesolucao #section005 #card-technology::after {
+        position: absolute;
+        top: 9.5rem;
+        right: -2.5rem;
+        content: '>';
+        font-size: 300%;
+        font-weight: 900;
+        color: rgb(var(--gray5));
+    }
+    #problemasesolucao #section005 .quote::before {
+        left:50px;
+    }
+    #problemasesolucao #section006 .gridLeft {
+        align-items: center;
+        text-align: center;
+    }
+    #problemasesolucao #section007 .gridLine {
+        height: 22rem;
+    }
+    #problemasesolucao #section007 .card {
+        position: relative;
+        min-width: 20rem;
+        height: 20rem;
+    }
+    #problemasesolucao #section007 #card-encourage,
+    #problemasesolucao #section007 #card-multiply,
+    #problemasesolucao #section007 #card-humanize,
+    #problemasesolucao #section007 #card-empower {
+        margin: 0 3rem 0 0;
+    }
+    #problemasesolucao #section007 #card-encourage::after,
+    #problemasesolucao #section007 #card-multiply::after,
+    #problemasesolucao #section007 #card-humanize::after,
+    #problemasesolucao #section007 #card-empower::after {
+        position: absolute;
+        top: 9.5rem;
+        right: -2.5rem;
+        content: '>';
+        font-size: 300%;
+        font-weight: 900;
+        color: rgb(var(--gray5));
+    }
+    #comoganhardinheiro #section002 .gridLine {
+        height: 22rem;
+    }
+    #comoganhardinheiro #section002 .card {
+        position: relative;
+        min-width: 20rem;
+        height: 20rem;
+    }
+    #comoganhardinheiro #section002 #card-user1,
+    #comoganhardinheiro #section002 #card-user2,
+    #comoganhardinheiro #section002 #card-user3,
+    #comoganhardinheiro #section002 #card-user4,
+    #comoganhardinheiro #section002 #card-user5,
+    #comoganhardinheiro #section002 #card-user6,
+    #comoganhardinheiro #section002 #card-user7 {
+        margin: 0 3rem 0 0;
+    }
+    #comoganhardinheiro #section002 #card-user1::after,
+    #comoganhardinheiro #section002 #card-user2::after,
+    #comoganhardinheiro #section002 #card-user3::after,
+    #comoganhardinheiro #section002 #card-user4::after,
+    #comoganhardinheiro #section002 #card-user5::after,
+    #comoganhardinheiro #section002 #card-user6::after,
+    #comoganhardinheiro #section002 #card-user7::after {
+        position: absolute;
+        top: 9.5rem;
+        right: -2.5rem;
+        content: '>';
+        font-size: 300%;
+        font-weight: 900;
+        color: rgb(var(--gray5));
+    }
+    #passosdaprosperidade #section002 .gridLine {
+        height: 22rem;
+    }
+    #passosdaprosperidade #section002 .card {
+        position: relative;
+        min-width: 20rem;
+        height: 20rem;
+    }
+    #passosdaprosperidade #section002 #card-video1,
+    #passosdaprosperidade #section002 #card-video2,
+    #passosdaprosperidade #section002 #card-video3 {
+        margin: 0 3rem 0 0;
+    }
+    #passosdaprosperidade #section002 #card-video1::after,
+    #passosdaprosperidade #section002 #card-video2::after,
+    #passosdaprosperidade #section002 #card-video3::after {
+        position: absolute;
+        top: 9.5rem;
+        right: -2.5rem;
+        content: '>';
+        font-size: 300%;
+        font-weight: 900;
+        color: rgb(var(--gray1));
+    }
+    #sejaumfranqueado #section002 {
+        background-position: top left;
+    }
+    #sejaumfranqueado #section002 .gridLeft {
+        height: 50vh;
+        justify-content: start;
+        align-items: start;
+        text-align: start;
+    }
+    .modalFreedomeE .hashtag,
+    .modalFreedomeE .hashtag-black {
+        top: 4%;
+        right: 4%;
+        bottom: 4%;
+        left: 4%;
+    }
 }
 /* ANIMATIONS */
 @keyframes topIn {
