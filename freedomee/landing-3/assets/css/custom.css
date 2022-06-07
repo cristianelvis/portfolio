@@ -1480,7 +1480,7 @@ a:active {
     background-image: url(../images/sponsor-section-002-background-min.png);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 150%;
+    background-size: cover;
 }
 
 #sejaumpatrocinador #section002 .gridLeft {
@@ -1938,6 +1938,9 @@ a:active {
         justify-content: start;
         align-items: start;
         text-align: start;
+    }
+    #sejaumpatrocinador #section002 {
+        background-position: top left;
     }
     .modalFreedomeE .hashtag,
     .modalFreedomeE .hashtag-black {
