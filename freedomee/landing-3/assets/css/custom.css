@@ -1577,7 +1577,7 @@ a:active {
     padding: 3rem;
 }
 .modalFreedomeE .right .chart-content {
-    padding: 0.5rem;
+    padding: 0 2rem 0 2rem;
 }
 .modalFreedomeE .table-left,
 .modalFreedomeE .table-right {
@@ -1609,21 +1609,21 @@ a:active {
     transition:all .5s ease;
 }
 .modalFreedomeE table {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 .modalFreedomeE tr th {
     text-align: left;
     font-weight: 400;
 }
 .modalFreedomeE .thright {
-    font-weight: 900;
+    font-weight: 600;
     text-align:right;
 }
 .modalFreedomeE .table-hover tr:hover,
 .modalFreedomeE .table-hover tr:hover > .thright,
 .modalFreedomeE .table-hover tr:hover > th {
-    color: rgb(var(--yellow));
-    background-color: rgb(var(--green));
+    color: rgb(var(--gray5));
+    background-color: rgb(var(--gray1));
     transition:all .5s ease;
 }
 .modalFreedomeE .hashtag,
