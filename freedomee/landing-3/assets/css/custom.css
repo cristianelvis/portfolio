@@ -1693,6 +1693,7 @@ a:active {
 .bs-popover-auto[data-popper-placement^=bottom]>.popover-arrow::after,.bs-popover-bottom>.popover-arrow::after{top:1px;border-width:0 .5rem .5rem .5rem;border-bottom-color: rgb(var(--violet));}
 .bs-popover-auto[data-popper-placement^=left]>.popover-arrow::after,.bs-popover-start>.popover-arrow::after{right:1px;border-width:.5rem 0 .5rem .5rem;border-left-color: rgb(var(--violet));}
 .popover-body {
+    font-family: 'Montserrat', Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
     color: rgb(var(--black));
     font-size: 140%;
     background-color: rgb(var(--violet));
@@ -1727,9 +1728,13 @@ a:active {
     }
     .dropdown-item {
         text-align:center;
+        padding-bottom: 2rem;
     }
     .btn-nav {
         padding: 0.5rem 1rem;
+    }
+    #inicio .gridLeft {
+        margin-bottom: 6rem;
     }
     #inicio #cta1,
     #inicio #cta2,
@@ -1762,6 +1767,10 @@ a:active {
     #inicio #cta4 .ctaCallContent {
         display: none;
         opacity: 0;
+    }
+    #problemasesolucao #section001 .gridLeft,
+    #problemasesolucao #section001 .gridRight {
+        height: min-content;
     }
     #problemasesolucao #cta1,
     #problemasesolucao #cta2 {
