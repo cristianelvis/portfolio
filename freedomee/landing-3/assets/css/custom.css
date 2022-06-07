@@ -1942,6 +1942,11 @@ a:active {
     #sejaumpatrocinador #section002 {
         background-position: top left;
     }
+    #sejaumpatrocinador #section002 .gridLeft {
+        justify-content: start;
+        align-items: start;
+        text-align: start;
+    }
     .modalFreedomeE .hashtag,
     .modalFreedomeE .hashtag-black {
         top: 4%;
