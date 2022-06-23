@@ -1,0 +1,592 @@
+<div class="container-fluid">
+    <div class="row banner">
+        <div class="col-xs-12 col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-10 offset-lg-1">
+            <div class="row">
+                <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 grid-left">
+                    <h1><i class="bi bi-search"></i> Consultar solicitações</h1>
+                </div>
+                <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 grid-right">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-floating mb-3">
+                        <input type="text" class="form-control shadow-none" placeholder="" value="NOME DO GESTOR(A)" id="solicitante" disabled>
+                        <label for="solicitante">Pesquisador(a):</label>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-floating mb-3">
+                        <input type="text" class="form-control shadow-none" placeholder="" value="00/00/0000" id="dataSolicitacao" disabled>
+                        <label for="dataSolicitacao">Data da Consulta:</label>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-floating mb-3">
+                        <input type="text" class="form-control shadow-none" placeholder="" value="00000000" id="dataSolicitacao" disabled>
+                        <label for="dataSolicitacao">Número da Consulta:</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-10 offset-lg-1">
+            <div class="content-panel">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h1 class="text-start">Resultado da Consulta</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="tabs-responsive">
+                        <ul class="nav nav-tabs justify-content-center" role="tablist">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link active" role="tab" aria-selected="true" data-bs-toggle="tab" data-bs-target="#SolicitacoesEmAberto" aria-controls="SolicitacoesEmAberto" id="SolicitacoesEmAberto-tab">Aberto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" role="tab" aria-selected="true" data-bs-toggle="tab" data-bs-target="#SolicitacoesFinalizadas" aria-controls="SolicitacoesFinalizadas" id="SolicitacoesFinalizadas-tab">Finalizadas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" role="tab" aria-selected="true" data-bs-toggle="tab" data-bs-target="#SolicitacoesCanceladas" aria-controls="SolicitacoesCanceladas" id="SolicitacoesCanceladas-tab">Canceladas</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="SolicitacoesEmAberto-tab" id="SolicitacoesEmAberto">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover align-middle table-position" id="tableResultadoConsulta">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Número</th>
+                                                    <th class="text-start" scope="col">Solicitação</th>
+                                                    <th class="text-start" scope="col">Solicitante</th>
+                                                    <th scope="col">Atividade atual</th>
+                                                    <th scope="col">Responsável atividade atual</th>
+                                                    <th scope="col">Detalhes da solicitação</th>
+                                                    <th scope="col">Exportar Solicitação</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>00000000</td>
+                                                    <td class="text-start">Tipo de solicitação</td>
+                                                    <td class="text-start">Nome sobrenome do(a) solicitante</td>
+                                                    <td>Atividade atual?</td>
+                                                    <td>Nome sobrenome do(a)</td>
+                                                    <td><a href="#" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-html="true" data-bs-content="1 - What is Lorem Ipsum?<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."><i class="fa-solid fa-circle-question"></i></a></td>
+                                                    <td><a href="#" class="export"><i class="fa-solid fa-file-pdf"></i> Exportar</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000000</td>
+                                                    <td class="text-start">Tipo de solicitação</td>
+                                                    <td class="text-start">Nome sobrenome do(a) solicitante</td>
+                                                    <td>Atividade atual?</td>
+                                                    <td>Nome sobrenome do(a)</td>
+                                                    <td><a href="#" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-html="true" data-bs-content="2 - What is Lorem Ipsum?<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."><i class="fa-solid fa-circle-question"></i></a></td>
+                                                    <td><a href="#" class="export"><i class="fa-solid fa-file-pdf"></i> Exportar</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000000</td>
+                                                    <td class="text-start">Tipo de solicitação</td>
+                                                    <td class="text-start">Nome sobrenome do(a) solicitante</td>
+                                                    <td>Atividade atual?</td>
+                                                    <td>Nome sobrenome do(a)</td>
+                                                    <td><a href="#" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-html="true" data-bs-content="3 - What is Lorem Ipsum?<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."><i class="fa-solid fa-circle-question"></i></a></td>
+                                                    <td><a href="#" class="export"><i class="fa-solid fa-file-pdf"></i> Exportar</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000000</td>
+                                                    <td class="text-start">Tipo de solicitação</td>
+                                                    <td class="text-start">Nome sobrenome do(a) solicitante</td>
+                                                    <td>Atividade atual?</td>
+                                                    <td>Nome sobrenome do(a)</td>
+                                                    <td><a href="#" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-html="true" data-bs-content="4 - What is Lorem Ipsum?<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."><i class="fa-solid fa-circle-question"></i></a></td>
+                                                    <td><a href="#" class="export"><i class="fa-solid fa-file-pdf"></i> Exportar</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000000</td>
+                                                    <td class="text-start">Tipo de solicitação</td>
+                                                    <td class="text-start">Nome sobrenome do(a) solicitante</td>
+                                                    <td>Atividade atual?</td>
+                                                    <td>Nome sobrenome do(a)</td>
+                                                    <td><a href="#" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-html="true" data-bs-content="5 - What is Lorem Ipsum?<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."><i class="fa-solid fa-circle-question"></i></a></td>
+                                                    <td><a href="#" class="export"><i class="fa-solid fa-file-pdf"></i> Exportar</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000000</td>
+                                                    <td class="text-start">Tipo de solicitação</td>
+                                                    <td class="text-start">Nome sobrenome do(a) solicitante</td>
+                                                    <td>Atividade atual?</td>
+                                                    <td>Nome sobrenome do(a)</td>
+                                                    <td><a href="#" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-html="true" data-bs-content="6 - What is Lorem Ipsum?<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."><i class="fa-solid fa-circle-question"></i></a></td>
+                                                    <td><a href="#" class="export"><i class="fa-solid fa-file-pdf"></i> Exportar</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000000</td>
+                                                    <td class="text-start">Tipo de solicitação</td>
+                                                    <td class="text-start">Nome sobrenome do(a) solicitante</td>
+                                                    <td>Atividade atual?</td>
+                                                    <td>Nome sobrenome do(a)</td>
+                                                    <td><a href="#" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-html="true" data-bs-content="7 - What is Lorem Ipsum?<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."><i class="fa-solid fa-circle-question"></i></a></td>
+                                                    <td><a href="#" class="export"><i class="fa-solid fa-file-pdf"></i> Exportar</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000000</td>
+                                                    <td class="text-start">Tipo de solicitação</td>
+                                                    <td class="text-start">Nome sobrenome do(a) solicitante</td>
+                                                    <td>Atividade atual?</td>
+                                                    <td>Nome sobrenome do(a)</td>
+                                                    <td><a href="#" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-html="true" data-bs-content="8 - What is Lorem Ipsum?<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."><i class="fa-solid fa-circle-question"></i></a></td>
+                                                    <td><a href="#" class="export"><i class="fa-solid fa-file-pdf"></i> Exportar</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000000</td>
+                                                    <td class="text-start">Tipo de solicitação</td>
+                                                    <td class="text-start">Nome sobrenome do(a) solicitante</td>
+                                                    <td>Atividade atual?</td>
+                                                    <td>Nome sobrenome do(a)</td>
+                                                    <td><a href="#" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-html="true" data-bs-content="9 - What is Lorem Ipsum?<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."><i class="fa-solid fa-circle-question"></i></a></td>
+                                                    <td><a href="#" class="export"><i class="fa-solid fa-file-pdf"></i> Exportar</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000000</td>
+                                                    <td class="text-start">Tipo de solicitação</td>
+                                                    <td class="text-start">Nome sobrenome do(a) solicitante</td>
+                                                    <td>Atividade atual?</td>
+                                                    <td>Nome sobrenome do(a)</td>
+                                                    <td><a href="#" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-html="true" data-bs-content="10 - What is Lorem Ipsum?<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."><i class="fa-solid fa-circle-question"></i></a></td>
+                                                    <td><a href="#" class="export"><i class="fa-solid fa-file-pdf"></i> Exportar</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000000</td>
+                                                    <td class="text-start">Tipo de solicitação</td>
+                                                    <td class="text-start">Nome sobrenome do(a) solicitante</td>
+                                                    <td>Atividade atual?</td>
+                                                    <td>Nome sobrenome do(a)</td>
+                                                    <td><a href="#" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-html="true" data-bs-content="11 - What is Lorem Ipsum?<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."><i class="fa-solid fa-circle-question"></i></a></td>
+                                                    <td><a href="#" class="export"><i class="fa-solid fa-file-pdf"></i> Exportar</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000000</td>
+                                                    <td class="text-start">Tipo de solicitação</td>
+                                                    <td class="text-start">Nome sobrenome do(a) solicitante</td>
+                                                    <td>Atividade atual?</td>
+                                                    <td>Nome sobrenome do(a)</td>
+                                                    <td><a href="#" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-html="true" data-bs-content="12 - What is Lorem Ipsum?<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."><i class="fa-solid fa-circle-question"></i></a></td>
+                                                    <td><a href="#" class="export"><i class="fa-solid fa-file-pdf"></i> Exportar</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <nav aria-label="Page navigation">
+                                        <ul class="pagination justify-content-center">
+                                            <li class="page-item disabled">
+                                                <a class="page-link shadow-none">Anterior</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link shadow-none" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link shadow-none" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link shadow-none" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link shadow-none" href="#">Próxima</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" role="tabpanel" aria-labelledby="SolicitacoesFinalizadas-tab" id="SolicitacoesFinalizadas">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover align-middle table-position" id="tableResultadoConsulta">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Número</th>
+                                                    <th class="text-start" scope="col">Solicitação</th>
+                                                    <th class="text-start" scope="col">Solicitante</th>
+                                                    <th scope="col">Atividade atual</th>
+                                                    <th scope="col">Responsável atividade atual</th>
+                                                    <th scope="col">Detalhes da solicitação</th>
+                                                    <th scope="col">Exportar Solicitação</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>00000000</td>
+                                                    <td class="text-start">Tipo de solicitação</td>
+                                                    <td class="text-start">Nome sobrenome do(a) solicitante</td>
+                                                    <td>Atividade atual?</td>
+                                                    <td>Nome sobrenome do(a)</td>
+                                                    <td><a href="#" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-html="true" data-bs-content="1 - What is Lorem Ipsum?<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."><i class="fa-solid fa-circle-question"></i></a></td>
+                                                    <td><a href="#" class="export"><i class="fa-solid fa-file-pdf"></i> Exportar</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000000</td>
+                                                    <td class="text-start">Tipo de solicitação</td>
+                                                    <td class="text-start">Nome sobrenome do(a) solicitante</td>
+                                                    <td>Atividade atual?</td>
+                                                    <td>Nome sobrenome do(a)</td>
+                                                    <td><a href="#" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-html="true" data-bs-content="2 - What is Lorem Ipsum?<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."><i class="fa-solid fa-circle-question"></i></a></td>
+                                                    <td><a href="#" class="export"><i class="fa-solid fa-file-pdf"></i> Exportar</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000000</td>
+                                                    <td class="text-start">Tipo de solicitação</td>
+                                                    <td class="text-start">Nome sobrenome do(a) solicitante</td>
+                                                    <td>Atividade atual?</td>
+                                                    <td>Nome sobrenome do(a)</td>
+                                                    <td><a href="#" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-html="true" data-bs-content="3 - What is Lorem Ipsum?<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."><i class="fa-solid fa-circle-question"></i></a></td>
+                                                    <td><a href="#" class="export"><i class="fa-solid fa-file-pdf"></i> Exportar</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000000</td>
+                                                    <td class="text-start">Tipo de solicitação</td>
+                                                    <td class="text-start">Nome sobrenome do(a) solicitante</td>
+                                                    <td>Atividade atual?</td>
+                                                    <td>Nome sobrenome do(a)</td>
+                                                    <td><a href="#" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-html="true" data-bs-content="4 - What is Lorem Ipsum?<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."><i class="fa-solid fa-circle-question"></i></a></td>
+                                                    <td><a href="#" class="export"><i class="fa-solid fa-file-pdf"></i> Exportar</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000000</td>
+                                                    <td class="text-start">Tipo de solicitação</td>
+                                                    <td class="text-start">Nome sobrenome do(a) solicitante</td>
+                                                    <td>Atividade atual?</td>
+                                                    <td>Nome sobrenome do(a)</td>
+                                                    <td><a href="#" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-html="true" data-bs-content="5 - What is Lorem Ipsum?<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."><i class="fa-solid fa-circle-question"></i></a></td>
+                                                    <td><a href="#" class="export"><i class="fa-solid fa-file-pdf"></i> Exportar</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000000</td>
+                                                    <td class="text-start">Tipo de solicitação</td>
+                                                    <td class="text-start">Nome sobrenome do(a) solicitante</td>
+                                                    <td>Atividade atual?</td>
+                                                    <td>Nome sobrenome do(a)</td>
+                                                    <td><a href="#" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-html="true" data-bs-content="6 - What is Lorem Ipsum?<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."><i class="fa-solid fa-circle-question"></i></a></td>
+                                                    <td><a href="#" class="export"><i class="fa-solid fa-file-pdf"></i> Exportar</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000000</td>
+                                                    <td class="text-start">Tipo de solicitação</td>
+                                                    <td class="text-start">Nome sobrenome do(a) solicitante</td>
+                                                    <td>Atividade atual?</td>
+                                                    <td>Nome sobrenome do(a)</td>
+                                                    <td><a href="#" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-html="true" data-bs-content="7 - What is Lorem Ipsum?<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."><i class="fa-solid fa-circle-question"></i></a></td>
+                                                    <td><a href="#" class="export"><i class="fa-solid fa-file-pdf"></i> Exportar</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000000</td>
+                                                    <td class="text-start">Tipo de solicitação</td>
+                                                    <td class="text-start">Nome sobrenome do(a) solicitante</td>
+                                                    <td>Atividade atual?</td>
+                                                    <td>Nome sobrenome do(a)</td>
+                                                    <td><a href="#" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-html="true" data-bs-content="8 - What is Lorem Ipsum?<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."><i class="fa-solid fa-circle-question"></i></a></td>
+                                                    <td><a href="#" class="export"><i class="fa-solid fa-file-pdf"></i> Exportar</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000000</td>
+                                                    <td class="text-start">Tipo de solicitação</td>
+                                                    <td class="text-start">Nome sobrenome do(a) solicitante</td>
+                                                    <td>Atividade atual?</td>
+                                                    <td>Nome sobrenome do(a)</td>
+                                                    <td><a href="#" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-html="true" data-bs-content="9 - What is Lorem Ipsum?<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."><i class="fa-solid fa-circle-question"></i></a></td>
+                                                    <td><a href="#" class="export"><i class="fa-solid fa-file-pdf"></i> Exportar</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000000</td>
+                                                    <td class="text-start">Tipo de solicitação</td>
+                                                    <td class="text-start">Nome sobrenome do(a) solicitante</td>
+                                                    <td>Atividade atual?</td>
+                                                    <td>Nome sobrenome do(a)</td>
+                                                    <td><a href="#" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-html="true" data-bs-content="10 - What is Lorem Ipsum?<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."><i class="fa-solid fa-circle-question"></i></a></td>
+                                                    <td><a href="#" class="export"><i class="fa-solid fa-file-pdf"></i> Exportar</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000000</td>
+                                                    <td class="text-start">Tipo de solicitação</td>
+                                                    <td class="text-start">Nome sobrenome do(a) solicitante</td>
+                                                    <td>Atividade atual?</td>
+                                                    <td>Nome sobrenome do(a)</td>
+                                                    <td><a href="#" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-html="true" data-bs-content="11 - What is Lorem Ipsum?<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."><i class="fa-solid fa-circle-question"></i></a></td>
+                                                    <td><a href="#" class="export"><i class="fa-solid fa-file-pdf"></i> Exportar</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000000</td>
+                                                    <td class="text-start">Tipo de solicitação</td>
+                                                    <td class="text-start">Nome sobrenome do(a) solicitante</td>
+                                                    <td>Atividade atual?</td>
+                                                    <td>Nome sobrenome do(a)</td>
+                                                    <td><a href="#" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-html="true" data-bs-content="12 - What is Lorem Ipsum?<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."><i class="fa-solid fa-circle-question"></i></a></td>
+                                                    <td><a href="#" class="export"><i class="fa-solid fa-file-pdf"></i> Exportar</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <nav aria-label="Page navigation">
+                                        <ul class="pagination justify-content-center">
+                                            <li class="page-item disabled">
+                                                <a class="page-link shadow-none">Anterior</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link shadow-none" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link shadow-none" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link shadow-none" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link shadow-none" href="#">Próxima</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" role="tabpanel" aria-labelledby="SolicitacoesCanceladas-tab" id="SolicitacoesCanceladas">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover align-middle table-position" id="tableResultadoConsulta">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Número</th>
+                                                    <th class="text-start" scope="col">Solicitação</th>
+                                                    <th class="text-start" scope="col">Solicitante</th>
+                                                    <th scope="col">Atividade atual</th>
+                                                    <th scope="col">Responsável atividade atual</th>
+                                                    <th scope="col">Detalhes da solicitação</th>
+                                                    <th scope="col">Exportar Solicitação</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>00000000</td>
+                                                    <td class="text-start">Tipo de solicitação</td>
+                                                    <td class="text-start">Nome sobrenome do(a) solicitante</td>
+                                                    <td>Atividade atual?</td>
+                                                    <td>Nome sobrenome do(a)</td>
+                                                    <td><a href="#" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-html="true" data-bs-content="1 - What is Lorem Ipsum?<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."><i class="fa-solid fa-circle-question"></i></a></td>
+                                                    <td><a href="#" class="export"><i class="fa-solid fa-file-pdf"></i> Exportar</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000000</td>
+                                                    <td class="text-start">Tipo de solicitação</td>
+                                                    <td class="text-start">Nome sobrenome do(a) solicitante</td>
+                                                    <td>Atividade atual?</td>
+                                                    <td>Nome sobrenome do(a)</td>
+                                                    <td><a href="#" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-html="true" data-bs-content="2 - What is Lorem Ipsum?<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."><i class="fa-solid fa-circle-question"></i></a></td>
+                                                    <td><a href="#" class="export"><i class="fa-solid fa-file-pdf"></i> Exportar</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000000</td>
+                                                    <td class="text-start">Tipo de solicitação</td>
+                                                    <td class="text-start">Nome sobrenome do(a) solicitante</td>
+                                                    <td>Atividade atual?</td>
+                                                    <td>Nome sobrenome do(a)</td>
+                                                    <td><a href="#" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-html="true" data-bs-content="3 - What is Lorem Ipsum?<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."><i class="fa-solid fa-circle-question"></i></a></td>
+                                                    <td><a href="#" class="export"><i class="fa-solid fa-file-pdf"></i> Exportar</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000000</td>
+                                                    <td class="text-start">Tipo de solicitação</td>
+                                                    <td class="text-start">Nome sobrenome do(a) solicitante</td>
+                                                    <td>Atividade atual?</td>
+                                                    <td>Nome sobrenome do(a)</td>
+                                                    <td><a href="#" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-html="true" data-bs-content="4 - What is Lorem Ipsum?<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."><i class="fa-solid fa-circle-question"></i></a></td>
+                                                    <td><a href="#" class="export"><i class="fa-solid fa-file-pdf"></i> Exportar</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000000</td>
+                                                    <td class="text-start">Tipo de solicitação</td>
+                                                    <td class="text-start">Nome sobrenome do(a) solicitante</td>
+                                                    <td>Atividade atual?</td>
+                                                    <td>Nome sobrenome do(a)</td>
+                                                    <td><a href="#" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-html="true" data-bs-content="5 - What is Lorem Ipsum?<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."><i class="fa-solid fa-circle-question"></i></a></td>
+                                                    <td><a href="#" class="export"><i class="fa-solid fa-file-pdf"></i> Exportar</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000000</td>
+                                                    <td class="text-start">Tipo de solicitação</td>
+                                                    <td class="text-start">Nome sobrenome do(a) solicitante</td>
+                                                    <td>Atividade atual?</td>
+                                                    <td>Nome sobrenome do(a)</td>
+                                                    <td><a href="#" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-html="true" data-bs-content="6 - What is Lorem Ipsum?<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."><i class="fa-solid fa-circle-question"></i></a></td>
+                                                    <td><a href="#" class="export"><i class="fa-solid fa-file-pdf"></i> Exportar</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000000</td>
+                                                    <td class="text-start">Tipo de solicitação</td>
+                                                    <td class="text-start">Nome sobrenome do(a) solicitante</td>
+                                                    <td>Atividade atual?</td>
+                                                    <td>Nome sobrenome do(a)</td>
+                                                    <td><a href="#" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-html="true" data-bs-content="7 - What is Lorem Ipsum?<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."><i class="fa-solid fa-circle-question"></i></a></td>
+                                                    <td><a href="#" class="export"><i class="fa-solid fa-file-pdf"></i> Exportar</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000000</td>
+                                                    <td class="text-start">Tipo de solicitação</td>
+                                                    <td class="text-start">Nome sobrenome do(a) solicitante</td>
+                                                    <td>Atividade atual?</td>
+                                                    <td>Nome sobrenome do(a)</td>
+                                                    <td><a href="#" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-html="true" data-bs-content="8 - What is Lorem Ipsum?<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."><i class="fa-solid fa-circle-question"></i></a></td>
+                                                    <td><a href="#" class="export"><i class="fa-solid fa-file-pdf"></i> Exportar</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000000</td>
+                                                    <td class="text-start">Tipo de solicitação</td>
+                                                    <td class="text-start">Nome sobrenome do(a) solicitante</td>
+                                                    <td>Atividade atual?</td>
+                                                    <td>Nome sobrenome do(a)</td>
+                                                    <td><a href="#" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-html="true" data-bs-content="9 - What is Lorem Ipsum?<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."><i class="fa-solid fa-circle-question"></i></a></td>
+                                                    <td><a href="#" class="export"><i class="fa-solid fa-file-pdf"></i> Exportar</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000000</td>
+                                                    <td class="text-start">Tipo de solicitação</td>
+                                                    <td class="text-start">Nome sobrenome do(a) solicitante</td>
+                                                    <td>Atividade atual?</td>
+                                                    <td>Nome sobrenome do(a)</td>
+                                                    <td><a href="#" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-html="true" data-bs-content="10 - What is Lorem Ipsum?<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."><i class="fa-solid fa-circle-question"></i></a></td>
+                                                    <td><a href="#" class="export"><i class="fa-solid fa-file-pdf"></i> Exportar</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000000</td>
+                                                    <td class="text-start">Tipo de solicitação</td>
+                                                    <td class="text-start">Nome sobrenome do(a) solicitante</td>
+                                                    <td>Atividade atual?</td>
+                                                    <td>Nome sobrenome do(a)</td>
+                                                    <td><a href="#" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-html="true" data-bs-content="11 - What is Lorem Ipsum?<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."><i class="fa-solid fa-circle-question"></i></a></td>
+                                                    <td><a href="#" class="export"><i class="fa-solid fa-file-pdf"></i> Exportar</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000000</td>
+                                                    <td class="text-start">Tipo de solicitação</td>
+                                                    <td class="text-start">Nome sobrenome do(a) solicitante</td>
+                                                    <td>Atividade atual?</td>
+                                                    <td>Nome sobrenome do(a)</td>
+                                                    <td><a href="#" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-html="true" data-bs-content="12 - What is Lorem Ipsum?<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."><i class="fa-solid fa-circle-question"></i></a></td>
+                                                    <td><a href="#" class="export"><i class="fa-solid fa-file-pdf"></i> Exportar</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <nav aria-label="Page navigation">
+                                        <ul class="pagination justify-content-center">
+                                            <li class="page-item disabled">
+                                                <a class="page-link shadow-none">Anterior</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link shadow-none" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link shadow-none" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link shadow-none" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link shadow-none" href="#">Próxima</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function mascaraFone(event) {
+        var valor = document.getElementById("telefone").attributes[0].ownerElement['value'];
+        var retorno = valor.replace(/\D/g, "");
+        retorno = retorno.replace(/^0/, "");
+        if (retorno.length > 10) {
+        retorno = retorno.replace(/^(\d\d)(\d{5})(\d{4}).*/, "($1) $2-$3");
+        } else if (retorno.length > 5) {
+        if (retorno.length == 6 && event.code == "Backspace") { 
+            // necessário pois senão o "-" fica sempre voltando ao dar backspace
+            return; 
+        } 
+        retorno = retorno.replace(/^(\d\d)(\d{4})(\d{0,4}).*/, "($1) $2-$3");
+        } else if (retorno.length > 2) {
+        retorno = retorno.replace(/^(\d\d)(\d{0,5})/, "($1) $2");
+        } else {
+        if (retorno.length != 0) {
+            retorno = retorno.replace(/^(\d*)/, "($1");
+        }
+        }
+        document.getElementById("telefone").attributes[0].ownerElement['value'] = retorno;
+    }
+</script>
+<script>
+    function mascaraData(val) {
+    var pass = val.value;
+    var expr = /[0123456789]/;
+
+    for (i = 0; i < pass.length; i++) {
+        // charAt -> retorna o caractere posicionado no índice especificado
+        var lchar = val.value.charAt(i);
+        var nchar = val.value.charAt(i + 1);
+
+        if (i == 0) {
+        // search -> retorna um valor inteiro, indicando a posição do inicio da primeira
+        // ocorrência de expReg dentro de instStr. Se nenhuma ocorrencia for encontrada o método retornara -1
+        // instStr.search(expReg);
+        if ((lchar.search(expr) != 0) || (lchar > 3)) {
+            val.value = "";
+        }
+
+        } else if (i == 1) {
+
+        if (lchar.search(expr) != 0) {
+            // substring(indice1,indice2)
+            // indice1, indice2 -> será usado para delimitar a string
+            var tst1 = val.value.substring(0, (i));
+            val.value = tst1;
+            continue;
+        }
+
+        if ((nchar != '/') && (nchar != '')) {
+            var tst1 = val.value.substring(0, (i) + 1);
+
+            if (nchar.search(expr) != 0)
+            var tst2 = val.value.substring(i + 2, pass.length);
+            else
+            var tst2 = val.value.substring(i + 1, pass.length);
+
+            val.value = tst1 + '/' + tst2;
+        }
+
+        } else if (i == 4) {
+
+        if (lchar.search(expr) != 0) {
+            var tst1 = val.value.substring(0, (i));
+            val.value = tst1;
+            continue;
+        }
+
+        if ((nchar != '/') && (nchar != '')) {
+            var tst1 = val.value.substring(0, (i) + 1);
+
+            if (nchar.search(expr) != 0)
+            var tst2 = val.value.substring(i + 2, pass.length);
+            else
+            var tst2 = val.value.substring(i + 1, pass.length);
+
+            val.value = tst1 + '/' + tst2;
+        }
+        }
+
+        if (i >= 6) {
+        if (lchar.search(expr) != 0) {
+            var tst1 = val.value.substring(0, (i));
+            val.value = tst1;
+        }
+        }
+    }
+
+    if (pass.length > 10)
+        val.value = val.value.substring(0, 10);
+    return true;
+    }
+</script>
+<script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+    });
+    var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss'), {
+        trigger: 'focus'
+    });
+    $('a').popover({ trigger: "hover" });
+</script>
