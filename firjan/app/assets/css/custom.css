@@ -17,12 +17,25 @@
     --LaranjaSESI:#ec8112;
     --VerdeCIRJ:#b2d465;
     --AcquaIEL:#8cc7b9;
+    --solicitacao:#003bd1;
+    --sesmit:#f4b371;
+    --validacaoTecnica:#6689e3;
+    --gestor1:#d1e5a3;
+    --gestor2:#fff200;
+    --validacaoRemuneracao:#ec8112;
+    --diretor:#b2d465;
+    --diretorRegSuperintendente:#9e1f63;
+    --recrutamentoSelecao:#c579a1;
+    --saude:#fff766;
+    --administracaoPessoal:#413e3e;
+
     --gray0:#262626;
     --gray1:#413e3e;
     --gray2:#626060;
     --gray3:#c4c4c4;
     --gray4:#f4f4f4;
     --gray5:#f6f6f6;
+    --gray6:#f8f8f8;
 }
 html,
 body {
@@ -47,7 +60,7 @@ body::after {
     content:url(../images/bandeira-firjan.png);
 }
 h1 {
-    font-size: 200%;
+    font-size: 150%;
 }
 .grid,
 .grid-left,
@@ -74,12 +87,18 @@ h1 {
     color:var(--LaranjaSESI);
     font-size: 280%;
 }
+.empty-height {
+    margin-top: 10vh;
+}
+.tab-pane {
+    min-height: 35vh;
+}
 @media screen and (max-width:576px) {
     .grid,
     .grid-left,
     .grid-right {
         align-items:center;
-    text-align:center;
+        text-align:center;
     }
 }
 .navbar {
@@ -254,6 +273,7 @@ h1 {
 	.navbar .dropdown-menu.fade-up{top:180%;}
 	.navbar .nav-item:hover .dropdown-menu{transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg);}
 }
+
 /* LOGIN */
 #login .grid-left {
     height:100vh;
@@ -819,6 +839,17 @@ h1 {
     }
 }
 /* Gestão de pessoas - Tarefas a concluir */
+.solicitacao {color: var(--solicitacao);}
+.sesmit {color: var(--sesmit);}
+.validacaoTecnica {color: var(--validacaoTecnica);}
+.gestor1 {color: var(--gestor1);}
+.gestor2 {color: var(--gestor2);}
+.validacaoRemuneracao {color: var(--validacaoRemuneracao);}
+.diretor {color: var(--diretor);}
+.diretorRegSuperintendente {color: var(--diretorRegSuperintendente);}
+.recrutamentoSelecao {color: var(--recrutamentoSelecao);}
+.saude {color: var(--saude);}
+.administracaoPessoal {color: var(--administracaoPessoal);}
 #tarefasAConcluir {
     width: 100%;
     height: auto;
@@ -1071,6 +1102,7 @@ h1 {
 #tarefasAConcluir .timeline {
     position: relative;
     max-width: 100%;
+    padding: 6rem 8rem 6rem 8rem;
     margin: 0 auto;
 }
 #tarefasAConcluir .timeline::after {
@@ -1081,10 +1113,35 @@ h1 {
     bottom: 0;
     left: 50%;
     margin-left: -3px;
-    background-color: var(--AzulSENAI);
+    background-color: var(--CinzaFirjanII);
+}
+#tarefasAConcluir .timeline-box {
+    position: relative;
+    height: min-content;
+}
+#tarefasAConcluir .timeline-box::before,
+#tarefasAConcluir .timeline-box::after {
+    position: absolute;
+    content: 'Fim';
+    top: 0;
+    transform: translateX(-50%);
+    width: 6rem;
+    padding: 0.5rem;
+    color: white;
+    font-size: 100%;
+    background-color: var(--CinzaFirjanII);
+    border-radius: 0.3rem;
+    z-index: 1;
+}
+#tarefasAConcluir .timeline-box::after {
+    position: absolute;
+    top: unset;
+    bottom: 0;
+    content: 'início';
+    background-color: var(--CinzaFirjan);
 }
 #tarefasAConcluir .timeline-card {
-    padding: 10px 40px;
+    padding: 5px 40px;
     position: relative;
     background-color: inherit;
     width: 50%;
@@ -1096,8 +1153,8 @@ h1 {
     height: 25px;
     right: -11px;
     background-color: white;
-    border: 4px solid var(--AzulSENAI);
-    top: 15px;
+    border: 3px solid var(--CinzaFirjanII);
+    top: 35px;
     border-radius: 50%;
     z-index: 1;
 }
@@ -1111,50 +1168,87 @@ h1 {
     content: " ";
     height: 0;
     position: absolute;
-    top: 22px;
+    top: 37px;
     width: 0;
     z-index: 1;
     right: 30px;
-    border: medium solid var(--gray3);
+    border: medium solid var(--CinzaFirjanII);
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent var(--gray3);
+    border-color: transparent transparent transparent
+    var(--CinzaFirjanII);
 }
 #tarefasAConcluir .timeline-card-right::before {
     content: " ";
     height: 0;
     position: absolute;
-    top: 22px;
+    top: 37px;
     width: 0;
     z-index: 1;
     left: 30px;
-    border: medium solid var(--gray3);
+    border: medium solid var(--CinzaFirjanII);
     border-width: 10px 10px 10px 0;
-    border-color: transparent var(--gray3) transparent transparent;
+    border-color: transparent var(--CinzaFirjanII) transparent transparent;
 }
 #tarefasAConcluir .timeline-card-right::after {
     left: -14px;
 }
 #tarefasAConcluir .timeline-card-content {
     position: relative;
-    padding: 20px 30px;
-    background-color: var(--gray3);
-    border-radius: 6px;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid;
+    border-color: transparent transparent transparent var(--CinzaFirjanII);
+    box-shadow: 3px 3px 12px -6px rgb(0 0 0 / 50%);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    box-shadow: 6px 6px 12px -6px rgb(0 0 0 / 50%);
+    align-items: start;
+    text-align: start;
 }
-#tarefasAConcluir .timeline-card-content h2 {
-    margin: 0;
+#tarefasAConcluir .timeline-card-left .timeline-card-content {
+    border-color: transparent var(--CinzaFirjanII) transparent transparent;
+    align-items: end;
+    text-align: end;
 }
 #tarefasAConcluir .timeline-card-content h1 {
+    font-size: 160%;
     font-weight: bold;
     margin: 0;
 }
-#tarefasAConcluir .timeline-card-content p {
+#tarefasAConcluir .timeline-card-content h2 {
+    font-size: 130%;
     margin: 0;
+}
+#tarefasAConcluir .timeline-card-content p {
+    font-size: 130%;
+    margin: 0;
+}
+#finalStepLeft.timeline-card::after,
+#finalStepRight.timeline-card::after {
+    background-color: var(--AzulFirjan);
+    border: 3px solid var(--AzulFirjan);
+}
+#activeStepLeft.timeline-card::after,
+#activeStepRight.timeline-card::after {
+    background-color: var(--CinzaFirjan);
+    border: 3px solid var(--CinzaFirjan);
+}
+#finalStepLeft.timeline-card-left .timeline-card-content::before,
+#finalStepRight.timeline-card-right .timeline-card-content::before,
+#activeStepLeft.timeline-card-left .timeline-card-content::before,
+#activeStepRight.timeline-card-right .timeline-card-content::before {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    font-size: 100%;
+    font-weight: bold;
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 10px;
 }
 @media screen and (max-width:576px) {
     #tarefasAConcluir .nav-tabs,
@@ -1178,6 +1272,9 @@ h1 {
     #tableResultadoConsulta {
         width: max-content;
     }
+    #tarefasAConcluir .timeline {
+        padding: 6rem 0 6rem 0;
+    }
     #tarefasAConcluir .timeline::after {
         left: 31px;
     }
@@ -1188,9 +1285,9 @@ h1 {
     }
     #tarefasAConcluir .timeline-card::before {
         left: 60px;
-        border: medium solid var(--gray3);
+        border: medium solid var(--CinzaFirjanII);
         border-width: 10px 10px 10px 0;
-        border-color: transparent var(--gray3) transparent transparent;
+        border-color: transparent var(--CinzaFirjanII) transparent transparent;
     }
     #tarefasAConcluir .timeline-card-left::after,
     #tarefasAConcluir .timeline-card-right::after {
@@ -1199,9 +1296,16 @@ h1 {
     #tarefasAConcluir .timeline-card-right {
         left: 0%;
     }
-    #tarefasAConcluir .timeline-card-content {
+    #tarefasAConcluir .timeline-card-content,
+    #tarefasAConcluir .timeline-card-left .timeline-card-content {
+        border-color: transparent transparent transparent var(--CinzaFirjanII);
         align-items: start;
         text-align: start;
+    }
+    #tarefasAConcluir .timeline-box::before,
+    #tarefasAConcluir .timeline-box::after {
+        left: 0;
+        transform: translateX(0);
     }
 }
 /* Gestão de pessoas - MRH Desligamento */
