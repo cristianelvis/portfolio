@@ -182,20 +182,6 @@
                             </div>
                             <div class="row">
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="" value="R$ 8.820,28" id="colaboradorAtualSalarioAtual" disabled>
-                                    <label for="colaboradorAtualSalarioAtual">Salário atual:</label>
-                                </div>
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="" value="" id="colaboradorAtualDSR" disabled>
-                                    <label for="colaboradorAtualDSR">DSR:</label>
-                                </div>
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="" value="R$ 8.820,28" id="colaboradorAtualSalarioDSR" disabled>
-                                    <label for="colaboradorAtualSalarioDSR">Salário calculado com DSR:</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
                                     <input type="text" class="form-control shadow-none" placeholder="" value="" id="colaboradorAtualGES" disabled>
                                     <label for="colaboradorAtualGES">GES:</label>
                                 </div>
@@ -305,19 +291,23 @@
                             </div>
                             <div class="row">
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="" value="R$ 10.545,30" id="colaboradorPropostoSalarioInicialFaixa">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="R$ 10.545,30" id="colaboradorPropostoSalarioInicialFaixa" disabled>
                                     <label for="colaboradorPropostoSalarioInicialFaixa">*Salário inicial da faixa:</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="R$ 11.025,35" id="colaboradorPropostoSalarioProposto">
+                                    <label for="colaboradorPropostoSalarioProposto">*Salário Proposto:</label>
                                 </div>
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
                                     <input type="text" class="form-control shadow-none" placeholder="" value="" id="colaboradorPropostoDSR">
                                     <label for="colaboradorPropostoDSR">*DSR:</label>
                                 </div>
-                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
-                                    <input type="text" class="form-control shadow-none" placeholder="" value="R$ 10.545,30" id="colaboradorPropostoSalarioDSR">
-                                    <label for="colaboradorPropostoSalarioDSR">*Salário calculado com DSR:</label>
-                                </div>
                             </div>
                             <div class="row">
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="" value="R$ 11.025,35" id="colaboradorPropostoSalarioDSR">
+                                    <label for="colaboradorPropostoSalarioDSR">*Salário calculado com DSR:</label>
+                                </div>
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
                                     <input type="text" class="form-control shadow-none" placeholder="" value="" id="colaboradorPropostoGES">
                                     <label for="colaboradorPropostoGES">*GES:</label>
@@ -326,12 +316,12 @@
                                     <input type="text" class="form-control shadow-none" placeholder="" value="Não" id="colaboradorPropostoPericulosidade">
                                     <label for="colaboradorPropostoPericulosidade">*Periculosidade:</label>
                                 </div>
+                            </div>
+                            <div class="row">
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
                                     <input type="text" class="form-control shadow-none" placeholder="" value="Não" id="colaboradorPropostoInsalubridade">
                                     <label for="colaboradorPropostoInsalubridade">*Insalubridade:</label>
                                 </div>
-                            </div>
-                            <div class="row">
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
                                     <input type="text" class="form-control shadow-none" placeholder="" value="" id="colaboradorPropostoGrauInsalubridade">
                                     <label for="colaboradorPropostoGrauInsalubridade">*Grau de insalubridade:</label>
@@ -340,12 +330,12 @@
                                     <input type="text" class="form-control shadow-none" placeholder="" value="Não" id="colaboradorPropostoAposentadoriaEspecial">
                                     <label for="colaboradorPropostoAposentadoriaEspecial">*Aposentadoria especial:</label>
                                 </div>
+                            </div>
+                            <div class="row">
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
                                     <input type="text" class="form-control shadow-none" placeholder="" value="01/05/2022" id="colaboradorPropostoDataInicioMudanca" onkeypress="mascaraData(this);" onblur="mascaraData(this);">
                                     <label for="colaboradorPropostoDataInicioMudanca">*Data de início da mudança:</label>
                                 </div>
-                            </div>
-                            <div class="row">
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
                                     <select class="form-select shadow-none" id="colaboradorPropostoGratificacaoTransferenciaLocalidade">
                                         <option value="0">NÃO</option>
