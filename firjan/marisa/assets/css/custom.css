@@ -288,22 +288,23 @@ h1 {
 }
 #login .grid-right {
     height:100vh;
-    padding:0 26vh 0 26vh;
-    background-color:var(--gray4);
-    align-items:start;
-    text-align:start;
+    padding: 6vh;
+    background-color: var(--gray4);
+    align-items: start;
+    text-align: start;
 }
 #login .grid-right .brand {
     width:20vh;
     margin-bottom:6vh;
 }
 #login .grid-right .card {
-    width: 100%;
-    border:0;
+    width: 27vw;
+    margin: 0 auto;
+    border: 0;
     background-color: transparent;
 }
-#login .grid-right .form-floating>label {
-    transition:all 0.5s ease;
+#login .grid-right .form-floating > label {
+    transition: all 0.5s ease;
 }
 #login .grid-right a {
     color: var(--AzulFirjanII);
@@ -324,7 +325,7 @@ h1 {
     }
     #login .grid-right {
         height: 70vh;
-        padding: 6vh 3vh 6vh 3vh;;
+        padding: 6vh 3vh 6vh 3vh;
     }
 }
 /* DASHBOARD */
@@ -930,7 +931,7 @@ h1 {
 #tarefasAConcluir .nav-tabs .nav-link:focus,
 #tarefasAConcluir .nav-tabs .nav-link.active {
     color: var(--CinzaFirjan);
-    background-color: var(--CinzaFirjanII);
+    /* background-color: var(--CinzaFirjanII); */
     cursor: default;
 }
 #tarefasAConcluir .nav-tabs .nav-link:hover {
@@ -1113,7 +1114,7 @@ h1 {
     bottom: 0;
     left: 50%;
     margin-left: -3px;
-    background-color: var(--CinzaFirjanII);
+    background-color: var(--gray3);
 }
 #tarefasAConcluir .timeline-box {
     position: relative;
@@ -1153,7 +1154,7 @@ h1 {
     height: 25px;
     right: -11px;
     background-color: white;
-    border: 3px solid var(--CinzaFirjanII);
+    border: 3px solid var(--gray3);
     top: 35px;
     border-radius: 50%;
     z-index: 1;
@@ -1172,10 +1173,10 @@ h1 {
     width: 0;
     z-index: 1;
     right: 30px;
-    border: medium solid var(--CinzaFirjanII);
+    border: medium solid var(--gray3);
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent
-    var(--CinzaFirjanII);
+    var(--gray3);
 }
 #tarefasAConcluir .timeline-card-right::before {
     content: " ";
@@ -1185,9 +1186,9 @@ h1 {
     width: 0;
     z-index: 1;
     left: 30px;
-    border: medium solid var(--CinzaFirjanII);
+    border: medium solid var(--gray3);
     border-width: 10px 10px 10px 0;
-    border-color: transparent var(--CinzaFirjanII) transparent transparent;
+    border-color: transparent var(--gray3) transparent transparent;
 }
 #tarefasAConcluir .timeline-card-right::after {
     left: -14px;
@@ -1222,6 +1223,10 @@ h1 {
 #tarefasAConcluir .timeline-card-content p {
     font-size: 130%;
     margin: 0;
+}
+#activeStepLeft .active,
+#activeStepRight .active {
+    background-color: var(--gray3);
 }
 #finalStepLeft.timeline-card::after,
 #finalStepRight.timeline-card::after {
@@ -1285,9 +1290,9 @@ h1 {
     }
     #tarefasAConcluir .timeline-card::before {
         left: 60px;
-        border: medium solid var(--CinzaFirjanII);
+        border: medium solid var(--gray3);
         border-width: 10px 10px 10px 0;
-        border-color: transparent var(--CinzaFirjanII) transparent transparent;
+        border-color: transparent var(--gray3) transparent transparent;
     }
     #tarefasAConcluir .timeline-card-left::after,
     #tarefasAConcluir .timeline-card-right::after {
@@ -2343,6 +2348,150 @@ font-weight: bold;
 }
 @media screen and (max-width:576px) {
     #mrhTransferencia .nav.nav-tabs {
+        width: max-content;
+        height:100px;
+    }
+}
+/* Gestão de pessoas - MRH Alteração de item contábil e centro de custo */
+#mrhAlteracaoItemContabilCentroCusto {
+    width: 100%;
+    height: auto;
+    padding: 10vh 0 10vh 0;
+    background-color: var(--gray4);
+}
+#mrhAlteracaoItemContabilCentroCusto .banner {
+    color: var(--gray5);
+    padding: 6vh 0 6vh 0;
+    background-color:var(--AzulFirjanII);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: start;
+}
+#mrhAlteracaoItemContabilCentroCusto .banner .form-floating label {
+    top: -1vh;
+    right: 0;
+    opacity: 1!important;
+    font-size: 120%;
+    font-weight: normal;
+    left:0;
+    text-align: end;
+    transform: scale(1)!important;
+}
+#mrhAlteracaoItemContabilCentroCusto .banner .form-control {
+    position: relative;
+    top: 1vh;
+    color: var(--gray5);
+    font-size: 120%;
+    font-weight: bold;
+    text-align: end;
+    padding: 0 .75rem 0 0;
+}
+#mrhAlteracaoItemContabilCentroCusto .tabs-responsive {
+    width:100%;
+    overflow: hidden;
+    overflow-x: auto;
+    display: block;
+}
+#mrhAlteracaoItemContabilCentroCusto .nav.nav-tabs {
+    width: 100%;
+    height:12vh;
+    padding: 1vh;
+    border: 0;
+}
+#mrhAlteracaoItemContabilCentroCusto .nav-tabs .nav-link {
+    width: 5vh;
+    height: auto;
+    color: var(--gray1);
+    padding: 0;
+    margin: 1vh;
+    background-color: white;
+    border: 2px solid var(--gray3);
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 6px 6px 18px -12px rgb(0 0 0 / 50%);
+    transition:all 0.5s ease;
+}
+#mrhAlteracaoItemContabilCentroCusto .nav-tabs .nav-link:focus,
+#mrhAlteracaoItemContabilCentroCusto .nav-tabs .nav-link:hover {
+    border-color: var(--AzulSENAI);
+    transform: scale(1.2);
+}
+#mrhAlteracaoItemContabilCentroCusto .nav-tabs .nav-item.show .nav-link,
+#mrhAlteracaoItemContabilCentroCusto .nav-tabs .nav-link.active {
+    border-color:var(--gray3);
+    transform: scale(1.2);
+    animation: pulse 5s infinite;
+}
+#mrhAlteracaoItemContabilCentroCusto .nav-tabs .nav-link img {
+    width: 100%;
+}
+#mrhAlteracaoItemContabilCentroCusto .nav-tabs .nav-link.disabled img {
+    opacity: .6;
+    filter: grayscale(100%);
+}
+#mrhAlteracaoItemContabilCentroCusto .tab-content {
+    width: 100%;
+    padding: 2vh 1vh;
+    background-color: white;
+    border-radius: 1vh;
+    box-shadow: 6px 6px 18px -12px rgb(0 0 0 / 50%);
+}
+#mrhAlteracaoItemContabilCentroCusto .userAvatar {
+    width: 100%;
+    max-width: 30vh;
+    margin: 0 auto;
+    border: 3px solid var(--CinzaFirjanII);
+    border-radius: 50%;
+    transition:all 0.5s ease;
+}
+#mrhAlteracaoItemContabilCentroCusto .tab-content #Solicitante h4 {
+    color:var(--AzulFirjan);
+    font-weight:bold;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+}
+#mrhAlteracaoItemContabilCentroCusto .accordion-button {
+color: var(--AzulFirjan);
+font-size: 100%;
+font-weight: bold;
+}
+#mrhAlteracaoItemContabilCentroCusto .accordion-button:hover {
+    border-color:var(--AzulFirjanII);
+    background-color:var(--gray3);
+}
+#mrhAlteracaoItemContabilCentroCusto .accordion-button::after {
+    flex-shrink:0;
+    width:1.25rem;
+    height:1.25rem;
+    margin-left:auto;
+    content:"";
+    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    background-repeat:no-repeat;
+    background-size:1.25rem;
+    transition:transform .2s ease-in-out
+}
+#mrhAlteracaoItemContabilCentroCusto .accordion-button:not(.collapsed) {
+    color: var(--AzulFirjan);
+    background-color: white;
+}
+#mrhAlteracaoItemContabilCentroCusto .accordion-button:not(.collapsed)::after {
+    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    transform:rotate(-180deg)
+}
+#lineItemContabil,
+#lineCentroCusto,
+#lineAmbos {
+    display: none;
+}
+@media screen and (max-width:576px) {
+    #mrhAlteracaoItemContabilCentroCusto .nav.nav-tabs {
         width: max-content;
         height:100px;
     }
