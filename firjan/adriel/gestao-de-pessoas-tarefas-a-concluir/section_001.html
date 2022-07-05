@@ -327,19 +327,21 @@
                                                     <th class="text-center" scope="col">Resumo</th>
                                                     <th class="text-center" scope="col">Anexo</th>
                                                     <th scope="col"></th>
+                                                    <th scope="col"></th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <td class="text-start">000.000</td>
                                                     <td class="text-start">MRH Substituição</td>
-                                                    <td class="text-start">Nome sobrenome</td>
+                                                    <td class="text-start">Adriel Brites</td>
                                                     <td class="text-start">Gestor(a) 2º nível</td>
                                                     <td class="text-start">Marisa Costa</td>
                                                     <td class="text-start">Sem prazo definido</td>
                                                     <td><a href="#" class="fs-5" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-html="true" data-bs-content="Data da solicitação: <b>06/05/2022</b><br>Estabelecimento: <b>1 - SESI SEDE</b><br>Lotação: <b>0409000000 - GDE - GER DESIGN ORG REMUN ESTRAT</b><br>Cargo: <b>78 ANALISTA RECURSOS HUMANOS</b><br>Item contabil: <b>Item contábil</b><br>Categoria salárial: <b>Mensalista</b><br>GS: <b>00</b>"><i class="fa-solid fa-clipboard-list"></i></a></td>
                                                     <td><div class="input-group"><label for="uploadFile-001"><i class="fa-solid fa-paperclip"></i></label><input type="file" class="form-control d-none" id="uploadFile-001"></div></td>
                                                     <td><a href="#" class="visualizar" data-bs-toggle="modal" data-bs-target="#minhasSolicitacoes-modal"><i class="bi bi-search"></i> Visualizar</a></td>
+                                                    <td><a href="#" class="cancelar" data-bs-toggle="modal" data-bs-target="#minhasSolicitacoesCancelar-modal"><i class="bi bi-x-circle"></i> Cancelar</a></td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -1657,15 +1659,15 @@
                                             </tr>
                                             <tr>
                                                 <td class="fw-bold text-start">Requisitante</td>
-                                                <td class="text-start">Nome sobrenome</td>
+                                                <td class="text-start">Adriel Brites</td>
                                             </tr>
                                             <tr>
                                                 <td class="fw-bold text-start">Localização</td>
-                                                <td class="text-start">Validação GRB</td>
+                                                <td class="text-start">Gestor(a) 2º nível</td>
                                             </tr>
                                             <tr>
                                                 <td class="fw-bold text-start">Responsável</td>
-                                                <td class="text-start">Para o papel: <b>Validação GRB</b></td>
+                                                <td class="text-start">Marisa Costa</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -2233,6 +2235,35 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
                 <!--<button type="button" class="btn btn-primary">Assumir tarefa</button>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" tabindex="-1" aria-hidden="true" aria-labelledby="minhasSolicitacoesCancelar-modal" id="minhasSolicitacoesCancelar-modal">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Minhas solicitações - Cancelar </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-floating mb-3">
+                        <div class="alert" role="alert"><i class="bi bi-exclamation-triangle"></i></div>
+                        <p>Deseja realmente cancelar esta solicitação?</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-floating mb-3">
+                        <textarea class="form-control shadow-none" placeholder="Motivo do cancelamento:" value="" id="motivoCancelamento" style="height:150px"></textarea>
+                        <label for="motivoCancelamento">Motivo do cancelamento:</label>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cancelar</button>
             </div>
         </div>
     </div>
