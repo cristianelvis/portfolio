@@ -28,7 +28,8 @@
     --recrutamentoSelecao:#c579a1;
     --saude:#fff766;
     --administracaoPessoal:#413e3e;
-
+    --red:#dc3545;
+    --red-dark:#bb2d3b;
     --gray0:#262626;
     --gray1:#413e3e;
     --gray2:#626060;
@@ -92,6 +93,10 @@ h1 {
 }
 .tab-pane {
     min-height: 35vh;
+}
+.alert i {
+    color: var(--red);
+    font-size: 300%;
 }
 @media screen and (max-width:576px) {
     .grid,
@@ -978,7 +983,8 @@ h1 {
 #tarefasAConcluir #hiddenResponsabilidade {
     display: none;
 }
-#tarefasAConcluir .visualizar {
+#tarefasAConcluir .visualizar,
+#tarefasAConcluir .cancelar {
     color: var(--gray5);
     text-decoration:none;
     padding: .6vh 2vh;
@@ -986,6 +992,15 @@ h1 {
     border-radius: .6vh;
     transition:all 0.5s ease;
     display: inline-block;
+}
+#tarefasAConcluir .visualizar:hover {
+    background-color: var(--AzulFirjanII);
+}
+#tarefasAConcluir .cancelar {
+    background-color: var(--red);
+}
+#tarefasAConcluir .cancelar:hover {
+    background-color: var(--red-dark);
 }
 #tarefasAConcluir .symbol-label-1,
 #tarefasAConcluir .symbol-label-2,
