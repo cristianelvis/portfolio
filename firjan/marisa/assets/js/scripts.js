@@ -15,6 +15,7 @@ $(document).ready(function(){
     $("#mrhMovimentacaoHorizontal").load("section_001.html");
     $("#mrhMovimentacaoVertical").load("section_001.html");
     $("#mrhTransferencia").load("section_001.html");
+    $("#mrhQuebraDeCaixa").load("section_001.html");
 });
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
