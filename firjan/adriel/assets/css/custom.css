@@ -332,6 +332,9 @@ h1 {
         height: 70vh;
         padding: 6vh 3vh 6vh 3vh;
     }
+    #login .grid-right .card {
+        width: 100%;
+    }
 }
 /* DASHBOARD */
 #dashboard {
