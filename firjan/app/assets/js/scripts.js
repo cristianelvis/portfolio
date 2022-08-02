@@ -16,6 +16,8 @@ $(document).ready(function(){
     $("#mrhMovimentacaoVertical").load("section_001.html");
     $("#mrhTransferencia").load("section_001.html");
     $("#mrhQuebraDeCaixa").load("section_001.html");
+    $("#mrhTransferenciaPendencia").load("section_001.html");
+    $("#mrhCadastroSubstituto").load("section_001.html");
 });
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
