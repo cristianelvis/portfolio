@@ -1,0 +1,260 @@
+<div class="container-fluid">
+    <div class="row banner">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h1><i class="fa-solid fa-people-arrows"></i> Cadastro de substituto</h1>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-10 offset-lg-1">
+            <div class="content-panel">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 form-floating mb-3">
+                        <div class="input-group">
+                            <div class="form-floating flex-grow-1">
+                                <input type="text" class="form-control shadow-none" placeholder="Nome" value="" id="nome">
+                                <label for="nome">Digite o nome:</label>
+                            </div>
+                            <button type="button" class="input-group-text"><i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 form-floating mb-3 grid">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#substitutoAdicionar"><i class="fa-solid fa-user-plus"></i> Adicionar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-start">
+                    <h1>Listagem de Substitutos(as)</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle table-position" id="tableListSubstitutos">
+                            <thead>
+                                <tr>
+                                    <th class="text-start" scope="col">Matrícula de origem</th>
+                                    <th class="text-start" scope="col">Aprovador(a) de origem</th>
+                                    <th class="text-start" scope="col">Matrícula substituto</th>
+                                    <th class="text-start" scope="col">Aprovador(a) substituto</th>
+                                    <th class="text-start" scope="col">Período</th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-start">00000</td>
+                                    <td class="text-start">Nome Sobrenome</td>
+                                    <td class="text-start">00000</td>
+                                    <td class="text-start">Nome Sobrenome</td>
+                                    <td class="text-start">00/00/0000 até 00/00/0000</td>
+                                    <td><button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#substitutoEditar"><i class="fa-solid fa-user-pen"></i> Editar</button></td>
+                                    <td><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#substitutoExcluir"><i class="fa-solid fa-user-minus"></i> Excluir</button></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-start">00000</td>
+                                    <td class="text-start">Nome Sobrenome</td>
+                                    <td class="text-start">00000</td>
+                                    <td class="text-start">Nome Sobrenome</td>
+                                    <td class="text-start">00/00/0000 até 00/00/0000</td>
+                                    <td><button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#substitutoEditar"><i class="fa-solid fa-user-pen"></i> Editar</button></td>
+                                    <td><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#substitutoExcluir"><i class="fa-solid fa-user-minus"></i> Excluir</button></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-start">00000</td>
+                                    <td class="text-start">Nome Sobrenome</td>
+                                    <td class="text-start">00000</td>
+                                    <td class="text-start">Nome Sobrenome</td>
+                                    <td class="text-start">00/00/0000 até 00/00/0000</td>
+                                    <td><button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#substitutoEditar"><i class="fa-solid fa-user-pen"></i> Editar</button></td>
+                                    <td><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#substitutoExcluir"><i class="fa-solid fa-user-minus"></i> Excluir</button></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-start">00000</td>
+                                    <td class="text-start">Nome Sobrenome</td>
+                                    <td class="text-start">00000</td>
+                                    <td class="text-start">Nome Sobrenome</td>
+                                    <td class="text-start">00/00/0000 até 00/00/0000</td>
+                                    <td><button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#substitutoEditar"><i class="fa-solid fa-user-pen"></i> Editar</button></td>
+                                    <td><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#substitutoExcluir"><i class="fa-solid fa-user-minus"></i> Excluir</button></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-start">00000</td>
+                                    <td class="text-start">Nome Sobrenome</td>
+                                    <td class="text-start">00000</td>
+                                    <td class="text-start">Nome Sobrenome</td>
+                                    <td class="text-start">00/00/0000 até 00/00/0000</td>
+                                    <td><button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#substitutoEditar"><i class="fa-solid fa-user-pen"></i> Editar</button></td>
+                                    <td><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#substitutoExcluir"><i class="fa-solid fa-user-minus"></i> Excluir</button></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-start">00000</td>
+                                    <td class="text-start">Nome Sobrenome</td>
+                                    <td class="text-start">00000</td>
+                                    <td class="text-start">Nome Sobrenome</td>
+                                    <td class="text-start">00/00/0000 até 00/00/0000</td>
+                                    <td><button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#substitutoEditar"><i class="fa-solid fa-user-pen"></i> Editar</button></td>
+                                    <td><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#substitutoExcluir"><i class="fa-solid fa-user-minus"></i> Excluir</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link shadow-none">Anterior</a>
+                            </li>
+                            <li class="page-item"><a class="page-link shadow-none" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link shadow-none" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link shadow-none" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link shadow-none" href="#">Próxima</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" tabindex="-1" aria-hidden="true" aria-labelledby="substitutoAdicionar" id="substitutoAdicionar">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Adicionar substituto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                        <input type="text" class="form-control fc-title shadow-none" placeholder="Matrícula de origem" value="" id="MatriculaOrigem">
+                        <label for="aprovadorOrigem">Matrícula de origem:</label>
+                    </div>
+                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 form-floating mb-3">
+                        <input type="text" class="form-control fc-title shadow-none" placeholder="Aprovador(a) de origem" value="" id="aprovadorOrigem">
+                        <label for="aprovadorOrigem">Aprovador(a) de origem:</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                        <input type="text" class="form-control fc-title shadow-none" placeholder="Matrícula substituto" value="" id="MatriculaSubstituto">
+                        <label for="MatriculaSubstituto">Matrícula substituto:</label>
+                    </div>
+                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 form-floating mb-3">
+                        <input type="text" class="form-control fc-title shadow-none" placeholder="Aprovador(a) substituto" value="" id="aprovadorSubstituto">
+                        <label for="aprovadorSubstituto">Aprovador(a) substituto:</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col form-floating mb-3">
+                        <input type="date" class="form-control shadow-none" placeholder="00/00/0000" value="" id="dataInicial">
+                        <label for="dataInicial">*Data de início:</label>
+                    </div>
+                    <div class="col form-floating mb-3">
+                        <input type="date" class="form-control shadow-none" placeholder="00/00/0000" value="" id="dataTermino">
+                        <label for="dataTermino">*Data de término:</label>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="fa-solid fa-ban"></i> Cancelar</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal"><i class="fa-solid fa-floppy-disk"></i> Salvar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" tabindex="-1" aria-hidden="true" aria-labelledby="substitutoEditar" id="substitutoEditar">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Editar</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                        <input type="text" class="form-control fc-title shadow-none" placeholder="Matrícula de origem" value="000000" id="MatriculaOrigem">
+                        <label for="aprovadorOrigem">Matrícula de origem:</label>
+                    </div>
+                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 form-floating mb-3">
+                        <input type="text" class="form-control fc-title shadow-none" placeholder="Aprovador(a) de origem" value="Nome Sobrenome" id="aprovadorOrigem">
+                        <label for="aprovadorOrigem">Aprovador(a) de origem:</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-floating mb-3">
+                        <input type="text" class="form-control fc-title shadow-none" placeholder="Matrícula substituto" value="000000" id="MatriculaSubstituto">
+                        <label for="MatriculaSubstituto">Matrícula substituto:</label>
+                    </div>
+                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 form-floating mb-3">
+                        <input type="text" class="form-control fc-title shadow-none" placeholder="Aprovador(a) substituto" value="Nome Sobrenome" id="aprovadorSubstituto">
+                        <label for="aprovadorSubstituto">Aprovador(a) substituto:</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col form-floating mb-3">
+                        <input type="date" class="form-control shadow-none" placeholder="" value="00/00/0000" id="dataInicial">
+                        <label for="dataInicial">*Data de início:</label>
+                    </div>
+                    <div class="col form-floating mb-3">
+                        <input type="date" class="form-control shadow-none" placeholder="" value="00/00/0000" id="dataTermino">
+                        <label for="dataTermino">*Data de término:</label>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="fa-solid fa-ban"></i> Cancelar</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal"><i class="fa-solid fa-floppy-disk"></i> Salvar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" tabindex="-1" aria-hidden="true" aria-labelledby="substitutoExcluir" id="substitutoExcluir">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Excluir</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h1><i class="fa-solid fa-circle-question"></i></h1>
+                        <p>Deseja excluir o registro?</p>
+                        <div class="table-responsive">
+                            <table class="table table-hover align-middle table-position" id="tableListSubstitutos">
+                                <thead>
+                                    <tr>
+                                        <th class="text-start" scope="col">Matrícula de origem</th>
+                                        <th class="text-start" scope="col">Aprovador(a) de origem</th>
+                                        <th class="text-start" scope="col">Matrícula substituto</th>
+                                        <th class="text-start" scope="col">Aprovador(a) substituto</th>
+                                        <th class="text-start" scope="col">Período</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-start">00000</td>
+                                        <td class="text-start">Nome Sobrenome</td>
+                                        <td class="text-start">00000</td>
+                                        <td class="text-start">Nome Sobrenome</td>
+                                        <td class="text-start">00/00/0000 até 00/00/0000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="fa-solid fa-ban"></i> Cancelar</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal"><i class="fa-solid fa-trash"></i> Excluir</button>
+            </div>
+        </div>
+    </div>
+</div>
