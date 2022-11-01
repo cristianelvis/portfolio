@@ -30,9 +30,9 @@
 			overflow-x: hidden;
 			overflow-y: hidden;
 		}
-		body, h1, p, a {
+		body, h1, .smallh1, p, a {
 			font-family: 'Montserrat', sans-serif;
-			font-size:1.2rem;
+			font-size:1rem;
 			font-weight:400;
 			color: #ffffff;
 			transition: all 2s;
@@ -58,12 +58,16 @@
 			text-transform: uppercase;
 			margin:0 0 6rem 0;
 		}
+		.smallh1 {
+			color: #ffffff;
+			font-size: 80%;
+		}
 		strong {
 			font-weight: 900;
 			text-transform: uppercase;
 		}
 		a:hover {
-			font-size:1.45rem;
+			font-size:105%;
 			color: #ff9933;
 		}
 		@media only screen and (max-width: 768px) {
@@ -81,7 +85,7 @@
 
 <body>
 	<div class="container">
-		<h1>O site volta em breve</h1>
+		<h1>O site volta em breve<br><a href="https://bit.ly/3fiKEri" class="smallh1" Title="Portfolio Cristian Elvis">Veja meu portfolio</a></h1>
 		<p><span class="corinthia">Cristian Elvis</span><br><strong>Idea builder!</strong></p>
 		<a href="mailto:"speak@cristianelvis.com" title="Clique para enviar e-mail">speak@cristianelvis.com</a>
 		<a href="http://bit.ly/2uYIp4d" title="Clique e fale comigo no whatsapp">(11) 98623-7489</a>
